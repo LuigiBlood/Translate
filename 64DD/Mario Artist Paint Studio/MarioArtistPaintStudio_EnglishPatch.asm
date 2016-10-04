@@ -1117,12 +1117,14 @@ dw (saveload1_undo)
 seek(0x2AADE4)
 dw (saveload1_done)
 
-putText(0x2AAFE6, "New Save Spot")
+putText(0x2AAFE6, "New Save")
 seek(0x2AB050)
 base 0x802C6D80
 putText(0x2AB050, "Move")
+
+seek(0x2AAFF8) //Fix Eraser animation
 saveload1_copy2:
-putText(0x2AB05A, "Copy")
+putText(0x2AAFF8, "Copy")
 //Change pointer
 seek(0x29AAE2)
 dh (saveload1_copy2)
