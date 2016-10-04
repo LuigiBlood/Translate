@@ -3,6 +3,7 @@
 
 //Thanks to
 //- SourceGaming (for some translation help)
+//- Zoinkity (GameBoy Camera hack)
 
 arch n64.cpu
 endian msb
@@ -67,6 +68,64 @@ macro putTextSJISnoSeek(text) {
   dh 0x0000
 }
 
+macro putTextSJIS2(n, text, text2) {
+  seek({n})
+  ShiftJISMap()
+  dh 0x5400, 0xFFFF
+  dh {text}
+  db 0x0A
+  dh {text2}
+  dh 0x0000
+}
+
+macro putTextSJIS3(n, text, text2, text3) {
+  seek({n})
+  putTextSJIS3noSeek({text}, {text2}, {text3})
+}
+
+macro putTextSJIS3noSeek(text, text2, text3) {
+  ShiftJISMap()
+  dh 0x5400, 0xFFFF
+  dh {text}
+  db 0x0A
+  dh {text2}
+  db 0x0A
+  dh {text3}
+  dh 0x0000
+}
+
+macro putTextSJIS4noSeek(text, text2, text3, text4) {
+  ShiftJISMap()
+  dh 0x5400, 0xFFFF
+  dh {text}
+  db 0x0A
+  dh {text2}
+  db 0x0A
+  dh {text3}
+  db 0x0A
+  dh {text4}
+  dh 0x0000
+}
+
+macro putTextSJIS7noSeek(text, text2, text3, text4, text5, text6, text7) {
+  ShiftJISMap()
+  dh 0x5400, 0xFFFF
+  dh {text}
+  db 0x0A
+  dh {text2}
+  db 0x0A
+  dh {text3}
+  db 0x0A
+  dh {text4}
+  db 0x0A
+  dh {text5}
+  db 0x0A
+  dh {text6}
+  db 0x0A
+  dh {text7}
+  dh 0x0000
+}
+
 macro putTextASCIIBox(n, text, symbol, text2) {
   ASCIIMap()
   seek({n})
@@ -97,15 +156,18 @@ macro ShiftJISMap() {
   map '!', $8149
   map '-', $817C
   map '\s',$818C //'
+  map '&', $8195
 }
 
 macro ASCIIMap() {
   map ' ', $20, $60
 }
 
-//Remove Page
+//Remove Page 00F9011E00D7
 seek(0x11E62C)
 sb 0,3(v0) //dw 0xA0400003
+seek(0x2AAE02)
+dh 0x00
 
 // 3D World Mode
 
@@ -641,6 +703,7 @@ seek(0x117DB6) //800E980C
 dh 0x9138
 
 //Saving a painting that has nothing (Shift-JIS) 0x1856C0
+putTextSJIS2(0x1856C0, "Trying to save","empty work.")
 
 //Default Box Names (Shift-JIS) 0x186128
 putTextASCIIBox(0x186128, "Mario", 0x86A6, "Gallery")
@@ -664,9 +727,9 @@ putText(0x189CDE, "Brightness")
 putText(0x189CF6, "Now click on the palette")
 putText(0x189D2E, "Color")
 putText(0x189D3E, "Color")
-putText(0x189D4E, "Hold B to Erase again")
-//putText(0x189D72, "Hold B to Erase again")
-//putText(0x189D96, "Hold B to Erase again")
+putText(0x189D4E, "B - Erase") //Hold B to Erase again
+putText(0x189D72, "B - Erase")
+putText(0x189D96, "B - Erase")
 
 putText(0x189DBA, "B - Scale")
 putText(0x189DEE, "B - Scale")
@@ -691,12 +754,77 @@ putText(0x18A0F2, "B - Go Back")
 putText(0x18A10E, "Too large, can't load")
 
 //Main Menu
-//2D Paint description (Shift-JIS) 0x18A178
-//2D Movie description (Shift-JIS) 0x18A1B0
-//3D World description (Shift-JIS) 0x18A1F0
-//Gallery  description (Shift-JIS) 0x18A238
+seek(0x18A168)
+base 0x8015BBC0
+//2D Paint description (Shift-JIS) 0x18A178 //RAM 0x8015BBD0
+desc_2dpaint1:
+putTextSJISnoSeek("4 artists")
+// 0x18A18C //RAM 0x8015BBE4
+desc_2dpaint2:
+putTextSJISnoSeek("can draw")
+// 0x18A19C //RAM 0x8015BBF4
+desc_2dpaint3:
+putTextSJISnoSeek("together!")
+//2D Movie description (Shift-JIS) 0x18A1B0 //RAM 0x8015BC08
+desc_2dmovie1:
+putTextSJISnoSeek("Animate")
+// 0x18A1C4 //RAM 0x8015BC1C
+desc_2dmovie2:
+putTextSJISnoSeek("your")
+// 0x18A1DC //RAM 0x8015BC34
+desc_2dmovie3:
+putTextSJISnoSeek("drawings!")
+//3D World description (Shift-JIS) 0x18A1F0 //RAM 0x8015BC48
+desc_3dworld1:
+putTextSJISnoSeek("Explore")
+// 0x18A208 //RAM 0x8015BC60
+desc_3dworld2:
+putTextSJISnoSeek("worlds")
+// 0x18A220 //RAM 0x8015BC78
+desc_3dworld3:
+putTextSJISnoSeek("& take photos!")
+//Gallery  description (Shift-JIS) 0x18A238 //RAM 0x8015BC90
+desc_gallery1:
+putTextSJISnoSeek("Let's look")
+// 0x18A24C //RAM 0x8015BCA4
+desc_gallery2:
+putTextSJISnoSeek("at all the")
+// 0x18A264 //RAM 0x8015BCBC
+desc_gallery3:
+putTextSJISnoSeek("drawings!")
 
-//Save or work will disappear (Shift-JIS) 0x18A2E4
+//Change pointers
+seek(0x11DE96)
+dh (desc_2dpaint1)
+seek(0x11DEDA)
+dh (desc_2dpaint2)
+seek(0x11DF1E)
+dh (desc_2dpaint3)
+
+seek(0x11DF72)
+dh (desc_2dmovie1)
+seek(0x11DFB6)
+dh (desc_2dmovie2)
+seek(0x11DFFA)
+dh (desc_2dmovie3)
+
+seek(0x11E04E)
+dh (desc_3dworld1)
+seek(0x11E092)
+dh (desc_3dworld2)
+seek(0x11E0D6)
+dh (desc_3dworld3)
+
+seek(0x11E12A)
+dh (desc_gallery1)
+seek(0x11E16E)
+dh (desc_gallery2)
+seek(0x11E1B2)
+dh (desc_gallery3)
+
+
+//Save or work will disappear (Shift-JIS) 0x18A2E4 //3D World
+putTextSJIS3(0x18A2E4, "Are you sure","you want to exit","without saving?")
 
 //3D World Explore (Text)
 seek(0x0018AC48)
@@ -1003,6 +1131,31 @@ putText(0x203B4B, "Finger Blend")
 putText(0x203BA7, "Finger Blend")
 putText(0x203C03, "Finger Blend")
 
+seek(0x204FE8)
+base 0x8026C500
+//Connect Transfer Pak & GBCamera on Controller 1 (Shift-JIS) 0x204FE8 //RAM 0x8026C500
+access_gbcam1:
+access_gbcam2:
+access_gbcam3:
+access_gbcam4:
+putTextSJIS4noSeek("Connect"," Transfer Pak","& GameBoy Camera","to controller 1.") //BUG
+//Other Pak is connected, please connect Transfer Pak & GBCamera on Controller 1 (Shift-JIS) 0x20503C //RAM 0x8026C554
+//putTextSJIS7noSeek("Something other than","the Transfer Pak","is connected.","","Connect Transfer Pak","and GameBoy Camera","to controller 1.")
+//Connect Transfer Pak & GBCamera on Controller 1 (Shift-JIS) 0x2050C8 //RAM 0x8026C5E0
+//putTextSJIS4noSeek("Connect"," Transfer Pak","& GameBoy Camera","to controller 1.")
+//Not GBCamera cartridge is connected, please connect Transfer Pak & GBCamera on Controller 1 (Shift-JIS) 0x20503C //RAM 0x8026C634
+//putTextSJIS7noSeek("Something other than","the GameBoy Camera","is connected.","","Connect Transfer Pak","and GameBoy Camera","to controller 1.")
+
+//Change pointers
+seek(0x1D0566)
+dh (access_gbcam1)
+seek(0x1D05B2)
+dh (access_gbcam2)
+seek(0x1D063A)
+dh (access_gbcam3)
+seek(0x1D040E)
+dh (access_gbcam4)
+
 putText(0x2096CE, "Ghost")
 putText(0x209784, "Erase Ghost")
 
@@ -1012,19 +1165,25 @@ putText2(0x20AB0C, "Switch Paper")
 
 putText(0x20ACCA, "B: Scale")
 
-//Save or work will disappear (Shift-JIS) 0x20BF78
-//Save or work will disappear (Shift-JIS) 0x20C004
-//Please switch paper (Shift-JIS) 0x20C858
+//Save or work will disappear (Shift-JIS) 0x20BF74 //2D Paint
+putTextSJIS3(0x20BF74, "Are you sure","you want to exit","without saving?")
+//Save or work will disappear (Shift-JIS) 0x20C000 //???
+putTextSJIS3(0x20C000, "Are you sure","you want to exit","without saving?")
+//Please switch paper (Shift-JIS) 0x20C854
+putTextSJIS(0x20C854, "Going back.")
 
 putText2(0x20CCBC, "Load Drawing")
 putText2(0x20CCD8, "Load Drawing")
 
-//Work will disappear are you sure (Shift-JIS) 0x20DC74
-//Save or work will disappear (Shift-JIS) 0x20E010
-//Connect Transfer Pak & GBCamera (Shift-JIS) 0x20E470
-//Connection problem Transfer Pak (Shift-JIS) 0x20E638
-//Work will disappear are you sure (Shift-JIS) 0x20E7D8
-//Work will disappear are you sure (Shift-JIS) 0x20E800
+//Work will disappear are you sure (Shift-JIS) 0x20DC70
+putTextSJIS3(0x20DC70, "Your work will","disappear.","Are you sure?")
+//Save or work will disappear (Shift-JIS) 0x20E00C //2D Movie
+putTextSJIS3(0x20E00C, "Are you sure","you want to exit","without saving?")
+//Turn off and connect Transfer Pak & GBCamera (Shift-JIS) 0x20E46C UNUSED?
+//Connection problem Transfer Pak (Shift-JIS) 0x20E634
+//Work will disappear are you sure (Shift-JIS) 0x20E7D4
+//Work will disappear are you sure (Shift-JIS) 0x20E7FC
+putTextSJIS3(0x20E7FC, "Your work will","disappear.","Are you sure?")
 
 putText(0x20EB4A, "B: Scroll")
 putText(0x20EC56, "B: Scroll")
@@ -1032,18 +1191,26 @@ putText(0x20EF52, "B: Scroll")
 putText(0x20EF72, "B: Scroll")
 putText(0x20F14A, "B: Scroll")
 
-//Insert Capture Cart? (Shift-JIS) 0x20F6B4
-//Insert Capture Cart? (Shift-JIS) 0x20F8FC
-//Work will disappear are you sure (Shift-JIS) 0x20F93C
-//Insert Capture Cart? (Shift-JIS) 0x20F97C
-//Work will disappear are you sure (Shift-JIS) 0x20F9B8
-//Insert Capture Cart? (Shift-JIS) 0x20FA2C
-//Please switch paper (Shift-JIS) 0x20FB0C
-//Plug video? (Shift-JIS) 0x20FB3C
-//Something about frames for the flipbook? (Shift-JIS) 0x20FFFC
+//Insert Capture Cart? (Shift-JIS) 0x20F6B0
+putTextSJIS3(0x20F6B0, "Power off","and insert the","capture cartridge.")
+
+//Insert Capture Cart? (Shift-JIS) 0x20F8F8 //RAM 0x80276E10
+//Work will disappear are you sure (Shift-JIS) 0x20F938 //RAM 0x80276E50
+//Insert Capture Cart? (Shift-JIS) 0x20F978 //RAM 0x80276E90
+
+//Work will disappear are you sure (Shift-JIS) 0x20F9B4 //RAM 0x80276ECC
+putTextSJIS3(0x20F9B4, "Your work will","disappear.","Are you sure?") //2D Paint
+//Insert Capture Cart? (Shift-JIS) 0x20FA28 //RAM 0x80276F40
+putTextSJIS3(0x20FA28, "Power off","and insert the","capture cartridge.")
+//Please switch paper (Shift-JIS) 0x20FB08
+putTextSJIS(0x20FB08, "Going back.")
+//Plug video? (Shift-JIS) 0x20FB38
+putTextSJIS2(0x20FB38, "Please plug the","video cable.")
+//Something about frames for the flipbook? (Shift-JIS) 0x20FFF8
 
 putText(0x20F14A, "B: Cancel")
 //Cannot redo (Shift-JIS) 0x210250
+putTextSJIS(0x210250, "Cannot redo.")
 
 //Printer Text at 0x239B50 UNUSED?
 //64GB GameBoy Printer Text at 0x261240 UNUSED?
