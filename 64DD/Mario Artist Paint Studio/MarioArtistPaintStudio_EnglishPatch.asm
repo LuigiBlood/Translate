@@ -67,6 +67,15 @@ macro putTextSJISnoSeek(text) {
   dh 0x0000
 }
 
+macro putTextASCIIBox(n, text, symbol, text2) {
+  ASCIIMap()
+  seek({n})
+  db {text}
+  dh {symbol}
+  db {text2}
+  dh 0x0000
+}
+
 // Character Table
 macro RegularMap() {
   map '!', $0001, 32 // Map Special Characters & Numbers
@@ -88,6 +97,10 @@ macro ShiftJISMap() {
   map '!', $8149
   map '-', $817C
   map '\s',$818C //'
+}
+
+macro ASCIIMap() {
+  map ' ', $20, $60
 }
 
 //Remove Page
@@ -616,7 +629,7 @@ putText(0x17A364, "Filbert")
 putText(0x17A3A0, "Gaburr")
 
 putText(0x17A5FD, "Fish 1")
-//Coloring (Shift-JIS) 0x17A7DF
+//Coloring (Shift-JIS) 0x17A7DF Unused?
 putText(0x17A81A, "CAM1")
 putText(0x17A856, "CAM1")
 putText(0x17A892, "CAM1")
@@ -630,6 +643,17 @@ dh 0x9138
 //Saving a painting that has nothing (Shift-JIS) 0x1856C0
 
 //Default Box Names (Shift-JIS) 0x186128
+putTextASCIIBox(0x186128, "Mario", 0x86A6, "Gallery")
+putTextASCIIBox(0x18613C, "Luigi", 0x81A1, "Gallery")
+putTextASCIIBox(0x186154, "Wario", 0x819C, "Gallery")
+putTextASCIIBox(0x186168, "Peach", 0x86A5, "Gallery")
+putTextASCIIBox(0x18617C, "Bowser", 0x86A3, "Gallery")
+
+putTextASCIIBox(0x186190, "Link", 0x86A4, "Box")
+putTextASCIIBox(0x1861A4, "Samus", 0x81A5, "Box")
+putTextASCIIBox(0x1861B8, "Yoshi", 0x81F4, "Box")
+putTextASCIIBox(0x1861CC, "Donkey", 0x81A3, "Box")
+putTextASCIIBox(0x1861E0, "Kirby", 0x819A, "Box")
 
 //"is now available!" (Shift-JIS) 0x189900
 seek(0x1898F8)
@@ -640,9 +664,9 @@ putText(0x189CDE, "Brightness")
 putText(0x189CF6, "Now click on the palette")
 putText(0x189D2E, "Color")
 putText(0x189D3E, "Color")
-putText(0x189D4E, "B - ") //to Erase again? What's this one?
-putText(0x189D72, "B - ") //to Erase again? What's this one?
-putText(0x189D96, "B - ") //to Erase again? What's this one?
+putText(0x189D4E, "Hold B to Erase again")
+//putText(0x189D72, "Hold B to Erase again")
+//putText(0x189D96, "Hold B to Erase again")
 
 putText(0x189DBA, "B - Scale")
 putText(0x189DEE, "B - Scale")
@@ -657,7 +681,7 @@ putText(0x189F8E, "B - Scale")
 putText(0x189FC2, "B - Scale")
 putText(0x189FF6, "B - Scale")
 
-putText(0x18A02A, "A - Draw; B - Picker")
+putText(0x18A02A, "A - Draw/B - Picker")
 putText(0x18A066, "B - Go Back")
 putText(0x18A082, "B - Go Back")
 putText(0x18A09E, "B - Go Back")
@@ -762,7 +786,7 @@ putText(0x1F04F8, "Ellipse")
 putText(0x1F05A7, "Square")
 putText(0x1F0645, "Star")
 putText(0x1F06F4, "Circle")
-//Star (Shift-JIS) 0x1F079A
+//Star (Shift-JIS) 0x1F079A Unused?
 putText(0x1F083E, "Heart")
 putText(0x1F08E5, "Line")
 putText(0x1F0995, "Ellipse")
@@ -813,17 +837,17 @@ putText(0x1F3D68, "Frame 3")
 putText(0x1F45F7, "Capture Cartridge")
 putText(0x1F469D, "Capture Movie")
 
-//Felt tip (Shift-JIS) 0x1F4C81
-putText(0x1F4D27, "Marker")
-//Pencil (Shift-JIS) 0x1F4DCF
-//Crayon (Shift-JIS) 0x1F4E7B
-//Chalk  (Shift-JIS) 0x1F4F1E
-//Brush  (Shift-JIS) 0x1F4FCC
-//Oil    (Shift-JIS) 0x1F5072
-//Spray  (Shift-JIS) 0x1F511A
-//Finger (Shift-JIS) 0x1F51C0
+//Felt tip (Shift-JIS) 0x1F4C81 Unused?
+putText(0x1F4D27, "Marker") // Unused?
+//Pencil (Shift-JIS) 0x1F4DCF Unused?
+//Crayon (Shift-JIS) 0x1F4E7B Unused?
+//Chalk  (Shift-JIS) 0x1F4F1E Unused?
+//Brush  (Shift-JIS) 0x1F4FCC Unused?
+//Oil    (Shift-JIS) 0x1F5072 Unused?
+//Spray  (Shift-JIS) 0x1F511A Unused?
+//Finger (Shift-JIS) 0x1F51C0 Unused?
 
-//Flip (Shift-JIS) 0x1F5A45
+//Flip (Shift-JIS) 0x1F5A45 Unused?
 putText(0x1F5AF7, "Flip")
 putText(0x1F5B95, "Flip")
 putText(0x1F5CE5, "Thin")
@@ -865,7 +889,7 @@ putText(0x1F73E4, "Mouse Speed")
 
 // 2D Movie Mode
 
-//Erase Frame (Shift-JIS) 0x1F748C
+//Erase Frame (Shift-JIS) 0x1F748C Unused?
 putText(0x1F752D, "Help")
 putText(0x1F75E3, "Adjust Screen")
 putText(0x1F7684, "Paper Size")
@@ -1021,8 +1045,8 @@ putText(0x20F14A, "B: Scroll")
 putText(0x20F14A, "B: Cancel")
 //Cannot redo (Shift-JIS) 0x210250
 
-//Printer Text at 0x239B50
-//64GB Text at 0x261240
+//Printer Text at 0x239B50 UNUSED?
+//64GB GameBoy Printer Text at 0x261240 UNUSED?
 
 //Container (Shift-JIS) 0x2A7FE0
 //Work (Shift-JIS) 0x2A7FEC
@@ -1404,8 +1428,8 @@ dw (saveload2_copying)
 seek(0x2E0F74)
 dw (saveload2_init)
 
-seek(0x2E110C)
-base 0x802FCE3C
+seek(0x2E1110)
+base 0x802FCE40
 saveload3_donoteject:
 putTextnoSeek("Do not eject the disk.")
 saveload3_prepsave:
