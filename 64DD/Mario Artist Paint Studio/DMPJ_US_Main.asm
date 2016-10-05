@@ -203,8 +203,8 @@ sb 0,3(v0) //dw 0xA0400003
 seek(0x2AAE02) //Kanji Pages
 dh 0x00
 
-//Saving a painting that has nothing (Shift-JIS) 0x1856C0
-putTextSJIS2(0x1856C0, "Trying to save","empty work.")
+//Gallery is empty (Shift-JIS) 0x1856C0
+putTextSJIS2(0x1856C0, "There is no","paintings.")
 
 //Default Box Names (Shift-JIS) 0x186128
 putTextASCIIBox(0x186128, "Mario", 0x86A6, "Gallery")
