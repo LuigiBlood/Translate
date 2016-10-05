@@ -1,2 +1,2 @@
-bass "MarioArtistPaintStudio_EnglishPatch.asm"
+bass "DMPJ_US_Main.asm"
 @pause
