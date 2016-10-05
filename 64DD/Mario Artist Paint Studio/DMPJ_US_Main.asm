@@ -194,6 +194,9 @@ include "DMPJ_US_3DWorld.asm"
 include "DMPJ_US_SaveLoad.asm"
 include "DMPJ_US_GBCam.asm"
 
+//Text Hacks
+include "DMPJ_US_TextHack.asm"
+
 //GameBoy Camera International Hack
 include "DMPJ_US_GBCamHack.asm"
 
