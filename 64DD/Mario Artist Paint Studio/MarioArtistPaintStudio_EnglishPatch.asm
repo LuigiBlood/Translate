@@ -1053,7 +1053,7 @@ putText(0x1F7921, "Flipbook")
 putText(0x1F79C5, "Exit")
 putText(0x1F7A6D, "Play")
 putText(0x1F7B15, "Copy")
-putText(0x1F7BBC, "End")
+putText(0x1F7BBC, "Stop")
 putText(0x1F7C66, "Ghost")
 putText(0x1F7D14, "Clear Frame")
 putText(0x1F7DBB, "Clear Film")
@@ -1276,7 +1276,7 @@ putTextSJISnoSeek(" ") //RAM 0x80277568
 //animation_howto6:
 //putTextSJISnoSeek("Select") //RAM 0x80277584
 animation_howto7:
-putTextSJISnoSeek("to add an end.") //RAM 0x80277598
+putTextSJISnoSeek("to add a stop.") //RAM 0x80277598
 animation_howto8:
 putTextSJISnoSeek("to play!") //RAM 0x802775A8
 
