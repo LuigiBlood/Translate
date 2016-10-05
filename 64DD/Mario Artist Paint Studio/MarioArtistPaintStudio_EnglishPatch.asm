@@ -94,6 +94,11 @@ macro putTextSJIS3noSeek(text, text2, text3) {
   dh 0x0000
 }
 
+macro putTextSJIS4(n, text, text2, text3, text4) {
+  seek({n})
+  putTextSJIS4noSeek({text}, {text2}, {text3}, {text4})
+}
+
 macro putTextSJIS4noSeek(text, text2, text3, text4) {
   ShiftJISMap()
   dh 0x5400, 0xFFFF
@@ -104,6 +109,26 @@ macro putTextSJIS4noSeek(text, text2, text3, text4) {
   dh {text3}
   db 0x0A
   dh {text4}
+  dh 0x0000
+}
+
+macro putTextSJIS5(n, text, text2, text3, text4, text5) {
+  seek({n})
+  putTextSJIS5noSeek({text}, {text2}, {text3}, {text4}, {text5})
+}
+
+macro putTextSJIS5noSeek(text, text2, text3, text4, text5) {
+  ShiftJISMap()
+  dh 0x5400, 0xFFFF
+  dh {text}
+  db 0x0A
+  dh {text2}
+  db 0x0A
+  dh {text3}
+  db 0x0A
+  dh {text4}
+  db 0x0A
+  dh {text5}
   dh 0x0000
 }
 
@@ -788,7 +813,7 @@ desc_gallery1:
 putTextSJISnoSeek("Let's look")
 // 0x18A24C //RAM 0x8015BCA4
 desc_gallery2:
-putTextSJISnoSeek("at all the")
+putTextSJISnoSeek("at all your")
 // 0x18A264 //RAM 0x8015BCBC
 desc_gallery3:
 putTextSJISnoSeek("drawings!")
@@ -1179,11 +1204,21 @@ putText2(0x20CCD8, "Load Drawing")
 putTextSJIS3(0x20DC70, "Your work will","disappear.","Are you sure?")
 //Save or work will disappear (Shift-JIS) 0x20E00C //2D Movie
 putTextSJIS3(0x20E00C, "Are you sure","you want to exit","without saving?")
-//Turn off and connect Transfer Pak & GBCamera (Shift-JIS) 0x20E46C UNUSED?
-//Connection problem Transfer Pak (Shift-JIS) 0x20E634
-//Work will disappear are you sure (Shift-JIS) 0x20E7D4
-//Work will disappear are you sure (Shift-JIS) 0x20E7FC
+
+//Turn off and connect Transfer Pak & GBCamera (Shift-JIS) 0x20E46C //RAM 0x80275984
+putTextSJIS4(0x20E46C, "Power off & plug"," Transfer Pak","& GameBoy Camera","to controller 1.")
+//Connection problem Transfer Pak (Shift-JIS) 0x20E634 //RAM 0x80275B4C
+putTextSJIS5(0x20E634, "GameBoy cartridge","connector is","abnormal.","Power off & read the","instruction manual.")
+//Work will disappear are you sure (Shift-JIS) 0x20E7D4 //RAM 0x80275CEC (Pointer changed)
+//Work will disappear are you sure (Shift-JIS) 0x20E7FC //RAM 0x80275D14
+seek(0x20E7FC)
+base 0x80275D14
+transpak_workdisappear:
 putTextSJIS3(0x20E7FC, "Your work will","disappear.","Are you sure?")
+
+//change pointer
+seek(0x1D07E6)
+dh (transpak_workdisappear)
 
 putText(0x20EB4A, "B: Scroll")
 putText(0x20EC56, "B: Scroll")
@@ -1199,14 +1234,71 @@ putTextSJIS3(0x20F6B0, "Power off","and insert the","capture cartridge.")
 //Insert Capture Cart? (Shift-JIS) 0x20F978 //RAM 0x80276E90
 
 //Work will disappear are you sure (Shift-JIS) 0x20F9B4 //RAM 0x80276ECC
+seek(0x20F9B4)
+base 0x80276ECC
+capture_workdisappear:
 putTextSJIS3(0x20F9B4, "Your work will","disappear.","Are you sure?") //2D Paint
 //Insert Capture Cart? (Shift-JIS) 0x20FA28 //RAM 0x80276F40
+seek(0x20FA28)
+base 0x80276F40
+capture_insert:
 putTextSJIS3(0x20FA28, "Power off","and insert the","capture cartridge.")
 //Please switch paper (Shift-JIS) 0x20FB08
 putTextSJIS(0x20FB08, "Going back.")
 //Plug video? (Shift-JIS) 0x20FB38
 putTextSJIS2(0x20FB38, "Please plug the","video cable.")
-//Something about frames for the flipbook? (Shift-JIS) 0x20FFF8
+
+//change pointers
+seek(0x1E324A)
+dh (capture_insert)
+seek(0x1E32A2)
+dh (capture_workdisappear)
+seek(0x1E3362)
+dh (capture_insert)
+
+//How To Use Animation Mode (Shift-JIS) 0x20FFF0 //RAM 0x80277508
+//Very unstable and prone to crashing
+seek(0x20FFF0)
+base 0x80277508
+animation_howto0:
+putTextSJISnoSeek("") //RAM 0x80277508
+animation_howto1:
+animation_howto6:
+putTextSJISnoSeek("Select") //RAM 0x80277510
+animation_howto2:
+putTextSJISnoSeek("Draw your frame.") //RAM 0x80277520
+animation_howto3:
+putTextSJISnoSeek("Click on") //RAM 0x80277540
+animation_howto4:
+putTextSJISnoSeek("to finish.") //RAM 0x80277554
+animation_howto5:
+putTextSJISnoSeek(" ") //RAM 0x80277568
+//animation_howto6:
+//putTextSJISnoSeek("Select") //RAM 0x80277584
+animation_howto7:
+putTextSJISnoSeek("to add an end.") //RAM 0x80277598
+animation_howto8:
+putTextSJISnoSeek("to play!") //RAM 0x802775A8
+
+//Pointers
+seek(0x1E848E)
+dh (animation_howto0)
+seek(0x1E84DA)
+dh (animation_howto1)
+seek(0x1E8522)
+dh (animation_howto2)
+seek(0x1E856A)
+dh (animation_howto3)
+seek(0x1E85B2)
+dh (animation_howto4)
+seek(0x1E85FA)
+dh (animation_howto5)
+seek(0x1E8642)
+dh (animation_howto6)
+seek(0x1E868A)
+dh (animation_howto7)
+seek(0x1E86D2)
+dh (animation_howto8)
 
 putText(0x20F14A, "B: Cancel")
 //Cannot redo (Shift-JIS) 0x210250
