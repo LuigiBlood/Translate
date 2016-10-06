@@ -1,7 +1,7 @@
 // 3D World Mode
 
-putText(0x1567BA, "Save")
-putText(0x156863, "Return")
+putText(0x1567BA, "Save") //RAM 0x80128208
+putText(0x156863, "Return") //RAM 0x801282B0
 putText(0x157050, "Go to Main Menu")
 putText(0x157AC3, "Jurassic World")
 putText(0x157B66, "Planet Mars")
@@ -24,6 +24,12 @@ putText(0x158694, "Shuffle")
 putText(0x158737, "Stereo")
 putText(0x1587DD, "Mono")
 putText(0x15888B, "Headphones")
+
+//Hack
+seek(0x11745E)
+dh $0015 //Save
+seek(0x11746E)
+dh $0021 //Return
 
 putText2(0x15AD64, "When taking a photo...")
 
@@ -113,7 +119,11 @@ dh 0x9138
 //"is now available!" (Shift-JIS) 0x189900
 seek(0x1898F8)
 dh 0x0000
-putTextSJIS(0x1898FC, "is now available!")
+putTextSJIS(0x1898FC, "is now available!") //RAM 0x8015B354
+
+//Change position
+seek(0x118E62)
+dh $0070
 
 //Save or work will disappear (Shift-JIS) 0x18A2E4 //3D World
 putTextSJIS3(0x18A2E4, "Are you sure","you want to exit","without saving?")
