@@ -812,25 +812,69 @@ putTextSJISnoSeek("to add a stop.") //RAM 0x80277598
 animation_howto8:
 putTextSJISnoSeek("to play!") //RAM 0x802775A8
 
-//Pointers
+//Pointers and Coordinates
 seek(0x1E848E)
 dh (animation_howto0)
+
 seek(0x1E84DA)
 dh (animation_howto1)
+seek(0x1E84C2)
+dh $007B
+
 seek(0x1E8522)
 dh (animation_howto2)
+seek(0x1E850A)
+dh $0071
+
 seek(0x1E856A)
 dh (animation_howto3)
+seek(0x1E8552)
+dh $0063
+
 seek(0x1E85B2)
 dh (animation_howto4)
+seek(0x1E859A)
+dh $00AD
+
 seek(0x1E85FA)
 dh (animation_howto5)
+seek(0x1E85E2)
+dh $0063
+
 seek(0x1E8642)
 dh (animation_howto6)
+seek(0x1E862A)
+dh $0059
+seek(0x1E862E)
+dh $009D
+
 seek(0x1E868A)
 dh (animation_howto7)
+seek(0x1E8672)
+dh $009E
+seek(0x1E8676)
+dh $009D
+
 seek(0x1E86D2)
 dh (animation_howto8)
+seek(0x1E86BA)
+dh $0097
+seek(0x1E86BE)
+dh $00BF
+
+//Texture List and Positions at 0x80270C24
+seek(0x20970C)
+// X = X Pos; Y = Y Pos; T = Texture ID
+// $0000  $XXXX  $YYYY  $TTTT  $0000  $0000
+dh $0000, $0046, $001B, $0181, $0000, $0000 // Bold Text
+dh $0000, $00A3, $002F, $0182, $0000, $0000 // Frame
+dh $0000, $009A, $004B, $0183, $0000, $0000 // Down Arrow
+dh $0000, $009A, $0069, $0183, $0000, $0000 // Down Arrow
+dh $0000, $009A, $008C, $0183, $0000, $0000 // Down Arrow
+dh $0000, $009A, $00B0, $0183, $0000, $0000 // Down Arrow
+dh $0000, $0096, $0077, $0511, $0000, $0000 // Bomb Icon
+dh $0000, $0083, $009B, $01A3, $0000, $0000 // Stop Icon
+dh $0000, $007C, $00BD, $019E, $0000, $0000 // Play Icon
 
 putText(0x20F14A, "B: Cancel")
 //Cannot redo (Shift-JIS) 0x210250
