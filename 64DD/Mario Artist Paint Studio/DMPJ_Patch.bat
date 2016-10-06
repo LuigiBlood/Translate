@@ -1,2 +1,2 @@
-bass "DMPJ_US_Main.asm"
+bass "DMPJ_US_MainDISK.asm"
 @pause
