@@ -127,7 +127,7 @@ explore_empty:
 dh 0x5000, 0x0000
 explore_start:
 //"Press A or Z to Start!" (Shift-JIS)
-putTextSJISnoSeek("  Press A or Z to Start!")
+putTextSJISnoSeek("Press A or Z to Start!")
 explore_zoomin:
 putText2noSeek("Zoom In")
 explore_zoomout:
