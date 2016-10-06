@@ -78,6 +78,12 @@ dh 0xFF20
 seek(0x118DC6)
 dh 0xFF20
 
+//ASM Hack Position
+//TODO: Make it so every animal names are in the middle
+//Don't feel like dealing with floating points
+seek(0x118D82)
+dh $00C0
+
 //Names 3D World
 //Balloonfish (Shift-JIS) 0x179912 Unused
 putText(0x179953, "Shark")
@@ -123,7 +129,7 @@ putTextSJIS(0x1898FC, "is now available!") //RAM 0x8015B354
 
 //Change position
 seek(0x118E62)
-dh $0070
+dh $006D
 
 //Save or work will disappear (Shift-JIS) 0x18A2E4 //3D World
 putTextSJIS3(0x18A2E4, "Are you sure","you want to exit","without saving?")
