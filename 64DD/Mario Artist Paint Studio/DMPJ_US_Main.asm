@@ -179,8 +179,8 @@ macro ShiftJISMap() {
   map ':', $8146, 2
   map '?', $8148
   map '!', $8149
+  map '\s',$8165 //'
   map '-', $817C
-  map '\s',$818C //'
   map '&', $8195
 }
 
@@ -262,34 +262,76 @@ putTextSJISnoSeek("at all your")
 desc_gallery3:
 putTextSJISnoSeek("drawings!")
 
-//Change pointers
+//Change pointers & positions
 seek(0x11DE96)
 dh (desc_2dpaint1)
+seek(0x11DE7E)
+dh $001D
 seek(0x11DEDA)
 dh (desc_2dpaint2)
+seek(0x11DEBE)
+dh $002D
 seek(0x11DF1E)
 dh (desc_2dpaint3)
+seek(0x11DF02)
+dh $003D
 
 seek(0x11DF72)
 dh (desc_2dmovie1)
+seek(0x11DF5A)
+dh $005B
+seek(0x11DF5E)
+dh $00B1
 seek(0x11DFB6)
 dh (desc_2dmovie2)
+seek(0x11DF9A)
+dh $008D
+seek(0x11DF9E)
+dh $00B1
 seek(0x11DFFA)
 dh (desc_2dmovie3)
+seek(0x11DFDE)
+dh $0066
+seek(0x11DFE2)
+dh $00BE
 
 seek(0x11E04E)
 dh (desc_3dworld1)
+seek(0x11E036)
+dh $0092
+seek(0x11E03A)
+dh $00B1
 seek(0x11E092)
 dh (desc_3dworld2)
+seek(0x11E076)
+dh $00C1
+seek(0x11E07A)
+dh $00B1
 seek(0x11E0D6)
 dh (desc_3dworld3)
+seek(0x11E0BA)
+dh $0093
+seek(0x11E0BE)
+dh $00BE
 
 seek(0x11E12A)
 dh (desc_gallery1)
+seek(0x11E112)
+dh $00CC
+seek(0x11E116)
+dh $00AC
 seek(0x11E16E)
 dh (desc_gallery2)
+seek(0x11E152)
+dh $00DA
+seek(0x11E156)
+dh $00B8
 seek(0x11E1B2)
 dh (desc_gallery3)
+seek(0x11E196)
+dh $00E8
+seek(0x11E19A)
+dh $00C4
 
 //Printer Text at 0x239B50 UNUSED?
 //64GB GameBoy Printer Text at 0x261240 UNUSED?
