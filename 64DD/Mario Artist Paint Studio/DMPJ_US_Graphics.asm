@@ -9,3 +9,7 @@ seek(0x2C6830)
 insert "GFX/YES_NO.rgba16.bin"
 seek(0x319900)
 insert "GFX/YES_NO.rgba16.bin"
+
+//Film Frame
+seek(0x72A498)
+insert "GFX/FRAME.rgba16.bin"
