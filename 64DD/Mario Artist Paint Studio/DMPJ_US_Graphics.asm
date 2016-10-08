@@ -13,3 +13,13 @@ insert "GFX/YES_NO.rgba16.bin"
 //Film Frame
 seek(0x72A498)
 insert "GFX/FRAME.rgba16.bin"
+
+//Save/Load
+seek(0x2AECD0)
+insert "GFX/SAVELOAD.i8.bin"
+
+seek(0x2D9BB0) //Load Color
+insert "GFX/LOADSELECT.ci8.bin"
+
+seek(0x2DA3F0) //Save Color
+insert "GFX/SAVESELECT.ci8.bin"
