@@ -23,3 +23,10 @@ insert "GFX/LOADSELECT.ci8.bin"
 
 seek(0x2DA3F0) //Save Color
 insert "GFX/SAVESELECT.ci8.bin"
+
+//Title Screen
+seek(0xD39B90) //Paint Studio
+insert "GFX/PAINTSTUDIO.ia8.bin"
+
+seek(0xD40FD0) //Mario Artist
+insert "GFX/MARIOARTIST.ia8.bin"
