@@ -240,8 +240,10 @@ putTextnoSeek("   Take Photo") //RAM 0x802C26B4
 //putTextnoSeek("Beta") //RAM 0x802C2710 UNUSED
 //putTextnoSeek("Color") //RAM 0x802C2718 UNUSED
 //putTextnoSeek("Mosaic") //RAM 0x802C2720 UNUSED
-//putTextnoSeek("Bright") //RAM 0x802C272C UNUSED
-//putTextnoSeek("Contrast") //RAM 0x802C2738 UNUSED
+camera_brightness:
+putTextnoSeek("Bright") //RAM 0x802C272C
+camera_contrast:
+putTextnoSeek("Contrast") //RAM 0x802C2738
 //putTextnoSeek("Color Reset") //RAM 0x802C2748 UNUSED
 //putTextnoSeek("Photo Size:") //RAM 0x802C2758 UNUSED
 //putTextnoSeek("Read") //RAM 0x802C276C UNUSED
@@ -256,3 +258,7 @@ seek(0x302852)
 dh (camera_take)
 seek(0x302852)
 dh (camera_take)
+seek(0x30531E)
+dh (camera_brightness)
+seek(0x30534E)
+dh (camera_contrast)
