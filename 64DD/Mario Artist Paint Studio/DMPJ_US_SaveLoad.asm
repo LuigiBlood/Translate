@@ -91,7 +91,7 @@ dw (saveload1_undo)
 seek(0x2AADE4)
 dw (saveload1_done)
 
-putText(0x2AAFE6, "New Save")
+putText(0x2AAFE8, "New")
 seek(0x2AB050)
 base 0x802C6D80
 putText(0x2AB050, "Move")
