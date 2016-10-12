@@ -740,7 +740,7 @@ putTextSJIS3(0x20E00C, "Are you sure","you want to exit","without saving?")
 //Turn off and connect Transfer Pak & GBCamera (Shift-JIS) 0x20E46C //RAM 0x80275984
 putTextSJIS4(0x20E46C, "Power off & plug"," Transfer Pak","& GameBoy Camera","to controller 1.")
 //Connection problem Transfer Pak (Shift-JIS) 0x20E634 //RAM 0x80275B4C
-putTextSJIS5(0x20E634, "GameBoy cartridge","connector is","abnormal.","Power off & read the","instruction manual.")
+putTextSJIS5(0x20E634, "GameBoy cartridge","connector is","abnormal.","Power off & read the","manual.")
 //Work will disappear are you sure (Shift-JIS) 0x20E7D4 //RAM 0x80275CEC (Pointer changed)
 //Work will disappear are you sure (Shift-JIS) 0x20E7FC //RAM 0x80275D14
 seek(0x20E7FC)
@@ -759,7 +759,7 @@ putText(0x20EF72, "B: Scroll")
 putText(0x20F14A, "B: Scroll")
 
 //Insert Capture Cart? (Shift-JIS) 0x20F6B0
-putTextSJIS3(0x20F6B0, "Power off","and insert the","capture cartridge.")
+putTextSJIS3(0x20F6B0, "Turn off & insert","the capture","cartridge.")
 
 //Insert Capture Cart? (Shift-JIS) 0x20F8F8 //RAM 0x80276E10
 //Work will disappear are you sure (Shift-JIS) 0x20F938 //RAM 0x80276E50
@@ -774,7 +774,7 @@ putTextSJIS3(0x20F9B4, "Your work will","disappear.","Are you sure?") //2D Paint
 seek(0x20FA28)
 base 0x80276F40
 capture_insert:
-putTextSJIS3(0x20FA28, "Power off","and insert the","capture cartridge.")
+putTextSJIS3(0x20FA28, "Turn off & insert","the capture","cartridge.")
 //Please switch paper (Shift-JIS) 0x20FB08
 putTextSJIS(0x20FB08, "Going back.")
 //Plug video? (Shift-JIS) 0x20FB38
