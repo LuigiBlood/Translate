@@ -695,7 +695,7 @@ access_gbcam1:
 access_gbcam2:
 access_gbcam3:
 access_gbcam4:
-putTextSJIS4noSeek("Connect"," Transfer Pak","& GameBoy Camera","to controller 1.") //BUG
+putTextSJIS4noSeek("Connect","Transfer Pak","& GameBoy Camera","to controller 1.")
 //Other Pak is connected, please connect Transfer Pak & GBCamera on Controller 1 (Shift-JIS) 0x20503C //RAM 0x8026C554
 //putTextSJIS7noSeek("Something other than","the Transfer Pak","is connected.","","Connect Transfer Pak","and GameBoy Camera","to controller 1.")
 //Connect Transfer Pak & GBCamera on Controller 1 (Shift-JIS) 0x2050C8 //RAM 0x8026C5E0
@@ -712,6 +712,10 @@ seek(0x1D063A)
 dh (access_gbcam3)
 seek(0x1D040E)
 dh (access_gbcam4)
+
+//Fix number
+seek(0x1D056A)
+dh $006A
 
 putText(0x2096CE, "Ghost")
 putText(0x209784, "Erase Ghost")
