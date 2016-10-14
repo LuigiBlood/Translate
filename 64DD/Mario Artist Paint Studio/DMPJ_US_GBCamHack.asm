@@ -1,8 +1,21 @@
-//"GAMEBOYCAMERA" ID to detect US/EU Game Boy Camera - Zoinkity Hack
+//"GAMEBOYCAMERA" ID to detect US/EU Game Boy Camera - Zoinkity Hack //RAM 0x80237994
 seek(0x1D047C)
 dw 0x10400003, 0x8FA400B0, 0x10000087, 0x24140014, 0x3C058027, 0x8CA6C4F4, 0x10860002, 0x8CA5C4F8, 0x14850004
+//beq v0,0,$802379A4
+//lw a0,b0(sp)
+//b $80237BBC
+//addiu s4,0,$14
+//lui a1,$8027
+//lw a2,-$3b0c(a1) //8026C4F4 "POCK" -> "BOYC"
+//beq a0,a1,$802379B8
+//lw a1,-$3b08(a1) //8026C4F8 "ETCA"
+//bne a0,a1,$802379C8
 seek(0x2EF55F)
 db 0x0C
+
+//"BOYC"
+seek(0x204FDC)
+db 0x42, 0x4F, 0x59, 0x43
 
 //"GAMEBOYCAMERA   "
 seek(0x30D520)
