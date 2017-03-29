@@ -189,3 +189,5 @@ macro ASCIIMap() {
 }
 
 include "DMTJ_US_SaveLoad.asm"
+include "DMTJ_US_MainMenu.asm"
+include "DMTJ_US_TalentStudio.asm"
