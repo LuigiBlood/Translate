@@ -21,7 +21,7 @@ putTextnoSeek("Body")
 menu1_voice:
 putTextnoSeek("Voice")
 menu1_info:
-putTextnoSeek("Talent's Name")
+putTextnoSeek("Information")
 menu1_mike:
 putTextnoSeek("Microphone")
 menu1_music1:
@@ -151,11 +151,11 @@ putTextnoSeek("Clothing")
 menu5_body:
 putTextnoSeek("Body")
 menu5_shirts:
-putTextnoSeek("Swimwear & Shirts")
+putTextnoSeek("Undershirt")
 menu5_tights:
-putTextnoSeek("Tight Suits")
+putTextnoSeek("Underwear")
 menu5_top:
-putTextnoSeek("Top")
+putTextnoSeek("Shirts")
 menu5_various:
 putTextnoSeek("Various Suits")
 menu5_pants:
@@ -2009,3 +2009,678 @@ dh (menu9_rotationzoomB)
 //menu9_femalebodytype
 //menu9_otherbodytype
 //menu9_remove //Unused?
+
+//Shift-JIS
+seek(0x21528C)
+base 0x803C3A5C
+ask_keeptalent:
+putTextASCIInoSeek("Would you like to keep|this talent in the|Talent Studio?")
+ask_savetalent:
+putTextASCIInoSeek("This talent is not saved.||Would you like to keep|this talent in the|Talent Studio?")
+ask_erasefacefromalbum:
+putTextASCIInoSeek("Would you like|to erase this face|from the album?")
+ask_erasepatternfromalbum:
+putTextASCIInoSeek("Would you like|to erase this pattern|from the album?")
+
+seek(0x19A742)
+dh (ask_keeptalent)
+seek(0x19A72E)
+dh (ask_savetalent)
+seek(0x19A95A)
+dh (ask_erasefacefromalbum)
+seek(0x19A97A)
+dh (ask_erasefacefromalbum)
+seek(0x19A9FE)
+dh (ask_erasepatternfromalbum)
+seek(0x19AA1E)
+dh (ask_erasepatternfromalbum)
+
+putTextASCII(0x215944, "Talent")
+
+//seek(0x215958)
+//putTextnoSeek("Too many polygons") //Unused?
+
+putTextASCII(0x215CBC, "The current face|cannot be edited.|Do you want to keep it?|Selecting "No" will|remove the makeup.")
+
+//Color Album
+seek(0x215EB4)
+base 0x803C4684
+coloralbum_h:
+putTextnoSeek("Hue")
+coloralbum_s:
+putTextnoSeek("Saturation")
+coloralbum_v:
+putTextnoSeek("Brightness")
+coloralbum_grab:
+putTextnoSeek("Grab")
+coloralbum_get:
+putTextnoSeek("Use Color")
+coloralbum_set:
+putTextnoSeek("Replace")
+
+seek(0x215F18)
+dw (coloralbum_h), (coloralbum_h)
+dw (coloralbum_s), (coloralbum_s)
+dw (coloralbum_v), (coloralbum_v)
+
+seek(0x1A2782)
+dh (coloralbum_grab)
+seek(0x1A277A)
+dh (coloralbum_get)
+seek(0x1A2762)
+dh (coloralbum_set)
+
+//Face Editor
+seek(0x96295C)
+base 0x802AE7DC
+faceedit_page: //802AE7DC
+putTextnoSeek("") //Empty on purpose
+faceedit_selectedcolor: //802AE7E4
+putTextnoSeek("Selected Color")
+faceedit_makecolor: //802AE7F4
+putTextnoSeek("Make Color") //???
+faceedit_skin: //802AE804
+putTextnoSeek("Skin")
+faceedit_eye: //802AE80C
+putTextnoSeek("Eyes")
+faceedit_eyebrow: //802AE810
+putTextnoSeek("Eyebrows")
+faceedit_nose: //802AE818
+//putTextnoSeek("Nose") //Unused
+faceedit_mouth: //802AE820
+putTextnoSeek("Mouth")
+faceedit_seala: //802AE828
+putTextnoSeek("Seal A")
+faceedit_sealb: //802AE834
+putTextnoSeek("Seal B")
+faceedit_changeposition: //802AE840
+putTextnoSeek("Change Position")
+faceedit_changerotation: //802AE850
+putTextnoSeek("Change Rotation")
+faceedit_changesize: //802AE860
+putTextnoSeek("Change Size")
+faceedit_reset: //802AE874
+putTextnoSeek("Reset")
+faceedit_removeitem: //802AE880
+putTextnoSeek("Remove")
+faceedit_undo: //802AE89C
+putTextnoSeek("Undo")
+faceedit_putcolor: //802AE8A8
+//putTextnoSeek("Put Color") //Unused
+faceedit_red: //802AE8B8
+putTextnoSeek("Red")
+faceedit_green: //802AE8C4
+putTextnoSeek("Green")
+faceedit_blue: //802AE8D0
+putTextnoSeek("Blue")
+faceedit_12page: //802AE8DC
+//putTextnoSeek("1/2") //Unused?
+faceedit_selectall: //802AE8EC
+//putTextnoSeek("Select All") //Unused?
+faceedit_unselectall: //802AE904
+//putTextnoSeek("Unselect All") //Unused?
+faceedit_select: //802AE920
+putTextnoSeek("Select")
+faceedit_unselect: //802AE930
+putTextnoSeek("Unselect")
+faceedit_setparts: //802AE944
+//putTextnoSeek("Set parts") //Unused?
+faceedit_random: //802AE958
+//putTextnoSeek("Random") //Unused?
+faceedit_clear: //802AE96C
+putTextnoSeek("Clear")
+faceedit_changenoseposition: //802AE97C
+putTextnoSeek("Nose Position")
+faceedit_coloralbum: //802AE990
+putTextnoSeek("Color Album")
+faceedit_random2: //802AE9A0
+putTextnoSeek("Random")
+faceedit_goback: //802AE9B4
+putTextnoSeek("Current Face")
+faceedit_selectface: //802AE9C8
+//putTextnoSeek("Select Face") //Unused?
+faceedit_selectskincolor: //802AE9D8
+//putTextnoSeek("Select Skin Color")
+faceedit_skincolor: //802AE9EC
+putTextnoSeek("Skin Color")
+faceedit_real00: //802AE9F8
+putTextnoSeek("Real 00")
+faceedit_manga00: //802AEA04
+putTextnoSeek("Manga 00")
+faceedit_seala00: //802AEA10
+putTextnoSeek("Seal A 00")
+faceedit_sealb00: //802AEA20
+putTextnoSeek("Seal B 00")
+faceedit_skin00: //802AEA30
+putTextnoSeek("Skin 00")
+faceedit_rotationzoomB: //802AEA3C
+putTextnoSeek("Rotate / Zoom (Button B)")
+
+//Change pointers
+seek(0x962BEC)
+dw (faceedit_red)
+dw (faceedit_green), (faceedit_blue), (faceedit_skin), (faceedit_eyebrow)
+dw (faceedit_eye), (faceedit_mouth), (faceedit_seala), (faceedit_sealb)
+dw (faceedit_changeposition), (faceedit_changerotation), (faceedit_changesize), (faceedit_reset)
+dw (faceedit_removeitem)
+
+seek(0x93A30E)
+dh (faceedit_page)
+seek(0x93FAD2)
+dh (faceedit_makecolor)
+seek(0x93FABE)
+dh (faceedit_selectedcolor)
+seek(0x94C1E6)
+dh (faceedit_select)
+seek(0x94C1DE)
+dh (faceedit_unselect)
+seek(0x94636A)
+dh (faceedit_clear)
+seek(0x946E7E)
+dh (faceedit_changenoseposition)
+seek(0x93F056)
+dh (faceedit_coloralbum)
+seek(0x9455F2)
+dh (faceedit_random2)
+seek(0x94703E)
+dh (faceedit_goback)
+seek(0x940642)
+dh (faceedit_selectskincolor)
+seek(0x940446)
+dh (faceedit_skincolor)
+seek(0x941806)
+dh (faceedit_real00)
+seek(0x94185A)
+dh (faceedit_real00)
+seek(0x9418AE)
+dh (faceedit_real00)
+seek(0x941826)
+dh (faceedit_manga00)
+seek(0x94187A)
+dh (faceedit_manga00)
+seek(0x9418CE)
+dh (faceedit_manga00)
+seek(0x9418F6)
+dh (faceedit_seala00)
+seek(0x94191E)
+dh (faceedit_sealb00)
+seek(0x9417D2)
+dh (faceedit_skin00)
+seek(0x93A6F6)
+dh (faceedit_rotationzoomB)
+seek(0x9447CA)
+dh (faceedit_undo)
+seek(0x94690E)
+dh (faceedit_removeitem)
+
+//Change 00 pointer
+seek(0x941812)
+dh ((faceedit_real00) + 10)
+seek(0x941866)
+dh ((faceedit_real00) + 10)
+seek(0x9418BA)
+dh ((faceedit_real00) + 10)
+seek(0x941832)
+dh ((faceedit_manga00) + 12)
+seek(0x941886)
+dh ((faceedit_manga00) + 12)
+seek(0x9418DA)
+dh ((faceedit_manga00) + 12)
+seek(0x941902)
+dh ((faceedit_seala00) + 14)
+seek(0x94192A)
+dh ((faceedit_sealb00) + 14)
+seek(0x9417DE)
+dh ((faceedit_skin00) + 10)
+
+//Talent (Body) Type Selection
+putText(0xDE4320, "Model Talent 1")
+putText(0xDE4340, "Model Talent 2")
+putText(0xDE4360, "Model Talent 3")
+putText(0xDE4380, "Model Talent 4")
+putText(0xDE43A0, "Basic Talent 1")
+
+putText(0xDE43C0, "Model Talent 5")
+putText(0xDE43E0, "Model Talent 6")
+putText(0xDE4400, "Model Talent 7")
+putText(0xDE4420, "Model Talent 8")
+putText(0xDE4440, "Basic Talent 2")
+
+putText(0xDE4460, "Model Talent 9")
+putText(0xDE4480, "Model Talent 10")
+putText(0xDE44A0, "Model Talent 11")
+putText(0xDE44C0, "Model Talent 12")
+putText(0xDE44E0, "Basic Talent 3")
+
+putText3(0xDE4500, $011B, " Type 1")
+putText3(0xDE4520, $011B, " Type 2")
+putText3(0xDE4540, $011B, " Type 3")
+putText3(0xDE4560, $011B, " Type 4")
+putText3(0xDE4580, $011B, " Basic Type")
+
+putText3(0xDE45A0, $011C, " Type 1")
+putText3(0xDE45C0, $011C, " Type 2")
+putText3(0xDE45E0, $011C, " Type 3")
+putText3(0xDE4600, $011C, " Type 4")
+putText3(0xDE4620, $011C, " Basic Type")
+
+putText(0xDE4640, "? Type 1")
+putText(0xDE4660, "? Type 2")
+putText(0xDE4680, "? Type 3")
+putText(0xDE46A0, "? Type 4")
+putText(0xDE46C0, "? Basic Type")
+
+//Makeup
+seek(0xA190D4)
+base 0x8028DCD4
+makeup_page:
+putTextnoSeek("")
+
+seek(0xA190F4)
+makeup_displayrealface: //8028DCF4
+//putTextnoSeek("Display Real Face") //???
+makeup_fillpaint: //8028DD0C
+putTextnoSeek("Fill")
+makeup_blur: //8028DD1C
+putTextnoSeek("Blur")
+makeup_pencil: //8028DD24
+putTextnoSeek("Pencil")
+makeup_pen: //8028DD30
+putTextnoSeek("Pen")
+makeup_lipstick: //8028DD38
+putTextnoSeek("Lipstick")
+makeup_brush: //8028DD44
+putTextnoSeek("Brush")
+makeup_puff: //8028DD4C
+putTextnoSeek("Puff")
+makeup_soap: //8028DD54
+putTextnoSeek("Soap")
+makeup_makeupremove: //8028DD60
+putTextnoSeek("Clear")
+makeup_undo: //8028DD70
+putTextnoSeek("Undo")
+makeup_representation: //8028DD7C
+putTextnoSeek("Representation")
+makeup_nomakeup: //8028DD8C
+//putTextnoSeek("No Makeup") //Unused
+makeup_grid: //8028DD94
+putTextnoSeek("Grid")
+makeup_pickup: //8028DD9C
+//putTextnoSeek("Pickup") //Unused
+makeup_hairline: //8028DDA4
+//putTextnoSeek("Hairline") //Unused
+makeup_turnoffdisplay: //8028DDB0
+//putTextnoSeek("Turn Off Display") //Unused
+makeup_current: //8028DDC0
+putTextnoSeek("Current")
+makeup_face: //8028DDCC
+putTextnoSeek("Face")
+makeup_makeup: //8028DDDC
+putTextnoSeek("Makeup")
+makeup_transparent: //8028DDE8
+putTextnoSeek("Transparent")
+makeup_toggledisplay: //8028DDF8
+putTextnoSeek("Toggle Display")
+
+//Change pointers
+seek(0xA17512)
+dh (makeup_fillpaint)
+seek(0xA16052)
+dh (makeup_blur)
+seek(0xA15C0E)
+dh (makeup_pencil)
+seek(0xA15C3E)
+dh (makeup_pen)
+seek(0xA15BFE)
+dh (makeup_lipstick)
+seek(0xA15C1E)
+dh (makeup_brush)
+seek(0xA15C2E)
+dh (makeup_puff)
+seek(0xA15A5E)
+dh (makeup_soap)
+seek(0xA16C32)
+dh (makeup_makeupremove)
+seek(0xA1617A)
+dh (makeup_undo)
+seek(0xA18026)
+dh (makeup_representation)
+seek(0xA1800E)
+dh (makeup_grid)
+seek(0xA17FAE)
+dh (makeup_current)
+seek(0xA17FBE)
+dh (makeup_face)
+seek(0xA17FDA)
+dh (makeup_makeup)
+seek(0xA17FF2)
+dh (makeup_transparent)
+seek(0xA16E7A)
+dh (makeup_toggledisplay)
+
+//Move Positions
+//Current X position
+seek(0xA17E7A)
+dh $00C6
+
+//Face X position
+seek(0xA17FC2)
+dh $00F0
+
+//Grid X position
+seek(0xA17F9E)
+dh $00B9
+
+//Representation X position
+seek(0xA1802A)
+dh $00D1
+
+//Makeup X position
+seek(0xA17F92)
+dh $00F5
+
+//Transparent X position
+seek(0xA17FF6)
+dh $00B6
+
+//Expressions Menu
+seek(0x9FEF50)
+base 0x80293158
+expression_page: //80293158
+putTextnoSeek("")
+expression_normal: //80293160
+putTextnoSeek("Normal")
+expression_laugh: //80293178
+putTextnoSeek("Laugh")
+expression_angry: //80293190
+putTextnoSeek("Angry")
+expression_sad: //802931A8
+putTextnoSeek("Sad")
+expression_smile: //802931C0
+putTextnoSeek("Smile")
+expression_sleep: //802931D8
+putTextnoSeek("Sleep")
+expression_random: //802931F0
+putTextnoSeek("Random")
+expression_reset: //80293204
+//putTextnoSeek("Reset") //Unused
+expression_net: //80293210
+putTextnoSeek("Show/Hide Net")
+expression_hidenet: //80293228
+//putTextnoSeek("Hide Net") //Unused
+expression_undo: //80293234
+putTextnoSeek("Undo")
+expression_copy: //80293240
+putTextnoSeek("Copy")
+expression_callback: //80293258
+putTextnoSeek("Paste")
+expression_expression1: //80293270 (8029327C for number)
+putTextnoSeek("Expression 00")
+expression_rotationzoomB: //80293284
+putTextnoSeek("Rotate / Zoom (Button B)")
+
+//Change pointers
+seek(0x9EDED6)
+dh (expression_page)
+seek(0x9F46C6)
+dh (expression_random)
+seek(0x9F1D9A)
+dh (expression_net)
+seek(0x9F1B22)
+dh (expression_undo)
+seek(0x9F4DA6)
+dh (expression_copy)
+seek(0x9F4D8E)
+dh (expression_callback)
+seek(0x9F1F9E)
+dh (expression_expression1)
+seek(0x9F1FCE)
+dh (expression_expression1)
+seek(0x9EE082)
+dh (expression_rotationzoomB)
+
+seek(0x9FF0AC)
+dw (expression_normal)
+dw (expression_laugh), (expression_angry), (expression_sad), (expression_smile)
+dw (expression_sleep)
+
+//Move Number
+seek(0x9F1FB2)
+dh $0016
+seek(0x9F1FBA)
+dh $0018
+seek(0x9F1FDE)
+dh $0016
+seek(0x9F1FEE)
+dh $0018
+
+//Pattern Maker
+seek(0xA426B8)
+base 0x802A0C20
+pattern_pen: //802A0C20
+putTextnoSeek("Pen")
+pattern_eraser: //802A0C28
+putTextnoSeek("Eraser")
+pattern_thin: //802A0C34
+putTextnoSeek("Thin")
+pattern_normal: //802A0C3C
+putTextnoSeek("Normal")
+pattern_large: //802A0C44
+putTextnoSeek("Large")
+pattern_fill: //802A0C4C
+putTextnoSeek("Fill")
+pattern_specialeffects: //802A0C58
+putTextnoSeek("Special Effects")
+pattern_clear: //802A0C68
+putTextnoSeek("Clear")
+pattern_undo: //802A0C78
+putTextnoSeek("Undo")
+pattern_free: //802A0C84
+//putTextnoSeek("Free") //Unused
+pattern_line: //802A0C90
+putTextnoSeek("Line")
+pattern_rectangle: //802A0C9C
+putTextnoSeek("Rectangle")
+pattern_filledrectangle: //802A0CA8
+putTextnoSeek("Filled Rectangle")
+pattern_circle: //802A0CC0
+putTextnoSeek("Circle")
+pattern_filledcircle: //802A0CC8
+putTextnoSeek("Filled Circle")
+pattern_selectedcolor: //802A0CDC
+putTextnoSeek("Selected Color")
+pattern_makecolor: //802A0CEC
+putTextnoSeek("Make Color")
+pattern_12page: //802A0CFC
+//putTextnoSeek("1/2")
+pattern_smooth: //802A0D0C
+putTextnoSeek("Smooth")
+pattern_flip: //802A0D1C
+putTextnoSeek("Flip")
+pattern_rotate: //802A0D2C
+putTextnoSeek("Rotate")
+pattern_brighten: //802A0D38
+putTextnoSeek("Brighten")
+pattern_darken: //802A0D48
+putTextnoSeek("Darken")
+pattern_scroll: //802A0D54
+//putTextnoSeek("Scroll")
+pattern_stamp: //802A0D60
+//putTextnoSeek("Stamp")
+pattern_sample: //802A0D6C
+putTextnoSeek("Sample")
+pattern_noise: //802A0D78
+putTextnoSeek("Noise")
+pattern_shape: //802A0D8C
+putTextnoSeek("Shape")
+pattern_coloralbum: //802A0D94
+putTextnoSeek("Color Album")
+pattern_rectangle2: //802A0DA4
+//putTextnoSeek("Rectangle") //Eraser
+pattern_circle2: //802A0DB0
+//putTextnoSeek("Circle") //Eraser
+pattern_erasecolor: //802A0DB8
+//putTextnoSeek("Fill")
+pattern_random: //802A0DCC
+putTextnoSeek("Random")
+pattern_split: //802A0DE0
+putTextnoSeek("Split")
+pattern_huechange: //802A0DF0
+putTextnoSeek("Hue Change")
+
+seek(0xA42A98)
+putTextnoSeek("")
+
+//Change pointers
+seek(0xA42AA0)
+dw (pattern_line), (pattern_rectangle), (pattern_circle), (pattern_filledrectangle)
+dw (pattern_filledcircle), (pattern_thin), (pattern_normal), (pattern_large)
+dw (pattern_thin), (pattern_normal), (pattern_large), (pattern_rectangle)
+dw (pattern_circle), (pattern_fill), (pattern_flip), (pattern_rotate)
+dw (pattern_split), (pattern_huechange), (pattern_brighten), (pattern_darken)
+dw (pattern_smooth), (pattern_noise)
+
+seek(0xA2FD66)
+dh (pattern_pen)
+seek(0xA3000A)
+dh (pattern_eraser)
+seek(0xA2FB8A)
+dh (pattern_fill)
+seek(0xA3017A)
+dh (pattern_specialeffects)
+seek(0xA30A42)
+dh (pattern_clear)
+seek(0xA2DEA2)
+dh (pattern_undo)
+seek(0xA2E832)
+dh (pattern_selectedcolor)
+seek(0xA2E83E)
+dh (pattern_makecolor)
+seek(0xA3101E)
+dh (pattern_sample)
+seek(0xA2FE86)
+dh (pattern_shape)
+seek(0xA31A02)
+dh (pattern_coloralbum)
+seek(0xA32E1A)
+dh (pattern_random)
+
+//Talent Info Menu
+//802A8DC0
+putTextASCII(0x92DF80, "Birth/yr")
+putTextASCII(0x92DF94, "") //"Gender") (Can't put that in)
+putTextASCII(0x92DF9C, "Birth")
+putTextASCII(0x92DFA4, "")
+putTextASCII(0x92DFA8, "/")
+putTextASCII(0x92DFAC, "")
+putTextASCII(0x92DFB0, "yr")
+
+//Gender Position
+seek(0x92B096)
+dh $00A0
+
+//'/' Position
+seek(0x92B18E)
+dh $00D0
+
+//Font Fix
+seek(0x92B0B2)
+dh $0300-$0300 //Birth
+seek(0x92B15A)
+dh $0580-$0300 //'/'
+seek(0x92B202)
+dh $0600-$0300 //yr
+
+putText(0x92FB40, "Random")
+putText(0x92FB60, "Clear")
+putText(0x92FB80, "Undo")
+putText(0x92FBA0, "Name")
+putText(0x92FBC0, "Job")
+putText(0x92FBE0, "Favorite Phrase")
+putText(0x92FC00, "Free Space 1")
+putText(0x92FC20, "Free Space 2")
+putText(0x92FC40, "Free Space 3")
+putText(0x92FC60, "Free Space 4")
+putText(0x92FC80, "Gender")
+putText(0x92FCA0, "Birthday")
+putText(0x92FCC0, "Age")
+
+//Random Names
+seek(0x930D10)
+base 0x802ABB50
+//TODO LATER
+
+//Writer
+seek(0x911E40)
+base 0x8029C8D0
+writer_hiragana:
+putTextnoSeek("Hiragana")
+writer_katakana:
+putTextnoSeek("Katakana")
+writer_letters:
+putTextnoSeek("AaBbCc")
+writer_kanji:
+putTextnoSeek("Kanji")
+writer_all:
+putTextnoSeek("All")
+writer_space:
+putTextnoSeek("Space")
+writer_left:
+putTextnoSeek("Left")
+writer_right:
+putTextnoSeek("Right")
+writer_erase:
+putTextnoSeek("Erase")
+writer_eraseall:
+putTextnoSeek("Erase All")
+writer_undo:
+putTextnoSeek("Undo")
+writer_done:
+putTextnoSeek("Done")
+writer_back:
+putTextnoSeek("Back")
+writer_nextpage:
+//putTextnoSeek("Next Page") //Unused?
+
+seek(0x912028)
+putTextnoSeek("1/1")
+
+//Change pointers
+seek(0x911F0C)
+dw (writer_back)
+
+seek(0x911F34)
+dw (writer_hiragana)
+seek(origin() + 0x10)
+dw (writer_katakana)
+seek(origin() + 0x10)
+dw (writer_letters)
+seek(origin() + 0x10)
+dw (writer_kanji)
+seek(origin() + 0x10)
+dw (writer_all)
+seek(origin() + 0x10)
+dw (writer_space)
+seek(origin() + 0x10)
+dw (writer_left)
+seek(origin() + 0x10)
+dw (writer_right)
+seek(origin() + 0x10)
+dw (writer_erase)
+seek(origin() + 0x10)
+dw (writer_eraseall)
+seek(origin() + 0x10)
+dw (writer_undo)
+seek(origin() + 0x10)
+dw (writer_done)
+
+output "914B78.AEEC.Kanji.yay1.bin"
+putText(0x17AA0, "* Pick the first kana *")
+
+output "Mario Artist - Talent Studio.ndd"
+//Remove Page 00F9 011E 00D7 0000
+seek(0x19516A)
+dh $0000
+
+//To translate (Talent Studio)
+//Talent Info (Random stuff)

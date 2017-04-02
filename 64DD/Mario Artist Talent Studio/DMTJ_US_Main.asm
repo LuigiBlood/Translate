@@ -151,6 +151,17 @@ macro putTextSJIS7noSeek(text, text2, text3, text4, text5, text6, text7) {
   dh 0x0000
 }
 
+macro putTextASCII(n, text) {
+  ASCIIMap()
+  seek({n})
+  db {text}, 0
+}
+
+macro putTextASCIInoSeek(text) {
+  ASCIIMap()
+  db {text}, 0
+}
+
 macro putTextASCIIBox(n, text, symbol, text2) {
   ASCIIMap()
   seek({n})
@@ -185,9 +196,10 @@ macro ShiftJISMap() {
 }
 
 macro ASCIIMap() {
-  map ' ', $20, $60
+  map 0, 0, 256
 }
 
 include "DMTJ_US_SaveLoad.asm"
+include "DMTJ_US_GBCam.asm"
 include "DMTJ_US_MainMenu.asm"
 include "DMTJ_US_TalentStudio.asm"

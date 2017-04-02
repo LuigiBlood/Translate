@@ -190,3 +190,7 @@ macro ASCIIMap() {
 
 seek(0x8AD9F0)
 insert "8AD9F0.17453.SaveLoad.yay1.bin.yay"
+seek(0x914B78)
+insert "914B78.AEEC.Kanji.yay1.bin.yay"
+seek(0x8E7E48)
+insert "8E7E48.CCC7.GBCam.yay1.bin.yay"
