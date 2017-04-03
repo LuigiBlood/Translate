@@ -59,7 +59,7 @@ putTextnoSeek("Capture Cartridge")
 menu3_gbcamera:
 putTextnoSeek("GameBoy Camera")
 menu3_load2ddrawing:
-putTextnoSeek("Load [2D Drawing]")
+putTextnoSeek("Load [2D Paint]")
 menu3_makeup:
 putTextnoSeek("Makeup")
 menu3_expressions:
@@ -2681,6 +2681,3 @@ output "Mario Artist - Talent Studio.ndd"
 //Remove Page 00F9 011E 00D7 0000
 seek(0x19516A)
 dh $0000
-
-//To translate (Talent Studio)
-//Talent Info (Random stuff)

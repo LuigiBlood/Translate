@@ -28,6 +28,11 @@ macro putTextnoSeek(text) {
   dh 0x0000
 }
 
+macro putTextnoSeeknoEnd(text) {
+  RegularMap()
+  dh {text}
+}
+
 macro putText2(n, text) {
   seek({n})
   putText2noSeek({text})
@@ -203,3 +208,4 @@ include "DMTJ_US_SaveLoad.asm"
 include "DMTJ_US_GBCam.asm"
 include "DMTJ_US_MainMenu.asm"
 include "DMTJ_US_TalentStudio.asm"
+include "DMTJ_US_MovieStudio.asm"
