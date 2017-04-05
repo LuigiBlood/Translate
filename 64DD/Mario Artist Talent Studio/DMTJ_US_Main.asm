@@ -53,6 +53,19 @@ macro putText3(n, text, text2) {
   dh 0x0000
 }
 
+macro putText3noSeek(pre, text) {
+  RegularMap()
+  dh {pre}
+  dh {text}
+  dh 0x0000
+}
+
+macro putText3noSeeknoEnd(pre, text) {
+  RegularMap()
+  dh {pre}
+  dh {text}
+}
+
 macro putText4noSeek(pre, text, post) {
   RegularMap()
   dh {pre}

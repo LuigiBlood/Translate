@@ -74,6 +74,159 @@ dw (moviemain_sample1), (moviemain_sample2), (moviemain_sample3)
 seek(0x10534AE)
 dh (moviemain_clear)
 
+//Movie Setup Actor
+seek(0xF485D4)
+base 0x80357DC4
+movieactorerror_corrupted: //80357DC4
+putTextnoSeek("Data is corrupted.")
+movieactorerror_replace: //80357DF0
+putTextnoSeek("Please replace the disk.")
+
+seek(0xF48668)
+base 0x80357E58
+movieactor_rotatezoomB: //80357E58
+putTextnoSeek("Rotate/Zoom (Button B)")
+movieactor_actor1: //80357E78
+putTextnoSeek("Actor 1")
+movieactor_remove: //80357E90
+putTextnoSeek("Erase")
+movieactor_pagefeed11: //80357E9C
+putTextnoSeek("1/1")
+movieactor_exit: //80357EB0
+putTextnoSeek("Exit")
+movieactor_selectcast: //80357EB8
+putTextnoSeek("Samples")
+movieactor_loadtalent: //80357ED4
+putTextnoSeek("Load [Talent]")
+movieactor_loadmodel: //80357EEC
+putTextnoSeek("Load [3D Work]")
+movieactor_savetalent: //80357F08
+putTextnoSeek("Save [Talent]")
+movieactor_selectfromtalentstudio: //80357F20
+putTextnoSeek("From the Studio")
+movieactor_random: //80357F44
+putTextnoSeek("Random")
+movieactor_talent1: //80357F58
+putTextnoSeek("Talent 1")
+movieactor_talent11: //80357F64
+putTextnoSeek("Talent 11")
+movieactor_work1: //80357F74
+putTextnoSeek("3D Work 1")
+
+//803581B0 $0008
+putTextASCII(0xF489C0, "The action in which Actor 1|appears will be deleted.|Is it OK?")
+//803581FC $0008
+putTextASCII(0xF48A0C, "The action in which Actor 1|appears will be deleted.|Is it OK?")
+//putTextASCII(0xF48A0C, "The action & effects in which| Actor 1 appears will be deleted.|Is it OK?")
+//80358254 $002E
+putTextASCII(0xF48A64, "The action in which Actor 1|appears will be deleted.|Is it OK?")
+//putTextASCII(0xF48A64, "If you swap the actor with a Talent,|the action & effects in which|Actor 1 appears will be deleted.||Is it OK?")
+//803582C4 $002E
+putTextASCII(0xF48AD4, "The action in which Actor 1|appears will be deleted.|Is it OK?")
+//putTextASCII(0xF48AD4, "If you swap the actor with 3D Work,|the action & effects in which| Actor 1 appears will be deleted.||Is it OK?")
+//80358340
+putTextASCII(0xF48B50, " 1 2 3")
+
+//change pointers
+seek(0xF487A0)
+dw (movieactor_exit)
+seek(origin() + 20)
+dw (movieactor_loadtalent)
+seek(origin() + 20)
+dw (movieactor_loadmodel)
+seek(origin() + 20)
+dw (movieactor_savetalent)
+seek(origin() + 20)
+dw (movieactor_selectcast)
+seek(origin() + 20)
+dw (movieactor_selectfromtalentstudio)
+seek(origin() + 20)
+dw (movieactor_random)
+seek(origin() + 20)
+dw (movieactor_actor1)
+seek(origin() + 20)
+dw (movieactor_actor1)
+seek(origin() + 20)
+dw (movieactor_actor1)
+seek(0xF488A8)
+dw (movieactor_remove)
+seek(origin() + 20)
+dw (movieactor_pagefeed11)
+
+seek(0xF0A2EA)
+dh (movieactorerror_corrupted)
+seek(0xF0A302)
+dh (movieactorerror_replace)
+
+seek(0xF0E0BA)
+dh (movieactor_actor1)
+seek(0xF0E0C2)
+dh $000C
+seek(0xF0E0CA)
+dh (movieactor_actor1)
+
+seek(0xF0DE02)
+dh (movieactor_pagefeed11)
+seek(0xF0DE0A)
+dh $0000
+seek(0xF0DE12)
+dh (movieactor_pagefeed11)
+seek(0xF0DE1A)
+dh $0004
+
+seek(0xF0DF2A)
+dh (movieactor_talent1)
+seek(0xF0DF32)
+dh $000E
+seek(0xF0DF3A)
+dh (movieactor_talent1)
+
+seek(0xF0DF56)
+dh (movieactor_talent1)
+seek(0xF0DF5E)
+dh $000E
+seek(0xF0DF66)
+dh (movieactor_talent1)
+
+seek(0xF0DF92)
+dh (movieactor_talent1)
+seek(0xF0DF9A)
+dh $000E
+seek(0xF0DFA2)
+dh (movieactor_talent1)
+
+seek(0xF0DFBA)
+dh (movieactor_talent11)
+seek(0xF0DFC2)
+dh $0010
+seek(0xF0DFCA)
+dh (movieactor_talent11)
+
+seek(0xF0DFE6)
+dh (movieactor_work1)
+seek(0xF0DFEE)
+dh $0010
+seek(0xF0DFF6)
+dh (movieactor_work1)
+
+//ASCII text offset to Actor digit
+seek(0xF0CCF2)
+dh $0019
+seek(0xF0CD0E)
+dh $0019
+seek(0xF0CD2A)
+dh $0019
+seek(0xF0CD46)
+dh $0019
+
+//Movie Setup 3D model names
+putTextASCII(0xF48210, "Car")
+putTextASCII(0xF48218, "Airplane")
+putTextASCII(0xF48224, "Fighter")
+putTextASCII(0xF48230, "UFO")
+putTextASCII(0xF48238, "Future Car")
+putTextASCII(0xF48248, "Unknown")
+
 //Movie Setup BG
 seek(0x10BFDE4)
 base 0x804016B4
@@ -807,3 +960,349 @@ dw (movieitem_sword), (movieitem_axe), (movieitem_spear), (movieitem_club), (mov
 dw (movieitem_magicstaff), (movieitem_magicwand), (movieitem_pistol), (movieitem_machinegun), (movieitem_rifle), (movieitem_sfgun), (movieitem_sfrifle)
 dw (movieitem_juice), (movieitem_fries), (movieitem_mushroom), (movieitem_meat), (movieitem_plushdoll), (movieitem_bag), (movieitem_suitcase)
 dw (movieitem_broom), (movieitem_pickaxe), (movieitem_umbrella), (movieitem_carwheel), (movieitem_fork), (movieitem_camera), (movieitem_gameboy)
+
+//Movie Production Camera Work List
+putText(0xF505CC, "Original")
+putText(0xF505F4, "Close-Up")
+putText(0xF5061C, "Bust Shot")
+putText(0xF50644, "Medium Shot")
+putText(0xF5066C, "Full Shot")
+putText(0xF50694, "Long Shot")
+putText(0xF506BC, "Extreme Long Shot")
+
+putText(0xF506E4, "Side Shot")
+putText(0xF5070C, "Back Shot")
+putText(0xF50734, "High Angle")
+putText(0xF5075C, "Low Angle")
+putText(0xF50784, "To the Left")
+putText(0xF507AC, "To the Right")
+putText(0xF507D4, "Behind Feet")
+
+putText(0xF507FC, "High Angle Rotation")
+putText(0xF50824, "Low Angle Rotation")
+putText(0xF5084C, "From Left to Right")
+putText(0xF50874, "From Right to Left")
+putText(0xF5089C, "Above Down to Up")
+putText(0xF508C4, "Above Left to Right")
+putText(0xF508EC, "From Bottom to Top")
+
+putText(0xF50914, "Zoom In Front")
+putText(0xF5093C, "Zoom Out Front")
+putText(0xF50964, "Body Rotation")
+putText(0xF5098C, "Body Rotation Zoom")
+putText(0xF509B4, "Above Rotation Zoom")
+putText(0xF509DC, "Below Rotation Zoom")
+putText(0xF50A04, "High to Low Angle")
+
+putText(0xF50A2C, "Tilt Rotation Zoom")
+putText(0xF50A54, "Tilted Zoom In")
+putText(0xF50A7C, "Spin Zoom Out")
+putText(0xF50AA4, "Wham")
+putText(0xF50ACC, "Shake")
+putText(0xF50AF4, "Going In")
+putText(0xF50B1C, "Going Out")
+
+//Movie Production Animation List
+seek(0xF46510)
+base 0x80355D00
+motion_boywalk: //80355D00
+putText3noSeek($011B, " Walk")
+motion_girlwalk: //80355D14
+putText3noSeek($011C, " Walk")
+motion_slowwalk: //80355D28
+putTextnoSeek("Quiet")
+motion_angrywalk: //80355D38
+putTextnoSeek("Angry")
+motion_dizzywalk: //80355D48
+putTextnoSeek("Dizzy")
+motion_tigercrawl: //80355D58
+putTextnoSeeknoEnd("Tiger ")
+motion_crawl: //80355D64
+putTextnoSeek("Crawl")
+motion_boyrun: //80355D74
+putText3noSeek($011B, " Running")
+motion_girlrun: //80355D88
+putText3noSeek($011C, " Running")
+motion_bendrun: //80355D9C
+putTextnoSeek("Bend Running")
+motion_rushrun: //80355DAC
+putTextnoSeek("In a Rush")
+motion_jogging: //80355DBC
+putTextnoSeek("Jogging")
+motion_tiredwalk: //80355DC8
+putTextnoSeek("Tired")
+motion_skip: //80355DD8
+putTextnoSeek("Skip")
+weight_boystanding: //80355DE4
+putText3noSeeknoEnd($011B, " ")
+object_still: //80356494
+putTextnoSeek("Standing")
+weight_girlstanding: //80355DF8
+putText3noSeek($011C, " Standing")
+weight_lookaround: //80355E0C
+putTextnoSeek("Look Around")
+weight_battlestance: //80355E1C
+putTextnoSeek("Battle Stance")
+weight_sitting: //80355E28
+putTextnoSeek("Sitting")
+weight_sitcrossleg: //80355E30
+putTextnoSeek("Cross-legged")
+weight_dozing: //80355E38
+putTextnoSeek("Dozing Off")
+weight_boyjump: //80355E44
+putText3noSeek($011B, " Jump")
+weight_girljump: //80355E58
+putText3noSeek($011C, " Jump")
+battle_fallonback: //80355E6C
+putTextnoSeek("Fall back")
+battle_fallonfront: //80355E7C
+putTextnoSeek("Fall front")
+feel_unfair: //80355E8C
+putTextnoSeek("Unfair!")
+battle_faint: //80355E9C
+putTextnoSeek("Faint")
+battle_stepback: //80355EA8
+putTextnoSeek("Step Back")
+feel_yup: //80355EBC
+putTextnoSeek("Yup!")
+feel_donotwant: //80355EC8
+putTextnoSeek("I don't want!")
+feel_isthatso: //80355ED8
+putTextnoSeek("Is that so?")
+weight_bow: //80355EEC
+putTextnoSeek("Bow")
+feel_clap: //80355EFC
+putTextnoSeek("Claps")
+weight_wave: //80355F10
+putTextnoSeek("Wave")
+feel_dontknow: //80355F1C
+putTextnoSeek("I don't know!")
+weight_yawn: //80355F30
+putTextnoSeek("Yawning")
+weight_sneezing: //80355F40
+putTextnoSeek("Sneezing")
+battle_collapse: //80355F50
+putTextnoSeek("Collapse")
+battle_hittop: //80355F5C
+putTextnoSeek("Above Hit")
+battle_hitfront: //80355F6C
+putTextnoSeek("Front Hit")
+motion_climb: //80355F7C
+putTextnoSeek("Climb")
+feel_falling: //80355F88
+putTextnoSeek("Falling")
+feel_oh: //80355F98
+putTextnoSeek("Oh!")
+feel_woah: //80355FA4
+putTextnoSeek("Woah!")
+feel_happy: //80355FB8
+putTextnoSeek("Happy!")
+feel_hurray: //80355FC8
+putTextnoSeek("Hurray!")
+feel_yes: //80355FD8
+putTextnoSeek("Yes!")
+feel_hahaha: //80355FEC
+putTextnoSeek("Hahaha!")
+feel_ahem: //80356000
+putTextnoSeek("Ahem!")
+feel_vexed: //80356010
+putTextnoSeek("I'm mad!")
+feel_nervous: //80356024
+putTextnoSeek("Nervous")
+feel_crying: //80356034
+putTextnoSeek("Crying")
+feel_wiping: //80356040
+putTextnoSeek("Wiping")
+feel_stop: //80356050
+putTextnoSeek("Stop!")
+feel_sorry: //80356060
+putTextnoSeek("Sorry!")
+feel_cold: //8035606C
+putTextnoSeek("I'm freezing!")
+rhythm_shake: //8035607C
+putTextnoSeek("Shake")
+rhythm_funky: //8035608C
+putTextnoSeek("Funky")
+rhythm_aerobic: //803560A0
+putTextnoSeek("Aerobic")
+rhythm_hula: //803560B0
+putTextnoSeek("Hula")
+rhythm_victory: //803560BC
+putTextnoSeek("Victory")
+rhythm_robot: //803560D0
+motion_robotwalk: //80356328
+putTextnoSeek("Robot")
+rhythm_ballet: //803560DC
+putTextnoSeek("Ballet")
+rhythm_cancan: //803560E4
+putTextnoSeek("Cancan")
+rhythm_bonfest: //803560F4
+putTextnoSeek("Bon Dance")
+rhythm_cossack: //80356100
+putTextnoSeek("Cossack")
+rhythm_boytapping: //80356110
+putText3noSeek($011B, " Tap")
+rhythm_girltapping: //80356124
+putText3noSeek($011C, " Tap")
+weight_boygreet: //80356138
+putText3noSeek($011B, " Greetings")
+weight_girlgreet: //8035614C
+putText3noSeek($011C, " Greetings")
+rhythm_warmingup: //80356160
+putTextnoSeek("Warming Up")
+weight_situp: //80356174
+putTextnoSeek("Sit-up")
+rhythm_squatjump: //80356180
+putTextnoSeek("Squat Jump")
+battle_chop: //8035618C
+putTextnoSeek("Chop")
+battle_turnkick: //803561A0
+putTextnoSeeknoEnd("Turning ")
+battle_kick: //80356198
+putTextnoSeek("Kick")
+battle_punch: //803561AC
+putTextnoSeek("Punch")
+weight_bodypride: //803561B4
+putTextnoSeek("Showoff")
+battle_stomping: //803561C4
+putTextnoSeek("Stomp")
+motion_handstand: //803561D0
+putTextnoSeek("Handstand")
+motion_skating: //803561E0
+putTextnoSeek("Skating")
+motion_frontcrawl: //803561F0
+putTextnoSeek("Crawl Swim")
+motion_breaststroke: //803561FC
+putTextnoSeek("Breaststroke")
+motion_diverswim: //80356208
+putTextnoSeek("Diver Swim")
+item_clarinet: //80356218
+putTextnoSeek("Clarinet")
+item_canewalk: //8035622C
+putTextnoSeek("Cane")
+item_elecguitar: //80356240
+putTextnoSeeknoEnd("Electric ")
+item_guitar: //80356288
+putTextnoSeek("Guitar")
+item_spear: //80356254
+putTextnoSeek("Spear")
+item_machinegun: //80356264
+putTextnoSeeknoEnd("Machine ")
+item_shootgun: //80356298
+putTextnoSeek("Gun")
+item_saxplay: //80356278
+putTextnoSeek("Sax")
+item_broom: //803562AC
+putTextnoSeek("Broom")
+item_axe: //803562BC
+putTextnoSeek("Axe")
+item_sword: //803562D0
+putTextnoSeek("Sword")
+item_pickaxe: //803562DC
+putTextnoSeek("Pickaxe")
+item_wand: //803562EC
+putTextnoSeek("Wand")
+item_mike: //80356300
+putTextnoSeek("Sing")
+motion_zombiewalk: //80356318
+putTextnoSeek("Zombie")
+motion_monsterwalk: //80356334
+putTextnoSeek("Monster")
+battle_spitflames: //80356348
+putTextnoSeek("Spit Fire")
+weight_herotf: //80356358
+putTextnoSeek("Hero Transformation")
+weight_herojump: //8035636C
+putTextnoSeek("Hero Jump")
+motion_fly: //80356380
+putTextnoSeek("Fly")
+battle_herokick: //8035638C
+putTextnoSeek("Hero Kick")
+weight_heroinetf: //8035639C
+putTextnoSeek("Heroine Transformation")
+motion_floating: //803563B0
+object_floating: //80356544
+putTextnoSeek("Floating")
+motion_march: //803563C4
+putTextnoSeek("March")
+weight_salute: //803563D0
+putTextnoSeek("Salute")
+motion_flapfly: //803563EC
+putTextnoSeeknoEnd("Bird ")
+motion_flaprun: //803563DC
+putTextnoSeek("Flapping")
+item_katana: //80356400
+putTextnoSeek("Katana")
+item_juice: //80356410
+putTextnoSeek("Juice")
+item_eatingfries: //80356420
+putTextnoSeek("Fries")
+item_meat: //80356430
+putTextnoSeek("Meat")
+item_umbrella: //80356440
+putTextnoSeek("Parasol")
+item_wheel: //80356454
+putTextnoSeek("Wheel")
+item_camera: //80356464
+putTextnoSeek("Take Photo")
+album_action1: //80356474 (8035647E)
+putTextnoSeek("Action 1")
+album_action10: //80356484 (8035648E)
+putTextnoSeek("Action 10")
+object_roundabout: //803564A4
+putTextnoSeek("Roundabout")
+object_somersault: //803564B4
+putTextnoSeek("Somersault")
+object_drill: //803564C4
+putTextnoSeek("Drill")
+object_rolling: //803564D4
+putTextnoSeek("Rolling")
+object_squashed: //803564E8
+putTextnoSeek("Squash")
+object_crash: //803564FC
+putTextnoSeek("Crash")
+object_flabby: //80356510
+putTextnoSeek("Flabby")
+object_inflate: //80356520
+putTextnoSeek("Inflate")
+object_shrink: //80356534
+putTextnoSeek("Shrink")
+object_wobbly: //80356554
+putTextnoSeek("Wobbly")
+object_bounce: //80356564
+putTextnoSeek("Bounce")
+object_moving: //80356574
+putTextnoSeek("Moving???")
+
+//change pointers
+seek(0xEF4F12)
+dh (album_action1)
+seek(0xEF4F1A)
+dh $000E
+seek(0xEF4F4A)
+dh (album_action10)
+seek(0xEF4F52)
+dh $000E
+seek(0xEF4F6E)
+dh (album_action10)
+seek(0xEF4F72)
+dh $0010
+
+seek(0xEF4F92)
+dh (album_action10)
+seek(0xEF4F9A)
+dh $000E
+seek(0xEF4FB6)
+dh (album_action10)
+seek(0xEF4FBA)
+dh $0010
+
+seek(0xF46D94)
+dw (motion_boywalk), (motion_girlwalk), (motion_slowwalk), (motion_angrywalk), (motion_dizzywalk), (motion_march), (motion_handstand), (motion_boyrun), (motion_girlrun), (motion_bendrun), (motion_rushrun), (motion_jogging), (motion_tiredwalk), (motion_flaprun), (motion_skip), (motion_skating), (motion_zombiewalk), (motion_robotwalk), (motion_monsterwalk), (motion_crawl), (motion_tigercrawl), (motion_fly), (motion_flapfly), (motion_floating), (motion_frontcrawl), (motion_breaststroke), (motion_diverswim), (motion_climb)
+dw (item_guitar), (item_elecguitar), (item_clarinet), (item_saxplay), (item_mike), (item_sword), (item_axe), (item_spear), (item_katana), (item_canewalk), (item_wand), (item_shootgun), (item_machinegun), (item_juice), (item_eatingfries), (item_meat), (item_broom), (item_pickaxe), (item_umbrella), (item_wheel), (item_camera)
+dw (feel_happy), (feel_hurray), (feel_yes), (feel_hahaha), (feel_yup), (feel_clap), (feel_isthatso), (feel_donotwant), (feel_stop), (feel_ahem), (feel_dontknow), (feel_vexed), (feel_nervous), (feel_falling), (feel_crying), (feel_wiping), (feel_oh), (feel_woah), (feel_unfair), (feel_sorry), (feel_cold)
+dw (weight_boystanding), (weight_girlstanding), (weight_battlestance), (weight_lookaround), (weight_sitting), (weight_sitcrossleg), (weight_dozing), (weight_boyjump), (weight_girljump), (weight_herojump), (weight_bow), (weight_boygreet), (weight_girlgreet), (weight_wave), (weight_herotf), (weight_heroinetf), (weight_yawn), (weight_sneezing), (weight_salute), (weight_situp), (weight_bodypride)
+dw (rhythm_boytapping), (rhythm_girltapping), (rhythm_shake), (rhythm_funky), (rhythm_aerobic), (rhythm_hula), (rhythm_ballet), (rhythm_robot), (rhythm_victory), (rhythm_cancan), (rhythm_bonfest), (rhythm_cossack), (rhythm_squatjump), (rhythm_warmingup)
+dw (battle_punch), (battle_chop), (battle_kick), (battle_turnkick), (battle_herokick), (battle_spitflames), (battle_stomping), (battle_stepback), (battle_fallonback), (battle_fallonfront), (battle_hittop), (battle_hitfront), (battle_faint), (battle_collapse)
+dw (album_action1), (album_action10)
+dw (object_still), (object_roundabout), (object_somersault), (object_drill), (object_rolling), (object_squashed), (object_crash), (object_flabby), (object_inflate), (object_shrink), (object_floating), (object_wobbly), (object_bounce), (object_moving)

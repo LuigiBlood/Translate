@@ -739,12 +739,12 @@ menu9_createdcolor:
 putTextnoSeek("Created Color")
 menu9_firstcolor:
 putTextnoSeek("First Color")
-menu9_willbeselected:
-putTextnoSeek("Will be selected")
-menu9_willbecreated:
-putTextnoSeek("Will be created")
-menu9_willbefirst:
-putTextnoSeek("Will be first")
+menu9_selectedpattern:
+putTextnoSeek("Selected Pattern")
+menu9_createdpattern:
+putTextnoSeek("Created Pattern")
+menu9_firstpattern:
+putTextnoSeek("First Pattern")
 menu9_musicoff:
 putTextnoSeek("Music OFF")
 menu9_rotationB:
@@ -777,7 +777,7 @@ putTextnoSeek("Super Model")
 menu10_toilet:
 putTextnoSeek("Toilet")
 menu10_raindance:
-putTextnoSeek("Rain Dance")
+putTextnoSeek("Cancan")
 menu10_happystep:
 putTextnoSeek("Happy Step")
 menu10_typhoon:
@@ -1994,11 +1994,11 @@ dh (menu9_selectedcolor)
 seek(0x19546A)
 dh (menu9_createdcolor)
 seek(0x19549E)
-dh (menu9_willbefirst)
+dh (menu9_firstpattern)
 seek(0x1954C2)
-dh (menu9_willbeselected)
+dh (menu9_selectedpattern)
 seek(0x1954CA)
-dh (menu9_willbecreated)
+dh (menu9_createdpattern)
 
 seek(0x19574E)
 dh (menu9_rotationB)
