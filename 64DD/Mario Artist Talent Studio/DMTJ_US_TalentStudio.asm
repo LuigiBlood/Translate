@@ -264,7 +264,7 @@ putTextnoSeek("Angry")
 menu7_sadface:
 putTextnoSeek("Sad")
 menu7_smileface:
-putTextnoSeek("Smile")
+putTextnoSeek("Free")
 menu7_standard:
 //putTextnoSeek("Standard")
 menu7_direction:
@@ -327,7 +327,7 @@ putTextnoSeek("Listen (Angry Face)")
 menu8_listensad:
 putTextnoSeek("Listen (Sad Face)")
 menu8_listenfree:
-putTextnoSeek("Listen (Smile Face)")
+putTextnoSeek("Listen (Free Face)")
 
 //Change pointers
 
@@ -2397,7 +2397,7 @@ putTextnoSeek("Angry")
 expression_sad: //802931A8
 putTextnoSeek("Sad")
 expression_smile: //802931C0
-putTextnoSeek("Smile")
+putTextnoSeek("Free")
 expression_sleep: //802931D8
 putTextnoSeek("Sleep")
 expression_random: //802931F0
