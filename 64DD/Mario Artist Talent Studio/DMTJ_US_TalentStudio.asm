@@ -2466,7 +2466,7 @@ putTextnoSeek("Thin")
 pattern_normal: //802A0C3C
 putTextnoSeek("Normal")
 pattern_large: //802A0C44
-putTextnoSeek("Large")
+putTextnoSeek("Thick")
 pattern_fill: //802A0C4C
 putTextnoSeek("Fill")
 pattern_specialeffects: //802A0C58

@@ -547,10 +547,17 @@ dw (moviebg_earthfile), (moviebg_moonfile), (moviebg_spacefile), (moviebg_pipesf
 dw (moviebg_lightfile), (moviebg_spotfile), (moviebg_flamesfile), (moviebg_timetunnelfile), (moviebg_kaboomfile), (moviebg_jumpfile), (moviebg_miraclefile)
 
 //Placement to be changed
-movie_rotationzoomB:
-//putTextnoSeek("Rotate / Zoom (Button B)")
+//movie_rotationzoomB:
+//putTextnoSeek("Rotate/Zoom (Button B)") //80402364
+seek(0x1060E06)
+dh (movieactor_rotatezoomB / 0x10000)
+seek(0x1060E0E)
+dh (movieactor_rotatezoomB)
+
 
 //Movie Production (Part 1) 164 chars max
+putText(0x10BF130, "") //Remove Page
+
 seek(0x10C0C84)
 base 0x80402554
 prod1_random: //80402554
@@ -1360,7 +1367,7 @@ putText(0x1190820 + 40*26, "Red Line")
 putText(0x1190820 + 40*27, "Horizontal Scroll")
 putText(0x1190820 + 40*28, "Scroll Above")
 putText(0x1190820 + 40*29, "Vertical Scroll")
-putText(0x1190820 + 40*30, "Scroll Behind")
+putText(0x1190820 + 40*30, "Crawl")
 putText(0x1190820 + 40*31, "Big Scroll")
 putText(0x1190820 + 40*32, "Wave")
 putText(0x1190820 + 40*33, "Scoreboard")
@@ -1544,7 +1551,6 @@ putText(0x11BB190 + 40*25, "Appear")
 putText(0x11BB190 + 40*26, "Transparent")
 putText(0x11BB190 + 40*27, "Disappear")
 
-//Continue 806AE550
 //Movie Direct - Filter List
 putText(0x11BB660 + 40*0, "None")
 putText(0x11BB660 + 40*1, "Weak Blur")
@@ -1743,7 +1749,6 @@ putText4(0x11BBF18 + 40*136, "Proper", $00BC, "O/X")
 putText4(0x11BBF18 + 40*137, "Too Many", $00BC, "O/X")
 putText4(0x11BBF18 + 40*138, "Scattered", $00BC, "O/X")
 
-//Continue at 806B040C
 //Movie Direct - Music Effects
 putText(0x11BD51C + 40*0, "None")
 putText(0x11BD51C + 40*1, "Fade In")
@@ -2318,3 +2323,195 @@ seek(origin() + 164)
 dw (movieactionmake_undo)
 
 putTextASCII(0x102A100, "This Action|will be deleted.|Is it OK?")
+
+//Movie Direct - Graffiti Menu
+seek(0x11DDCF8)
+base 0x80294558
+moviegraffiti_exit: //80294558
+putTextnoSeek("Exit")
+moviegraffiti_undo: //80294560
+putTextnoSeek("Undo")
+moviegraffiti_draw: //8029456C
+putTextnoSeek("Draw")
+moviegraffiti_animate: //80294578
+putTextnoSeek("Animate")
+moviegraffiti_display: //8029458C
+putTextnoSeek("Display")
+moviegraffiti_graffitialbum: //802945A4
+putTextnoSeek("Graffiti Album")
+
+moviegraffiti_behindactor: //802945B8
+putTextnoSeek("Back")
+moviegraffiti_frontactor: //802945CC
+putTextnoSeek("Front")
+moviegraffiti_nextcaption: //802945DC
+putTextnoSeek("Caption")
+
+moviegraffiti_normal: //802945EC
+putTextnoSeek("Normal")
+moviegraffiti_flash: //802945F4
+putTextnoSeek("Flash")
+moviegraffiti_transparent: //80294600
+putTextnoSeek("Clear")
+moviegraffiti_fromright: //80294610
+putTextnoSeek("From Right")
+moviegraffiti_scrollright: //80294624
+putTextnoSeek("Scroll Right")
+moviegraffiti_scrollup: //80294634
+putTextnoSeek("Scroll Up")
+moviegraffiti_loopright: //80294644
+putTextnoSeek("Loop")
+
+moviegraffiti_diagonalscroll: //8029464C
+putTextnoSeek("Diagonal")
+moviegraffiti_flying: //80294660
+putTextnoSeek("Fly")
+moviegraffiti_turning: //80294668
+putTextnoSeek("Turn")
+moviegraffiti_fall: //80294670
+putTextnoSeek("Fall")
+moviegraffiti_splithorizontal: //80294678
+putTextnoSeek("Up/Down")
+moviegraffiti_splitvertical: //80294688
+putTextnoSeek("Left/Right")
+moviegraffiti_crushed: //8029469C
+putTextnoSeek("Crush")
+
+moviegraffiti_growbig: //802946A8
+putTextnoSeek("Closer")
+moviegraffiti_growsmall: //802946B8
+putTextnoSeek("Away")
+moviegraffiti_wobble: //802946C8
+putTextnoSeek("Wobble")
+moviegraffiti_rotatetwice: //802946DC
+putTextnoSeeknoEnd("More ")
+moviegraffiti_rotate: //802946D0
+putTextnoSeek("Rotation")
+moviegraffiti_rise: //802946E8
+putTextnoSeek("Rise")
+moviegraffiti_backscroll: //802946F4
+putTextnoSeek("Crawl")
+
+seek(0x11D9072)
+dh (moviegraffiti_exit)
+seek(0x11D957A)
+dh (moviegraffiti_undo)
+seek(0x11D913A)
+dh (moviegraffiti_draw)
+seek(0x11D924E)
+dh (moviegraffiti_animate)
+seek(0x11D935A)
+dh (moviegraffiti_display)
+seek(0x11D9466)
+dh (moviegraffiti_graffitialbum)
+
+seek(0x11DDEA8)
+dw (moviegraffiti_normal), (moviegraffiti_flash), (moviegraffiti_transparent), (moviegraffiti_fromright), (moviegraffiti_scrollright), (moviegraffiti_scrollup), (moviegraffiti_loopright)
+dw (moviegraffiti_diagonalscroll), (moviegraffiti_flying), (moviegraffiti_turning), (moviegraffiti_fall), (moviegraffiti_splithorizontal), (moviegraffiti_splitvertical), (moviegraffiti_crushed)
+dw (moviegraffiti_growbig), (moviegraffiti_growsmall), (moviegraffiti_wobble), (moviegraffiti_rotate), (moviegraffiti_rotatetwice), (moviegraffiti_rise), (moviegraffiti_backscroll)
+dw (moviegraffiti_behindactor), (moviegraffiti_frontactor), (moviegraffiti_nextcaption)
+
+//Graffiti Editor
+seek(0x11DD5E4)
+base 0x80293E44
+moviegraffitiedit_page: //80293E44
+putTextnoSeek("")
+moviegraffitiedit_pen: //80293E4C
+putTextnoSeek("Pen")
+moviegraffitiedit_spray: //80293E54
+putTextnoSeek("Spray")
+moviegraffitiedit_thin: //80293E60
+moviegraffitiedit_erasethin: //80293F80
+putTextnoSeek("Thin")
+moviegraffitiedit_normal: //80293E68
+moviegraffitiedit_erasenormal: //80293F8C
+putTextnoSeek("Normal")
+moviegraffitiedit_thick: //80293E70
+moviegraffitiedit_erasethick: //80293F94
+putTextnoSeek("Thick")
+moviegraffitiedit_shapes: //80293E78
+putTextnoSeek("Shape")
+moviegraffitiedit_eraser: //80293E80
+putTextnoSeek("Eraser")
+moviegraffitiedit_fill: //80293E8C
+moviegraffitiedit_erasecolor: //80293FD8
+putTextnoSeek("Fill")
+moviegraffitiedit_characterstamps: //80293E98
+putTextnoSeek("Character Stamps")
+moviegraffitiedit_stampcolor: //80293EA8
+putTextnoSeek("Stamp Color")
+moviegraffitiedit_clear: //80293EB8
+putTextnoSeek("Clear")
+moviegraffitiedit_undo: //80293EC8
+putTextnoSeek("Undo")
+moviegraffitiedit_free: //80293ED4
+//putTextnoSeek("Free")
+moviegraffitiedit_line: //80293EE0
+putTextnoSeek("Line")
+moviegraffitiedit_filledrectangle: //80293EF8
+putTextnoSeeknoEnd("Filled ")
+moviegraffitiedit_rectangle: //80293EEC
+putTextnoSeek("Rectangle")
+moviegraffitiedit_filledcircle: //80293F18
+putTextnoSeeknoEnd("Filled ")
+moviegraffitiedit_circle: //80293F10
+putTextnoSeek("Circle")
+moviegraffitiedit_12page: //80293F2C
+putTextnoSeek("1/2")
+moviegraffitiedit_hiragana: //80293F3C
+putTextnoSeek("Hiragana")
+moviegraffitiedit_katakana: //80293F48
+putTextnoSeek("Katakana")
+moviegraffitiedit_kanji: //80293F54
+putTextnoSeek("Kanji")
+moviegraffitiedit_uppercase: //80293F5C
+putTextnoSeek("Uppercase")
+moviegraffitiedit_lowercase: //80293F68
+putTextnoSeek("Lowercase")
+moviegraffitiedit_numbersymbol: //80293F70
+putTextnoSeek("Number/Symbol")
+moviegraffitiedit_exit: //80293FA0
+putTextnoSeek("Exit")
+moviegraffitiedit_cut: //80293FA8
+putTextnoSeek("Cut")
+moviegraffitiedit_grid: //80293FBC
+putTextnoSeek("Grid")
+moviegraffitiedit_colorpattern1: //80293FEC
+putTextnoSeek("Color Pattern 1")
+
+seek(0x11D0AC2)
+dh (moviegraffitiedit_shapes)
+seek(0x11D0EC6)
+dh (moviegraffitiedit_eraser)
+seek(0x11CE7BA)
+dh (moviegraffitiedit_fill)
+seek(0x11CEDBA)
+dh (moviegraffitiedit_characterstamps)
+seek(0x11D150E)
+dh (moviegraffitiedit_stampcolor)
+seek(0x11CCD9A)
+dh (moviegraffitiedit_clear)
+seek(0x11CDEDA)
+dh (moviegraffitiedit_undo)
+seek(0x11D09F6)
+dh (moviegraffitiedit_exit)
+seek(0x11D2036)
+dh (moviegraffitiedit_cut)
+seek(0x11D1A1A)
+dh (moviegraffitiedit_grid)
+seek(0x11CE062)
+dh (moviegraffitiedit_colorpattern1)
+seek(0x11CE086)
+dh (moviegraffitiedit_colorpattern1 + 28)
+
+seek(0x11DD7AC)
+dw (moviegraffitiedit_pen), (moviegraffitiedit_spray), (moviegraffitiedit_thin), (moviegraffitiedit_normal), (moviegraffitiedit_thick), (moviegraffitiedit_line), (moviegraffitiedit_rectangle), (moviegraffitiedit_circle), (moviegraffitiedit_filledrectangle), (moviegraffitiedit_filledcircle), (moviegraffitiedit_hiragana), (moviegraffitiedit_katakana), (moviegraffitiedit_kanji), (moviegraffitiedit_lowercase), (moviegraffitiedit_uppercase), (moviegraffitiedit_numbersymbol), (moviegraffitiedit_erasethin), (moviegraffitiedit_erasenormal), (moviegraffitiedit_erasethick), (moviegraffitiedit_thin), (moviegraffitiedit_normal), (moviegraffitiedit_thick), (moviegraffitiedit_rectangle), (moviegraffitiedit_circle), (moviegraffitiedit_erasecolor)
+
+//Graffiti Album
+putText(0x11F6138 + 40*0, "Save & Exit")
+putText(0x11F6138 + 40*1, "Undo")
+putText(0x11F6138 + 40*2, "Grab Graffiti")
+putText(0x11F6138 + 40*3, "Replace")
+putText(0x11F6138 + 40*4, "Use Graffiti")
+
+putTextASCII(0x11DE000, "This Graffiti|will be deleted.|Is it OK?")
