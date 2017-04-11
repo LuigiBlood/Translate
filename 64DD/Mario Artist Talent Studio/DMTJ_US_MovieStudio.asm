@@ -74,6 +74,9 @@ dw (moviemain_sample1), (moviemain_sample2), (moviemain_sample3)
 seek(0x10534AE)
 dh (moviemain_clear)
 
+putTextASCII(0x10C08D8, "Movie Picture")
+putTextASCII(0x10C0A10, "Movie")
+
 //Movie Setup Actor
 seek(0xF485D4)
 base 0x80357DC4

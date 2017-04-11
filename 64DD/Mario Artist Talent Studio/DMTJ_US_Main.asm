@@ -184,6 +184,12 @@ macro putTextASCII(n, text) {
   db {text}, 0
 }
 
+macro putTextASCIInoEnd(n, text) {
+  ASCIIMap()
+  seek({n})
+  db {text}
+}
+
 macro putTextASCIInoSeek(text) {
   ASCIIMap()
   db {text}, 0
