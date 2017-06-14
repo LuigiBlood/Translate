@@ -1,4 +1,4 @@
-output "Mario Artist - Talent Studio.ndd"
+outputGame()
 
 //Main Menu
 putText(0x012BC110, "Talent Studio")

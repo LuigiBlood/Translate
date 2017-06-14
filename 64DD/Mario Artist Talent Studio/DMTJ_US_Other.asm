@@ -1,4 +1,4 @@
-output "Mario Artist - Talent Studio.ndd"
+outputGame()
 
 //Other
 
