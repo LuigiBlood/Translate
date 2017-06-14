@@ -7,14 +7,14 @@
 
 arch n64.cpu
 endian msb
-output "Mario Artist - Talent Studio.ndd", create
-origin 0x000000; insert "NUD-DMTJ-JPN.ndd" // Include Japanese Mario Artist - Talent Studio N64 DD ROM
+output "Mario Artist - Talent Studio.n64", create
+origin 0x000000; insert "NUD-DMTJ-JPN.n64" // Include Japanese Mario Artist - Talent Studio N64 DD ROM
 
 include "N64_CPUREGS.asm"
 
 //macros
 macro seek(n) {
-  origin {n}
+  origin {n} - 0x727D8
 }
 
 macro seekFile(n) {
@@ -22,7 +22,7 @@ macro seekFile(n) {
 }
 
 macro outputGame() {
-  output "Mario Artist - Talent Studio.ndd"
+  output "Mario Artist - Talent Studio.n64"
 }
 
 macro putText(n, text) {

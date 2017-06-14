@@ -7,22 +7,14 @@
 
 arch n64.cpu
 endian msb
-output "Mario Artist - Talent Studio.ndd", create
-origin 0x000000; insert "NUD-DMTJ-JPN.ndd" // Include Japanese Mario Artist - Talent Studio N64 DD ROM
+output "Mario Artist - Talent Studio.n64"
+//origin 0x000000; insert "NUD-DMTJ-JPN.n64" // Include Japanese Mario Artist - Talent Studio N64 DD ROM
 
 include "N64_CPUREGS.asm"
 
 //macros
 macro seek(n) {
-  origin {n}
-}
-
-macro seekFile(n) {
-  origin {n}
-}
-
-macro outputGame() {
-  output "Mario Artist - Talent Studio.ndd"
+  origin {n} - 0x727D8
 }
 
 macro putText(n, text) {
@@ -34,11 +26,6 @@ macro putTextnoSeek(text) {
   RegularMap()
   dh {text}
   dh 0x0000
-}
-
-macro putTextnoSeeknoEnd(text) {
-  RegularMap()
-  dh {text}
 }
 
 macro putText2(n, text) {
@@ -58,28 +45,6 @@ macro putText3(n, text, text2) {
   seek({n})
   dh {text}
   dh {text2}
-  dh 0x0000
-}
-
-macro putText3noSeek(pre, text) {
-  RegularMap()
-  dh {pre}
-  dh {text}
-  dh 0x0000
-}
-
-macro putText3noSeeknoEnd(pre, text) {
-  RegularMap()
-  dh {pre}
-  dh {text}
-}
-
-macro putText4(n, pre, text, post) {
-  RegularMap()
-  seek({n})
-  dh {pre}
-  dh {text}
-  dh {post}
   dh 0x0000
 }
 
@@ -186,23 +151,6 @@ macro putTextSJIS7noSeek(text, text2, text3, text4, text5, text6, text7) {
   dh 0x0000
 }
 
-macro putTextASCII(n, text) {
-  ASCIIMap()
-  seek({n})
-  db {text}, 0
-}
-
-macro putTextASCIInoEnd(n, text) {
-  ASCIIMap()
-  seek({n})
-  db {text}
-}
-
-macro putTextASCIInoSeek(text) {
-  ASCIIMap()
-  db {text}, 0
-}
-
 macro putTextASCIIBox(n, text, symbol, text2) {
   ASCIIMap()
   seek({n})
@@ -237,20 +185,12 @@ macro ShiftJISMap() {
 }
 
 macro ASCIIMap() {
-  map 0, 0, 256
+  map ' ', $20, $60
 }
 
-print "Save & Load\n"
-include "DMTJ_US_SaveLoad.asm"
-print "GameBoy Camera\n"
-include "DMTJ_US_GBCam.asm"
-print "Main Menu\n"
-include "DMTJ_US_MainMenu.asm"
-print "Talent Studio\n"
-include "DMTJ_US_TalentStudio.asm"
-print "Movie Studio\n"
-include "DMTJ_US_MovieStudio.asm"
-print "Gallery\n"
-include "DMTJ_US_Gallery.asm"
-print "Other\n"
-include "DMTJ_US_Other.asm"
+seek(0x8AD9F0)
+insert "8AD9F0.17453.SaveLoad.yay1.bin.yay"
+seek(0x914B78)
+insert "914B78.AEEC.Kanji.yay1.bin.yay"
+seek(0x8E7E48)
+insert "8E7E48.CCC7.GBCam.yay1.bin.yay"

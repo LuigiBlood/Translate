@@ -1,4 +1,4 @@
-output "Mario Artist - Talent Studio.ndd"
+outputGame()
 //Game Boy Camera Text 0x30A080
 seek(0x8E2900)
 base 0x8029A0C0
@@ -36,18 +36,18 @@ dh (gbcam_lever)
 
 output "8E7E48.CCC7.GBCam.yay1.bin"
 //Game Boy Camera Text 0x32C870
-seek(0x1F090)
+seekFile(0x1F090)
 base 0x0A01F090
 gbcam_select1:
 putTextnoSeek("Select an option")
 gbcam_select2:
 putTextnoSeek("Please choose a photo.")
-seek(0x1F0E0)
+seekFile(0x1F0E0)
 dw (gbcam_select1)
-seek(0x1F0F0)
+seekFile(0x1F0F0)
 dw (gbcam_select2)
 
-seek(0x1F110)
+seekFile(0x1F110)
 gbcam2_donoteject:
 putTextnoSeek("Do not eject the disk.") //RAM 0x802C1940
 gbcam2_prepsave:
@@ -66,12 +66,12 @@ gbcam2_read:
 putTextnoSeek("Reading") //RAM 0x802C1A34
 
 //pointers
-seek(0x1F218)
+seekFile(0x1F218)
 dw (gbcam2_donoteject), (gbcam2_prepsave)
 dw (gbcam2_unreadfiles), (gbcam2_shootsetup), (gbcam2_movieshot), (gbcam2_continue)
 dw (gbcam2_readback), (gbcam2_read)
 
-seek(0x1F240)
+seekFile(0x1F240)
 gbcam3_containerfull:
 putTextnoSeek("Container is full.") //RAM 0x802C1A70
 gbcam3_diskactionsuspended:
@@ -190,7 +190,7 @@ putTextnoSeek("GameBoy Camera is not inserted.") //RAM 0x802C2294
 //putTextnoSeek("GB Camera cartridge is not inserted.") //RAM 0x802C23EC
 
 //pointers
-seek(0x1FC10)
+seekFile(0x1FC10)
 dw (gbcam3_containerfull),(gbcam3_container70files)
 dw 0,(gbcam3_diskactionsuspended),0,(gbcam3_cantwritecontainer)
 dw 0,(gbcam3_cantwritefile),0,(gbcam3_enterdisk)
@@ -221,7 +221,7 @@ dw (gbcam3_toolarge),0,(gbcam3_nophoto),0
 dw (gbcam3_cantinitdisk),0,0,0
 
 //Menu
-seek(0x1FEA0)
+seekFile(0x1FEA0)
 camera_saved:
 putTextnoSeek("Saved Photos") //RAM 0x802C26A0
 camera_take:
@@ -250,7 +250,7 @@ putTextnoSeek("Contrast") //RAM 0x802C2738
 //putTextnoSeek("Gradation") //RAM 0x802C278C UNUSED
 //putTextnoSeek("Put Photo on Page") //RAM 0x802C279C UNUSED
 
-output "Mario Artist - Talent Studio.ndd"
+outputGame()
 
 seek(0x8DB26A)
 dh (camera_saved)
