@@ -1,0 +1,4 @@
+From highest priority to lowest:
+- Images in English
+- Fix dialog system.
+- Calculate animal names to be actually in the middle.
