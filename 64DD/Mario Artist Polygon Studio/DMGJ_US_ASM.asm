@@ -26,7 +26,7 @@ seek(0x1A5ECD)
 seek(0x1A6125)
   db 0x06
 
-print "  - Adapt Current Page function to single byte"
+print "  - Adapt Current Page function to single byte\n"
 //Fix Page numbers
 seek(0x13B460)
   sll t3, a1, 0

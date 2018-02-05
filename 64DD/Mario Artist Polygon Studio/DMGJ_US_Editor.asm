@@ -59,7 +59,275 @@ common_menu_paint:
 common_menu_bgm:
   putTextByte(0x1C2190, "Switch Music")
 
+//Block Dome
+block_delete:
+  putTextByte(0x7BA31C, "Delete")
+block_glue:
+  putTextByte(0x7BA324, "Glue")
+block_gluereset:
+  putTextByte(0x7BA330, "Unglue")
+block_copy:
+  putTextByte(0x7BA344, "Copy")
+block_3dwork:
+  putTextByte(0x7BA34C, "Call [3D Work]")
+block_mirrorcopy:
+  putTextByte(0x7BA368, "Mirror Copy")
+block_move:
+  putTextByte(0x7BA378, "Move")
+block_rotate:
+  putTextByte(0x7BA388, "Rotate")
+block_scale:
+  putTextByte(0x7BA398, "Scale")
+block_everyaxis:
+  putTextByte(0x7BA3AC, "All Axis")
+block_redaxis:
+  putTextByte(0x7BA3C0, "Red Axis")
+block_greenaxis:
+  putTextByte(0x7BA3D4, "Green Axis")
+block_blueaxis:
+  putTextByte(0x7BA3EC, "Blue Axis")
+block_aroundredaxis:
+  putTextByte(0x7BA400, "Around Red Axis")
+block_aroundgreenaxis:
+  putTextByte(0x7BA418, "Around Green Axis")
+block_aroundblueaxis:
+  putTextByte(0x7BA434, "Around Blue Axis")
+block_scaleredaxis:
+  putTextByte(0x7BA44C, "Scale Red Axis")
+block_scalegreenaxis:
+  putTextByte(0x7BA460, "Scale Green Axis")
+block_scaleblueaxis:
+  putTextByte(0x7BA474, "Scale Blue Axis")
+block_mirrorred:
+  putTextByte(0x7BA488, "Mirror on Red Plane")
+block_mirrorgreen:
+  putTextByte(0x7BA4A4, "Mirror on Green Plane")
+block_mirrorblue:
+  putTextByte(0x7BA4C0, "Mirror on Blue Plane")
+block_reset:
+  putTextByte(0x7BA4DC, "Reset")
+block_partblock:
+  putTextByte(0x7BA4E8, "Block Parts")
+block_animblock:
+  putTextByte(0x7BA4F8, "Animated Blocks")
+block_questionblock:
+  putTextByte(0x7BA510, "? Blocks")
+block_powerblock:
+  putTextByte(0x7BA51C, "Power Blocks")
+block_soundblock:
+  putTextByte(0x7BA530, "Sound Blocks")
 
+base 0x805637F4
+block_parts_cube:	//805637F4
+  putTextByte(0x7BA544, "Cube")
+block_parts_octa:
+  putTextByte(0x7BA554, "Octahedron")
+block_parts_slantedcuboid:
+  putTextByte(0x7BA560, "Slanted Cuboid")
+block_parts_cylinder:
+  putTextByte(0x7BA578, "Cylinder")
+block_parts_halfcylinder:
+  putTextByte(0x7BA584, "Half Cylinder")
+block_parts_triprism:
+  putTextByte(0x7BA594, "Triangle Prism")
+block_parts_6prism:
+  putTextByte(0x7BA5A4, "6 Faced Prism")
+
+block_parts_slantedcylinder:
+  putTextByte(0x7BA5B4, "Slanted Cylinder")
+block_parts_cone:
+  putTextByte(0x7BA5C8, "Cone")
+block_parts_tripyramid:
+  putTextByte(0x7BA5D4, "Tri-Pyramid")
+block_parts_quadpyramid:
+  putTextByte(0x7BA5E4, "Quad-Pyramid")
+block_parts_cup:
+  putTextByte(0x7BA5F0, "Cylinder Cup")
+block_parts_halfpyramid:
+  putTextByte(0x7BA600, "Half Pyramid")
+block_parts_halfpentagon:
+  putTextByte(0x7BA610, "Half Pentagon")
+
+block_parts_sphere:
+  putTextByte(0x7BA620, "Sphere")
+block_parts_spheroid:
+  putTextByte(0x7BA628, "Spheroid")
+block_parts_halfsphere:
+  putTextByte(0x7BA638, "Half Sphere")
+block_parts_dome:
+  putTextByte(0x7BA644, "Dome")
+block_parts_barrel:
+  putTextByte(0x7BA64C, "Barrel")
+block_parts_pipe:
+  putTextByte(0x7BA654, "Pipe")
+block_parts_ring:
+  putTextByte(0x7BA65C, "Ring")
+
+block_parts_malebody: //80563914 <---- MUST USE
+  putTextByte(0x7BA664, "Male Body")
+block_parts_femalebody:
+  putTextByte(0x7BA678, "Female Body")
+block_parts_turtlebody:
+  putTextByte(0x7BA68C, "Turtle Body")
+block_parts_dogbody:
+  putTextByte(0x7BA69C, "Dog Body")
+block_parts_rabbitbody:
+  putTextByte(0x7BA6AC, "Rabbit Body")
+block_parts_elephantbody:
+  putTextByte(0x7BA6BC, "Elephant Body")
+block_parts_dinobody:
+  putTextByte(0x7BA6CC, "Dino Body")
+
+block_parts_robotbody:
+  putTextByte(0x7BA6E4, "Robot Body")
+block_parts_beetlebody:
+  putTextByte(0x7BA6F8, "Beetle Body")
+block_parts_ladybugbody:
+  putTextByte(0x7BA70C, "Ladybug Body")
+block_parts_antbody:
+  putTextByte(0x7BA724, "Ant Body")
+block_parts_chickenbody:
+  putTextByte(0x7BA734, "Chicken Body")
+block_parts_owlbody:
+  putTextByte(0x7BA748, "Owl Body")
+block_parts_fishbody1:
+  putTextByte(0x7BA75C, "Fish Body 1")
+
+block_parts_fishbody2:
+  putTextByte(0x7BA770, "Fish Body 2")
+block_parts_robothead:
+  putTextByte(0x7BA784, "Robot Head")
+block_parts_rabbitarm:
+  putTextByte(0x7BA798, "Rabbit Arm")
+block_parts_dinoarm:
+  putTextByte(0x7BA7A8, "Dino Arm")
+block_parts_robotarm:
+  putTextByte(0x7BA7BC, "Robot Arm")
+block_parts_maleleg:
+  putTextByte(0x7BA7CC, "Male Leg")
+block_parts_femaleleg:
+  putTextByte(0x7BA7DC, "Female Leg")
+
+block_parts_turtleleg:
+  putTextByte(0x7BA7EC, "Turtle Leg")
+block_parts_dogleg:
+  putTextByte(0x7BA7F8, "Dog Leg")
+block_parts_rabbitleg:
+  putTextByte(0x7BA804, "Rabbit Leg")
+block_parts_elephantleg:
+  putTextByte(0x7BA814, "Elephant Leg")
+block_parts_dinoleg:
+  putTextByte(0x7BA820, "Dino Leg")
+block_parts_robotleg:
+  putTextByte(0x7BA834, "Robot Leg")
+block_parts_antleg:
+  putTextByte(0x7BA844, "Ant Leg")
+
+block_parts_chickenleg:
+  putTextByte(0x7BA850, "Chicken Leg")
+block_parts_chickenwing:
+  putTextByte(0x7BA85C, "Chick Wing")
+block_parts_fishfin:
+  putTextByte(0x7BA868, "Fish Fin")
+block_parts_hat:
+  putTextByte(0x7BA878, "Hat")
+block_parts_helmet:
+  putTextByte(0x7BA880, "Helmet")
+block_parts_sunglasses:
+  putTextByte(0x7BA88C, "Sunglasses")
+block_parts_bowtie:
+  putTextByte(0x7BA898, "Bow Tie")
+
+block_parts_backpack:
+  putTextByte(0x7BA8A8, "Backpack")
+block_parts_bikebody:
+  putTextByte(0x7BA8B4, "Bike Body")
+block_parts_bicyclebody:
+  putTextByte(0x7BA8C4, "Bicycle Body")
+block_parts_classiccar:
+  putTextByte(0x7BA8DC, "Classic Car")
+block_parts_fineengine:
+  putTextByte(0x7BA8EC, "Fire Engine")
+block_parts_truck:
+  putTextByte(0x7BA8FC, "Truck")
+block_parts_tankbody:
+  putTextByte(0x7BA908, "Tank")
+
+block_parts_train:
+  putTextByte(0x7BA914, "Train")
+block_parts_carriage:
+  putTextByte(0x7BA920, "Carriage")
+block_parts_express:
+  putTextByte(0x7BA92C, "Express")
+block_parts_heli:
+  putTextByte(0x7BA938, "Helicopter")
+block_parts_fuselage:
+  putTextByte(0x7BA948, "Fuselage")
+block_parts_missile:
+  putTextByte(0x7BA95C, "Missile")
+block_parts_submarine:
+  putTextByte(0x7BA968, "Submarine")
+
+block_parts_hoverboard:
+  putTextByte(0x7BA978, "Hoverboard")
+block_parts_bicyclewheel:
+  putTextByte(0x7BA988, "Bicycle Wheel")
+block_parts_toywheel:
+  putTextByte(0x7BA99C, "Toy Wheel")
+block_parts_wheel:
+  putTextByte(0x7BA9B0, "Wheel")
+block_parts_metalbelt:
+  putTextByte(0x7BA9BC, "Metal Belt")
+block_parts_bumper:
+  putTextByte(0x7BA9CC, "Bumper")
+block_parts_handle:
+  putTextByte(0x7BA9D8, "Handle")
+
+block_parts_fender1:
+  putTextByte(0x7BA9E4, "Fender 1")
+block_parts_fender2:
+  putTextByte(0x7BA9F4, "Fender 2")
+block_parts_muffler:
+  putTextByte(0x7BAA04, "Muffler")
+block_parts_tank:
+  putTextByte(0x7BAA10, "Tank")
+block_parts_tankturret:
+  putTextByte(0x7BAA18, "Turret")
+block_parts_pillar:
+  putTextByte(0x7BAA24, "Support")
+block_parts_propeller:
+  putTextByte(0x7BAA2C, "Propeller")
+
+block_parts_sled:
+  putTextByte(0x7BAA38, "Sled")
+block_parts_tail:
+  putTextByte(0x7BAA40, "Tail")
+block_parts_guestcabin:
+  putTextByte(0x7BAA48, "Guest Cabin")
+block_parts_shipchimney:
+  putTextByte(0x7BAA54, "Ship Chimney")
+block_parts_house:
+  putTextByte(0x7BAA64, "House")
+block_parts_mansion:
+  putTextByte(0x7BAA6C, "Mansion")
+block_parts_window:
+  putTextByte(0x7BAA78, "Window")
+
+block_parts_roof:
+  putTextByte(0x7BAA80, "Roof")
+block_parts_towerroof:
+  putTextByte(0x7BAA88, "Tower Roof")
+block_parts_tower:
+  putTextByte(0x7BAA94, "Tower")
+block_parts_fence:
+  putTextByte(0x7BAA9C, "Fence")
+block_parts_chimney:
+  putTextByte(0x7BAAA4, "Chimney")
+block_parts_tree:
+  putTextByte(0x7BAAB0, "Tre") //Pointer must be changed
+block_parts_flower:
+  putTextByte(0x7BAAB4, "Flower")
+  
 //Modeler Rocket
 //Menu Specific
 model_tutorial:
@@ -403,7 +671,7 @@ interface_copy:
 interface_mirrorcopy:
   putTextByte(0x897650, "Mirror Copy")
 interface_everyaxis:
-  putTextByte(0x8976C4, "Every Axis")
+  putTextByte(0x8976C4, "All Axis")
 interface_fromtarget:
   putTextByte(0x8976D8, "From Target")
 interface_redaxis:
