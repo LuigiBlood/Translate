@@ -60,4 +60,4 @@ common_menu_bgm:
 include "DMGJ_US_BlockDome.asm"
 include "DMGJ_US_ModelRocket.asm"
 include "DMGJ_US_Paint.asm"
-
+include "DMGJ_US_StageUFO.asm"
