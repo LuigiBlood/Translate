@@ -9,17 +9,13 @@ putTextByte(0x11F680, "Selected Color")
 print "  - Common Text\n"
 
 //Camera
-//seek(0x01BA5BC)
-//base 0x802EB954
-
 common_camera_reset:
-  putTextByte(0x1BA5BC, "Reset Camera")
+  putTextByte(0x1BA5BC, "Reset Camera")  //802EB954
 common_camera_switch:
   putTextByte(0x1BA5CC, "Switch Camera")
 common_camera_center:
   putTextByte(0x1BA5DC, "Center Camera")
 
-//seek(0x1BA60C)
 common_exit:
   putTextByte(0x1BA60C, "Exit")  //802EB9A4
 common_undo:
@@ -34,12 +30,71 @@ common_randomeverything:
 common_randomselected:
   putTextByte(0x1BA65C, "Swap Selection")  //802EB9F4
 
+common_menu_backtomainmenu:
+  putTextByte(0x1C2040, "Back to main menu")
+common_menu_exit:
+  putTextByte(0x1C2058, "Exit")
+common_menu_stagesaveload:
+  putTextByte(0x1C2060, "[Stage Work] Save & Load")
+common_menu_blocksaveload:
+  putTextByte(0x1C2088, "[Block Work] Save & Load")
+common_menu_3dsaveload:
+  putTextByte(0x1C20B0, "[3D Work] Save & Load")
+common_menu_shortcut:
+  putTextByte(0x1C20D4, "Shortcut")
+common_menu_observe:
+  putTextByte(0x1C20FC, "Observe")
+common_menu_photo:
+  putTextByte(0x1C210C, "Take Photos")
+common_menu_break:
+  putTextByte(0x1C211C, "Take a break")
+common_menu_openworld:
+  putTextByte(0x1C2130, "Open World")
+common_menu_assemble:
+  putTextByte(0x1C2144, "Assemble")
+common_menu_create:
+  putTextByte(0x1C2150, "Create")
+common_menu_paint:
+  putTextByte(0x1C2158, "Paint")
+common_menu_bgm:
+  putTextByte(0x1C2190, "Switch Music")
+
+
+//Modeler Rocket
+//Menu Specific
 model_tutorial:
   putTextByte(0x7FBC80, "Tutorials")
 model_wireframe:
   putTextByte(0x7FBC94, "Wireframe")
 model_craft:
   putTextByte(0x7FBCA8, "Craft Mode")
+
+model_tutorial01:
+  putTextByte(0x61036C, "Chair")
+model_tutorial02:
+  putTextByte(0x610380, "Toilet")
+model_tutorial03:
+  putTextByte(0x610394, "House")
+model_tutorial04:
+  putTextByte(0x6103A8, "Sprinkler")
+
+model_tutorial05:
+  putTextByte(0x6103BC, "Dog")
+model_tutorial06:
+  putTextByte(0x6103D0, "Bird")
+model_tutorial07:
+  putTextByte(0x6103E4, "Stag Beetle")
+model_tutorial08:
+  putTextByte(0x6103F8, "Helmet")
+
+model_tutorial09:
+  putTextByte(0x61040C, "Dolphin")
+model_tutorial10:
+  putTextByte(0x610420, "Boat")
+model_tutorial11:
+  putTextByte(0x610434, "Submarine")
+model_tutorial12:
+  putTextByte(0x610448, "Propeller Plane")
 
 seek(0x896200)
 base 0x8060EE40
@@ -328,7 +383,9 @@ interface_round:
 interface_remove:
   putTextByte(0x8975AC, "Remove")
 interface_delete:
-  putTextByte(0x8975B4, "Bin")
+  putTextByte(0x8975B4, "Delete")
+interface_tunnel:
+  putTextByte(0x8975BC, "Create Tunnel")
 interface_makepanel:
   putTextByte(0x8975D0, "Create Panel")
 interface_edgeextrude:
