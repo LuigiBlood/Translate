@@ -9,7 +9,7 @@ endian msb
 output "Mario Artist - Polygon Studio.n64", create
 origin 0x000000; insert "NUD-DMGJ-JPN.n64" // Include Japanese Mario Artist - Polygon Studio N64 DD ROM
 
-//origin 0x10; dw 0xDD16F47C, 0xA8B748C7 //New checksum
+origin 0x10; dw 0x8DC4FF94, 0x938754FC //New checksum
 
 include "N64_CPUREGS.asm"
 
@@ -27,6 +27,17 @@ macro putTextnoSeek(text) {
   RegularMap()
   dh {text}
   dh 0x0000
+}
+
+macro putTextByte(n, text) {
+  seek({n})
+  putTextBytenoSeek({text})
+}
+
+macro putTextBytenoSeek(text) {
+  RegularMap()
+  db {text}
+  db 0x00
 }
 
 macro putText2(n, text) {
@@ -150,6 +161,19 @@ macro putTextSJIS7noSeek(text, text2, text3, text4, text5, text6, text7) {
   db 0x0A
   dh {text7}
   dh 0x0000
+}
+
+macro putTextASCII(n, text) {
+  ASCIIMap()
+  seek({n})
+  db {text}
+  db 0x00
+}
+
+macro putTextASCIInoSeek(text) {
+  ASCIIMap()
+  db {text}
+  db 0x00
 }
 
 macro putTextASCIIBox(n, text, symbol, text2) {
