@@ -6,7 +6,6 @@ print "- Assembling Editor Text...\n"
 //COMMON (Loaded at boot)
 print "  - Common Text\n"
 
-//Camera
 common_camera_reset:
   putTextByte(0x1BA5BC, "Reset Camera")  //802EB954
 common_camera_switch:
@@ -56,6 +55,12 @@ common_menu_paint:
   putTextByte(0x1C2158, "Paint")
 common_menu_bgm:
   putTextByte(0x1C2190, "Switch Music")
+
+//Photo Mode
+photo_return:
+  putTextByte(0x95BA9C, "Back")
+photo_save:
+  putTextByte(0x95BAA4, "Save as [2D Work]")
 
 include "DMGJ_US_BlockDome.asm"
 include "DMGJ_US_ModelRocket.asm"

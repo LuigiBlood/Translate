@@ -168,6 +168,12 @@ macro putTextASCII(n, text) {
   db 0x00
 }
 
+macro putTextASCIInoSeek(text) {
+  ASCIIMap()
+  db {text}
+  db 0x00
+}
+
 macro putTextASCIIBox(n, text, symbol, text2) {
   ASCIIMap()
   seek({n})
@@ -238,4 +244,8 @@ macro ASCIIMap() {
 include "DMGJ_US_ASM.asm"
 
 include "DMGJ_US_Editor.asm"
+include "DMGJ_US_Options.asm"
+include "DMGJ_US_Gallery.asm"
 include "DMGJ_US_OpenWorld.asm"
+include "DMGJ_US_Other.asm"
+include "DMGJ_US_SaveLoad.asm"
