@@ -394,23 +394,23 @@ base 0x807C3240
 saveload4_usedspace:
 putTextnoSeek("Used Space: 0.0MB")
 saveload4_currentwork1:
-putTextnoSeek("Current work")
+//putTextnoSeek("Current work")
 saveload4_currentwork2:
 putTextnoSeek("")
 saveload4_fromdisk:
-//putTextnoSeek("From Disk")
+putTextnoSeek("From Disk")
 saveload4_from64gb:
 //putTextnoSeek("From Transfer Pak")
 saveload4_readfile:
 //putTextnoSeek("Read File")
-saveload4_file:
-//putTextnoSeek("File")
-saveload4_notloaded:
-//putTextnoSeek("Not loaded")
+saveload4_file: //RAM 807C32D0
+putTextnoSeek("File")
+saveload4_notloaded: //RAM 807C32DC
+putTextnoSeek("is not loaded")
 saveload4_makingfile:
 //putTextnoSeek("Making File")
 saveload4_takenphotos:
-//putTextnoSeek("Taken Photos")
+putTextnoSeek("Current Work")
 saveload4_auxpaper:
 //putTextnoSeek("Auxiliary Paper")
 saveload4_image:
@@ -595,6 +595,10 @@ seek(0x1ECE5A)
 dh (saveload4_makingfile)
 seek(0x1ECE7A)
 dh (saveload4_takenphotos)
+seek(0x1ECE9A)
+dh (saveload4_file)
+seek(0x1ECEB2)
+dh (saveload4_notloaded)
 seek(0x1EDB8E)
 dh (saveload4_selectcontainer)
 seek(0x1EDBAE)
