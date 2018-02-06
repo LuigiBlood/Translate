@@ -220,6 +220,10 @@ macro ASCIIMap() {
 
 //Translation
 include "DMGJ_US_ASM.asm"
-
+include "DMGJ_US_Graphics.asm"
 include "DMGJ_US_Editor.asm"
+include "DMGJ_US_Options.asm"
+include "DMGJ_US_Gallery.asm"
 include "DMGJ_US_OpenWorld.asm"
+include "DMGJ_US_Other.asm"
+include "DMGJ_US_SaveLoad.asm"
