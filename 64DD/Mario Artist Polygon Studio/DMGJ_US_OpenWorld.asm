@@ -382,7 +382,7 @@ open4pdesc_010:
 open4pdesc_011:
   putTextASCIInoSeek("You'd want to keep this.")
 open4pdesc_012:
-  putTextASCIInoSeek("This is rather small for the elephant.")
+  putTextASCIInoSeek("It is rather small for the elephant.")
 open4pdesc_013:
   putTextASCIInoSeek("This is probably faithful.")
 open4pdesc_014:
@@ -476,7 +476,7 @@ open4pdesc_057:
 open4pdesc_058:
   putTextASCIInoSeek("He seems happy.")
 open4pdesc_059:
-  putTextASCIInoSeek("It is a relatively good airplane.")
+  putTextASCIInoSeek("A relatively good airplane.")
 open4pdesc_060:
   putTextASCIInoSeek("It looks painful.")
 open4pdesc_061:
@@ -516,7 +516,7 @@ open4pdesc_077:
 open4pdesc_078:
   putTextASCIInoSeek("It's twinkling.")
 
-//Item Get Description - RAM 80517580
+//Other - RAM 80517580
   
 //Pointers
 seek(0x69D9A0)
