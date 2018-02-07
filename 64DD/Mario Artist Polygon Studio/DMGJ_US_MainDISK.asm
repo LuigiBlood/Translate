@@ -174,6 +174,11 @@ macro putTextASCIInoSeek(text) {
   db 0x00
 }
 
+macro putTextASCIInoSeeknoEnd(text) {
+  ASCIIMap()
+  db {text}
+}
+
 macro putTextASCIIBox(n, text, symbol, text2) {
   ASCIIMap()
   seek({n})

@@ -433,7 +433,7 @@ block_unlock23:
 block_unlock24:
   putTextBytenoSeek("Smoke")
 block_unlock25:
-  putTextBytenoSeek("Flashing")
+  putTextBytenoSeek("Shining")
 block_unlock26:
   putTextBytenoSeek("Twinkling")
 block_unlock27:
@@ -475,7 +475,7 @@ block_power14:
 block_power15:
   putTextBytenoSeek("Wheel")
 block_power16:
-  putTextBytenoSeek("High Speed Wheel")
+  putTextBytenoSeek("Speed Wheel")
 block_power17:
   putTextBytenoSeek("Metal Belt")
 block_power18:
@@ -499,11 +499,11 @@ block_power25:
 block_power26:
   putTextBytenoSeek("Propeller")
 block_power27:
-  putTextBytenoSeek("High Speed Propeller")
+  putTextBytenoSeek("Speed Propeller")
 block_power28:
   putTextBytenoSeek("Airship")
 block_power29:
-  putTextBytenoSeek("Life Belt")
+  putTextBytenoSeek("Lifesaver")
 block_power30:
   putTextBytenoSeek("Ship")
 
@@ -518,7 +518,7 @@ block_power34:
 block_power35:
   putTextBytenoSeek("Water Propeller")
 block_power36:
-  putTextBytenoSeek("High Speed Water Propeller")
+  putTextBytenoSeek("Speed Water Propeller")
 
 block_power37:
   putTextBytenoSeek("Jet")
@@ -527,7 +527,7 @@ block_power38:
 block_power39:
   putTextBytenoSeek("Power Engine")
 block_power40:
-  putTextBytenoSeek("Super Engine")
+  putTextBytenoSeek("Speed Engine")
 block_power41:
   putTextBytenoSeek("Power Star")
 block_power42:
