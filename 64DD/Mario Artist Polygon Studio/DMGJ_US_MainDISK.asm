@@ -73,7 +73,6 @@ macro putTextSJIS(n, text) {
 
 macro putTextSJISnoSeek(text) {
   ShiftJISMap()
-  dh 0x5400, 0xFFFF
   dh {text}
   dh 0x0000
 }
@@ -210,6 +209,7 @@ macro ShiftJISMap() {
   map '\s',$8165 //'
   map '-', $817C
   map '&', $8195
+  map '|', $8162
 }
 
 macro ASCIIMap() {

@@ -16,7 +16,7 @@ open2_endcenter1: //80516330
 open2_endcenter2: //8051633C
   putTextASCIInoSeek("</CENTER>")
 open2_breadnote: //80516348
-  putTextASCIInoSeek("A note has been written on this bread!<BR>...")
+  putTextASCIInoSeek("A note is written on this bread!<BR>...")
 open2_ground: //80516378
   putTextASCIInoSeek("<FONT COLOR=#4F9FDC>On this ground<BR>")
 open2_air: //805163A4
@@ -265,13 +265,13 @@ open4desc_014:
 open4desc_015:
   putTextASCIInoSeek("Error 27")
 open4desc_016:
-  putTextASCIInoSeek("You can travel.")
+  putTextASCIInoSeek("You can drive.")
 open4desc_017:
-  putTextASCIInoSeek("You can travel faster.")
+  putTextASCIInoSeek("You can drive faster.")
 open4desc_018:
-  putTextASCIInoSeek("You can travel very fast.")
+  putTextASCIInoSeek("You can drive very fast.")
 open4desc_019:
-  putTextASCIInoSeek("You can travel at high speeds.")
+  putTextASCIInoSeek("You can drive at high speeds.")
 open4desc_020:
   putTextASCIInoSeek("You can walk on land and on water.")
 open4desc_021:
@@ -516,8 +516,98 @@ open4pdesc_077:
 open4pdesc_078:
   putTextASCIInoSeek("It's twinkling.")
 
-//Other - RAM 80517580
-  
+//Easter Eggs - RAM 80517580
+open4easteregg_001:
+open4easteregg_002:
+open4easteregg_003:
+open4easteregg_004:
+open4easteregg_005:
+  putTextSJISnoSeek("Ouch")
+open4easteregg_006:
+  putTextSJISnoSeek("It hurts")
+open4easteregg_007:
+  putTextSJISnoSeek("It is awful")
+open4easteregg_008:
+  putTextSJISnoSeek("What will you do?")
+open4easteregg_009:
+  putTextSJISnoSeek("Stop it")
+open4easteregg_010:
+  putTextSJISnoSeek("Do not panic")
+open4easteregg_011:
+  putTextSJISnoSeek("Oh")
+open4easteregg_012:
+  putTextSJISnoSeek("Love")
+open4easteregg_013:
+  putTextSJISnoSeek("Ahh")
+open4easteregg_014:
+  putTextSJISnoSeek("Hunger")
+open4easteregg_015:
+  putTextSJISnoSeek("Whirr")
+open4easteregg_016:
+  putTextSJISnoSeek("Dang")
+open4easteregg_017:
+  putTextSJISnoSeek("Shoo")
+open4easteregg_018:
+  putTextSJISnoSeek("Ermine")
+open4easteregg_019:
+  putTextSJISnoSeek("Fried")
+open4easteregg_020:
+  putTextSJISnoSeek("Fish")
+open4easteregg_021:
+  putTextSJISnoSeek("Hehehe")
+open4easteregg_022:
+  putTextSJISnoSeek("Haha!Fairies!")
+open4easteregg_023:
+  putTextSJISnoSeek("Where is the prince charming?")
+open4easteregg_024:
+  putTextSJISnoSeek("Hehehehehehehehe")
+open4easteregg_025:
+  putTextSJISnoSeek("Eating the cake")
+open4easteregg_026:
+  putTextSJISnoSeek("Does it hurt?")
+open4easteregg_027:
+  putTextSJISnoSeek("Please stop")
+open4easteregg_028:
+  putTextSJISnoSeek("Appealing")
+open4easteregg_029:
+  putTextSJISnoSeek("Hey it hurts!")
+open4easteregg_030:
+  putTextSJISnoSeek("Walking around")
+open4easteregg_031:
+  putTextSJISnoSeek("You are wasting your time")
+open4easteregg_032:
+  putTextSJISnoSeek("Crying")
+open4easteregg_033:
+  putTextSJISnoSeek("You will not be so lucky")
+open4easteregg_034:
+  putTextSJISnoSeek("Behind the scenes")
+open4easteregg_035:
+  putTextSJISnoSeek("Do not want Tasmania")
+open4easteregg_036:
+  putTextSJISnoSeek("Drool")
+open4easteregg_037:
+  putTextSJISnoSeek("Careless")
+open4easteregg_038:
+  putTextSJISnoSeek("Night Sweat")
+open4easteregg_039:
+  putTextSJISnoSeek("Narrow")
+open4easteregg_040:
+  putTextSJISnoSeek("Sea Route")
+open4easteregg_041:
+  putTextSJISnoSeek("Bonjour Mademoiselle")
+open4easteregg_042:
+  putTextSJISnoSeek("Erase")
+open4easteregg_043:
+  putTextSJISnoSeek("Ambient")
+open4easteregg_044:
+  putTextSJISnoSeek("Bonjour Monsieur")
+open4easteregg_045:
+  putTextSJISnoSeek("Je t'aime moi|aussi")
+
+//Toasters RAM 80517860
+open4toast01_1:
+  putTextASCIInoSeek("A note is written on this bread!<BR>...")
+
 //Pointers
 seek(0x69D9A0)
 //Names
@@ -571,4 +661,16 @@ dw open4pdesc_058, open4pdesc_059, open4pdesc_060, open4pdesc_061, open4pdesc_06
 dw open4pdesc_065, open4pdesc_066, open4pdesc_067, open4pdesc_068, open4pdesc_069, open4pdesc_070, open4pdesc_071
 dw open4pdesc_072, open4pdesc_073, open4pdesc_074, open4pdesc_075, open4pdesc_076, open4pdesc_077, open4pdesc_078
 
-//putTextASCII(0x6A02A0, "Toasters Toast Toast!!")
+//Easter Eggs
+dw open4easteregg_001, open4easteregg_002, open4easteregg_003, open4easteregg_004, open4easteregg_005
+dw open4easteregg_006, open4easteregg_007, open4easteregg_008, open4easteregg_009, open4easteregg_010
+dw open4easteregg_011, open4easteregg_012, open4easteregg_013, open4easteregg_014, open4easteregg_015
+dw open4easteregg_016, open4easteregg_017, open4easteregg_018, open4easteregg_019, open4easteregg_020
+dw open4easteregg_021, open4easteregg_022, open4easteregg_023, open4easteregg_024, open4easteregg_025
+dw open4easteregg_026, open4easteregg_027, open4easteregg_028, open4easteregg_029, open4easteregg_030
+dw open4easteregg_031, open4easteregg_032, open4easteregg_033, open4easteregg_034, open4easteregg_035
+dw open4easteregg_036, open4easteregg_037, open4easteregg_038, open4easteregg_039, open4easteregg_040
+dw open4easteregg_041, open4easteregg_042, open4easteregg_043, open4easteregg_044, open4easteregg_045
+
+//Toasters
+dw open4toast01_1
