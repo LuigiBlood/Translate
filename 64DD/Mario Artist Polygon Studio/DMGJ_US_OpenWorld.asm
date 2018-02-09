@@ -18,17 +18,17 @@ open2_endcenter2: //8051633C
 open2_breadnote: //80516348
   putTextASCIInoSeek("A note is written on this bread!<BR>...")
 open2_ground: //80516378
-  putTextASCIInoSeek("<FONT COLOR=#4F9FDC>On this ground<BR>")
+  putTextASCIInoSeek("<FONT COLOR=#4F9FDC>On this land,<BR>")
 open2_air: //805163A4
-  putTextASCIInoSeek("<FONT COLOR=#4F9FDC>In the air<BR>")
+  putTextASCIInoSeek("<FONT COLOR=#4F9FDC>In the skies,<BR>")
 open2_after: //805163D4
-  putTextASCIInoSeek("After <FONT COLOR=#DC4F00>")
+  putTextASCIInoSeek("there are <FONT COLOR=#DC4F00>")
 open2_decimal: //805163F0
   putTextASCIInoSeek("%d")
 open2_thisblockis: //805163F4
-  putTextASCIInoSeek("This </FONT>block is<BR>yours.</FONT>")
+  putTextASCIInoSeek("</FONT> blocks left.</FONT>")
 open2_noblockanymore: //80516420
-  putTextASCIInoSeek("This block is not there anymore.</FONT>")
+  putTextASCIInoSeek("there are no blocks<BR>to be found anymore.</FONT>")
 
 seek(0x684A12)
   dh (open2_itemfound1)
@@ -273,7 +273,7 @@ open4desc_018:
 open4desc_019:
   putTextASCIInoSeek("You can drive at high speeds.")
 open4desc_020:
-  putTextASCIInoSeek("You can walk on land and on water.")
+  putTextASCIInoSeek("You can walk on land & on water.")
 open4desc_021:
   putTextASCIInoSeek("Walk, Swim, and Splash!")
 open4desc_022:
@@ -392,13 +392,13 @@ open4pdesc_015:
 open4pdesc_016:
   putTextASCIInoSeek("It has a nice bicycle feel.")
 open4pdesc_017:
-  putTextASCIInoSeek("Orthodox Style")
+  putTextASCIInoSeek("This is pretty orthodox.")
 open4pdesc_018:
   putTextASCIInoSeek("The sound is powerful.")
 open4pdesc_019:
   putTextASCIInoSeek("The fastest wheels on land.")
 open4pdesc_020:
-  putTextASCIInoSeek("Use it as intended at the right place.")
+  putTextASCIInoSeek("Use it at the right place.")
 open4pdesc_021:
   putTextASCIInoSeek("Can't stop jumping!")
 open4pdesc_022:
@@ -627,6 +627,10 @@ open4toast19_1:
 open4toast20_1:
 open4toast21_1:
 open4toast22_1:
+open4toast23_1:
+open4toast24_1:
+open4toast25_1:
+open4toast26_1:
   putTextASCIInoSeek("A note is written on this bread!<BR>...")
 open4toast01_2:
   putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Greetings, this is the bakery.<BR>Nice to meet you.</FONT>")
@@ -863,7 +867,7 @@ open4toast20_4:
 open4toast20_5:
   putTextASCIInoSeek("<FONT COLOR=#EF9FBF>Isn't that nice?<BR>By the way, we're twins,<BR>so my face is like this too!</FONT>")
 open4toast20_6:
-  putTextASCIInoSeek("<FONT COLOR=#EF9FBF>Even with this face,<BR>our bread is additive-free<BR>so this is safe anyway!</FONT>")
+  putTextASCIInoSeek("<FONT COLOR=#EF9FBF>Even with this face,<BR>our bread is additive-free<BR>so this is still safe!</FONT>")
 
 open4toast21_2:
   putTextASCIInoSeek("<FONT COLOR=#EF9FBF>It looks like you're<BR>in a long corridor.</FONT>")
@@ -877,6 +881,79 @@ open4toast22_3:
 open4toast22_4:
   putTextASCIInoSeek("<FONT COLOR=#EF9FBF>There are different<BR>patterns of walls.<BR>Let's try to bump into those!</FONT>")
 
+open4toast23_2:
+  putTextASCIInoSeek("<FONT COLOR=#EF9FBF>Well... If you want to fly...<BR>You may think putting on wings<BR>might be a good idea,</FONT>")
+open4toast23_3:
+  putTextASCIInoSeek("<FONT COLOR=#EF9FBF>But, perhaps...<BR>there's something easier to use.</FONT>")
+open4toast23_4:
+  putTextASCIInoSeek("<FONT COLOR=#EF9FBF>Sometimes, you just want<BR>to go straight up, right?</FONT>")
+open4toast23_5:
+  putTextASCIInoSeek("<FONT COLOR=#EF9FBF>That is, if you put wings,<BR>they can slow you down.</FONT>")
+open4toast23_6:
+  putTextASCIInoSeek("<FONT COLOR=#EF9FBF>Maybe, you could go upwards,<BR>with some kind of force,<BR>like an helicopter.</FONT>")
+open4toast23_7:
+  putTextASCIInoSeek("<FONT COLOR=#EF9FBF>It's amazing,<BR>how easier it may be<BR>compared to a model with wings!</FONT>")
+
+open4toast24_2:
+  putTextASCIInoSeek("<FONT COLOR=#EF9FBF>Well, it looks like the Power Star<BR>is making all the blocks<BR>much stronger.</FONT>")
+open4toast24_3:
+  putTextASCIInoSeek("<FONT COLOR=#EF9FBF>But there are a few that<BR>won't change, like the strongest<BR>blocks at the start.</FONT>")
+open4toast24_4:
+  putTextASCIInoSeek("<FONT COLOR=#EF9FBF>Don't compare it to engines.<BR>They're different.</FONT>")
+open4toast24_5:
+  putTextASCIInoSeek("<FONT COLOR=#EF9FBF>As I am writing this,<BR>I have decided to go on a journey,<BR>like my older brother!</FONT>")
+open4toast24_6:
+  putTextASCIInoSeek("<FONT COLOR=#EF9FBF>So, this is my last bread.<BR>Thank you very much!</FONT>")
+open4toast24_7:
+  putTextASCIInoSeek("<FONT COLOR=#EF9FBF>It's big news,<BR>but typical of bread hints,<BR>I'll write hints of our destinations!</FONT>")
+open4toast24_8:
+  putTextASCIInoSeek("<FONT COLOR=#EF9FBF>Well,<BR>my older brother is very far away,<BR>while I am at a very high place!</FONT>")
+open4toast24_9:
+  putTextASCIInoSeek("<FONT COLOR=#EF9FBF>If you are interested,<BR>please come!</FONT>")
+
+open4toast25_2:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Greetings, this is the baker.</FONT>")
+open4toast25_3:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>I did not realize<BR>as I was training here...<BR>I became a block.</FONT>")
+open4toast25_4:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>I would be glad if you think<BR>I am useful. Please go ahead<BR>and take me with you.</FONT>")
+
+open4toast26_2:
+  putTextASCIInoSeek("<FONT COLOR=#EF9FBF>Hey! This is the baker.</FONT>")
+open4toast26_3:
+  putTextASCIInoSeek("<FONT COLOR=#EF9FBF>Well, I have been training<BR>hard in this place.</FONT>")
+open4toast26_4:
+  putTextASCIInoSeek("<FONT COLOR=#EF9FBF>And then suddenly,<BR>I noticed I was transformed<BR>into a block!</FONT>")
+open4toast26_5:
+  putTextASCIInoSeek("<FONT COLOR=#EF9FBF>Until now, I haven't been<BR>doing anything for the customers!</FONT>")
+open4toast26_6:
+  putTextASCIInoSeek("<FONT COLOR=#EF9FBF>That's why,<BR>please take me with you!</FONT>")
+
+open4_place01:
+  putTextASCIInoSeek("EMPTY")
+open4_place02:
+  putTextASCIInoSeek("STARTING TERMINAL")
+open4_place03:
+  putTextASCIInoSeek("POLYGONECIA")
+open4_place04:
+  putTextASCIInoSeek("SKY GARDENS POLYGONA")
+open4_place05:
+  putTextASCIInoSeek("SLIPPERY SLIDE")
+open4_place06:
+  putTextASCIInoSeek("STEEL TEMPLE")
+open4_place07:
+  putTextASCIInoSeek("THE PYRAMID")
+open4_place08:
+  putTextASCIInoSeek("HERO'S HOLE")
+open4_place09:
+  putTextASCIInoSeek("CENTRAL PHENOMENIN")
+open4_place10:
+  putTextASCIInoSeek("AQUARIUM AFTERNOON")
+open4_place11:
+  putTextASCIInoSeek("FRONTIER INFERNO")
+open4_place12:
+  putTextASCIInoSeek("HIGH ALTITUDE PARADISO")
+  
 //Pointers
 seek(0x69D9A0)
 //Names
@@ -965,4 +1042,11 @@ dw open4toast19_1, open4toast19_2, open4toast19_3, open4toast19_4, open4toast19_
 dw open4toast20_1, open4toast20_2, open4toast20_3, open4toast20_4, open4toast20_5, open4toast20_6, 0
 dw open4toast21_1, open4toast21_2, open4toast21_3, 0
 dw open4toast22_1, open4toast22_2, open4toast22_3, open4toast22_4, 0
-//TO CONTINUE AT 80515638
+dw open4toast23_1, open4toast23_2, open4toast23_3, open4toast23_4, open4toast23_5, open4toast23_6, open4toast23_7, 0
+dw open4toast24_1, open4toast24_2, open4toast24_3, open4toast24_4, open4toast24_5, open4toast24_6, open4toast24_7, open4toast24_8, open4toast24_9, 0
+dw open4toast25_1, open4toast25_2, open4toast25_3, open4toast25_4, 0
+dw open4toast26_1, open4toast26_2, open4toast26_3, open4toast26_4, open4toast26_5, open4toast26_6, 0
+
+//Places
+dw open4_place01, open4_place02, open4_place03, open4_place04, open4_place05, open4_place06
+dw open4_place07, open4_place08, open4_place09, open4_place10, open4_place11, open4_place12
