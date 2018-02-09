@@ -606,7 +606,276 @@ open4easteregg_045:
 
 //Toasters RAM 80517860
 open4toast01_1:
+open4toast02_1:
+open4toast03_1:
+open4toast04_1:
+open4toast05_1:
+open4toast06_1:
+open4toast07_1:
+open4toast08_1:
+open4toast09_1:
+open4toast10_1:
+open4toast11_1:
+open4toast12_1:
+open4toast13_1:
+open4toast14_1:
+open4toast15_1:
+open4toast16_1:
+open4toast17_1:
+open4toast18_1:
+open4toast19_1:
+open4toast20_1:
+open4toast21_1:
+open4toast22_1:
   putTextASCIInoSeek("A note is written on this bread!<BR>...")
+open4toast01_2:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Greetings, this is the bakery.<BR>Nice to meet you.</FONT>")
+open4toast01_3:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>For 50 years, we have been<BR>placing these toasters in this world.<BR>We bake the bread you can trust.</FONT>")
+open4toast01_4:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Our baker has put his mind and<BR>love into making bread.<BR>The best <FONT COLOR=#DC4F00>hints</FONT> have been written.</FONT>")
+open4toast01_5:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>He has put his mind into it all night,<BR>so if you see us, please come in<BR>and take a look.</FONT>")
+open4toast01_6:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Of course, all of our breads are<BR>additive-free and the crumbs<BR>are soft.</FONT>")
+
+open4toast02_2:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Sometimes the model does<BR>not travel straight...<BR>Ever had that happen to you?</FONT>")
+open4toast02_3:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>In this world, if you build<BR>the blocks <FONT COLOR=#DC4F00><FONT SIZE=4>symmetrically</FONT></FONT>,<BR>the model will stabilize.</FONT>")
+open4toast02_4:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Why?<BR>I don't know. Perhaps it is just<BR>the laws of the universe.</FONT>")
+open4toast02_5:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Just between you and me, using<BR><FONT COLOR=#DC4F00><FONT SIZE=4>Mirror Copy</FONT></FONT> may be the easy<BR>way to build symmetrical models.</FONT>")
+open4toast02_6:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F><FONT COLOR=#DC4F00><FONT SIZE=4>Mirror Copy</FONT></FONT> would be more<BR>effective for power blocks as well.</FONT>")
+
+open4toast03_2:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Sometimes the model is just<BR>not fast enough...<BR>That can be bothersome.</FONT>")
+open4toast03_3:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>In this world, blocks that<BR>are near the ground may<BR><FONT COLOR=#DC4F00>get rubbed and slow down</FONT>.</FONT>")
+open4toast03_4:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>It may seem like it doesn't<BR>touch the ground, but its<BR><FONT COLOR=#DC4F00>weight may sink it down</FONT>.</FONT>")
+open4toast03_5:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Of course, you would want to<BR>get rid of that problem.</FONT>")
+open4toast03_6:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Such things are heavy,<BR>could you <FONT COLOR=#DC4F00>attach a power block<BR>at the bottom of it</FONT>?</FONT>")
+open4toast03_7:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>The point is, anything that's<BR><FONT COLOR=#DC4F00>not a power block</FONT> should<BR>not touch the ground.</FONT>")
+
+open4toast04_2:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>You may have noticed that<BR>the <FONT COLOR=#CFCFCF>Z trigger</FONT> performs a different<BR>function from the other modes...</FONT>")
+open4toast04_3:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Pressing the <FONT COLOR=#CFCFCF>Z trigger</FONT> will cause<BR><FONT COLOR=#DC4F00>the camera to move<BR>behind the model</FONT>.</FONT>")
+open4toast04_4:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>It is what it is in this world.<BR>Ignoring what you have set in the<BR>Options menu could be a problem.</FONT>")
+open4toast04_5:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>You will get used to it<BR>before you know it.</FONT>")
+
+open4toast05_2:
+open4toast13_2:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>This is the beginner's bread of<BR>this world.</FONT>")
+open4toast05_3:
+open4toast13_3:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>I have a lot to talk about,<BR>so if you don't want to hear,<BR>press the <FONT COLOR=#2FDF2F>B Button</FONT> to stop.</FONT>")
+open4toast05_4:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>In this world, <FONT SIZE=1>if I remember correctly,</FONT><BR>many blocks have fallen.</FONT>")
+open4toast05_5:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Among them are the <FONT COLOR=#DC4F00>power blocks</FONT>.<BR>To get around in this world,<BR><FONT COLOR=#DC4F00>these blocks are essential</FONT>.</FONT>")
+open4toast05_6:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>These blocks have various abilities.<BR>You can check them out by<BR>pressing the <FONT COLOR=#DC4F00>START Button</FONT>.</FONT>")
+open4toast05_7:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>When you pick up a new block,<BR><FONT COLOR=#DC4F00>assemble</FONT> it on your model,<BR>and look at the results.</FONT>")
+open4toast05_8:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>When you are assembling,<BR>pay close attention to the<BR>orientation of the block.</FONT>")
+open4toast05_9:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Usually when you call in the block,<BR>its orientation should be all right.</FONT>")
+open4toast05_10:
+open4toast13_12:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>With all that in mind,<BR>have a nice trip!</FONT>")
+
+open4toast06_2:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>You may have this problem:<BR>[I am slowing down!]</FONT>")
+open4toast06_3:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>If it isn't because of <FONT COLOR=#FFFFCF>sand</FONT> or <FONT COLOR=#FFFFFF>snow</FONT>,<BR>you may be losing momentum<BR>because of a slope.</FONT>")
+open4toast06_4:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F><FONT COLOR=#DC4F00>The angle of the slope<BR>that a block can climb</FONT> is<BR>different for each.</FONT>")
+open4toast06_5:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>This problem may also occur:<BR>[My jump doesn't reach!]</FONT>")
+open4toast06_6:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>In that case, use a foot block.<BR><FONT COLOR=#DC4F00>Feet makes you jump higher</FONT>.</FONT>")
+
+open4toast07_2:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Mysterious panels have been<BR>rising all around the world.<BR>No one knows what they are.</FONT>")
+open4toast07_3:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>They give mysterious powers<BR>to anybody who touches them<BR>immediately.</FONT>")
+open4toast07_4:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F><FONT COLOR=#2FBFDF>Panels with a blue feather</FONT><BR>are Dash Panels.</FONT>")
+open4toast07_5:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F><FONT COLOR=#FF6F2F>Panels with a red frog</FONT><BR>are Jump Panels.</FONT>")
+open4toast07_6:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Both will speed you up<BR>once you touch them.</FONT>")
+open4toast07_7:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>If you jump with the <FONT COLOR=#2F2FDF>A Button</FONT><BR>just before hitting it,<BR>you will go even higher.</FONT>")
+
+open4toast08_2:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>In the future, you will find<BR>a block called <FONT COLOR=#DC4F00>Controller</FONT>.</FONT>")
+open4toast08_3:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>You can freely turn with it,<BR>even in slippery places<BR>or in the air.</FONT>")
+open4toast08_4:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>You can change direction<BR>anywhere you want, it makes<BR>collecting blocks much easier.</FONT>")
+open4toast08_5:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>However, going straight forward<BR>may feel a lot different.</FONT>")
+
+open4toast09_2:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>In this world, there are<BR>small and large creatures<BR>who may get in your way.</FONT>")
+open4toast09_3:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F><FONT COLOR=#DC4F00>The big ones</FONT> loves blocks<BR>so much, they eat those.</FONT>")
+open4toast09_4:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>They are quite the gourmet,<BR>and will eat away<BR>your most important blocks.</FONT>")
+open4toast09_5:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F><FONT COLOR=#DC4F00>The small ones</FONT> loves<BR>ramming into people.</FONT>")
+open4toast09_6:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>We don't get a lot of visitors here,<BR>so they're quite lonely.</FONT>")
+open4toast09_7:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>In love and friendship of this world,<BR>those silly creatures are protected.</FONT>")
+open4toast09_8:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>When you are in danger,<BR>please don't strike them back.</FONT>")
+open4toast09_9:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Perhaps I should rather say,<BR>it's impossible to fight back.</FONT>")
+
+open4toast10_2:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>People often have this problem:<BR>[My blocks are broken!]<BR>Here are the possible reasons.</FONT>")
+open4toast10_3:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Of course, even in the model,<BR>there's no exception.</FONT>")
+open4toast10_4:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>On strong impact,<BR>your blocks may explode.</FONT>")
+open4toast10_5:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>On very high speeds,<BR>avoid hitting the ground<BR>or the walls.</FONT>")
+open4toast10_6:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>If it happens, just <FONT COLOR=#DC4F00>retry</FONT>,<BR>your blocks will be all patched up.</FONT>")
+open4toast10_7:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>But I have heard that if <FONT COLOR=#DC4F00>you do<BR>something just right when you get<BR>hit</FONT>, nothing will break.</FONT>")
+
+open4toast11_2:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>The ancient mystery,<BR>the pyramid.</FONT>")
+open4toast11_3:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>The legends say it was<BR>flying in the sky.</FONT>")
+open4toast11_4:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Also, <FONT COLOR=#DC4F00>the entrance seems to be<BR>hidden.</FONT> What is inside is<BR>shrouded in mystery.</FONT>")
+
+open4toast12_2:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Next to the toaster, there's that<BR>light brown tower looking thing.<BR>It is said to be a Frog Tower.</FONT>")
+open4toast12_3:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>I'm thinking there's a<BR>meaning to this.<BR>There must be a meaning.</FONT>")
+open4toast12_4:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Why is it a frog?<BR>Who built such a thing?<BR>There's only so much questions.</FONT>")
+open4toast12_5:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>For now, you just need<BR>to remember that<BR>[this tower is a landmark].</FONT>")
+
+open4toast13_4:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>I don't know how much<BR>you like exploring, but this world<BR>has various places to go to.</FONT>")
+open4toast13_5:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>There are places with <FONT COLOR=#FFFFCF>sand</FONT>, <FONT COLOR=#FFFFFF>snow</FONT><BR>and <FONT COLOR=#FFAFFF>thorny</FONT> grounds, so be careful.</FONT>")
+open4toast13_6:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Only few power blocks works<BR>on <FONT COLOR=#FFFFCF>sand</FONT>, <FONT COLOR=#FFFFFF>snow</FONT> and <FONT COLOR=#FFAFFF>thorns</FONT>.</FONT>")
+open4toast13_7:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Watch out for <FONT COLOR=#AFFFFF>ice</FONT>, <FONT COLOR=#AFAFAF>iron</FONT> and more,<BR>or you will lose control and slip.</FONT>")
+open4toast13_8:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>[I cannot proceed any further.]<BR>Check the ground and<BR>the blocks you have.</FONT>")
+open4toast13_9:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>I recommend also<BR>checking the walls.</FONT>")
+open4toast13_10:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>[Something's wrong with the wall.]<BR>If you suspect something is weird,<BR>try touching the wall.</FONT>")
+open4toast13_11:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Touch it and... surprise!<BR>It's like something's changing...</FONT>")
+
+open4toast14_2:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Every time you find a block,<BR>a mysterious pillar grows...</FONT>")
+open4toast14_3:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>The role of the pillar is to<BR>connect the land and the sky.</FONT>")
+open4toast14_4:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Once you have enough blocks,<BR>the pillar will reach the sky.</FONT>")
+open4toast14_5:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Well... Even without the pillar,<BR>you can still fly into the sky.</FONT>")
+open4toast14_6:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Old equipment will always<BR>be replaced by newer ones.<BR>It is inevitable.</FONT>")
+open4toast14_7:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Isn't this<BR><FONT SIZE=6>romantic?</FONT></FONT>")
+open4toast14_8:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Feel free to leave when you want.<BR>Surely the world you want<BR>will be waiting for you.</FONT>")
+
+open4toast15_2:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>On the top-left of the screen,<BR>there's a radar. Dots will appear<BR>relative to your position.</FONT>")
+open4toast15_3:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>It shows the location of <FONT COLOR=#DC4F00>entrances</FONT><BR>and <FONT COLOR=#DC4F00>blocks</FONT>.</FONT>")
+open4toast15_4:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F><FONT COLOR=#8F8F8F>Black dots</FONT> are entrances and exits.<BR><FONT COLOR=#DF2F2F>Red dots</FONT> are blocks above you.<BR><FONT COLOR=#2F2FDF>Blue dots</FONT> are blocks below you.</FONT>")
+open4toast15_5:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Please note that blocks are<BR>not displayed in buildings.</FONT>")
+open4toast15_6:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Here's a secret...<BR>You can put out the radar and<BR>other gauges with the <FONT COLOR=#CFCFCF>L Button</FONT>.</FONT>")
+
+open4toast16_2:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Only one in this world,<BR>only one,<BR>really the only one.</FONT>")
+open4toast16_3:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>There is a transparent passage<BR>that cannot be seen at night.</FONT>")
+open4toast16_4:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Because there is only one,<BR>you must see it...<BR>By all means, please look for it.</FONT>")
+
+open4toast17_2:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Flying into the sky,<BR>until the altitude does not rise...<BR>It happened to you, isn't it?</FONT>")
+open4toast17_3:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>In this world, for <FONT COLOR=#DC4F00>each block<BR>that can fly</FONT>, there's a limit<BR>of height that it can reach.</FONT>")
+open4toast17_4:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>If you want to go higher,<BR>look for more powerful blocks.</FONT>")
+open4toast17_5:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>...While I'm at it,<BR>as I take pleasure in writing this,</FONT>")
+open4toast17_6:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>I am the owner of the bakery.<BR>This bread will be the last one<BR>of my journey of training.</FONT>")
+open4toast17_7:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>If my bread hints have helped you<BR>on your journey,<BR>I cannot be happier.</FONT>")
+open4toast17_8:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>I present my sincere thanks to you.<BR>My destination is a secret.</FONT>")
+
+open4toast18_2:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Remember park slides?<BR>In this world, while we're<BR>talking about slides...</FONT>")
+open4toast18_3:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>When you slide, you cannot stop.<BR>The direction as you enter is<BR>very important.</FONT>")
+open4toast18_4:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>If you use the <FONT COLOR=#DC4F00>Controller</FONT>,<BR>you can turn while sliding,<BR>it might be a little easier.</FONT>")
+
+open4toast19_2:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Speaking of Bread Hints here,<BR>the Pyramid here is pretty humid.</FONT>")
+open4toast19_3:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Because the Pyramid is humid,<BR>things are going haywire.</FONT>")
+open4toast19_4:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>The altitude display is broken,<BR>flying blocks drops in<BR>performance...</FONT>")
+open4toast19_5:
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Don't worry, there's nothing<BR>to worry about, the blocks<BR>are not breaking.</FONT>")
+
+open4toast20_2:
+  putTextASCIInoSeek("<FONT COLOR=#EF9FBF>This is the bakery.<BR>Nice to meet you!</FONT>")
+open4toast20_3:
+  putTextASCIInoSeek("<FONT COLOR=#EF9FBF>The owner is my older brother.<BR>Since he is gone on a journey,<BR>I'm taking his place for now.</FONT>")
+open4toast20_4:
+  putTextASCIInoSeek("<FONT COLOR=#EF9FBF>That's right,<BR>in reverence to my older brother,<BR>I've burned his face on the bread.</FONT>")
+open4toast20_5:
+  putTextASCIInoSeek("<FONT COLOR=#EF9FBF>Isn't that nice?<BR>By the way, we're twins,<BR>so my face is like this too!</FONT>")
+open4toast20_6:
+  putTextASCIInoSeek("<FONT COLOR=#EF9FBF>Even with this face,<BR>our bread is additive-free<BR>so this is safe anyway!</FONT>")
+
+open4toast21_2:
+  putTextASCIInoSeek("<FONT COLOR=#EF9FBF>It looks like you're<BR>in a long corridor.</FONT>")
+open4toast21_3:
+  putTextASCIInoSeek("<FONT COLOR=#EF9FBF>With the <FONT COLOR=#CFCFCF>R Button</FONT>,<BR>you can change into a car,<BR>it feels good!</FONT>")
+
+open4toast22_2:
+  putTextASCIInoSeek("<FONT COLOR=#EF9FBF>This room is the<BR>only room at the top.<BR>I've heard of a nice block in there!</FONT>")
+open4toast22_3:
+  putTextASCIInoSeek("<FONT COLOR=#EF9FBF>But the block seems<BR>to be hidden in a nasty place!</FONT>")
+open4toast22_4:
+  putTextASCIInoSeek("<FONT COLOR=#EF9FBF>There are different<BR>patterns of walls.<BR>Let's try to bump into those!</FONT>")
 
 //Pointers
 seek(0x69D9A0)
@@ -673,4 +942,27 @@ dw open4easteregg_036, open4easteregg_037, open4easteregg_038, open4easteregg_03
 dw open4easteregg_041, open4easteregg_042, open4easteregg_043, open4easteregg_044, open4easteregg_045
 
 //Toasters
-dw open4toast01_1
+
+dw open4toast01_1, open4toast01_2, open4toast01_3, open4toast01_4, open4toast01_5, open4toast01_6, 0
+dw open4toast02_1, open4toast02_2, open4toast02_3, open4toast02_4, open4toast02_5, open4toast02_6, 0
+dw open4toast03_1, open4toast03_2, open4toast03_3, open4toast03_4, open4toast03_5, open4toast03_6, open4toast03_7, 0
+dw open4toast04_1, open4toast04_2, open4toast04_3, open4toast04_4, open4toast04_5, 0
+dw open4toast05_1, open4toast05_2, open4toast05_3, open4toast05_4, open4toast05_5, open4toast05_6, open4toast05_7, open4toast05_8, open4toast05_9, open4toast05_10, 0
+dw open4toast06_1, open4toast06_2, open4toast06_3, open4toast06_4, open4toast06_5, open4toast06_6, 0
+dw open4toast07_1, open4toast07_2, open4toast07_3, open4toast07_4, open4toast07_5, open4toast07_6, open4toast07_7, 0
+dw open4toast08_1, open4toast08_2, open4toast08_3, open4toast08_4, open4toast08_5, 0
+dw open4toast09_1, open4toast09_2, open4toast09_3, open4toast09_4, open4toast09_5, open4toast09_6, open4toast09_7, open4toast09_8, open4toast09_9, 0
+dw open4toast10_1, open4toast10_2, open4toast10_3, open4toast10_4, open4toast10_5, open4toast10_6, open4toast10_7, 0
+dw open4toast11_1, open4toast11_2, open4toast11_3, open4toast11_4, 0
+dw open4toast12_1, open4toast12_2, open4toast12_3, open4toast12_4, open4toast12_5, 0
+dw open4toast13_1, open4toast13_2, open4toast13_3, open4toast13_4, open4toast13_5, open4toast13_6, open4toast13_7, open4toast13_8, open4toast13_9, open4toast13_10, open4toast13_11, open4toast13_12, 0
+dw open4toast14_1, open4toast14_2, open4toast14_3, open4toast14_4, open4toast14_5, open4toast14_6, open4toast14_7, open4toast14_8, 0
+dw open4toast15_1, open4toast15_2, open4toast15_3, open4toast15_4, open4toast15_5, open4toast15_6, 0
+dw open4toast16_1, open4toast16_2, open4toast16_3, open4toast16_4, 0
+dw open4toast17_1, open4toast17_2, open4toast17_3, open4toast17_4, open4toast17_5, open4toast17_6, open4toast17_7, open4toast17_8, 0
+dw open4toast18_1, open4toast18_2, open4toast18_3, open4toast18_4, 0
+dw open4toast19_1, open4toast19_2, open4toast19_3, open4toast19_4, open4toast19_5, 0
+dw open4toast20_1, open4toast20_2, open4toast20_3, open4toast20_4, open4toast20_5, open4toast20_6, 0
+dw open4toast21_1, open4toast21_2, open4toast21_3, 0
+dw open4toast22_1, open4toast22_2, open4toast22_3, open4toast22_4, 0
+//TO CONTINUE AT 80515638

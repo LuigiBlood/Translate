@@ -3,6 +3,8 @@
 
 //Thanks to:
 //krom for Initial Translation work
+//Popcorn for Translation Help
+//Lumpio- for Translation Help
 
 arch n64.cpu
 endian msb
