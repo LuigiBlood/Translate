@@ -1,7 +1,79 @@
 //Mario Artist Polygon Studio
 //Open World Mode
 
+//Open World Pause Menu
+putTextByte(0x717900, "Pause")
+putTextByte(0x717940, "Check Abilities")
+putTextByte(0x717980, "Turn/Move")
+putTextByte(0x7179C0, "\sTilt")
+putTextByte(0x717A00, "Front Look")
+putTextByte(0x717A40, "Switch Power")
+putTextByte(0x717A80, "Camera Setup")
+putTextByte(0x717AC0, "Jump/Move")
+putTextByte(0x717B00, "\sFly")
+putTextByte(0x717B40, "\sSwim")
+
+//Open World Ability Check Menu
+putTextByte(0x69D7DC, "\s")
+putTextByte(0x69D7E0, "Easier handling on:")
+putTextByte(0x69D7FC, "Thorn") //RAM 80514DBC - GFX RAM 8058F180
+putTextByte(0x69D81C, "Sand")   //RAM 80514DDC - GFX RAM 8058F410
+putTextByte(0x69D83C, "Snow")   //RAM 80514DFC - GFX RAM 8058F6A0
+putTextByte(0x69D85C, "Sticks to walls")
+putTextByte(0x69D87C, "Swim")
+putTextByte(0x69D89C, "Fly")
+putTextByte(0x69D8BC, "Afloat")
+putTextByte(0x69D8DC, "Glide")
+putTextByte(0x69D8FC, "Float")
+putTextByte(0x69D91C, "Grip")
+
+seek(0x69D78C)
+//GFX X positions
+dw 0xEF //Thorns Icon
+dw 0x93 //Sand Icon
+dw 0xC0 //Snow Icon
+
+seek(0x69D93C)
+//Text X positions
+dw 0x0102 //Thorns
+dw 0xA6 //Sand
+dw 0xD3 //Snow
+
+//Open World Camera Modes
+putTextByte(0x69AB60, "Camera:")
+putTextByte(0x69AB6C, "Normal")
+putTextByte(0x69AB80, "Away")
+putTextByte(0x69AB94, "Above")
+putTextByte(0x69ABA8, "Fixed")
+putTextByte(0x69ABBC, "Side")
+putTextByte(0x69ABD0, "Behind")
+putTextByte(0x69ABE4, "Model")
+
+seek(0x67EB1A)
+//Move X position of "Camera:"
+dh 0x0074
+
+//Open World 1
+//Limited chars before it crashes
+putTextASCII(0x691190, "There are no blocks.")
+putTextASCII(0x6911C0, "This combination may not work.")
+putTextASCII(0x6911F0, "This combination may not work.")
+
+putTextASCII(0x69E2D0, "WARNING")
+putTextASCII(0x69E2DC, "WARNING")
+
 //A block has been damaged! RAM 80515A40 - NDD 0x69E480
+//One of the blocks RAM 80515A6C
+//has been destroyed RAM 80515A7C
+putTextASCII(0x69E480, "<CENTER><FONT COLOR=#FFCF9F>")
+seek(0x66AAFA)
+  dh ((open1_oneblock >> 16) + 1)
+seek(0x66AAFE)
+  dh open1_oneblock
+seek(0x66AB0A)
+  dh ((open1_destroyed >> 16) + 1)
+seek(0x66AB0E)
+  dh open1_destroyed
 
 //OPEN WORLD 2 RAM 805162F0 - NDD 0x69ED30
 seek(0x69ED30)
@@ -953,6 +1025,13 @@ open4_place11:
   putTextASCIInoSeek("FRONTIER INFERNO")
 open4_place12:
   putTextASCIInoSeek("HIGH ALTITUDE PARADISO")
+
+//There are lots of extra space to use.
+open1_oneblock:
+  putTextASCIInoSeek("One of the blocks")
+open1_destroyed:
+  putTextASCIInoSeek("</FONT> is broken!</CENTER>")
+
   
 //Pointers
 seek(0x69D9A0)
