@@ -3,6 +3,8 @@
 
 //Thanks to:
 //krom for Initial Translation work
+//Popcorn for Translation Help
+//Lumpio- for Translation Help
 
 arch n64.cpu
 endian msb
@@ -75,7 +77,6 @@ macro putTextSJIS(n, text) {
 
 macro putTextSJISnoSeek(text) {
   ShiftJISMap()
-  dh 0x5400, 0xFFFF
   dh {text}
   dh 0x0000
 }
