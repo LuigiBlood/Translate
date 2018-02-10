@@ -5,13 +5,13 @@
 putTextByte(0x717900, "Pause")
 putTextByte(0x717940, "Check Abilities")
 putTextByte(0x717980, "Turn/Move")
-putTextByte(0x7179C0, "\sTilt")
+putTextByte(0x7179C0, "\dTilt")
 putTextByte(0x717A00, "Front Look")
 putTextByte(0x717A40, "Switch Power")
 putTextByte(0x717A80, "Camera Setup")
 putTextByte(0x717AC0, "Jump/Move")
-putTextByte(0x717B00, "\sFly")
-putTextByte(0x717B40, "\sSwim")
+putTextByte(0x717B00, "\dFly")
+putTextByte(0x717B40, "\dSwim")
 
 //Change Display List
 seek(0x717898)
@@ -23,7 +23,7 @@ dw 0xF62742D0, 0x001E02CC
 dw 0xF625433C, 0x001B8338
 
 //Open World Ability Check Menu
-putTextByte(0x69D7DC, "\s")
+putTextByte(0x69D7DC, "\d")
 putTextByte(0x69D7E0, "Easier handling on:")
 putTextByte(0x69D7FC, "Thorn") //RAM 80514DBC - GFX RAM 8058F180
 putTextByte(0x69D81C, "Sand")   //RAM 80514DDC - GFX RAM 8058F410
