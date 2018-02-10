@@ -13,6 +13,15 @@ putTextByte(0x717AC0, "Jump/Move")
 putTextByte(0x717B00, "\sFly")
 putTextByte(0x717B40, "\sSwim")
 
+//Change Display List
+seek(0x717898)
+dw 0xF62A4238, 0x00170234
+seek(0x7178A8)
+dw 0xF627C284, 0x00210280
+seek(0x7178B8)
+dw 0xF62742D0, 0x001E02CC
+dw 0xF625433C, 0x001B8338
+
 //Open World Ability Check Menu
 putTextByte(0x69D7DC, "\s")
 putTextByte(0x69D7E0, "Easier handling on:")

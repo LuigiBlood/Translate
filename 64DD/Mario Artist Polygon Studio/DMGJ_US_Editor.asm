@@ -46,7 +46,7 @@ common_menu_photo:
 common_menu_break:
   putTextByte(0x1C211C, "Take a break")
 common_menu_openworld:
-  putTextByte(0x1C2130, "Open World")
+  putTextByte(0x1C2130, "Experimental World")
 common_menu_assemble:
   putTextByte(0x1C2144, "Assemble")
 common_menu_create:
