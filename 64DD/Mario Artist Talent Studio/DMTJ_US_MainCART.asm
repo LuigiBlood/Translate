@@ -2,6 +2,7 @@
 //by LuigiBlood
 
 //Thanks to
+//- Cauterize (for the Logo)
 //- SourceGaming (for some translation help)
 //- Zoinkity (GameBoy Camera hack)
 
@@ -254,3 +255,5 @@ print "Gallery\n"
 include "DMTJ_US_Gallery.asm"
 print "Other\n"
 include "DMTJ_US_Other.asm"
+print "Title Screen\n"
+include "DMTJ_US_TitleScreen.asm"

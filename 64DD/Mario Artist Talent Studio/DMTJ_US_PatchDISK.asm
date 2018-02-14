@@ -2,6 +2,7 @@
 //by LuigiBlood
 
 //Thanks to
+//- Cauterize (for the Logo)
 //- SourceGaming (for some translation help)
 //- Zoinkity (GameBoy Camera hack)
 
@@ -194,3 +195,5 @@ seek(0x914B78)
 insert "914B78.AEEC.Kanji.yay1.bin.yay"
 seek(0x8E7E48)
 insert "8E7E48.CCC7.GBCam.yay1.bin.yay"
+seek(0x12D5180)
+insert "12D5180.2BDD6.TitleScreen.yay1.bin.yay"
