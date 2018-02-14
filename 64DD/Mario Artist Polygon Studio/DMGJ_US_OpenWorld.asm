@@ -712,15 +712,15 @@ open4toast23_1:
 open4toast24_1:
 open4toast25_1:
 open4toast26_1:
-  putTextASCIInoSeek("A note is written on this bread!<BR>...")
+  putTextASCIInoSeek("Something is written on this bread!<BR>...")
 open4toast01_2:
   putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Greetings, this is the bakery.<BR>Nice to meet you.</FONT>")
 open4toast01_3:
   putTextASCIInoSeek("<FONT COLOR=#DC9F4F>For 50 years, we have been<BR>placing these toasters in this world.<BR>We bake the bread you can trust.</FONT>")
 open4toast01_4:
-  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Our baker has put his mind and<BR>love into making bread.<BR>The best <FONT COLOR=#DC4F00>hints</FONT> have been written.</FONT>")
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>I have put my mind and<BR>love into making bread.<BR>The best <FONT COLOR=#DC4F00>hints</FONT> have been written.</FONT>")
 open4toast01_5:
-  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>He has put his mind into it all night,<BR>so if you see us, please come in<BR>and take a look.</FONT>")
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>If you happen to see us,<BR>please come in and<BR>take a look.</FONT>")
 open4toast01_6:
   putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Of course, all of our breads are<BR>additive-free and the crumbs<BR>are soft.</FONT>")
 
@@ -804,18 +804,18 @@ open4toast07_7:
   putTextASCIInoSeek("<FONT COLOR=#DC9F4F>If you jump with the <FONT COLOR=#2F2FDF>A Button</FONT><BR>just before hitting it,<BR>you will go even higher.</FONT>")
 
 open4toast08_2:
-  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>In the future, you will find<BR>a block called <FONT COLOR=#DC4F00>Controller</FONT>.</FONT>")
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Soon, you will find<BR>a block called <FONT COLOR=#DC4F00>Controller</FONT>.</FONT>")
 open4toast08_3:
-  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>You can freely turn with it,<BR>even in slippery places<BR>or in the air.</FONT>")
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>You can freely turn with it,<BR>even on slippery grounds<BR>or in the air.</FONT>")
 open4toast08_4:
-  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>You can change direction<BR>anywhere you want, it makes<BR>collecting blocks much easier.</FONT>")
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>You can change directions to<BR>anywhere you want, it makes<BR>collecting blocks much easier.</FONT>")
 open4toast08_5:
   putTextASCIInoSeek("<FONT COLOR=#DC9F4F>However, going straight forward<BR>may feel a lot different.</FONT>")
 
 open4toast09_2:
   putTextASCIInoSeek("<FONT COLOR=#DC9F4F>In this world, there are<BR>small and large creatures<BR>who may get in your way.</FONT>")
 open4toast09_3:
-  putTextASCIInoSeek("<FONT COLOR=#DC9F4F><FONT COLOR=#DC4F00>The big ones</FONT> loves blocks<BR>so much, they eat those.</FONT>")
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F><FONT COLOR=#DC4F00>The big ones</FONT> loves blocks<BR>so much,<BR>they are hungry for those.</FONT>")
 open4toast09_4:
   putTextASCIInoSeek("<FONT COLOR=#DC9F4F>They are quite the gourmet,<BR>and will eat away<BR>your most important blocks.</FONT>")
 open4toast09_5:
@@ -823,11 +823,11 @@ open4toast09_5:
 open4toast09_6:
   putTextASCIInoSeek("<FONT COLOR=#DC9F4F>We don't get a lot of visitors here,<BR>so they're quite lonely.</FONT>")
 open4toast09_7:
-  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>In love and friendship of this world,<BR>those silly creatures are protected.</FONT>")
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>In love of this world,<BR>those silly creatures are protected.</FONT>")
 open4toast09_8:
-  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>When you are in danger,<BR>please don't strike them back.</FONT>")
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>When you are in danger,<BR>please don't fight them.</FONT>")
 open4toast09_9:
-  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Perhaps I should rather say,<BR>it's impossible to fight back.</FONT>")
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Perhaps I should rather say,<BR>it's impossible to strike back.</FONT>")
 
 open4toast10_2:
   putTextASCIInoSeek("<FONT COLOR=#DC9F4F>People often have this problem:<BR>[My blocks are broken!]<BR>Here are the possible reasons.</FONT>")
@@ -856,7 +856,7 @@ open4toast12_3:
 open4toast12_4:
   putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Why is it a frog?<BR>Who built such a thing?<BR>There's only so much questions.</FONT>")
 open4toast12_5:
-  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>For now, you just need<BR>to remember that<BR>[this tower is a landmark].</FONT>")
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>For now, you just need<BR>to remember that<BR>this tower is a landmark.</FONT>")
 
 open4toast13_4:
   putTextASCIInoSeek("<FONT COLOR=#DC9F4F>I don't know how much<BR>you like exploring, but this world<BR>has various places to go to.</FONT>")
@@ -904,7 +904,7 @@ open4toast15_6:
 open4toast16_2:
   putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Only one in this world,<BR>only one,<BR>really the only one.</FONT>")
 open4toast16_3:
-  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>There is a transparent passage<BR>that cannot be seen at night.</FONT>")
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>There is a transparent passage<BR>that can only be seen<BR>at night.</FONT>")
 open4toast16_4:
   putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Because there is only one,<BR>you must see it...<BR>By all means, please look for it.</FONT>")
 
@@ -917,7 +917,7 @@ open4toast17_4:
 open4toast17_5:
   putTextASCIInoSeek("<FONT COLOR=#DC9F4F>...While I'm at it,<BR>as I take pleasure in writing this,</FONT>")
 open4toast17_6:
-  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>I am the owner of the bakery.<BR>This bread will be the last one<BR>of my journey of training.</FONT>")
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>I am the owner of the bakery.<BR>This bread will be the last one<BR>as I'm going on a journey.</FONT>")
 open4toast17_7:
   putTextASCIInoSeek("<FONT COLOR=#DC9F4F>If my bread hints have helped you<BR>on your journey,<BR>I cannot be happier.</FONT>")
 open4toast17_8:
@@ -933,11 +933,11 @@ open4toast18_4:
 open4toast19_2:
   putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Speaking of Bread Hints here,<BR>the Pyramid here is pretty humid.</FONT>")
 open4toast19_3:
-  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Because the Pyramid is humid,<BR>things are going haywire.</FONT>")
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Because of the humidity,<BR>gauges are going haywire.</FONT>")
 open4toast19_4:
   putTextASCIInoSeek("<FONT COLOR=#DC9F4F>The altitude display is broken,<BR>flying blocks drops in<BR>performance...</FONT>")
 open4toast19_5:
-  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Don't worry, there's nothing<BR>to worry about, the blocks<BR>are not breaking.</FONT>")
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>There's nothing to worry about,<BR>the blocks are not breaking.</FONT>")
 
 open4toast20_2:
   putTextASCIInoSeek("<FONT COLOR=#EF9FBF>This is the bakery.<BR>Nice to meet you!</FONT>")
@@ -951,16 +951,16 @@ open4toast20_6:
   putTextASCIInoSeek("<FONT COLOR=#EF9FBF>Even with this face,<BR>our bread is additive-free<BR>so this is still safe!</FONT>")
 
 open4toast21_2:
-  putTextASCIInoSeek("<FONT COLOR=#EF9FBF>It looks like you're<BR>in a long corridor.</FONT>")
+  putTextASCIInoSeek("<FONT COLOR=#EF9FBF>It looks like you're standing<BR>to a long and thin passageway.</FONT>")
 open4toast21_3:
-  putTextASCIInoSeek("<FONT COLOR=#EF9FBF>With the <FONT COLOR=#CFCFCF>R Button</FONT>,<BR>you can change into a car,<BR>it feels good!</FONT>")
+  putTextASCIInoSeek("<FONT COLOR=#EF9FBF>With the <FONT COLOR=#CFCFCF>R Button</FONT>,<BR>you can change into a car,<BR>it feels so good!</FONT>")
 
 open4toast22_2:
   putTextASCIInoSeek("<FONT COLOR=#EF9FBF>This room is the<BR>only room at the top.<BR>I've heard of a nice block in there!</FONT>")
 open4toast22_3:
   putTextASCIInoSeek("<FONT COLOR=#EF9FBF>But the block seems<BR>to be hidden in a nasty place!</FONT>")
 open4toast22_4:
-  putTextASCIInoSeek("<FONT COLOR=#EF9FBF>There are different<BR>patterns of walls.<BR>Let's try to bump into those!</FONT>")
+  putTextASCIInoSeek("<FONT COLOR=#EF9FBF>There are different<BR>patterns of walls.<BR>Let's bump into those!</FONT>")
 
 open4toast23_2:
   putTextASCIInoSeek("<FONT COLOR=#EF9FBF>Well... If you want to fly...<BR>You may think putting on wings<BR>might be a good idea,</FONT>")
@@ -978,7 +978,7 @@ open4toast23_7:
 open4toast24_2:
   putTextASCIInoSeek("<FONT COLOR=#EF9FBF>Well, it looks like the Power Star<BR>is making all the blocks<BR>much stronger.</FONT>")
 open4toast24_3:
-  putTextASCIInoSeek("<FONT COLOR=#EF9FBF>But there are a few that<BR>won't change, like the strongest<BR>blocks at the start.</FONT>")
+  putTextASCIInoSeek("<FONT COLOR=#EF9FBF>But there are a few that<BR>won't change, like the strongest<BR>blocks to begin with.</FONT>")
 open4toast24_4:
   putTextASCIInoSeek("<FONT COLOR=#EF9FBF>Don't compare it to engines.<BR>They're different.</FONT>")
 open4toast24_5:
