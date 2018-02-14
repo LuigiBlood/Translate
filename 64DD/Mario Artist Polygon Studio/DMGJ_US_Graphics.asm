@@ -2,9 +2,13 @@
 //Graphic Replacement
 
 //Title Screen
-
 //Mario Artist GFX at 0x285BE0 (IA8) 216x12
-//Polygon Studio GFX at 0x286608 (IA8) 248x30
+seek(0x285BE0)
+insert "GFX/MARIOARTIST_HALFSIZE.ia8.bin"
+
+//Polygon Studio GFX at 0x286608 - 7440 bytes (IA8) 248x30
+seek(0x286608)
+insert "GFX/POLYGONSTUDIO.ia8.bin"
 
 //Gallery?
 //0x731D70

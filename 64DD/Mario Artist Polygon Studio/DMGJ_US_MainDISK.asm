@@ -2,6 +2,7 @@
 //by LuigiBlood
 
 //Thanks to:
+//Cauterize for the Logo
 //krom for Initial Translation work
 //Popcorn for Translation Help
 //Lumpio- for Translation Help
@@ -217,35 +218,35 @@ macro ShiftJISMap() {
 
 macro ASCIIMap() {
   map ' ', $20, $60
-  map 'á', $01
-  map 'â', $02
-  map 'ã', $03
-  map 'ä', $04
-  map 'å', $05
-  map 'æ', $06
-  map 'ç', $07
-  map 'è', $08
-  map 'é', $09
-  map 'ê', $0A
-  map 'ë', $0B
-  map 'ì', $0C
-  map 'í', $0D
-  map 'î', $0E
-  map 'ï', $0F
-  map 'ï', $10
-  map 'ñ', $11
-  map 'ò', $12
-  map 'ó', $13
-  map 'ô', $14
-  map 'õ', $15
-  map 'ö', $16
-  map '÷', $17
-  map 'ø', $18
-  map 'ù', $19
-  map 'ú', $1A
-  map 'û', $1B
-  map 'ü', $1C
-  map 'ÿ', $1F
+  map 'ï¿½', $01
+  map 'ï¿½', $02
+  map 'ï¿½', $03
+  map 'ï¿½', $04
+  map 'ï¿½', $05
+  map 'ï¿½', $06
+  map 'ï¿½', $07
+  map 'ï¿½', $08
+  map 'ï¿½', $09
+  map 'ï¿½', $0A
+  map 'ï¿½', $0B
+  map 'ï¿½', $0C
+  map 'ï¿½', $0D
+  map 'ï¿½', $0E
+  map 'ï¿½', $0F
+  map 'ï¿½', $10
+  map 'ï¿½', $11
+  map 'ï¿½', $12
+  map 'ï¿½', $13
+  map 'ï¿½', $14
+  map 'ï¿½', $15
+  map 'ï¿½', $16
+  map 'ï¿½', $17
+  map 'ï¿½', $18
+  map 'ï¿½', $19
+  map 'ï¿½', $1A
+  map 'ï¿½', $1B
+  map 'ï¿½', $1C
+  map 'ï¿½', $1F
 }
 
 //Translation
