@@ -622,7 +622,7 @@ putText(0x1F9757, "Flash")
 putText(0x1F97FF, "Rocket")
 //Zentai Keshi 0x1F98A7 (Unused)
 //Zentai Keshi 0x1F994F (Unused)
-putText(0x1F99E0, "Smoothen") //Unused?
+putText(0x1F99EF, "Smoothen")
 //Zentai Keshi 0x1F9B45 (Unused)
 putText(0x1F9E1D, "Exit")
 putText(0x1F9EC5, "Exit")
