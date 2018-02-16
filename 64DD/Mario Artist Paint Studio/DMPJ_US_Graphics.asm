@@ -6,6 +6,35 @@ seek(0xD40FD0) //Mario Artist
 insert "GFX/MARIOARTIST.ia8.bin"
 
 
+//--Main Menu
+seek(0xD497F0)
+insert "GFX/MENU_MODESELECT.ia8.bin"
+
+seek(0xD57AB0)
+insert "GFX/MENU_2DPAINT.rgba16.bin"
+
+seek(0xD59840)
+insert "GFX/MENU_2DMOVIE.rgba16.bin"
+
+seek(0xD5A4A0)
+insert "GFX/MENU_3DWORLD.rgba16.bin"
+
+seek(0xD5B1C0)
+insert "GFX/MENU_GALLERY.rgba16.bin"
+
+seek(0xD5C460)
+insert "GFX/MENU_PLAYERSELECT.rgba16.bin"
+
+seek(0xD6B9F0)
+insert "GFX/MENU_1.rgba16.bin"
+
+seek(0xD6BCB0)
+insert "GFX/MENU_PLAYER.rgba16.bin"
+
+seek(0xD6CB50)
+insert "GFX/MENU_234.rgba16.bin"
+
+
 //--Buttons
 seek(0x34E640)
 insert "GFX/BUTTONS.rgba16.bin"
