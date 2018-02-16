@@ -716,6 +716,10 @@ dh (access_gbcam4)
 //Fix number
 seek(0x1D056A)
 dh $006A
+seek(0x1D05B6)
+dh $006A
+seek(0x1D063E)
+dh $006A
 
 putText(0x2096CE, "Ghost")
 putText(0x209784, "Erase Ghost")
