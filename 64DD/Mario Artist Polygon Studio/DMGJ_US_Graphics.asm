@@ -70,6 +70,22 @@ seek(0x2623E0)
 insert "GFX/OPTION_HELP.ia8.bin"
 
 
+//Expert Mode Menu
+seek(0x650278)
+insert "GFX/EXPERT_BLOCKDOME.i4.bin"
+seek(0x6504C0)
+insert "GFX/EXPERT_MODELROCKET.i4.bin"
+seek(0x650708)
+insert "GFX/EXPERT_STAGEUFO.i4.bin"
+
+seek(0x650BA0)
+insert "GFX/EXPERT_BLOCKDOMEANIM.i4.bin"
+seek(0x6519B8)
+insert "GFX/EXPERT_MODELROCKETANIM.i4.bin"
+seek(0x6527D0)
+insert "GFX/EXPERT_STAGEUFOANIM.i4.bin"
+
+
 //Gallery?
 //0x731D70
 
