@@ -86,6 +86,38 @@ seek(0x6527D0)
 insert "GFX/EXPERT_STAGEUFOANIM.i4.bin"
 
 
+//Minigame Menu
+//0x98E028 - RAM 8050E068
+seek(0x98E030)
+base 0x8050E070
+//Go Go Pack! Logo
+
+
+//BOOM BEAT (Sound Bomber) Logo
+seek(0x98EA88) //RAM 8050EAC8 -
+minigame_b:
+  insert "GFX/MINIGAME_B.ia8.bin"
+seek(0x98EB90) //RAM 8050EBD0 BA
+minigame_o:
+  insert "GFX/MINIGAME_O.ia8.bin"
+seek(0x98EC98) //RAM 8050ECD8 BO
+minigame_m:
+  insert "GFX/MINIGAME_M.ia8.bin"
+
+seek(0x98EFB0) //RAM 8050EFF0 DO
+minigame_e:
+  insert "GFX/MINIGAME_E.ia8.bin"
+
+seek(0x98F188) //RAM 8050F1C8 N
+minigame_a:
+  insert "GFX/MINIGAME_A.ia8.bin"
+seek(0x98F290) //RAM 8050F2D0 SA
+minigame_t:
+  insert "GFX/MINIGAME_T.ia8.bin"
+
+seek(0x98F530) //RAM 8050F570 U
+//none, kept in here just for documentation
+
 //Gallery?
 //0x731D70
 

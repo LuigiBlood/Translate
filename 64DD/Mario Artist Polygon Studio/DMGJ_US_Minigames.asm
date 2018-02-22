@@ -1,6 +1,15 @@
 //Mario Artist Polygon Studio
 //Minigames
 
+//Menu
+//BOOM BEAT
+seek(0x966260)
+dw 0x8050F3D8
+dw minigame_b, minigame_o, minigame_o, minigame_m
+dw 0x8050EDE0, 0x8050F0F8
+dw minigame_b, minigame_e, minigame_a, minigame_t
+dw 0x8050F3D8
+
 //Go Go Pack
 //Credits
 seek(0x99BFF8)
