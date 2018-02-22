@@ -59,6 +59,16 @@ mainmenu_x:
 mainmenu_empty:
   fill 256
 
+//Options
+seek(0x260808)
+insert "GFX/OPTION_CURSORSPEED.ia8.bin"
+seek(0x2614D0)
+insert "GFX/OPTION_SOUND.ia8.bin"
+seek(0x261C58)
+insert "GFX/OPTION_ZBUTTON.ia8.bin"
+seek(0x2623E0)
+insert "GFX/OPTION_HELP.ia8.bin"
+
 
 //Gallery?
 //0x731D70
