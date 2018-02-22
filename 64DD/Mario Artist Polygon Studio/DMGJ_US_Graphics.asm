@@ -91,7 +91,7 @@ insert "GFX/EXPERT_STAGEUFOANIM.i4.bin"
 seek(0x98E030)
 base 0x8050E070
 //Go Go Pack! Logo
-
+insert "GFX/MINIGAME_GOGOPACK.ia8.bin"
 
 //BOOM BEAT (Sound Bomber) Logo
 seek(0x98EA88) //RAM 8050EAC8 -
