@@ -10,8 +10,59 @@ insert "GFX/MARIOARTIST_HALFSIZE.ia8.bin"
 seek(0x286608)
 insert "GFX/POLYGONSTUDIO.ia8.bin"
 
+
+//Main Menu
+//Simple / Gallery / Options / Shortcut / Expert
+//Character I8 GFXs for "SimpleGaryOtonshcuEx"
+seek(0x25EAB0)
+base 0x807981E8
+mainmenu_S:
+  insert "GFX/menu_S.i8.bin"
+mainmenu_i:
+  insert "GFX/menu_i.i8.bin"
+mainmenu_m:
+  insert "GFX/menu_m.i8.bin"
+mainmenu_p:
+  insert "GFX/menu_p.i8.bin"
+mainmenu_l:
+  insert "GFX/menu_l.i8.bin"
+mainmenu_e_small:
+  insert "GFX/menu_e_small.i8.bin"
+mainmenu_G:
+  insert "GFX/menu_G.i8.bin"
+mainmenu_a:
+  insert "GFX/menu_a.i8.bin"
+mainmenu_r:
+  insert "GFX/menu_r.i8.bin"
+mainmenu_y:
+  insert "GFX/menu_y.i8.bin"
+mainmenu_O:
+  insert "GFX/menu_O.i8.bin"
+mainmenu_t:
+  insert "GFX/menu_t.i8.bin"
+mainmenu_o_small:
+  insert "GFX/menu_o_small.i8.bin"
+mainmenu_n:
+  insert "GFX/menu_n.i8.bin"
+mainmenu_s_small:
+  insert "GFX/menu_s_small.i8.bin"
+mainmenu_h:
+  insert "GFX/menu_h.i8.bin"
+mainmenu_c:
+  insert "GFX/menu_c.i8.bin"
+mainmenu_u:
+  insert "GFX/menu_u.i8.bin"
+mainmenu_E:
+  insert "GFX/menu_E.i8.bin"
+mainmenu_x:
+  insert "GFX/menu_x.i8.bin"
+mainmenu_empty:
+  fill 256
+
+
 //Gallery?
 //0x731D70
+
 
 //Save & Load
 //Back Circle Arrow
