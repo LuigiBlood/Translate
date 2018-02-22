@@ -749,9 +749,9 @@ open4toast03_7:
   putTextASCIInoSeek("<FONT COLOR=#DC9F4F>The point is, anything that's<BR><FONT COLOR=#DC4F00>not a power block</FONT> should<BR>not touch the ground.</FONT>")
 
 open4toast04_2:
-  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>You may have noticed that<BR>the <FONT COLOR=#CFCFCF>Z trigger</FONT> performs a different<BR>function from the other modes...</FONT>")
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>You may have noticed that<BR>the <FONT COLOR=#CFCFCF>Z Button</FONT> performs a different<BR>function from the other modes...</FONT>")
 open4toast04_3:
-  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Pressing the <FONT COLOR=#CFCFCF>Z trigger</FONT> will cause<BR><FONT COLOR=#DC4F00>the camera to move<BR>behind the model</FONT>.</FONT>")
+  putTextASCIInoSeek("<FONT COLOR=#DC9F4F>Pressing the <FONT COLOR=#CFCFCF>Z Button</FONT> will cause<BR><FONT COLOR=#DC4F00>the camera to move<BR>behind the model</FONT>.</FONT>")
 open4toast04_4:
   putTextASCIInoSeek("<FONT COLOR=#DC9F4F>It is what it is in this world.<BR>Ignoring what you have set in the<BR>Options menu could be a problem.</FONT>")
 open4toast04_5:
