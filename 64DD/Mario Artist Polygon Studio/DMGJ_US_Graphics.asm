@@ -189,4 +189,22 @@ insert "GFX/BUTTON_BACK.ia8.bin"
 
 
 //Experimental World
-//0x6FFA50 - Warps
+//Warps
+seek(0x6FFA50)
+insert "GFX/WARP_ENTER.ia4.bin"
+seek(0x700258)
+insert "GFX/WARP_EXIT.ia4.bin"
+seek(0x700A60)
+insert "GFX/WARP_PILLAR.ia4.bin"
+seek(0x701268)
+insert "GFX/WARP_GRASS.ia4.bin"
+seek(0x701A70)
+insert "GFX/WARP_WATER.ia4.bin"
+seek(0x702278)
+insert "GFX/WARP_SKY.ia4.bin"
+seek(0x702A80)
+insert "GFX/WARP_UP.ia4.bin"
+seek(0x703288)
+insert "GFX/WARP_HUB.ia4.bin"
+seek(0x703A90)
+insert "GFX/WARP_MOUNTAIN.ia4.bin"
