@@ -140,3 +140,33 @@ insert "GFX/LOADSELECT.ci8.bin"
 
 seek(0x234360) //Save Color
 insert "GFX/SAVESELECT.ci8.bin"
+
+
+//Minigame Pause Menus
+//Exit
+seek(0x715CB0)
+insert "GFX/PAUSE_EXIT.i4.bin"
+//Back
+seek(0x715D78)
+insert "GFX/PAUSE_BACK.i4.bin"
+//Retry
+seek(0x716F30)
+insert "GFX/PAUSE_RETRY.i4.bin"
+
+//Exit
+seek(0x9E6C00)
+insert "GFX/PAUSE_EXIT.i4.bin"
+//Back
+seek(0x9E6CC8)
+insert "GFX/PAUSE_BACK.i4.bin"
+
+//Exit
+seek(0xA062E8)
+insert "GFX/PAUSE_EXIT.i4.bin"
+//Back
+seek(0xA063B0)
+insert "GFX/PAUSE_BACK.i4.bin"
+
+
+//Experimental World
+//0x6FFA50 - Warps
