@@ -10,6 +10,40 @@ insert "GFX/MARIOARTIST_HALFSIZE.ia8.bin"
 seek(0x286608)
 insert "GFX/POLYGONSTUDIO.ia8.bin"
 
+//Transition Tiles
+seek(0x27DAB0)
+insert "GFX/TITLE_TILE12.ci4.bin"
+seek(0x27DCE0)
+insert "GFX/TITLE_TILE13.ci4.bin"
+seek(0x27DF10)
+insert "GFX/TITLE_TILE14.ci4.bin"
+seek(0x27E140)
+insert "GFX/TITLE_TILE15.ci4.bin"
+seek(0x27E370)
+insert "GFX/TITLE_TILE16.ci4.bin"
+seek(0x27E5A0)
+insert "GFX/TITLE_TILE17.ci4.bin"
+seek(0x27E7D0)
+insert "GFX/TITLE_TILE18.ci4.bin"
+seek(0x27EA00)
+insert "GFX/TITLE_TILE19.ci4.bin"
+seek(0x27EC30)
+insert "GFX/TITLE_TILE20.ci4.bin"
+seek(0x27EE60)
+insert "GFX/TITLE_TILE21.ci4.bin"
+seek(0x27F090)
+insert "GFX/TITLE_TILE22.ci4.bin"
+seek(0x27F2C0)
+insert "GFX/TITLE_TILE23.ci4.bin"
+seek(0x27F4F0)
+insert "GFX/TITLE_TILE24.ci4.bin"
+seek(0x27F720)
+insert "GFX/TITLE_TILE25.ci4.bin"
+seek(0x27F950)
+insert "GFX/TITLE_TILE26.ci4.bin"
+seek(0x27FB80)
+insert "GFX/TITLE_TILE27.ci4.bin"
+
 
 //Main Menu
 //Simple / Gallery / Options / Shortcut / Expert

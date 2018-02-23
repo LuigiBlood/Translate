@@ -10,7 +10,7 @@
 arch n64.cpu
 endian msb
 output "Mario Artist - Polygon Studio.ndd", create
-origin 0x000000; insert "NUD-DMGJ-JPN_COMPLETE.ndd" // Include Japanese Mario Artist - Polygon Studio N64 DD ROM
+origin 0x000000; insert "NUD-DMGJ-JPN.ndd" // Include Japanese Mario Artist - Polygon Studio N64 DD ROM
 
 include "N64_CPUREGS.asm"
 
