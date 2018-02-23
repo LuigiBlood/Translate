@@ -168,5 +168,20 @@ seek(0xA063B0)
 insert "GFX/PAUSE_BACK.i4.bin"
 
 
+//Buttons
+//Yes
+seek(0x1C7DE0)
+insert "GFX/BUTTON_YES.ia8.bin"
+//OK
+seek(0x1C8428)
+insert "GFX/BUTTON_OK.ia8.bin"
+//No
+seek(0x1C8A70)
+insert "GFX/BUTTON_NO.ia8.bin"
+//Back
+seek(0x1C90B8)
+insert "GFX/BUTTON_BACK.ia8.bin"
+
+
 //Experimental World
 //0x6FFA50 - Warps
