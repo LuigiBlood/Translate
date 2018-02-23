@@ -118,8 +118,13 @@ minigame_t:
 seek(0x98F530) //RAM 8050F570 U
 //none, kept in here just for documentation
 
-//Gallery?
-//0x731D70
+
+//Gallery
+seek(0x731AE8)
+insert "GFX/GALLERY_WORKS.i8.bin"
+
+seek(0x731D70)
+fill 256
 
 
 //Save & Load
