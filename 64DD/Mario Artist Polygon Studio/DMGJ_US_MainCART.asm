@@ -1,11 +1,13 @@
 //Mario Artist Polygon Studio - Japanese to English Translation
 //by LuigiBlood
 
-//Thanks to:
-//Cauterize for the Logo
-//krom for Initial Translation work
-//Popcorn for Translation Help
-//Lumpio- for Translation Help
+//LuigiBlood - Project Leader, Translation, Hacking, Graphic Design
+//Cauterize - Logo Design
+//krom - Initial Translation Work
+//
+//Special Thanks:
+//Popcorn, Matti Virkkunen, and SilverShroud for translation help/proof-read
+//Covarr - For design help
 
 arch n64.cpu
 endian msb
