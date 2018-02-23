@@ -12,7 +12,7 @@ endian msb
 output "Mario Artist - Polygon Studio.n64", create
 origin 0x000000; insert "NUD-DMGJ-JPN.n64" // Include Japanese Mario Artist - Polygon Studio N64 DD ROM
 
-origin 0x10; dw 0xD0437964, 0xB6FDC192 //New checksum
+origin 0x10; dw 0x26E5A6A6, 0x153E8670 //New checksum
 
 include "N64_CPUREGS.asm"
 
