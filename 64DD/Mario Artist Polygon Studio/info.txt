@@ -1,7 +1,11 @@
 Mario Artist Polygon Studio - English Translation
 by LuigiBlood
 
-Version 1 - 100% translated
+Version 2 - Truly 100% translated
+
+Changelog:
+- Forgotten Polygon Counter graphics now in English
+
 
 Credits:
 LuigiBlood - Project Leader, Translation, Hacking, Graphic Design

@@ -120,6 +120,11 @@ seek(0x6527D0)
 insert "GFX/EXPERT_STAGEUFOANIM.i4.bin"
 
 
+//Model Rocket - Polygon Counter
+seek(0x8EB108)
+insert "GFX/MODEL_POLYGON.ia8.bin"
+
+
 //Minigame Menu
 //0x98E028 - RAM 8050E068
 seek(0x98E030)
