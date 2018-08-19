@@ -489,23 +489,6 @@ putTextnoSeek("Talent Studio Game Disk is required.")
 saveload5_kanji:
 putTextnoSeek("* Pick the first kana of the kanji *")
 
-//Graphics
-seekFile(0x26F0)
-insert "GFX/SAVELOAD.i8.bin"
-
-seekFile(0x2D5D0) //Load Color
-insert "GFX/LOADSELECT.ci8.bin"
-
-seekFile(0x2DE10) //Save Color
-insert "GFX/SAVESELECT.ci8.bin"
-
-seekFile(0x1AFD0) //Back Circle Arrow
-insert "GFX/BACKCIRCLE.rgba16.bin"
-
-//Yes / No buttons
-seekFile(0x1A250)
-insert "GFX/YES_NO.rgba16.bin"
-
 //Disk File patches---------------------------------
 outputGame()
 
@@ -646,7 +629,7 @@ seek(0x88CBAA)
 dh (saveload4_selectcontainer)
 seek(0x88CBCA)
 dh (saveload4_selectcontainerall1)
-seek(0x88CBE0)
+seek(0x88CBE2)
 dh (saveload4_selectcontainerall2)
 seek(0x88CBFA)
 dh (saveload4_selectfile)

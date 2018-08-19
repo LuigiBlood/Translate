@@ -70,3 +70,19 @@ putTextASCII(0x12BB080, "Disk Initialization.|All the saved data|will be gone.|A
 //Unsure
 putTextASCII(0x12BB0E0, "Disk Auto Save|Initialization.|Auto saved data and albums|will be gone.|Are you sure?")
 putTextASCII(0x12BB154, "Initialization...|Do not eject the disk.")
+
+//Capture Pak Text
+putText(0x0128474, "Reset") //Color Reset
+
+seek(0x10CDB8)
+base 0x801994F8
+movie_capture_exit:
+putTextnoSeek("Exit")
+seek(0x10CD6C)
+movie_capture_back:
+putTextnoSeek("Back")
+
+seek(0x10CDEC)
+dw (movie_capture_exit)
+seek(0x10CE14)
+dw (movie_capture_back)

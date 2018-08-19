@@ -2518,3 +2518,8 @@ putText(0x11F6138 + 40*3, "Replace")
 putText(0x11F6138 + 40*4, "Use Graffiti")
 
 putTextASCII(0x11DE000, "This Graffiti|will be deleted.|Is it OK?")
+
+//Image Processing Text (after Capture or GBCam)
+putText(0x12A5138, "OK")
+putText(0x12A514C, "Undo")
+putText(0x12A5160, "Back")

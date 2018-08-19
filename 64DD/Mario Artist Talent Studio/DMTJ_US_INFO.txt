@@ -1,0 +1,14 @@
+Mario Artist Talent Studio - English Translation
+by LuigiBlood
+
+Version 1 - First release.
+
+Issues:
+- Only the text data is translated. None of the graphics have been changed (Save & Load aside)
+
+Credits:
+LuigiBlood - Project Leader, Translator, Hacking, Graphic Design
+Cauterize - Logo Design
+SourceGaming Team - Translation Help
+Princess Madelyn - For having a nice gender list that fits.
+ptidus - For the Mode Select font idea

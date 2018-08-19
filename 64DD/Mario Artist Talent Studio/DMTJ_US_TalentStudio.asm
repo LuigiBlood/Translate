@@ -68,6 +68,8 @@ menu3_facealbum:
 putTextnoSeek("Face Album")
 menu3_back:
 putTextnoSeek("Back")
+menu3_exit:
+putTextnoSeek("Exit")
 menu3_savequit:
 putTextnoSeek("Save & Quit")
 menu3_pagefeed:
@@ -369,7 +371,7 @@ dw (menu3_back)
 seekFile(origin() + 0x24)
 dw (menu3_savequit)
 seekFile(origin() + 0x24)
-dw (menu3_back)
+dw (menu3_exit)
 seekFile(origin() + 0x24)
 dw (menu3_back)
 seekFile(origin() + 0x24)
@@ -2070,6 +2072,40 @@ dh (coloralbum_get)
 seek(0x1A2762)
 dh (coloralbum_set)
 
+//Pattern Album
+seek(0xA3EAD8)
+base 0x8029D040
+patternalbum_grab:
+putTextnoSeek("Grab")
+patternalbum_get:
+putTextnoSeek("Use Pattern")
+patternalbum_set:
+putTextnoSeek("Replace")
+
+seek(0xA24B9A)
+dh (patternalbum_grab)
+seek(0xA24B92)
+dh (patternalbum_get)
+seek(0xA24B7A)
+dh (patternalbum_set)
+
+//Face Album
+seek(0x956EA0)
+base 0x802A2D20
+facealbum_grab:
+putTextnoSeek("Grab Face")
+facealbum_get:
+putTextnoSeek("Use Face")
+facealbum_set:
+putTextnoSeek("Replace")
+
+seek(0x9343CA)
+dh (facealbum_grab)
+seek(0x9343C2)
+dh (facealbum_get)
+seek(0x9343AA)
+dh (facealbum_set)
+
 //Face Editor
 seek(0x96295C)
 base 0x802AE7DC
@@ -2418,6 +2454,7 @@ expression_expression1: //80293270 (8029327C for number)
 putTextnoSeek("Expression 00")
 expression_rotationzoomB: //80293284
 putTextnoSeek("Rotate / Zoom (Button B)")
+
 
 //Change pointers
 seek(0x9EDED6)
