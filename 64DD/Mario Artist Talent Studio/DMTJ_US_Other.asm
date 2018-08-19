@@ -27,7 +27,7 @@ seek(0xAB0CE)
 dh $3320
 
 //Capture Cartridge errors
-putTextASCII(0x10CE58, "Turn off the system|and insert the|Capture Cartridge.") //80199598
+putTextASCII(0x10CE58, "Turn off the system|and insert the|Capture Pak.") //80199598
 putTextASCII(0x10CE94, "Plug the video cable.") //801995D4
 
 //Disk Errors

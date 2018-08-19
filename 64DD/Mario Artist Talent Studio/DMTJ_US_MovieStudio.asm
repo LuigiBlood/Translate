@@ -108,7 +108,7 @@ putTextnoSeek("Save [Talent]")
 movieactor_selectfromtalentstudio: //80357F20
 putTextnoSeek("From the Studio")
 movieactor_random: //80357F44
-putTextnoSeek("Random")
+putTextnoSeek("Shuffle")
 movieactor_talent1: //80357F58
 putTextnoSeek("Talent 1")
 movieactor_talent11: //80357F64
@@ -244,11 +244,11 @@ putTextnoSeek("Save [2D Paint]")
 moviebg_bgmselect: //80401708
 //putTextnoSeek("Music Select") //UNUSED
 moviebg_capturecart: //80401718
-putTextnoSeek("Capture Cartridge")
+putTextnoSeek("Capture Pak")
 moviebg_gbcamera: //80401730
 putTextnoSeek("GameBoy Camera")
 moviebg_random: //80401740
-putTextnoSeek("Random")
+putTextnoSeek("Shuffle")
 moviebg_undo: //80401754
 putTextnoSeek("Undo")
 moviebg_erase: //80401760
@@ -564,7 +564,7 @@ putText(0x10BF130, "") //Remove Page
 seek(0x10C0C84)
 base 0x80402554
 prod1_random: //80402554
-putTextnoSeek("Random")
+putTextnoSeek("Shuffle")
 prod1_exit: //80402568
 putTextnoSeek("Exit")
 prod1_undo: //80402570
@@ -900,7 +900,7 @@ putTextASCII(0x10C2E20, "Speak into the microphone.")
 putTextASCII(0x10C2E40, "...Recording...")
 putTextASCII(0x10C2E60, "...Playback...")
 
-putTextASCII(0x10C2F20, "Turn off the power|and insert|the capture cartridge.")
+putTextASCII(0x10C2F20, "Turn off the power|and insert|the Capture Pak.")
 putTextASCII(0x10C2F5C, "The recording|will be erased.|Is it OK?")
 
 //Movie Production Item List
@@ -1337,7 +1337,7 @@ dw (object_still), (object_roundabout), (object_somersault), (object_drill), (ob
 
 //Movie Direct - Caption Menu
 putText(0x1190820 + 40*0, "Exit")
-putText(0x1190820 + 40*1, "Random")
+putText(0x1190820 + 40*1, "Shuffle")
 putText(0x1190820 + 40*2, "Write Caption")
 putText(0x1190820 + 40*3, "Caption Effect")
 putText(0x1190820 + 40*4, "Caption Color")
@@ -2197,7 +2197,7 @@ putTextnoSeek("Shorten")
 movieactionmake_lengthen: //802A5778
 putTextnoSeek("Lengthen")
 movieactionmake_random: //802A578C
-putTextnoSeek("Random")
+putTextnoSeek("Shuffle")
 //movieactionmake_moveentirebody: //802A57A0
 //putTextnoSeek("Move Actor")
 movieactionmake_movepart: //802A57B8

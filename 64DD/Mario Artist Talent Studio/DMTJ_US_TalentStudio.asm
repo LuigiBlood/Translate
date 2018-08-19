@@ -55,7 +55,7 @@ putTextnoSeek("Make a face / Select skin color")
 menu3_makepattern:
 putTextnoSeek("Make a pattern")
 menu3_capturecart:
-putTextnoSeek("Capture Cartridge")
+putTextnoSeek("Capture Pak")
 menu3_gbcamera:
 putTextnoSeek("GameBoy Camera")
 menu3_load2ddrawing:
@@ -75,7 +75,7 @@ putTextnoSeek("Save & Quit")
 menu3_pagefeed:
 //putTextnoSeek("Page Feed")
 menu3_random:
-putTextnoSeek("Random")
+putTextnoSeek("Shuffle")
 menu3_clear:
 putTextnoSeek("Clear")
 menu3_undo:
@@ -2170,7 +2170,7 @@ putTextnoSeek("Nose Position")
 faceedit_coloralbum: //802AE990
 putTextnoSeek("Color Album")
 faceedit_random2: //802AE9A0
-putTextnoSeek("Random")
+putTextnoSeek("Shuffle")
 faceedit_goback: //802AE9B4
 putTextnoSeek("Current Face")
 faceedit_selectface: //802AE9C8
@@ -2437,7 +2437,7 @@ putTextnoSeek("Free")
 expression_sleep: //802931D8
 putTextnoSeek("Sleep")
 expression_random: //802931F0
-putTextnoSeek("Random")
+putTextnoSeek("Shuffle")
 expression_reset: //80293204
 //putTextnoSeek("Reset") //Unused
 expression_net: //80293210
@@ -2559,7 +2559,7 @@ pattern_circle2: //802A0DB0
 pattern_erasecolor: //802A0DB8
 //putTextnoSeek("Fill")
 pattern_random: //802A0DCC
-putTextnoSeek("Random")
+putTextnoSeek("Shuffle")
 pattern_split: //802A0DE0
 putTextnoSeek("Split")
 pattern_huechange: //802A0DF0
@@ -2628,7 +2628,7 @@ dh $0580-$0300 //'/'
 seek(0x92B202)
 dh $0600-$0300 //yr
 
-putText(0x92FB40, "Random")
+putText(0x92FB40, "Shuffle")
 putText(0x92FB60, "Clear")
 putText(0x92FB80, "Undo")
 putText(0x92FBA0, "Name")

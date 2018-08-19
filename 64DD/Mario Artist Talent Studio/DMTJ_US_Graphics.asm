@@ -5,7 +5,6 @@
 //Then: Shuffle Text
 //Default Talents
 //Sample Movies + Greetings
-//Uniform Terms (Capture Pak, Shuffle...)
 
 //-----------------------
 //Main UI YAY1 patches---------------------------------
