@@ -20,6 +20,7 @@ macro extract(filename, offset, length) {
 
 extract("147620.7C9B.UI.yay1", 0x147620, 0x7C9B)		//UI (Loading, Buttons...)
 extract("21B380.14827.UI.yay1", 0x21B380, 0x14827)		//UI (Talent Studio)
+extract("97BD00.6EEBB.UIFace.yay1", 0x97BD00, 0x6EEBB)		//UI (Talent Studio - Face Editor)
 extract("914B78.AEEC.Kanji.yay1", 0x914B78, 0xAEEC)		//Writer (Seperate)
 extract("8E7E48.CCC7.GBCam.yay1", 0x8E7E48, 0xCCC7)		//Game Boy Camera
 extract("8AD9F0.17453.SaveLoad.yay1", 0x8AD9F0, 0x17453)	//Save & Load

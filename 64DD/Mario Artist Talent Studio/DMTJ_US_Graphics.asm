@@ -2,7 +2,8 @@
 //Graphic Replacement
 
 //Missing:
-//Then: Shuffle Text
+
+//Shuffle Text
 //Default Talents
 //Sample Movies + Greetings
 
@@ -103,6 +104,12 @@ insert "GFX/SHUFFLE.ci4.pal.bin"
 //RAM 804547C8 - 0x7928 - CI4 Pic (24x16)
 seekFile(0x7928)
 insert "GFX/SHUFFLE.ci4.bin"
+
+output "97BD00.6EEBB.UIFace.yay1.bin"
+//RAM 80673808 - 0x1A0488 - Skin Color Icon (IA8 24x24)
+seekFile(0x1A0488)
+insert "GFX/SKINCOLORICON.ia8.bin"
+
 
 //-----------------------
 //Gallery YAY1 patches---------------------------------
@@ -367,6 +374,28 @@ insert "GFX/SCENEEDIT_EDITCAPTION.i4.bin"
 //0x102B918 - Seconds (Action Editor)
 seek(0x102B918)
 insert "GFX/SCENEEDIT_SECONDSACTION.ia8.bin"
+
+//Piano Notes in Sound Effect Selection
+seek(0x11B69D0)
+insert "GFX/PIANO_LA.i4.bin"
+
+seek(0x11B6AC8)
+insert "GFX/PIANO_SI.i4.bin"
+
+seek(0x11B6BC0)
+insert "GFX/PIANO_DO.i4.bin"
+
+seek(0x11B6CB8)
+insert "GFX/PIANO_RE.i4.bin"
+
+seek(0x11B6DB0)
+insert "GFX/PIANO_MI.i4.bin"
+
+seek(0x11B6EA8)
+insert "GFX/PIANO_FA.i4.bin"
+
+seek(0x11B6FA0)
+insert "GFX/PIANO_SOL.i4.bin"
 
 //Image Process (After GBCam/Capture)
 //Segment Pointer Table RAM 801F3BF8

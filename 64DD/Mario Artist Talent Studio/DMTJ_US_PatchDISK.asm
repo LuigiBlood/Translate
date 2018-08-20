@@ -195,10 +195,12 @@ seek(0x21B380)
 insert "21B380.14827.UI.yay1.bin.yay"
 seek(0x8AD9F0)
 insert "8AD9F0.17453.SaveLoad.yay1.bin.yay"
-seek(0x914B78)
-insert "914B78.AEEC.Kanji.yay1.bin.yay"
 seek(0x8E7E48)
 insert "8E7E48.CCC7.GBCam.yay1.bin.yay"
+seek(0x914B78)
+insert "914B78.AEEC.Kanji.yay1.bin.yay"
+seek(0x97BD00)
+insert "97BD00.6EEBB.UIFace.yay1.bin.yay"
 seek(0xFA99C0)
 insert "FA99C0.27D14.Gallery.yay1.bin.yay"
 seek(0x12D5180)

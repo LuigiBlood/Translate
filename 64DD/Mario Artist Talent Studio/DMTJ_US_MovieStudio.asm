@@ -584,7 +584,7 @@ putTextnoSeek("Movie Editing")
 prod1_options: //804025F8
 putTextnoSeek("Options")
 prod1_shooting: //8040260C
-putTextnoSeek("Shooting")
+putTextnoSeek("Casting")
 prod1_direction: //8040261C
 putTextnoSeek("Direction")
 prod1_shoot00: //80402630

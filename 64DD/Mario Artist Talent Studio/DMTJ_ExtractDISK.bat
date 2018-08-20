@@ -8,3 +8,4 @@ py -3 nintendo.py "21B380.14827.UI.yay1" decode
 py -3 nintendo.py "12BF830.1272C.MainMenu.yay1" decode
 py -3 nintendo.py "FA99C0.27D14.Gallery.yay1" decode
 py -3 nintendo.py "147620.7C9B.UI.yay1" decode
+py -3 nintendo.py "97BD00.6EEBB.UIFace.yay1" decode
