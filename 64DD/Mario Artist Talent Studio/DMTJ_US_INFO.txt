@@ -1,14 +1,18 @@
 Mario Artist Talent Studio - English Translation
 by LuigiBlood
 
-Version 1 - First release.
+Version 2 - Full Interface Translation
+
+Extra Info:
+The Nintendo.py used for de/compression by Zoinkity can be found here: https://pastebin.com/GUHMwpjT
+Cartridge Port checksum calculation could be done by debugging the IPL3 bootcode.
 
 Issues:
-- Only the text data is translated. None of the graphics have been changed (Save & Load aside)
+- Shuffle Text, Default Talents and Sample Movies are untranslated.
 
 Credits:
 LuigiBlood - Project Leader, Translator, Hacking, Graphic Design
 Cauterize - Logo Design
 SourceGaming Team - Translation Help
 Princess Madelyn - For having a nice gender list that fits.
-ptidus - For the Mode Select font idea
+ptidus - For the Mode Select font choice
