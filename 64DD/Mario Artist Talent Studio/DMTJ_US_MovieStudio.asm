@@ -161,66 +161,67 @@ dh (movieactorerror_corrupted)
 seek(0xF0A302)
 dh (movieactorerror_replace)
 
+//Actor Select ASM
 seek(0xF0E0BA)
 dh (movieactor_actor1)
-seek(0xF0E0C2)
-dh $000C
+seek(0xF0E0C0)
+sh t2,0x0C(t3)
 seek(0xF0E0CA)
 dh (movieactor_actor1)
 
 seek(0xF0DE02)
 dh (movieactor_pagefeed11)
-seek(0xF0DE0A)
-dh $0000
+seek(0xF0DE08)
+sh t6,0(t7)
 seek(0xF0DE12)
 dh (movieactor_pagefeed11)
-seek(0xF0DE1A)
-dh $0004
+seek(0xF0DE18)
+sh t8,4(t9)
 
 seek(0xF0DF2A)
 dh (movieactor_talent1)
-seek(0xF0DF32)
-dh $000E
+seek(0xF0DF30)
+sh t6,0x0E(t7)
 seek(0xF0DF3A)
 dh (movieactor_talent1)
 
 seek(0xF0DF56)
 dh (movieactor_talent1)
-seek(0xF0DF5E)
-dh $000E
+seek(0xF0DF5C)
+sh t0,0x0E(t1)
 seek(0xF0DF66)
 dh (movieactor_talent1)
 
 seek(0xF0DF92)
 dh (movieactor_talent1)
-seek(0xF0DF9A)
-dh $000E
+seek(0xF0DF98)
+sh t5,0x0E(t6)
 seek(0xF0DFA2)
 dh (movieactor_talent1)
 
 seek(0xF0DFBA)
 dh (movieactor_talent11)
-seek(0xF0DFC2)
-dh $0010
+seek(0xF0DFC0)
+sh t9,0x10(t0)
 seek(0xF0DFCA)
 dh (movieactor_talent11)
 
 seek(0xF0DFE6)
 dh (movieactor_work1)
-seek(0xF0DFEE)
-dh $0010
+seek(0xF0DFEC)
+sh t3,0x10(t4)
 seek(0xF0DFF6)
 dh (movieactor_work1)
 
 //ASCII text offset to Actor digit
-seek(0xF0CCF2)
-dh $0019
-seek(0xF0CD0E)
-dh $0019
-seek(0xF0CD2A)
-dh $0019
-seek(0xF0CD46)
-dh $0019
+seek(0xF0CCF0)
+addiu t6,t5,0x19
+seek(0xF0CD0C)
+addiu t8,t7,0x19
+seek(0xF0CD28)
+addiu t0,t9,0x19
+seek(0xF0CD44)
+addiu t1,t2,0x19
 
 //Movie Setup 3D model names
 putTextASCII(0xF48210, "Car")
@@ -396,10 +397,11 @@ dh (moviebg_undo)
 seek(0x105999E)
 dh (moviebg_erase)
 
+//Background Number setup ASM
 seek(0x1058CDA)
 dh (moviebg_bg1)
-seek(0x1058CEA)
-dh $0016
+seek(0x1058CE8)
+sh t8,0x16(a1)
 
 seek(0x10C00FC)
 dw (moviebg_sky1), (moviebg_sky2), (moviebg_sea1), (moviebg_sea2), (moviebg_water1), (moviebg_water2), (moviebg_desert)
@@ -620,26 +622,26 @@ seek(0x106AB2A)
 dh (prod1_direction)
 seek(0x1065AE6)
 dh (prod1_shoot00)
-seek(0x1065B12)
-dh $000C
-seek(0x1065B1A)
-dh $000E
-seek(0x1065B8A)
-dh $000C
-seek(0x1065BB2)
-dh $000E
+seek(0x1065B10) //Scene Number ASM
+sh t3,0x0C(v0)
+seek(0x1065B18)
+sh 0,0x0E(v0)
+seek(0x1065B88)
+sh t6,0x0C(v0)
+seek(0x1065BB0)
+sh t8,0x0E(v0)
 seek(0x1065B26)
 dh (prod1_shoot00)
 seek(0x1067032)
 dh (prod1_shoot00)
-seek(0x1066F86)
-dh (prod1_shoot00 + 12)
-seek(0x1066F8E)
-dh (prod1_shoot00 + 14)
-seek(0x1066FFA)
-dh (prod1_shoot00 + 12)
-seek(0x106702E)
-dh (prod1_shoot00 + 14)
+seek(0x1066F84)
+sh t5,prod1_shoot00 + 12(at)
+seek(0x1066F8C)
+sh 0,prod1_shoot00 + 14(at)
+seek(0x1066FF8)
+sh t8,prod1_shoot00 + 12(at)
+seek(0x106702C)
+sh t1,prod1_shoot00 + 14(at)
 seek(0x1069F72)
 dh (prod1_playstop)
 seek(0x106A122)
@@ -778,18 +780,20 @@ seek(0x107C1C6)
 dh (prod2_goback)
 seek(0x1075CE6)
 dh (prod2_actor1)
-seek(0x1075CEE)
-dh $000C
+seek(0x1075CEC) //ASM Actor
+sh t3,0x0C(a1)
 seek(0x1075CE2)
 dh (prod2_noactor)
 seek(0x10769C6)
 dh (prod2_bg1)
-seek(0x10769E2)
-dh $0016
+seek(0x10769E0) //ASM Background
+sh t4,0x16(a1)
 seek(0x10769DE)
 dh (prod2_nobg)
 seek(0x1078332)
 dh (prod2_times)
+seek(0x1078344) //ASM ? Time(s)
+sh t4,0(a1)
 
 seek(0x10C18B0)
 base 0x80403180
@@ -1305,25 +1309,25 @@ putTextnoSeek("Moving???")
 //change pointers
 seek(0xEF4F12)
 dh (album_action1)
-seek(0xEF4F1A)
-dh $000E
+seek(0xEF4F18)	//ASM Action ?
+sh t4,0x0E(t5)
 seek(0xEF4F4A)
 dh (album_action10)
-seek(0xEF4F52)
-dh $000E
+seek(0xEF4F50)	//ASM Action ?x
+sh t8,0x0E(t9)
 seek(0xEF4F6E)
 dh (album_action10)
-seek(0xEF4F72)
-dh $0010
+seek(0xEF4F70)	//ASM Action x?
+sh t2,0x10(t3)
 
 seek(0xEF4F92)
 dh (album_action10)
-seek(0xEF4F9A)
-dh $000E
+seek(0xEF4F98)	//ASM Action ?x
+sh t5,0x0E(t6)
 seek(0xEF4FB6)
 dh (album_action10)
-seek(0xEF4FBA)
-dh $0010
+seek(0xEF4FB8)	//ASM Action x?
+sh t9,0x10(t0)
 
 seek(0xF46D94)
 dw (motion_boywalk), (motion_girlwalk), (motion_slowwalk), (motion_angrywalk), (motion_dizzywalk), (motion_march), (motion_handstand), (motion_boyrun), (motion_girlrun), (motion_bendrun), (motion_rushrun), (motion_jogging), (motion_tiredwalk), (motion_flaprun), (motion_skip), (motion_skating), (motion_zombiewalk), (motion_robotwalk), (motion_monsterwalk), (motion_crawl), (motion_tigercrawl), (motion_fly), (motion_flapfly), (motion_floating), (motion_frontcrawl), (motion_breaststroke), (motion_diverswim), (motion_climb)
@@ -2265,14 +2269,14 @@ seek(0x1022346)
 dh (movieactionmake_rotationzoomB)
 seek(0x102238E)
 dh (movieactionmake_pose1)
-seek(0x1022396)
-dh $000A
+seek(0x1022394)	//ASM Pose ?
+sh t4,0x0A(t5)
 seek(0x10223EA)
 dh (movieactionmake_pose1)
 seek(0x102243E)
 dh (movieactionmake_sound1)
-seek(0x1022446)
-dh $000C
+seek(0x1022444)	//ASM Sound ?
+sh t8,0x0C(t9)
 seek(0x102249A)
 dh (movieactionmake_sound1)
 seek(0x1022552)
@@ -2504,8 +2508,8 @@ seek(0x11D1A1A)
 dh (moviegraffitiedit_grid)
 seek(0x11CE062)
 dh (moviegraffitiedit_colorpattern1)
-seek(0x11CE086)
-dh (moviegraffitiedit_colorpattern1 + 28)
+seek(0x11CE084)
+sh t1,moviegraffitiedit_colorpattern1 + 28(at)
 
 seek(0x11DD7AC)
 dw (moviegraffitiedit_pen), (moviegraffitiedit_spray), (moviegraffitiedit_thin), (moviegraffitiedit_normal), (moviegraffitiedit_thick), (moviegraffitiedit_line), (moviegraffitiedit_rectangle), (moviegraffitiedit_circle), (moviegraffitiedit_filledrectangle), (moviegraffitiedit_filledcircle), (moviegraffitiedit_hiragana), (moviegraffitiedit_katakana), (moviegraffitiedit_kanji), (moviegraffitiedit_lowercase), (moviegraffitiedit_uppercase), (moviegraffitiedit_numbersymbol), (moviegraffitiedit_erasethin), (moviegraffitiedit_erasenormal), (moviegraffitiedit_erasethick), (moviegraffitiedit_thin), (moviegraffitiedit_normal), (moviegraffitiedit_thick), (moviegraffitiedit_rectangle), (moviegraffitiedit_circle), (moviegraffitiedit_erasecolor)

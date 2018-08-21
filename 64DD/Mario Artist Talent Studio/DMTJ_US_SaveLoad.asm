@@ -645,13 +645,13 @@ dh (saveload4_readmanual)
 seek(0x88D6C6)
 dh (saveload4_readmanual)
 
-//Move Used Space number 1.2
-seek(0x867422)
-dh 0x001A //.
-seek(0x86743E)
-dh 0x0018 //1
-seek(0x86746E)
-dh 0x001C //2
+//Move Used Space number 1.2 ASM
+seek(0x867420)
+sh t1,0x1A(t2) //.
+seek(0x86743C)
+sh t5,0x18(t7) //1
+seek(0x86746C)
+sh t0,0x1C(t1) //2
 
 //Change pointers
 seek(0x89C6EE)

@@ -2481,15 +2481,15 @@ dw (expression_normal)
 dw (expression_laugh), (expression_angry), (expression_sad), (expression_smile)
 dw (expression_sleep)
 
-//Move Number
-seek(0x9F1FB2)
-dh $0016
-seek(0x9F1FBA)
-dh $0018
-seek(0x9F1FDE)
-dh $0016
-seek(0x9F1FEE)
-dh $0018
+//Move Number ASM
+seek(0x9F1FB0)
+sh t7,0x16(a1)
+seek(0x9F1FB8)
+sh 0,0x18(a1)
+seek(0x9F1FDC)
+sh t0,0x16(a1)
+seek(0x9F1FEC)
+sh t2,0x18(a1)
 
 //Pattern Maker
 seek(0xA426B8)
@@ -2716,6 +2716,12 @@ seekFile(0x17AA0)
 putTextnoSeek("* Pick the first kana *")
 
 outputGame()
-//Remove Page 00F9 011E 00D7 0000
-seek(0x19516A)
-dh $0000
+//Remove Page 00F9 011E 00D7 0000 ASM
+seek(0x195168)
+nop
+nop
+nop
+sh t2,0(a0)
+nop
+nop
+nop

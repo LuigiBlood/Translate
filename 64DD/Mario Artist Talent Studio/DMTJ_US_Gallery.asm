@@ -79,9 +79,9 @@ dw (gallerytalent_birthdate1), (gallerytalent_birthdate2)
 dw (gallerytalent_age), (gallerytalent_ageyo1), (gallerytalent_ageyo2)
 dw (gallerytalent_favline)
 
-//Fix Birth Date
-seek(0xF5A2B2)
-dh $000A
+//Fix Birth Date ASM
+seek(0xF5A2B0)
+addiu a2,0,0xA
 
 //Move GFX font preload
 //Job/
