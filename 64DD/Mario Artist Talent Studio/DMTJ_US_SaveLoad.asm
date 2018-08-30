@@ -586,6 +586,9 @@ dw (saveload1_undo)
 seekFile(origin() + 0x10)
 dw (saveload1_done)
 
+seek(0x8A5354)	//Kanji Page
+putTextnoSeek("1/1")
+
 putText(0x8A5540, "New")
 seek(0x8A55A8)
 base 0x802C3EF0
@@ -647,11 +650,19 @@ dh (saveload4_readmanual)
 
 //Move Used Space number 1.2 ASM
 seek(0x867420)
-sh t1,0x1A(t2) //.
+sb t1,0x1A/2(t2) //.
 seek(0x86743C)
-sh t5,0x18(t7) //1
+sb t5,0x18/2(t7) //1
 seek(0x86746C)
-sh t0,0x1C(t1) //2
+sb t0,0x1C/2(t1) //2
+
+//Move Used Space more than 10MB ASM
+seek(0x86749C)
+sb t7,0x18/2(t6)
+seek(0x8674B8)
+sb t0,0x1A/2(t1)
+seek(0x8674D4)
+sb t4,0x1C/2(t5)
 
 //Change pointers
 seek(0x89C6EE)

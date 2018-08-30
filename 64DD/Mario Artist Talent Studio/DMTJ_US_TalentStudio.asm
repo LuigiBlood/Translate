@@ -2065,6 +2065,13 @@ dw (coloralbum_h), (coloralbum_h)
 dw (coloralbum_s), (coloralbum_s)
 dw (coloralbum_v), (coloralbum_v)
 
+seek(0x1A25F2)
+dh (coloralbum_h)
+seek(0x1A2622)
+dh (coloralbum_s)
+seek(0x1A2652)
+dh (coloralbum_v)
+
 seek(0x1A2782)
 dh (coloralbum_grab)
 seek(0x1A277A)
@@ -2201,7 +2208,7 @@ dw (faceedit_changeposition), (faceedit_changerotation), (faceedit_changesize), 
 dw (faceedit_removeitem)
 
 seek(0x93A30E)
-dh (faceedit_page)
+//dh (faceedit_page)
 seek(0x93FAD2)
 dh (faceedit_makecolor)
 seek(0x93FABE)
@@ -2251,23 +2258,23 @@ dh (faceedit_removeitem)
 
 //Change 00 pointer
 seek(0x941812)
-dh ((faceedit_real00) + 10)
+dh ((faceedit_real00) + 10/2)
 seek(0x941866)
-dh ((faceedit_real00) + 10)
+dh ((faceedit_real00) + 10/2)
 seek(0x9418BA)
-dh ((faceedit_real00) + 10)
+dh ((faceedit_real00) + 10/2)
 seek(0x941832)
-dh ((faceedit_manga00) + 12)
+dh ((faceedit_manga00) + 12/2)
 seek(0x941886)
-dh ((faceedit_manga00) + 12)
+dh ((faceedit_manga00) + 12/2)
 seek(0x9418DA)
-dh ((faceedit_manga00) + 12)
+dh ((faceedit_manga00) + 12/2)
 seek(0x941902)
-dh ((faceedit_seala00) + 14)
+dh ((faceedit_seala00) + 14/2)
 seek(0x94192A)
-dh ((faceedit_sealb00) + 14)
+dh ((faceedit_sealb00) + 14/2)
 seek(0x9417DE)
-dh ((faceedit_skin00) + 10)
+dh ((faceedit_skin00) + 10/2)
 
 //Talent (Body) Type Selection
 putText(0xDE4320, "Model Talent 1")
@@ -2288,17 +2295,17 @@ putText(0xDE44A0, "Model Talent 11")
 putText(0xDE44C0, "Model Talent 12")
 putText(0xDE44E0, "Basic Talent 3")
 
-putText3(0xDE4500, $011B, " Type 1")
-putText3(0xDE4520, $011B, " Type 2")
-putText3(0xDE4540, $011B, " Type 3")
-putText3(0xDE4560, $011B, " Type 4")
-putText3(0xDE4580, $011B, " Basic Type")
+putText(0xDE4500, "Male Type 1")
+putText(0xDE4520, "Male Type 2")
+putText(0xDE4540, "Male Type 3")
+putText(0xDE4560, "Male Type 4")
+putText(0xDE4580, "Male Basic Type")
 
-putText3(0xDE45A0, $011C, " Type 1")
-putText3(0xDE45C0, $011C, " Type 2")
-putText3(0xDE45E0, $011C, " Type 3")
-putText3(0xDE4600, $011C, " Type 4")
-putText3(0xDE4620, $011C, " Basic Type")
+putText(0xDE45A0, "Female Type 1")
+putText(0xDE45C0, "Female Type 2")
+putText(0xDE45E0, "Female Type 3")
+putText(0xDE4600, "Female Type 4")
+putText(0xDE4620, "Female Basic Type")
 
 putText(0xDE4640, "? Type 1")
 putText(0xDE4660, "? Type 2")
@@ -2483,13 +2490,13 @@ dw (expression_sleep)
 
 //Move Number ASM
 seek(0x9F1FB0)
-sh t7,0x16(a1)
+sb t7,0x16/2(a1)
 seek(0x9F1FB8)
-sh 0,0x18(a1)
+sb 0,0x18/2(a1)
 seek(0x9F1FDC)
-sh t0,0x16(a1)
+sb t0,0x16/2(a1)
 seek(0x9F1FEC)
-sh t2,0x18(a1)
+sb t2,0x18/2(a1)
 
 //Pattern Maker
 seek(0xA426B8)
@@ -2713,15 +2720,4 @@ dw (writer_done)
 
 output "914B78.AEEC.Kanji.yay1.bin"
 seekFile(0x17AA0)
-putTextnoSeek("* Pick the first kana *")
-
-outputGame()
-//Remove Page 00F9 011E 00D7 0000 ASM
-seek(0x195168)
-nop
-nop
-nop
-sh t2,0(a0)
-nop
-nop
-nop
+putTextnoSeek("* Pick the first kana of the kanji *")

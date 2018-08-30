@@ -59,9 +59,9 @@ putTextASCII(0x126A3C, "Microphone")
 putTextASCII(0x126A48, "64DD Theater")
 putTextASCII(0x126A58, "VC Music")
 putTextASCII(0x126A6C, "Film Studio")
-putTextASCII(0x126A7C, "GB TV")
+putTextASCII(0x126A7C, "GameBoy TV")
 seek(0x126A88)
-dh $819A
+dh $819A	//Star SJIS
 putTextASCIInoSeek(" Watch?")
 
 //Initialize Disk

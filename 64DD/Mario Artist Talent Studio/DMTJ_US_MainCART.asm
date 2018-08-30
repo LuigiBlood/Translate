@@ -32,14 +32,13 @@ macro putText(n, text) {
 }
 
 macro putTextnoSeek(text) {
-  RegularMap()
-  dh {text}
-  dh 0x0000
+  putTextnoSeeknoEnd({text})
+  db 0x0000
 }
 
 macro putTextnoSeeknoEnd(text) {
   RegularMap()
-  dh {text}
+  db {text}
 }
 
 macro putText2(n, text) {
@@ -50,46 +49,37 @@ macro putText2(n, text) {
 macro putText2noSeek(text) {
   RegularMap()
   dh 0x5000
-  dh {text}
-  dh 0x0000
+  db {text}
+  db 0x0000
 }
 
-macro putText3(n, text, text2) {
-  RegularMap()
+macro putText3(n, pre, text) {
   seek({n})
-  dh {text}
-  dh {text2}
-  dh 0x0000
+  putText3noSeek({pre}, {text})
 }
 
 macro putText3noSeek(pre, text) {
-  RegularMap()
-  dh {pre}
-  dh {text}
-  dh 0x0000
+  putText3noSeeknoEnd({pre}, {text})
+  db 0x0000
 }
 
 macro putText3noSeeknoEnd(pre, text) {
   RegularMap()
-  dh {pre}
-  dh {text}
+  db {pre}
+  db {text}
 }
 
 macro putText4(n, pre, text, post) {
-  RegularMap()
   seek({n})
-  dh {pre}
-  dh {text}
-  dh {post}
-  dh 0x0000
+  putText4noSeek({pre}, {text}, {post})
 }
 
 macro putText4noSeek(pre, text, post) {
   RegularMap()
-  dh {pre}
-  dh {text}
-  dh {post}
-  dh 0x0000
+  db {pre}
+  db {text}
+  db {post}
+  db 0x0000
 }
 
 macro putTextSJIS(n, text) {

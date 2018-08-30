@@ -190,15 +190,15 @@ putTextASCII(0xFA40F0, "President's Greeting")
 
 seek(0xF651D6)
 dh (gallery_1number)
-seek(0xF651DE)
-dh $000C
+seek(0xF651DC)
+sb t2,0xC/2(t4)
 seek(0xF651EE)
 dh (gallery_1number)
 
 seek(0xF650CE)
 dh (gallery_entryno0)
-seek(0xF650D6)
-dh $0012
+seek(0xF650D4)
+sb t4,0x12/2(t5)
 seek(0xF650DE)
 dh (gallery_entryno0)
 
@@ -207,26 +207,38 @@ dh (gallery_entryno10)
 
 seek(0xF7230A)
 dh (gallery_0)
+seek(0xF72310)
+sb t0,0(t1)
 seek(0xF7231A)
 dh (gallery_0)
 
 seek(0xF7234A)
 dh (gallery_00)
+seek(0xF7234C)
+sb t6,0(t7)
 seek(0xF7236E)
 dh (gallery_00)
+seek(0xF72370)
+sb t0,1(t1)
 
 seek(0xF723DE)
 dh (gallery_slash)
 
 seek(0xF72416)
 dh (gallery_0_2)
+seek(0xF7241C)
+sb t4,0(t5)
 seek(0xF72426)
 dh (gallery_0_2)
 
 seek(0xF7244E)
 dh (gallery_00_2)
+seek(0xF72450)
+sb t9,0(t0)
 seek(0xF72472)
 dh (gallery_00_2)
+seek(0xF72474)
+sb t3,1(t4)
 
 seek(0xFA24E0)
 dw (gallery_viewtalent)
