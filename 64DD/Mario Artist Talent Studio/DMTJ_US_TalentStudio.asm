@@ -2718,6 +2718,31 @@ dw (writer_undo)
 seekFile(origin() + 0x10)
 dw (writer_done)
 
+//Kanji File
 output "914B78.AEEC.Kanji.yay1.bin"
 seekFile(0x17AA0)
 putTextnoSeek("* Pick the first kana of the kanji *")
+
+//Erase Descriptions for other characters
+//They speak for themselves
+seekFile(0x19C78)
+putTextnoSeek("      ")
+seekFile(0x19CAC)
+putTextnoSeek("       ")
+seekFile(0x19CC0)
+putTextnoSeek("      ")
+seekFile(0x19CD0)
+putTextnoSeek("       ")
+seekFile(0x19CE0)
+putTextnoSeek("    ")
+seekFile(0x19CF0)
+putTextnoSeek("   ")
+seekFile(0x19DD4)
+putTextnoSeek("       ")
+seekFile(0x19DE4)
+putTextnoSeek("       ")
+seekFile(0x19DF4)
+putTextnoSeek("      ")
+
+seekFile(0x1A10C)
+dh $8197

@@ -450,4 +450,56 @@ sb t6,0(a3)
 seek(0x10905B0)
 sb t9,2(a3)
 
-//Solve KANJI HELP TEXT
+//Fix KANJI TEXT (Save & Load)
+seek(0x89A7B4)	//Next line after 4 chars
+sll t5,t4,0
+addu t6,sp,t5
+sb t3,0x58(t6)
+
+seek(0x89A830)	//Change to "-"
+addiu t0,0,0x0D
+sll t2,t1,0
+addu t3,sp,t2
+sb t0,0x58(t3)
+
+seek(0x89A868)	//Next line
+sll t9,t8,0
+addu t1,sp,t9
+sb t7,0x58(t1)
+
+seek(0x89A890)	//Regular Text
+sll t5,t4,0
+addu t6,sp,t5
+sb t3,0x58(t6)
+
+seek(0x89A8CC)	//Terminator
+sll t3,t4,0
+addu t5,sp,t3
+sb 0,0x58(t5)
+
+//Fix KANJI TEXT (Info Editor and Caption Editor)
+seek(0x90B868)	//Next line after 4 chars
+sll t7,t6,0
+addu t8,sp,t7
+sb t5,0x4C(t8)
+
+seek(0x90B908)	//Change to "-"
+addiu t2,0,0x0D
+sll t3,t1,0
+addu t4,sp,t3
+sb t2,0x4C(t4)
+
+seek(0x90B94C)	//Next line
+sll t3,t2,0
+addu t4,sp,t3
+sb t1,0x4C(t4)
+
+seek(0x90B980)	//Regular Text
+sll t1,t2,0
+addu t3,sp,t1
+sb t0,0x4C(t3)
+
+seek(0x90B9BC)	//Terminator
+sll t0,t2,0
+addu t1,sp,t0
+sb 0,0x4C(t1)

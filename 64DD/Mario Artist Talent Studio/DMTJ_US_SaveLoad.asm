@@ -489,6 +489,30 @@ putTextnoSeek("Talent Studio Game Disk is required.")
 saveload5_kanji:
 putTextnoSeek("* Pick the first kana of the kanji *")
 
+//Erase Descriptions for other characters
+//They speak for themselves
+seekFile(0x37E48)
+putTextnoSeek("      ")
+seekFile(0x37E7C)
+putTextnoSeek("       ")
+seekFile(0x37E90)
+putTextnoSeek("      ")
+seekFile(0x37EA0)
+putTextnoSeek("       ")
+seekFile(0x37EB0)
+putTextnoSeek("    ")
+seekFile(0x37EC0)
+putTextnoSeek("   ")
+seekFile(0x37FA4)
+putTextnoSeek("       ")
+seekFile(0x37FB4)
+putTextnoSeek("       ")
+seekFile(0x37FC4)
+putTextnoSeek("      ")
+
+seekFile(0x382DC)
+dh $8197
+
 //Disk File patches---------------------------------
 outputGame()
 
