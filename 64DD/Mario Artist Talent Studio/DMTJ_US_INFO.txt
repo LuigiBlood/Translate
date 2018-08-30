@@ -5,6 +5,7 @@ Version 2 - Full Interface Translation
 
 Extra Info:
 The Nintendo.py used for de/compression by Zoinkity can be found here: https://pastebin.com/GUHMwpjT
+Python 3 is required.
 Cartridge Port checksum calculation could be done by debugging the IPL3 bootcode.
 
 Issues:
