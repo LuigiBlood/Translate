@@ -1,0 +1,57 @@
+HiROM
+
+Same compression as Chrono Trigger?
+
+Conversion to Shift-JIS Table at C05E05
+Compressed block starts at C095B7
+
+Compressed Main Text 16-bit Pointers: C84000
+ID 0  (C84000 Ptr) loads to 7FE401
+ID 1  (C84002 Ptr) loads to 7FD901
+ID 2+ (C84004 Ptr) loads to 7F0001
+
+Intro uses Shift-JIS
+Other text uses a custom Shift-JIS variant that translates back to Shift-JIS, fully compatible with ASCII as is
+
+Filesystem at CFFF00
+C095B7 = CODE START 7E (Loaded at 7E4800)
+CBEB8F = THE END & "Thank you for your playing" GFX
+
+
+Text Data:
+C07622 - 16-bit ptrs to Attract Mode Script
+C095B7 - CODE START 7E Compressed Overlay
+C80000 - 16-bit ptrs to Script Pointers
+C84000 - 16-bit ptrs to Main Script
+
+C07C24 - Hardcoded Intro Script Pointer
+
+RAM Map:
+7F0001 - Interchangeable Script Data (max 3FFF bytes)
+7F4000 - Pointers to Script Data
+7F5000 - ?
+7FD901 - ID 1 Script Data
+7FE401 - ID 0 Script Data
+
+ROM Map:
+~C100B5 - Routine to Load Script Ptrs
+C10509 - Load Script Ptr
+C05D7A - Text Routine
+	If Carry is Clear, returns A = Shift-JIS Character (ASCII is supported!)
+	If Carry is Set, returns A = special byte
+
+Text Format:
+00 = Space
+01 = Pause, then Clean Window
+02 = Hiragana Mode
+03 = Katakana Mode
+04 = New Line
+05 = Pause, then New Line
+06-7A = Special Kanas and Full Width Latin Alphabet
+7B XX = Wait for XX frames
+7C = Stop
+7D-7E = Space
+7F = 0x85 Mode (0x85XX)
+80-9F XX = Shift-JIS
+A0-DF = Kanas
+E0-FF XX = Kanji

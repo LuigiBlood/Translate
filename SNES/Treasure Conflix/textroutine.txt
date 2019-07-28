@@ -1,0 +1,102 @@
+label_C05D7A:
+	REP #$20
+	LDA [$3A]
+	STA $63
+	INC $3A
+	SEP #$20
+	CMP #$02
+	BNE label_C05D8E
+	LDA #$01
+	STA $42
+	BRA label_C05D7A
+
+label_C05D8E:
+	CMP #$03
+	BNE label_C05D98
+	LDA #$00
+	STA $42
+	BRA label_C05D7A
+
+label_C05D98:
+	CMP #$7F
+	BNE label_C05DA2
+	LDA #$02
+	STA $42
+	BRA label_C05D7A
+
+label_C05DA2:
+	LDA $63
+	CMP #$01
+
+label_C05DA5:
+	BNE label_C05DAA
+	SEC
+	RTS
+
+label_C05DAA:
+	CMP #$04
+	BNE label_C05DB0
+	SEC
+	RTS
+
+label_C05DB0:
+	CMP #$05
+	BNE label_C05DB6
+	SEC
+	RTS
+
+label_C05DB6:
+	CMP #$7C
+	BNE label_C05DBC
+	SEC
+	RTS
+
+label_C05DBC:
+	CMP #$7B
+	BNE label_C05DC2
+	SEC
+	RTS
+
+label_C05DC2:
+	LDX $42
+	CPX #$0002
+	BNE label_C05DD5
+	REP #$20
+	INC $3A
+	AND #$00FF
+	ORA #$8500
+	CLC
+	RTS
+
+label_C05DD5:
+	LDA $63
+	CMP #$80
+	BMI label_C05DEB
+	CMP #$A0
+	BMI label_C05DE3
+	CMP #$E0
+	BMI label_C05DEB
+
+label_C05DE3:
+	REP #$21
+	INC $3A
+	LDA $63
+	CLC
+	RTS
+
+label_C05DEB:
+	REP #$20
+	AND #$00FF
+	ASL A
+	TAX
+	LDA $42
+	AND #$00FF
+	BEQ label_C05DFF
+	LDA $C06005,X
+	CLC
+	RTS
+
+label_C05DFF:
+	LDA $C05E05,X
+	CLC
+	RTS
