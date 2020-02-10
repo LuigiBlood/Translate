@@ -1,0 +1,7 @@
+Marvelous Time Athletic Course 1
+7E9C00 - Current Script Tilemap
+81B587 - Script Tilemap Parser
+
+81B2B7 - Script Parser
+
+Script does not seem to be compressed
