@@ -27,14 +27,15 @@ C84000 - 16-bit ptrs to Main Script
 C07C24 - Hardcoded Intro Script Pointer
 
 RAM Map:
-7F0001 - Interchangeable Script Data (max 3FFF bytes)
-7F4000 - Pointers to Script Data
+7F0001 - Interchangeable Text Data (max 3FFF bytes)
+7F4000 - Room Data
 7F5000 - ?
-7FD901 - ID 1 Script Data
-7FE401 - ID 0 Script Data
+7FD901 - ID 1 Text Data
+7FE401 - ID 0 Text Data
 
 ROM Map:
 ~C100B5 - Routine to Load Script Ptrs
+C102CE - Script
 C10509 - Load Script Ptr
 C05D7A - Text Routine
 	If Carry is Clear, returns A = Shift-JIS Character (ASCII is supported!)
@@ -51,7 +52,25 @@ Text Format:
 7B XX = Wait for XX frames
 7C = Stop
 7D-7E = Space
-7F = 0x85 Mode (0x85XX)
+7F = ASCII Mode (outputs 0x85XX)
 80-9F XX = Shift-JIS
 A0-DF = Kanas
 E0-FF XX = Kanji
+
+Room Data:
+Header:
+UUUU UUUU XX CC YY  XX CC YY  XX CC YY  XX CC YY
+XX CC YY  Z1 Z2 Z3  FF FF FF  XX CC YY
+<Script Data>
+
+U = Unknown
+
+NPC Setup?:
+XX = ?
+CC = Color Palette ID
+YY = ID something
+
+Room Setup:
+Z1 = Tileset?
+Z2 = Palette
+Z3 = Tilemap?

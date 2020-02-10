@@ -1,0 +1,10 @@
+Opcode Format (Hex) - Description
+01 xx yy zz dd      -
+07 xxxx             - Render Text from 16-bit ptr (7Fxxxx)
+0D ?? - ?
+19 xx - ?
+20 ?? ?? ?? ?? ??   - ?
+23
+26 ?? - ?
+2C xxxx - Load xxxx to something
+38 xx - Wait xx seconds?
