@@ -1,14 +1,21 @@
 Marvelous Time Athletic Course 1
 
+7E2000 - VRAM Stuff
 7E6000 - Decompression Buffer?
 7E7000 - Generated Script Pointers
 7E8800 - VRAM Text
 7E9C00 - Current Script Tilemap
 
+8084D9 - Compressed Tile Data Ptr (Bank)
+808592 - Compressed Tile Data Ptr (Addr Hi)
+80864B - Compressed Tile Data Ptr (Addr Lo)
+Compressed Data uses LC_LZ2
+
 81B587 - Script Tilemap Parser
 81B29E - Script Parser
+81E000 - Full Height Text GFX
 82F801 - Script Pointer Generation
-98C000 - Script Data
+98C000 (0xC4000) - Script Data
 
 Script does not seem to be compressed, no pointers required, game generates the pointers at boot
 
