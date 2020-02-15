@@ -3,13 +3,28 @@ Marvelous Time Athletic Course 1
 7E2000 - VRAM Stuff
 7E6000 - Decompression Buffer?
 7E7000 - Generated Script Pointers
-7E8800 - VRAM Text
-7E9C00 - Current Script Tilemap
+7E8800 - VRAM Text Buffer
+
+7EC282 - VRAM Tilemap
+7E9C00 - Virtual Script Tilemap (8x16)
 
 8084D9 - Compressed Tile Data Ptr (Bank)
 808592 - Compressed Tile Data Ptr (Addr Hi)
 80864B - Compressed Tile Data Ptr (Addr Lo)
 Compressed Data uses LC_LZ2
+
+81ADD8 - Main Script Manager
+- 81ADF6 - Parse Script into Virtual Tilemap & Flush VRAM Text Buffer
+- 81AEE1 - Prepare VRAM Tilemap
+- 81AF8C - VRAM Text Buffer Update (char by char)
+- 81AFA0 -
+- 81B06F -
+- 81B1B1 -
+- 81AFD9 -
+- 81AFD9 -
+- 81B1D1 -
+- 81B20E -
+- 81B24B -
 
 81B587 - Script Tilemap Parser
 81B29E - Script Parser
@@ -52,3 +67,9 @@ FE (1+) =
 FF (1) = End of Script Data
 
 Kanji Ordering is the same between all parts. It's however different between Time Athletic, Camp Arnold and the main game.
+
+Videos from kukun kun:
+Time Athletic Course 1: https://www.youtube.com/watch?v=BtOHk4Y402o
+Time Athletic Course 2: https://www.youtube.com/watch?v=AUFRZREU9yk
+Time Athletic Course 3: https://www.youtube.com/watch?v=Wqgy9aDrFQY
+Time Athletic Course 4: https://www.youtube.com/watch?v=-XmNi-EuIz0
