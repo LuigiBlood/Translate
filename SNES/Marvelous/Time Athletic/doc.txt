@@ -13,18 +13,18 @@ Marvelous Time Athletic Course 1
 80864B - Compressed Tile Data Ptr (Addr Lo)
 Compressed Data uses LC_LZ2
 
-81ADD8 - Main Script Manager
+81ADD8 - Script Manager for Search Mode
 - 81ADF6 - Parse Script into Virtual Tilemap & Flush VRAM Text Buffer
 - 81AEE1 - Prepare VRAM Tilemap
-- 81AF8C - VRAM Text Buffer Update (char by char)
-- 81AFA0 -
-- 81B06F -
-- 81B1B1 -
-- 81AFD9 -
-- 81AFD9 -
-- 81B1D1 -
-- 81B20E -
-- 81B24B -
+- 81AF8C - VRAM Text Buffer Update (char by char) [Wait for scroll]
+- 81AFA0 - VRAM Text Buffer Update (char by char)
+- 81B06F - End of Text?
+- 81B1B1 - Scroll and???
+- 81AFD9 - Nothing
+- 81AFD9 - Nothing
+- 81B1D1 - Scroll and???
+- 81B20E - Scroll and???
+- 81B24B - Scroll and???
 
 81B587 - Script Tilemap Parser
 81B29E - Script Parser
@@ -65,6 +65,8 @@ FE (1+) =
 	71 (1) = ?
 	72 (1) = ?
 FF (1) = End of Script Data
+
+ max 24 char per line by default
 
 Kanji Ordering is the same between all parts. It's however different between Time Athletic, Camp Arnold and the main game.
 
