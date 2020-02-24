@@ -66,6 +66,8 @@ define chary($1D66)
 define chara($1D68)
 define charx2($1D6A)
 define chardelta($1D6C)
+define charmode($1D6E)	//0 = Search, 1 = Small
+define chara2($1D70)
 define charcurrent($0496)
 
 reset_vwf:
@@ -126,7 +128,7 @@ main_vwf:
 	
 	rep #$30
 	
-	//Wrap for the shift left portion
+	//Wrap for the second tile
 	txa
 	and.w #$00F0
 	cmp.w #$00F0
@@ -153,56 +155,62 @@ main_vwf:
 +;	lda {charx}
 	clc
 	adc {chardelta}
+	eor {charmode}
 	sta {charx}
+	
 	lda {charx2}
 	clc
 	adc {chardelta}
+	eor {charmode}
 	sta {charx2}
-	lda {chara}
 	
-	rep #$10
-	sep #$20
-
-	//Shift Right
+	//16-bit Shift Right (0xLLRR, LL = Left Tile, RR = Right Tile)
+	lda {chara}
+	and.w #$00FF
+	xba
+	
 	ldx {charshift}
 	beq +
 -;	lsr
 	dex
 	bne -
-
-	//Render the char
-+;	ldx {charx}
+	
+	//Render left tile of char
++;	sta {chara2}
+	xba
+	sep #$20
+	
+	pha
+	ldx {charx}
+	rep #$20
+	txa
+	eor.w #1
+	tay
+	sep #$20
+	pla
 	ora $7e8800,x
 	sta $7e8800,x
 	eor #$FF
-	sta $7e8801,x
+	tyx
+	sta $7e8800,x
 	
-	//See if there are more graphics to do
-	rep #$20
-	lda {charsize}
-	beq ++
-	
-	lda.w #8
-	beq ++
-	sec
-	sbc {charshift}
-	bmi ++
-	
-	//Shift Left
-	pha
-	lda {chara}
+	//Render right tile of char (if needed)
 	sep #$20
-	plx
-	beq +
--;	asl
-	dex
-	bne -
-
-	//Render the char
-+;	ldx {charx2}
+	lda {chara2}
+	beq ++
+	
++;	pha
+	ldx {charx2}
+	rep #$20
+	txa
+	eor.w #1
+	tay
+	sep #$20
+	pla
 	sta $7e8810,x
 	eor #$FF
-	sta $7e8811,x
+	tyx
+	sta $7e8810,x
 	
 	+;
 	plp
@@ -210,6 +218,7 @@ main_vwf:
 	lda {charx}
 	sec
 	sbc {chardelta}
+	eor {charmode}
 	tax
 	
 	lda {chara}
@@ -218,131 +227,40 @@ main_vwf:
 
 main_vwf1:
 	//Assume 16-bit A / Index
+	stz {charmode}
 	stz {chardelta}
 	jmp main_vwf
 	
 main_vwf2:
 	//Assume 16-bit A / Index
+	stz {charmode}
 	pha
 	lda.w #$0100
 	sta {chardelta}
 	pla
 	jmp main_vwf
 
-	//Small Text VWF Rendering
-main_vwfs:
-	//Assume 16-bit A / Index
-	sta {chara}
-	stx {charx}
-	sty {chary}
-	php
-	
-	rep #$30
-	
-	//Wrap for the shift left portion
-	txa
-	and.w #$00F0
-	cmp.w #$00F0
-	bcc +
-	txa
-	clc
-	adc.w #$0100
-	bra ++
-+;	txa
-+;	sta {charx2}
-
-	//Deal with calculation error
-	txa
-	and.w #$0100
-	cmp.w #$0100
-	bcc +
-	txa
-	clc
-	adc.w #$0100
-	sta {charx}
-	sta {charx2}
-
-	//Add Delta
-+;	lda {charx}
-	clc
-	adc {chardelta}
-	sta {charx}
-	lda {charx2}
-	clc
-	adc {chardelta}
-	sta {charx2}
-	lda {chara}
-	
-	rep #$10
-	sep #$20
-
-	//Shift Right
-	ldx {charshift}
-	beq +
--;	lsr
-	dex
-	bne -
-
-	//Render the char
-+;	ldx {charx}
-	ora $7e8801,x
-	sta $7e8801,x
-	eor #$FF
-	sta $7e8800,x
-	
-	//See if there are more graphics to do
-	rep #$20
-	lda {charsize}
-	beq ++
-	
-	lda.w #8
-	beq ++
-	sec
-	sbc {charshift}
-	bmi ++
-	
-	//Shift Left
-	pha
-	lda {chara}
-	sep #$20
-	plx
-	beq +
--;	asl
-	dex
-	bne -
-
-	//Render the char
-+;	ldx {charx2}
-	sta $7e8811,x
-	eor #$FF
-	sta $7e8810,x
-	
-	+;
-	plp
-	//Restore Values
-	lda {charx}
-	sec
-	sbc {chardelta}
-	tax
-	
-	lda {chara}
-	ldy {chary}
-	rtl
-
 main_vwf1s:
 	//Assume 16-bit A / Index
 	xba
+	pha
+	lda.w #$0001
+	sta {charmode}
+	pla
 	stz {chardelta}
-	jmp main_vwfs
+	jmp main_vwf
 	
 main_vwf2s:
 	//Assume 16-bit A / Index
 	xba
 	pha
-	lda.w #$0100
+	lda.w #$0001
+	sta {charmode}
+	xba
+	//lda.w #$0100
 	sta {chardelta}
 	pla
-	jmp main_vwfs
+	jmp main_vwf
 
 	//Setup Char to be rendered
 setup_vwf:
