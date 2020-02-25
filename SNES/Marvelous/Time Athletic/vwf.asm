@@ -123,6 +123,7 @@ main_vwf:
 	//Assume 16-bit A / Index
 	sta {chara}
 	stx {charx}
+	stx {charx2}
 	sty {chary}
 	php
 	
@@ -136,18 +137,14 @@ main_vwf:
 	txa
 	clc
 	adc.w #$0100
-	bra ++
-+;	txa
-+;	sta {charx2}
+	sta {charx2}
 
 	//Deal with calculation error
-	txa
++;	txa
 	and.w #$0100
-	cmp.w #$0100
-	bcc +
-	txa
+	beq +
 	clc
-	adc.w #$0100
+	adc {charx}
 	sta {charx}
 	sta {charx2}
 
