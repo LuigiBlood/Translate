@@ -1,5 +1,6 @@
 Marvelous Time Athletic Course 1
-
+7E00E0 - Game Loop (0A & 1A = In-Game)
+7E0100 - Week Number * 2
 7E2000 - VRAM Stuff
 7E6000 - Decompression Buffer?
 7E7000 - Generated Script Pointers
