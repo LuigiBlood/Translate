@@ -1,0 +1,8 @@
+0x35 - Title Graphics
+
+0x38 - Title Tilemap
+0x39 - Intro Graphics 1 (LZ)
+0x3A - Intro Graphics 2 (LZ)
+0x3B - ??? (LZ?)
+0x3C - Intro Tilemap (LZ)
+0x3D - Intro Palette

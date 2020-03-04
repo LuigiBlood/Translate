@@ -1,0 +1,1 @@
+".\tools\bsnes-plus\bsnes" Marvelous_EN_LB.sfc
