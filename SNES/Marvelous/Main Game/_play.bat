@@ -1,1 +1,1 @@
-".\tools\bsnes-plus\bsnes" Marvelous_EN_LB.sfc
+".\tools\bsnes-plus\bsnes-performance" Marvelous_EN_LB.sfc

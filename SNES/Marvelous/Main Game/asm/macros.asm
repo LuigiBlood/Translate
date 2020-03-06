@@ -25,3 +25,12 @@ macro DB_HI(n) {
 macro DB_LO(n) {
 	db ({n} & $FF)
 }
+
+macro ptr_replace(id, n) {
+	seekFile($0011E3 + {id})
+	DB_BANK({n})
+	seekFile($0012DC + {id})
+	DB_HI({n})
+	seekFile($0013D5 + {id})
+	DB_LO({n})
+}

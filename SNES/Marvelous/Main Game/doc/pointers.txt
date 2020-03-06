@@ -1,8 +1,38 @@
-0x35 - Title Graphics
+0x18 - Team Name Screen Tilemap (LZ)
 
-0x38 - Title Tilemap
+0x35 - Title Graphics (LZ)
+
+0x38 - Title Tilemap (LZ)
 0x39 - Intro Graphics 1 (LZ)
 0x3A - Intro Graphics 2 (LZ)
 0x3B - ??? (LZ?)
 0x3C - Intro Tilemap (LZ)
 0x3D - Intro Palette
+
+0x3E - Credits Graphics (LZ)
+0x3F - Credits Tilemap (LZ)
+
+0x4A - Search - Ch3: Management Office Sign Tilemap (LZ)
+
+0x4D - Search - Various: Chore list, Camp Tips, Benson's Grave Tilemap (LZ)
+
+0x53 - Search - Ch1: Gina Ransom Letter Graphics (LZ)
+
+0x56 - Search - Ch3: Management Office Sign Graphics (LZ)
+
+0x5A - Search - Ch1: Patchies Note Stuck Graphics (LZ)
+
+0x5E - Search - Ch2: Benson's Grave Graphics (LZ)
+0x5F - Search - Ch1: Camp Tips Graphics (LZ)
+0x60 - Search - Ch2: Monster Poster Graphics (LZ)
+
+0x62 - Search - Ch2: Chore List Graphics (LZ)
+0x63 - Search - Ch1: Controls Graphics (LZ)
+0x64 - Search - Ch1: Ship Wall Paper Graphics (LZ)
+
+0x69 - Search - Ch5: Colonel Note Graphics 2 (LZ)
+
+0xDA - Title Screen - Nintendo Copyright Graphics (LZ)
+0xDB - Title Screen - Subtitle Graphics (LZ)
+
+0xF8 - Search - Ch5: Colonel Note Graphics 1 (LZ)
