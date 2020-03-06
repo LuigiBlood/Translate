@@ -159,8 +159,8 @@ gfx_ch3_sign:
 seekFile($1FE99C)
 gfx_ch5_colonel_note1:
 	insert "../gfx/en/lz/lz_colonel_note_gfx1.bin.lz"
-seekFile($21D500)
-gfx_ch5_colonel_note2:	//diff in 1.07
+seekFile($151D31)
+gfx_ch5_colonel_note2:
 	insert "../gfx/en/lz/lz_colonel_note_gfx2.bin.lz"
 
 
