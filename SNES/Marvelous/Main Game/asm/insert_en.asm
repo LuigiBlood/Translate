@@ -19,33 +19,41 @@ seekFile($270000)
 seekFile($121964)
 gfx_title:
 	insert "../gfx/en/lz/lz_title_gfx.bin.lz"
+	bound_check($122F5E)
 seekFile($123726)
 map_title:
 	insert "../gfx/en/lz/lz_title_map.bin.lz"
+	bound_check($123951)
 
 //--Nintendo Copyright
 seekFile($1D948F)
 gfx_title_nintendo:
 	insert "../gfx/en/lz/lz_nintendo_gfx.bin.lz"
+	bound_check($1DA5ED)
 
 //--Subtitle
 seekFile($1DA5ED)
 gfx_title_sub:
 	insert "../gfx/en/lz/lz_subtitle_gfx.bin.lz"
+	bound_check($1DA9B5)
 
 //--Intro
 seekFile($123951)
 gfx_intro1:
 	insert "../gfx/en/lz/lz_intro_gfx1.bin.lz"
+	bound_check($1246DE)
 seekFile($1246DE)
 gfx_intro2:
 	insert "../gfx/en/lz/lz_intro_gfx2.bin.lz"
-seekFile($21B9AC)
+	bound_check($12550E)
+seekFile($21B9AC)	//$12550E
 map_intro:
 	insert "../gfx/en/lz/lz_intro_map.bin.lz"
-seekFile($125ADE)
-pal_intro_rep:	//Replace part of the palette
+	//bound_check($1257F6)
+seekFile($125ADD)
+pal_intro:
 	insert "../gfx/en/intro_pal.bin"
+	bound_check($125BB6)
 
 
 //-Menu
@@ -62,6 +70,7 @@ seekFile($268000)
 seekFile($0E286B)
 map_teamname:
 	insert "../gfx/en/lz/lz_teamname_map.bin.lz"
+	bound_check($0E2E23)
 
 //--Journal Menu Tilemap Stuff (???)
 seekFile($2C09B0)
@@ -82,22 +91,28 @@ map_journal4:
 seekFile($12DEB0)
 map_ch1_misc:	//Chore list, Camp Tips, Benson`s Grave...
 	insert "../gfx/en/lz/lz_chorelistmisc_map.bin.lz"
+	bound_check($12E9BA)
 
 seekFile($132FC4)
 gfx_ch1_gina_ransom:
 	insert "../gfx/en/lz/lz_gina_ransom_gfx.bin.lz"
+	bound_check($134CA1)
 seekFile($13C578)
 gfx_ch1_patches_stuck:
 	insert "../gfx/en/lz/lz_patchy_note_gfx.bin.lz"
+	bound_check($13DF2F)
 seekFile($1447AE)
 gfx_ch1_camptips:
 	insert "../gfx/en/lz/lz_camp_tips_gfx.bin.lz"
+	bound_check($145F3B)
 seekFile($14A478)
 gfx_ch1_controls:
 	insert "../gfx/en/lz/lz_controls_gfx.bin.lz"
-seekFile($21BBD0)
+	bound_check($14B628)
+seekFile($21BBD0)	//$14B628
 gfx_ch1_ship_notes:
 	insert "../gfx/en/lz/lz_ship_notes_gfx.bin.lz"
+	//bound_check($14CEBF)
 
 seekFile($2BB96A)
 map_ch1_ship_note_13:
@@ -128,12 +143,15 @@ map_ch1_ship_note_2:
 seekFile($142CE4)
 gfx_ch2_bensongrave:
 	insert "../gfx/en/lz/lz_bensongrave_gfx.bin.lz"
+	bound_check($1447AE)
 seekFile($145F3B)
 gfx_ch2_monster:
 	insert "../gfx/en/lz/lz_monsterposter_gfx.bin.lz"
+	bound_check($1476D5)
 seekFile($1490F9)
 gfx_ch2_chorelist:
 	insert "../gfx/en/lz/lz_chorelist_gfx.bin.lz"
+	bound_check($14A478)
 
 seekFile($2BB55F)
 map_ch2_chorelist_1:
@@ -147,9 +165,11 @@ map_ch2_chorelist_2:
 seekFile($12BDA4)
 map_ch3_sign:
 	insert "../gfx/en/lz/lz_officesign_map.bin.lz"
+	bound_check($12C7C8)
 seekFile($136BFE)
 gfx_ch3_sign:
 	insert "../gfx/en/lz/lz_officesign_gfx.bin.lz"
+	bound_check($1384BF)
 
 
 //-Chapter 4
@@ -159,9 +179,11 @@ gfx_ch3_sign:
 seekFile($1FE99C)
 gfx_ch5_colonel_note1:
 	insert "../gfx/en/lz/lz_colonel_note_gfx1.bin.lz"
+	bound_check($200000)
 seekFile($151D31)
 gfx_ch5_colonel_note2:
 	insert "../gfx/en/lz/lz_colonel_note_gfx2.bin.lz"
+	bound_check($153005)
 
 
 //-Misc
@@ -170,9 +192,11 @@ gfx_ch5_colonel_note2:
 seekFile($125BB6)
 gfx_credits:
 	insert "../gfx/en/lz/lz_credits_gfx.bin.lz"
-seekFile($21B400)
+	bound_check($12735C)
+seekFile($21B400)	//$12735C
 map_credits:
 	insert "../gfx/en/lz/lz_credits_map.bin.lz"
+	//bound_check($1276AE)
 
 //--Large Messages
 //Monkey Screech, "HEY!", "That's Enough / Cut it OUT!"

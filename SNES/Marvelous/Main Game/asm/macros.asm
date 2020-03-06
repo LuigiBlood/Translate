@@ -34,3 +34,9 @@ macro ptr_replace(id, n) {
 	seekFile($0013D5 + {id})
 	DB_LO({n})
 }
+
+macro bound_check(n) {
+	if origin() > {n} {
+		error "ERROR, OVERWRITING ANOTHER FILE"
+	}
+}
