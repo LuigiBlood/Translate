@@ -192,5 +192,6 @@ macro ASCIIMap() {
 include "DMPJ990211_Patch.asm"
 
 //Translation
+include "DMPJ990211_US_Hack.asm"
 include "DMPJ990211_US_2DPaint.asm"
 include "DMPJ990211_US_3DMovie.asm"

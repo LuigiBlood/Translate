@@ -121,7 +121,7 @@ putText2(0x25EA88, "GameBoy Camera")
 putText2(0x25EB30, "Save/Load")
 putText2(0x25EBD8, "Load")
 putText2(0x25EC80, "Save")
-putText2(0x25ED28, "Special Save")
+putText2(0x25ED28, "Special Save")			//とくしゅなセーブ
 putText2(0x25EDD0, "Rotate Clockwise")
 putText2(0x25EE78, "Rotate C-Clockwise")
 putText2(0x25EF20, "Music")

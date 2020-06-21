@@ -35,3 +35,32 @@ seek(0x183F06)
 	dh $003A	//Take Photo
 seek(0x183F16)
 	dh $0029	//Return & Save (Buggy)
+
+//Creature Names
+putText2(0x1EC000, "Shark")				//サメ
+putText2(0x1EC03C, "Dolphin")			//イルカ
+putText2(0x1EC0F0, "Manta Ray")			//マンタ
+putText2(0x1EC1A4, "Octopus")			//タコ
+putText2(0x1EC1E0, "Turtle")			//カメ
+putText2(0x1EC21C, "Mermaid")			//にんぎょ
+putText2(0x1ECCA8, "Fish")				//こざかな
+
+putText2(0x1EC258, "Brachiosaurus")		//ブラキオサウルス
+putText2(0x1EC294, "Gallimimus")		//ガリミマス
+putText2(0x1EC30C, "Pteranodon")		//プテラノドン
+putText2(0x1EC348, "Raptor")			//ラプトル
+putText2(0x1EC384, "Stegosaurus")		//ステゴサウルス
+putText2(0x1EC3C0, "Triceratops")		//トリケラトプス
+putText2(0x1EC3FC, "T-Rex")				//Tレックス
+
+putText2(0x1EC8E8, "Linda")				//リンダ
+putText2(0x1EC924, "Laura")				//ララ
+putText2(0x1EC960, "Colon")				//コロン
+putText2(0x1EC99C, "Jack")				//ジャック
+putText2(0x1EC9D8, "Snorky")			//スノーキー
+putText2(0x1ECA14, "Filbert")			//フィルバート
+putText2(0x1ECA50, "Gaburr")			//ガブール
+
+putText2(0x1ECEC4, "Terrain")			//ちけい
+putText2(0x1ECF00, "Terrain")			//ちけい
+putText2(0x1ECF3C, "Terrain")			//ちけい
