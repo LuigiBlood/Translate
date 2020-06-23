@@ -4,12 +4,18 @@
 macro textEntry(size, text) {
   variable skipSeek(origin()+{size})
   putText2noSeek({text})
-  seek(skipSeek)
+  origin skipSeek
+}
+
+macro textEntry2(size, text, text2) {
+  variable skipSeek(origin()+{size})
+  putText3noSeek({text}, {text2})
+  origin skipSeek
 }
 
 macro textEntrySkip(size) {
   variable skipSeek(origin()+{size})
-  seek(skipSeek)
+  origin skipSeek
 }
 
 //OLD
@@ -39,6 +45,14 @@ macro putText2noSeek(text) {
 macro putText3(n, text, text2) {
   RegularMap()
   seek({n})
+  dh {text}
+  dh {text2}
+  dh 0x0000
+}
+
+macro putText3noSeek(text, text2) {
+  RegularMap()
+  dh 0x5000
   dh {text}
   dh {text2}
   dh 0x0000
