@@ -1,244 +1,276 @@
 //2D Paint Mode
+seek(0x254A68)
+//Canvas
+textEntry(60, "Flip")			//Flip / ヨウシはんてん
+textEntry(60, "Flip Horizontal")	//Flip horizontal / さゆうはんてん
+textEntry(60, "Flip Vertical")		//Flip vertical / じょうげはんてん
+textEntry(60, "Flip H/V")		//Flip vertical and horizontal / じょうげさゆうはんてん
 
-putText2(0x254A68, "Flip")
-putText2(0x254AA4, "Flip Horizontal")
-putText2(0x254AE0, "Flip Vertical")
-putText2(0x254B1C, "Flip H/V")
+//Stamp
+textEntry(60, "Flip")			//Flip / スタンプはんてん
+textEntry(60, "Flip Horizontal")	//Flip horizontal / さゆうはんてん
+textEntry(60, "Flip Vertical")		//Flip vertical / じょうげはんてん
+textEntry(60, "Flip H/V")		//Flip vertical and horizontal / じょうげさゆうはんてん
 
-putText2(0x254B58, "Flip")
-putText2(0x254B94, "Flip Horizontal")
-putText2(0x254BD0, "Flip Vertical")
-putText2(0x254C0C, "Flip H/V")
+//Cut / Copy
+textEntry(60, "Flip")			//Flip / えらんだはんいはんてん
+textEntry(60, "Flip Horizontal")	//Flip horizontal / さゆうはんてん
+textEntry(60, "Flip Vertical")		//Flip vertical / じょうげはんてん
+textEntry(60, "Flip H/V")		//Flip vertical and horizontal / じょうげさゆうはんてん
 
-putText2(0x254C48, "Flip")
-putText2(0x254C84, "Flip Horizontal")
-putText2(0x254CC0, "Flip Vertical")
-putText2(0x254CFC, "Flip H/V")
+//Text
+textEntry(60, "Flip")			//Flip / もじはんてん
+textEntry(60, "Flip Horizontal")	//Flip horizontal / さゆうはんてん
+textEntry(60, "Flip Vertical")		//Flip vertical / じょうげはんてん
+textEntry(60, "Flip H/V")		//Flip vertical and horizontal / じょうげさゆうはんてん
 
-putText2(0x254D38, "Flip")
-putText2(0x254D74, "Flip Horizontal")
-putText2(0x254DB0, "Flip Vertical")
-putText2(0x254DEC, "Flip H/V")
+seek(0x257510)
+textEntry(168, "Change Texture Page")	//Change Texture Page / もようヨウシきりかえ
+textEntry(168, "Square")		//Square / しかくけい
+textEntry(168, "Star")			//Star / ほし
+textEntry(168, "Circle")		//Circle / えん
+textEntry(168, "Freehand")		//Freehand / フリーハンド
+textEntry(168, "Heart")			//Heart / ハート
+textEntry(168, "Select All")		//Select All / すべてをえらぶ
+textEntry(168, "Ellipse")		//Ellipse / だえん
+textEntry(168, "Square")		//Square / しかくけい
+textEntry(168, "Square")		//Square / しかくけい
+textEntry(168, "Star")			//Star / ほし
+textEntry(168, "Circle")		//Circle / えん
+textEntry(168, "Freehand")		//Freehand / フリーハンド
+textEntry(168, "Heart")			//Heart / ハート
+textEntry(168, "Select All")		//Select All / すべてをえらぶ
+textEntry(168, "Ellipse")		//Ellipse / だえん
 
-putText2(0x257510, "Change Texture Page")
-putText2(0x2575B8, "Square")
-putText2(0x257660, "Star")
-putText2(0x257708, "Circle")
-putText2(0x2577B0, "Freehand")
-putText2(0x257858, "Heart")
-putText2(0x257900, "Select All")
-putText2(0x2579A8, "Ellipse")
-putText2(0x257A50, "Square")
-putText2(0x257AF8, "Square")
-putText2(0x257BA0, "Star")
-putText2(0x257C48, "Circle")
-putText2(0x257CF0, "Freehand")
-putText2(0x257D98, "Heart")
-putText2(0x257E40, "Select All")
-putText2(0x257EE8, "Ellipse")
+textEntry(168, "Rectangle")		//Draw Rectangle / しかくけい
+textEntry(168, "Star")			//Star / ほし
+textEntry(168, "Circle")		//Draw Circle / えん
+textEntry(168, "Star")			//Draw Star / ホシ (Unused)
+textEntry(168, "Heart")			//Heart / ハート
+textEntry(168, "Line")			//Line / ちょくせん
+textEntry(168, "Ellipse")		//Draw Ellipse / だえん
 
-putText2(0x257F90, "Rectangle")
-putText2(0x258038, "Star")
-putText2(0x2580E0, "Circle")
-putText2(0x258188, "Star")
-putText2(0x258230, "Heart")
-putText2(0x2582D8, "Line")
-putText2(0x258380, "Ellipse")
+textEntry(168, "Brighten")		//Brighten / あかるく
+textEntry(168, "Darken")		//Darken / くらく
+textEntry(168, "Smooth")		//Smooth / なめらかに
+textEntry(168, "Sharp")			//Sharp / シャープ
+textEntry(168, "Zig Zag")		//Zig Zags / ジグザグ
+textEntry(168, "Drip")			//Drip / にじませる
+textEntry(168, "Color Scale")		//Colour Scale / いろをかける
+textEntry(168, "Contrast")		//Adjust Contrast / コントラスト
+textEntry(168, "Chrome Emboss")		//Chrome Emboss / うきぼり
+textEntry(168, "Sketchize")		//Sketchize / スケッチ
+textEntry(168, "Lineize")		//Lineize / せんが
+textEntry(168, "Tile")			//Tile / タイル
+textEntry(168, "Exit")			//Back / でる
+textEntry(168, "Exit")			//Back / でる
 
-putText2(0x258428, "Brighten")
-putText2(0x2584D0, "Darken")
-putText2(0x258578, "Smooth")
-putText2(0x258620, "Sharp")
-putText2(0x2586C8, "Zig Zag")
-putText2(0x258770, "Drip")
-putText2(0x258818, "Color Scale")
-putText2(0x2588C0, "Contrast")
-putText2(0x258968, "Chrome Emboss")
-putText2(0x258A10, "Sketchize")
-putText2(0x258AB8, "Lineize")
-putText2(0x258B60, "Tile")
-putText2(0x258C08, "Exit")
-putText2(0x258CB0, "Exit")
+textEntrySkip(168*4)
 
-putText2(0x258FF8, "Selected Color")
-putText2(0x2597D8, "Next Page")
+textEntry(168, "Selected Color")	//Selected Colour / えらばれているいろ
 
-putText2(0x259F10, "Pokemon (1)")
-putText2(0x259FB8, "Pokemon (2)")
-putText2(0x25A060, "Mario")
-putText2(0x25A108, "Mario Kart")
-putText2(0x25A1B0, "Yoshi")
-putText2(0x25A258, "Star Fox & more")
-putText2(0x25A300, "Planet Mars")
-putText2(0x25A3A8, "Deformative")
-putText2(0x25A450, "Text")
-putText2(0x25A4F8, "Food & Drinks")
-putText2(0x25A5A0, "People & Animals")
-putText2(0x25A648, "Other")
-putText2(0x25A6F0, "Game Artworks")
-putText2(0x25A798, "Pokemon Stadium")
-putText2(0x25A840, "Zelda")
-putText2(0x25A8E8, "Banjo & more")
-putText2(0x25A990, "Illustrations")
-putText2(0x25AA38, "Text")
-putText2(0x25AAE0, "Other (2)")
-putText2(0x25AB88, "Landscapes & more")
-putText2(0x25AC30, "Frame (1)")
-putText2(0x25ACD8, "Frame (2)")
-putText2(0x25AD80, "Frame (3)")
+textEntrySkip(168*11)
 
-putText2(0x25B608, "Capture Pak")
-putText2(0x25B6B0, "Capture Movie")
+textEntry(168, "Next Page")		//Next / ページおくり
 
-putText2(0x25D780, "Rotate")
-putText2(0x25D978, "Thin")
-putText2(0x25DA20, "Medium")
-putText2(0x25DAC8, "Thick")
-putText2(0x25DB70, "Other Stamps")
-putText2(0x25DC18, "Scroll")
-putText2(0x25DCC0, "Fill")
-putText2(0x25DD68, "Zoom")
-putText2(0x25DE10, "Eraser")
-putText2(0x25DEB8, "Next Page")
-putText2(0x25DF60, "Undo")
-putText2(0x25E008, "Erase Frame")
-putText2(0x25E0B0, "Go to Main Menu")
-putText2(0x25E158, "Switch Paper")
-putText2(0x25E200, "Copy")
-putText2(0x25E2A8, "Range")
-putText2(0x25E350, "Compress")
-putText2(0x25E3F8, "Size")
-putText2(0x25E4A0, "Cut")
-putText2(0x25E548, "Shapes")
-putText2(0x25E5F0, "Text")
-putText2(0x25E698, "Color Selection")
-putText2(0x25E740, "Special Effects")
-putText2(0x25E7E8, "Nintendo Stamps")
-putText2(0x25E890, "Backgrounds")
-putText2(0x25E938, "Frames")
-putText2(0x25E9E0, "Coloring Book")
-putText2(0x25EA88, "GameBoy Camera")
-putText2(0x25EB30, "Save/Load")
-putText2(0x25EBD8, "Load")
-putText2(0x25EC80, "Save")
-putText2(0x25ED28, "Special Save")			//とくしゅなセーブ
-putText2(0x25EDD0, "Rotate Clockwise")
-putText2(0x25EE78, "Rotate C-Clockwise")
-putText2(0x25EF20, "Music")
-putText2(0x25EFC8, "Mouse Speed")
+textEntrySkip(168*10)
 
-putText2(0x25F118, "Help")
-putText2(0x25F1C0, "Adjust Screen")
-putText2(0x25F268, "Paper Size")
-//putText2(0x25F310, "Paper Size 2")
-putText2(0x25F3B8, "Preview")
-putText2(0x25F460, "Standard")
-putText2(0x25F508, "Large")
-putText2(0x25F5B0, "High Resolution")
-putText2(0x25F658, "High Resolution")
-putText2(0x25F700, "Animate")
-putText2(0x25F7A8, "Exit")
-putText2(0x25F850, "Play")
-putText2(0x25F8F8, "Copy")
-putText2(0x25F9A0, "Stop")
-putText2(0x25FA48, "Ghost")
-putText2(0x25FAF0, "Clear Frame")
-putText2(0x25FB98, "Clear Film")
-putText2(0x25FC40, "Play")
-putText2(0x25FCE8, "Stop")
-putText2(0x25FD90, "Loop")
-putText2(0x25FE38, "Blend")
-putText2(0x25FEE0, "Watch")
-putText2(0x25FF88, "Exit")
-putText2(0x260030, "Speed")
+textEntry(168, "Pokemon (1)")		//Pocket Monsters 1 / ポケモン1
+textEntry(168, "Pokemon (2)")		//Pocket Monsters 2 / ポケモン2
+textEntry(168, "Mario")			//Mario / マリオ
+textEntry(168, "Mario Kart")		//Mario Kart / カート
+textEntry(168, "Yoshi")			//Yoshi / ヨッシー
+textEntry(168, "Star Fox & more")	//Pilot Wings Wave Race Star Fox / フォックスなど
+textEntry(168, "Planet Mars")		//Mars / イギリス (Unused)
+textEntry(168, "Deformative")		//Deformative Stickers / へんそう
+textEntry(168, "Text")			//Text / もじシール
+textEntry(168, "Food & Drinks")		//Food and Drink / しょくひんシール
+textEntry(168, "People & Animals")	//Creatures and other objects / いきものなど
+textEntry(168, "Other")			//Others / そのた
+textEntry(168, "Game Artworks")		//Zelda and others / ゼルダなど
+textEntry(168, "Pokemon Stadium")	//Pocket Monster Stadium / ポケスタ
+textEntry(168, "Zelda")			//Zelda / ゼルダ
+textEntry(168, "Banjo & more")		//Did banj mars / バンジョーなど
+textEntry(168, "Illustrations")		//Illustations / イラスト
+textEntry(168, "Text")			//Text / もじ
+textEntry(168, "Other (2)")		//Others 2 / そのた2
+textEntry(168, "Landscapes & more")	//Landscapes and others / ふうけいなど
+textEntry(168, "Frame (1)")		//Frame 1 / フレーム1
+textEntry(168, "Frame (2)")		//Frame 2 / フレーム2
+textEntry(168, "Frame (3)")		//Frame 3 / フレーム3
 
-putText2(0x2600D8, "Go to Main Menu")
-putText2(0x260180, "Exit")
-putText2(0x260228, "Coffee Break")
+textEntrySkip(168*12)
 
-putText2(0x2604C8, "Disable")
-putText2(0x260570, "Automatic")
+textEntry(168, "Capture Pak")		//Import picture / とりこみがぞう
+textEntry(168, "Capture Movie")		//Import movie / とりこみムービー
 
-putText2(0x2608B8, "Slow")
-putText2(0x260960, "Medium")
-putText2(0x260A08, "Fast")
-putText2(0x260EA0, "Music 1")
-putText2(0x260F48, "Music 2")
-putText2(0x260FF0, "Music 3")
-putText2(0x261098, "Music 4")
-putText2(0x261140, "Music OFF")
 
-putText2(0x2611E8, "Thick")
-putText2(0x261290, "Medium")
-putText2(0x261338, "Thin")
-putText2(0x2613E0, "Clear")
-putText2(0x261488, "Clear")
-putText2(0x261530, "Clear")
-putText2(0x2615D8, "Flash")
-putText2(0x261680, "Clear")
-putText2(0x261728, "Clear")
-putText2(0x2617D0, "Clear")
-putText2(0x261878, "Clear")
+seek(0x25D780)
+textEntry(168, "Rotate")		//Rotate / もじカイテン
+textEntrySkip(168*2)
+textEntry(168, "Thin")			//Thin / ほそい
+textEntry(168, "Medium")		//Medium / ふつう
+textEntry(168, "Thick")			//Thick / ふとい
+textEntry(168, "Other Stamps")		//Cut out sticker pictures / きりとりスタンプ
+textEntry(168, "Scroll")		//Scroll / がめんスクロール
+textEntry(168, "Fill")			//Fill / ぬりつぶし
+textEntry(168, "Zoom")			//Zoom / かくだい・しゅくしょう
+textEntry(168, "Eraser")		//Eraser / けしゴム
+textEntry(168, "Next Page")		//Next / ページおくり
+textEntry(168, "Undo")			//Undo / やりなおし
+textEntry(168, "Erase Frame")		//Remove Frame / フレームをけす
+textEntry(168, "Go to Main Menu")	//Exit / セレクトがめんにもどる
+textEntry(168, "Switch Paper")		//Change Page / ヨウシきりかえ
+textEntry(168, "Copy")			//Copy / コピー
+textEntry(168, "Range")			//Specify range / はんいのしてい
+textEntry(168, "Compress")		//Compress / あっしゅくのしてい
+textEntry(168, "Size")			//Size / サイズ
+textEntry(168, "Cut")			//Cutout / きりとる
+textEntry(168, "Shapes")		//Shapes / さほんけい
+textEntry(168, "Text")			//Text / もじスタンプ
+textEntry(168, "Color Selection")	//Palette / カスタムカラー
+textEntry(168, "Special Effects")	//Special Fx / とくしゅこうか
+textEntry(168, "Nintendo Stamps")	//Nintendo Pictures / ニンテンドウグラフィック
+textEntry(168, "Backgrounds")		//High Resolution / ハイレゾしゃしん
+textEntry(168, "Frames")		//Print Club Frame / フレーム
+textEntry(168, "Coloring Book")		//Colouring Book / ぬりえ
+textEntry(168, "GameBoy Camera")	//Load Save / セーブ・ロード (GameBoy Camera)
+textEntry(168, "Save/Load")		//Load Save / セーブ・ロード
+textEntry(168, "Load")			//Load / ロード
+textEntry(168, "Save")			//Save / セーブ
+textEntry(168, "Special Save")		//Special data save / とくしゅなセーブ
+textEntry(168, "Rotate Clockwise")	//Rotate Clockwise / みぎカイテン
+textEntry(168, "Rotate C-Clockwise")	//Rotate Counterclockwise / ひだりカイテン
+textEntry(168, "Music")			//Select Music / BGMをえらぶ
+textEntry(168, "Mouse Speed")		//Mouse Speed / マウススピード
+textEntrySkip(168)			//Erase Frame / アイコンをけす (Unused)
+textEntry(168, "Help")			//Help / ヘルプ
+textEntry(168, "Adjust Screen")		//Modify Screen Size / がめんサイズちょうせい
+textEntry(168, "Paper Size")		//Canvas Size / ヨウシサイズ
+textEntry(168, "Reduce Size")		//Canvas Size / ヨウシのしゅくしょう
+textEntry(168, "Preview")		//Preview Mode / ぜんたいをみる
+textEntry(168, "Standard Size")		//Standard / きほんサイズ
+textEntry(168, "Frame Size")		//Frame Size / フレームサイズ
+textEntry(168, "High Resolution")	//High Resolution / ハイレゾサイズ
+textEntry(168, "High Resolution")	//High Resolution / ハイレゾサイズ
 
-putText2(0x261C00, "Exit")
-putText2(0x261CA8, "Exit")
-putText2(0x261D50, "Exit")
-putText2(0x261DF8, "Exit")
+textEntry(168, "Animate")		//2D Movie / パラパラまんが
+textEntry(168, "Exit")			//Exit / でる
+textEntry(168, "Play")			//Play / うごかす
+textEntry(168, "Copy")			//Copy / コピー
+textEntry(168, "Stop")			//End / フィルムエンド
+textEntry(168, "Ghost")			//Ghost / ゴースト
+textEntry(168, "Clear Frame")		//Clear Frame / ひとこまけす
+textEntry(168, "Clear Film")		//Clear Film / フィルムすべてをけす
+textEntry(168, "Play")			//Play / うごかす
+textEntry(168, "Stop")			//Stop / とめる
+textEntry(168, "Loop")			//Loop / くりかえす
+textEntry(168, "Blend")			//Blender / ブレンド
+textEntry(168, "Watch")			//Hide Frame / わくをけす
+textEntry(168, "Exit")			//Exit / でる
+textEntry(168, "Speed")			//speed / フィルムスピード
 
-putText2(0x261EA0, "Eraser")
-putText2(0x261F48, "Small Letters")
-putText2(0x261FF0, "Big Letters")
-putText2(0x262098, "Numbers")
-putText2(0x262140, "Hiragana")
-putText2(0x2621E8, "Katakana")
-putText2(0x262290, "Kanji")
-putText2(0x262338, "Text Color")
+textEntry(168, "Go to Main Menu")	//Title Screen / セレクトがめんにもどる
+textEntry(168, "Exit")			//Exit / でる
+textEntry(168, "Coffee Break")		//Coffee Break / コーヒーブレイク
 
-putText2(0x262A70, "Next Page")
+textEntrySkip(168*3)
 
-putText2(0x262D10, "Decide")	//Jobs a good ern (???)
-putText2(0x262DB8, "Return")
-putText2(0x262E60, "Reset")
-putText2(0x262F08, "Exit")
+textEntry(168, "Disable")		//Do Not COmpress / しない
+textEntry(168, "Automatic")		//Automatic / じどう
 
-putText2(0x264018, "3D Preview")
-putText2(0x2640C0, "Next Texture Page")
-putText2(0x264168, "View 1")
-putText2(0x264210, "View 2")
-putText2(0x2642B8, "View 3")
-putText2(0x264360, "View 4")
-putText2(0x264408, "View 5")
-putText2(0x2644B0, "View 6")
-putText2(0x264558, "View 7")
-putText2(0x264600, "View 8")
-putText2(0x2646A8, "Rotation A")
-putText2(0x264750, "Rotation B")
-putText2(0x2647F8, "Multi Rotation")
+textEntrySkip(168*4)
 
-putText2(0x266B74, "Flip Stamp")
-putText2(0x266BB0, "Flip Text")
+textEntry(168, "Slow")			//Slow / おそい
+textEntry(168, "Medium")		//Medium / ふつう
+textEntry(168, "Fast")			//Fast / はやい
 
-putText2(0x26AAEE, "Felt Tip Pen")
-putText2(0x26AB46, "Felt Tip Pen")
-putText2(0x26AB9E, "Felt Tip Pen")
-putText2(0x26ABF6, "Pencil")
-putText2(0x26AC4E, "Pencil")
-putText2(0x26ACA6, "Pencil")
-putText2(0x26ACFE, "Crayon")
-putText2(0x26AD56, "Crayon")
-putText2(0x26ADAE, "Crayon")
-putText2(0x26AE06, "Chalk")
-putText2(0x26AE5E, "Chalk")
-putText2(0x26AEB6, "Chalk")
-putText2(0x26AF0E, "Brush")
-putText2(0x26AF66, "Brush")
-putText2(0x26AFBE, "Brush")
-putText2(0x26B016, "Oil Brush")
-putText2(0x26B06E, "Oil Brush")
-putText2(0x26B0C6, "Oil Brush")
-putText2(0x26B11E, "Spray Can")
-putText2(0x26B176, "Spray Can")
-putText2(0x26B1CE, "Spray Can")
-putText2(0x26B226, "Finger Blend")
-putText2(0x26B27E, "Finger Blend")
-putText2(0x26B2D6, "Finger Blend")
+textEntrySkip(168*6)
+
+textEntry(168, "Music 1")		//t1 / BGMタイプ1
+textEntry(168, "Music 2")		//t2 / BGMタイプ2
+textEntry(168, "Music 3")		//t3 / BGMタイプ3
+textEntry(168, "Music 4")		//t4 / BGMタイプ4
+textEntry(168, "Music OFF")		//Off / BGMOFF
+
+textEntry(168, "Thick")			//Partial Eraser / ぶぶんけし
+textEntry(168, "Medium")		//Partial Eraser / ぶぶんけし
+textEntry(168, "Thin")			//Partial Eraser / ぶぶんけし
+textEntry(168, "Clear")			//Clear Screen / ぜんたいけし
+textEntry(168, "Clear")			//Clear Screen / ぜんたいけし
+textEntry(168, "Clear")			//Clear Screen / ぜんたいけし
+textEntry(168, "Flash")			//Clear Screen / ぜんたいけし
+textEntry(168, "Clear")			//Clear Screen / ぜんたいけし
+textEntry(168, "Clear")			//Clear Screen / ぜんたいけし
+textEntry(168, "Clear")			//Clear Screen / ぜんたいけし
+textEntry(168, "Clear")			//Clear Screen / ぜんたいけし
+
+seek(0x261C00)
+textEntry(168, "Exit")			//Exit / でる
+textEntry(168, "Exit")			//Exit / でる
+textEntry(168, "Exit")			//Exit / でる
+textEntry(168, "Exit")			//Exit / でる
+
+textEntry(168, "Eraser")		//Eraser / けしゴム
+textEntry(168, "Small Letters")		//Samll Letter / こもじ
+textEntry(168, "Big Letters")		//Capital letter / おおもじ
+textEntry(168, "Numbers")		//Numbers / すうじ
+textEntry(168, "Hiragana")		//Hiragana / ひらがな
+textEntry(168, "Katakana")		//Katakana / カタカナ
+textEntry(168, "Kanji")			//Kanji / かんじ
+textEntry(168, "Text Color")		//Text Colour / もじのいろ
+
+seek(0x262A70)
+textEntry(168, "Next Page")		//Next / ページおくり
+
+seek(0x262D10)
+textEntry(168, "Decide")		//Jobs a good ern / けってい
+textEntry(168, "Return")		//return / もどる
+textEntry(168, "Reset")			//Reset / カラーリセット
+textEntry(168, "Exit")			//Exit / でる
+
+seek(0x264018)
+textEntry(168, "3D Preview")		//Preview Options / 3Dプレビュー
+textEntry(168, "Next Texture Page")	//Next Texture Page / もようヨウシきりかえ
+textEntry(168, "View 1")		//View 1 / してん1
+textEntry(168, "View 2")		//View 2 / してん2
+textEntry(168, "View 3")		//View 3 / してん3
+textEntry(168, "View 4")		//View 4 / してん4
+textEntry(168, "View 5")		//View 5 / してん5
+textEntry(168, "View 6")		//View 6 / してん6
+textEntry(168, "View 7")		//View 7 / してん7
+textEntry(168, "View 8")		//View 8 / してん8
+textEntry(168, "Rotation A")		//Demo 1 / カイテンA
+textEntry(168, "Rotation B")		//Demo 1 / カイテンB
+textEntry(168, "Multi Rotation")	//Demo 3 / じょうげさゆうカイテン
+
+seek(0x266B74)
+textEntry(60, "Flip Stamp")		//Flip Stamp / スタンプはんてん
+textEntry(60, "Flip Text")		//Flip Text / もじはんてん
+textEntrySkip(60)			//Flip Canvas / はんてん (Unused)
+
+seek(0x26AAEE)
+textEntry(88, "Felt Tip Pen")		//Felttip Pen / フェルトペン
+textEntry(88, "Felt Tip Pen")		//Felttip Pen / フェルトペン
+textEntry(88, "Felt Tip Pen")		//Felttip Pen / フェルトペン
+textEntry(88, "Pencil")			//Pencil Crayon / エンピツ
+textEntry(88, "Pencil")			//Pencil Crayon / エンピツ
+textEntry(88, "Pencil")			//Pencil Crayon / エンピツ
+textEntry(88, "Crayon")			//Wax Crayon / クレヨン
+textEntry(88, "Crayon")			//Wax Crayon / クレヨン
+textEntry(88, "Crayon")			//Wax Crayon / クレヨン
+textEntry(88, "Chalk")			//Chalk / チョーク
+textEntry(88, "Chalk")			//Chalk / チョーク
+textEntry(88, "Chalk")			//Chalk / チョーク
+textEntry(88, "Brush")			//Paint Brush / すいさいブラシ
+textEntry(88, "Brush")			//Paint Brush / すいさいブラシ
+textEntry(88, "Brush")			//Paint Brush / すいさいブラシ
+textEntry(88, "Oil Brush")		//Oil Brush / あぶらえブラシ
+textEntry(88, "Oil Brush")		//Oil Brush / あぶらえブラシ
+textEntry(88, "Oil Brush")		//Oil Brush / あぶらえブラシ
+textEntry(88, "Spray Can")		//Spraycan / スプレー
+textEntry(88, "Spray Can")		//Spraycan / スプレー
+textEntry(88, "Spray Can")		//Spraycan / スプレー
+textEntry(88, "Finger Blend")		//Finger Blend / ゆびでこする
+textEntry(88, "Finger Blend")		//Finger Blend / ゆびでこする
+textEntry(88, "Finger Blend")		//Finger Blend / ゆびでこする
