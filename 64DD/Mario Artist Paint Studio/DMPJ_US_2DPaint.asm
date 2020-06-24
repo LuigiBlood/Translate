@@ -767,7 +767,7 @@ putText(0x20EF72, "B: Scroll")
 putText(0x20F14A, "B: Scroll")
 
 //Insert Capture Cart? (Shift-JIS) 0x20F6B0
-putTextSJIS2(0x20F6B0, "Turn off & insert","the Capture","Pak.")
+putTextSJIS3(0x20F6B0, "Turn off & insert","the Capture","Pak.")
 
 //Insert Capture Cart? (Shift-JIS) 0x20F8F8 //RAM 0x80276E10
 //Work will disappear are you sure (Shift-JIS) 0x20F938 //RAM 0x80276E50
