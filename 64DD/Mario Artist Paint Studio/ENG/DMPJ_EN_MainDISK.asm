@@ -25,5 +25,8 @@ include "DMPJ_EN_2DPaint.asm"
 include "DMPJ_EN_2DPaint_Artworks.asm"
 //include "DMPJ_EN_3DWorld.asm"
 
+//Graphics
+include "DMPJ_EN_Graphics.asm"
+
 //Hacks
 include "DMPJ_EN_Hack.asm"
