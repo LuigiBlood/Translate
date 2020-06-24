@@ -442,12 +442,12 @@ putText(0x189FC2, "B - Scale")
 putText(0x189FF6, "B - Scale")
 
 putText(0x18A02A, "A - Draw/B - Picker")
-putText(0x18A066, "B - Go Back")
-putText(0x18A082, "B - Go Back")
-putText(0x18A09E, "B - Go Back")
-putText(0x18A0BA, "B - Go Back")
-putText(0x18A0D6, "B - Go Back")
-putText(0x18A0F2, "B - Go Back")
+putText(0x18A066, "B - Previous")
+putText(0x18A082, "B - Previous")
+putText(0x18A09E, "B - Previous")
+putText(0x18A0BA, "B - Previous")
+putText(0x18A0D6, "B - Previous")
+putText(0x18A0F2, "B - Previous")
 putText(0x18A10E, "Too large, can't load")
 
 //2D Paint Stuff
@@ -520,7 +520,7 @@ putText(0x1F3C18, "Frame 1")
 putText(0x1F3CC0, "Frame 2")
 putText(0x1F3D68, "Frame 3")
 
-putText(0x1F45F7, "Capture Cartridge")
+putText(0x1F45F7, "Capture Pak")
 putText(0x1F469D, "Capture Movie")
 
 //Felt tip (Shift-JIS) 0x1F4C81 Unused?
@@ -767,7 +767,7 @@ putText(0x20EF72, "B: Scroll")
 putText(0x20F14A, "B: Scroll")
 
 //Insert Capture Cart? (Shift-JIS) 0x20F6B0
-putTextSJIS3(0x20F6B0, "Turn off & insert","the capture","cartridge.")
+putTextSJIS2(0x20F6B0, "Turn off & insert","the Capture","Pak.")
 
 //Insert Capture Cart? (Shift-JIS) 0x20F8F8 //RAM 0x80276E10
 //Work will disappear are you sure (Shift-JIS) 0x20F938 //RAM 0x80276E50
@@ -782,7 +782,7 @@ putTextSJIS3(0x20F9B4, "Your work will","disappear.","Are you sure?") //2D Paint
 seek(0x20FA28)
 base 0x80276F40
 capture_insert:
-putTextSJIS3(0x20FA28, "Turn off & insert","the capture","cartridge.")
+putTextSJIS2(0x20FA28, "Turn off & insert","the Capture Pak.")
 //Please switch paper (Shift-JIS) 0x20FB08
 putTextSJIS(0x20FB08, "Going back.")
 //Plug video? (Shift-JIS) 0x20FB38

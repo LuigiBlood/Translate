@@ -1,3 +1,10 @@
+//Function RAM 8000A884 - Disk 0x7DD44 - Text Rendering
+//if it starts with FFFF then Shift-JIS text, if not then small text
+//A0 = Short X / Y struct, A1 = String
+
+//Function RAM 80011C50 - Disk 0x85110 - LeoGetKAdr (Kanji)
+//Function RAM 80012750 - Disk 0x85C10 - LeoGetAAdr (Ascii)
+
 //Character Width //RAM 0x800520EC
 //XX, YY
 //XX = Char width
