@@ -18,6 +18,10 @@ macro textEntrySkip(size) {
   origin skipSeek
 }
 
+macro textEntry0(text) {
+  putText2noSeek({text})
+}
+
 //OLD
 macro putText(n, text) {
   seek({n})
