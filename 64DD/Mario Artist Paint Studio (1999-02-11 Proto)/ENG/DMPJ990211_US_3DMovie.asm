@@ -15,7 +15,7 @@ textEntry(168, "Planet Mars")		//Mars / かせいワールド
 textEntry(168, "Sea World")		//SeaWorld / かいていワールド
 textEntry(168, "Explore")		//Explore / たんけんする
 textEntry(168, "Take Photo")		//Take Photo / しゃしんとる
-textEntry(168, "Paint")			//2DPaint / 2Dパイント
+textEntry(168, "Paint")			//2DPaint / 2Dペイント
 textEntry(168, "Music")			//Select Music / BGMをえらぶ
 textEntry(168, "Watch")			//Preview Mode / ぜんたいをみる
 textEntry(168, "Save/Load")		//SaveLoad / セーブ・ロード
