@@ -199,5 +199,6 @@ macro ShiftJISMap() {
 }
 
 macro ASCIIMap() {
+  map $00, $00, $20
   map ' ', $20, $60
 }
