@@ -31,6 +31,136 @@ addiu s3,s3,1
 seek(0x7E1C4)
 nop
 
+//Character Width //RAM 0x800520EC
+//XX, YY
+//XX = Char width
+//YY = Move current char to the left
+//List of characters with different width: 0x800508CC
+seek(0xC55AC)
+db $06, $00 // 。
+db $10, $08 // 「
+db $08, $00 // 」
+db $10, $00
+db $10, $00
+db $10, $00
+db $10, $00
+db $10, $00
+db $10, $00
+db $10, $00
+db $10, $00
+db $10, $00
+db $10, $00
+db $10, $00
+db $10, $00
+db $10, $00
+db $10, $00
+db $10, $00
+db $10, $00
+db $10, $00
+db $10, $00
+db $10, $00
+db $10, $00
+db $10, $00
+db $10, $00
+db $10, $00
+db $10, $00
+db $10, $00
+db $10, $00
+db $10, $00
+db $10, $00
+db $10, $00
+db $05, $00 // Space
+db $09, $05 // !
+db $0E, $08 // "
+db $0D, $00 // #
+db $0C, $02 // $
+db $0D, $01 // %
+db $0C, $01 // &
+db $0C, $0A // '
+db $0E, $09 // (
+db $06, $00 // )
+db $0C, $02 // *
+db $0D, $02 // +
+db $04, $00 // ,
+db $0D, $02 // -
+db $05, $00 // .
+db $0E, $00 // /
+db $0C, $02 // 0
+db $0B, $03 // 1
+db $0C, $02 // 2
+db $0C, $03 // 3
+db $0C, $02 // 4
+db $0C, $02 // 5
+db $0C, $02 // 6
+db $0C, $03 // 7
+db $0C, $02 // 8
+db $0C, $02 // 9
+db $09, $05 // :
+db $09, $05 // ;
+db $10, $00
+db $0D, $01 // =
+db $0B, $03 // ~
+db $0B, $03
+db $0D, $00 // @
+db $0D, $01 // A
+db $0C, $02 // B
+db $0D, $02 // C
+db $0D, $02 // D
+db $0C, $02 // E
+db $0C, $02 // F
+db $0C, $01 // G
+db $0D, $01 // H
+db $09, $06 // I
+db $0A, $02 // J
+db $0C, $02 // K
+db $0C, $02 // L
+db $0D, $01 // M
+db $0C, $02 // N
+db $0D, $01 // O
+db $0C, $03 // P
+db $0D, $01 // Q
+db $0C, $02 // R
+db $0C, $02 // S
+db $0B, $02 // T
+db $0C, $02 // U
+db $0D, $01 // V
+db $0E, $00 // W
+db $0D, $02 // X
+db $0D, $02 // Y
+db $0C, $03 // Z
+db $10, $00
+db $10, $00
+db $10, $00
+db $0B, $03 // ^
+db $10, $00
+db $10, $00
+db $0C, $03 // a
+db $0C, $03 // b
+db $0B, $03 // c
+db $0B, $02 // d
+db $0B, $02 // e
+db $0A, $04 // f
+db $0C, $02 // g
+db $0B, $03 // h
+db $09, $05 // i
+db $09, $04 // j
+db $0B, $03 // k
+db $0A, $05 // l
+db $0F, $01 // m
+db $0C, $03 // n
+db $0B, $03 // o
+db $0C, $03 // p
+db $0B, $02 // q
+db $0B, $04 // r
+db $0B, $04 // s
+db $0B, $04 // t
+db $0B, $03 // u
+db $0C, $03 // v
+db $0D, $01 // w
+db $0C, $03 // x
+db $0C, $03 // y
+db $0C, $03 // z
+
 
 //Other Hacks
 

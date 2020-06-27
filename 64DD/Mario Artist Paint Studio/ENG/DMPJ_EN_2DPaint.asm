@@ -569,17 +569,17 @@ dh (animation_howto0)
 seek(0x1E84DA)
 dh (animation_howto1)
 seek(0x1E84C2)
-dh $007B
+dh $007D
 
 seek(0x1E8522)
 dh (animation_howto2)
 seek(0x1E850A)
-dh $0071
+dh $0074
 
 seek(0x1E856A)
 dh (animation_howto3)
 seek(0x1E8552)
-dh $0063
+dh $006D
 
 seek(0x1E85B2)
 dh (animation_howto4)
@@ -594,7 +594,7 @@ dh $0063
 seek(0x1E8642)
 dh (animation_howto6)
 seek(0x1E862A)
-dh $0059
+dh $005E
 seek(0x1E862E)
 dh $009D
 

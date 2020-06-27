@@ -24,6 +24,7 @@ include "DMPJ_EN_Macros.asm"
 include "DMPJ_EN_2DPaint.asm"
 include "DMPJ_EN_2DPaint_Artworks.asm"
 include "DMPJ_EN_3DWorld.asm"
+include "DMPJ_EN_Others.asm"
 
 //Graphics
 include "DMPJ_EN_Graphics.asm"
