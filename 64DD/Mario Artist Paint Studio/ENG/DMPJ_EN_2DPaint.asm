@@ -1,4 +1,92 @@
 //2D Paint Mode
+seek(0x189CDC)
+base 0x8015B734
+help0_2dpaint0:
+textEntry0("Color Brightness Lever")				//8015B734 - いろのあかるさレバー
+help0_2dpaint1:
+textEntry0("Click on the palette to set a custom color.")	//8015B74C - みぎのパレットをおして、つくったいろをセットしよう
+help0_2dpaint2:
+								//8015B784 - つくったいろ
+help0_2dpaint3:
+textEntry0("Current Color")					//8015B794 - つくったいろ
+help0_2dpaint4:
+								//8015B7A4 - Bボタンホールドでやりなおしけし
+help0_2dpaint5:
+								//8015B7C8 - Bボタンホールドでやりなおしけし
+help0_2dpaint6:
+textEntry0("Hold B Button to Unerase")				//8015B7EC - Bボタンホールドでやりなおしけし
+help0_2dpaint7:
+								//8015B810 - はんいしていご、Bボタンでかくだいしゅくしょう
+help0_2dpaint8:
+								//8015B844 - はんいしていご、Bボタンでかくだいしゅくしょう
+help0_2dpaint9:
+								//8015B878 - はんいしていご、Bボタンでかくだいしゅくしょう
+help0_2dpaint10:
+								//8015B8AC - はんいしていご、Bボタンでかくだいしゅくしょう
+help0_2dpaint11:
+								//8015B8E0 - はんいしていご、Bボタンでかくだいしゅくしょう
+help0_2dpaint12:
+								//8015B914 - はんいしていご、Bボタンでかくだいしゅくしょう
+help0_2dpaint13:
+								//8015B948 - はんいしていご、Bボタンでかくだいしゅくしょう
+help0_2dpaint14:
+								//8015B97C - はんいしていご、Bボタンでかくだいしゅくしょう
+help0_2dpaint15:
+								//8015B9B0 - はんいしていご、Bボタンでかくだいしゅくしょう
+help0_2dpaint16:
+								//8015B9E4 - はんいしていご、Bボタンでかくだいしゅくしょう
+help0_2dpaint17:
+								//8015BA18 - はんいしていご、Bボタンでかくだいしゅくしょう
+help0_2dpaint18:
+textEntry0("Within the canvas, hold B Button to Scale")		//8015BA4C - はんいしていご、Bボタンでかくだいしゅくしょう
+help0_2dpaint19:
+								//8015BA80 - Aボタンでぺンのきりかえ ヨウシではBボタンでスポイト
+textEntry0("A Button to switch pens/B Button for the picker")
+help0_2dpaint20:
+								//8015BABC - Bボタンでぎゃくおくり
+help0_2dpaint21:
+								//8015BAD8 - Bボタンでぎゃくおくり
+help0_2dpaint22:
+								//8015BAF4 - Bボタンでぎゃくおくり
+help0_2dpaint23:
+								//8015BB10 - Bボタンでぎゃくおくり
+help0_2dpaint24:
+								//8015BB2C - Bボタンでぎゃくおくり
+help0_2dpaint25:
+textEntry0("Press B Button to go the previous page.")		//8015BB48 - Bボタンでぎゃくおくり
+help0_2dpaint26:
+textEntry0("You cannot load large pictures here.")		//8015BB64 - おおきいヨウシのさくひんはロードできません
+
+seek(0x15B194)
+dw help0_2dpaint0; textEntrySkip(20)
+dw help0_2dpaint1; textEntrySkip(20)
+dw help0_2dpaint2; textEntrySkip(20)
+dw help0_2dpaint3; textEntrySkip(20)
+dw help0_2dpaint4; textEntrySkip(20)
+dw help0_2dpaint5; textEntrySkip(20)
+dw help0_2dpaint6; textEntrySkip(20)
+dw help0_2dpaint7; textEntrySkip(20)
+dw help0_2dpaint8; textEntrySkip(20)
+dw help0_2dpaint9; textEntrySkip(20)
+dw help0_2dpaint10; textEntrySkip(20)
+dw help0_2dpaint11; textEntrySkip(20)
+dw help0_2dpaint12; textEntrySkip(20)
+dw help0_2dpaint13; textEntrySkip(20)
+dw help0_2dpaint14; textEntrySkip(20)
+dw help0_2dpaint15; textEntrySkip(20)
+dw help0_2dpaint16; textEntrySkip(20)
+dw help0_2dpaint17; textEntrySkip(20)
+dw help0_2dpaint18; textEntrySkip(20)
+dw help0_2dpaint19; textEntrySkip(20)
+dw help0_2dpaint20; textEntrySkip(20)
+dw help0_2dpaint21; textEntrySkip(20)
+dw help0_2dpaint22; textEntrySkip(20)
+dw help0_2dpaint23; textEntrySkip(20)
+dw help0_2dpaint24; textEntrySkip(20)
+dw help0_2dpaint25; textEntrySkip(20)
+dw help0_2dpaint26; textEntrySkip(20)
+
+
 seek(0x1EFA70)
 textEntry(168, "Change Texture Page")	//Change Texture Page / もようヨウシきりかえ
 textEntry(168, "Rotate Model")		//previewroticon / カメラかいてん
@@ -246,3 +334,302 @@ textEntry(92, "Spray Can")		//Spraycan / スプレー
 textEntry(92, "Finger Blend")		//Finger Blend / ゆびでこする
 textEntry(92, "Finger Blend")		//Finger Blend / ゆびでこする
 textEntry(92, "Finger Blend")		//Finger Blend / ゆびでこする
+
+seek(0x204FE8)
+base 0x8026C500
+//コントローラ１に
+//６４ＧＢパックと
+//ポケットカメラを
+//さしてください。
+textEntryASCII(84, "On Controller 1,\n please insert the\nN64 Transfer Pak and\nGameBoy Camera. ")
+
+//コントローラ１には
+//６４ＧＢパック以外の
+//周辺機器が
+//ささっています。
+//６４ＧＢパックと
+//ポケットカメラを
+//さしてください。
+textEntryASCII(140, "On Controller 1,\n please insert the\nN64 Transfer Pak and\nGameBoy Camera. ")
+
+//コントローラ１の
+//６４ＧＢパックに
+//ポケットカメラを
+//さしてください。
+textEntryASCII(84, "On Controller 1,\n please insert the\nN64 Transfer Pak and\nGameBoy Camera. ")
+
+//コントローラ１の
+//６４ＧＢパックには
+//ポケットカメラ以外の
+//カートリッジが
+//ささっています。
+//ポケットカメラを
+//さしてください。
+textEntryASCII(140, "On Controller 1,\n please insert the\nGameBoy Camera into \nthe N64 Transfer Pak.")
+
+//Fix number
+seek(0x1D0556)
+dh $0030
+seek(0x1D05A2)
+dh $0030
+seek(0x1D062A)
+dh $0030
+seek(0x1D0676)
+dh $0030
+
+seek(0x1D056A)
+dh $0012
+seek(0x1D05B6)
+dh $0012
+seek(0x1D063E)
+dh $0012
+seek(0x1D0682)
+dh $0012
+
+seek(0x2096C8)
+textEntry(168, "Ghost")			//Ghost / フィルムゴースト
+seek(0x209778)
+textEntry(168, "Erase Ghost")		//Erase Ghost / ゴーストをけす
+
+seek(0x20AACC)
+textEntry(36, "Switch Paper")		//Change Page / ほじょヨウシきりかえ
+textEntry(36, "Switch Paper")		//Change Page / ヨウシきりかえ
+textEntry(36, "Switch Paper")		//Change Page / ヨウシきりかえ
+
+seek(0x20ACC8)
+textEntry0("Hold B Button to Scale")	//Bボタンでかくだいしゅくしょう
+
+seek(0x20BF74)
+//2D Paint
+//セーブをしないと
+//作品が消えますが
+//よろしいですか？
+textEntryASCII0("If you don't save,\nyour work will be lost. \nAre you sure?")
+
+seek(0x20C000)
+//セーブをしないと
+//作品が消えますが
+//よろしいですか？
+textEntryASCII0("If you don't save,\nyour work will be lost. \nAre you sure?")
+
+seek(0x20C854)
+//先に用紙を
+//きりかえてください。
+textEntryASCII0("Please switch \nthe paper first.")
+
+seek(0x20CCBC)
+textEntry(28, "Load Drawing")		//Load / 2Dさくひんロード
+textEntry(28, "Load Drawing")		//Load / 2Dさくひんロード
+
+seek(0x20DC70)
+//作品が消えますが
+//よろしいですか？
+textEntryASCII0("Your work will be lost. \nAre you sure?")
+
+seek(0x20E00C)
+//Animate
+//セーブをしないと
+//作品が消えますが
+//よろしいですか？
+textEntryASCII0("If you don't save,\nyour work will be lost. \nAre you sure?")
+
+seek(0x20E46C)
+//電源を切ってから
+//コントローラと
+//６４ＧＢパックと
+//ポケットカメラを
+//さしてください。
+textEntryASCII0("Power off and plug\na Controller, \nN64 Transfer Pak and\nGameBoy Camera.")
+
+seek(0x20E634)
+//ゲームボーイ
+//カートリッジの
+//コネクタ部が異常です。
+//本体の電源を切り、
+//６４ＧＢパックの
+//取扱説明書を
+//お読みください。
+textEntryASCII0("Connection error. \nPower off and refer to\nthe N64 Transfer Pak\nInstruction Booklet.")
+
+seek(0x20E7D4)
+//作品が消えますが
+//よろしいですか？
+//(Can't fit, change pointer)
+
+seek(0x20E7FC)
+base 0x80275D14
+ascii_worklost:
+//作品が消えますが
+//よろしいですか？
+textEntryASCII0("Your work will be lost. \nAre you sure?")
+
+seek(0x1D07E6)
+dh (ascii_worklost)
+
+
+seek(0x20EB48)
+base 0x80276060
+textEntry0("Press B Button to Scroll")		//Bボタンでヨウシスクロール
+seek(0x20EC54)
+textEntry0("Press B Button to Scroll")		//Bボタンでヨウシスクロール
+seek(0x20EF50)
+ascii_bbtn_scroll:
+						//Bボタンでヨウシスクロール
+seek(0x20EF70)
+textEntry0("Press B Button to Scroll")		//Bボタンでヨウシスクロール
+seek(0x20F148)
+textEntry0("Press B Button to Scroll")		//Bボタンでヨウシスクロール
+
+seek(0x1D8C4A)
+dh (ascii_bbtn_scroll)
+
+
+seek(0x20F6B0)
+//80276BC8
+//電源を切ってから
+//キャプチャ－カセットを
+//さしてください。
+ascii_insertcappak:
+textEntryASCII0("Please power off the\nNintendo 64 Control Deckand then insert the \nCapture Pak.")
+
+seek(0x20F8F8)
+//80276E10 - can't fit
+//電源を切ってから
+//キャプチャ－カセットを
+//さしてください。
+seek(0x1E324A)
+dh (ascii_insertcappak)
+
+seek(0x20F938)
+//80276E50
+//作品が消えますが
+//よろしいですか？
+textEntryASCII0("Your work will be lost. \nAre you sure?")
+
+seek(0x20F978)
+//80276E90
+//電源を切ってから
+//キャプチャ－カセットを
+//さして下さい。
+seek(0x1E3362)
+dh (ascii_insertcappak)
+
+seek(0x20F9B4)
+//80276ECC
+//作品が消えますが
+//よろしいですか？
+textEntryASCII0("Your work will be lost. \nAre you sure?")
+
+seek(0x20FA28)
+//80276F40
+//電源を切ってから
+//キャプチャ－カセットを
+//さして下さい。
+textEntryASCII0("Please power off the\nNintendo 64 Control Deckand then insert the \nCapture Pak.")
+
+seek(0x20FB08)
+//80277020
+//先に用紙をきり
+//かえて下さい。
+textEntryASCII0("Please switch \nthe paper first.")
+
+seek(0x20FB38)
+//80277060
+//映像を入力してください。
+textEntryASCII0("Please plug the \nvideo cable.")
+
+//How To Use Animation Mode (Shift-JIS) 0x20FFF0 //RAM 0x80277508
+//Very unstable and prone to crashing
+seek(0x20FFF0)
+base 0x80277508
+animation_howto0:
+textEntryASCII0("")				//RAM 0x80277508 - 
+animation_howto1:
+animation_howto6:
+textEntryASCII0("Select")			//RAM 0x80277510 - を選ぼう
+animation_howto2:
+textEntryASCII0("Draw your frame.")		//RAM 0x80277520 - ペイント画面で絵をかこう
+animation_howto3:
+textEntryASCII0("Click on")			//RAM 0x80277540 - 絵ができたら
+animation_howto4:
+textEntryASCII0("to finish.")			//RAM 0x80277554 - で１コマ完成
+animation_howto5:
+textEntryASCII0(" ")				//RAM 0x80277568 - いくつかコマができたら
+//animation_howto6:
+//textEntryASCII0("Select")			//RAM 0x80277584 - コマの最後に
+animation_howto7:
+textEntryASCII0("to set a stop.")		//RAM 0x80277598 - をつけよう
+animation_howto8:
+textEntryASCII0("to watch!")			//RAM 0x802775A8 - でパラパラまんがをみよう！
+
+//Pointers and Coordinates
+seek(0x1E848E)
+dh (animation_howto0)
+
+seek(0x1E84DA)
+dh (animation_howto1)
+seek(0x1E84C2)
+dh $007B
+
+seek(0x1E8522)
+dh (animation_howto2)
+seek(0x1E850A)
+dh $0071
+
+seek(0x1E856A)
+dh (animation_howto3)
+seek(0x1E8552)
+dh $0063
+
+seek(0x1E85B2)
+dh (animation_howto4)
+seek(0x1E859A)
+dh $00AD
+
+seek(0x1E85FA)
+dh (animation_howto5)
+seek(0x1E85E2)
+dh $0063
+
+seek(0x1E8642)
+dh (animation_howto6)
+seek(0x1E862A)
+dh $0059
+seek(0x1E862E)
+dh $009D
+
+seek(0x1E868A)
+dh (animation_howto7)
+seek(0x1E8672)
+dh $009E
+seek(0x1E8676)
+dh $009D
+
+seek(0x1E86D2)
+dh (animation_howto8)
+seek(0x1E86BA)
+dh $0097
+seek(0x1E86BE)
+dh $00BF
+
+//Texture List and Positions at 0x80270C24
+seek(0x20970C)
+// X = X Pos; Y = Y Pos; T = Texture ID
+// $0000  $XXXX  $YYYY  $TTTT  $0000  $0000
+dh $0000, $0046, $001B, $0181, $0000, $0000 // Bold Text
+dh $0000, $00A3, $002F, $0182, $0000, $0000 // Frame
+dh $0000, $009A, $004B, $0183, $0000, $0000 // Down Arrow
+dh $0000, $009A, $0069, $0183, $0000, $0000 // Down Arrow
+dh $0000, $009A, $008C, $0183, $0000, $0000 // Down Arrow
+dh $0000, $009A, $00B0, $0183, $0000, $0000 // Down Arrow
+dh $0000, $0096, $0077, $0511, $0000, $0000 // Bomb Icon
+dh $0000, $0083, $009B, $01A3, $0000, $0000 // Stop Icon
+dh $0000, $007C, $00BD, $019E, $0000, $0000 // Play Icon
+
+seek(0x2101F8)
+textEntry0("Press B to cancel")		//Bボタンでキャンセル
+
+seek(0x21024C)
+//やりなおしは
+//できません。
+textEntryASCII0("Cannot undo.")
