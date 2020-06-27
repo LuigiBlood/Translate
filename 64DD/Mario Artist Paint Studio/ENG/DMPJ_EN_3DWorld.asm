@@ -39,8 +39,28 @@ seek(0x11746E)
 seek(0x15AD64)
 textEntry(52, "If you take a picture...")	//When you take a picture / しゃしんをとると…
 
-//Photo Creature Names unlock TODO (Shift-JIS)
+//Photo Creature Names unlock (Shift-JIS)
 seek(0x15ADE8)
+textEntryASCII(24, "Turtle")		//T / カメ
+textEntryASCII(24, "Shark")		//S / サメ
+textEntryASCII(24, "Manta Ray")		//Ma / マンタ
+textEntryASCII(24, "Mermaid")		//Me / にんぎょ
+textEntryASCII(24, "Octopus")		//O / タコ
+textEntrySkip(24*3)
+
+textEntryASCII(24, "Raptor")		//R / ラプトル
+textEntryASCII(24, "Stegosaurus")	//S / ステゴサウルス
+textEntryASCII(24, "T-Rex")		//T / Ｔレックス
+textEntryASCII(24, "Triceratops")	//T / トリケラトプス
+textEntryASCII(24, "Gallimimus")	//G / ガリミマス
+textEntrySkip(24*3)
+
+textEntryASCII(24, "Gaburr")		//G / ガブール
+textEntryASCII(24, "Filbert")		//F / フィルバート
+textEntryASCII(24, "Jack")		//Gl / ジャック
+textEntryASCII(24, "Colon")		//Sp / コロン
+textEntryASCII(24, "Linda")		//L / リンダ
+
 
 //Creature Names
 seek(0x17990C)
@@ -139,6 +159,21 @@ seek(0x1184CA)	//800E9F20
 	dh 0x8FE3
 
 
+//When you unlock a creature in 3D World
+seek(0x1898F4)
+textEntryASCII0(" ")				//が
+seek(0x1898FC)
+textEntryASCII0("is now available!")		//つかえるようになりました！
+
+//Change position
+seek(0x118E62)	//800EA8B8
+dh $006D
+
+seek(0x18A2E4)
+//セーブをしないと
+//作品が消えますが
+//よろしいですか？
+textEntryASCII0("If you don't save,\nyour work will be lost. \nAre you sure?")
 
 //3D World Explore (Text)
 seek(0x18AC48)
@@ -147,8 +182,8 @@ explore_controller:
 textEntry0("This mode uses the controller.")	//このモードは
 explore_empty:
 dh 0x5000, 0x0000				//コントローラでそうさします
-explore_start:	//TODO
-putTextSJISnoSeek("Press A or Z to Start!")	//Ａ・Ｚボタンでスタート！
+explore_start:
+textEntryASCII0("Press A or Z to Start!")	//Ａ・Ｚボタンでスタート！
 explore_zoomin:
 textEntry0("Zoom In")				//ちかづく
 explore_zoomout:
