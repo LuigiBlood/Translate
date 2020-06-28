@@ -164,6 +164,11 @@ textEntrySkip(20)
 textEntrySkip(16)
 dw (print3_4)
 
+seek(0x239EEC)
+dw $100
+seek(0x239F14)
+dw $100
+
 
 //--Zoom (Disk 0x239F78 / RAM 802AC738)
 seek(0x239F78)

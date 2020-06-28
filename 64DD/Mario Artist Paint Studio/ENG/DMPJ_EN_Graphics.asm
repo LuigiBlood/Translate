@@ -66,6 +66,9 @@ insert "GFX/PHOTO_POOR.ia8.bin"
 
 
 //--Game Boy Camera
+seek(0x30EE80)
+insert "GFX/GBCAMERA_LOGO.rgba16.bin"
+
 seek(0x3232A0)
 insert "GFX/GBCAMERA_SHOOT.rgba16.bin"
 
@@ -76,7 +79,39 @@ seek(0x324DC0)
 insert "GFX/GBCAMERA_PREVNEXT.rgba16.bin"
 
 
-//--Capture Cartridge
+//--Game Boy Printer
+seek(0x242270)
+insert "GFX/PRINTER_LOGO.rgba16.bin"
+
+seek(0x243F50)
+insert "GFX/PRINTER_BUTTON.rgba16.bin"
+
+seek(0x257250)
+insert "GFX/PRINTER_PAPER_YELLOW.rgba16.bin"
+
+seek(0x257C28)
+insert "GFX/PRINTER_PAPER_BLUE.rgba16.bin"
+
+seek(0x258600)
+insert "GFX/PRINTER_PAPER_WHITE.rgba16.bin"
+
+seek(0x25C288)
+insert "GFX/PRINTER_BRIGHTNESS.i4.bin"
+
+seek(0x25C318)
+insert "GFX/PRINTER_CONTRAST.i4.bin"
+
+seek(0x25C3F0)
+insert "GFX/PRINTER_CONTRAST.i4.bin"
+
+seek(0x25C4C8)
+insert "GFX/PRINTER_HUE.i4.bin"
+
+seek(0x25EBE0)
+insert "GFX/BACKCIRCLE.rgba16.bin"
+
+
+//--Capture Pak
 seek(0xD8E290)
 insert "GFX/CAPTURE_BRIGHT.ia16.bin"
 
