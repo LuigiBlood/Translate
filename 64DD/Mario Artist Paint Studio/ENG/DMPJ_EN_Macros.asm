@@ -48,6 +48,12 @@ macro textEntryASCII0(text) {
   db 0,0,0
 }
 
+macro textEntryH(text) {
+  RegularMap()
+  db {text}
+  db 0x00
+}
+
 //OLD
 macro putText(n, text) {
   seek({n})
@@ -206,6 +212,7 @@ macro RegularMap() {
   map 'A', $0021, 31 // Map English "Upper Case" Characters & Special Characters
   map 'a', $0041, 30 // Map English "Lower Case" Characters & Special Characters
   map ' ', $00BD     // Map Space Character
+  map '\n', $00FF    // Map New Line
 }
 
 macro ShiftJISMap() {
