@@ -1,4 +1,4 @@
-//GameBoy Camera (Overlay Disk 0x2EF0E0 / RAM 80284130)
+//Game Boy Camera (Overlay Disk 0x2EF0E0 / RAM 80284130 / Size 0x3E680)
 //Disk 0x306F4C / RAM 8029BF9C - Text Rendering
 //Disk 0x3068D0 / RAM 8029B920 - Text Size Calc?
 
@@ -235,15 +235,15 @@ textEntryH("This is a disk error.")			//ディスクエラーです。
 gbcam3_transpaknotinserted:
 textEntryH("The N64 Transfer Pak\nis not inserted.")	//64GBパックがささっていません。
 gbcam3_gbcameranotinserted:
-textEntryH("The GameBoy Camera is\nnot inserted in the\nN64 Transfer Pak.")	//64GBパックにポケットカメラが\nささっていません。
+textEntryH("The Game Boy Camera is\nnot inserted in the\nN64 Transfer Pak.")	//64GBパックにポケットカメラが\nささっていません。
 gbcam3_gbotherinserted:
-textEntryH("A cartridge other than\nthe GameBoy Camera\nhas been inserted\nin the N64 Transfer Pak.")	//64GBパックに\nポケットカメラいがいの\nカートリッジがささっています。\n
+textEntryH("A cartridge other than\nthe Game Boy Camera\nhas been inserted\nin the N64 Transfer Pak.")	//64GBパックに\nポケットカメラいがいの\nカートリッジがささっています。\n
 gbcam3_otherpakinserted:
-textEntryH("Something other than the\nN64 Transfer Pak has been\ninserted in the controller.\nPlease replace with\nthe N64 Transfer Pak.")	//コントローラに64GBパックいがいの\nものがささっています。\n64GBパックにさしかえてください。
+textEntryH("Something other than the\nN64 Transfer Pak has been\ninserted in the controller.\nPlease replace it with\nthe N64 Transfer Pak.")	//コントローラに64GBパックいがいの\nものがささっています。\n64GBパックにさしかえてください。
 gbcam3_transpakproper:
 textEntryH("The N64 Transfer Pak is\nnot properly inserted.\nPlease reinsert the\nN64 Transfer Pak again.")	//64GBパックがただしく\nせつぞくされていません。\nもういちど64GBパックを\nせつぞくしなおしてください。
 gbcam3_gbcameranotinserted2:
-textEntryH("The GameBoy Camera\nis not inserted.")	//GBカメラカートリッジが\nささっていません
+textEntryH("The Game Boy Camera\nis not inserted.")	//GBカメラカートリッジが\nささっていません
 
 //pointers
 seek(0x32D3C8)

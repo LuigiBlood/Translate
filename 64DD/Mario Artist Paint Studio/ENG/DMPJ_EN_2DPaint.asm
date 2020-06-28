@@ -193,8 +193,8 @@ textEntry(168, "Character Stamps")	//Character Stamp / キャラクタースタ�
 textEntry(168, "Backgrounds")		//High Resolution / はいけい
 textEntry(168, "Frames")		//Print Club Frame / フレーム
 textEntry(168, "Coloring Book")		//Colouring Book / ぬりえ
-textEntry(168, "GameBoy Printer")	//Load Save / ポケットプリンタ
-textEntry(168, "GameBoy Camera")	//Load Save / ポケットカメラ
+textEntry(168, "Game Boy Printer")	//Load Save / ポケットプリンタ
+textEntry(168, "Game Boy Camera")	//Load Save / ポケットカメラ
 textEntry(168, "Save/Load")		//Load Save / セーブ・ロード
 textEntry(168, "Load")			//Load / 2ごくひんロロンド
 textEntry(168, "Save")			//Save / セーブ
@@ -341,7 +341,7 @@ base 0x8026C500
 //６４ＧＢパックと
 //ポケットカメラを
 //さしてください。
-textEntryASCII(84, "On Controller 1,\n please insert the\nN64 Transfer Pak and\nGameBoy Camera. ")
+textEntryASCII(84, "On Controller 1,\n please insert the\nN64 Transfer Pak and\nGame Boy Camera.")
 
 //コントローラ１には
 //６４ＧＢパック以外の
@@ -350,13 +350,13 @@ textEntryASCII(84, "On Controller 1,\n please insert the\nN64 Transfer Pak and\n
 //６４ＧＢパックと
 //ポケットカメラを
 //さしてください。
-textEntryASCII(140, "On Controller 1,\n please insert the\nN64 Transfer Pak and\nGameBoy Camera. ")
+textEntryASCII(140, "On Controller 1,\n please insert the\nN64 Transfer Pak and\nGame Boy Camera.")
 
 //コントローラ１の
 //６４ＧＢパックに
 //ポケットカメラを
 //さしてください。
-textEntryASCII(84, "On Controller 1,\n please insert the\nN64 Transfer Pak and\nGameBoy Camera. ")
+textEntryASCII(84, "On Controller 1,\n please insert the\nN64 Transfer Pak and\nGame Boy Camera.")
 
 //コントローラ１の
 //６４ＧＢパックには
@@ -365,7 +365,7 @@ textEntryASCII(84, "On Controller 1,\n please insert the\nN64 Transfer Pak and\n
 //ささっています。
 //ポケットカメラを
 //さしてください。
-textEntryASCII(140, "On Controller 1,\n please insert the\nGameBoy Camera into \nthe N64 Transfer Pak.")
+textEntryASCII(140, "On Controller 1,\n please insert the\nGame Boy Camera into\nthe N64 Transfer Pak.")
 
 //Fix number
 seek(0x1D0556)
@@ -439,7 +439,7 @@ seek(0x20E46C)
 //６４ＧＢパックと
 //ポケットカメラを
 //さしてください。
-textEntryASCII0("Power off and plug\na Controller, \nN64 Transfer Pak and\nGameBoy Camera.")
+textEntryASCII0("Power off and plug\na Controller, \nN64 Transfer Pak and\nGame Boy Camera.")
 
 seek(0x20E634)
 //ゲームボーイ
