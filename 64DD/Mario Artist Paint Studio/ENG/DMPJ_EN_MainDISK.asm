@@ -40,8 +40,8 @@ include "DMPJ_EN_Camera.asm"
 print "- Assembling GameBoy Printer Overlay...\n"
 include "DMPJ_EN_Printer.asm"
 
-//print "- Assembling Save/Load Overlay...\n"
-//include "DMPJ_EN_SaveLoad.asm"
+print "- Assembling Save/Load Overlay...\n"
+include "DMPJ_EN_SaveLoad.asm"
 
 
 //Graphics

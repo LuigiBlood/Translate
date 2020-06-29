@@ -54,6 +54,14 @@ macro textEntryH(text) {
   db 0x00
 }
 
+macro textEntryH2(char, text) {
+  RegularMap()
+  db {char}, " "
+  db {text}
+  db " ", {char}
+  db 0x00
+}
+
 //OLD
 macro putText(n, text) {
   seek({n})
