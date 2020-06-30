@@ -1029,4 +1029,99 @@ textEntryH("* Please select the beginning of the kanji *")
 seek(0x29FE6A)
 dh (save6_1)
 
-//TODO KANJI STUFF and PERCENT
+//Function Text + Kanji Font Rendering (Disk 0x2A0224 / RAM 802BBF54)
+//Test these: Ç´ Çπ Ç› and last (symbols)
+seek(0x2A0224+0x114)
+addiu at,0,8
+
+seek(0x2A0224+0x128)
+ori t5,t4,0
+seek(0x2A0224+0x130)
+sb t3,0x58(t6)
+
+seek(0x2A0224+0x170)
+ori t5,t3,0
+seek(0x2A0224+0x17C)
+sb t4,0x58(t6)
+
+seek(0x2A0224+0x1A8)
+ori t2,t1,0
+seek(0x2A0224+0x1B0)
+sb t0,0x58(t3)
+
+seek(0x2A0224+0x1DC)
+ori t9,t8,0
+seek(0x2A0224+0x1E4)
+sb t7,0x58(t1)
+
+seek(0x2A0224+0x204)
+ori t5,t4,0
+seek(0x2A0224+0x20C)
+sb t3,0x58(t6)
+
+seek(0x2A0224+0x240)
+ori t3,t4,0
+seek(0x2A0224+0x248)
+sb 0,0x58(t5)
+
+//Symbols Menu (Disk 0x2E4438 / RAM 80300168)
+seek(0x2E1C00)	//Repoint because of space
+//Page 1
+kanji1_1:
+textEntryH("Special")		//Ç∆Ç≠ÇµÇ„Ç‡Ç∂
+db $FE,$81,$58,$01,$FE,$81,$57,$01,$FE,$83,$95,$02,$FE,$81,$59,$01,$FE,$81,$54,$02,$FB
+db $FE,$82,$EC,$01,$FE,$82,$EE,$02,$FE,$83,$8E,$01,$FE,$83,$90,$02,$FE,$88,$6A,$04,$FF
+kanji1_2:
+textEntryH("Digits")		//Ç∫ÇÒÇ©Ç≠Ç∑Ç§Ç∂
+db $FE,$82,$50,$09,$FE,$82,$4F,$01,$FF
+kanji1_3:
+textEntryH("Circled")		//Ç‹ÇÈ\nÇ∑Ç§Ç∂
+db $FE,$85,$40,$0A,$FB,$0A,$FF
+kanji1_4:
+textEntryH("Roman")		//ÉçÅ[É}\nÇ∑Ç§Ç∂
+db $FE,$85,$9F,$0D,$FF
+kanji1_5:
+textEntryH("Arrow")		//Ç‚Ç∂ÇÈÇµ
+db $FE,$81,$A8,$04,$FE,$86,$D3,$04,$FF
+
+//Page 2
+kanji2_1:
+textEntryH("Symbol")		//Ç´Ç≤Ç§
+db $FE,$81,$97,$01,$FE,$81,$A6,$02,$FE,$86,$9B,$01,$FE,$86,$9D,$02,$FE,$81,$94,$01,$FE,$81,$96,$01,$FE,$81,$4F,$01,$FE,$81,$95,$01,$FE,$81,$89,$02,$FE,$87,$9E,$01,$FB
+db $FE,$81,$75,$02,$FE,$81,$69,$02,$FE,$81,$6D,$02,$FE,$81,$71,$04,$FE,$81,$79,$02,$FB
+db $FE,$86,$9F,$04,$FE,$81,$9B,$01,$FE,$81,$A0,$01,$FE,$81,$A2,$01,$FE,$81,$A4,$01,$FE,$81,$99,$01,$FE,$81,$F3,$01,$FE,$81,$9D,$01,$FE,$86,$B3,$02,$FB
+db $FE,$81,$41,$07,$FE,$81,$65,$04,$FE,$81,$4A,$02,$FB
+db $FE,$81,$63,$02,$FE,$81,$88,$01,$FE,$81,$E6,$01,$FE,$81,$51,$01,$FE,$81,$5E,$02,$FE,$81,$60,$01,$FE,$81,$5B,$01,$FE,$84,$A0,$01,$FE,$84,$9F,$01,$FE,$81,$49,$01,$FE,$81,$48,$01,$FB
+db $FE,$81,$7B,$04,$FE,$81,$80,$03,$FE,$81,$E0,$01,$FE,$81,$85,$03,$FE,$81,$E4,$02,$FB
+db $FE,$81,$E3,$01,$FE,$81,$B8,$08,$FE,$81,$C8,$02,$FE,$81,$DC,$01,$FE,$81,$98,$01,$FB
+db $FE,$81,$93,$01,$FE,$81,$8E,$05,$FE,$81,$CD,$02,$FE,$81,$DB,$01,$FE,$81,$DD,$03,$FE,$81,$E7,$01,$FF
+
+//Page 3
+kanji3_1:
+textEntryH("Capital\nLetters")	//Ç∫ÇÒÇ©Ç≠ABC
+db $FE,$82,$60,$1A,$FF
+kanji3_2:
+textEntryH("Small\nLetters")	//Ç∫ÇÒÇ©Ç≠abc
+db $FE,$82,$81,$1A,$FF
+kanji3_3:
+textEntryH("Greek\nLetters")	//ÉMÉäÉVÉÑÇ‡Ç∂
+db $FE,$83,$9F,$18,$FB,$FE,$83,$BF,$18,$FF
+
+//Pointers
+seek(0x2E45C8)
+dw (kanji1_1),(kanji1_2),(kanji1_3),(kanji1_4),(kanji1_5),0
+dw (kanji2_1),0
+dw (kanji3_1),(kanji3_2),(kanji3_3),0
+
+
+//--Disk Usage Percentage Function (Disk 0x2A661C / RAM 802C234C)
+seek(0x2A661C+0x88)
+sb t7,0(t8)
+seek(0x2A661C+0xE8)
+addiu t9,t8,-1
+seek(0x2A661C+0x120)
+sb t4,0(t5)
+
+seek(0x2E535C)
+db $40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$00,$00,$00
+db $40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$00,$00,$00

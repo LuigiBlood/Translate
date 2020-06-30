@@ -149,3 +149,7 @@ seek(0x2C6830)
 insert "GFX/YES_NO.rgba16.bin"
 seek(0x319900)
 insert "GFX/YES_NO.rgba16.bin"
+
+//Kanji Back Button
+seek(0x2D22C0)
+insert "GFX/KANJI_BACK.ci8.bin"
