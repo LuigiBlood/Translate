@@ -100,7 +100,7 @@ textEntryH("Undo")			//やりなおし
 save1_20:
 textEntryH("Done")			//けってい
 save1_21:
-textEntryH("Return")			//もどる
+textEntryH("Back")			//もどる
 save1_22:
 textEntryH("Next")			//ページおくり
 
@@ -230,7 +230,7 @@ save2_23:
 textEntryH("What do you want to delete?")
 save2_24:
 //RAM 802FC154 - なかみを さくじょするいれものを えらんでください
-textEntryH("Please select the container that\nyou want to delete the contents from.")
+textEntryH("Please select the container\nyou want to delete the contents from.")
 save2_25:
 //RAM 802FC188 - このいれものの なかみを さくじょ しますか?
 textEntryH("Do you want to delete the contents\nof this container?")
@@ -252,7 +252,7 @@ save2_30:
 textEntryH("What do you want to rename?")
 save2_31:
 //RAM 802FC284 - なまえを へんこうするいれものを えらんでください
-textEntryH("Please select the container you want to rename.")
+textEntryH("Please select the container\nyou want to rename.")
 save2_32:
 //RAM 802FC2B8 - このいれものの なまえを へんこうしますか?
 textEntryH("Do you want to rename this container?")
@@ -286,10 +286,10 @@ save2_41:
 textEntryH("Do you want to move all its contents?")
 save2_42:
 //RAM 802FC480 - いどうするさくひんの いれものを えらんでください
-textEntryH("Please select the container\nto move the file from.")
+textEntryH("Please select the container\nto move a file from.")
 save2_43:
 //RAM 802FC4B4 - いどうするさくひんを えらんでください
-textEntryH("Please select the file to move.")
+textEntryH("Please select a file to move.")
 save2_44:
 //RAM 802FC4DC - このさくひんを いどう しますか?
 textEntryH("Do you want to move this file?")
@@ -304,16 +304,16 @@ save2_47:
 textEntryH("Please select the container to copy from.")
 save2_48:
 //RAM 802FC55C - コピーするさきの いれものを えらんでください
-textEntryH("Please select the destination container\nto copy files to.")
+textEntryH("Please select the destination\ncontainer to copy files to.")
 save2_49:
 //RAM 802FC58C - さくひんを すべて コピーしますか?
 textEntryH("Do you want to copy all its contents?")
 save2_50:
 //RAM 802FC5B4 - コピーするさくひんの いれものを えらんでください
-textEntryH("Please select the container\nto copy the file from.")
+textEntryH("Please select the container\nto copy a file from.")
 save2_51:
 //RAM 802FC5E8 - コピーするさくひんを えらんでください
-textEntryH("Please select the file to copy.")
+textEntryH("Please select a file to copy.")
 save2_52:
 //RAM 802FC610 - このさくひんを コピーしますか?
 textEntryH("Do you want to copy this file?")
@@ -350,7 +350,7 @@ save2_62:
 textEntryH("Reading the file information again...")
 save2_63:
 //RAM 802FC79C - ディスクの データりょういきを しょきか します\nすべてのさくひんが きえてしまいますが いいですか?
-textEntryH("The contents of this disk will be gone.\nAre you sure you want to initialize this disk?")
+textEntryH("The contents of this disk will be gone.\nAre you sure you want to initialize the disk?")
 save2_64:
 //RAM 802FC804 - いれものを あたらしく さくせいしますか?
 textEntryH("Do you want to create a new container?")
@@ -475,7 +475,7 @@ seek(0x2E1110)
 save3_1:
 textEntryH("Please do not eject the disk.")	//ディスクを ぬかないでください
 save3_2:
-textEntryH("Preparing to save.")		//セーブのじゅんびをしています
+textEntryH("Preparing to save...")		//セーブのじゅんびをしています
 save3_3:
 textEntryH("Some files cannot be used here.")	//ここであつかえないファイルがふくまれますも
 
@@ -492,19 +492,19 @@ save4_1:
 textEntryH("Used Space: 222 MB")
 save4_2:
 //RAM 802FCEE4 - さくせいがめんに ひょうじ
-textEntryH("Current work")
+textEntryH("Current work from")
 save4_3:
 //RAM 802FCF00 - されている さくひん
-textEntryH("File")
+textEntryH("main canvas")
 save4_4:
 //RAM 802FCF18 - ディスクから
-textEntryH("From Disk")
+textEntryH("from Disk")
 save4_5:
 //RAM 802FCF28 - 64GBパックから
-textEntryH("From Transfer Pak")
+textEntryH("from Transfer Pak")
 save4_6:
 //RAM 802FCF3C - よみこんださくひん
-textEntryH("Loaded File")
+textEntryH("File loaded")
 save4_7:
 //RAM 802FCF50 - さくひんは
 textEntryH("File is")
@@ -513,16 +513,16 @@ save4_8:
 textEntryH("not loaded")
 save4_9:
 //RAM 802FCF74 - さくせいちゅうのさくひん
-textEntryH("Prepared File")
+textEntryH("Work In Progress")
 save4_10:
 //RAM 802FCF90 - さつえいしたしゃしん
-textEntryH("Photos Taken")
+textEntryH("Photo Taken")
 save4_11:
 //RAM 802FCFA8 - ほじょヨウシに ひょうじ
-textEntryH("Auxiliary Paper")
+textEntryH("Current work from")
 save4_12:
 //RAM 802FCFC4 - されている がぞう
-textEntryH("Image")
+textEntryH("alternate canvas")
 
 save4_13:
 //RAM 802FCFD8 - いれもの
@@ -611,7 +611,7 @@ save4_e24:
 textEntryH("The contents of this disk\nhas been wiped.")
 save4_e25:
 //RAM 802FD488 - まちがったディスクが さしこまれている\nかのうせいが あります。\n
-textEntryH("The wrong disk\nmay have been inserted.")
+textEntryH("The wrong disk\nmay have been inserted.\n")
 save4_e26:
 //RAM 802FD4CC - ただしいディスクに いれかえて ください。
 textEntryH("Please insert the correct disk.")
@@ -664,13 +664,13 @@ save4_e42:
 textEntryH("The destination container\nis full.\n")
 save4_e43:
 //RAM 802FD8D8 - ディスクが ちがいます。\n\nぬいたときのディスクに いれかえて\nください。
-textEntryH("This disk is different.\n\nPlease insert the original disk.")
+textEntryH("This is a different disk.\n\nPlease insert the original disk.")
 save4_e44:
 //RAM 802FD924 - このディスクは しょきか できません。
 textEntryH("This disk cannot be initialized.")
 save4_e45:
 //RAM 802FD94C - すべてのさくひんを いどうすることが\nできませんでした。
-textEntryH("Could not move all the files.")
+textEntryH("Could not move all of the files.")
 save4_e46:
 //RAM 802FD988 - このいれものの すべてのさくひんを\nいどうしました。
 textEntryH("All files of the container\nhave been moved.")
@@ -685,7 +685,7 @@ save4_e49:
 textEntryH("This is not a different disk.")
 save4_e50:
 //RAM 802FDA28 - なかみを すべてコピーすることが\nできません。\n
-textEntryH("Could not copy all the files.")
+textEntryH("Could not copy all of the files.\n")
 save4_e51:
 //RAM 802FDA5C - このいれものには これいじょう さくひんが\nはいりません。
 textEntryH("You cannot transfer\nthis file to this container.") //Needs recheck
@@ -777,26 +777,30 @@ seek(0x29148E+0x10)
 //dh $0050	//Y Pos
 
 seek(0x2914AE)
-dh (save4_4)
+//dh (save4_4)
+dh (save4_6)
 seek(0x2914AE+0x8)
 //dh $0091	//X Pos
 seek(0x2914AE+0x10)
 //dh $0046	//Y Pos
 seek(0x2914C6)
-dh (save4_6)
+//dh (save4_6)
+dh (save4_4)
 seek(0x2914C6+0x8)
 //dh $0091	//X Pos
 seek(0x2914C6+0x10)
 //dh $0050	//Y Pos
 
 seek(0x2914E6)
-dh (save4_5)
+//dh (save4_5)
+dh (save4_6)
 seek(0x2914E6+0x8)
 //dh $0091	//X Pos
 seek(0x2914E6+0x10)
 //dh $0046	//Y Pos
 seek(0x2914FE)
-dh (save4_6)
+//dh (save4_6)
+dh (save4_5)
 seek(0x2914FE+0x8)
 //dh $0091	//X Pos
 seek(0x2914FE+0x10)
@@ -832,13 +836,13 @@ seek(0x291576+0x10)
 seek(0x292896)
 dh (save4_13)
 seek(0x292896+0x8)
-//dh $0064	//X Pos
+dh $005F	//X Pos
 seek(0x292896+0x10)
 //dh $0064	//Y Pos
 seek(0x2928B6)
 dh (save4_15)
 seek(0x2928B6+0x8)
-//dh $005F	//X Pos
+dh $0054	//X Pos
 seek(0x2928B6+0x10)
 //dh $0064	//Y Pos
 seek(0x2928CE)
@@ -850,7 +854,7 @@ seek(0x2928CE+0x10)
 seek(0x2928E6)
 dh (save4_14)
 seek(0x2928E6+0x8)
-//dh $00BE	//X Pos
+dh $00C4	//X Pos
 seek(0x2928E6+0x10)
 //dh $0064	//Y Pos
 
@@ -893,46 +897,47 @@ textEntryH("Please insert the original disk.")			//RAM 802FDE7C - きどうディスク
 save5_4:
 textEntryH("The wrong disk has been inserted.")			//RAM 802FDE9C - まちがったディスクがはいっています
 save5_5:
-textEntryH("Please replace with another disk.")			//RAM 802FDEC0 - べつのディスクといれかえます
+textEntryH("Loading content from a different disk.")		//RAM 802FDEC0 - べつのディスクといれかえます
 save5_6:
-textEntryH("Please replace with the original disk.")		//RAM 802FDEE0 - もとのディスクと いれかえます
+textEntryH("Change to the original Paint Studio disk.")		//RAM 802FDEE0 - もとのディスクと いれかえます
 save5_7:
-textEntryH("Load file from another disk")			//RAM 802FDF00 - べつのディスクの さくひんをよみこみます
+textEntryH("Loading content from a different disk.")		//RAM 802FDF00 - べつのディスクの さくひんをよみこみます
 save5_8:
-textEntryH("Read the original disk.")				//RAM 802FDF2C - もとのディスクをよみこみます
+textEntryH("Change to the original Paint Studio disk.")		//RAM 802FDF2C - もとのディスクをよみこみます
 save5_9:
-textEntryH("The original disk is required to continue.")	//RAM 802FDF4C - ゲームをつづけるためには\nきどうディスクがひつようです
+textEntryH("The original Paint Studio disk\nis required to continue.")	//RAM 802FDF4C - ゲームをつづけるためには\nきどうディスクがひつようです
 
-//0x10
+//0x10 - Eject disk for a different disk
 seek(0x2A21EA)
 dh (save5_5)
 seek(0x2A21F6)
 dh (save5_1)
-//0x11
+//0x11 - Eject disk because it is the wrong disk
 seek(0x2A221A)
 dh (save5_4)
 seek(0x2A2226)
 dh (save5_1)
-//0x12
+//0x12 - Eject disk for the original disk
 seek(0x2A224A)
 dh (save5_6)
 seek(0x2A2256)
 dh (save5_1)
-//0x20
+//0x20 - Insert different disk
 seek(0x2A227A)
 dh (save5_7)
 seek(0x2A2286)
 dh (save5_2)
-//0x21
+//0x21 - Insert original disk (after wrong disk)
 seek(0x2A22AA)
 dh (save5_9)
 seek(0x2A22B6)
 dh (save5_3)
-//0x22
+//0x22 - Insert original disk
 seek(0x2A22DA)
 dh (save5_8)
 seek(0x2A22E6)
-dh (save5_2)
+//dh (save5_2)
+dh (save5_3)
 
 
 //--Kanji Menu Text (Disk 0x2E2260 / RAM 802FDF90)
