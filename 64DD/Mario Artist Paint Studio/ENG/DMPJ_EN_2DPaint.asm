@@ -196,7 +196,7 @@ textEntry(168, "Coloring Book")		//Colouring Book / ぬりえ
 textEntry(168, "Game Boy Printer")	//Load Save / ポケットプリンタ
 textEntry(168, "Game Boy Camera")	//Load Save / ポケットカメラ
 textEntry(168, "Save/Load")		//Load Save / セーブ・ロード
-textEntry(168, "Load")			//Load / 2ごくひんロロンド
+textEntry(168, "Load")			//Load / 2さくひんロロンド
 textEntry(168, "Save")			//Save / セーブ
 textEntry(168, "Special Save")		//Special data save / とくしゅなセーブ
 textEntry(168, "Rotate")		//Rotate_Edit / かいてん
@@ -418,8 +418,8 @@ seek(0x20C854)
 textEntryASCII0("Please switch \nthe paper first.")
 
 seek(0x20CCBC)
-textEntry(28, "Load Drawing")		//Load / 2Dさくひんロード
-textEntry(28, "Load Drawing")		//Load / 2Dさくひんロード
+textEntry(28, "Load Picture")		//Load / 2Dさくひんロード
+textEntry(28, "Load Picture")		//Load / 2Dさくひんロード
 
 seek(0x20DC70)
 //作品が消えますが
