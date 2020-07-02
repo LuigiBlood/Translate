@@ -551,7 +551,7 @@ save4_e4:
 textEntryH("You cannot write this file.")
 save4_e5:
 //RAM 802FD0C0 - このディスクには これいじょう さくひんが\nはいりません。
-textEntryH("You cannot transfer\nthis file to this disk.") //Needs recheck, maybe disk is full
+textEntryH("There is no more space to fit\nmore files on this disk.") //Needs recheck, maybe disk is full
 save4_e6:
 //RAM 802FD0FC - このさくひんを けすことは できません。
 textEntryH("You cannot delete this file.")
@@ -688,7 +688,7 @@ save4_e50:
 textEntryH("Could not copy all of the files.\n")
 save4_e51:
 //RAM 802FDA5C - このいれものには これいじょう さくひんが\nはいりません。
-textEntryH("You cannot transfer\nthis file to this container.") //Needs recheck
+textEntryH("There is no more space to fit\nmore files in this container.") //Needs recheck
 save4_e52:
 //RAM 802FDA98 - このいれものの すべてのさくひんを\nさくじょ しました。
 textEntryH("All files of the container\nhave been deleted.")
@@ -948,6 +948,9 @@ textEntryH("* Please select the beginning of the kanji *")
 
 seek(0x29FE6A)
 dh (save6_1)
+seek(0x29FE72)
+dh 0x003E	//X Pos
+
 
 //Function Text + Kanji Font Rendering (Disk 0x2A0224 / RAM 802BBF54)
 //Test these: き せ み and last (symbols)
@@ -1032,6 +1035,11 @@ seek(0x2E45C8)
 dw (kanji1_1),(kanji1_2),(kanji1_3),(kanji1_4),(kanji1_5),0
 dw (kanji2_1),0
 dw (kanji3_1),(kanji3_2),(kanji3_3),0
+
+//Change Symbols Kanji
+seek(0x2E48CC)
+//dh 0xFFFF
+dh 0x8197
 
 
 //--Disk Usage Percentage Function (Disk 0x2A661C / RAM 802C234C)
