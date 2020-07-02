@@ -545,8 +545,7 @@ base 0x80277508
 animation_howto0:
 textEntryASCII0("")				//RAM 0x80277508 - 
 animation_howto1:
-animation_howto6:
-textEntryASCII0("Select")			//RAM 0x80277510 - を選ぼう
+textEntryASCII0("Select a")			//RAM 0x80277510 - を選ぼう
 animation_howto2:
 textEntryASCII0("Draw your frame.")		//RAM 0x80277520 - ペイント画面で絵をかこう
 animation_howto3:
@@ -555,8 +554,8 @@ animation_howto4:
 textEntryASCII0("to finish.")			//RAM 0x80277554 - で１コマ完成
 animation_howto5:
 textEntryASCII0(" ")				//RAM 0x80277568 - いくつかコマができたら
-//animation_howto6:
-//textEntryASCII0("Select")			//RAM 0x80277584 - コマの最後に
+animation_howto6:
+textEntryASCII0("Select")			//RAM 0x80277584 - コマの最後に
 animation_howto7:
 textEntryASCII0("to set a stop.")		//RAM 0x80277598 - をつけよう
 animation_howto8:
@@ -569,7 +568,7 @@ dh (animation_howto0)
 seek(0x1E84DA)
 dh (animation_howto1)
 seek(0x1E84C2)
-dh $007D
+dh $007B
 
 seek(0x1E8522)
 dh (animation_howto2)
@@ -616,8 +615,8 @@ dh $00BF
 seek(0x20970C)
 // X = X Pos; Y = Y Pos; T = Texture ID
 // $0000  $XXXX  $YYYY  $TTTT  $0000  $0000
-dh $0000, $0046, $001B, $0181, $0000, $0000 // Bold Text
-dh $0000, $00A3, $002F, $0182, $0000, $0000 // Frame
+dh $0000, $0047, $001B, $0181, $0000, $0000 // Bold Text
+dh $0000, $00A7, $002F, $0182, $0000, $0000 // Frame
 dh $0000, $009A, $004B, $0183, $0000, $0000 // Down Arrow
 dh $0000, $009A, $0069, $0183, $0000, $0000 // Down Arrow
 dh $0000, $009A, $008C, $0183, $0000, $0000 // Down Arrow
