@@ -220,7 +220,7 @@ save2_20:
 textEntryH("This container is empty.")
 save2_21:
 //RAM 802FC0E4 - げんざいのさくひんは セーブされていませんが\nいいですか?
-textEntryH("The current work will be lost.\nAre you sure?")
+textEntryH("The current creation will be lost.\nAre you sure?")
 save2_22:
 //RAM 802FC120 - ロードしています…
 textEntryH("Loading...")
@@ -492,10 +492,10 @@ save4_1:
 textEntryH("Used Space: 222 MB")
 save4_2:
 //RAM 802FCEE4 - さくせいがめんに ひょうじ
-textEntryH("Current work from")
+textEntryH("Current creation")
 save4_3:
 //RAM 802FCF00 - されている さくひん
-textEntryH("main canvas")
+textEntryH(" ")
 save4_4:
 //RAM 802FCF18 - ディスクから
 textEntryH("from Disk")
@@ -504,7 +504,7 @@ save4_5:
 textEntryH("from Transfer Pak")
 save4_6:
 //RAM 802FCF3C - よみこんださくひん
-textEntryH("File loaded")
+textEntryH("Creation loaded")
 save4_7:
 //RAM 802FCF50 - さくひんは
 textEntryH("File is")
@@ -513,13 +513,13 @@ save4_8:
 textEntryH("not loaded")
 save4_9:
 //RAM 802FCF74 - さくせいちゅうのさくひん
-textEntryH("Work In Progress")
+textEntryH("Creation in progress")
 save4_10:
 //RAM 802FCF90 - さつえいしたしゃしん
 textEntryH("Photo Taken")
 save4_11:
 //RAM 802FCFA8 - ほじょヨウシに ひょうじ
-textEntryH("Current work from")
+textEntryH("Current creation on")
 save4_12:
 //RAM 802FCFC4 - されている がぞう
 textEntryH("alternate canvas")
@@ -768,7 +768,7 @@ dh (save4_2)
 seek(0x291476+0x8)
 //dh $0091	//X Pos
 seek(0x291476+0x10)
-//dh $0046	//Y Pos
+dh $004B	//Y Pos
 seek(0x29148E)
 dh (save4_3)
 seek(0x29148E+0x8)
