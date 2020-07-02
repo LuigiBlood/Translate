@@ -166,8 +166,11 @@ seek(0x1898FC)
 textEntryASCII0("is now available!")		//つかえるようになりました！
 
 //Change position
-seek(0x118E62)	//800EA8B8
-dh $006D
+seek(0x118D82)	//800EA7D8 - Creature Name
+dh $00A8
+seek(0x118E62)	//800EA8B8 - is now available!
+dh $0074
+
 
 seek(0x18A2E4)
 //セーブをしないと

@@ -11,6 +11,7 @@ dh 0x00
 
 //Big Text: Use ASCII instead (1 byte)
 //Function RAM 8000A884 - Disk 0x7DD44 - Text Rendering
+//Function RAM 80008988 - Message Display
 //if it starts with FFFF then Shift-JIS text, if not then small text
 
 seek(0x7E064)
@@ -30,6 +31,15 @@ addiu s3,s3,1
 //+0 byte (New Line)
 seek(0x7E1C4)
 nop
+
+//seek(0x7CFA0)
+//addiu s2,s2,1
+//seek(0x7CFB0)
+//lui t3,0x8005
+//sll t4,s1,1
+//addu t3,t3,t4
+//seek(0x7CFC0)
+//lh a0,0x8CC(t3)
 
 //Character Width //RAM 0x800520EC
 //XX, YY
