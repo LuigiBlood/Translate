@@ -62,6 +62,15 @@ macro textEntryH2(char, text) {
   db 0x00
 }
 
+macro textEntryASCIIBox(n, text, symbol, text2) {
+  ASCIIMap()
+  seek({n})
+  db {text}
+  dh {symbol}
+  db {text2}
+  dh 0x0000
+}
+
 // Character Table
 macro RegularMap() {
   map '!', $0001, 32 // Map Special Characters & Numbers

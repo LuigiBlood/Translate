@@ -109,3 +109,134 @@ seek(0x11E196)
 dh $00C8
 seek(0x11E19A)
 dh $00C4
+
+
+//Default Container Names
+//マリオ◆ギャラリー
+textEntryASCIIBox(0x186128, "Mario", 0x86A6, "Gallery")
+//ルイージ■ギャラリー
+textEntryASCIIBox(0x18613C, "Luigi", 0x81A1, "Gallery")
+//ワリオ●ギャラリー
+textEntryASCIIBox(0x186154, "Wario", 0x819C, "Gallery")
+//ピーチ♥ギャラリー
+textEntryASCIIBox(0x186168, "Peach", 0x86A5, "Gallery")
+//クッパ♠ギャラリー
+textEntryASCIIBox(0x18617C, "Bowser", 0x86A3, "Gallery")
+
+//リンク♣ボックス
+textEntryASCIIBox(0x186190, "Link", 0x86A4, "Box")
+//サムス▼ボックス
+textEntryASCIIBox(0x1861A4, "Samus", 0x81A5, "Box")
+//ヨッシー♪ボックス
+textEntryASCIIBox(0x1861B8, "Yoshi", 0x81F4, "Box")
+//ドンキー▲ボックス
+textEntryASCIIBox(0x1861CC, "Donkey", 0x81A3, "Box")
+//カービィ★ボックス
+textEntryASCIIBox(0x1861E0, "Kirby", 0x819A, "Box")
+
+
+//Disk Error Messages
+//Error Message Function (Disk 0x761A8 / RAM 80002CE8)
+//Disk Error ID RAM 80076414
+//We really need a better text renderer!
+seek(0xAB02C)
+base 0x80037B6C
+error_msg1:
+//RAM 80037B6C - Error 0x22
+//取扱説明書をお読みください。
+textEntryASCII0("Please read the \ninstruction booklet.")
+
+error_msg2:
+//RAM 80037B90 - Error 0x31
+//注意：アクセスランプ点滅中に
+//ディスクを抜かないでください。
+//詳しくは、取扱説明書をお読み
+//ください。
+//
+//ディスクを差し込んでください。
+textEntryASCII0("Please do not eject \nthe disk while the\naccess lamp is blinking.")
+
+error_msg3:
+//RAM 80037C1C - Error 0x2A
+//ＮＩＮＴＥＮＤＯ　６４本体の
+//電源スイッチを入れたときの
+//「ペイントスタジオ」の
+//ディスクを差し込んでください。
+textEntryASCII0("Please power off the\nNintendo 64 Control Deck\nand insert the disk.")
+
+error_msg4:
+//RAM 80037C90 - Error 0x02
+//ディスクを差し込みなおして
+//ください。
+textEntryASCII0("Please reinsert the disk.")
+
+error_msg5:
+//RAM 80037CBC - Error 0x2F
+//間違ったディスクが差し込まれ
+//ている可能性があります。
+//正しいディスクに入れかえて
+//ください。
+textEntryASCII0("The wrong disk may\nhave been inserted.")
+
+//Repoint
+seek(0xAB02C+0xA6)
+dh (error_msg1)
+seek(0xAB02C+0xCE)
+dh (error_msg4)
+seek(0xAC02C+0xF6)
+dh (error_msg2)
+seek(0xAC02C+0x14A)
+dh (error_msg3)
+seek(0xAC02C+0x1DE)
+dh (error_msg5)
+seek(0xAC02C+0x256)
+dh (error_msg1)
+seek(0xAC02C+0x2B6)
+dh (error_msg5)
+seek(0xAC02C+0x31A)
+dh (error_msg3)
+seek(0xAC02C+0x36A)
+dh (error_msg1)
+seek(0xAC02C+0x392)
+dh (error_msg1)
+
+
+//Disk Error Number
+//Function Set Number (Disk 0x76050 / RAM 80002B90)
+seek(0xAB3E8)
+error_num:
+//RAM 80037F28
+//ディスクエラー ーー
+textEntryASCII0("Disk Error 00")
+db 0,0
+
+//Hack number
+seek(0x76050+0x88)
+addiu v0,v0,(error_num+15)
+nop
+addiu t9,0,0x20
+
+seek(0x76050+0xA4)
+addiu v0,v0,(error_num+15)
+nop
+addiu t3,a1,0x30
+sb t3,0(v0)
+addiu v0,v0,1
+
+multu a1,a3
+addiu t1,0,10
+addiu t0,0,0x82
+nop
+nop
+addiu v0,v0,1
+
+seek(0x76050+0x114)
+addiu t7,a2,0x30
+
+seek(0x76050+0x140)
+sb t7,-1(v0)
+
+seek(0x76050+0x14C)
+addiu t9,v1,0x30
+jr ra
+sb t9,0(v0)
