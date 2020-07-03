@@ -513,7 +513,7 @@ save4_8:
 textEntryH("not loaded")
 save4_9:
 //RAM 802FCF74 - さくせいちゅうのさくひん
-textEntryH("Creation in progress")
+textEntryH("Current creation")
 save4_10:
 //RAM 802FCF90 - さつえいしたしゃしん
 textEntryH("Photo Taken")
@@ -551,7 +551,7 @@ save4_e4:
 textEntryH("You cannot write this file.")
 save4_e5:
 //RAM 802FD0C0 - このディスクには これいじょう さくひんが\nはいりません。
-textEntryH("There is no more space to fit\nmore files on this disk.") //Needs recheck, maybe disk is full
+textEntryH("There is no more space to fit\nmore files on this disk.")
 save4_e6:
 //RAM 802FD0FC - このさくひんを けすことは できません。
 textEntryH("You cannot delete this file.")
@@ -572,7 +572,7 @@ save4_e11:
 textEntryH("Disk Error")
 save4_e12:
 //RAM 802FD1E0 - ディスクが いれかえられたので\nよみなおします。
-textEntryH("The disk has been reread,\nbecause it was replaced.")
+textEntryH("The disk has been read again\nbecause it has been replaced.")
 save4_e13:
 //RAM 802FD214 - なまえは へんこう されませんでした。
 textEntryH("The name was not changed.")
@@ -688,7 +688,7 @@ save4_e50:
 textEntryH("Could not copy all of the files.\n")
 save4_e51:
 //RAM 802FDA5C - このいれものには これいじょう さくひんが\nはいりません。
-textEntryH("There is no more space to fit\nmore files in this container.") //Needs recheck
+textEntryH("There is no more space to fit\nmore files in this container.")
 save4_e52:
 //RAM 802FDA98 - このいれものの すべてのさくひんを\nさくじょ しました。
 textEntryH("All files of the container\nhave been deleted.")
