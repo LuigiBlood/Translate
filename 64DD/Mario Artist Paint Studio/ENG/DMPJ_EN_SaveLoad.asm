@@ -161,7 +161,7 @@ save2_1:
 textEntryH("Test")
 save2_2:
 //RAM 802FBDF8 - ‚Ğ‚¾‚è‚©‚ç ‚¦‚ç‚ñ‚Å‚­‚¾‚³‚¢
-textEntryH("Please select from the left menu.")
+textEntryH("Please choose from the left menu.")
 
 save2_3:
 //RAM 802FBE18 - ‚±‚Ì‚³‚­‚Ğ‚ñ‚ğƒZ[ƒu‚·‚é‚¢‚ê‚à‚Ì‚ğ ‚¦‚ç‚ñ‚Å‚­‚¾‚³‚¢
