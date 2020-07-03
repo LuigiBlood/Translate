@@ -738,15 +738,15 @@ menu9_remove:
 menu9_selectedcolor:
 putTextnoSeek("Selected Color")
 menu9_createdcolor:
-putTextnoSeek("Created Color")
+putTextnoSeek("User Color")
 menu9_firstcolor:
-putTextnoSeek("First Color")
+putTextnoSeek("Original Color")
 menu9_selectedpattern:
 putTextnoSeek("Selected Pattern")
 menu9_createdpattern:
-putTextnoSeek("Created Pattern")
+putTextnoSeek("User Pattern")
 menu9_firstpattern:
-putTextnoSeek("First Pattern")
+putTextnoSeek("Original Pattern")
 menu9_musicoff:
 putTextnoSeek("Music OFF")
 menu9_rotationB:
@@ -2054,11 +2054,11 @@ putTextnoSeek("Saturation")
 coloralbum_v:
 putTextnoSeek("Brightness")
 coloralbum_grab:
-putTextnoSeek("Grab")
+putTextnoSeek("Grab Color")
 coloralbum_get:
 putTextnoSeek("Use Color")
 coloralbum_set:
-putTextnoSeek("Replace")
+putTextnoSeek("Replace Color")
 
 seek(0x215F18)
 dw (coloralbum_h), (coloralbum_h)
@@ -2083,11 +2083,11 @@ dh (coloralbum_set)
 seek(0xA3EAD8)
 base 0x8029D040
 patternalbum_grab:
-putTextnoSeek("Grab")
+putTextnoSeek("Grab Pattern")
 patternalbum_get:
 putTextnoSeek("Use Pattern")
 patternalbum_set:
-putTextnoSeek("Replace")
+putTextnoSeek("Replace Pattern")
 
 seek(0xA24B9A)
 dh (patternalbum_grab)
@@ -2104,7 +2104,7 @@ putTextnoSeek("Grab Face")
 facealbum_get:
 putTextnoSeek("Use Face")
 facealbum_set:
-putTextnoSeek("Replace")
+putTextnoSeek("Replace Face")
 
 seek(0x9343CA)
 dh (facealbum_grab)

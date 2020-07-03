@@ -6,7 +6,7 @@ outputGame()
 seek(0x10BF628)
 base 0x80400EF8
 moviemainerror_loadsample: //80400EF8
-putTextASCIInoSeek("A sample movie is|going to be loaded.|Is it OK?")
+putTextASCIInoSeek("A movie sample is|going to be loaded.|Is it OK?")
 moviemainerror_keepmovienotsaved: //80400F2C
 //putTextASCIInoSeek("This movie is not saved.||Would you like to keep|this movie in the|Movie Studio?")
 moviemainerror_keepmovie: //80400F84
@@ -258,17 +258,17 @@ putTextnoSeek("Erase")
 moviebg_bg1: //8040176C
 putTextnoSeek("Background 1")
 moviebg_sky1: //80401778
-//putTextnoSeek("Sky1")
+putTextnoSeek("Sky 1")
 moviebg_sky2: //80401780
-putTextnoSeek("Sky")
+putTextnoSeek("Sky 2")
 moviebg_sea1: //80401788
-//putTextnoSeek("Sea1")
+putTextnoSeek("Sea 1")
 moviebg_sea2: //80401790
-putTextnoSeek("Sea")
+putTextnoSeek("Sea 2")
 moviebg_water1: //80401798
-//putTextnoSeek("Water1")
+putTextnoSeek("Water 1")
 moviebg_water2: //804017A8
-putTextnoSeek("Water")
+putTextnoSeek("Water 2")
 moviebg_desert: //804017B8
 putTextnoSeek("Desert")
 
@@ -279,26 +279,26 @@ putTextnoSeek("Night")
 moviebg_bamboogrove: //804017D0
 putTextnoSeek("Bamboo")
 moviebg_snow1: //804017DC
-//putTextnoSeek("Snow1")
+putTextnoSeek("Snow 1")
 moviebg_snow2: //804017EC
-putTextnoSeek("Snow")
+putTextnoSeek("Snow 2")
 moviebg_forest1: //804017FC
-//putTextnoSeek("Forest1")
+putTextnoSeek("Forest 1")
 moviebg_forest2: //80401804
-putTextnoSeek("Forest")
+putTextnoSeek("Forest 2")
 
 moviebg_fall: //8040180C
 putTextnoSeek("Fall")
 moviebg_cherry: //8040181C
 putTextnoSeek("Cherry Blossoms")
 moviebg_village1: //80401824
-//putTextnoSeek("Town1")
+putTextnoSeek("Town 1")
 moviebg_village2: //8040182C
-//putTextnoSeek("Town2")
+putTextnoSeek("Town 2")
 moviebg_village3: //80401834
-//putTextnoSeek("Town3")
+putTextnoSeek("Town 3")
 moviebg_village4: //8040183C
-putTextnoSeek("Town")
+putTextnoSeek("Town 4")
 moviebg_road: //80401844
 putTextnoSeek("Road")
 
@@ -307,18 +307,18 @@ putTextnoSeek("Mill")
 moviebg_castle: //8040185C
 putTextnoSeek("Castle")
 moviebg_buildings1: //80401864
-//putTextnoSeek("City1")
+putTextnoSeek("City 1")
 moviebg_buildings2: //8040186C
-//putTextnoSeek("City2")
+putTextnoSeek("City 2")
 moviebg_buildings3: //80401874
-//putTextnoSeek("City3")
+putTextnoSeek("City 3")
 moviebg_buildings4: //8040187C
-putTextnoSeek("City")
+putTextnoSeek("City 4")
 moviebg_wall1: //80401884
-//putTextnoSeek("Wall1")
+putTextnoSeek("Wall 1")
 
 moviebg_wall2: //8040188C
-putTextnoSeek("Wall")
+putTextnoSeek("Wall 2")
 moviebg_school: //80401894
 putTextnoSeek("School")
 moviebg_blackboard: //804018A0
@@ -333,9 +333,9 @@ moviebg_downtown: //804018D4
 putTextnoSeek("Central")
 
 moviebg_apartment1: //804018E4
-//putTextnoSeek("Flat1")
+putTextnoSeek("Flat 1")
 moviebg_apartment2: //804018F0
-putTextnoSeek("Flat")
+putTextnoSeek("Flat 2")
 moviebg_tatami: //804018FC
 putTextnoSeek("Tatami")
 moviebg_stage: //80401904
@@ -420,17 +420,17 @@ moviebg_computer1file:
 moviebg_computer2file:
 putTextASCIInoSeek("Computer")
 moviebg_sky1file:
-//putTextASCIInoSeek("Sky1")
+putTextASCIInoSeek("Sky 1")
 moviebg_sky2file:
-putTextASCIInoSeek("Sky")
+putTextASCIInoSeek("Sky 2")
 moviebg_sea1file:
-//putTextASCIInoSeek("Sea1")
+putTextASCIInoSeek("Sea 1")
 moviebg_sea2file:
-putTextASCIInoSeek("Sea")
+putTextASCIInoSeek("Sea 2")
 moviebg_water1file:
-//putTextASCIInoSeek("Water1")
+putTextASCIInoSeek("Water 1")
 moviebg_water2file:
-putTextASCIInoSeek("Water")
+putTextASCIInoSeek("Water 2")
 moviebg_desertfile:
 putTextASCIInoSeek("Desert")
 
@@ -441,26 +441,26 @@ putTextASCIInoSeek("Night")
 moviebg_bamboogrovefile:
 putTextASCIInoSeek("Bamboo")
 moviebg_snow1file:
-//putTextASCIInoSeek("Snow1")
+putTextASCIInoSeek("Snow 1")
 moviebg_snow2file:
-putTextASCIInoSeek("Snow")
+putTextASCIInoSeek("Snow 2")
 moviebg_forest1file:
-//putTextASCIInoSeek("Forest1")
+putTextASCIInoSeek("Forest 1")
 moviebg_forest2file:
-putTextASCIInoSeek("Forest")
+putTextASCIInoSeek("Forest 2")
 
 moviebg_fallfile:
 putTextASCIInoSeek("Fall")
 moviebg_cherryfile:
 putTextASCIInoSeek("Cherry Blossoms")
 moviebg_village1file:
-//putTextASCIInoSeek("Town1")
+putTextASCIInoSeek("Town 1")
 moviebg_village2file:
-//putTextASCIInoSeek("Town2")
+putTextASCIInoSeek("Town 2")
 moviebg_village3file:
-//putTextASCIInoSeek("Town3")
+putTextASCIInoSeek("Town 3")
 moviebg_village4file:
-putTextASCIInoSeek("Town")
+putTextASCIInoSeek("Town 4")
 moviebg_roadfile:
 putTextASCIInoSeek("Road")
 
@@ -469,18 +469,18 @@ putTextASCIInoSeek("Mill")
 moviebg_castlefile:
 putTextASCIInoSeek("Castle")
 moviebg_buildings1file:
-//putTextASCIInoSeek("City1")
+putTextASCIInoSeek("City 1")
 moviebg_buildings2file:
-//putTextASCIInoSeek("City2")
+putTextASCIInoSeek("City 2")
 moviebg_buildings3file:
-//putTextASCIInoSeek("City3")
+putTextASCIInoSeek("City 3")
 moviebg_buildings4file:
-putTextASCIInoSeek("City")
+putTextASCIInoSeek("City 4")
 moviebg_wall1file:
-//putTextASCIInoSeek("Wall1")
+putTextASCIInoSeek("Wall 1")
 
 moviebg_wall2file:
-putTextASCIInoSeek("Wall")
+putTextASCIInoSeek("Wall 2")
 moviebg_schoolfile:
 putTextASCIInoSeek("School")
 moviebg_blackboardfile:
@@ -495,9 +495,9 @@ moviebg_downtownfile:
 putTextASCIInoSeek("Central")
 
 moviebg_apartment1file:
-//putTextASCIInoSeek("Flat1")
+putTextASCIInoSeek("Flat 1")
 moviebg_apartment2file:
-putTextASCIInoSeek("Flat")
+putTextASCIInoSeek("Flat 2")
 moviebg_tatamifile:
 putTextASCIInoSeek("Tatami")
 moviebg_stagefile:
@@ -897,8 +897,8 @@ putText(0x11C1A08 + 32*9, "*Stop")
 putText(0x11C1A08 + 32*10, "Loop")
 putText(0x11C1A08 + 32*11, "*Do Not Loop")
 putText(0x11C1A08 + 32*12, "Grab Recording")
-putText(0x11C1A08 + 32*13, "Replace")
-putText(0x11C1A08 + 32*14, "Use this Record")
+putText(0x11C1A08 + 32*13, "Replace Recording")
+putText(0x11C1A08 + 32*14, "Use this Recording")
 
 putTextASCII(0x10C2E20, "Speak into the microphone.")
 putTextASCII(0x10C2E40, "...Recording...")
@@ -1038,9 +1038,9 @@ putText(0xF50B1C, "Going Out")
 seek(0xF46510)
 base 0x80355D00
 motion_boywalk: //80355D00
-putText3noSeek($011B, " Walk")
+putTextnoSeek("Walk (Male)")
 motion_girlwalk: //80355D14
-putText3noSeek($011C, " Walk")
+putTextnoSeek("Walk (Female)")
 motion_slowwalk: //80355D28
 putTextnoSeek("Quiet")
 motion_angrywalk: //80355D38
@@ -1052,9 +1052,9 @@ putTextnoSeeknoEnd("Tiger ")
 motion_crawl: //80355D64
 putTextnoSeek("Crawl")
 motion_boyrun: //80355D74
-putText3noSeek($011B, " Running")
+putTextnoSeek("Running (Male)")
 motion_girlrun: //80355D88
-putText3noSeek($011C, " Running")
+putTextnoSeek("Running (Female)")
 motion_bendrun: //80355D9C
 putTextnoSeek("Bend Running")
 motion_rushrun: //80355DAC
@@ -1066,11 +1066,11 @@ putTextnoSeek("Tired")
 motion_skip: //80355DD8
 putTextnoSeek("Skip")
 weight_boystanding: //80355DE4
-putText3noSeeknoEnd($011B, " ")
+putTextnoSeek("Standing (Male)")
 object_still: //80356494
 putTextnoSeek("Standing")
 weight_girlstanding: //80355DF8
-putText3noSeek($011C, " Standing")
+putTextnoSeek("Standing (Female)")
 weight_lookaround: //80355E0C
 putTextnoSeek("Look Around")
 weight_battlestance: //80355E1C
@@ -1082,9 +1082,9 @@ putTextnoSeek("Cross-legged")
 weight_dozing: //80355E38
 putTextnoSeek("Dozing Off")
 weight_boyjump: //80355E44
-putText3noSeek($011B, " Jump")
+putTextnoSeek("Jump (Male)")
 weight_girljump: //80355E58
-putText3noSeek($011C, " Jump")
+putTextnoSeek("Jump (Female)")
 battle_fallonback: //80355E6C
 putTextnoSeek("Fall back")
 battle_fallonfront: //80355E7C
@@ -1173,13 +1173,13 @@ putTextnoSeek("Bon Dance")
 rhythm_cossack: //80356100
 putTextnoSeek("Cossack")
 rhythm_boytapping: //80356110
-putText3noSeek($011B, " Tap")
+putTextnoSeek("Tap (Male)")
 rhythm_girltapping: //80356124
-putText3noSeek($011C, " Tap")
+putTextnoSeek("Tap (Female)")
 weight_boygreet: //80356138
-putText3noSeek($011B, " Greetings")
+putTextnoSeek("Greetings (Male)")
 weight_girlgreet: //8035614C
-putText3noSeek($011C, " Greetings")
+putTextnoSeek("Greetings (Female)")
 rhythm_warmingup: //80356160
 putTextnoSeek("Warming Up")
 weight_situp: //80356174
@@ -1619,44 +1619,44 @@ putText(0x11BBD4C + 40*6, "Sleep Expression")
 
 //Movie Direct - Music List
 putText(0x11BBF18 + 40*0, "None")
-putText3(0x11BBF18 + 40*1, "Rock ", $0110)
-putText3(0x11BBF18 + 40*2, "Mystery ", $0110)
-putText3(0x11BBF18 + 40*3, "Shamisen ", $0110)
-putText3(0x11BBF18 + 40*4, "Jazz ", $0110)
-putText3(0x11BBF18 + 40*5, "Techno ", $0110)
-putText3(0x11BBF18 + 40*6, "Evil ", $0110)
+putText(0x11BBF18 + 40*1, "Rock")
+putText(0x11BBF18 + 40*2, "Mystery")
+putText(0x11BBF18 + 40*3, "Shamisen")
+putText(0x11BBF18 + 40*4, "Jazz")
+putText(0x11BBF18 + 40*5, "Techno")
+putText(0x11BBF18 + 40*6, "Evil")
 
-putText3(0x11BBF18 + 40*7, "Totakeke's Song ", $0110)
-putText3(0x11BBF18 + 40*8, "Spy ", $0110)
-putText3(0x11BBF18 + 40*9, "Bagpipe ", $0110)
-putText3(0x11BBF18 + 40*10, "Recorder ", $0110)
-putText3(0x11BBF18 + 40*11, "Sad ", $0110)
-putText3(0x11BBF18 + 40*12, "Salsa ", $0110)
-putText3(0x11BBF18 + 40*13, "Playful ", $0110) //???
+putText(0x11BBF18 + 40*7, "Totakeke's Song")
+putText(0x11BBF18 + 40*8, "Spy")
+putText(0x11BBF18 + 40*9, "Bagpipe")
+putText(0x11BBF18 + 40*10, "Recorder")
+putText(0x11BBF18 + 40*11, "Sad")
+putText(0x11BBF18 + 40*12, "Salsa")
+putText(0x11BBF18 + 40*13, "Playful") //???
 
-putText3(0x11BBF18 + 40*14, "Waltz ", $0110)
-putText3(0x11BBF18 + 40*15, "Tropical ", $0110)
-putText3(0x11BBF18 + 40*16, "Hip-Hop ", $0110)
-putText3(0x11BBF18 + 40*17, "Horror ", $0110)
-putText3(0x11BBF18 + 40*18, "March ", $0110)
-putText3(0x11BBF18 + 40*19, "Opening ", $0110)
-putText3(0x11BBF18 + 40*20, "Memories ", $0110)
+putText(0x11BBF18 + 40*14, "Waltz")
+putText(0x11BBF18 + 40*15, "Tropical")
+putText(0x11BBF18 + 40*16, "Hip-Hop")
+putText(0x11BBF18 + 40*17, "Horror")
+putText(0x11BBF18 + 40*18, "March")
+putText(0x11BBF18 + 40*19, "Opening")
+putText(0x11BBF18 + 40*20, "Memories")
 
-putText3(0x11BBF18 + 40*21, "Lonely ", $0110)
-putText3(0x11BBF18 + 40*22, "China ", $0110)
-putText3(0x11BBF18 + 40*23, "India ", $0110)
-putText3(0x11BBF18 + 40*24, "City ", $0110)
-putText3(0x11BBF18 + 40*25, "Noisy ", $0110)
-putText3(0x11BBF18 + 40*26, "Morning Coffee ", $0110)
-putText3(0x11BBF18 + 40*27, "Meeting ", $0110)
+putText(0x11BBF18 + 40*21, "Lonely")
+putText(0x11BBF18 + 40*22, "China")
+putText(0x11BBF18 + 40*23, "India")
+putText(0x11BBF18 + 40*24, "City")
+putText(0x11BBF18 + 40*25, "Noisy")
+putText(0x11BBF18 + 40*26, "Morning Coffee")
+putText(0x11BBF18 + 40*27, "Meeting")
 
-putText4(0x11BBF18 + 40*28, "Fanfare ", $0111, "4.2")
-putText4(0x11BBF18 + 40*29, "And Then... ", $0111, "3.0")
-putText4(0x11BBF18 + 40*30, "Yeah! ", $0111, "1.8")
-putText4(0x11BBF18 + 40*31, "Mario ", $0111, "1.3")
-putText4(0x11BBF18 + 40*32, "Shock ", $0111, "1.8")
-putText4(0x11BBF18 + 40*33, "Ending ", $0111, "5.0")
-putText4(0x11BBF18 + 40*34, "False Move ", $0111, "1.4")
+putText(0x11BBF18 + 40*28, "Fanfare (4.2s)")
+putText(0x11BBF18 + 40*29, "And Then... (3.0s)")
+putText(0x11BBF18 + 40*30, "Yeah! (1.8s)")
+putText(0x11BBF18 + 40*31, "Mario (1.3s)")
+putText(0x11BBF18 + 40*32, "Shock (1.8s)")
+putText(0x11BBF18 + 40*33, "Ending (5.0s)")
+putText(0x11BBF18 + 40*34, "False Move (1.4s)")
 
 //Movie Direct - Other ON/OFF
 putText(0x11BBF18 + 40*35, "Shadow ON/OFF")
@@ -2518,7 +2518,7 @@ dw (moviegraffitiedit_pen), (moviegraffitiedit_spray), (moviegraffitiedit_thin),
 putText(0x11F6138 + 40*0, "Save & Exit")
 putText(0x11F6138 + 40*1, "Undo")
 putText(0x11F6138 + 40*2, "Grab Graffiti")
-putText(0x11F6138 + 40*3, "Replace")
+putText(0x11F6138 + 40*3, "Replace Graffiti")
 putText(0x11F6138 + 40*4, "Use Graffiti")
 
 putTextASCII(0x11DE000, "This Graffiti|will be deleted.|Is it OK?")

@@ -11,7 +11,7 @@ endian msb
 output "Mario Artist - Talent Studio.n64"
 //origin 0x000000; insert "NUD-DMTJ-JPN.n64" // Include Japanese Mario Artist - Talent Studio N64 DD ROM
 
-origin 0x10; dw 0x51049EC1, 0x2F594C99 //Checksum
+origin 0x10; dw 0x16082F95, 0x9FEEA8F1 //Checksum
 
 include "N64_CPUREGS.asm"
 
