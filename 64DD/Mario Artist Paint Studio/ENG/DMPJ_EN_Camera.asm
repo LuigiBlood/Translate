@@ -156,7 +156,7 @@ textEntryH("You cannot create a container.")		//これいじょういれもの�
 gbcam3_diskerror:
 textEntryH("Disk Error")				//ディスクのエラーです。
 gbcam3_reread:
-textEntryH("The disk has been reread,\nbecause it was replaced.")	//ディスクがこうかんされたので\nよみなおします。
+textEntryH("The disk has been read again\nbecause it has been replaced.")	//ディスクがこうかんされたので\nよみなおします。
 gbcam3_namenotchanged:
 textEntryH("The name was not changed.")			//なまえはへんこうされませんでした。
 gbcam3_filenamenotchanged:
