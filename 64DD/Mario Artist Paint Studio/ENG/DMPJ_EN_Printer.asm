@@ -149,6 +149,9 @@ dw $100
 seek(0x239F78)
 textEntryH("Zoom")			//いちぶかくだい
 
+seek(0x230946)
+dh $00F6	//X Pos
+
 
 //--Print Another (Disk 0x239FB4 / RAM 802AC774)
 seek(0x239FB4)
