@@ -186,7 +186,7 @@ textEntry0("This mode uses the controller.")	//このモードは
 explore_empty:
 dh 0x5000, 0x0000				//コントローラでそうさします
 explore_start:
-textEntryASCII0("Press A or Z to Start!")	//Ａ・Ｚボタンでスタート！
+textEntryASCII0("Press A Button to start!")	//Ａ・Ｚボタンでスタート！
 explore_zoomin:
 textEntry0("Zoom In")				//ちかづく
 explore_zoomout:
@@ -212,52 +212,42 @@ explore_camera:
 textEntry0("Camera")				//カメラそうさ
 
 //3D World Explore - Repoint
-seek(0x0012713A)
-dh (explore_controller)
-seek(0x00127186)
-dh (explore_empty)
-seek(0x001271CA)
-dh (explore_start)
-seek(0x0012720E)
-dh (explore_zoomin)
-seek(0x00127252)
-dh (explore_zoomout)
-seek(0x00127296)
-dh (explore_left)
-seek(0x001272DA)
-dh (explore_right)
-seek(0x0012731E)
-dh (explore_move)
-seek(0x00127362)
-dh (explore_exit)
-seek(0x001273A6)
-dh (explore_run)
-seek(0x001273EA)
-dh (explore_empty)
-seek(0x0012742E)
-dh (explore_take)
-seek(0x00127472)
-dh (explore_photo)
-seek(0x001274B6)
-dh (explore_circle)
-seek(0x001274FA)
-dh (explore_camera)
+seek(0x12713A); dh (explore_controller)
+seek(0x127186); dh (explore_empty)
+seek(0x1271CA); dh (explore_start)
+seek(0x12720E); dh (explore_zoomin)
+seek(0x127252); dh (explore_zoomout)
+seek(0x127296); dh (explore_left)
+seek(0x1272DA); dh (explore_right)
+seek(0x12731E); dh (explore_move)
+seek(0x127362); dh (explore_exit)
+seek(0x1273A6); dh (explore_run)
+seek(0x1273EA); dh (explore_empty)
+seek(0x12742E); dh (explore_take)
+seek(0x127472); dh (explore_photo)
+seek(0x1274B6); dh (explore_circle)
+seek(0x1274FA); dh (explore_camera)
+
+//3D World Explore - Move Text
+seek(0x127346); dh $0051	//Exit
+seek(0x127412); dh $00C8	//Take Photo
+
 
 //3D World Explore Controls Display Hack
 //Exit (Black Box)
-seek(0x00164644) //RAM 8013609C
+seek(0x164644) //RAM 8013609C
 dh 0x3D, 0x1E, 0x2C
-seek(0x0016466C) //RAM 801360C4
+seek(0x16466C) //RAM 801360C4
 dh 0x3E, 0x1F, 0x2A
 
 //Move (Black Box)
-seek(0x0016470C)
+seek(0x16470C)
 dh 0x3E, 0x99, 0x30
-seek(0x00164B1C)
+seek(0x164B1C)
 dh 0x3D, 0x98, 0x32
 
 //Exit (Line)
-seek(0x0016475C)
+seek(0x16475C)
 dh 0x68, 0x27, 0x24
-seek(0x00164784)
+seek(0x164784)
 dh 0x67, 0x26, 0x26
