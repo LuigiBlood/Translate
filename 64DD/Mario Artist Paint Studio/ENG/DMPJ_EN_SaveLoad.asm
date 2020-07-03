@@ -650,7 +650,7 @@ save4_e37:
 textEntryH("You cannot delete some of\nthe files in this container.")
 save4_e38:
 //RAM 802FD768 - エラーばんごう49\nちゅうい:\nアクセスランプ てんめつちゅうに\nディスクを ぬかないでください。
-textEntryH("Error 49\n\nPlease do not eject the disk\nwhile the access LED is blinking.")
+textEntryH("Error 49\n\nPlease do not eject the disk\nwhile the access lamp is blinking.")
 save4_e39:
 //RAM 802FD7D4 - エラーばんごう2\n\nディスクを さしこみなおして ください。
 textEntryH("Error 2\n\nPlease reinsert the disk.")

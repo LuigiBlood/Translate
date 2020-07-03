@@ -210,7 +210,7 @@ textEntryH("You cannot write\nor delete this container.")	//このいれもの�
 gbcam3_containercantdeletefiles:
 textEntryH("You cannot delete some of\nthe files in this container.")	//このいれもののなかには\nさくじょできないさくひんが\nあります。
 gbcam3_error49:
-textEntryH("Please do not eject the disk\nwhile the access LED is blinking.")	//アクセスランプてんめつちゅうに\nディスクをぬかないでください。
+textEntryH("Please do not eject the disk\nwhile the access lamp is blinking.")	//アクセスランプてんめつちゅうに\nディスクをぬかないでください。
 gbcam3_error2:
 textEntryH("Please reinsert the disk.")			//ディスクを さしこみなおしてください。
 gbcam3_readonly:
