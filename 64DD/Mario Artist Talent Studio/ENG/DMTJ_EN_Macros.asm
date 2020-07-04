@@ -27,6 +27,11 @@ macro textEntryASCIIBox(n, text, symbol, text2) {
   dh 0x0000
 }
 
+macro skip(size) {
+  variable skipSeek(origin()+{size})
+  origin skipSeek
+}
+
 //OLD
 macro putText(n, text) {
   seek({n})
