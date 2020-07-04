@@ -15,7 +15,7 @@ macro textEntryH0(text) {
 macro textEntryASCII0(text) {
   ASCIIMap()
   db {text}
-  db 0,0,0
+  db 0
 }
 
 macro textEntryASCIIBox(n, text, symbol, text2) {
