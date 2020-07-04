@@ -131,6 +131,9 @@ insert "GFX/GALLERY_MOVIEPLAYLIST.i8.bin"
 //GameBoy Camera YAY1 patches---------------------------------
 output "./Temp/8E7E48.CCC7.GBCam.yay1.bin"
 
+seekFile(0x16A0)
+insert "GFX/GBCAMERA_LOGO.rgba16.bin"
+
 seekFile(0x15AC0)
 insert "GFX/GBCAMERA_SHOOT.rgba16.bin"
 

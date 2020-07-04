@@ -32,6 +32,9 @@ include "DMTJ_EN_Other.asm"
 print "- Assembling Gallery...\n"
 include "DMTJ_EN_Gallery.asm"
 
+print "- Assembling Game Boy Camera...\n"
+include "DMTJ_EN_Camera.asm"
+
 print "- Insert Graphics...\n"
 include "DMTJ_EN_Graphics.asm"
 print "- Insert Hacks...\n"

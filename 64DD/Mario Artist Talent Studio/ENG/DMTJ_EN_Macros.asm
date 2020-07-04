@@ -216,6 +216,7 @@ macro RegularMap() {
   map 'A', $0021, 31 // Map English "Upper Case" Characters & Special Characters
   map 'a', $0041, 30 // Map English "Lower Case" Characters & Special Characters
   map ' ', $00BD     // Map Space Character
+  map '\n', $00FF     // Map New Line Character
 }
 
 macro ShiftJISMap() {
