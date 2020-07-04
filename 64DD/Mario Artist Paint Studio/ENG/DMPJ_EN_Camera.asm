@@ -237,7 +237,7 @@ textEntryH("The N64 Transfer Pak\nis not inserted.")	//64GBパックがささっ
 gbcam3_gbcameranotinserted:
 textEntryH("The Game Boy Camera is\nnot inserted in the\nN64 Transfer Pak.")	//64GBパックにポケットカメラが\nささっていません。
 gbcam3_gbotherinserted:
-textEntryH("A cartridge other than\nthe Game Boy Camera\nhas been inserted\nin the N64 Transfer Pak.")	//64GBパックに\nポケットカメラいがいの\nカートリッジがささっています。\n
+textEntryH("A GB Game Pak other than\nthe Game Boy Camera\nhas been inserted\nin the N64 Transfer Pak.")	//64GBパックに\nポケットカメラいがいの\nカートリッジがささっています。\n
 gbcam3_otherpakinserted:
 textEntryH("Something other than the\nN64 Transfer Pak has been\ninserted in the controller.\nPlease replace it with\nthe N64 Transfer Pak.")	//コントローラに64GBパックいがいの\nものがささっています。\n64GBパックにさしかえてください。
 gbcam3_transpakproper:
