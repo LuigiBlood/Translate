@@ -21,6 +21,8 @@ macro seekFile(n) {
 
 macro outputGame() {
   output "Mario Artist - Talent Studio.ndd"
+  origin 0
+  base 0
 }
 
 //Common Macros
@@ -31,11 +33,12 @@ print "- Assembling Main Menu & Others...\n"
 include "DMTJ_EN_Other.asm"
 print "- Assembling Gallery...\n"
 include "DMTJ_EN_Gallery.asm"
-
+print "- Assembling Save & Load...\n"
+include "DMTJ_EN_SaveLoad.asm"
 print "- Assembling Game Boy Camera...\n"
 include "DMTJ_EN_Camera.asm"
 
 print "- Insert Graphics...\n"
 include "DMTJ_EN_Graphics.asm"
-print "- Insert Hacks...\n"
-include "DMTJ_EN_Hack.asm"
+//print "- Insert Hacks...\n"
+//include "DMTJ_EN_Hack.asm"

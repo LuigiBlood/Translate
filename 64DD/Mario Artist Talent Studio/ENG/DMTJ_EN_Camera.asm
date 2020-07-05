@@ -1,5 +1,58 @@
-//Game Boy Camera (Overlay Disk 0x / RAM 80)
+//Game Boy Camera
+//Code Overlay (Disk 0x8C8840 / RAM 80280000)
+//Yay1 Overlay (Disk 0x8E7E48 / RAM 80507360 / Base 0A000000)
 outputGame()
+
+//One byte char hack
+seek(0x8DFA00)
+lbu t0,0(t8)
+seek(0x8DFA00 + 0x14)
+lbu t9,0(t1)
+seek(0x8DFA00 + 0x3C)
+lbu t3,0(t4)
+seek(0x8DFA00 + 0x58)
+lbu t7,0(t6)
+seek(0x8DFA00 + 0x78)
+lbu t0,0(t8)
+seek(0x8DFA00 + 0x98)
+lbu t2,0(t9)
+seek(0x8DFA00 + 0xB8)
+lbu t6,0(t3)
+seek(0x8DFA00 + 0xD8)
+lbu t8,0(t5)
+seek(0x8DFA00 + 0xFC)
+lbu a1,0(t1)
+seek(0x8DFA00 + 0x1A0)
+addiu t5,t8,1
+seek(0x8DFA00 + 0x1AC)
+lbu t1,0(t0)
+
+seek(0x8DF2F0 + 0x18)
+lbu t6,0(a0)
+seek(0x8DF2F0 + 0x24)
+lbu t7,0(a0)
+seek(0x8DF2F0 + 0x68)
+lbu t2,0(a0)
+seek(0x8DF2F0 + 0x80)
+lbu t3,0(a0)
+seek(0x8DF2F0 + 0x9C)
+lbu t5,0(a0)
+seek(0x8DF2F0 + 0xB8)
+lbu t7,0(a0)
+seek(0x8DF2F0 + 0xD4)
+lbu t9,0(a0)
+seek(0x8DF2F0 + 0xF0)
+lbu t1,0(a0)
+seek(0x8DF2F0 + 0x10C)
+lbu t3,0(a0)
+seek(0x8DF2F0 + 0x124)
+lbu t6,0(a0)
+seek(0x8DF2F0 + 0x164)
+lbu t6,1(a0)
+seek(0x8DF2F0 + 0x218)
+addiu a0,a0,1
+lbu t4,0(a0)
+
 
 //--Image Setup
 seek(0x8E2900)
@@ -27,10 +80,9 @@ seek(0x8D6B4A); dh (gbcam_lever)
 seek(0x8D6BA6); dh (gbcam_lever)
 
 
-output "./Temp/8E7E48.CCC7.GBCam.yay1.bin"
+outputFile("./Temp/8E7E48.CCC7.GBCam.yay1.bin")
 //--Selection
 seekFile(0x1F090)
-base 0x0A01F090
 gbcam_select1:
 textEntryH0("Please select an option.")		//したからえらんでください
 gbcam_select2:

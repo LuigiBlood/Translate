@@ -48,153 +48,56 @@ addiu s1,s1,1
 //8-bit char size - Save & Load
 //Function was seen 3 times
 //Function starts at 802BDC40 - ends at 802BDEB4 (628 bytes)
-//0x89F2F8 - 0x8DF2F0 - 0x8F8990
+//0x89F2F8 (Save & Load) - 0x8DF2F0 (Camera) - 0x8F8990 (???)
 //RAM 802BDC58 - lhu t6,0(a0) - +0x18
-seek(0x89F2F8 + 0x18)
-lbu t6,0(a0)
-seek(0x8DF2F0 + 0x18)
-lbu t6,0(a0)
 seek(0x8F8990 + 0x18)
 lbu t6,0(a0)
 
 //RAM 802BDC64 - lhu t7,0(a0) - +0x24
-seek(0x89F2F8 + 0x24)
-lbu t7,0(a0)
-seek(0x8DF2F0 + 0x24)
-lbu t7,0(a0)
 seek(0x8F8990 + 0x24)
 lbu t7,0(a0)
 
 //RAM 802BDCA8 - lhu t2,0(a0) - +0x68
-seek(0x89F2F8 + 0x68)
-lbu t2,0(a0)
-seek(0x8DF2F0 + 0x68)
-lbu t2,0(a0)
 seek(0x8F8990 + 0x68)
 lbu t2,0(a0)
 
 //RAM 802BDCC0 - lhu t3,0(a0) - +0x80
-seek(0x89F2F8 + 0x80)
-lbu t3,0(a0)
-seek(0x8DF2F0 + 0x80)
-lbu t3,0(a0)
 seek(0x8F8990 + 0x80)
 lbu t3,0(a0)
 
 //RAM 802BDCDC - lhu t5,0(a0) - +0x9C
-seek(0x89F2F8 + 0x9C)
-lbu t5,0(a0)
-seek(0x8DF2F0 + 0x9C)
-lbu t5,0(a0)
 seek(0x8F8990 + 0x9C)
 lbu t5,0(a0)
 
 //RAM 802BDCF8 - lhu t7,0(a0) - +0xB8
-seek(0x89F2F8 + 0xB8)
-lbu t7,0(a0)
-seek(0x8DF2F0 + 0xB8)
-lbu t7,0(a0)
 seek(0x8F8990 + 0xB8)
 lbu t7,0(a0)
 
 //RAM 802BDD14 - lhu t9,0(a0) - +0xD4
-seek(0x89F2F8 + 0xD4)
-lbu t9,0(a0)
-seek(0x8DF2F0 + 0xD4)
-lbu t9,0(a0)
 seek(0x8F8990 + 0xD4)
 lbu t9,0(a0)
 
 //RAM 802BDD30 - lhu t1,0(a0) - +0xF0
-seek(0x89F2F8 + 0xF0)
-lbu t1,0(a0)
-seek(0x8DF2F0 + 0xF0)
-lbu t1,0(a0)
 seek(0x8F8990 + 0xF0)
 lbu t1,0(a0)
 
 //RAM 802BDD4C - lhu t3,0(a0) - +0x10C
-seek(0x89F2F8 + 0x10C)
-lbu t3,0(a0)
-seek(0x8DF2F0 + 0x10C)
-lbu t3,0(a0)
 seek(0x8F8990 + 0x10C)
 lbu t3,0(a0)
 
 //RAM 802BDD64 - lhu t6,0(a0) - +0x124
-seek(0x89F2F8 + 0x124)
-lbu t6,0(a0)
-seek(0x8DF2F0 + 0x124)
-lbu t6,0(a0)
 seek(0x8F8990 + 0x124)
 lbu t6,0(a0)
 
 //RAM 802BDDA4 - lhu t6,2(a0) - +0x164
-seek(0x89F2F8 + 0x164)
-lbu t6,1(a0)
-seek(0x8DF2F0 + 0x164)
-lbu t6,1(a0)
 seek(0x8F8990 + 0x164)
 lbu t6,1(a0)
 
 //RAM 802BDE58 - addiu a0,a0,2 -+0x218
 //RAM 802BDE5C - lhu t4,0(a0) - +0x21C
-seek(0x89F2F8 + 0x218)
-addiu a0,a0,1
-lbu t4,0(a0)
-seek(0x8DF2F0 + 0x218)
-addiu a0,a0,1
-lbu t4,0(a0)
 seek(0x8F8990 + 0x218)
 addiu a0,a0,1
 lbu t4,0(a0)
-
-
-//8-bit char size - Game Boy Camera?
-//0x89FA90
-//RAM 802BE3D8 - lhu t5,0(t3) - +0x0
-seek(0x89FA90)
-lbu t5,0(t3)
-
-//RAM 802BE3EC - lhu t4,0(t6) - +0x14
-seek(0x89FA90 + 0x14)
-lbu t4,0(t6)
-
-//RAM 802BE414 - lhu t8,0(t9) - +0x3C
-seek(0x89FA90 + 0x3C)
-lbu t8,0(t9)
-
-//RAM 802BE430 - lhu t2,0(t1) - +0x58
-seek(0x89FA90 + 0x58)
-lbu t2,0(t1)
-
-//RAM 802BE450 - lhu t5,0(t3) - +0x78
-seek(0x89FA90 + 0x78)
-lbu t5,0(t3)
-
-//RAM 802BE470 - lhu t7,0(t4) - +0x98
-seek(0x89FA90 + 0x98)
-lbu t7,0(t4)
-
-//RAM 802BE490 - lhu t1,0(t8) - +0xB8
-seek(0x89FA90 + 0xB8)
-lbu t1,0(t8)
-
-//RAM 802BE4B0 - lhu t3,0(t0) - +0xD8
-seek(0x89FA90 + 0xD8)
-lbu t3,0(t0)
-
-//RAM 802BE4D4 - lhu a1,0(t6) - +0xFC
-seek(0x89FA90 + 0xFC)
-lbu a1,0(t6)
-
-//RAM 802BE578 - addiu t0,t3,2 -+0x1A0
-seek(0x89FA90 + 0x1A0)
-addiu t0,t3,1
-
-//RAM 802BE584 - lhu t6,0(t5) - +0x1AC
-seek(0x89FA90 + 0x1AC)
-lbu t6,0(t5)
 
 
 //More Text Parsing to 8-bit
@@ -222,37 +125,7 @@ seek(0x8F9104 + 0x1AC)
 lbu t1,0(t0)
 
 
-//More Text Parsing to 8-bit
-seek(0x8DFA00)
-lbu t0,0(t8)
-seek(0x8DFA00 + 0x14)
-lbu t9,0(t1)
-seek(0x8DFA00 + 0x3C)
-lbu t3,0(t4)
-seek(0x8DFA00 + 0x58)
-lbu t7,0(t6)
-seek(0x8DFA00 + 0x78)
-lbu t0,0(t8)
-seek(0x8DFA00 + 0x98)
-lbu t2,0(t9)
-seek(0x8DFA00 + 0xB8)
-lbu t6,0(t3)
-seek(0x8DFA00 + 0xD8)
-lbu t8,0(t5)
-seek(0x8DFA00 + 0xFC)
-lbu a1,0(t1)
-seek(0x8DFA00 + 0x1A0)
-addiu t5,t8,1
-seek(0x8DFA00 + 0x1AC)
-lbu t1,0(t0)
-
-
 //Percent to 8-bit RAM 802BF4AC - 0xBA0B64
-seek(0x8A7774)
-db 0x40,0x40,0x40,0x40,0x40,0x40,0x40,0x40,0x40,0x00
-seek(0x8A7788)
-db 0x40,0x40,0x40,0x40,0x40,0x40,0x40,0x40,0x40,0x00
-
 seek(0x8E2C5C)
 db 0x40,0x40,0x40,0x40,0x40,0x40,0x40,0x40,0x40,0x00
 seek(0x8E2C70)
@@ -262,15 +135,6 @@ seek(0x90D23C)
 db 0x40,0x40,0x40,0x40,0x40,0x40,0x40,0x40,0x40,0x00
 seek(0x90D250)
 db 0x40,0x40,0x40,0x40,0x40,0x40,0x40,0x40,0x40,0x00
-
-seek(0x8A0B64 + 0x5C)
-addiu t3,t2,8
-seek(0x8A0B64 + 0x88)
-sb t7,0(t8)
-seek(0x8A0B64 + 0xE8)
-addiu t9,t8,-1
-seek(0x8A0B64 + 0x120)
-sb t4,0(t5)
 
 seek(0x8E190C + 0x5C)
 addiu t3,t2,8
@@ -377,11 +241,6 @@ sb t1,0(t2)
 seek(0x90A5F0)
 sb t4,2(t5)
 
-//Page Number Text (Kanji - Save & Load)
-seek(0x889F70)
-sb t1,0(t2)
-seek(0x889F88)
-sb t4,2(t5)
 
 //Page Number Text (Background)
 seek(0x104573C + 0x14)

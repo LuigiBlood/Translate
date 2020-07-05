@@ -12,6 +12,14 @@ macro textEntryH0(text) {
   db 0x00
 }
 
+macro textEntryH2(char, text) {
+  RegularMap()
+  db {char}, " "
+  db {text}
+  db " ", {char}
+  db 0x00
+}
+
 macro textEntryASCII0(text) {
   ASCIIMap()
   db {text}
@@ -30,6 +38,12 @@ macro textEntryASCIIBox(n, text, symbol, text2) {
 macro skip(size) {
   variable skipSeek(origin()+{size})
   origin skipSeek
+}
+
+macro outputFile(filename) {
+  output {filename}
+  origin 0
+  base 0x0A000000
 }
 
 //OLD
