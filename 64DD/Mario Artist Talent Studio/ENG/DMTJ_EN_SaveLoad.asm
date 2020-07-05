@@ -4,7 +4,7 @@
 outputGame()
 
 //One byte char hack
-//RAM 802BE3D8 - lhu t5,0(t3) - +0x0
+//Render Text Function (Disk 0x89F9D8 / RAM 802BE320)
 seek(0x89FA90)
 lbu t5,0(t3)
 seek(0x89FA90 + 0x14)
@@ -1062,3 +1062,31 @@ sb t4,0(t5)
 seek(0x8A7774)
 db $40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$00,$00,$00
 db $40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$00,$00,$00
+
+
+//--Date & Time Text Generation - RAM 801F1390
+//Function (Disk 0x893D3C / RAM 802B2684)
+//802B2740
+seek(0x893D3C+0xBC)
+addiu t7,t5,0
+addu t8,sp,t7
+addiu t3,t6,0xFFE0
+sb t3,0x38(t8)
+
+//802B276C
+seek(0x893D3C+0xE8)
+sb t4,5(t1)
+addiu t2,sp,0x38
+lbu t6,5(t2)
+sb t6,2(t2)
+addiu t5,0,0xAE
+addiu t3,sp,0x38
+sb t5,8(t3)
+addiu t7,0,0x1A
+addiu t8,sp,0x38
+sb t7,0xE(t8)
+addiu t9,sp,0x38
+lbu t0,0xE(t9)
+sb t0,0xB(t9)
+addiu t4,sp,0x38
+sb 0,0x11(t4)
