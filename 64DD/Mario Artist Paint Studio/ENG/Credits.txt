@@ -1,4 +1,4 @@
-Mario Artist Paint Studio - English Translation v2.0
+Mario Artist Paint Studio - English Translation v2.01
 
 Credits:
 LuigiBlood - Project Leader, Translator, Hacking, Graphic Design
@@ -9,3 +9,9 @@ SourceGaming Team - Translation Help
 Zoinkity - GameBoy Camera International Hack (and more)
 Higsby - Translation help
 kaialone - Translation help
+
+Changelog:
+v2.01:
+- Change "Cartridge" to "GB Game Pak" in Game Boy Camera menu.
+- Fix Disk Error repointing
+- Fix Save & Load File Date & Time Rendering
