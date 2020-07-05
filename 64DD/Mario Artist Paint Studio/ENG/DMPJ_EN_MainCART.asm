@@ -12,7 +12,7 @@ output "Mario Artist - Paint Studio.n64", create
 origin 0x000000; insert "NUD-DMPJ-JPN.n64" // Include Japanese Mario Artist - Paint Studio N64 Cart Port ROM
 
 origin 0x10
-dw 0x8FCDC745, 0x7AE56CE6
+dw 0xE2EA8C91, 0x43582578
 
 include "N64_CPUREGS.asm"
 
