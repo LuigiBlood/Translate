@@ -761,116 +761,63 @@ dw (save4_e38),(save4_e55),0
 dw (save4_e53),0
 
 outputGame()
-seek(0x88A7B6)
-dh (save4_1)
+seek(0x88A7B6); dh (save4_1)
 
-seek(0x88B746)
-dh (save4_2)
-seek(0x88B746+0x8)
-//dh $0091	//X Pos
-seek(0x88B746+0x10)
-dh $004B	//Y Pos
-seek(0x88B75E)
-dh (save4_3)
-seek(0x88B75E+0x8)
-//dh $0091	//X Pos
-seek(0x88B75E+0x10)
-//dh $0050	//Y Pos
+seek(0x88B746); dh (save4_2)
+seek(0x88B746+0x08); //dh $0091	//X Pos
+seek(0x88B746+0x10); dh $004B	//Y Pos
+seek(0x88B75E); dh (save4_3)
+seek(0x88B75E+0x8); //dh $0091	//X Pos
+seek(0x88B75E+0x10); //dh $0050	//Y Pos
 
-seek(0x88B77E)
-//dh (save4_4)
-dh (save4_6)
-seek(0x88B77E+0x8)
-//dh $0091	//X Pos
-seek(0x88B77E+0x10)
-//dh $0046	//Y Pos
-seek(0x88B796)
-//dh (save4_6)
-dh (save4_4)
-seek(0x88B796+0x8)
-//dh $0091	//X Pos
-seek(0x88B796+0x10)
-//dh $0050	//Y Pos
+seek(0x88B77E); dh (save4_6) //dh (save4_4)
+seek(0x88B77E+0x08); //dh $0091	//X Pos
+seek(0x88B77E+0x10); //dh $0046	//Y Pos
+seek(0x88B796); dh (save4_4) //dh (save4_6)
+seek(0x88B796+0x08); //dh $0091	//X Pos
+seek(0x88B796+0x10); //dh $0050	//Y Pos
 
-seek(0x88B7B6)
-//dh (save4_5)
-dh (save4_6)
-seek(0x88B7B6+0x8)
-//dh $0091	//X Pos
-seek(0x88B7B6+0x10)
-//dh $0046	//Y Pos
-seek(0x88B7CE)
-//dh (save4_6)
-dh (save4_5)
-seek(0x88B7CE+0x8)
-//dh $0091	//X Pos
-seek(0x88B7CE+0x10)
-//dh $0050	//Y Pos
+seek(0x88B7B6); dh (save4_6) //dh (save4_5)
+seek(0x88B7B6+0x08); //dh $0091	//X Pos
+seek(0x88B7B6+0x10); //dh $0046	//Y Pos
+seek(0x88B7CE); dh (save4_5) //dh (save4_6)
+seek(0x88B7CE+0x08); //dh $0091	//X Pos
+seek(0x88B7CE+0x10); //dh $0050	//Y Pos
 
-seek(0x88B7EE)
-dh (save4_11)
-seek(0x88B7EE+0x8)
-//dh $0091	//X Pos
-seek(0x88B7EE+0x10)
-//dh $0046	//Y Pos
-seek(0x88B806)
-dh (save4_12)
-seek(0x88B806+0x8)
-//dh $0091	//X Pos
-seek(0x88B806+0x10)
-//dh $0050	//Y Pos
+seek(0x88B7EE); dh (save4_11)
+seek(0x88B7EE+0x08); //dh $0091	//X Pos
+seek(0x88B7EE+0x10); //dh $0046	//Y Pos
+seek(0x88B806); dh (save4_12)
+seek(0x88B806+0x08); //dh $0091	//X Pos
+seek(0x88B806+0x10); //dh $0050	//Y Pos
 
-seek(0x88B826)
-dh (save4_9)
-seek(0x88B826+0x8)
-//dh $0091	//X Pos
-seek(0x88B826+0x10)
-//dh $004B	//Y Pos
+seek(0x88B826); dh (save4_9)
+seek(0x88B826+0x08); //dh $0091	//X Pos
+seek(0x88B826+0x10); //dh $004B	//Y Pos
 
-seek(0x88B846)
-dh (save4_10)
-seek(0x88B846+0x8)
-//dh $0091	//X Pos
-seek(0x88B846+0x10)
-//dh $004B	//Y Pos
+seek(0x88B846); dh (save4_10)
+seek(0x88B846+0x08); //dh $0091	//X Pos
+seek(0x88B846+0x10); //dh $004B	//Y Pos
 
-seek(0x88B866)
-dh (save4_7)
-seek(0x88B866+0x8)
-//dh $0091	//X Pos
-seek(0x88B866+0x10)
-//dh $0046	//Y Pos
-seek(0x88B87E)
-dh (save4_8)
-seek(0x88B87E+0x8)
-//dh $0091	//X Pos
-seek(0x88B87E+0x10)
-//dh $0050	//Y Pos
+seek(0x88B866); dh (save4_7)
+seek(0x88B866+0x08); //dh $0091	//X Pos
+seek(0x88B866+0x10); //dh $0046	//Y Pos
+seek(0x88B87E); dh (save4_8)
+seek(0x88B87E+0x08); //dh $0091	//X Pos
+seek(0x88B87E+0x10); //dh $0050	//Y Pos
 
-seek(0x88CBAA)
-dh (save4_13)
-seek(0x88CBAA+0x8)
-dh $005F	//X Pos
-seek(0x88CBAA+0x10)
-//dh $0064	//Y Pos
-seek(0x88CBCA)
-dh (save4_15)
-seek(0x88CBCA+0x8)
-dh $0054	//X Pos
-seek(0x88CBCA+0x10)
-//dh $0064	//Y Pos
-seek(0x88CBE2)
-dh (save4_16)
-seek(0x88CBE2+0x8)
-//dh $005B	//X Pos
-seek(0x88CBE2+0x10)
-//dh $006D	//Y Pos
-seek(0x88CBFA)
-dh (save4_14)
-seek(0x88CBFA+0x8)
-dh $00C4	//X Pos
-seek(0x88CBFA+0x10)
-//dh $0064	//Y Pos
+seek(0x88CBAA); dh (save4_13)
+seek(0x88CBAA+0x08); dh $005F	//X Pos
+seek(0x88CBAA+0x10); //dh $0064	//Y Pos
+seek(0x88CBCA); dh (save4_15)
+seek(0x88CBCA+0x08); dh $0054	//X Pos
+seek(0x88CBCA+0x10); //dh $0064	//Y Pos
+seek(0x88CBE2); dh (save4_16)
+seek(0x88CBE2+0x08); //dh $005B	//X Pos
+seek(0x88CBE2+0x10); //dh $006D	//Y Pos
+seek(0x88CBFA); dh (save4_14)
+seek(0x88CBFA+0x08); dh $00C4	//X Pos
+seek(0x88CBFA+0x10); //dh $0064	//Y Pos
 
 seek(0x88D55E); dh (save4_e56)
 seek(0x88D5C2); dh (save4_e56)
@@ -940,8 +887,7 @@ seek(0x89C7AE); dh (save5_3)
 
 //0x22 - Insert original disk
 seek(0x89C7D2); dh (save5_8)
-//seek(0x89C7DE); dh (save5_2)
-seek(0x89C7DE); dh (save5_3)
+seek(0x89C7DE); dh (save5_3) //dh (save5_2)
 
 
 //--Kanji Menu Text
@@ -952,46 +898,44 @@ save6_1:
 textEntryH0("* Please select the beginning of the kanji *")
 
 outputGame()
-seek(0x89A2D2)
-dh (save6_1)
-seek(0x89A2DA)
-dh 0x003E	//X Pos
+seek(0x89A2D2); dh (save6_1)
+seek(0x89A2DA); dh 0x003E	//X Pos
 
 
-//Function Text + Kanji Font Rendering
+//Function Text + Kanji Font Rendering (802B8FD4)
 //Test these: き せ み and last (symbols)
-//seek(0x2A0224+0x114)
-//addiu at,0,8
+seek(0x89A68C+0x114)
+addiu at,0,8
 
-//seek(0x2A0224+0x128)
-//ori t5,t4,0
-//seek(0x2A0224+0x130)
-//sb t3,0x58(t6)
+seek(0x89A68C+0x128)
+ori t5,t4,0
+seek(0x89A68C+0x130)
+sb t3,0x58(t6)
 
-//seek(0x2A0224+0x170)
-//ori t5,t3,0
-//seek(0x2A0224+0x17C)
-//sb t4,0x58(t6)
+seek(0x89A68C+0x170)
+ori t5,t3,0
+seek(0x89A68C+0x17C)
+sb t4,0x58(t6)
 
-//seek(0x2A0224+0x1A8)
-//ori t2,t1,0
-//seek(0x2A0224+0x1B0)
-//sb t0,0x58(t3)
+seek(0x89A68C+0x1A8)
+ori t2,t1,0
+seek(0x89A68C+0x1B0)
+sb t0,0x58(t3)
 
-//seek(0x2A0224+0x1DC)
-//ori t9,t8,0
-//seek(0x2A0224+0x1E4)
-//sb t7,0x58(t1)
+seek(0x89A68C+0x1DC)
+ori t9,t8,0
+seek(0x89A68C+0x1E4)
+sb t7,0x58(t1)
 
-//seek(0x2A0224+0x204)
-//ori t5,t4,0
-//seek(0x2A0224+0x20C)
-//sb t3,0x58(t6)
+seek(0x89A68C+0x204)
+ori t5,t4,0
+seek(0x89A68C+0x20C)
+sb t3,0x58(t6)
 
-//seek(0x2A0224+0x240)
-//ori t3,t4,0
-//seek(0x2A0224+0x248)
-//sb 0,0x58(t5)
+seek(0x89A68C+0x240)
+ori t3,t4,0
+seek(0x89A68C+0x248)
+sb 0,0x58(t5)
 
 //Symbols Menu
 outputFile("./Temp/8AD9F0.17453.SaveLoad.yay1.bin")
