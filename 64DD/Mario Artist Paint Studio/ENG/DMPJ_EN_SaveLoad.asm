@@ -1053,3 +1053,31 @@ sb t4,0(t5)
 seek(0x2E535C)
 db $40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$00,$00,$00
 db $40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$40,$00,$00,$00
+
+
+//--Date & Time Text Generation - RAM 8007F6D8
+//Function (Disk 0x299904 / RAM 802B5634)
+//802B56F0
+seek(0x299904+0xBC)
+addiu t7,t5,0
+addu t8,sp,t7
+addiu t3,t6,0xFFE0
+sb t3,0x38(t8)
+
+//802B571C
+seek(0x299904+0xE8)
+sb t4,5(t1)
+addiu t2,sp,0x38
+lbu t6,5(t2)
+sb t6,2(t2)
+addiu t5,0,0xAE
+addiu t3,sp,0x38
+sb t5,8(t3)
+addiu t7,0,0x1A
+addiu t8,sp,0x38
+sb t7,0xE(t8)
+addiu t9,sp,0x38
+lbu t0,0xE(t9)
+sb t0,0xB(t9)
+addiu t4,sp,0x38
+sb 0,0x11(t4)
