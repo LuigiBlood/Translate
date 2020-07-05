@@ -4,7 +4,7 @@
 //Thanks to
 //- SourceGaming (for some translation help)
 //- Zoinkity (GameBoy Camera hack)
-print "Mario Artist Paint Studio - English translation (Cartridge) v2.01\n"
+print "Mario Artist Paint Studio - English translation (Cartridge) v2.1\n"
 
 arch n64.cpu
 endian msb
