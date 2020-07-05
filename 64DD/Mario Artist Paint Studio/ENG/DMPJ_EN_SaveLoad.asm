@@ -59,50 +59,50 @@ lbu t4,0(a0)
 //--Menus (Disk 0x2AAAD0 / RAM 802C6800)
 seek(0x2AAAD0)
 save1_1:
-textEntryH("Exit")			//‚Å‚é
+textEntryH("Exit")			//ã§ã‚‹
 save1_2:
-textEntryH("Save")			//‚³‚­‚Ğ‚ñƒZ[ƒu
+textEntryH("Save")			//ã•ãã²ã‚“ã‚»ãƒ¼ãƒ–
 save1_3:
-textEntryH("Load")			//‚³‚­‚Ğ‚ñƒ[ƒh
+textEntryH("Load")			//ã•ãã²ã‚“ãƒ­ãƒ¼ãƒ‰
 save1_4:
-textEntryH("Rename")			//‚È‚Ü‚¦‚Ö‚ñ‚±‚¤
+textEntryH("Rename")			//ãªã¾ãˆã¸ã‚“ã“ã†
 save1_5:
-textEntryH("Delete")			//‚³‚­‚Ğ‚ñ‚Ì‚³‚­‚¶‚å
+textEntryH("Delete")			//ã•ãã²ã‚“ã®ã•ãã˜ã‚‡
 save1_6:
-textEntryH("Move/Copy")			//‚³‚­‚Ğ‚ñ‚Ì‚¢‚Ç‚¤EƒRƒs[
+textEntryH("Move/Copy")			//ã•ãã²ã‚“ã®ã„ã©ã†ãƒ»ã‚³ãƒ”ãƒ¼
 save1_7:
-textEntryH("Create Container")		//‚¢‚ê‚à‚Ì‚³‚­‚¹‚¢
+textEntryH("Create Container")		//ã„ã‚Œã‚‚ã®ã•ãã›ã„
 save1_8:
-textEntryH("Change Disk")		//ƒfƒBƒXƒN‚Ì‚¢‚ê‚©‚¦
+textEntryH("Change Disk")		//ãƒ‡ã‚£ã‚¹ã‚¯ã®ã„ã‚Œã‹ãˆ
 
 save1_9:
-textEntryH("Hiragana")			//‚Ğ‚ç‚ª‚È
+textEntryH("Hiragana")			//ã²ã‚‰ãŒãª
 save1_10:
-textEntryH("Katakana")			//ƒJƒ^ƒJƒi
+textEntryH("Katakana")			//ã‚«ã‚¿ã‚«ãƒŠ
 save1_11:
-textEntryH("AaBbCc")			//‚¦‚¢‚·‚¤
+textEntryH("AaBbCc")			//ãˆã„ã™ã†
 save1_12:
-textEntryH("Kanji/Symbols")		//‚©‚ñ‚¶/‚«‚²‚¤
+textEntryH("Kanji/Symbols")		//ã‹ã‚“ã˜/ãã”ã†
 save1_13:
-textEntryH("All")			//‚Ğ‚ç‚ª‚È/ƒJƒ^ƒJƒi/‚¦‚¢‚·‚¤
+textEntryH("All")			//ã²ã‚‰ãŒãª/ã‚«ã‚¿ã‚«ãƒŠ/ãˆã„ã™ã†
 save1_14:
-textEntryH("Space")			//‚­‚¤‚Í‚­
+textEntryH("Space")			//ãã†ã¯ã
 save1_15:
-textEntryH("Left")			//‚à‚Ç‚é
+textEntryH("Left")			//ã‚‚ã©ã‚‹
 save1_16:
-textEntryH("Right")			//‚·‚·‚Ş
+textEntryH("Right")			//ã™ã™ã‚€
 save1_17:
-textEntryH("Erase")			//1 ‚à‚¶‚¯‚·
+textEntryH("Erase")			//1 ã‚‚ã˜ã‘ã™
 save1_18:
-textEntryH("Erase All")			//‚·‚×‚Ä‚¯‚·
+textEntryH("Erase All")			//ã™ã¹ã¦ã‘ã™
 save1_19:
-textEntryH("Undo")			//‚â‚è‚È‚¨‚µ
+textEntryH("Undo")			//ã‚„ã‚ŠãªãŠã—
 save1_20:
-textEntryH("Done")			//‚¯‚Á‚Ä‚¢
+textEntryH("Done")			//ã‘ã£ã¦ã„
 save1_21:
-textEntryH("Back")			//‚à‚Ç‚é
+textEntryH("Back")			//ã‚‚ã©ã‚‹
 save1_22:
-textEntryH("Next")			//ƒy[ƒW‚¨‚­‚è
+textEntryH("Next")			//ãƒšãƒ¼ã‚¸ãŠãã‚Š
 
 seek(0x2AAC1C)
 textEntrySkip(16); dw (save1_1)
@@ -134,7 +134,7 @@ textEntrySkip(16); dw (save1_20)
 
 //--Kanji/Symbol Page Number (Disk 0x2AADFC / RAM 802C6B2C)
 seek(0x2AADFC)
-textEntryH("1/1")			//1/1ƒy[ƒW
+textEntryH("1/1")			//1/1ãƒšãƒ¼ã‚¸
 
 seek(0x28FD28)
 sb t1,0(t2)
@@ -144,262 +144,262 @@ sb t4,2(t5)
 
 //--New Save (Disk 0x2AAFE8 / RAM 802C6C18)
 seek(0x2AAFE8)
-textEntryH("New Save")			//‚ ‚½‚ç‚µ‚­ƒZ[ƒu‚·‚é
+textEntryH("New Save")			//ã‚ãŸã‚‰ã—ãã‚»ãƒ¼ãƒ–ã™ã‚‹
 
 
 //--Move / Copy (Disk 0x2AB050 / RAM 802C6D80)
 seek(0x2AB050)
-textEntryH("Move")			//‚¢‚Ç‚¤
+textEntryH("Move")			//ã„ã©ã†
 seek(0x2AB058)
-textEntryH("Copy")			//ƒRƒs[
+textEntryH("Copy")			//ã‚³ãƒ”ãƒ¼
 
 
 //--Kind Menuing (Disk 0x2E00C0 / RAM 802FBDF0)
 seek(0x2E00C0)
 save2_1:
-//RAM 802FBDF0 - ƒeƒXƒg
+//RAM 802FBDF0 - ãƒ†ã‚¹ãƒˆ
 textEntryH("Test")
 save2_2:
-//RAM 802FBDF8 - ‚Ğ‚¾‚è‚©‚ç ‚¦‚ç‚ñ‚Å‚­‚¾‚³‚¢
+//RAM 802FBDF8 - ã²ã ã‚Šã‹ã‚‰ ãˆã‚‰ã‚“ã§ãã ã•ã„
 textEntryH("Please choose from the left menu.")
 
 save2_3:
-//RAM 802FBE18 - ‚±‚Ì‚³‚­‚Ğ‚ñ‚ğƒZ[ƒu‚·‚é‚¢‚ê‚à‚Ì‚ğ ‚¦‚ç‚ñ‚Å‚­‚¾‚³‚¢
+//RAM 802FBE18 - ã“ã®ã•ãã²ã‚“ã‚’ã‚»ãƒ¼ãƒ–ã™ã‚‹ã„ã‚Œã‚‚ã®ã‚’ ãˆã‚‰ã‚“ã§ãã ã•ã„
 textEntryH("Please select the container to save to.")
 save2_4:
-//RAM 802FBE50 - ‚±‚Ì‚¢‚ê‚à‚Ì‚Í ‚¢‚Á‚Ï‚¢‚Å‚·
+//RAM 802FBE50 - ã“ã®ã„ã‚Œã‚‚ã®ã¯ ã„ã£ã±ã„ã§ã™
 textEntryH("This container is full.")
 save2_5:
-//RAM 802FBE70 - ‚±‚Ì‚³‚­‚Ğ‚ñ‚ğ ‚ ‚½‚ç‚µ‚­ ƒZ[ƒu‚µ‚Ü‚·‚©?
+//RAM 802FBE70 - ã“ã®ã•ãã²ã‚“ã‚’ ã‚ãŸã‚‰ã—ã ã‚»ãƒ¼ãƒ–ã—ã¾ã™ã‹?
 textEntryH("Do you want to save this file as new?")
 save2_6:
-//RAM 802FBEA0 - (‚¤‚í‚ª‚«‚·‚é‚Æ‚«‚Í ‚İ‚¬‚©‚ç ‚¦‚ç‚ñ‚Å‚­‚¾‚³‚¢)
+//RAM 802FBEA0 - (ã†ã‚ãŒãã™ã‚‹ã¨ãã¯ ã¿ãã‹ã‚‰ ãˆã‚‰ã‚“ã§ãã ã•ã„)
 textEntryH("(Select a file on the right side to overwrite)")
 save2_7:
-//RAM 802FBED4 - ‚±‚±‚ÉƒZ[ƒu‚µ‚Ü‚·‚©?
+//RAM 802FBED4 - ã“ã“ã«ã‚»ãƒ¼ãƒ–ã—ã¾ã™ã‹?
 textEntryH("Do you want to overwrite this file?")
 save2_8:
-//RAM 802FBEEC - ‚Ü‚¦‚Ì‚³‚­‚Ğ‚ñ‚ª ‚«‚¦‚Ü‚·‚ª ‚¢‚¢‚Å‚·‚©?
+//RAM 802FBEEC - ã¾ãˆã®ã•ãã²ã‚“ãŒ ããˆã¾ã™ãŒ ã„ã„ã§ã™ã‹?
 textEntryH("Are you sure?\nThis file will be overwritten.")
 save2_9:
-//RAM 802FBF18 - ‚ ‚½‚ç‚µ‚­ƒZ[ƒu‚·‚é‚±‚Æ‚Í ‚Å‚«‚Ü‚¹‚ñ
+//RAM 802FBF18 - ã‚ãŸã‚‰ã—ãã‚»ãƒ¼ãƒ–ã™ã‚‹ã“ã¨ã¯ ã§ãã¾ã›ã‚“
 textEntryH("You cannot save a new file.")
 save2_10:
-//RAM 802FBF40 - ƒZ[ƒu‚µ‚Ä‚¢‚Ü‚·c
+//RAM 802FBF40 - ã‚»ãƒ¼ãƒ–ã—ã¦ã„ã¾ã™â€¦
 textEntryH("Saving...")
 save2_11:
-//RAM 802FBF54 - (‚ ‚Á‚µ‚ã‚­‚É ‚¶‚©‚ñ‚ª ‚©‚©‚è‚Ü‚·)
+//RAM 802FBF54 - (ã‚ã£ã—ã‚…ãã« ã˜ã‹ã‚“ãŒ ã‹ã‹ã‚Šã¾ã™)
 textEntryH("(The compression will take a moment.)")
 save2_12:
-//RAM 802FBF7C - ‚³‚­‚Ğ‚ñ‚É ‚È‚Ü‚¦‚ğ ‚Â‚¯‚Ü‚·‚©?
+//RAM 802FBF7C - ã•ãã²ã‚“ã« ãªã¾ãˆã‚’ ã¤ã‘ã¾ã™ã‹?
 textEntryH("Do you want to give this file a name?")
 save2_13:
-//RAM 802FBFA0 - (‚Â‚¯‚È‚¢‚Æ‚«‚Í ‚µ‚½‚Ì‚È‚Ü‚¦‚É‚È‚è‚Ü‚·)
+//RAM 802FBFA0 - (ã¤ã‘ãªã„ã¨ãã¯ ã—ãŸã®ãªã¾ãˆã«ãªã‚Šã¾ã™)
 textEntryH("(The name below will be used if not.)")
 save2_14:
-//RAM 802FBFCC - ‚È‚Ü‚¦‚ğ ‚Â‚¯‚Ä‚¢‚Ü‚·c
+//RAM 802FBFCC - ãªã¾ãˆã‚’ ã¤ã‘ã¦ã„ã¾ã™â€¦
 textEntryH("Saving Name...")
 
 save2_15:
-//RAM 802FBFE8 - ‚¢‚ê‚à‚Ì‚ª ‚ ‚è‚Ü‚¹‚ñ
+//RAM 802FBFE8 - ã„ã‚Œã‚‚ã®ãŒ ã‚ã‚Šã¾ã›ã‚“
 textEntryH("There is no container.")
 save2_16:
-//RAM 802FC000 - ƒ[ƒh‚·‚é‚³‚­‚Ğ‚ñ‚Ì ‚¢‚ê‚à‚Ì‚ğ ‚¦‚ç‚ñ‚Å‚­‚¾‚³‚¢
+//RAM 802FC000 - ãƒ­ãƒ¼ãƒ‰ã™ã‚‹ã•ãã²ã‚“ã® ã„ã‚Œã‚‚ã®ã‚’ ãˆã‚‰ã‚“ã§ãã ã•ã„
 textEntryH("Please select the container to load from.")
 save2_17:
-//RAM 802FC034 - ƒ[ƒh‚·‚é‚³‚­‚Ğ‚ñ‚ğ ‚¦‚ç‚ñ‚Å‚­‚¾‚³‚¢
+//RAM 802FC034 - ãƒ­ãƒ¼ãƒ‰ã™ã‚‹ã•ãã²ã‚“ã‚’ ãˆã‚‰ã‚“ã§ãã ã•ã„
 textEntryH("Please select the file to load.")
 save2_18:
-//RAM 802FC05C - ‚±‚Ì‚³‚­‚Ğ‚ñ‚ğ ƒ[ƒh‚µ‚Ü‚·‚©?
+//RAM 802FC05C - ã“ã®ã•ãã²ã‚“ã‚’ ãƒ­ãƒ¼ãƒ‰ã—ã¾ã™ã‹?
 textEntryH("Do you want to load this file?")
 save2_19:
-//RAM 802FC080 - (‚¿‚ª‚¤‚Æ‚«‚Í ‚İ‚¬‚©‚ç‚¦‚ç‚Ñ‚È‚¨‚µ‚Ä‚­‚¾‚³‚¢)
+//RAM 802FC080 - (ã¡ãŒã†ã¨ãã¯ ã¿ãã‹ã‚‰ãˆã‚‰ã³ãªãŠã—ã¦ãã ã•ã„)
 textEntryH("(If not, select another file on the right side.)")
 save2_20:
-//RAM 802FC0B4 - ‚±‚Ì‚¢‚ê‚à‚Ì‚É‚Í ‚³‚­‚Ğ‚ñ‚ª ‚Í‚¢‚Á‚Ä‚¢‚Ü‚¹‚ñ
+//RAM 802FC0B4 - ã“ã®ã„ã‚Œã‚‚ã®ã«ã¯ ã•ãã²ã‚“ãŒ ã¯ã„ã£ã¦ã„ã¾ã›ã‚“
 textEntryH("This container is empty.")
 save2_21:
-//RAM 802FC0E4 - ‚°‚ñ‚´‚¢‚Ì‚³‚­‚Ğ‚ñ‚Í ƒZ[ƒu‚³‚ê‚Ä‚¢‚Ü‚¹‚ñ‚ª\n‚¢‚¢‚Å‚·‚©?
+//RAM 802FC0E4 - ã’ã‚“ã–ã„ã®ã•ãã²ã‚“ã¯ ã‚»ãƒ¼ãƒ–ã•ã‚Œã¦ã„ã¾ã›ã‚“ãŒ\nã„ã„ã§ã™ã‹?
 textEntryH("The current creation will be lost.\nAre you sure?")
 save2_22:
-//RAM 802FC120 - ƒ[ƒh‚µ‚Ä‚¢‚Ü‚·c
+//RAM 802FC120 - ãƒ­ãƒ¼ãƒ‰ã—ã¦ã„ã¾ã™â€¦
 textEntryH("Loading...")
 
 save2_23:
-//RAM 802FC134 - ‚Ç‚¿‚ç‚ğ ‚³‚­‚¶‚å ‚µ‚Ü‚·‚©?
+//RAM 802FC134 - ã©ã¡ã‚‰ã‚’ ã•ãã˜ã‚‡ ã—ã¾ã™ã‹?
 textEntryH("What do you want to delete?")
 save2_24:
-//RAM 802FC154 - ‚È‚©‚İ‚ğ ‚³‚­‚¶‚å‚·‚é‚¢‚ê‚à‚Ì‚ğ ‚¦‚ç‚ñ‚Å‚­‚¾‚³‚¢
+//RAM 802FC154 - ãªã‹ã¿ã‚’ ã•ãã˜ã‚‡ã™ã‚‹ã„ã‚Œã‚‚ã®ã‚’ ãˆã‚‰ã‚“ã§ãã ã•ã„
 textEntryH("Please select the container\nyou want to delete the contents from.")
 save2_25:
-//RAM 802FC188 - ‚±‚Ì‚¢‚ê‚à‚Ì‚Ì ‚È‚©‚İ‚ğ ‚³‚­‚¶‚å ‚µ‚Ü‚·‚©?
+//RAM 802FC188 - ã“ã®ã„ã‚Œã‚‚ã®ã® ãªã‹ã¿ã‚’ ã•ãã˜ã‚‡ ã—ã¾ã™ã‹?
 textEntryH("Do you want to delete the contents\nof this container?")
 save2_26:
-//RAM 802FC1B8 - ‚³‚­‚¶‚å‚·‚é ‚³‚­‚Ğ‚ñ‚Ì‚¢‚ê‚à‚Ì‚ğ ‚¦‚ç‚ñ‚Å‚­‚¾‚³‚¢
+//RAM 802FC1B8 - ã•ãã˜ã‚‡ã™ã‚‹ ã•ãã²ã‚“ã®ã„ã‚Œã‚‚ã®ã‚’ ãˆã‚‰ã‚“ã§ãã ã•ã„
 textEntryH("Please select the container that contains\nthe file you want to delete.")
 save2_27:
-//RAM 802FC1F0 - ‚³‚­‚¶‚å‚·‚é ‚³‚­‚Ğ‚ñ‚ğ ‚¦‚ç‚ñ‚Å‚­‚¾‚³‚¢
+//RAM 802FC1F0 - ã•ãã˜ã‚‡ã™ã‚‹ ã•ãã²ã‚“ã‚’ ãˆã‚‰ã‚“ã§ãã ã•ã„
 textEntryH("Please select the file you want to delete.")
 save2_28:
-//RAM 802FC21C - ‚±‚Ì‚³‚­‚Ğ‚ñ‚ğ ‚³‚­‚¶‚å ‚µ‚Ü‚·‚©?
+//RAM 802FC21C - ã“ã®ã•ãã²ã‚“ã‚’ ã•ãã˜ã‚‡ ã—ã¾ã™ã‹?
 textEntryH("Are you sure you want to delete this file?")
 save2_29:
-//RAM 802FC244 - ‚³‚­‚¶‚å ‚µ‚Ä‚¢‚Ü‚·c
+//RAM 802FC244 - ã•ãã˜ã‚‡ ã—ã¦ã„ã¾ã™â€¦
 textEntryH("Deleting...")
 
 save2_30:
-//RAM 802FC25C - ‚Ç‚¿‚ç‚Ì‚È‚Ü‚¦‚ğ ‚Ö‚ñ‚±‚¤ ‚µ‚Ü‚·‚©?
+//RAM 802FC25C - ã©ã¡ã‚‰ã®ãªã¾ãˆã‚’ ã¸ã‚“ã“ã† ã—ã¾ã™ã‹?
 textEntryH("What do you want to rename?")
 save2_31:
-//RAM 802FC284 - ‚È‚Ü‚¦‚ğ ‚Ö‚ñ‚±‚¤‚·‚é‚¢‚ê‚à‚Ì‚ğ ‚¦‚ç‚ñ‚Å‚­‚¾‚³‚¢
+//RAM 802FC284 - ãªã¾ãˆã‚’ ã¸ã‚“ã“ã†ã™ã‚‹ã„ã‚Œã‚‚ã®ã‚’ ãˆã‚‰ã‚“ã§ãã ã•ã„
 textEntryH("Please select the container\nyou want to rename.")
 save2_32:
-//RAM 802FC2B8 - ‚±‚Ì‚¢‚ê‚à‚Ì‚Ì ‚È‚Ü‚¦‚ğ ‚Ö‚ñ‚±‚¤‚µ‚Ü‚·‚©?
+//RAM 802FC2B8 - ã“ã®ã„ã‚Œã‚‚ã®ã® ãªã¾ãˆã‚’ ã¸ã‚“ã“ã†ã—ã¾ã™ã‹?
 textEntryH("Do you want to rename this container?")
 save2_33:
-//RAM 802FC2E8 - ‚È‚Ü‚¦‚ğ ‚Ö‚ñ‚±‚¤‚·‚é‚³‚­‚Ğ‚ñ‚Ì ‚¢‚ê‚à‚Ì‚ğ\n‚¦‚ç‚ñ‚Å‚­‚¾‚³‚¢
+//RAM 802FC2E8 - ãªã¾ãˆã‚’ ã¸ã‚“ã“ã†ã™ã‚‹ã•ãã²ã‚“ã® ã„ã‚Œã‚‚ã®ã‚’\nãˆã‚‰ã‚“ã§ãã ã•ã„
 textEntryH("Please select the container that contains\nthe file you want to rename.")
 save2_34:
-//RAM 802FC328 - ‚È‚Ü‚¦‚ğ ‚Ö‚ñ‚±‚¤‚·‚é‚³‚­‚Ğ‚ñ‚ğ ‚¦‚ç‚ñ‚Å‚­‚¾‚³‚¢
+//RAM 802FC328 - ãªã¾ãˆã‚’ ã¸ã‚“ã“ã†ã™ã‚‹ã•ãã²ã‚“ã‚’ ãˆã‚‰ã‚“ã§ãã ã•ã„
 textEntryH("Please select the file you want to rename.")
 save2_35:
-//RAM 802FC35C - ‚±‚Ì‚³‚­‚Ğ‚ñ‚Ì ‚È‚Ü‚¦‚ğ ‚Ö‚ñ‚±‚¤ ‚µ‚Ü‚·‚©?
+//RAM 802FC35C - ã“ã®ã•ãã²ã‚“ã® ãªã¾ãˆã‚’ ã¸ã‚“ã“ã† ã—ã¾ã™ã‹?
 textEntryH("Do you want to rename this file?")
 save2_36:
-//RAM 802FC38C - ‚È‚Ü‚¦‚ğ ‚Ö‚ñ‚±‚¤ ‚µ‚Ä‚¢‚Ü‚·c
+//RAM 802FC38C - ãªã¾ãˆã‚’ ã¸ã‚“ã“ã† ã—ã¦ã„ã¾ã™â€¦
 textEntryH("Renaming...")
 
 save2_37:
-//RAM 802FC3B0 - ‚µ‚½‚©‚ç ‚¦‚ç‚ñ‚Å‚­‚¾‚³‚¢
+//RAM 802FC3B0 - ã—ãŸã‹ã‚‰ ãˆã‚‰ã‚“ã§ãã ã•ã„
 textEntryH("What do you want to do?")
 save2_38:
-//RAM 802FC3CC - ‚Ç‚¿‚ç‚ğ ‚¢‚Ç‚¤ ‚µ‚Ü‚·‚©?
+//RAM 802FC3CC - ã©ã¡ã‚‰ã‚’ ã„ã©ã† ã—ã¾ã™ã‹?
 textEntryH("What do you want to move?")
 save2_39:
-//RAM 802FC3EC - ‚È‚©‚İ‚ğ ‚¢‚Ç‚¤‚·‚é‚¢‚ê‚à‚Ì‚ğ ‚¦‚ç‚ñ‚Å‚­‚¾‚³‚¢
+//RAM 802FC3EC - ãªã‹ã¿ã‚’ ã„ã©ã†ã™ã‚‹ã„ã‚Œã‚‚ã®ã‚’ ãˆã‚‰ã‚“ã§ãã ã•ã„
 textEntryH("Please select the container\nto move all its contents from.")
 save2_40:
-//RAM 802FC420 - ‚¢‚Ç‚¤‚·‚é‚³‚«‚Ì ‚¢‚ê‚à‚Ì‚ğ ‚¦‚ç‚ñ‚Å‚­‚¾‚³‚¢
+//RAM 802FC420 - ã„ã©ã†ã™ã‚‹ã•ãã® ã„ã‚Œã‚‚ã®ã‚’ ãˆã‚‰ã‚“ã§ãã ã•ã„
 textEntryH("Please select the destination container\nto move files to.")
 save2_41:
-//RAM 802FC450 - ‚³‚­‚Ğ‚ñ‚ğ ‚·‚×‚Ä ‚¢‚Ç‚¤‚µ‚Ä‚à ‚¢‚¢‚Å‚·‚©?
+//RAM 802FC450 - ã•ãã²ã‚“ã‚’ ã™ã¹ã¦ ã„ã©ã†ã—ã¦ã‚‚ ã„ã„ã§ã™ã‹?
 textEntryH("Do you want to move all its contents?")
 save2_42:
-//RAM 802FC480 - ‚¢‚Ç‚¤‚·‚é‚³‚­‚Ğ‚ñ‚Ì ‚¢‚ê‚à‚Ì‚ğ ‚¦‚ç‚ñ‚Å‚­‚¾‚³‚¢
+//RAM 802FC480 - ã„ã©ã†ã™ã‚‹ã•ãã²ã‚“ã® ã„ã‚Œã‚‚ã®ã‚’ ãˆã‚‰ã‚“ã§ãã ã•ã„
 textEntryH("Please select the container\nto move a file from.")
 save2_43:
-//RAM 802FC4B4 - ‚¢‚Ç‚¤‚·‚é‚³‚­‚Ğ‚ñ‚ğ ‚¦‚ç‚ñ‚Å‚­‚¾‚³‚¢
+//RAM 802FC4B4 - ã„ã©ã†ã™ã‚‹ã•ãã²ã‚“ã‚’ ãˆã‚‰ã‚“ã§ãã ã•ã„
 textEntryH("Please select a file to move.")
 save2_44:
-//RAM 802FC4DC - ‚±‚Ì‚³‚­‚Ğ‚ñ‚ğ ‚¢‚Ç‚¤ ‚µ‚Ü‚·‚©?
+//RAM 802FC4DC - ã“ã®ã•ãã²ã‚“ã‚’ ã„ã©ã† ã—ã¾ã™ã‹?
 textEntryH("Do you want to move this file?")
 save2_45:
-//RAM 802FC500 - ‚¢‚Ç‚¤ ‚µ‚Ä‚¢‚Ü‚·c
+//RAM 802FC500 - ã„ã©ã† ã—ã¦ã„ã¾ã™â€¦
 textEntryH("Moving...")
 save2_46:
-//RAM 802FC518 - ‚Ç‚¿‚ç‚ğ ƒRƒs[‚µ‚Ü‚·‚©?
+//RAM 802FC518 - ã©ã¡ã‚‰ã‚’ ã‚³ãƒ”ãƒ¼ã—ã¾ã™ã‹?
 textEntryH("What do you want to copy?")
 save2_47:
-//RAM 802FC534 - ƒRƒs[‚·‚é‚¢‚ê‚à‚Ì‚ğ ‚¦‚ç‚ñ‚Å‚­‚¾‚³‚¢
+//RAM 802FC534 - ã‚³ãƒ”ãƒ¼ã™ã‚‹ã„ã‚Œã‚‚ã®ã‚’ ãˆã‚‰ã‚“ã§ãã ã•ã„
 textEntryH("Please select the container to copy from.")
 save2_48:
-//RAM 802FC55C - ƒRƒs[‚·‚é‚³‚«‚Ì ‚¢‚ê‚à‚Ì‚ğ ‚¦‚ç‚ñ‚Å‚­‚¾‚³‚¢
+//RAM 802FC55C - ã‚³ãƒ”ãƒ¼ã™ã‚‹ã•ãã® ã„ã‚Œã‚‚ã®ã‚’ ãˆã‚‰ã‚“ã§ãã ã•ã„
 textEntryH("Please select the destination\ncontainer to copy files to.")
 save2_49:
-//RAM 802FC58C - ‚³‚­‚Ğ‚ñ‚ğ ‚·‚×‚Ä ƒRƒs[‚µ‚Ü‚·‚©?
+//RAM 802FC58C - ã•ãã²ã‚“ã‚’ ã™ã¹ã¦ ã‚³ãƒ”ãƒ¼ã—ã¾ã™ã‹?
 textEntryH("Do you want to copy all its contents?")
 save2_50:
-//RAM 802FC5B4 - ƒRƒs[‚·‚é‚³‚­‚Ğ‚ñ‚Ì ‚¢‚ê‚à‚Ì‚ğ ‚¦‚ç‚ñ‚Å‚­‚¾‚³‚¢
+//RAM 802FC5B4 - ã‚³ãƒ”ãƒ¼ã™ã‚‹ã•ãã²ã‚“ã® ã„ã‚Œã‚‚ã®ã‚’ ãˆã‚‰ã‚“ã§ãã ã•ã„
 textEntryH("Please select the container\nto copy a file from.")
 save2_51:
-//RAM 802FC5E8 - ƒRƒs[‚·‚é‚³‚­‚Ğ‚ñ‚ğ ‚¦‚ç‚ñ‚Å‚­‚¾‚³‚¢
+//RAM 802FC5E8 - ã‚³ãƒ”ãƒ¼ã™ã‚‹ã•ãã²ã‚“ã‚’ ãˆã‚‰ã‚“ã§ãã ã•ã„
 textEntryH("Please select a file to copy.")
 save2_52:
-//RAM 802FC610 - ‚±‚Ì‚³‚­‚Ğ‚ñ‚ğ ƒRƒs[‚µ‚Ü‚·‚©?
+//RAM 802FC610 - ã“ã®ã•ãã²ã‚“ã‚’ ã‚³ãƒ”ãƒ¼ã—ã¾ã™ã‹?
 textEntryH("Do you want to copy this file?")
 save2_53:
-//RAM 802FC634 - ƒRƒs[‚µ‚Ä‚¢‚Ü‚·c
+//RAM 802FC634 - ã‚³ãƒ”ãƒ¼ã—ã¦ã„ã¾ã™â€¦
 textEntryH("Copying...")
 
 save2_54:
-//RAM 802FC648 - ‚¢‚ê‚à‚Ì‚ğ‚³‚­‚¹‚¢‚µ‚Ä‚¢‚Ü‚·c
+//RAM 802FC648 - ã„ã‚Œã‚‚ã®ã‚’ã•ãã›ã„ã—ã¦ã„ã¾ã™â€¦
 textEntryH("Creating new container...")
 save2_55:
-//RAM 802FC668 - ‚±‚Ì‚¢‚ê‚à‚Ì‚É‚ ‚½‚ç‚µ‚¢‚È‚Ü‚¦‚ğ‚Â‚¯‚Ü‚·‚©?
+//RAM 802FC668 - ã“ã®ã„ã‚Œã‚‚ã®ã«ã‚ãŸã‚‰ã—ã„ãªã¾ãˆã‚’ã¤ã‘ã¾ã™ã‹?
 textEntryH("Do you want to name this new container?")
 save2_56:
-//RAM 802FC698 - ‚Ç‚¿‚ç‚Ì‚È‚ç‚Ñ‚©‚¦‚ğ‚µ‚Ü‚·‚©?
+//RAM 802FC698 - ã©ã¡ã‚‰ã®ãªã‚‰ã³ã‹ãˆã‚’ã—ã¾ã™ã‹?
 textEntryH("What do you want to do?")
 save2_57:
-//RAM 802FC6B8 - ‚Ç‚¤‚È‚ç‚Ñ‚©‚¦‚Ü‚·‚©?
+//RAM 802FC6B8 - ã©ã†ãªã‚‰ã³ã‹ãˆã¾ã™ã‹?
 textEntryH("What do you want to sort?")
 save2_58:
-//RAM 802FC6D0 - 2‚Â‚Ì‚¢‚ê‚à‚Ì‚Ì‚Î‚µ‚å‚ğ‚¢‚ê‚©‚¦‚Ü‚·
+//RAM 802FC6D0 - 2ã¤ã®ã„ã‚Œã‚‚ã®ã®ã°ã—ã‚‡ã‚’ã„ã‚Œã‹ãˆã¾ã™
 textEntryH("Swap the locations of 2 containers.")
 save2_59:
-//RAM 802FC6F8 - 1‚Â‚ß‚Ì‚¢‚ê‚à‚Ì‚ğ‚¦‚ç‚ñ‚Å‚­‚¾‚³‚¢
+//RAM 802FC6F8 - 1ã¤ã‚ã®ã„ã‚Œã‚‚ã®ã‚’ãˆã‚‰ã‚“ã§ãã ã•ã„
 textEntryH("Please select the first container.")
 save2_60:
-//RAM 802FC71C - 2‚Â‚ß‚Ì‚¢‚ê‚à‚Ì‚ğ‚¦‚ç‚ñ‚Å‚­‚¾‚³‚¢
+//RAM 802FC71C - 2ã¤ã‚ã®ã„ã‚Œã‚‚ã®ã‚’ãˆã‚‰ã‚“ã§ãã ã•ã„
 textEntryH("Please select the second container.")
 save2_61:
-//RAM 802FC740 - 2‚Â‚Ì‚¢‚ê‚à‚Ì‚Ì‚Î‚µ‚å‚ğ‚¢‚ê‚©‚¦‚Ä‚¢‚¢‚Å‚·‚©?
+//RAM 802FC740 - 2ã¤ã®ã„ã‚Œã‚‚ã®ã®ã°ã—ã‚‡ã‚’ã„ã‚Œã‹ãˆã¦ã„ã„ã§ã™ã‹?
 textEntryH("Do you want to swap the location\nof these two containers?")
 save2_62:
-//RAM 802FC770 - ƒtƒ@ƒCƒ‹‚¶‚å‚¤‚Ù‚¤‚ğ‚æ‚İ‚È‚¨‚µ‚Ä‚¢‚Ü‚·c
+//RAM 802FC770 - ãƒ•ã‚¡ã‚¤ãƒ«ã˜ã‚‡ã†ã»ã†ã‚’ã‚ˆã¿ãªãŠã—ã¦ã„ã¾ã™â€¦
 textEntryH("Reading the file information again...")
 save2_63:
-//RAM 802FC79C - ƒfƒBƒXƒN‚Ì ƒf[ƒ^‚è‚å‚¤‚¢‚«‚ğ ‚µ‚å‚«‚© ‚µ‚Ü‚·\n‚·‚×‚Ä‚Ì‚³‚­‚Ğ‚ñ‚ª ‚«‚¦‚Ä‚µ‚Ü‚¢‚Ü‚·‚ª ‚¢‚¢‚Å‚·‚©?
+//RAM 802FC79C - ãƒ‡ã‚£ã‚¹ã‚¯ã® ãƒ‡ãƒ¼ã‚¿ã‚Šã‚‡ã†ã„ãã‚’ ã—ã‚‡ãã‹ ã—ã¾ã™\nã™ã¹ã¦ã®ã•ãã²ã‚“ãŒ ããˆã¦ã—ã¾ã„ã¾ã™ãŒ ã„ã„ã§ã™ã‹?
 textEntryH("The contents of this disk will be gone.\nAre you sure you want to initialize the disk?")
 save2_64:
-//RAM 802FC804 - ‚¢‚ê‚à‚Ì‚ğ ‚ ‚½‚ç‚µ‚­ ‚³‚­‚¹‚¢‚µ‚Ü‚·‚©?
+//RAM 802FC804 - ã„ã‚Œã‚‚ã®ã‚’ ã‚ãŸã‚‰ã—ã ã•ãã›ã„ã—ã¾ã™ã‹?
 textEntryH("Do you want to create a new container?")
 
 save2_65:
-//RAM 802FC830 - ƒfƒBƒXƒN‚Ì‚±‚¤‚©‚ñ‚ğ‚¨‚±‚È‚¢‚Ü‚·
+//RAM 802FC830 - ãƒ‡ã‚£ã‚¹ã‚¯ã®ã“ã†ã‹ã‚“ã‚’ãŠã“ãªã„ã¾ã™
 textEntryH("Please change the disk.")
 save2_66:
-//RAM 802FC854 - ƒfƒBƒXƒN‚ğ‚Ê‚¢‚Ä‚­‚¾‚³‚¢
+//RAM 802FC854 - ãƒ‡ã‚£ã‚¹ã‚¯ã‚’ã¬ã„ã¦ãã ã•ã„
 textEntryH("Please eject the disk.")
 save2_67:
-//RAM 802FC870 - ƒfƒBƒXƒN‚ğ‚¢‚ê‚Ä‚­‚¾‚³‚¢
+//RAM 802FC870 - ãƒ‡ã‚£ã‚¹ã‚¯ã‚’ã„ã‚Œã¦ãã ã•ã„
 textEntryH("Please insert the disk.")
 save2_68:
-//RAM 802FC88C - ‚¿‚ª‚¤ƒfƒBƒXƒN‚ª‚Í‚¢‚Á‚Ä‚¢‚Ü‚·
+//RAM 802FC88C - ã¡ãŒã†ãƒ‡ã‚£ã‚¹ã‚¯ãŒã¯ã„ã£ã¦ã„ã¾ã™
 textEntryH("A different disk is inserted.")
 
 save2_69:
-//RAM 802FC8AC - š 64DD š
+//RAM 802FC8AC - â˜… 64DD â˜…
 textEntryH2($00BB, "64DD")
 save2_70:
-//RAM 802FC8C0 - œ ƒZ[ƒu œ
+//RAM 802FC8C0 - â— ã‚»ãƒ¼ãƒ– â—
 textEntryH2($00B7, "Save")
 save2_71:
-//RAM 802FC8D0 - œ ƒ[ƒh œ
+//RAM 802FC8D0 - â— ãƒ­ãƒ¼ãƒ‰ â—
 textEntryH2($00B7, "Load")
 save2_72:
-//RAM 802FC8E0 - œ ‚È‚Ü‚¦‚Ö‚ñ‚±‚¤ œ
+//RAM 802FC8E0 - â— ãªã¾ãˆã¸ã‚“ã“ã† â—
 textEntryH2($00B7, "Rename")
 save2_73:
-//RAM 802FC8F8 - œ ‚³‚­‚¶‚å œ
+//RAM 802FC8F8 - â— ã•ãã˜ã‚‡ â—
 textEntryH2($00B7, "Delete")
 save2_74:
-//RAM 802FC90C - œ ‚»‚Ì‚½‚Ìƒƒjƒ…[ œ
+//RAM 802FC90C - â— ãã®ãŸã®ãƒ¡ãƒ‹ãƒ¥ãƒ¼ â—
 textEntryH2($00B7, "Menu")
 save2_75:
-//RAM 802FC928 - œ ƒfƒBƒXƒN‚Ì ‚¢‚ê‚©‚¦ œ
+//RAM 802FC928 - â— ãƒ‡ã‚£ã‚¹ã‚¯ã® ã„ã‚Œã‹ãˆ â—
 textEntryH2($00B7, "Disk Change")
 save2_76:
-//RAM 802FC948 - œ ‚¢‚Ç‚¤ œ
+//RAM 802FC948 - â— ã„ã©ã† â—
 textEntryH2($00B7, "Move")
 save2_77:
-//RAM 802FC958 - œ ƒRƒs[ œ
+//RAM 802FC958 - â— ã‚³ãƒ”ãƒ¼ â—
 textEntryH2($00B7, "Copy")
 save2_78:
-//RAM 802FC968 - œ ‚È‚ç‚×‚©‚¦ ƒ‚[ƒh œ
+//RAM 802FC968 - â— ãªã‚‰ã¹ã‹ãˆ ãƒ¢ãƒ¼ãƒ‰ â—
 textEntryH2($00B7, "Sort")
 save2_79:
-//RAM 802FC984 - œ ‚¢‚ê‚à‚Ì‚³‚­‚¹‚¢ ƒ‚[ƒh œ
+//RAM 802FC984 - â— ã„ã‚Œã‚‚ã®ã•ãã›ã„ ãƒ¢ãƒ¼ãƒ‰ â—
 textEntryH2($00B7, "Create Container")
 
 seek(0x2E0C78)
@@ -473,11 +473,11 @@ textEntrySkip(8); dw (save2_63)
 //Text ID RAM 802C3CEC
 seek(0x2E1110)
 save3_1:
-textEntryH("Please do not eject the disk.")	//ƒfƒBƒXƒN‚ğ ‚Ê‚©‚È‚¢‚Å‚­‚¾‚³‚¢
+textEntryH("Please do not eject the disk.")	//ãƒ‡ã‚£ã‚¹ã‚¯ã‚’ ã¬ã‹ãªã„ã§ãã ã•ã„
 save3_2:
-textEntryH("Preparing to save...")		//ƒZ[ƒu‚Ì‚¶‚ã‚ñ‚Ñ‚ğ‚µ‚Ä‚¢‚Ü‚·
+textEntryH("Preparing to save...")		//ã‚»ãƒ¼ãƒ–ã®ã˜ã‚…ã‚“ã³ã‚’ã—ã¦ã„ã¾ã™
 save3_3:
-textEntryH("Some files cannot be used here.")	//‚±‚±‚Å‚ ‚Â‚©‚¦‚È‚¢ƒtƒ@ƒCƒ‹‚ª‚Ó‚­‚Ü‚ê‚Ü‚·‚à
+textEntryH("Some files cannot be used here.")	//ã“ã“ã§ã‚ã¤ã‹ãˆãªã„ãƒ•ã‚¡ã‚¤ãƒ«ãŒãµãã¾ã‚Œã¾ã™ã‚‚
 
 seek(0x2E1180)
 dw (save3_1),(save3_2),(save3_3)
@@ -488,221 +488,221 @@ dw (save3_1),(save3_2),(save3_3)
 //Error ID / RAM 802C3D40
 seek(0x2E1190)
 save4_1:
-//RAM 802FCEC0 - ‚µ‚æ‚¤‚è‚å‚¤: 222 MƒoƒCƒg
+//RAM 802FCEC0 - ã—ã‚ˆã†ã‚Šã‚‡ã†: 222 Mãƒã‚¤ãƒˆ
 textEntryH("Used Space: 222 MB")
 save4_2:
-//RAM 802FCEE4 - ‚³‚­‚¹‚¢‚ª‚ß‚ñ‚É ‚Ğ‚å‚¤‚¶
+//RAM 802FCEE4 - ã•ãã›ã„ãŒã‚ã‚“ã« ã²ã‚‡ã†ã˜
 textEntryH("Current creation")
 save4_3:
-//RAM 802FCF00 - ‚³‚ê‚Ä‚¢‚é ‚³‚­‚Ğ‚ñ
+//RAM 802FCF00 - ã•ã‚Œã¦ã„ã‚‹ ã•ãã²ã‚“
 textEntryH(" ")
 save4_4:
-//RAM 802FCF18 - ƒfƒBƒXƒN‚©‚ç
+//RAM 802FCF18 - ãƒ‡ã‚£ã‚¹ã‚¯ã‹ã‚‰
 textEntryH("from Disk")
 save4_5:
-//RAM 802FCF28 - 64GBƒpƒbƒN‚©‚ç
+//RAM 802FCF28 - 64GBãƒ‘ãƒƒã‚¯ã‹ã‚‰
 textEntryH("from Transfer Pak")
 save4_6:
-//RAM 802FCF3C - ‚æ‚İ‚±‚ñ‚¾‚³‚­‚Ğ‚ñ
+//RAM 802FCF3C - ã‚ˆã¿ã“ã‚“ã ã•ãã²ã‚“
 textEntryH("Creation loaded")
 save4_7:
-//RAM 802FCF50 - ‚³‚­‚Ğ‚ñ‚Í
+//RAM 802FCF50 - ã•ãã²ã‚“ã¯
 textEntryH("File is")
 save4_8:
-//RAM 802FCF5C - ƒ[ƒh‚³‚ê‚Ä‚¢‚Ü‚¹‚ñ
+//RAM 802FCF5C - ãƒ­ãƒ¼ãƒ‰ã•ã‚Œã¦ã„ã¾ã›ã‚“
 textEntryH("not loaded")
 save4_9:
-//RAM 802FCF74 - ‚³‚­‚¹‚¢‚¿‚ã‚¤‚Ì‚³‚­‚Ğ‚ñ
+//RAM 802FCF74 - ã•ãã›ã„ã¡ã‚…ã†ã®ã•ãã²ã‚“
 textEntryH("Current creation")
 save4_10:
-//RAM 802FCF90 - ‚³‚Â‚¦‚¢‚µ‚½‚µ‚á‚µ‚ñ
+//RAM 802FCF90 - ã•ã¤ãˆã„ã—ãŸã—ã‚ƒã—ã‚“
 textEntryH("Photo Taken")
 save4_11:
-//RAM 802FCFA8 - ‚Ù‚¶‚åƒˆƒEƒV‚É ‚Ğ‚å‚¤‚¶
+//RAM 802FCFA8 - ã»ã˜ã‚‡ãƒ¨ã‚¦ã‚·ã« ã²ã‚‡ã†ã˜
 textEntryH("Current creation on")
 save4_12:
-//RAM 802FCFC4 - ‚³‚ê‚Ä‚¢‚é ‚ª‚¼‚¤
+//RAM 802FCFC4 - ã•ã‚Œã¦ã„ã‚‹ ãŒãã†
 textEntryH("alternate canvas")
 
 save4_13:
-//RAM 802FCFD8 - ‚¢‚ê‚à‚Ì
+//RAM 802FCFD8 - ã„ã‚Œã‚‚ã®
 textEntryH("Container")
 save4_14:
-//RAM 802FCFE4 - ‚³‚­‚Ğ‚ñ
+//RAM 802FCFE4 - ã•ãã²ã‚“
 textEntryH("File")
 save4_15:
-//RAM 802FCFF0 - ‚¢‚ê‚à‚Ì‚Ì
+//RAM 802FCFF0 - ã„ã‚Œã‚‚ã®ã®
 textEntryH("All contents of")
 save4_16:
-//RAM 802FCFFC - ‚È‚©‚İ‚·‚×‚Ä
+//RAM 802FCFFC - ãªã‹ã¿ã™ã¹ã¦
 textEntryH("a container.")
 
 save4_e1:
-//RAM 802FD010 - ‚¢‚ê‚à‚Ì‚ª ‚¢‚Á‚Ï‚¢‚Å‚·B\n
+//RAM 802FD010 - ã„ã‚Œã‚‚ã®ãŒ ã„ã£ã±ã„ã§ã™ã€‚\n
 textEntryH("The container is full.\n")
 save4_e2:
-//RAM 802FD030 - ƒfƒBƒXƒN‚ª ‚³‚µ‚±‚Ü‚ê‚Ä‚¢‚Ü‚¹‚ñB\n\n‚³‚¬‚å‚¤‚ğ ‚¿‚ã‚¤‚¾‚ñ‚µ‚Ü‚·B
+//RAM 802FD030 - ãƒ‡ã‚£ã‚¹ã‚¯ãŒ ã•ã—ã“ã¾ã‚Œã¦ã„ã¾ã›ã‚“ã€‚\n\nã•ãã‚‡ã†ã‚’ ã¡ã‚…ã†ã ã‚“ã—ã¾ã™ã€‚
 textEntryH("The disk has been ejected.\n\nAccess suspended.")
 save4_e3:
-//RAM 802FD078 - ‚±‚Ì‚¢‚ê‚à‚Ì‚É‚Í ‚©‚«‚±‚ß‚Ü‚¹‚ñB
+//RAM 802FD078 - ã“ã®ã„ã‚Œã‚‚ã®ã«ã¯ ã‹ãã“ã‚ã¾ã›ã‚“ã€‚
 textEntryH("You cannot write to\nthis container.")
 save4_e4:
-//RAM 802FD09C - ‚±‚Ì‚³‚­‚Ğ‚ñ‚É‚Í ‚©‚«‚±‚ß‚Ü‚¹‚ñB
+//RAM 802FD09C - ã“ã®ã•ãã²ã‚“ã«ã¯ ã‹ãã“ã‚ã¾ã›ã‚“ã€‚
 textEntryH("You cannot write this file.")
 save4_e5:
-//RAM 802FD0C0 - ‚±‚ÌƒfƒBƒXƒN‚É‚Í ‚±‚ê‚¢‚¶‚å‚¤ ‚³‚­‚Ğ‚ñ‚ª\n‚Í‚¢‚è‚Ü‚¹‚ñB
+//RAM 802FD0C0 - ã“ã®ãƒ‡ã‚£ã‚¹ã‚¯ã«ã¯ ã“ã‚Œã„ã˜ã‚‡ã† ã•ãã²ã‚“ãŒ\nã¯ã„ã‚Šã¾ã›ã‚“ã€‚
 textEntryH("There is no more space to fit\nmore files on this disk.")
 save4_e6:
-//RAM 802FD0FC - ‚±‚Ì‚³‚­‚Ğ‚ñ‚ğ ‚¯‚·‚±‚Æ‚Í ‚Å‚«‚Ü‚¹‚ñB
+//RAM 802FD0FC - ã“ã®ã•ãã²ã‚“ã‚’ ã‘ã™ã“ã¨ã¯ ã§ãã¾ã›ã‚“ã€‚
 textEntryH("You cannot delete this file.")
 save4_e7:
-//RAM 802FD128 - ‚±‚Ì‚¢‚ê‚à‚Ì‚ğ ‚¯‚·‚±‚Æ‚Í ‚Å‚«‚Ü‚¹‚ñB
+//RAM 802FD128 - ã“ã®ã„ã‚Œã‚‚ã®ã‚’ ã‘ã™ã“ã¨ã¯ ã§ãã¾ã›ã‚“ã€‚
 textEntryH("You cannot delete\nthis container.")
 save4_e8:
-//RAM 802FD154 - ‚±‚Ì‚³‚­‚Ğ‚ñ‚Í ‚¢‚Ç‚¤‚Å‚«‚Ü‚¹‚ñB
+//RAM 802FD154 - ã“ã®ã•ãã²ã‚“ã¯ ã„ã©ã†ã§ãã¾ã›ã‚“ã€‚
 textEntryH("You cannot move this file.")
 save4_e9:
-//RAM 802FD178 - ‚¨‚È‚¶‚È‚Ü‚¦‚ª ‚·‚Å‚É‚ ‚è‚Ü‚·B
+//RAM 802FD178 - ãŠãªã˜ãªã¾ãˆãŒ ã™ã§ã«ã‚ã‚Šã¾ã™ã€‚
 textEntryH("This name already exists.")
 save4_e10:
-//RAM 802FD19C - ‚±‚ê‚¢‚¶‚å‚¤ ‚¢‚ê‚à‚Ì‚ğ ‚Â‚­‚ê‚Ü‚¹‚ñB
+//RAM 802FD19C - ã“ã‚Œã„ã˜ã‚‡ã† ã„ã‚Œã‚‚ã®ã‚’ ã¤ãã‚Œã¾ã›ã‚“ã€‚
 textEntryH("You cannot create a container.")
 save4_e11:
-//RAM 802FD1C8 - ƒfƒBƒXƒN‚ÌƒGƒ‰[‚Å‚·B
+//RAM 802FD1C8 - ãƒ‡ã‚£ã‚¹ã‚¯ã®ã‚¨ãƒ©ãƒ¼ã§ã™ã€‚
 textEntryH("Disk Error")
 save4_e12:
-//RAM 802FD1E0 - ƒfƒBƒXƒN‚ª ‚¢‚ê‚©‚¦‚ç‚ê‚½‚Ì‚Å\n‚æ‚İ‚È‚¨‚µ‚Ü‚·B
+//RAM 802FD1E0 - ãƒ‡ã‚£ã‚¹ã‚¯ãŒ ã„ã‚Œã‹ãˆã‚‰ã‚ŒãŸã®ã§\nã‚ˆã¿ãªãŠã—ã¾ã™ã€‚
 textEntryH("The disk has been read again\nbecause it has been replaced.")
 save4_e13:
-//RAM 802FD214 - ‚È‚Ü‚¦‚Í ‚Ö‚ñ‚±‚¤ ‚³‚ê‚Ü‚¹‚ñ‚Å‚µ‚½B
+//RAM 802FD214 - ãªã¾ãˆã¯ ã¸ã‚“ã“ã† ã•ã‚Œã¾ã›ã‚“ã§ã—ãŸã€‚
 textEntryH("The name was not changed.")
 save4_e14:
-//RAM 802FD23C - ‚±‚Ì‚³‚­‚Ğ‚ñ‚Ì ‚È‚Ü‚¦‚Í ‚Ö‚ñ‚±‚¤\n‚Å‚«‚Ü‚¹‚ñB
+//RAM 802FD23C - ã“ã®ã•ãã²ã‚“ã® ãªã¾ãˆã¯ ã¸ã‚“ã“ã†\nã§ãã¾ã›ã‚“ã€‚
 textEntryH("You cannot rename this file.")
 save4_e15:
-//RAM 802FD270 - ‚±‚Ì‚¢‚ê‚à‚Ì‚Ì ‚È‚Ü‚¦‚Í ‚Ö‚ñ‚±‚¤\n‚Å‚«‚Ü‚¹‚ñB
+//RAM 802FD270 - ã“ã®ã„ã‚Œã‚‚ã®ã® ãªã¾ãˆã¯ ã¸ã‚“ã“ã†\nã§ãã¾ã›ã‚“ã€‚
 textEntryH("You cannot rename\nthis container.")
 save4_e16:
-//RAM 802FD2A4 - ‚±‚Ì‚³‚­‚Ğ‚ñ‚Í ‚©‚¢‚½‚è ‚¯‚µ‚½‚è\n‚Å‚«‚Ü‚¹‚ñB
+//RAM 802FD2A4 - ã“ã®ã•ãã²ã‚“ã¯ ã‹ã„ãŸã‚Š ã‘ã—ãŸã‚Š\nã§ãã¾ã›ã‚“ã€‚
 textEntryH("You cannot write\nor delete this file.")
 save4_e17:
-//RAM 802FD2D8 - ‚±‚ÌƒfƒBƒXƒN‚É‚Í ‚©‚¢‚½‚è ‚¯‚µ‚½‚è\n‚Å‚«‚Ü‚¹‚ñB
+//RAM 802FD2D8 - ã“ã®ãƒ‡ã‚£ã‚¹ã‚¯ã«ã¯ ã‹ã„ãŸã‚Š ã‘ã—ãŸã‚Š\nã§ãã¾ã›ã‚“ã€‚
 textEntryH("You cannot write\nor delete on this disk.")
 save4_e18:
-//RAM 802FD30C - ‚¨‚È‚¶‚¢‚ê‚à‚Ì‚É‚¢‚Ç‚¤‚Í‚Å‚«‚Ü‚¹‚ñB
+//RAM 802FD30C - ãŠãªã˜ã„ã‚Œã‚‚ã®ã«ã„ã©ã†ã¯ã§ãã¾ã›ã‚“ã€‚
 textEntryH("You cannot move\nin the same container.")
 save4_e19:
-//RAM 802FD334 - ƒfƒBƒXƒN‚ª ‚Í‚¢‚Á‚Ä‚¢‚Ü‚¹‚ñB\n\nƒfƒBƒXƒN‚ğ ‚³‚µ‚±‚ñ‚Å ‚­‚¾‚³‚¢B
+//RAM 802FD334 - ãƒ‡ã‚£ã‚¹ã‚¯ãŒ ã¯ã„ã£ã¦ã„ã¾ã›ã‚“ã€‚\n\nãƒ‡ã‚£ã‚¹ã‚¯ã‚’ ã•ã—ã“ã‚“ã§ ãã ã•ã„ã€‚
 textEntryH("The disk has been ejected.\n\nPlease insert disk.")
 save4_e20:
-//RAM 802FD37C - ‚±‚ÌƒfƒBƒXƒN‚Í ‚±‚±‚Å‚Í ‚Â‚©‚¤‚±‚Æ‚ª\n‚Å‚«‚Ü‚¹‚ñB\n\n‚½‚¾‚µ‚¢ƒfƒBƒXƒN‚É ‚¢‚ê‚©‚¦‚Ä ‚­‚¾‚³‚¢B
+//RAM 802FD37C - ã“ã®ãƒ‡ã‚£ã‚¹ã‚¯ã¯ ã“ã“ã§ã¯ ã¤ã‹ã†ã“ã¨ãŒ\nã§ãã¾ã›ã‚“ã€‚\n\nãŸã ã—ã„ãƒ‡ã‚£ã‚¹ã‚¯ã« ã„ã‚Œã‹ãˆã¦ ãã ã•ã„ã€‚
 textEntryH("This disk cannot be used.\n\nPlease insert the correct disk.")
 save4_e21:
 //RAM 802FD3E0 -  \n
 db $FF
 save4_e22:
-//RAM 802FD3E4 - ƒfƒBƒXƒN‚ğ ‚³‚µ‚±‚ñ‚Å  ‚­‚¾‚³‚¢B
+//RAM 802FD3E4 - ãƒ‡ã‚£ã‚¹ã‚¯ã‚’ ã•ã—ã“ã‚“ã§  ãã ã•ã„ã€‚
 textEntryH("Please insert disk.")
 save4_e23:
-//RAM 802FD40C - ‚»‚Ì‚È‚Ü‚¦‚Í ‚Â‚©‚¦‚Ü‚¹‚ñB
+//RAM 802FD40C - ãã®ãªã¾ãˆã¯ ã¤ã‹ãˆã¾ã›ã‚“ã€‚
 textEntryH("You cannot use this name.")
 save4_e24:
-//RAM 802FD42C - ‚±‚ÌƒfƒBƒXƒN‚Í ƒf[ƒ^‚ª ‚±‚í‚ê‚Ä‚¢‚Ü‚·B\n\n‚½‚¾‚µ‚¢ƒfƒBƒXƒN‚É ‚¢‚ê‚©‚¦‚Ä ‚­‚¾‚³‚¢B
+//RAM 802FD42C - ã“ã®ãƒ‡ã‚£ã‚¹ã‚¯ã¯ ãƒ‡ãƒ¼ã‚¿ãŒ ã“ã‚ã‚Œã¦ã„ã¾ã™ã€‚\n\nãŸã ã—ã„ãƒ‡ã‚£ã‚¹ã‚¯ã« ã„ã‚Œã‹ãˆã¦ ãã ã•ã„ã€‚
 textEntryH("The contents of this disk\nhas been wiped.")
 save4_e25:
-//RAM 802FD488 - ‚Ü‚¿‚ª‚Á‚½ƒfƒBƒXƒN‚ª ‚³‚µ‚±‚Ü‚ê‚Ä‚¢‚é\n‚©‚Ì‚¤‚¹‚¢‚ª ‚ ‚è‚Ü‚·B\n
+//RAM 802FD488 - ã¾ã¡ãŒã£ãŸãƒ‡ã‚£ã‚¹ã‚¯ãŒ ã•ã—ã“ã¾ã‚Œã¦ã„ã‚‹\nã‹ã®ã†ã›ã„ãŒ ã‚ã‚Šã¾ã™ã€‚\n
 textEntryH("The wrong disk\nmay have been inserted.\n")
 save4_e26:
-//RAM 802FD4CC - ‚½‚¾‚µ‚¢ƒfƒBƒXƒN‚É ‚¢‚ê‚©‚¦‚Ä ‚­‚¾‚³‚¢B
+//RAM 802FD4CC - ãŸã ã—ã„ãƒ‡ã‚£ã‚¹ã‚¯ã« ã„ã‚Œã‹ãˆã¦ ãã ã•ã„ã€‚
 textEntryH("Please insert the correct disk.")
 save4_e27:
-//RAM 802FD4F8 - ‚¢‚ê‚à‚Ì‚ª ‚ ‚è‚Ü‚¹‚ñB
+//RAM 802FD4F8 - ã„ã‚Œã‚‚ã®ãŒ ã‚ã‚Šã¾ã›ã‚“ã€‚
 textEntryH("There are no containers.")
 save4_e28:
-//RAM 802FD514 - 2‚Â‚¢‚¶‚å‚¤‚Ì‚¢‚ê‚à‚Ì‚ª ‚ ‚è‚Ü‚¹‚ñB
+//RAM 802FD514 - 2ã¤ã„ã˜ã‚‡ã†ã®ã„ã‚Œã‚‚ã®ãŒ ã‚ã‚Šã¾ã›ã‚“ã€‚
 textEntryH("There are no more\nthan 2 containers.")
 save4_e29:
-//RAM 802FD53C - ‚È‚©‚İ‚ğ ‚·‚×‚Ä ‚¢‚Ç‚¤‚·‚é‚±‚Æ‚ª\n‚Å‚«‚Ü‚¹‚ñB\n
+//RAM 802FD53C - ãªã‹ã¿ã‚’ ã™ã¹ã¦ ã„ã©ã†ã™ã‚‹ã“ã¨ãŒ\nã§ãã¾ã›ã‚“ã€‚\n
 textEntryH("You cannot move all the files.\n")
 save4_e30:
-//RAM 802FD570 - 1 ‚Â‚Ì‚¢‚ê‚à‚Ì‚É‚Í 70‚±‚Ü‚Å‚µ‚©\n‚³‚­‚Ğ‚ñ‚ª ‚Í‚¢‚è‚Ü‚¹‚ñB
+//RAM 802FD570 - 1 ã¤ã®ã„ã‚Œã‚‚ã®ã«ã¯ 70ã“ã¾ã§ã—ã‹\nã•ãã²ã‚“ãŒ ã¯ã„ã‚Šã¾ã›ã‚“ã€‚
 textEntryH("A container can contain\nup to 70 files.")
 save4_e31:
-//RAM 802FD5B4 - ‚±‚Ì‚¢‚ê‚à‚Ì‚É‚Í ‚³‚­‚Ğ‚ñ‚ª ‚ ‚è‚Ü‚¹‚ñB
+//RAM 802FD5B4 - ã“ã®ã„ã‚Œã‚‚ã®ã«ã¯ ã•ãã²ã‚“ãŒ ã‚ã‚Šã¾ã›ã‚“ã€‚
 textEntryH("This container is empty.")
 save4_e32:
-//RAM 802FD5E0 - ‚È‚©‚İ‚ğ ‚·‚×‚Ä ‚³‚­‚¶‚å ‚·‚é‚±‚Æ‚ª\n‚Å‚«‚Ü‚¹‚ñB
+//RAM 802FD5E0 - ãªã‹ã¿ã‚’ ã™ã¹ã¦ ã•ãã˜ã‚‡ ã™ã‚‹ã“ã¨ãŒ\nã§ãã¾ã›ã‚“ã€‚
 textEntryH("You cannot delete all the files.")
 save4_e33:
-//RAM 802FD618 - ‚±‚Ì‚³‚­‚Ğ‚ñ‚Í ƒTƒCƒY‚ª ‚¨‚¨‚«‚¢‚Ì‚Å\n‚±‚±‚Å‚Í ƒ[ƒh‚Å‚«‚Ü‚¹‚ñB
+//RAM 802FD618 - ã“ã®ã•ãã²ã‚“ã¯ ã‚µã‚¤ã‚ºãŒ ãŠãŠãã„ã®ã§\nã“ã“ã§ã¯ ãƒ­ãƒ¼ãƒ‰ã§ãã¾ã›ã‚“ã€‚
 textEntryH("The file could not be loaded\nbecause it is too big.")
 save4_e34:
-//RAM 802FD660 - ‚±‚Ì‚³‚­‚Ğ‚ñ‚Í ‚µ‚ã‚é‚¢‚ª ‚¿‚ª‚¤‚Ì‚Å\n‚±‚±‚Å‚Í ƒ[ƒh‚Å‚«‚Ü‚¹‚ñB
+//RAM 802FD660 - ã“ã®ã•ãã²ã‚“ã¯ ã—ã‚…ã‚‹ã„ãŒ ã¡ãŒã†ã®ã§\nã“ã“ã§ã¯ ãƒ­ãƒ¼ãƒ‰ã§ãã¾ã›ã‚“ã€‚
 textEntryH("The file could not be loaded\nbecause it is of a different type.")
 save4_e35:
-//RAM 802FD6A8 - ‚±‚Ì‚³‚­‚Ğ‚ñ‚Í ‚µ‚ã‚é‚¢‚ª ‚¿‚ª‚¤‚Ì‚Å\n‚¤‚í‚ª‚«ƒZ[ƒu‚Í ‚Å‚«‚Ü‚¹‚ñB
+//RAM 802FD6A8 - ã“ã®ã•ãã²ã‚“ã¯ ã—ã‚…ã‚‹ã„ãŒ ã¡ãŒã†ã®ã§\nã†ã‚ãŒãã‚»ãƒ¼ãƒ–ã¯ ã§ãã¾ã›ã‚“ã€‚
 textEntryH("The file cannot be overwritten\nbecause it is of a different type.")
 save4_e36:
-//RAM 802FD6F0 - ‚±‚Ì‚¢‚ê‚à‚Ì‚É‚Í ‚©‚¢‚½‚è ‚¯‚µ‚½‚è\n‚Å‚«‚Ü‚¹‚ñB
+//RAM 802FD6F0 - ã“ã®ã„ã‚Œã‚‚ã®ã«ã¯ ã‹ã„ãŸã‚Š ã‘ã—ãŸã‚Š\nã§ãã¾ã›ã‚“ã€‚
 textEntryH("You cannot write\nor delete this container.")
 save4_e37:
-//RAM 802FD724 - ‚±‚Ì‚¢‚ê‚à‚Ì‚Ì ‚È‚©‚É‚Í\n‚³‚­‚¶‚å‚Å‚«‚È‚¢ ‚³‚­‚Ğ‚ñ‚ª ‚ ‚è‚Ü‚·B
+//RAM 802FD724 - ã“ã®ã„ã‚Œã‚‚ã®ã® ãªã‹ã«ã¯\nã•ãã˜ã‚‡ã§ããªã„ ã•ãã²ã‚“ãŒ ã‚ã‚Šã¾ã™ã€‚
 textEntryH("You cannot delete some of\nthe files in this container.")
 save4_e38:
-//RAM 802FD768 - ƒGƒ‰[‚Î‚ñ‚²‚¤49\n‚¿‚ã‚¤‚¢:\nƒAƒNƒZƒXƒ‰ƒ“ƒv ‚Ä‚ñ‚ß‚Â‚¿‚ã‚¤‚É\nƒfƒBƒXƒN‚ğ ‚Ê‚©‚È‚¢‚Å‚­‚¾‚³‚¢B
+//RAM 802FD768 - ã‚¨ãƒ©ãƒ¼ã°ã‚“ã”ã†49\nã¡ã‚…ã†ã„:\nã‚¢ã‚¯ã‚»ã‚¹ãƒ©ãƒ³ãƒ— ã¦ã‚“ã‚ã¤ã¡ã‚…ã†ã«\nãƒ‡ã‚£ã‚¹ã‚¯ã‚’ ã¬ã‹ãªã„ã§ãã ã•ã„ã€‚
 textEntryH("Error 49\n\nPlease do not eject the disk\nwhile the access lamp is blinking.")
 save4_e39:
-//RAM 802FD7D4 - ƒGƒ‰[‚Î‚ñ‚²‚¤2\n\nƒfƒBƒXƒN‚ğ ‚³‚µ‚±‚İ‚È‚¨‚µ‚Ä ‚­‚¾‚³‚¢B
+//RAM 802FD7D4 - ã‚¨ãƒ©ãƒ¼ã°ã‚“ã”ã†2\n\nãƒ‡ã‚£ã‚¹ã‚¯ã‚’ ã•ã—ã“ã¿ãªãŠã—ã¦ ãã ã•ã„ã€‚
 textEntryH("Error 2\n\nPlease reinsert the disk.")
 save4_e40:
-//RAM 802FD81C - ‚æ‚İ‚±‚İ ‚¹‚ñ‚æ‚¤ ƒfƒBƒXƒN‚Å‚·B\n‚±‚±‚Å‚Í ‚Â‚©‚¤‚±‚Æ‚ª ‚Å‚«‚Ü‚¹‚ñB\n
+//RAM 802FD81C - ã‚ˆã¿ã“ã¿ ã›ã‚“ã‚ˆã† ãƒ‡ã‚£ã‚¹ã‚¯ã§ã™ã€‚\nã“ã“ã§ã¯ ã¤ã‹ã†ã“ã¨ãŒ ã§ãã¾ã›ã‚“ã€‚\n
 textEntryH("This is a read-only disk.\nIt cannot be used.\n")
 save4_e41:
-//RAM 802FD868 - ‚¢‚Ç‚¤‚³‚«‚Ì ‚¢‚ê‚à‚Ì‚ª ‚¢‚Á‚Ï‚¢‚É\n‚È‚è‚Ü‚µ‚½B\n
+//RAM 802FD868 - ã„ã©ã†ã•ãã® ã„ã‚Œã‚‚ã®ãŒ ã„ã£ã±ã„ã«\nãªã‚Šã¾ã—ãŸã€‚\n
 save4_e42:
-//RAM 802FD8A0 - ƒRƒs[‚³‚«‚Ì ‚¢‚ê‚à‚Ì‚ª ‚¢‚Á‚Ï‚¢‚É\n‚È‚è‚Ü‚µ‚½B\n
+//RAM 802FD8A0 - ã‚³ãƒ”ãƒ¼ã•ãã® ã„ã‚Œã‚‚ã®ãŒ ã„ã£ã±ã„ã«\nãªã‚Šã¾ã—ãŸã€‚\n
 textEntryH("The destination container\nis full.\n")
 save4_e43:
-//RAM 802FD8D8 - ƒfƒBƒXƒN‚ª ‚¿‚ª‚¢‚Ü‚·B\n\n‚Ê‚¢‚½‚Æ‚«‚ÌƒfƒBƒXƒN‚É ‚¢‚ê‚©‚¦‚Ä\n‚­‚¾‚³‚¢B
+//RAM 802FD8D8 - ãƒ‡ã‚£ã‚¹ã‚¯ãŒ ã¡ãŒã„ã¾ã™ã€‚\n\nã¬ã„ãŸã¨ãã®ãƒ‡ã‚£ã‚¹ã‚¯ã« ã„ã‚Œã‹ãˆã¦\nãã ã•ã„ã€‚
 textEntryH("This is a different disk.\n\nPlease insert the original disk.")
 save4_e44:
-//RAM 802FD924 - ‚±‚ÌƒfƒBƒXƒN‚Í ‚µ‚å‚«‚© ‚Å‚«‚Ü‚¹‚ñB
+//RAM 802FD924 - ã“ã®ãƒ‡ã‚£ã‚¹ã‚¯ã¯ ã—ã‚‡ãã‹ ã§ãã¾ã›ã‚“ã€‚
 textEntryH("This disk cannot be initialized.")
 save4_e45:
-//RAM 802FD94C - ‚·‚×‚Ä‚Ì‚³‚­‚Ğ‚ñ‚ğ ‚¢‚Ç‚¤‚·‚é‚±‚Æ‚ª\n‚Å‚«‚Ü‚¹‚ñ‚Å‚µ‚½B
+//RAM 802FD94C - ã™ã¹ã¦ã®ã•ãã²ã‚“ã‚’ ã„ã©ã†ã™ã‚‹ã“ã¨ãŒ\nã§ãã¾ã›ã‚“ã§ã—ãŸã€‚
 textEntryH("Could not move all of the files.")
 save4_e46:
-//RAM 802FD988 - ‚±‚Ì‚¢‚ê‚à‚Ì‚Ì ‚·‚×‚Ä‚Ì‚³‚­‚Ğ‚ñ‚ğ\n‚¢‚Ç‚¤‚µ‚Ü‚µ‚½B
+//RAM 802FD988 - ã“ã®ã„ã‚Œã‚‚ã®ã® ã™ã¹ã¦ã®ã•ãã²ã‚“ã‚’\nã„ã©ã†ã—ã¾ã—ãŸã€‚
 textEntryH("All files of the container\nhave been moved.")
 save4_e47:
-//RAM 802FD9C0 - ‚±‚Ì‚³‚­‚Ğ‚ñ‚Í ƒZ[ƒu‚Å‚«‚Ü‚¹‚ñB
+//RAM 802FD9C0 - ã“ã®ã•ãã²ã‚“ã¯ ã‚»ãƒ¼ãƒ–ã§ãã¾ã›ã‚“ã€‚
 textEntryH("This file could not be saved.")
 save4_e48:
-//RAM 802FD9E4 - ‚È‚Ü‚¦‚ª ‚Â‚¯‚ç‚ê‚Ü‚¹‚ñ‚Å‚µ‚½B
+//RAM 802FD9E4 - ãªã¾ãˆãŒ ã¤ã‘ã‚‰ã‚Œã¾ã›ã‚“ã§ã—ãŸã€‚
 textEntryH("This file could not be renamed.")
 save4_e49:
-//RAM 802FDA08 - ‚×‚Â‚ÌƒfƒBƒXƒN‚Å‚Í‚ ‚è‚Ü‚¹‚ñB
+//RAM 802FDA08 - ã¹ã¤ã®ãƒ‡ã‚£ã‚¹ã‚¯ã§ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚
 textEntryH("This is not a different disk.")
 save4_e50:
-//RAM 802FDA28 - ‚È‚©‚İ‚ğ ‚·‚×‚ÄƒRƒs[‚·‚é‚±‚Æ‚ª\n‚Å‚«‚Ü‚¹‚ñB\n
+//RAM 802FDA28 - ãªã‹ã¿ã‚’ ã™ã¹ã¦ã‚³ãƒ”ãƒ¼ã™ã‚‹ã“ã¨ãŒ\nã§ãã¾ã›ã‚“ã€‚\n
 textEntryH("Could not copy all of the files.\n")
 save4_e51:
-//RAM 802FDA5C - ‚±‚Ì‚¢‚ê‚à‚Ì‚É‚Í ‚±‚ê‚¢‚¶‚å‚¤ ‚³‚­‚Ğ‚ñ‚ª\n‚Í‚¢‚è‚Ü‚¹‚ñB
+//RAM 802FDA5C - ã“ã®ã„ã‚Œã‚‚ã®ã«ã¯ ã“ã‚Œã„ã˜ã‚‡ã† ã•ãã²ã‚“ãŒ\nã¯ã„ã‚Šã¾ã›ã‚“ã€‚
 textEntryH("There is no more space to fit\nmore files in this container.")
 save4_e52:
-//RAM 802FDA98 - ‚±‚Ì‚¢‚ê‚à‚Ì‚Ì ‚·‚×‚Ä‚Ì‚³‚­‚Ğ‚ñ‚ğ\n‚³‚­‚¶‚å ‚µ‚Ü‚µ‚½B
+//RAM 802FDA98 - ã“ã®ã„ã‚Œã‚‚ã®ã® ã™ã¹ã¦ã®ã•ãã²ã‚“ã‚’\nã•ãã˜ã‚‡ ã—ã¾ã—ãŸã€‚
 textEntryH("All files of the container\nhave been deleted.")
 save4_e53:
-//RAM 802FDAD4 - ƒfƒBƒXƒN‚ª ‚Ê‚©‚ê‚Ü‚µ‚½B\nƒZ[ƒu‚µ‚å‚è‚¿‚ã‚¤‚É\nƒfƒBƒXƒN‚ğ ‚Ê‚©‚È‚¢‚Å‚­‚¾‚³‚¢B
+//RAM 802FDAD4 - ãƒ‡ã‚£ã‚¹ã‚¯ãŒ ã¬ã‹ã‚Œã¾ã—ãŸã€‚\nã‚»ãƒ¼ãƒ–ã—ã‚‡ã‚Šã¡ã‚…ã†ã«\nãƒ‡ã‚£ã‚¹ã‚¯ã‚’ ã¬ã‹ãªã„ã§ãã ã•ã„ã€‚
 textEntryH("The disk has been ejected.\nPlease do not eject\nthe disk while saving.")
 save4_e54:
-//RAM 802FDB28 - ƒGƒ‰[‚Î‚ñ‚²‚¤
+//RAM 802FDB28 - ã‚¨ãƒ©ãƒ¼ã°ã‚“ã”ã†
 textEntryH("Error ")
 save4_e55:
-//RAM 802FDB3C - ‚­‚í‚µ‚­‚Í ‚Æ‚è‚ ‚Â‚©‚¢‚¹‚Â‚ß‚¢‚µ‚å‚ğ\n‚¨‚æ‚İ‚­‚¾‚³‚¢B
+//RAM 802FDB3C - ãã‚ã—ãã¯ ã¨ã‚Šã‚ã¤ã‹ã„ã›ã¤ã‚ã„ã—ã‚‡ã‚’\nãŠã‚ˆã¿ãã ã•ã„ã€‚
 textEntryH("For additional details, please\nread the instruction booklet.")
 save4_e56:
-//RAM 802FDB78 - ƒfƒBƒXƒNƒGƒ‰[‚Å‚·B
+//RAM 802FDB78 - ãƒ‡ã‚£ã‚¹ã‚¯ã‚¨ãƒ©ãƒ¼ã§ã™ã€‚
 textEntryH("This is a disk error.")
 
 seek(0x2E1E60)
@@ -889,23 +889,23 @@ sb t1,14(t2)	//2 (0x14)
 //Text ID RAM 803096E0 (0x10-0x12 & 0x20-0x22)
 seek(0x2E2110)
 save5_1:
-textEntryH("Please eject the disk.")				//RAM 802FDE40 - ƒfƒBƒXƒN‚ğ ‚Æ‚è‚¾‚µ‚Ä‚­‚¾‚³‚¢
+textEntryH("Please eject the disk.")				//RAM 802FDE40 - ãƒ‡ã‚£ã‚¹ã‚¯ã‚’ ã¨ã‚Šã ã—ã¦ãã ã•ã„
 save5_2:
-textEntryH("Please insert a disk.")				//RAM 802FDE60 - ƒfƒBƒXƒN‚ğ ‚¢‚ê‚Ä‚­‚¾‚³‚¢
+textEntryH("Please insert a disk.")				//RAM 802FDE60 - ãƒ‡ã‚£ã‚¹ã‚¯ã‚’ ã„ã‚Œã¦ãã ã•ã„
 save5_3:
-textEntryH("Please insert the original disk.")			//RAM 802FDE7C - ‚«‚Ç‚¤ƒfƒBƒXƒN‚ğ‚¢‚ê‚Ä‚­‚¾‚³‚¢
+textEntryH("Please insert the original disk.")			//RAM 802FDE7C - ãã©ã†ãƒ‡ã‚£ã‚¹ã‚¯ã‚’ã„ã‚Œã¦ãã ã•ã„
 save5_4:
-textEntryH("The wrong disk has been inserted.")			//RAM 802FDE9C - ‚Ü‚¿‚ª‚Á‚½ƒfƒBƒXƒN‚ª‚Í‚¢‚Á‚Ä‚¢‚Ü‚·
+textEntryH("The wrong disk has been inserted.")			//RAM 802FDE9C - ã¾ã¡ãŒã£ãŸãƒ‡ã‚£ã‚¹ã‚¯ãŒã¯ã„ã£ã¦ã„ã¾ã™
 save5_5:
-textEntryH("Loading content from a different disk.")		//RAM 802FDEC0 - ‚×‚Â‚ÌƒfƒBƒXƒN‚Æ‚¢‚ê‚©‚¦‚Ü‚·
+textEntryH("Loading content from a different disk.")		//RAM 802FDEC0 - ã¹ã¤ã®ãƒ‡ã‚£ã‚¹ã‚¯ã¨ã„ã‚Œã‹ãˆã¾ã™
 save5_6:
-textEntryH("Change to the original Paint Studio disk.")		//RAM 802FDEE0 - ‚à‚Æ‚ÌƒfƒBƒXƒN‚Æ ‚¢‚ê‚©‚¦‚Ü‚·
+textEntryH("Change to the original Paint Studio disk.")		//RAM 802FDEE0 - ã‚‚ã¨ã®ãƒ‡ã‚£ã‚¹ã‚¯ã¨ ã„ã‚Œã‹ãˆã¾ã™
 save5_7:
-textEntryH("Loading content from a different disk.")		//RAM 802FDF00 - ‚×‚Â‚ÌƒfƒBƒXƒN‚Ì ‚³‚­‚Ğ‚ñ‚ğ‚æ‚İ‚±‚İ‚Ü‚·
+textEntryH("Loading content from a different disk.")		//RAM 802FDF00 - ã¹ã¤ã®ãƒ‡ã‚£ã‚¹ã‚¯ã® ã•ãã²ã‚“ã‚’ã‚ˆã¿ã“ã¿ã¾ã™
 save5_8:
-textEntryH("Change to the original Paint Studio disk.")		//RAM 802FDF2C - ‚à‚Æ‚ÌƒfƒBƒXƒN‚ğ‚æ‚İ‚±‚İ‚Ü‚·
+textEntryH("Change to the original Paint Studio disk.")		//RAM 802FDF2C - ã‚‚ã¨ã®ãƒ‡ã‚£ã‚¹ã‚¯ã‚’ã‚ˆã¿ã“ã¿ã¾ã™
 save5_9:
-textEntryH("The original Paint Studio disk\nis required to continue.")	//RAM 802FDF4C - ƒQ[ƒ€‚ğ‚Â‚Ã‚¯‚é‚½‚ß‚É‚Í\n‚«‚Ç‚¤ƒfƒBƒXƒN‚ª‚Ğ‚Â‚æ‚¤‚Å‚·
+textEntryH("The original Paint Studio disk\nis required to continue.")	//RAM 802FDF4C - ã‚²ãƒ¼ãƒ ã‚’ã¤ã¥ã‘ã‚‹ãŸã‚ã«ã¯\nãã©ã†ãƒ‡ã‚£ã‚¹ã‚¯ãŒã²ã¤ã‚ˆã†ã§ã™
 
 //0x10 - Eject disk for a different disk
 seek(0x2A21EA)
@@ -943,7 +943,7 @@ dh (save5_3)
 //--Kanji Menu Text (Disk 0x2E2260 / RAM 802FDF90)
 seek(0x2E2260)
 save6_1:
-//RAM 802FDF90 - ` ‚Â‚©‚¢‚½‚¢‚©‚ñ‚¶‚Ì ‚³‚¢‚µ‚å‚Ì‚à‚¶‚ğ‚¦‚ç‚ñ‚Å‚­‚¾‚³‚¢ `
+//RAM 802FDF90 - ï½ ã¤ã‹ã„ãŸã„ã‹ã‚“ã˜ã® ã•ã„ã—ã‚‡ã®ã‚‚ã˜ã‚’ãˆã‚‰ã‚“ã§ãã ã•ã„ ï½
 textEntryH("* Please select the beginning of the kanji *")
 
 seek(0x29FE6A)
@@ -953,7 +953,7 @@ dh 0x003E	//X Pos
 
 
 //Function Text + Kanji Font Rendering (Disk 0x2A0224 / RAM 802BBF54)
-//Test these: ‚« ‚¹ ‚İ and last (symbols)
+//Test these: ã ã› ã¿ and last (symbols)
 seek(0x2A0224+0x114)
 addiu at,0,8
 
@@ -991,25 +991,25 @@ sb 0,0x58(t5)
 seek(0x2E1C00)	//Repoint because of space
 //Page 1
 kanji1_1:
-textEntryH("Special")		//‚Æ‚­‚µ‚ã‚à‚¶
+textEntryH("Special")		//ã¨ãã—ã‚…ã‚‚ã˜
 db $FE,$81,$58,$01,$FE,$81,$57,$01,$FE,$83,$95,$02,$FE,$81,$59,$01,$FE,$81,$54,$02,$FB
 db $FE,$82,$EC,$01,$FE,$82,$EE,$02,$FE,$83,$8E,$01,$FE,$83,$90,$02,$FE,$88,$6A,$04,$FF
 kanji1_2:
-textEntryH("Digits")		//‚º‚ñ‚©‚­‚·‚¤‚¶
+textEntryH("Digits")		//ãœã‚“ã‹ãã™ã†ã˜
 db $FE,$82,$50,$09,$FE,$82,$4F,$01,$FF
 kanji1_3:
-textEntryH("Circled")		//‚Ü‚é\n‚·‚¤‚¶
+textEntryH("Circled")		//ã¾ã‚‹\nã™ã†ã˜
 db $FE,$85,$40,$0A,$FB,$0A,$FF
 kanji1_4:
-textEntryH("Roman")		//ƒ[ƒ}\n‚·‚¤‚¶
+textEntryH("Roman")		//ãƒ­ãƒ¼ãƒ\nã™ã†ã˜
 db $FE,$85,$9F,$0D,$FF
 kanji1_5:
-textEntryH("Arrow")		//‚â‚¶‚é‚µ
+textEntryH("Arrow")		//ã‚„ã˜ã‚‹ã—
 db $FE,$81,$A8,$04,$FE,$86,$D3,$04,$FF
 
 //Page 2
 kanji2_1:
-textEntryH("Symbol")		//‚«‚²‚¤
+textEntryH("Symbol")		//ãã”ã†
 db $FE,$81,$97,$01,$FE,$81,$A6,$02,$FE,$86,$9B,$01,$FE,$86,$9D,$02,$FE,$81,$94,$01,$FE,$81,$96,$01,$FE,$81,$4F,$01,$FE,$81,$95,$01,$FE,$81,$89,$02,$FE,$87,$9E,$01,$FB
 db $FE,$81,$75,$02,$FE,$81,$69,$02,$FE,$81,$6D,$02,$FE,$81,$71,$04,$FE,$81,$79,$02,$FB
 db $FE,$86,$9F,$04,$FE,$81,$9B,$01,$FE,$81,$A0,$01,$FE,$81,$A2,$01,$FE,$81,$A4,$01,$FE,$81,$99,$01,$FE,$81,$F3,$01,$FE,$81,$9D,$01,$FE,$86,$B3,$02,$FB
@@ -1021,13 +1021,13 @@ db $FE,$81,$93,$01,$FE,$81,$8E,$05,$FE,$81,$CD,$02,$FE,$81,$DB,$01,$FE,$81,$DD,$
 
 //Page 3
 kanji3_1:
-textEntryH("Capital\nLetters")	//‚º‚ñ‚©‚­ABC
+textEntryH("Capital\nLetters")	//ãœã‚“ã‹ãABC
 db $FE,$82,$60,$1A,$FF
 kanji3_2:
-textEntryH("Small\nLetters")	//‚º‚ñ‚©‚­abc
+textEntryH("Small\nLetters")	//ãœã‚“ã‹ãabc
 db $FE,$82,$81,$1A,$FF
 kanji3_3:
-textEntryH("Greek\nLetters")	//ƒMƒŠƒVƒ„‚à‚¶
+textEntryH("Greek\nLetters")	//ã‚®ãƒªã‚·ãƒ¤ã‚‚ã˜
 db $FE,$83,$9F,$18,$FB,$FE,$83,$BF,$18,$FF
 
 //Pointers
