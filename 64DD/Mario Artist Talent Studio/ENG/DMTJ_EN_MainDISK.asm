@@ -31,6 +31,10 @@ include "DMTJ_EN_Macros.asm"
 
 print "- Assembling Main Menu & Others...\n"
 include "DMTJ_EN_Other.asm"
+print "- Assembling Talent Studio...\n"
+include "DMTJ_EN_TalentStudio.asm"
+//print "- Assembling Movie Studio...\n"
+//include "DMTJ_EN_MovieStudio.asm"
 print "- Assembling Gallery...\n"
 include "DMTJ_EN_Gallery.asm"
 
