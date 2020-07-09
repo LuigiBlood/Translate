@@ -691,7 +691,7 @@ textEntryH0("Limbo Dance")		//RAM 803C14E4 - リンボーダンス
 talent15_10:
 textEntryH0("Disco")			//RAM 803C14F4 - ディスコ
 talent15_11:
-textEntryH0("Super Model")		//RAM 803C1500 - スーパーモデル
+textEntryH0("Top Model")		//RAM 803C1500 - スーパーモデル
 talent15_12:
 textEntryH0("Toilet")			//RAM 803C1510 - トイレ
 talent15_13:
@@ -753,7 +753,7 @@ textEntryH0("Round")			//RAM 803C166C - まるがお
 talent17_5:
 textEntryH0("Heart-shaped")		//RAM 803C1678 - ハートがた
 talent17_6:
-textEntryH0("Smaller Square")			//RAM 803C1684 - ほっそりしかく
+textEntryH0("Smaller Square")		//RAM 803C1684 - ほっそりしかく
 talent17_7:
 textEntryH0("Ellipse")			//RAM 803C1694 - だえん
 talent17_8:
@@ -1151,7 +1151,7 @@ textEntryH0("Dango")			//RAM 803C20EC - おだんご
 talent25_11:
 textEntryH0("Wings")			//RAM 803C20F8 - ウイング
 talent25_12:
-textEntryH0("Bat wings")		//RAM 803C2104 - コウモリ
+textEntryH0("Bat Wings")		//RAM 803C2104 - コウモリ
 talent25_13:
 textEntryH0("Antennae")			//RAM 803C2110 - しょっかく
 talent25_14:
@@ -1346,7 +1346,7 @@ talent31_21:
 textEntryH0("Protector")		//RAM 803C25D8 - プロテクターうえ
 //--Body / Option
 talent32_1:
-textEntryH0("None")			//RAM 803C25E8 - なし
+textEntryH0("None")			//RAM 803C25EC - なし
 talent32_2:
 textEntryH0("Angel's Wings")		//RAM 803C25F4 - てんしのハネ
 talent32_3:
@@ -1592,7 +1592,7 @@ textEntryH0("Pumps")			//RAM 803C2CB8 - パンプス
 talent40_7:
 textEntryH0("High Heels")		//RAM 803C2CC4 - ハイヒール
 talent40_8:
-textEntryH0("Strappy Sandals")			//RAM 803C2CD0 - ひもサンダル
+textEntryH0("Strappy Sandals")		//RAM 803C2CD0 - ひもサンダル
 talent40_9:
 textEntryH0("Short Boots")		//RAM 803C2CE0 - ショートブーツ
 talent40_10:
@@ -1693,3 +1693,32 @@ talent42_21:
 textEntryH0("Knight")			//RAM 803C2F7C - ナイト
 
 seek(0x2147B4)
+dw (talent17_1),(talent17_2),(talent17_3),(talent17_4),(talent17_5),(talent17_6),(talent17_7),(talent17_8),(talent17_9),(talent17_10),(talent17_11),(talent17_12),(talent17_13),(talent17_14),(talent17_15),(talent17_16),(talent17_17),(talent17_18),(talent17_19),(talent17_20),(talent17_21)
+dw (talent18_1),(talent18_2),(talent18_3),(talent18_4),(talent18_5),(talent18_6),(talent18_7),(talent18_8),(talent18_9),(talent18_10),(talent18_11),(talent18_12),(talent18_13),(talent18_14),(talent18_15),(talent18_16),(talent18_17),(talent18_18),(talent18_19),(talent18_20),(talent18_21),(talent18_22),(talent18_23),(talent18_24),(talent18_25),(talent18_26),(talent18_27),(talent18_28),(talent18_29),(talent18_30),(talent18_31),(talent18_32),(talent18_33),(talent18_34),(talent18_35),(talent18_36),(talent18_37),(talent18_38),(talent18_39),(talent18_40),(talent18_41),(talent18_42),(talent18_43),(talent18_44),(talent18_45),(talent18_46),(talent18_47),(talent18_48),(talent18_49)
+dw (talent19_1),(talent19_2),(talent19_3),(talent19_4),(talent19_5),(talent19_6),(talent19_7),(talent19_8),(talent19_9),(talent19_10),(talent19_11),(talent19_12),(talent19_13),(talent19_14),(talent19_15),(talent19_16),(talent19_17),(talent19_18),(talent19_19),(talent19_20),(talent19_21),(talent19_22),(talent19_23),(talent19_24),(talent19_25),(talent19_26),(talent19_27),(talent19_28)
+dw (talent20_1),(talent20_2),(talent20_3),(talent20_4),(talent20_5),(talent20_6),(talent20_7),(talent20_8),(talent20_9),(talent20_10),(talent20_11),(talent20_12),(talent20_13),(talent20_14),(talent20_15),(talent20_16),(talent20_17),(talent20_18),(talent20_19),(talent20_20),(talent20_21)
+dw (talent21_1),(talent21_2),(talent21_3),(talent21_4),(talent21_5),(talent21_6),(talent21_7),(talent21_8),(talent21_9),(talent21_10),(talent21_11),(talent21_12),(talent21_13),(talent21_14)
+dw (talent22_1),(talent22_2),(talent22_3),(talent22_4),(talent22_5),(talent22_6),(talent22_7),(talent22_8),(talent22_9),(talent22_10),(talent22_11),(talent22_12),(talent22_13),(talent22_14)
+dw (talent23_1),(talent23_2),(talent23_3),(talent23_4),(talent23_5),(talent23_6),(talent23_7),(talent23_8),(talent23_9),(talent23_10),(talent23_11),(talent23_12),(talent23_13),(talent23_14)
+dw (talent24_1),(talent24_2),(talent24_3),(talent24_4),(talent24_5),(talent24_6),(talent24_7),(talent24_8),(talent24_9),(talent24_10),(talent24_11),(talent24_12),(talent24_13),(talent24_14),(talent24_15),(talent24_16),(talent24_17),(talent24_18),(talent24_19),(talent24_20),(talent24_21),(talent24_22),(talent24_23),(talent24_24),(talent24_25),(talent24_26),(talent24_27),(talent24_28)
+dw (talent25_1),(talent25_2),(talent25_3),(talent25_4),(talent25_5),(talent25_6),(talent25_7),(talent25_8),(talent25_9),(talent25_10),(talent25_11),(talent25_12),(talent25_13),(talent25_14),(talent25_15),(talent25_16),(talent25_17),(talent25_18),(talent25_19),(talent25_20),(talent25_21)
+dw (talent26_1),(talent26_2),(talent26_3),(talent26_4),(talent26_5),(talent26_6),(talent26_7),(talent26_8),(talent26_9),(talent26_10),(talent26_11),(talent26_12),(talent26_13),(talent26_14),(talent26_15),(talent26_16),(talent26_17),(talent26_18),(talent26_19),(talent26_20),(talent26_21)
+dw (talent27_1),(talent27_2),(talent27_3),(talent27_4),(talent27_5),(talent27_6),(talent27_7)
+dw (talent28_1),(talent28_2),(talent28_3),(talent28_4),(talent28_5),(talent28_6),(talent28_7)
+dw (talent29_1),(talent29_2),(talent29_3),(talent29_4),(talent29_5),(talent29_6),(talent29_7)
+dw (talent30_1),(talent30_2),(talent30_3),(talent30_4),(talent30_5),(talent30_6),(talent30_7),(talent30_8),(talent30_9),(talent30_10),(talent30_11),(talent30_12),(talent30_13),(talent30_14),(talent30_15),(talent30_16),(talent30_17),(talent30_18),(talent30_19),(talent30_20),(talent30_21)
+dw (talent31_1),(talent31_2),(talent31_3),(talent31_4),(talent31_5),(talent31_6),(talent31_7),(talent31_8),(talent31_9),(talent31_10),(talent31_11),(talent31_12),(talent31_13),(talent31_14),(talent31_15),(talent31_16),(talent31_17),(talent31_18),(talent31_19),(talent31_20),(talent31_21)
+dw (talent32_1),(talent32_2),(talent32_3),(talent32_4),(talent32_5),(talent32_6),(talent32_7),(talent32_8),(talent32_9),(talent32_10),(talent32_11),(talent32_12),(talent32_13),(talent32_14)
+dw (talent33_1),(talent33_2),(talent33_3),(talent33_4),(talent33_5),(talent33_6),(talent33_7),(talent33_8),(talent33_9),(talent33_10),(talent33_11),(talent33_12),(talent33_13),(talent33_14),(talent33_15),(talent33_16),(talent33_17),(talent33_18),(talent33_19),(talent33_20),(talent33_21)
+dw (talent34_1),(talent34_2),(talent34_3),(talent34_4),(talent34_5),(talent34_6),(talent34_7),(talent34_8),(talent34_9),(talent34_10),(talent34_11),(talent34_12),(talent34_13),(talent34_14)
+dw (talent35_1),(talent35_2),(talent35_3),(talent35_4),(talent35_5),(talent35_6),(talent35_7)
+dw (talent36_1),(talent36_2),(talent36_3),(talent36_4),(talent36_5),(talent36_6),(talent36_7)
+dw (talent37_1),(talent37_2),(talent37_3),(talent37_4),(talent37_5),(talent37_6),(talent37_7)
+dw (talent38_1),(talent38_2),(talent38_3),(talent38_4),(talent38_5),(talent38_6),(talent38_7),(talent38_8),(talent38_9),(talent38_10),(talent38_11),(talent38_12),(talent38_13),(talent38_14),(talent38_15),(talent38_16),(talent38_17),(talent38_18),(talent38_19),(talent38_20),(talent38_21)
+dw (talent39_1),(talent39_2),(talent39_3),(talent39_4),(talent39_5),(talent39_6),(talent39_7),(talent39_8),(talent39_9),(talent39_10),(talent39_11),(talent39_12),(talent39_13),(talent39_14),(talent39_15),(talent39_16),(talent39_17),(talent39_18),(talent39_19),(talent39_20),(talent39_21)
+dw (talent40_1),(talent40_2),(talent40_3),(talent40_4),(talent40_5),(talent40_6),(talent40_7),(talent40_8),(talent40_9),(talent40_10),(talent40_11),(talent40_12),(talent40_13),(talent40_14),(talent40_15),(talent40_16),(talent40_17),(talent40_18),(talent40_19),(talent40_20),(talent40_21)
+dw (talent41_1),(talent41_2),(talent41_3),(talent41_4),(talent41_5),(talent41_6),(talent41_7),(talent41_8),(talent41_9),(talent41_10),(talent41_11),(talent41_12),(talent41_13),(talent41_14)
+dw (talent42_1),(talent42_2),(talent42_3),(talent42_4),(talent42_5),(talent42_6),(talent42_7),(talent42_8),(talent42_9),(talent42_10),(talent42_11),(talent42_12),(talent42_13),(talent42_14),(talent42_15),(talent42_16),(talent42_17),(talent42_18),(talent42_19),(talent42_20),(talent42_21)
+dw (talent15_10),(talent15_13),(talent15_28),(talent15_18),(talent15_9),(talent15_14),(talent15_8),(talent15_23),(talent15_21),(talent15_4),(talent15_5),(talent15_1),(talent15_25),(talent15_7),(talent15_3),(talent15_17),(talent15_22),(talent15_24),(talent15_6),(talent15_12),(talent15_15),(talent15_19),(talent15_27),(talent15_26),(talent15_16),(talent15_11),(talent15_20),(talent15_2)
+dw 0,0,0,0
+dw (talent16_1),(talent16_2),(talent16_3),(talent16_4),(talent16_5)
