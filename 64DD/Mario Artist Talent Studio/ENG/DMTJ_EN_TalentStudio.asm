@@ -2088,28 +2088,306 @@ seek(0xA0B400)
 base 0x80280000
 
 seek(0xA190D4)
-textEntryH0("")		//RAM 8028DCD4 - ページ
+textEntryH0("")				//RAM 8028DCD4 - ページ
 
 seek(0xA190F4)
-//RAM 8028DCF4 - すがおをひょうじする
-//RAM 8028DCF4 - ぜんたいぬり
-//RAM 8028DCF4 - ぼかす
-//RAM 8028DCF4 - ペンシル
-//RAM 8028DCF4 - ペン
-//RAM 8028DCF4 - くちべに
-//RAM 8028DCF4 - ブラシ
-//RAM 8028DCF4 - パフ
-//RAM 8028DCF4 - せっけん
-//RAM 8028DCF4 - メイクおとし
-//RAM 8028DCF4 - やりなおし
-//RAM 8028DCF4 - ひょうじちゅう
-//RAM 8028DCF4 - すがお
-//RAM 8028DCF4 - マスめ
-//RAM 8028DCF4 - つまむ
-//RAM 8028DCF4 - はえぎわ
-//RAM 8028DCF4 - ひょうじをけす
-//RAM 8028DCF4 - げんざいの
-//RAM 8028DCF4 - タレントのかお
-//RAM 8028DCF4 - けしょうが
-//RAM 8028DCF4 - すけてみえる
-//RAM 8028DCF4 - ひょうじのきりかえ
+talent48_1:
+textEntryH0("Display Original Face")	//RAM 8028DCF4 - すがおをひょうじする
+talent48_2:
+textEntryH0("Fill")			//RAM 8028DD0C - ぜんたいぬり
+talent48_3:
+textEntryH0("Blur")			//RAM 8028DD1C - ぼかす
+talent48_4:
+textEntryH0("Pencil")			//RAM 8028DD24 - ペンシル
+talent48_5:
+textEntryH0("Pen")			//RAM 8028DD30 - ペン
+talent48_6:
+textEntryH0("Lipstick")			//RAM 8028DD38 - くちべに
+talent48_7:
+textEntryH0("Brush")			//RAM 8028DD44 - ブラシ
+talent48_8:
+textEntryH0("Puff")			//RAM 8028DD4C - パフ
+talent48_9:
+textEntryH0("Soap")			//RAM 8028DD54 - せっけん
+talent48_10:
+textEntryH0("Remover")			//RAM 8028DD60 - メイクおとし
+talent48_11:
+textEntryH0("Undo")			//RAM 8028DD70 - やりなおし
+talent48_12:
+textEntryH0("Representation")		//RAM 8028DD7C - ひょうじちゅう
+talent48_13:
+textEntryH0("Original")			//RAM 8028DD8C - すがお
+talent48_14:
+textEntryH0("Grid")			//RAM 8028DD94 - マスめ
+talent48_15:
+textEntryH0("Pinch")			//RAM 8028DD9C - つまむ
+talent48_16:
+textEntryH0("Hairline")			//RAM 8028DDA4 - はえぎわ
+talent48_17:
+textEntryH0("Removed")			//RAM 8028DDB0 - ひょうじをけす
+talent48_18:
+textEntryH0("Current")			//RAM 8028DDC0 - げんざいの
+talent48_19:
+textEntryH0("Talent's Face")		//RAM 8028DDCC - タレントのかお
+talent48_20:
+textEntryH0("Makeup")			//RAM 8028DDDC - けしょうが
+talent48_21:
+textEntryH0("Transparent")		//RAM 8028DDE8 - すけてみえる
+talent48_22:
+textEntryH0("Toggle Display")		//RAM 8028DDF8 - ひょうじのきりかえ
+
+seek(0xA15BFE); dh (talent48_6)
+seek(0xA15C0E); dh (talent48_4)
+seek(0xA15C1E); dh (talent48_7)
+seek(0xA15C2E); dh (talent48_8)
+seek(0xA15C3E); dh (talent48_5)
+seek(0xA15A5E); dh (talent48_9)
+seek(0xA16052); dh (talent48_3)
+seek(0xA1617A); dh (talent48_11)
+seek(0xA16C32); dh (talent48_10)
+seek(0xA16E7A); dh (talent48_22)
+seek(0xA17512); dh (talent48_2)
+
+seek(0xA17FAE); dh (talent48_18)
+seek(0xA17FBE); dh (talent48_19)
+seek(0xA17FDA); dh (talent48_20)
+seek(0xA17FF2); dh (talent48_21)
+seek(0xA1800E); dh (talent48_14)
+seek(0xA18026); dh (talent48_12)
+
+//Current X position
+seek(0xA17E7A); dh $00C6
+//Face X position
+seek(0xA17FC2); dh $00F0
+//Grid X position
+seek(0xA17F9E); dh $00B9
+//Representation X position
+seek(0xA1802A); dh $00D1
+//Makeup X position
+seek(0xA17F92); dh $00F5
+//Transparent X position
+seek(0xA17FF6); dh $00B6
+
+
+//--Expressions
+//Code Overlay (Disk 0x9EBDF8 / RAM 80280000)
+seek(0x9EBDF8)
+base 0x80280000
+
+seek(0x9FEF50)
+talent49_1:
+textEntryH0("Page")			//RAM 80293158 - ページ
+talent49_2:
+textEntryH0("Normal")			//RAM 80293160 - ふつうのひょうじょう
+talent49_3:
+textEntryH0("Laugh")			//RAM 80293178 - わらったひょうじょう
+talent49_4:
+textEntryH0("Angry")			//RAM 80293190 - おこったひょうじょう
+talent49_5:
+textEntryH0("Sad")			//RAM 802931A8 - こまったひょうじょう
+talent49_6:
+textEntryH0("Free")			//RAM 802931C0 - フリーのひょうじょう
+talent49_7:
+textEntryH0("Sleep")			//RAM 802931D8 - ねむったひょうじょう
+talent49_8:
+textEntryH0("Shuffle")			//RAM 802931F0 - らくちんスイッチ
+talent49_9:
+textEntryH0("Reset")			//RAM 80293204 - リセット
+talent49_10:
+textEntryH0("Show/Hide Net")		//RAM 80293210 - あみをだす/ださない
+talent49_11:
+textEntryH0("Hide Net")			//RAM 80293228 - あみをけす
+talent49_12:
+textEntryH0("Undo")			//RAM 80293234 - やりなおし
+talent49_13:
+textEntryH0("Copy Expression")		//RAM 80293240 - ひょうじょうのコピー
+talent49_14:
+textEntryH0("Paste Expression")		//RAM 80293258 - ひょうじょうのよびだし
+talent49_15:
+textEntryH0("Expression 00")		//RAM 80293270 - ひょうじょう00
+talent49_16:
+textEntryH0("Rotate / Zoom (B Button)")	//RAM 80293284 - かいてん・ズーム(Bボタン)
+
+seek(0x9EDED6); dh (talent49_1)
+seek(0x9F46C6); dh (talent49_8)
+seek(0x9F1D9A); dh (talent49_10)
+seek(0x9F1B22); dh (talent49_12)
+seek(0x9F4DA6); dh (talent49_13)
+seek(0x9F4D8E); dh (talent49_14)
+seek(0x9F1F9E); dh (talent49_15)
+seek(0x9F1FCE); dh (talent49_15)
+seek(0x9EE082); dh (talent49_16)
+
+seek(0x9FF0AC)
+dw (talent49_2),(talent49_3),(talent49_4)
+dw (talent49_5),(talent49_6),(talent49_7)
+
+//Move Expression Number ASM
+seek(0x9F1FB0); sb t7,11(a1)
+seek(0x9F1FB8); sb 0,12(a1)
+seek(0x9F1FDC); sb t0,11(a1)
+seek(0x9F1FEC); sb t2,12(a1)
+
+//Page Number Text (Expressions) 0x9EDE94
+seek(0x9EDE94 + 0x14)
+sb 0,0(a0)
+seek(0x9EDE94 + 0x3C)
+nop
+nop
+nop
+nop
+seek(0x9EDD34 + 0xC)
+lbu a0,0(v0)
+sb v1,0(v0)
+addiu v0,v0,1
+seek(0x9EDD34 + 0x24)
+sb 0,0(v0)
+
+
+//--Pattern Maker
+//Code Overlay (Disk 0xA21A98 / RAM 80280000)
+seek(0xA21A98)
+base 0x80280000
+
+seek(0xA426B8)
+talent50_1:
+textEntryH0("Pen")			//RAM 802A0C20 - ペン
+talent50_2:
+textEntryH0("Eraser")			//RAM 802A0C28 - けしゴム
+talent50_3:
+textEntryH0("Thin")			//RAM 802A0C34 - ほそい
+talent50_4:
+textEntryH0("Medium")			//RAM 802A0C3C - ふつう
+talent50_5:
+textEntryH0("Thick")			//RAM 802A0C44 - ふとい
+talent50_6:
+textEntryH0("Fill")			//RAM 802A0C4C - ぬりつぶし
+talent50_7:
+textEntryH0("Special Effects")		//RAM 802A0C58 - とくしゅこうか
+talent50_8:
+textEntryH0("Clear")			//RAM 802A0C68 - ぜんたいをけす
+talent50_9:
+textEntryH0("Undo")			//RAM 802A0C78 - やりなおし
+talent50_10:
+textEntryH0("Free")			//RAM 802A0C84 - じゆうせん
+talent50_11:
+textEntryH0("Line")			//RAM 802A0C90 - ちょくせん
+talent50_12:
+textEntryH0("Rectangle")		//RAM 802A0C9C - しかくけい
+talent50_13:
+textEntryH0("Solid Rectangle")		//RAM 802A0CA8 - ぬりつぶしたしかくけい
+talent50_14:
+textEntryH0("Circle")			//RAM 802A0CC0 - えん
+talent50_15:
+textEntryH0("Solid Circle")		//RAM 802A0CC8 - ぬりつぶしたえん
+talent50_16:
+textEntryH0("Selected Color")		//RAM 802A0CDC - えらばれたいろ
+talent50_17:
+textEntryH0("Custom Color")		//RAM 802A0CEC - つくったいろ
+talent50_18:
+textEntryH0("1/2")			//RAM 802A0CFC - 1/2ページ
+talent50_19:
+textEntryH0("Smooth")			//RAM 802A0D0C - なめらかにする
+talent50_20:
+textEntryH0("Flip")			//RAM 802A0D1C - さゆうはんてん
+talent50_21:
+textEntryH0("Rotate")			//RAM 802A0D2C - かいてん
+talent50_22:
+textEntryH0("Brighten")			//RAM 802A0D38 - あかるくする
+talent50_23:
+textEntryH0("Darken")			//RAM 802A0D48 - くらくする
+talent50_24:
+textEntryH0("Scroll")			//RAM 802A0D54 - スクロール
+talent50_25:
+textEntryH0("Stamps")			//RAM 802A0D60 - スタンプ
+talent50_26:
+textEntryH0("Samples")			//RAM 802A0D6C - サンプル
+talent50_27:
+textEntryH0("Texture Feel")		//RAM 802A0D78 - しつかんをつける
+talent50_28:
+textEntryH0("Shapes")			//RAM 802A0D8C - ずけい
+talent50_29:
+textEntryH0("Color Album")		//RAM 802A0D94 - カラーアルバム
+talent50_30:
+textEntryH0("Rectangle")		//RAM 802A0DA4 - しかくけい
+talent50_31:
+textEntryH0("Circle")			//RAM 802A0DB0 - えん
+talent50_32:
+textEntryH0("Unfill")			//RAM 802A0DB8 - おなじいろをけす
+talent50_33:
+textEntryH0("Shuffle")			//RAM 802A0DCC - らくちんスイッチ
+talent50_34:
+textEntryH0("Split")			//RAM 802A0DE0 - よんぶんかつ
+talent50_35:
+textEntryH0("Hue Change")		//RAM 802A0DF0 - いろあいをかえる
+
+seek(0xA42A98)
+textEntryH0("")				//RAM 802A1000 - ページ
+
+seek(0xA42AA0)
+dw (talent50_11),(talent50_12),(talent50_14),(talent50_13),(talent50_15)
+dw (talent50_3),(talent50_4),(talent50_5)
+dw (talent50_3),(talent50_4),(talent50_5),(talent50_30),(talent50_31),(talent50_32)
+dw (talent50_20),(talent50_21),(talent50_34),(talent50_35),(talent50_22),(talent50_23),(talent50_19),(talent50_27)
+
+seek(0xA2DEA2); dh (talent50_9)
+seek(0xA2E832); dh (talent50_16)
+seek(0xA2E83E); dh (talent50_17)
+seek(0xA2FB8A); dh (talent50_6)
+seek(0xA2FD66); dh (talent50_1)
+seek(0xA2FE86); dh (talent50_28)
+seek(0xA3000A); dh (talent50_2)
+seek(0xA3017A); dh (talent50_7)
+seek(0xA30A42); dh (talent50_8)
+seek(0xA3101E); dh (talent50_26)
+seek(0xA31A02); dh (talent50_29)
+seek(0xA32E1A); dh (talent50_33)
+
+
+//--Talent Information
+//Code Overlay (Disk 0x9222A0 / RAM 8029D0E0)
+seek(0x9222A0)
+base 0x8029D0E0
+
+seek(0x92DF80)
+//RAM 802A8DC0 - 性別誕生日月日歳 (Character Graphics to Load)
+textEntryASCII0("Birth/yr")
+
+seek(0x92DF94)
+textEntryASCII0("")			//RAM 802A8DD4 - 性別
+seek(0x92DF9C)
+textEntryASCII0("")			//RAM 802A8DDC - 誕生
+seek(0x92DFA4)
+textEntryASCII0("Birth")		//RAM 802A8DE4 - 日
+seek(0x92DFA8)
+textEntryASCII0("")			//RAM 802A8DE8 - 月
+seek(0x92DFAC)
+textEntryASCII0("/")			//RAM 802A8DEC - 日
+seek(0x92DFB0)
+textEntryASCII0("yr")			//RAM 802A8DF0 - 歳
+
+//Gender Position
+seek(0x92B096); dh $00A0
+
+//'/' Position
+seek(0x92B18E); dh $00D0
+
+//Font Fix
+seek(0x92B0B2); dh $0300-$0300 //Birth
+seek(0x92B15A); dh $0580-$0300 //'/'
+seek(0x92B202); dh $0600-$0300 //yr
+
+seek(0x92FB40)
+textEntryH(32, "Shuffle")		//らくちんスイッチ
+textEntryH(32, "Clear All")		//すべてけす
+textEntryH(32, "Undo")			//やりなおし
+textEntryH(32, "Name")			//なまえ
+textEntryH(32, "Job")			//しごと
+textEntryH(32, "Catchphrase")		//すきなセリフ
+textEntryH(32, "Free Space 1")		//フリースペース1
+textEntryH(32, "Free Space 2")		//フリースペース2
+textEntryH(32, "Free Space 3")		//フリースペース3
+textEntryH(32, "Free Space 4")		//フリースペース4
+textEntryH(32, "Gender")		//せいべつ
+textEntryH(32, "Birthday")		//たんじょうび
+textEntryH(32, "Age")			//ねんれい
