@@ -2356,13 +2356,13 @@ textEntryASCII0("Birth/yr")
 seek(0x92DF94)
 textEntryASCII0("")			//RAM 802A8DD4 - 性別
 seek(0x92DF9C)
-textEntryASCII0("")			//RAM 802A8DDC - 誕生
+textEntryASCII0("Birth")		//RAM 802A8DDC - 誕生
 seek(0x92DFA4)
-textEntryASCII0("Birth")		//RAM 802A8DE4 - 日
+textEntryASCII0("")			//RAM 802A8DE4 - 日
 seek(0x92DFA8)
-textEntryASCII0("")			//RAM 802A8DE8 - 月
+textEntryASCII0("/")			//RAM 802A8DE8 - 月
 seek(0x92DFAC)
-textEntryASCII0("/")			//RAM 802A8DEC - 日
+textEntryASCII0("")			//RAM 802A8DEC - 日
 seek(0x92DFB0)
 textEntryASCII0("yr")			//RAM 802A8DF0 - 歳
 
@@ -2391,3 +2391,7 @@ textEntryH(32, "Free Space 4")		//フリースペース4
 textEntryH(32, "Gender")		//せいべつ
 textEntryH(32, "Birthday")		//たんじょうび
 textEntryH(32, "Age")			//ねんれい
+
+//Random Names (Disk 0x930D10 / RAM 802ABB50)
+seek(0x930D10)
+//TODO LATER
