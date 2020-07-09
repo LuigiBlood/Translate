@@ -31,6 +31,10 @@ insert "GFX/BUTTON_SAVE.ia8.bin"
 seekFile(0x8FA0)
 insert "GFX/BUTTON_YES.ia8.bin"
 
+//0x12608 - Font (I4)
+seekFile(0x12608)
+insert "GFX/FONT_MODIFIED.i4.bin"
+
 //-----------------------
 //Title Screen YAY1 patches---------------------------------
 output "./Temp/12D5180.2BDD6.TitleScreen.yay1.bin"
@@ -478,3 +482,9 @@ dw 0xF1000000, 0x04000400
 //dw 0xF1000000, 0x04000400
 
 dw 0xDF000000, 0x00000000
+
+//Fonts
+seek(0x199B278); insert "GFX/FONT_MODIFIED.i4.bin"
+seek(0x19EED38); insert "GFX/FONT_MODIFIED.i4.bin"
+seek(0x1A4A778); insert "GFX/FONT_MODIFIED.i4.bin"
+seek(0x1AC1FF8); insert "GFX/FONT_MODIFIED.i4.bin"
