@@ -211,7 +211,7 @@ textEntryH0("Cartoon")			//RAM 803BA84C - まんが
 talent6_29:
 textEntryH0("Glamor")			//RAM 803BA854 - グラマー
 talent6_30:
-textEntryH0("Fluent")			//RAM 803BA860 - ペラ (Unused, TODO)
+textEntryH0("Fluent")			//RAM 803BA860 - ペラ
 
 //--Face Import
 talent7_1:
@@ -943,7 +943,7 @@ textEntryH0("Viking Hat")		//RAM 803C1B14 - バイキング
 talent19_27:
 textEntryH0("Pirate Hat")		//RAM 803C1B20 - かいぞくぼう
 talent19_28:
-textEntryH0("Mario Cap")		//RAM 803C1B30 - マリオぼう
+textEntryH0("Mario's Cap")		//RAM 803C1B30 - マリオぼう
 //--Head / Helmet
 talent20_1:
 textEntryH0("None")			//RAM 803C1B3C - なし
@@ -1165,7 +1165,7 @@ textEntryH0("Cat Ears")			//RAM 803C212C - ネコのみみ
 talent25_16:
 textEntryH0("Bear Ears")		//RAM 803C2138 - クマのみみ
 talent25_17:
-textEntryH0("Ram's Horns")		//RAM 803C2144 - うしのツノ
+textEntryH0("Ram Horns")		//RAM 803C2144 - うしのツノ
 talent25_18:
 textEntryH0("Deer Horns")		//RAM 803C2150 - しかのツノ
 talent25_19:
@@ -1244,9 +1244,9 @@ textEntryH0("Wrestler Tights")		//RAM 803C2304 - レスラータイツ
 talent28_5:
 textEntryH0("Festival")			//RAM 803C2314 - おまつり
 talent28_6:
-textEntryH0("Track Suit")		//RAM 803C2320 - たいそうぎ
+textEntryH0("Tracksuit")		//RAM 803C2320 - たいそうぎ
 talent28_7:
-textEntryH0("Body Suit")		//RAM 803C232C - ぜんしんタイツ
+textEntryH0("Bodysuit")			//RAM 803C232C - ぜんしんタイツ
 //--Body / Male / Socks
 talent29_1:
 textEntryH0("None")			//RAM 803C233C - なし
@@ -1331,13 +1331,13 @@ textEntryH0("Down Jacket")		//RAM 803C2540 - ダウンジャケット
 talent31_12:
 textEntryH0("Sweater")			//RAM 803C2554 - セーター
 talent31_13:
-textEntryH0("Dress shirt")		//RAM 803C2560 - Yシャツ
+textEntryH0("Dress Shirt")		//RAM 803C2560 - Yシャツ
 talent31_14:
 textEntryH0("School Uniform")		//RAM 803C256C - がくせいふく
 talent31_15:
 textEntryH0("Robe")			//RAM 803C257C - ローブ
 talent31_16:
-textEntryH0("Latin shirt")		//RAM 803C2584 - ラテンシャツ
+textEntryH0("Latin Shirt")		//RAM 803C2584 - ラテンシャツ
 talent31_17:
 textEntryH0("Prince")			//RAM 803C2594 - おうじさまシャツ
 talent31_18:
@@ -1478,7 +1478,7 @@ textEntryH0("Leotard")			//RAM 803C2954 - レオタード
 talent36_6:
 textEntryH0("Campaign Girl")		//RAM 803C2960 - キャンギャル
 talent36_7:
-textEntryH0("Body Suit")		//RAM 803C2970 - ぜんしんタイツ
+textEntryH0("Bodysuit")			//RAM 803C2970 - ぜんしんタイツ
 //--Body / Female / Socks
 talent37_1:
 textEntryH0("None")			//RAM 803C2980 - なし
@@ -1744,25 +1744,39 @@ seek(0x195756); dh (talent14_9)
 
 
 seek(0x21528C)
+talent43_2:
+textEntryASCII0("This talent hasn't been saved.||")
+skip(-1)
 talent43_1:
 //RAM 803C3A5C - このタレントを|「タレントをつくる」に|のこしておきますか？
-textEntryASCII0("Would you like to keep|this talent in the|Talent Studio?")
-talent43_2:
+textEntryASCII0("Would you like to keep|this talent in the Talent Studio?")
+//talent43_2:
 //RAM 803C3A98 - このタレントは|セーブされていません。|★|「タレントをつくる」に|のこしておきますか？
-textEntryASCII0("This talent hasn't been saved.|Would you like to keep|this talent in the|Talent Studio?")
+//textEntryASCII0("This talent hasn't been saved.|Would you like to keep|this talent in the|Talent Studio?")
 talent43_3:
 //RAM 803C3AF0 - アルバムのかおを|消します。|よろしいですか？
-textEntryASCII0("This face will be deleted|from the album.|Are you sure?")
+textEntryASCII0("This face will be|deleted from the album.|Are you sure?")
 talent43_4:
 //RAM 803C3B20 - アルバムのもようを|消します。|よろしいですか？
-textEntryASCII0("This pattern will be deleted|from the album.|Are you sure?")
+textEntryASCII0("This pattern will be|deleted from the album.|Are you sure?")
 
 seek(0x19A72E); dh (talent43_2)
 seek(0x19A742); dh (talent43_1)
+
+seek(0x19A7AA); dh 0x74		//(talent43_2)
+seek(0x19A7BE); dh 0x50		//(talent43_1)
+seek(0x19A8F2); dh 0x26
+seek(0x19A8FA); dh 0xF2
+
 seek(0x19A95A); dh (talent43_3)
 seek(0x19A97A); dh (talent43_3)
+seek(0x19A99E); dh 0x3E
+seek(0x19A9A6); dh 0xC4
+
 seek(0x19A9FE); dh (talent43_4)
 seek(0x19AA1E); dh (talent43_4)
+seek(0x19AA42); dh 0x3E
+seek(0x19AA4A); dh 0xC4
 
 
 seek(0x215944)	//Filename
@@ -1775,7 +1789,7 @@ textEntryH0("Too many polygons")
 
 seek(0x215CBC)
 //RAM 803C448C - 現在のタレントのかおが|変更できなくなりますが|よろしいですか？|“いいえ”の場合は|けしょうが消えます。
-textEntryASCII0("The talent's face cannot be edited.|Do you want to keep it?|Selecting \"No\" will undo the makeup.")
+textEntryASCII0("The current talent's face|cannot be edited.|Do you want to keep it?|Selecting No will undo|the makeup.")
 
 
 //--Color Album
@@ -2155,10 +2169,10 @@ seek(0xA17FF2); dh (talent48_21)
 seek(0xA1800E); dh (talent48_14)
 seek(0xA18026); dh (talent48_12)
 
-//Current X position
-seek(0xA17E7A); dh $00C6
-//Face X position
-seek(0xA17FC2); dh $00F0
+//Current X position (RAM 8028CA78)
+seek(0xA17E7A); dh $00B3
+//Face X position (RAM 8028CBC0)
+seek(0xA17FC2); dh $00DB
 //Grid X position
 seek(0xA17F9E); dh $00B9
 //Representation X position
