@@ -1,4 +1,5 @@
 bass "DMTJ_EN_MainDISK.asm"
+@echo - Recompressing Overlays...
 py -3 nintendo.py "./Temp/8AD9F0.17453.SaveLoad.yay1.bin" "Yay1"
 py -3 nintendo.py "./Temp/914B78.AEEC.Kanji.yay1.bin" "Yay1"
 py -3 nintendo.py "./Temp/8E7E48.CCC7.GBCam.yay1.bin" "Yay1"

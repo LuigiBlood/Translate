@@ -1,3 +1,4 @@
+@echo Extracting and Decompressing Files...
 bass "DMTJ_EN_ExtractDISK.asm"
 py -3 nintendo.py "./Temp/8AD9F0.17453.SaveLoad.yay1" decode
 py -3 nintendo.py "./Temp/8E7E48.CCC7.GBCam.yay1" decode
