@@ -19,7 +19,7 @@ textEntryH0("Head")			//RAM 803BA298 - りんかくなど
 talent1_5:
 textEntryH0("Face")			//RAM 803BA2A8 - かお・はだのいろ
 talent1_6:
-textEntryH0("Body & Outfit")		//RAM 803BA2BC - ふくそう・スタイル
+textEntryH0("Body & Clothes")		//RAM 803BA2BC - ふくそう・スタイル
 talent1_7:
 textEntryH0("Voice")			//RAM 803BA2D0 - こえ
 talent1_8:
@@ -49,7 +49,7 @@ textEntryH0("Choose a Talent")		//RAM 803BA38C - ぜんしんをえらぶ
 talent2_3:		//803BB1A4 - 0074
 textEntryH0("Choose a Body")		//RAM 803BA3A0 - からだのタイプをかえる
 talent2_4:		//803BB1CC - 0079
-textEntryH0("Character Base")		//RAM 803BA3B8 - きほんキャラ
+textEntryH0("Use a Talent Base")	//RAM 803BA3B8 - きほんキャラ
 
 //--Talent Face Screen
 talent3_1:
@@ -104,28 +104,31 @@ talent4_16:
 textEntryH0("Color Album")		//RAM 803BA550 - カラーアルバム
 talent4_17:
 textEntryH0("Pattern Album")		//RAM 803BA560 - もようアルバム
+//Move
 talent4_18:
-textEntryH0("Every Axis")		//RAM 803BA570 - すべてのほうこう
+textEntryH0("On Every Axis")		//RAM 803BA570 - すべてのほうこう
 talent4_19:
-textEntryH0("Red Axis")			//RAM 803BA584 - アカじくのほうこう
+textEntryH0("On Red Axis")		//RAM 803BA584 - アカじくのほうこう
 talent4_20:
-textEntryH0("Green Axis")		//RAM 803BA598 - ミドリじくのほうこう
+textEntryH0("On Green Axis")		//RAM 803BA598 - ミドリじくのほうこう
 talent4_21:
-textEntryH0("Blue Axis")		//RAM 803BA5B0 - アオじくのほうこう
+textEntryH0("On Blue Axis")		//RAM 803BA5B0 - アオじくのほうこう
+//Rotate
 talent4_22:
 textEntryH0("Around Red Axis")		//RAM 803BA5C4 - アカじくをちゅうしんに
 talent4_23:
 textEntryH0("Around Green Axis")	//RAM 803BA5DC - ミドリじくをちゅうしんに
 talent4_24:
 textEntryH0("Around Blue Axis")		//RAM 803BA5F8 - アオじくをちゅうしんに
+//Resize
 talent4_25:
-textEntryH0("Every Axis")		//RAM 803BA610 - すべてのほうこう
+textEntryH0("On Every Axis")		//RAM 803BA610 - すべてのほうこう
 talent4_26:
-textEntryH0("Along Red Axis")		//RAM 803BA624 - アカじくにそって
+textEntryH0("On Red Axis")		//RAM 803BA624 - アカじくにそって
 talent4_27:
-textEntryH0("Along Green Axis")		//RAM 803BA638 - ミドリじくにそって
+textEntryH0("On Green Axis")		//RAM 803BA638 - ミドリじくにそって
 talent4_28:
-textEntryH0("Along Blue Axis")		//RAM 803BA64C - アオじくにそって
+textEntryH0("On Blue Axis")		//RAM 803BA64C - アオじくにそって
 talent4_29:
 textEntryH0("Reset")			//RAM 803BA660 - リセット
 
@@ -1966,7 +1969,7 @@ textEntryH0("Shuffle")			//RAM 802AE958 - らくちんスイッチ
 talent47_28:
 textEntryH0("Clear All")		//RAM 802AE96C - すべてはずす
 talent47_29:
-textEntryH0("Move the Nose")	//RAM 802AE97C - はなのいちをかえる
+textEntryH0("Move the Nose")		//RAM 802AE97C - はなのいちをかえる
 talent47_30:
 textEntryH0("Color Album")		//RAM 802AE990 - カラーアルバム
 talent47_31:
@@ -2365,12 +2368,15 @@ base 0x8029D0E0
 
 seek(0x92DF80)
 //RAM 802A8DC0 - 性別誕生日月日歳 (Character Graphics to Load)
-textEntryASCII0("Birth/yr")
+//RAM 8029FF30 - Preload all Char GFX
+//RAM 802A5820 - Preload Char GFX
+//Amount of chars to allocate (Disk 0x92DDD8 / RAM 802A8C18)
+textEntryASCII0("Gender/Age")
 
 seek(0x92DF94)
-textEntryASCII0("")			//RAM 802A8DD4 - 性別
+textEntryASCII0("Gender")		//RAM 802A8DD4 - 性別
 seek(0x92DF9C)
-textEntryASCII0("Birth")		//RAM 802A8DDC - 誕生
+textEntryASCII0("")			//RAM 802A8DDC - 誕生
 seek(0x92DFA4)
 textEntryASCII0("")			//RAM 802A8DE4 - 日
 seek(0x92DFA8)
@@ -2378,18 +2384,41 @@ textEntryASCII0("/")			//RAM 802A8DE8 - 月
 seek(0x92DFAC)
 textEntryASCII0("")			//RAM 802A8DEC - 日
 seek(0x92DFB0)
-textEntryASCII0("yr")			//RAM 802A8DF0 - 歳
+textEntryASCII0("Age")			//RAM 802A8DF0 - 歳
 
-//Gender Position
-seek(0x92B096); dh $00A0
+//Left most position = 0x94
+//Amount of memory to allocate (Disk 0x92AC18 / RAM 802A5A58)
+seek(0x92AC1A); dh 0x050F
 
-//'/' Position
-seek(0x92B18E); dh $00D0
+//Gender Text X Position (Disk 0x92B094 / RAM 802A5ED4)
+seek(0x92B096); dh 0x00AE
+//Gender Box X Position [Float] (Disk 0x92882C / RAM 802A366C)
+seek(0x92882E); dh 0x4367
+
+//Date 1 Box X Position [Float] (Disk 0x928884 / RAM 802A36C4)
+seek(0x928886); dh 0x4314
+//Date 2 Box X Position [Float] (Disk 0x9288B4 / RAM 802A36F4)
+seek(0x9288B6); dh 0x4314+9
+//Date 3 Box X Position [Float] (Disk 0x9288EC / RAM 802A372C)
+seek(0x9288EE); dh 0x4314+31
+//Date 4 Box X Position [Float] (Disk 0x928924 / RAM 802A3764)
+seek(0x928926); dh 0x4314+40
+//'/' Text X Position (Disk 0x92B18C / RAM 802A5FCC)
+seek(0x92B18E); dh 0x00A9
+
+//Age 1 Box X Position [Float] (Disk 0x92895C / RAM 802A379C)
+seek(0x92895E); dh 0x4383
+//Age 2 Box X Position [Float] (Disk 0x928980 / RAM 802A37C0)
+seek(0x928982); dh 0x4387
+//Age 3 Box X Position [Float] (Disk 0x9289D0 / RAM 802A3810)
+seek(0x9289D2); dh 0x438C
+//Age Text X Position (Disk 0x92B234 / RAM 802A6074)
+seek(0x92B236); dh 0xE2
 
 //Font Fix
-seek(0x92B0B2); dh $0300-$0300 //Birth
-seek(0x92B15A); dh $0580-$0300 //'/'
-seek(0x92B202); dh $0600-$0300 //yr
+//seek(0x92B0B2); dh $0300-$0300 //Birth
+seek(0x92B15A); dh $0300	//'/'
+//seek(0x92B202); dh $0600-$0300 //yr
 
 seek(0x92FB40)
 textEntryH(32, "Shuffle")		//らくちんスイッチ
@@ -2405,6 +2434,11 @@ textEntryH(32, "Free Space 4")		//フリースペース4
 textEntryH(32, "Gender")		//せいべつ
 textEntryH(32, "Birthday")		//たんじょうび
 textEntryH(32, "Age")			//ねんれい
+
+//Age X Position (Disk 0x9284DC / RAM 802A331C)
+seek(0x9284DE); dh 0x0100
+//Birthday X Position (Disk 0x9284E0 / RAM 802A3320)
+seek(0x9284E2); dh 0x008E
 
 //Random Names (Disk 0x930D10 / RAM 802ABB50)
 seek(0x930D10)
