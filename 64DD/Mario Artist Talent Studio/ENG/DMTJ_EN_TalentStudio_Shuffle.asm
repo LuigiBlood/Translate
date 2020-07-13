@@ -1051,7 +1051,7 @@ talentshuffle_0517:
 textEntryASCII0("TODO")			//ハウスマヌカン
 
 //--Catchphrases
-//IDs 0x205-0x24C (0518-)
+//IDs 0x205-0x24C (0518-0589)
 talentshuffle_0518:
 textEntryASCII0("TODO")			//ぴよ
 talentshuffle_0519:
@@ -1199,8 +1199,8 @@ textEntryASCII0("TODO")			//ガッツ・根性・青春
 
 
 //--Free Space 1 / Birthplace (ID 0x24D / 0590)
-//IDs 0x262-0x2E3 / 0611-0740 (Middle)
 //IDs 0x24E-0x261 / 0591-0610 (Start)
+//IDs 0x262-0x2E2 / 0611-0739 (Middle)
 //IDs 0x2E3-0x2EE / 0740-0751 (End)
 talentshuffle_0590:
 textEntryASCII0("Birthplace:")		//出身地／
@@ -1244,6 +1244,7 @@ talentshuffle_0609:
 textEntryASCII0("TODO")			//素晴らしい
 talentshuffle_0610:
 textEntryASCII0("TODO")			//なつかしの
+
 talentshuffle_0611:
 textEntryASCII0("TODO")			//山
 talentshuffle_0612:
@@ -1502,6 +1503,7 @@ talentshuffle_0738:
 textEntryASCII0("TODO")			//富山県
 talentshuffle_0739:
 textEntryASCII0("TODO")			//山形県
+
 talentshuffle_0740:
 textEntryASCII0("TODO")			//の外れ
 talentshuffle_0741:
@@ -1544,6 +1546,7 @@ talentshuffle_0756:
 textEntryASCII0("TODO")			//スペシャル
 talentshuffle_0757:
 textEntryASCII0("TODO")			//ミラクル
+
 talentshuffle_0758:
 textEntryASCII0("TODO")			//野球
 talentshuffle_0759:
@@ -1684,6 +1687,7 @@ talentshuffle_0826:
 textEntryASCII0("TODO")			//作詞
 talentshuffle_0827:
 textEntryASCII0("TODO")			//作曲
+
 talentshuffle_0828:
 textEntryASCII0("TODO")			//の解説
 talentshuffle_0829:
@@ -1733,6 +1737,7 @@ talentshuffle_0848:
 textEntryASCII0("TODO")			//すばらしい
 talentshuffle_0849:
 textEntryASCII0("TODO")			//立派な
+
 talentshuffle_0850:
 textEntryASCII0("TODO")			//お金
 talentshuffle_0851:
@@ -1886,7 +1891,7 @@ textEntryASCII0("TODO")			//ボール
 
 
 //--Free Space 4 / Favorite Food (ID 0x39C / 0925)
-//IDs 0x39D-0x3B4 / 0925-0949 (Prefix)
+//IDs 0x39D-0x3B4 / 0926-0949 (Prefix)
 //IDs 0x3B5-0x3E5 / 0950-0998 (Middle)
 //IDs 0x3E6-0x3FA / 0999-1019 (Suffix)
 talentshuffle_0925:
@@ -1939,6 +1944,7 @@ talentshuffle_0948:
 textEntryASCII0("TODO")			//ホット
 talentshuffle_0949:
 textEntryASCII0("TODO")			//究極の
+
 talentshuffle_0950:
 textEntryASCII0("TODO")			//牛乳
 talentshuffle_0951:
@@ -2037,6 +2043,7 @@ talentshuffle_0997:
 textEntryASCII0("TODO")			//にくまん
 talentshuffle_0998:
 textEntryASCII0("TODO")			//あんまん
+
 talentshuffle_0999:
 textEntryASCII0("TODO")			//定食
 talentshuffle_1000:
