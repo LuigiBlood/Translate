@@ -2440,6 +2440,11 @@ seek(0x9284DE); dh 0x0100
 //Birthday X Position (Disk 0x9284E0 / RAM 802A3320)
 seek(0x9284E2); dh 0x008E
 
-//Random Names (Disk 0x930D10 / RAM 802ABB50)
-seek(0x930D10)
-//TODO LATER
+
+//Base Talent Names
+seek(0x1A99FC)
+textEntryASCII0("Mr. Body")		//まっぱくん
+seek(0x1A9A08)
+textEntryASCII0("Ms. Body")		//すはだびじん
+seek(0x1A9A18)
+textEntryASCII0("Body")			//そのた
