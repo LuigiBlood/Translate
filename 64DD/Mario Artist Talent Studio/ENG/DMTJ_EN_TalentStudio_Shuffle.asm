@@ -1715,186 +1715,186 @@ textEntryASCII0("TODO")			//の特訓
 //IDs 0x343-0x350 / 0836-0849 (Prefix)
 //IDs 0x351-0x39B / 0850-0924 (Middle)
 talentshuffle_0835:
-textEntryASCII0("Treasure:")		//大切な宝物／
+textEntryASCII0("Treasure: ")		//大切な宝物／
 talentshuffle_0836:
-textEntryASCII0("TODO")			//高級
+textEntryASCII0("Royal ")		//高級
 talentshuffle_0837:
-textEntryASCII0("TODO")			//レアな
+textEntryASCII0("Rare ")		//レアな
 talentshuffle_0838:
-textEntryASCII0("TODO")			//かわいい
+textEntryASCII0("Cute ")		//かわいい
 talentshuffle_0839:
-textEntryASCII0("TODO")			//きれいな
+textEntryASCII0("Pretty ")		//きれいな
 talentshuffle_0840:
-textEntryASCII0("TODO")			//あぶない
+textEntryASCII0("Dangerous ")		//あぶない
 talentshuffle_0841:
-textEntryASCII0("TODO")			//おおきな
+textEntryASCII0("Big ")			//おおきな
 talentshuffle_0842:
-textEntryASCII0("TODO")			//ちいさな
+textEntryASCII0("Little ")		//ちいさな
 talentshuffle_0843:
-textEntryASCII0("TODO")			//かっこいい
+textEntryASCII0("Cool ")		//かっこいい
 talentshuffle_0844:
-textEntryASCII0("TODO")			//おしゃれな
+textEntryASCII0("Precious ")		//おしゃれな
 talentshuffle_0845:
-textEntryASCII0("TODO")			//スタイリッシュな
+textEntryASCII0("Stylish ")		//スタイリッシュな
 talentshuffle_0846:
-textEntryASCII0("TODO")			//超
+textEntryASCII0("Super ")		//超
 talentshuffle_0847:
-textEntryASCII0("TODO")			//みごとな
+textEntryASCII0("Brand New ")		//みごとな
 talentshuffle_0848:
-textEntryASCII0("TODO")			//すばらしい
+textEntryASCII0("Secondhand ")		//すばらしい
 talentshuffle_0849:
-textEntryASCII0("TODO")			//立派な
+textEntryASCII0("Elegant ")		//立派な
 
 talentshuffle_0850:
-textEntryASCII0("TODO")			//お金
+textEntryASCII0("Money")		//お金
 talentshuffle_0851:
-textEntryASCII0("TODO")			//映画
+textEntryASCII0("Movie")		//映画
 talentshuffle_0852:
-textEntryASCII0("TODO")			//日本映画
+textEntryASCII0("Film")			//日本映画
 talentshuffle_0853:
-textEntryASCII0("TODO")			//マンガ
+textEntryASCII0("Comic")		//マンガ
 talentshuffle_0854:
-textEntryASCII0("TODO")			//アニメ
+textEntryASCII0("Cartoon")		//アニメ
 talentshuffle_0855:
-textEntryASCII0("TODO")			//外車
+textEntryASCII0("Car")			//外車
 talentshuffle_0856:
-textEntryASCII0("TODO")			//アメ車
+textEntryASCII0("Automobile")		//アメ車
 talentshuffle_0857:
-textEntryASCII0("TODO")			//中古車
+textEntryASCII0("Jetski")		//中古車
 talentshuffle_0858:
-textEntryASCII0("TODO")			//スーパーカー
+textEntryASCII0("Boat")			//スーパーカー
 talentshuffle_0859:
-textEntryASCII0("TODO")			//クルマ
+textEntryASCII0("Plane")		//クルマ
 talentshuffle_0860:
-textEntryASCII0("TODO")			//バイク
+textEntryASCII0("Bike")			//バイク
 talentshuffle_0861:
-textEntryASCII0("TODO")			//ＭＴＢ
+textEntryASCII0("Mountain Bike")	//ＭＴＢ
 talentshuffle_0862:
-textEntryASCII0("TODO")			//初代ゲームボーイ
+textEntryASCII0("Game Boy")		//初代ゲームボーイ
 talentshuffle_0863:
-textEntryASCII0("TODO")			//バーチャルボーイ
+textEntryASCII0("Virtual Boy")		//バーチャルボーイ
 talentshuffle_0864:
-textEntryASCII0("TODO")			//ハーモニカ
+textEntryASCII0("Harmonica")		//ハーモニカ
 talentshuffle_0865:
-textEntryASCII0("TODO")			//オカリナ
+textEntryASCII0("Ocarina")		//オカリナ
 talentshuffle_0866:
-textEntryASCII0("TODO")			//ギター
+textEntryASCII0("Guitar")		//ギター
 talentshuffle_0867:
-textEntryASCII0("TODO")			//トランペット
+textEntryASCII0("Trumpet")		//トランペット
 talentshuffle_0868:
-textEntryASCII0("TODO")			//ピアノ
+textEntryASCII0("Piano")		//ピアノ
 talentshuffle_0869:
-textEntryASCII0("TODO")			//切れはし
+textEntryASCII0("Chopstick")		//切れはし
 talentshuffle_0870:
-textEntryASCII0("TODO")			//スポーツ新聞
+textEntryASCII0("Newspaper")		//スポーツ新聞
 talentshuffle_0871:
-textEntryASCII0("TODO")			//週刊誌
+textEntryASCII0("Magazine")		//週刊誌
 talentshuffle_0872:
-textEntryASCII0("TODO")			//ヌンチャク
+textEntryASCII0("Nunchaku")		//ヌンチャク
 talentshuffle_0873:
-textEntryASCII0("TODO")			//レアもの
+textEntryASCII0("Thing")		//レアもの
 talentshuffle_0874:
-textEntryASCII0("TODO")			//宝石
+textEntryASCII0("Jewel")		//宝石
 talentshuffle_0875:
-textEntryASCII0("TODO")			//指輪
+textEntryASCII0("Ring")			//指輪
 talentshuffle_0876:
-textEntryASCII0("TODO")			//ネックレス
+textEntryASCII0("Necklace")		//ネックレス
 talentshuffle_0877:
-textEntryASCII0("TODO")			//家具
+textEntryASCII0("Furniture")		//家具
 talentshuffle_0878:
-textEntryASCII0("TODO")			//ぬいぐるみ
+textEntryASCII0("Plush Doll")		//ぬいぐるみ
 talentshuffle_0879:
-textEntryASCII0("TODO")			//フィギュア
+textEntryASCII0("Figure")		//フィギュア
 talentshuffle_0880:
-textEntryASCII0("TODO")			//パソコン
+textEntryASCII0("Computer")		//パソコン
 talentshuffle_0881:
-textEntryASCII0("TODO")			//テレビ
+textEntryASCII0("TV set")		//テレビ
 talentshuffle_0882:
-textEntryASCII0("TODO")			//ステレオ
+textEntryASCII0("Stereo")		//ステレオ
 talentshuffle_0883:
-textEntryASCII0("TODO")			//ラジオ
+textEntryASCII0("Radio")		//ラジオ
 talentshuffle_0884:
-textEntryASCII0("TODO")			//携帯電話
+textEntryASCII0("Mobile Phone")		//携帯電話
 talentshuffle_0885:
-textEntryASCII0("TODO")			//ＣＤ
+textEntryASCII0("Compact Disc")		//ＣＤ
 talentshuffle_0886:
-textEntryASCII0("TODO")			//ＭＤ
+textEntryASCII0("Floppy Disk")		//ＭＤ
 talentshuffle_0887:
-textEntryASCII0("TODO")			//レコード
+textEntryASCII0("Record")		//レコード
 talentshuffle_0888:
-textEntryASCII0("TODO")			//洋服
+textEntryASCII0("Clothes")		//洋服
 talentshuffle_0889:
-textEntryASCII0("TODO")			//靴
+textEntryASCII0("Shoes")		//靴
 talentshuffle_0890:
-textEntryASCII0("TODO")			//バラの花
+textEntryASCII0("Roses")		//バラの花
 talentshuffle_0891:
-textEntryASCII0("TODO")			//香水
+textEntryASCII0("Perfume")		//香水
 talentshuffle_0892:
-textEntryASCII0("TODO")			//化粧水
+textEntryASCII0("Makeup")		//化粧水
 talentshuffle_0893:
-textEntryASCII0("TODO")			//マニキュア
+textEntryASCII0("Manicure")		//マニキュア
 talentshuffle_0894:
-textEntryASCII0("TODO")			//口紅
+textEntryASCII0("Lipstick")		//口紅
 talentshuffle_0895:
-textEntryASCII0("TODO")			//ブランド品
+textEntryASCII0("Branded Goods")	//ブランド品
 talentshuffle_0896:
-textEntryASCII0("TODO")			//腕時計
+textEntryASCII0("Watch")		//腕時計
 talentshuffle_0897:
-textEntryASCII0("TODO")			//チケット
+textEntryASCII0("Ticket")		//チケット
 talentshuffle_0898:
-textEntryASCII0("TODO")			//電子レンジ
+textEntryASCII0("Microwave Oven")	//電子レンジ
 talentshuffle_0899:
-textEntryASCII0("TODO")			//イヌ
+textEntryASCII0("Dog")			//イヌ
 talentshuffle_0900:
-textEntryASCII0("TODO")			//ネコ
+textEntryASCII0("Cat")			//ネコ
 talentshuffle_0901:
-textEntryASCII0("TODO")			//サル
+textEntryASCII0("Monkey")		//サル
 talentshuffle_0902:
-textEntryASCII0("TODO")			//ウシ
+textEntryASCII0("Cow")			//ウシ
 talentshuffle_0903:
-textEntryASCII0("TODO")			//ブタ
+textEntryASCII0("Pig")			//ブタ
 talentshuffle_0904:
-textEntryASCII0("TODO")			//リス
+textEntryASCII0("Squirrel")		//リス
 talentshuffle_0905:
-textEntryASCII0("TODO")			//ウマ
+textEntryASCII0("Horse")		//ウマ
 talentshuffle_0906:
-textEntryASCII0("TODO")			//ヘビ
+textEntryASCII0("Snake")		//ヘビ
 talentshuffle_0907:
-textEntryASCII0("TODO")			//カメ
+textEntryASCII0("Turtle")		//カメ
 talentshuffle_0908:
-textEntryASCII0("TODO")			//カエル
+textEntryASCII0("Frog")			//カエル
 talentshuffle_0909:
-textEntryASCII0("TODO")			//トカゲ
+textEntryASCII0("Lizard")		//トカゲ
 talentshuffle_0910:
-textEntryASCII0("TODO")			//ウサギ
+textEntryASCII0("Rabbit")		//ウサギ
 talentshuffle_0911:
-textEntryASCII0("TODO")			//ペンギン
+textEntryASCII0("Penguin")		//ペンギン
 talentshuffle_0912:
-textEntryASCII0("TODO")			//フクロウ
+textEntryASCII0("Owl")			//フクロウ
 talentshuffle_0913:
-textEntryASCII0("TODO")			//コアラ
+textEntryASCII0("Koala")		//コアラ
 talentshuffle_0914:
-textEntryASCII0("TODO")			//パンダ
+textEntryASCII0("Panda")		//パンダ
 talentshuffle_0915:
-textEntryASCII0("TODO")			//金魚
+textEntryASCII0("Goldfish")		//金魚
 talentshuffle_0916:
-textEntryASCII0("TODO")			//釣りざお
+textEntryASCII0("Fishing Rod")		//釣りざお
 talentshuffle_0917:
-textEntryASCII0("TODO")			//ルアー
+textEntryASCII0("Lure")			//ルアー
 talentshuffle_0918:
-textEntryASCII0("TODO")			//カード
+textEntryASCII0("Card")			//カード
 talentshuffle_0919:
-textEntryASCII0("TODO")			//ソファー
+textEntryASCII0("Sofa")			//ソファー
 talentshuffle_0920:
-textEntryASCII0("TODO")			//ベッド
+textEntryASCII0("Bed")			//ベッド
 talentshuffle_0921:
-textEntryASCII0("TODO")			//えんぴつ
+textEntryASCII0("Pencil")		//えんぴつ
 talentshuffle_0922:
-textEntryASCII0("TODO")			//消しゴム
+textEntryASCII0("Eraser")		//消しゴム
 talentshuffle_0923:
-textEntryASCII0("TODO")			//財布
+textEntryASCII0("Wallet")		//財布
 talentshuffle_0924:
-textEntryASCII0("TODO")			//ボール
+textEntryASCII0("Ball")			//ボール
 
 
 //--Free Space 4 / Favorite Food (ID 0x39C / 0925)
