@@ -1207,339 +1207,339 @@ textEntryASCII0("TODO")			//ガッツ・根性・青春
 
 //--Free Space 1 / Birthplace (ID 0x24D / 0590)
 //IDs 0x24E-0x261 / 0591-0610 (Start)
-//IDs 0x262-0x2E2 / 0611-0739 (Middle)
+//IDs 0x262-0x2E2 / 0611-0739 (Main)
 //IDs 0x2E3-0x2EE / 0740-0751 (End)
 talentshuffle_0590:
-textEntryASCII0("Birthplace:")		//出身地／
+textEntryASCII0("Birthplace: ")		//出身地／
 talentshuffle_0591:
-textEntryASCII0("TODO")			//雨の
+textEntryASCII0("Rainy ")		//雨の
 talentshuffle_0592:
-textEntryASCII0("TODO")			//古都
+textEntryASCII0("Ancient ")		//古都
 talentshuffle_0593:
-textEntryASCII0("TODO")			//夜の
+textEntryASCII0("Night ")		//夜の
 talentshuffle_0594:
-textEntryASCII0("TODO")			//霧の
+textEntryASCII0("Foggy ")		//霧の
 talentshuffle_0595:
-textEntryASCII0("TODO")			//魅惑の
+textEntryASCII0("Captivating ")		//魅惑の
 talentshuffle_0596:
-textEntryASCII0("TODO")			//有名な
+textEntryASCII0("Famous ")		//有名な
 talentshuffle_0597:
-textEntryASCII0("TODO")			//貴重な
+textEntryASCII0("Precious ")		//貴重な
 talentshuffle_0598:
-textEntryASCII0("TODO")			//素敵な
+textEntryASCII0("Lovely ")		//素敵な
 talentshuffle_0599:
-textEntryASCII0("TODO")			//晴れた
+textEntryASCII0("Sunny ")		//晴れた
 talentshuffle_0600:
-textEntryASCII0("TODO")			//華の
+textEntryASCII0("Blossomed ")		//華の
 talentshuffle_0601:
-textEntryASCII0("TODO")			//魅力の
+textEntryASCII0("Charming ")		//魅力の
 talentshuffle_0602:
-textEntryASCII0("TODO")			//有名な
+textEntryASCII0("Famous ")		//有名な
 talentshuffle_0603:
-textEntryASCII0("TODO")			//明るい
+textEntryASCII0("Bright ")		//明るい
 talentshuffle_0604:
-textEntryASCII0("TODO")			//きれいな
+textEntryASCII0("Beautiful ")		//きれいな
 talentshuffle_0605:
-textEntryASCII0("TODO")			//世界一の
+textEntryASCII0("The best ")		//世界一の
 talentshuffle_0606:
-textEntryASCII0("TODO")			//夜明けの
+textEntryASCII0("Dawn ")		//夜明けの
 talentshuffle_0607:
-textEntryASCII0("TODO")			//にぎやかな
+textEntryASCII0("Busy ")		//にぎやかな
 talentshuffle_0608:
-textEntryASCII0("TODO")			//めずらしい
+textEntryASCII0("Rare ")		//めずらしい
 talentshuffle_0609:
-textEntryASCII0("TODO")			//素晴らしい
+textEntryASCII0("Great ")		//素晴らしい
 talentshuffle_0610:
-textEntryASCII0("TODO")			//なつかしの
+textEntryASCII0("Nostalgic ")		//なつかしの
 
 talentshuffle_0611:
-textEntryASCII0("TODO")			//山
+textEntryASCII0("Mountain")		//山
 talentshuffle_0612:
-textEntryASCII0("TODO")			//川
+textEntryASCII0("River")		//川
 talentshuffle_0613:
-textEntryASCII0("TODO")			//虹
+textEntryASCII0("Rainbow")		//虹
 talentshuffle_0614:
-textEntryASCII0("TODO")			//竹林
+textEntryASCII0("Forest")		//竹林
 talentshuffle_0615:
-textEntryASCII0("TODO")			//雪国
+textEntryASCII0("Snow Country")		//雪国
 talentshuffle_0616:
-textEntryASCII0("TODO")			//南国
+textEntryASCII0("Southern Country")	//南国
 talentshuffle_0617:
-textEntryASCII0("TODO")			//惑星
+textEntryASCII0("Planet")		//惑星
 talentshuffle_0618:
-textEntryASCII0("TODO")			//漁村
+textEntryASCII0("Fishing Village")	//漁村
 talentshuffle_0619:
-textEntryASCII0("TODO")			//農村
+textEntryASCII0("Farm Village")		//農村
 talentshuffle_0620:
-textEntryASCII0("TODO")			//山村
+textEntryASCII0("Mountain Village")	//山村
 talentshuffle_0621:
-textEntryASCII0("TODO")			//墓地
+textEntryASCII0("Graveyard")		//墓地
 talentshuffle_0622:
-textEntryASCII0("TODO")			//宇宙
+textEntryASCII0("Universe")		//宇宙
 talentshuffle_0623:
-textEntryASCII0("TODO")			//水中
+textEntryASCII0("Underwater")		//水中
 talentshuffle_0624:
-textEntryASCII0("TODO")			//牧場
+textEntryASCII0("Ranch")		//牧場
 talentshuffle_0625:
-textEntryASCII0("TODO")			//映画館
+textEntryASCII0("Movie Theater")	//映画館
 talentshuffle_0626:
-textEntryASCII0("TODO")			//夢の島
+textEntryASCII0("Dream Island")		//夢の島
 talentshuffle_0627:
-textEntryASCII0("TODO")			//橋の下
+textEntryASCII0("Under the Bridge")	//橋の下
 talentshuffle_0628:
-textEntryASCII0("TODO")			//競馬場
+textEntryASCII0("Race Track")		//競馬場
 talentshuffle_0629:
-textEntryASCII0("TODO")			//四畳半
+textEntryASCII0("Tatami")		//四畳半
 talentshuffle_0630:
-textEntryASCII0("TODO")			//動物園
+textEntryASCII0("Zoo")			//動物園
 talentshuffle_0631:
-textEntryASCII0("TODO")			//水族館
+textEntryASCII0("Aquarium")		//水族館
 talentshuffle_0632:
-textEntryASCII0("TODO")			//成層圏
+textEntryASCII0("Stratosphere")		//成層圏
 talentshuffle_0633:
-textEntryASCII0("TODO")			//摩天楼
+textEntryASCII0("Skyscraper")		//摩天楼
 talentshuffle_0634:
-textEntryASCII0("TODO")			//雲の上
+textEntryASCII0("Heaven")		//雲の上
 talentshuffle_0635:
-textEntryASCII0("TODO")			//馬小屋
+textEntryASCII0("Stable")		//馬小屋
 talentshuffle_0636:
-textEntryASCII0("TODO")			//温泉街
+textEntryASCII0("Hot Spring Town")	//温泉街
 talentshuffle_0637:
-textEntryASCII0("TODO")			//観光地
+textEntryASCII0("Tourist Spot")		//観光地
 talentshuffle_0638:
-textEntryASCII0("TODO")			//安全地帯
+textEntryASCII0("Safety Zone")		//安全地帯
 talentshuffle_0639:
-textEntryASCII0("TODO")			//トンネル
+textEntryASCII0("Tunnel")		//トンネル
 talentshuffle_0640:
-textEntryASCII0("TODO")			//工事現場
+textEntryASCII0("Construction Site")	//工事現場
 talentshuffle_0641:
-textEntryASCII0("TODO")			//サンゴ礁
+textEntryASCII0("Coral Reef")		//サンゴ礁
 talentshuffle_0642:
-textEntryASCII0("TODO")			//ツンドラ
+textEntryASCII0("Tundra")		//ツンドラ
 talentshuffle_0643:
-textEntryASCII0("TODO")			//赤道直下
+textEntryASCII0("Below the Equator")	//赤道直下
 talentshuffle_0644:
-textEntryASCII0("TODO")			//離れ小島
+textEntryASCII0("Remote Island")	//離れ小島
 talentshuffle_0645:
-textEntryASCII0("TODO")			//キャベツ畑
+textEntryASCII0("Cabbage Field")	//キャベツ畑
 talentshuffle_0646:
-textEntryASCII0("TODO")			//ジャングル
+textEntryASCII0("Jungle")		//ジャングル
 talentshuffle_0647:
-textEntryASCII0("TODO")			//半導体工場
+textEntryASCII0("Factory")		//半導体工場
 talentshuffle_0648:
-textEntryASCII0("TODO")			//ピラミッド
+textEntryASCII0("Pyramid")		//ピラミッド
 talentshuffle_0649:
-textEntryASCII0("TODO")			//地下３００Ｍ
+textEntryASCII0("300m Underground")	//地下３００Ｍ
 talentshuffle_0650:
-textEntryASCII0("TODO")			//魔の三角地帯
+textEntryASCII0("Demon's Land")		//魔の三角地帯
 talentshuffle_0651:
-textEntryASCII0("TODO")			//ブラウン管の中
+textEntryASCII0("Inside the TV")	//ブラウン管の中
 talentshuffle_0652:
-textEntryASCII0("TODO")			//あなたの純真な心
+textEntryASCII0("From a naive mind")	//あなたの純真な心
 talentshuffle_0653:
-textEntryASCII0("TODO")			//オリンピック予定地
+textEntryASCII0("Olympics")		//オリンピック予定地
 talentshuffle_0654:
-textEntryASCII0("TODO")			//無人島
+textEntryASCII0("Deserted Island")	//無人島
 talentshuffle_0655:
-textEntryASCII0("TODO")			//月
+textEntryASCII0("Moon")			//月
 talentshuffle_0656:
-textEntryASCII0("TODO")			//大阪府
+textEntryASCII0("Osaka")		//大阪府
 talentshuffle_0657:
-textEntryASCII0("TODO")			//京都府
+textEntryASCII0("Kyoto")		//京都府
 talentshuffle_0658:
-textEntryASCII0("TODO")			//東京都
+textEntryASCII0("Tokyo")		//東京都
 talentshuffle_0659:
-textEntryASCII0("TODO")			//原宿
+textEntryASCII0("Harajuku")		//原宿
 talentshuffle_0660:
-textEntryASCII0("TODO")			//パリ
+textEntryASCII0("Paris")		//パリ
 talentshuffle_0661:
-textEntryASCII0("TODO")			//北京
+textEntryASCII0("Beijing")		//北京
 talentshuffle_0662:
-textEntryASCII0("TODO")			//青森県
+textEntryASCII0("Aomori")		//青森県
 talentshuffle_0663:
-textEntryASCII0("TODO")			//沖縄県
+textEntryASCII0("Okinawa")		//沖縄県
 talentshuffle_0664:
-textEntryASCII0("TODO")			//南極
+textEntryASCII0("Antarctica")		//南極
 talentshuffle_0665:
-textEntryASCII0("TODO")			//横浜
+textEntryASCII0("Yokohama")		//横浜
 talentshuffle_0666:
-textEntryASCII0("TODO")			//神戸
+textEntryASCII0("Kobe")			//神戸
 talentshuffle_0667:
-textEntryASCII0("TODO")			//湘南
+textEntryASCII0("Shonan")		//湘南
 talentshuffle_0668:
-textEntryASCII0("TODO")			//九州
+textEntryASCII0("Kyushu")		//九州
 talentshuffle_0669:
-textEntryASCII0("TODO")			//太陽
+textEntryASCII0("Sun")			//太陽
 talentshuffle_0670:
-textEntryASCII0("TODO")			//地球
+textEntryASCII0("Earth")		//地球
 talentshuffle_0671:
-textEntryASCII0("TODO")			//東京湾
+textEntryASCII0("Tokyo Bay")		//東京湾
 talentshuffle_0672:
-textEntryASCII0("TODO")			//平安京
+textEntryASCII0("Ancient Kyoto")	//平安京
 talentshuffle_0673:
-textEntryASCII0("TODO")			//冥王星
+textEntryASCII0("Pluto")		//冥王星
 talentshuffle_0674:
-textEntryASCII0("TODO")			//グアム
+textEntryASCII0("Guam")			//グアム
 talentshuffle_0675:
-textEntryASCII0("TODO")			//ハワイ
+textEntryASCII0("Hawaii")		//ハワイ
 talentshuffle_0676:
-textEntryASCII0("TODO")			//琵琶湖
+textEntryASCII0("Lake Biwa")		//琵琶湖
 talentshuffle_0677:
-textEntryASCII0("TODO")			//阿寒湖
+textEntryASCII0("Lake Akan")		//阿寒湖
 talentshuffle_0678:
-textEntryASCII0("TODO")			//富士山
+textEntryASCII0("Mount Fuji")		//富士山
 talentshuffle_0679:
-textEntryASCII0("TODO")			//銀河系
+textEntryASCII0("Galaxy")		//銀河系
 talentshuffle_0680:
-textEntryASCII0("TODO")			//ムー大陸
+textEntryASCII0("Mu Continent")		//ムー大陸
 talentshuffle_0681:
-textEntryASCII0("TODO")			//チベット
+textEntryASCII0("Tibet")		//チベット
 talentshuffle_0682:
-textEntryASCII0("TODO")			//アマゾン
+textEntryASCII0("Amazon River")		//アマゾン
 talentshuffle_0683:
-textEntryASCII0("TODO")			//ロンドン
+textEntryASCII0("London")		//ロンドン
 talentshuffle_0684:
-textEntryASCII0("TODO")			//エジプト
+textEntryASCII0("Egypt")		//エジプト
 talentshuffle_0685:
-textEntryASCII0("TODO")			//ナイル川
+textEntryASCII0("Nile River")		//ナイル川
 talentshuffle_0686:
-textEntryASCII0("TODO")			//ヒマラヤ
+textEntryASCII0("Himalaya")		//ヒマラヤ
 talentshuffle_0687:
-textEntryASCII0("TODO")			//ホンコン
+textEntryASCII0("Hong Kong")		//ホンコン
 talentshuffle_0688:
-textEntryASCII0("TODO")			//ゴビ砂漠
+textEntryASCII0("Gobi Desert")		//ゴビ砂漠
 talentshuffle_0689:
-textEntryASCII0("TODO")			//ムー大陸
+textEntryASCII0("Mu Continent")		//ムー大陸
 talentshuffle_0690:
-textEntryASCII0("TODO")			//イタリア
+textEntryASCII0("Italy")		//イタリア
 talentshuffle_0691:
-textEntryASCII0("TODO")			//サハラ砂漠
+textEntryASCII0("Sahara Desert")	//サハラ砂漠
 talentshuffle_0692:
-textEntryASCII0("TODO")			//テキサス州
+textEntryASCII0("Texas")		//テキサス州
 talentshuffle_0693:
-textEntryASCII0("TODO")			//バチカン市国
+textEntryASCII0("Vatican City")		//バチカン市国
 talentshuffle_0694:
-textEntryASCII0("TODO")			//西インド諸島
+textEntryASCII0("West Indies")		//西インド諸島
 talentshuffle_0695:
-textEntryASCII0("TODO")			//ハイラル地方
+textEntryASCII0("Hailar Region")	//ハイラル地方
 talentshuffle_0696:
-textEntryASCII0("TODO")			//ニューヨーク
+textEntryASCII0("New York")		//ニューヨーク
 talentshuffle_0697:
-textEntryASCII0("TODO")			//マダガスカル島
+textEntryASCII0("Madagascar")		//マダガスカル島
 talentshuffle_0698:
-textEntryASCII0("TODO")			//北海道
+textEntryASCII0("Hokkaido")		//北海道
 talentshuffle_0699:
-textEntryASCII0("TODO")			//岩手県
+textEntryASCII0("Iwate")		//岩手県
 talentshuffle_0700:
-textEntryASCII0("TODO")			//秋田県
+textEntryASCII0("Akita")		//秋田県
 talentshuffle_0701:
-textEntryASCII0("TODO")			//新潟県
+textEntryASCII0("Niigata")		//新潟県
 talentshuffle_0702:
-textEntryASCII0("TODO")			//宮城県
+textEntryASCII0("Miyagi")		//宮城県
 talentshuffle_0703:
-textEntryASCII0("TODO")			//福島県
+textEntryASCII0("Fukushima")		//福島県
 talentshuffle_0704:
-textEntryASCII0("TODO")			//栃木県
+textEntryASCII0("Tochigi")		//栃木県
 talentshuffle_0705:
-textEntryASCII0("TODO")			//群馬県
+textEntryASCII0("Gunma")		//群馬県
 talentshuffle_0706:
-textEntryASCII0("TODO")			//千葉県
+textEntryASCII0("Chiba")		//千葉県
 talentshuffle_0707:
-textEntryASCII0("TODO")			//埼玉県
+textEntryASCII0("Saitama")		//埼玉県
 talentshuffle_0708:
-textEntryASCII0("TODO")			//山梨県
+textEntryASCII0("Yamanashi")		//山梨県
 talentshuffle_0709:
-textEntryASCII0("TODO")			//神奈川県
+textEntryASCII0("Kanagawa")		//神奈川県
 talentshuffle_0710:
-textEntryASCII0("TODO")			//静岡県
+textEntryASCII0("Shizuoka")		//静岡県
 talentshuffle_0711:
-textEntryASCII0("TODO")			//三重県
+textEntryASCII0("Mie")			//三重県
 talentshuffle_0712:
-textEntryASCII0("TODO")			//長野県
+textEntryASCII0("Nagano")		//長野県
 talentshuffle_0713:
-textEntryASCII0("TODO")			//奈良県
+textEntryASCII0("Nara")			//奈良県
 talentshuffle_0714:
-textEntryASCII0("TODO")			//福井県
+textEntryASCII0("Fukui")		//福井県
 talentshuffle_0715:
-textEntryASCII0("TODO")			//滋賀県
+textEntryASCII0("Shiga")		//滋賀県
 talentshuffle_0716:
-textEntryASCII0("TODO")			//岐阜県
+textEntryASCII0("Gifu")			//岐阜県
 talentshuffle_0717:
-textEntryASCII0("TODO")			//愛知県
+textEntryASCII0("Aichi")		//愛知県
 talentshuffle_0718:
-textEntryASCII0("TODO")			//和歌山県
+textEntryASCII0("Wakayama")		//和歌山県
 talentshuffle_0719:
-textEntryASCII0("TODO")			//兵庫県
+textEntryASCII0("Hyogo")		//兵庫県
 talentshuffle_0720:
-textEntryASCII0("TODO")			//鳥取県
+textEntryASCII0("Tottori")		//鳥取県
 talentshuffle_0721:
-textEntryASCII0("TODO")			//岡山県
+textEntryASCII0("Okayama")		//岡山県
 talentshuffle_0722:
-textEntryASCII0("TODO")			//島根県
+textEntryASCII0("Shimane")		//島根県
 talentshuffle_0723:
-textEntryASCII0("TODO")			//広島県
+textEntryASCII0("Hiroshima")		//広島県
 talentshuffle_0724:
-textEntryASCII0("TODO")			//山口県
+textEntryASCII0("Yamaguchi")		//山口県
 talentshuffle_0725:
-textEntryASCII0("TODO")			//香川県
+textEntryASCII0("Kagawa")		//香川県
 talentshuffle_0726:
-textEntryASCII0("TODO")			//徳島県
+textEntryASCII0("Tokushima")		//徳島県
 talentshuffle_0727:
-textEntryASCII0("TODO")			//高知県
+textEntryASCII0("Kochi")		//高知県
 talentshuffle_0728:
-textEntryASCII0("TODO")			//愛媛県
+textEntryASCII0("Ehime")		//愛媛県
 talentshuffle_0729:
-textEntryASCII0("TODO")			//福岡県
+textEntryASCII0("Fukuoka")		//福岡県
 talentshuffle_0730:
-textEntryASCII0("TODO")			//大分県
+textEntryASCII0("Oita")			//大分県
 talentshuffle_0731:
-textEntryASCII0("TODO")			//熊本県
+textEntryASCII0("Kumamoto")		//熊本県
 talentshuffle_0732:
-textEntryASCII0("TODO")			//佐賀県
+textEntryASCII0("Saga")			//佐賀県
 talentshuffle_0733:
-textEntryASCII0("TODO")			//長崎県
+textEntryASCII0("Nagasaki")		//長崎県
 talentshuffle_0734:
-textEntryASCII0("TODO")			//宮崎県
+textEntryASCII0("Miyazaki")		//宮崎県
 talentshuffle_0735:
-textEntryASCII0("TODO")			//鹿児島県
+textEntryASCII0("Kagoshima")		//鹿児島県
 talentshuffle_0736:
-textEntryASCII0("TODO")			//石川県
+textEntryASCII0("Ishikawa")		//石川県
 talentshuffle_0737:
-textEntryASCII0("TODO")			//茨城県
+textEntryASCII0("Ibaraki")		//茨城県
 talentshuffle_0738:
-textEntryASCII0("TODO")			//富山県
+textEntryASCII0("Toyama")		//富山県
 talentshuffle_0739:
-textEntryASCII0("TODO")			//山形県
+textEntryASCII0("Yamagata")		//山形県
 
 talentshuffle_0740:
-textEntryASCII0("TODO")			//の外れ
+textEntryASCII0("Outskirts")		//の外れ
 talentshuffle_0741:
-textEntryASCII0("TODO")			//のド真中
+textEntryASCII0("Center")		//のド真中
 talentshuffle_0742:
-textEntryASCII0("TODO")			//の中心地
+textEntryASCII0("City")			//の中心地
 talentshuffle_0743:
-textEntryASCII0("TODO")			//の向こう
+textEntryASCII0("Other Side")		//の向こう
 talentshuffle_0744:
-textEntryASCII0("TODO")			//のかなた
+textEntryASCII0("Beyond")		//のかなた
 talentshuffle_0745:
-textEntryASCII0("TODO")			//のすみっこ
+textEntryASCII0("Corner")		//のすみっこ
 talentshuffle_0746:
-textEntryASCII0("TODO")			//のはしっこ
+textEntryASCII0("Edge")			//のはしっこ
 talentshuffle_0747:
-textEntryASCII0("TODO")			//のかたすみ
+textEntryASCII0("Corner")		//のかたすみ
 talentshuffle_0748:
-textEntryASCII0("TODO")			//の北
+textEntryASCII0("North")		//の北
 talentshuffle_0749:
-textEntryASCII0("TODO")			//の南
+textEntryASCII0("South")		//の南
 talentshuffle_0750:
-textEntryASCII0("TODO")			//の東
+textEntryASCII0("East")			//の東
 talentshuffle_0751:
-textEntryASCII0("TODO")			//の西
+textEntryASCII0("West")			//の西
 
 
 //--Free Space 2 / Hobbies & Skills (ID 0x2EF / 0752)
 //IDs 0x2F0-0x2F4 / 0753-0757 (Prefix)
-//IDs 0x2F5-0x33A / 0758-0827 (Middle)
+//IDs 0x2F5-0x33A / 0758-0827 (Name)
 //IDs 0x33B-0x341 / 0828-0834 (Suffix)
 talentshuffle_0752:
 textEntryASCII0("Hobbies: ")		//趣味・特技／
@@ -1573,7 +1573,7 @@ textEntryASCII0("Kissing")		//キス
 talentshuffle_0766:
 textEntryASCII0("Space")		//ぼけ
 talentshuffle_0767:
-textEntryASCII0("Karate")		//空手
+textEntryASCII0("Martial Art")		//空手
 talentshuffle_0768:
 textEntryASCII0("Kendo")		//剣道
 talentshuffle_0769:
