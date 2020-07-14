@@ -1542,178 +1542,178 @@ textEntryASCII0("TODO")			//の西
 //IDs 0x2F5-0x33A / 0758-0827 (Middle)
 //IDs 0x33B-0x341 / 0828-0834 (Suffix)
 talentshuffle_0752:
-textEntryASCII0("Hobbies:")		//趣味・特技／
+textEntryASCII0("Hobbies: ")		//趣味・特技／
 talentshuffle_0753:
-textEntryASCII0("TODO")			//ヒミツの
+textEntryASCII0("Secret ")		//ヒミツの
 talentshuffle_0754:
-textEntryASCII0("TODO")			//謎の
+textEntryASCII0("Mysterious ")		//謎の
 talentshuffle_0755:
-textEntryASCII0("TODO")			//不思議な
+textEntryASCII0("Strange ")		//不思議な
 talentshuffle_0756:
-textEntryASCII0("TODO")			//スペシャル
+textEntryASCII0("Special ")		//スペシャル
 talentshuffle_0757:
-textEntryASCII0("TODO")			//ミラクル
+textEntryASCII0("Miraculous ")		//ミラクル
 
 talentshuffle_0758:
-textEntryASCII0("TODO")			//野球
+textEntryASCII0("Baseball")		//野球
 talentshuffle_0759:
-textEntryASCII0("TODO")			//英語
+textEntryASCII0("Language")		//英語
 talentshuffle_0760:
-textEntryASCII0("TODO")			//旅行
+textEntryASCII0("Travel")		//旅行
 talentshuffle_0761:
-textEntryASCII0("TODO")			//読書
+textEntryASCII0("Books")		//読書
 talentshuffle_0762:
-textEntryASCII0("TODO")			//茶道
+textEntryASCII0("Ceremony")		//茶道
 talentshuffle_0763:
-textEntryASCII0("TODO")			//読書
+textEntryASCII0("Writing")		//読書
 talentshuffle_0764:
-textEntryASCII0("TODO")			//昼寝
+textEntryASCII0("Napping")		//昼寝
 talentshuffle_0765:
-textEntryASCII0("TODO")			//キス
+textEntryASCII0("Kissing")		//キス
 talentshuffle_0766:
-textEntryASCII0("TODO")			//ぼけ
+textEntryASCII0("Space")		//ぼけ
 talentshuffle_0767:
-textEntryASCII0("TODO")			//空手
+textEntryASCII0("Karate")		//空手
 talentshuffle_0768:
-textEntryASCII0("TODO")			//剣道
+textEntryASCII0("Kendo")		//剣道
 talentshuffle_0769:
-textEntryASCII0("TODO")			//占い
+textEntryASCII0("Fortune Telling")	//占い
 talentshuffle_0770:
-textEntryASCII0("TODO")			//麻雀
+textEntryASCII0("Mahjong")		//麻雀
 talentshuffle_0771:
-textEntryASCII0("TODO")			//沈黙
+textEntryASCII0("Silence")		//沈黙
 talentshuffle_0772:
-textEntryASCII0("TODO")			//変装
+textEntryASCII0("Disguise")		//変装
 talentshuffle_0773:
-textEntryASCII0("TODO")			//前転
+textEntryASCII0("Somersault")		//前転
 talentshuffle_0774:
-textEntryASCII0("TODO")			//逆立ち
+textEntryASCII0("Handstand")		//逆立ち
 talentshuffle_0775:
-textEntryASCII0("TODO")			//早食い
+textEntryASCII0("Speed-eating")		//早食い
 talentshuffle_0776:
-textEntryASCII0("TODO")			//皿回し
+textEntryASCII0("Plate-spinning")	//皿回し
 talentshuffle_0777:
-textEntryASCII0("TODO")			//居眠り
+textEntryASCII0("Dozing")		//居眠り
 talentshuffle_0778:
-textEntryASCII0("TODO")			//ギャンブル
+textEntryASCII0("Gambling")		//ギャンブル
 talentshuffle_0779:
-textEntryASCII0("TODO")			//着付け
+textEntryASCII0("Dressing")		//着付け
 talentshuffle_0780:
-textEntryASCII0("TODO")			//お笑い
+textEntryASCII0("Comic")		//お笑い
 talentshuffle_0781:
-textEntryASCII0("TODO")			//テニス
+textEntryASCII0("Tennis")		//テニス
 talentshuffle_0782:
-textEntryASCII0("TODO")			//カメラ
+textEntryASCII0("Photography")		//カメラ
 talentshuffle_0783:
-textEntryASCII0("TODO")			//海づり
+textEntryASCII0("Fishing")		//海づり
 talentshuffle_0784:
-textEntryASCII0("TODO")			//投げ技
+textEntryASCII0("Throwing")		//投げ技
 talentshuffle_0785:
-textEntryASCII0("TODO")			//深呼吸
+textEntryASCII0("Meditation")		//深呼吸
 talentshuffle_0786:
-textEntryASCII0("TODO")			//ものまね
+textEntryASCII0("Imitation")		//ものまね
 talentshuffle_0787:
-textEntryASCII0("TODO")			//食べ歩き
+textEntryASCII0("Food")			//食べ歩き
 talentshuffle_0788:
-textEntryASCII0("TODO")			//バス釣り
+textEntryASCII0("Bass Fishing")		//バス釣り
 talentshuffle_0789:
-textEntryASCII0("TODO")			//切手収集
+textEntryASCII0("Stamp")		//切手収集
 talentshuffle_0790:
-textEntryASCII0("TODO")			//ドライブ
+textEntryASCII0("Driving")		//ドライブ
 talentshuffle_0791:
-textEntryASCII0("TODO")			//キャンプ
+textEntryASCII0("Camping")		//キャンプ
 talentshuffle_0792:
-textEntryASCII0("TODO")			//つっこみ
+textEntryASCII0("Digger")		//つっこみ
 talentshuffle_0793:
-textEntryASCII0("TODO")			//サッカー
+textEntryASCII0("Soccer")		//サッカー
 talentshuffle_0794:
-textEntryASCII0("TODO")			//あやとり
+textEntryASCII0("Mathematics")		//あやとり
 talentshuffle_0795:
-textEntryASCII0("TODO")			//しりとり
+textEntryASCII0("Rapping")		//しりとり
 talentshuffle_0796:
-textEntryASCII0("TODO")			//ポーカー
+textEntryASCII0("Poker")		//ポーカー
 talentshuffle_0797:
-textEntryASCII0("TODO")			//パチンコ
+textEntryASCII0("Slot Machines")	//パチンコ
 talentshuffle_0798:
-textEntryASCII0("TODO")			//ＬＯＶＥ
+textEntryASCII0("LOVE")			//ＬＯＶＥ
 talentshuffle_0799:
-textEntryASCII0("TODO")			//逆上がり
+textEntryASCII0("Gymnastics")		//逆上がり
 talentshuffle_0800:
-textEntryASCII0("TODO")			//クリック
+textEntryASCII0("Clicking")		//クリック
 talentshuffle_0801:
-textEntryASCII0("TODO")			//ひっつく
+textEntryASCII0("Hiking")		//ひっつく
 talentshuffle_0802:
-textEntryASCII0("TODO")			//しゃべり
+textEntryASCII0("Talking")		//しゃべり
 talentshuffle_0803:
-textEntryASCII0("TODO")			//マラソン
+textEntryASCII0("Marathon")		//マラソン
 talentshuffle_0804:
-textEntryASCII0("TODO")			//ダッシュ
+textEntryASCII0("Dashing")		//ダッシュ
 talentshuffle_0805:
-textEntryASCII0("TODO")			//盆栽いじり
+textEntryASCII0("Plants")		//盆栽いじり
 talentshuffle_0806:
-textEntryASCII0("TODO")			//腕立て伏せ
+textEntryASCII0("Push-ups")		//腕立て伏せ
 talentshuffle_0807:
-textEntryASCII0("TODO")			//遅刻・早退
+textEntryASCII0("Origami")		//遅刻・早退
 talentshuffle_0808:
-textEntryASCII0("TODO")			//ファミコン
+textEntryASCII0("Nintendo")		//ファミコン
 talentshuffle_0809:
-textEntryASCII0("TODO")			//掃除・洗濯
+textEntryASCII0("Cleaning")		//掃除・洗濯
 talentshuffle_0810:
-textEntryASCII0("TODO")			//ちからずく
+textEntryASCII0("Bruteforcing")		//ちからずく
 talentshuffle_0811:
-textEntryASCII0("TODO")			//つまみ食い
+textEntryASCII0("Snacking")		//つまみ食い
 talentshuffle_0812:
-textEntryASCII0("TODO")			//金魚すくい
+textEntryASCII0("Scooping")		//金魚すくい
 talentshuffle_0813:
-textEntryASCII0("TODO")			//すくい投げ
+textEntryASCII0("Helper")		//すくい投げ
 talentshuffle_0814:
-textEntryASCII0("TODO")			//ラリアット
+textEntryASCII0("Lariat")		//ラリアット
 talentshuffle_0815:
-textEntryASCII0("TODO")			//じゃんけん
+textEntryASCII0("Rock-Paper-Scissors")	//じゃんけん
 talentshuffle_0816:
-textEntryASCII0("TODO")			//マッサージ
+textEntryASCII0("Massage")		//マッサージ
 talentshuffle_0817:
-textEntryASCII0("TODO")			//テレビゲーム
+textEntryASCII0("Video Games")		//テレビゲーム
 talentshuffle_0818:
-textEntryASCII0("TODO")			//ビデオレンタル
+textEntryASCII0("Movie Rentals")	//ビデオレンタル
 talentshuffle_0819:
-textEntryASCII0("TODO")			//スカイダイビング
+textEntryASCII0("Skydiving")		//スカイダイビング
 talentshuffle_0820:
-textEntryASCII0("TODO")			//ブレーンバスター
+textEntryASCII0("Brain Teasers")	//ブレーンバスター
 talentshuffle_0821:
-textEntryASCII0("TODO")			//ネットサーフィン
+textEntryASCII0("Web Browsing")		//ネットサーフィン
 talentshuffle_0822:
-textEntryASCII0("TODO")			//サーフィン
+textEntryASCII0("Surfing")		//サーフィン
 talentshuffle_0823:
-textEntryASCII0("TODO")			//インターネット
+textEntryASCII0("Internet")		//インターネット
 talentshuffle_0824:
-textEntryASCII0("TODO")			//ダンス
+textEntryASCII0("Dancing")		//ダンス
 talentshuffle_0825:
-textEntryASCII0("TODO")			//社交ダンス
+textEntryASCII0("Ballroom Dancing")	//社交ダンス
 talentshuffle_0826:
-textEntryASCII0("TODO")			//作詞
+textEntryASCII0("Lyrics")		//作詞
 talentshuffle_0827:
-textEntryASCII0("TODO")			//作曲
+textEntryASCII0("Composition")		//作曲
 
 talentshuffle_0828:
-textEntryASCII0("TODO")			//の解説
+textEntryASCII0(" Student")		//の解説
 talentshuffle_0829:
-textEntryASCII0("TODO")			//の研究
+textEntryASCII0(" Researcher")		//の研究
 talentshuffle_0830:
-textEntryASCII0("TODO")			//の練習
+textEntryASCII0(" Learner")		//の練習
 talentshuffle_0831:
-textEntryASCII0("TODO")			//の鑑賞
+textEntryASCII0(" Fan")			//の鑑賞
 talentshuffle_0832:
-textEntryASCII0("TODO")			//の収集
+textEntryASCII0(" Collector")		//の収集
 talentshuffle_0833:
-textEntryASCII0("TODO")			//の計画
+textEntryASCII0(" Skeptic")		//の計画
 talentshuffle_0834:
-textEntryASCII0("TODO")			//の特訓
+textEntryASCII0(" Expert")		//の特訓
 
 
 //--Free Space 3 / Precious Treasure (ID 0x342 / 0835)
-//IDs 0x343-0x350 / 0836-0849 (Prefix)
-//IDs 0x351-0x39B / 0850-0924 (Middle)
+//IDs 0x343-0x350 / 0836-0849 (Adjective)
+//IDs 0x351-0x39B / 0850-0924 (Name)
 talentshuffle_0835:
 textEntryASCII0("Treasure: ")		//大切な宝物／
 talentshuffle_0836:
@@ -1898,9 +1898,9 @@ textEntryASCII0("Ball")			//ボール
 
 
 //--Free Space 4 / Favorite Food (ID 0x39C / 0925)
-//IDs 0x39D-0x3B4 / 0926-0949 (Prefix)
-//IDs 0x3B5-0x3E5 / 0950-0998 (Middle)
-//IDs 0x3E6-0x3FA / 0999-1019 (Suffix)
+//IDs 0x39D-0x3B4 / 0926-0949 (Adjective)
+//IDs 0x3B5-0x3E5 / 0950-0998 (Name)
+//IDs 0x3E6-0x3FA / 0999-1019 (Kind)
 talentshuffle_0925:
 textEntryASCII0("Fav. Food: ")		//大好物／
 talentshuffle_0926:
