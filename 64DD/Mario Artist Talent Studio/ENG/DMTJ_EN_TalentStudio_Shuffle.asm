@@ -5,9 +5,14 @@ seek(0x930D10)
 base 0x802ABB50
 
 //--Name
+//Rules: Either (Prefix or Last Name or none) + First Name (always)
 //IDs 0x000-0x02E (0001-0047) (Prefix)
-//IDs 0x02F-0x0AB (0048-0172) (Middle)
-//IDs 0x0AC-0x0ED (0173-0238) (Suffix)
+//Male:   ID 0x000-0x026 (0001-0039)
+//Female: ID 0x000-0x019 (0001-0026) & 0x027-0x02E (0040-0047)
+//IDs 0x02F-0x0AB (0048-0172) (Last Name) (+Space)
+//IDs 0x0AC-0x0ED (0173-0238) (First Name)
+//Male:   ID 0x0AC-0x0DF (0173-0224) & 0x0EA-0x0EC (0235-0237)
+//Female: ID 0x0AC-0x0C2 (0173-0195) & 0x0E0-0x0EA (0225-0235) & 0x0ED (0238)
 talentshuffle_0001:
 textEntryASCII0("The ")			//ザ・
 talentshuffle_0002:
@@ -39,7 +44,7 @@ textEntryASCII0("Smackin' ")		//ペンペン
 talentshuffle_0015:
 textEntryASCII0("Doctor ")		//ドクター
 talentshuffle_0016:
-textEntryASCII0("Samohan ")		//サモハン (TODO)
+textEntryASCII0("Ice ")			//サモハン
 talentshuffle_0017:
 textEntryASCII0("Fire ")		//ファイヤー
 talentshuffle_0018:
@@ -75,7 +80,7 @@ textEntryASCII0("Mike ")		//マイク
 talentshuffle_0033:
 textEntryASCII0("Mister ")		//ミスター
 talentshuffle_0034:
-textEntryASCII0("Shigeru ")		//シーゲル (TODO)
+textEntryASCII0("Champion ")		//シーゲル
 talentshuffle_0035:
 textEntryASCII0("Johnny ")		//ジョニー
 talentshuffle_0036:
@@ -355,11 +360,11 @@ talentshuffle_0172:
 textEntryASCII0("TODO")			//竹内
 
 talentshuffle_0173:
-textEntryASCII0("TODO3")		//金
+textEntryASCII0("Gold")			//金
 talentshuffle_0174:
-textEntryASCII0("TODO3")		//銀
+textEntryASCII0("Silver")		//銀
 talentshuffle_0175:
-textEntryASCII0("TODO3")		//光
+textEntryASCII0("Shine")		//光
 talentshuffle_0176:
 textEntryASCII0("TODO3")		//様
 talentshuffle_0177:
@@ -373,13 +378,13 @@ textEntryASCII0("X")			//Ｘ
 talentshuffle_0181:
 textEntryASCII0("U3")			//Ｕ３
 talentshuffle_0182:
-textEntryASCII0("PhD.")			//博士
+textEntryASCII0("Doctor")		//博士
 talentshuffle_0183:
 textEntryASCII0("Masked")		//仮面
 talentshuffle_0184:
 textEntryASCII0("TODO3")		//浪花
 talentshuffle_0185:
-textEntryASCII0("Future")		//三世
+textEntryASCII0("Time")			//三世
 talentshuffle_0186:
 textEntryASCII0("8-bit")		//８ビット
 talentshuffle_0187:
@@ -433,7 +438,7 @@ textEntryASCII0("Teacher")		//先生
 talentshuffle_0211:
 textEntryASCII0("One")			//ワン
 talentshuffle_0212:
-textEntryASCII0("Daddy")		//パパ
+textEntryASCII0("Dad")			//パパ
 talentshuffle_0213:
 textEntryASCII0("Mac")			//マック
 talentshuffle_0214:
@@ -459,7 +464,7 @@ textEntryASCII0("Ryan")			//ライアン
 talentshuffle_0224:
 textEntryASCII0("Brian")		//ブライアン
 talentshuffle_0225:
-textEntryASCII0("TODO3")		//南
+textEntryASCII0("Woman")		//南
 talentshuffle_0226:
 textEntryASCII0("Plum")			//ウメ
 talentshuffle_0227:
@@ -479,288 +484,290 @@ textEntryASCII0("Anna")			//アンナ
 talentshuffle_0234:
 textEntryASCII0("Choco")		//チョコ
 talentshuffle_0235:
-textEntryASCII0("TODO3")		//ちゃん
+textEntryASCII0("TODO")			//ちゃん
 talentshuffle_0236:
 textEntryASCII0("Buddy")		//君
 talentshuffle_0237:
-textEntryASCII0("Jr")			//Ｊｒ
+textEntryASCII0("Junior")		//Ｊｒ
 talentshuffle_0238:
 textEntryASCII0("TODO3")		//さん
 
 //--Job
 //IDs 0x0EE-0x13B (0239-0316) (Prefix)
 //IDs 0x13C-0x204 (0317-0517) (Jobs)
+//Male:   ID 0x13C-0x1EF (0317-0496)
+//Female: ID 0x13C-0x1E1 (0317-0482) & 0x1F0-0x204 (0497-0517)
 talentshuffle_0239:
-textEntryASCII0("Night's")		//夜の
+textEntryASCII0("Nocturnal ")		//夜の
 talentshuffle_0240:
-textEntryASCII0("Love's")		//愛の
+textEntryASCII0("Loving ")		//愛の
 talentshuffle_0241:
-textEntryASCII0("TODO")			//自称
+textEntryASCII0("Self-made ")		//自称
 talentshuffle_0242:
-textEntryASCII0("TODO")			//にせ
+textEntryASCII0("Fake ")		//にせ
 talentshuffle_0243:
-textEntryASCII0("TODO")			//爆笑
+textEntryASCII0("Goofy ")		//爆笑
 talentshuffle_0244:
-textEntryASCII0("TODO")			//新人
+textEntryASCII0("Rookie ")		//新人
 talentshuffle_0245:
-textEntryASCII0("TODO")			//謎の
+textEntryASCII0("Enigmatic ")		//謎の
 talentshuffle_0246:
-textEntryASCII0("TODO")			//悪の
+textEntryASCII0("Evil ")		//悪の
 talentshuffle_0247:
-textEntryASCII0("TODO")			//鉄の
+textEntryASCII0("Iron ")		//鉄の
 talentshuffle_0248:
-textEntryASCII0("TODO")			//働く
+textEntryASCII0("Committed ")		//働く
 talentshuffle_0249:
-textEntryASCII0("TODO")			//有名
+textEntryASCII0("Famous ")		//有名
 talentshuffle_0250:
-textEntryASCII0("TODO")			//著名
+textEntryASCII0("Renowned ")		//著名
 talentshuffle_0251:
-textEntryASCII0("TODO")			//放浪
+textEntryASCII0("Wandering ")		//放浪
 talentshuffle_0252:
-textEntryASCII0("TODO")			//笑う
+textEntryASCII0("Laughing ")		//笑う
 talentshuffle_0253:
-textEntryASCII0("TODO")			//強い
+textEntryASCII0("Strong ")		//強い
 talentshuffle_0254:
-textEntryASCII0("TODO")			//戦う
+textEntryASCII0("Fighting ")		//戦う
 talentshuffle_0255:
-textEntryASCII0("TODO")			//いまは
+textEntryASCII0("For now, ")		//いまは
 talentshuffle_0256:
-textEntryASCII0("TODO")			//過去の
+textEntryASCII0("Ex-")			//過去の
 talentshuffle_0257:
-textEntryASCII0("TODO")			//未来の
+textEntryASCII0("Future ")		//未来の
 talentshuffle_0258:
-textEntryASCII0("TODO")			//恐怖の
+textEntryASCII0("Feared ")		//恐怖の
 talentshuffle_0259:
-textEntryASCII0("TODO")			//地獄の
+textEntryASCII0("Hellish ")		//地獄の
 talentshuffle_0260:
-textEntryASCII0("TODO")			//伝説の
+textEntryASCII0("Legendary ")		//伝説の
 talentshuffle_0261:
-textEntryASCII0("TODO")			//お色気
+textEntryASCII0("Romantic ")		//お色気
 talentshuffle_0262:
-textEntryASCII0("TODO")			//優れた
+textEntryASCII0("Excelling ")		//優れた
 talentshuffle_0263:
-textEntryASCII0("TODO")			//正義の
+textEntryASCII0("Renegade ")		//正義の
 talentshuffle_0264:
-textEntryASCII0("TODO")			//プロの
+textEntryASCII0("Pro. ")		//プロの
 talentshuffle_0265:
-textEntryASCII0("TODO")			//陽気な
+textEntryASCII0("Lively ")		//陽気な
 talentshuffle_0266:
-textEntryASCII0("TODO")			//場末の
+textEntryASCII0("Outsider ")		//場末の
 talentshuffle_0267:
-textEntryASCII0("TODO")			//地味な
+textEntryASCII0("Sober ")		//地味な
 talentshuffle_0268:
-textEntryASCII0("TODO")			//こわい
+textEntryASCII0("Scared ")		//こわい
 talentshuffle_0269:
-textEntryASCII0("TODO")			//見習い
+textEntryASCII0("Trainee ")		//見習い
 talentshuffle_0270:
-textEntryASCII0("TODO")			//浪速の
+textEntryASCII0("Great ")		//浪速の
 talentshuffle_0271:
-textEntryASCII0("TODO")			//下品な
+textEntryASCII0("Crude ")		//下品な
 talentshuffle_0272:
-textEntryASCII0("TODO")			//でかい
+textEntryASCII0("Giant ")		//でかい
 talentshuffle_0273:
-textEntryASCII0("TODO")			//お上品な
+textEntryASCII0("Classy ")		//お上品な
 talentshuffle_0274:
-textEntryASCII0("TODO")			//こしかけ
+textEntryASCII0("Sitting ")		//こしかけ
 talentshuffle_0275:
-textEntryASCII0("TODO")			//エッチな
+textEntryASCII0("Naughty ")		//エッチな
 talentshuffle_0276:
-textEntryASCII0("TODO")			//売れない
+textEntryASCII0("Unpopular ")		//売れない
 talentshuffle_0277:
-textEntryASCII0("TODO")			//去年まで
+textEntryASCII0("Ignored ")		//去年まで
 talentshuffle_0278:
-textEntryASCII0("TODO")			//不器用な
+textEntryASCII0("Awkward ")		//不器用な
 talentshuffle_0279:
-textEntryASCII0("TODO")			//江戸っ子
+textEntryASCII0("Slacker ")		//江戸っ子
 talentshuffle_0280:
-textEntryASCII0("TODO")			//カリスマ
+textEntryASCII0("Appealing ")		//カリスマ
 talentshuffle_0281:
-textEntryASCII0("TODO")			//スーパー
+textEntryASCII0("Super ")		//スーパー
 talentshuffle_0282:
-textEntryASCII0("TODO")			//いけてる
+textEntryASCII0("Active ")		//いけてる
 talentshuffle_0283:
-textEntryASCII0("TODO")			//かわいい
+textEntryASCII0("Cute ")		//かわいい
 talentshuffle_0284:
-textEntryASCII0("TODO")			//静かなる
+textEntryASCII0("Silent ")		//静かなる
 talentshuffle_0285:
-textEntryASCII0("TODO")			//売れっ子
+textEntryASCII0("Favorite ")		//売れっ子
 talentshuffle_0286:
-textEntryASCII0("TODO")			//まじめな
+textEntryASCII0("Serious ")		//まじめな
 talentshuffle_0287:
-textEntryASCII0("TODO")			//不思議な
+textEntryASCII0("Strange ")		//不思議な
 talentshuffle_0288:
-textEntryASCII0("TODO")			//やさしい
+textEntryASCII0("Kind ")		//やさしい
 talentshuffle_0289:
-textEntryASCII0("TODO")			//あぶない
+textEntryASCII0("Dangerous ")		//あぶない
 talentshuffle_0290:
-textEntryASCII0("TODO")			//ビッグな
+textEntryASCII0("Big ")			//ビッグな
 talentshuffle_0291:
-textEntryASCII0("TODO")			//やり手の
+textEntryASCII0("Skilled ")		//やり手の
 talentshuffle_0292:
-textEntryASCII0("TODO")			//さえない
+textEntryASCII0("Dark ")		//さえない
 talentshuffle_0293:
-textEntryASCII0("TODO")			//異次元の
+textEntryASCII0("Space ")		//異次元の
 talentshuffle_0294:
-textEntryASCII0("TODO")			//みんなの
+textEntryASCII0("People's ")		//みんなの
 talentshuffle_0295:
-textEntryASCII0("TODO")			//日本一の
+textEntryASCII0("Best ")		//日本一の
 talentshuffle_0296:
-textEntryASCII0("TODO")			//世界一の
+textEntryASCII0("Greatest ")		//世界一の
 talentshuffle_0297:
-textEntryASCII0("TODO")			//ピチピチ
+textEntryASCII0("Energetic ")		//ピチピチ
 talentshuffle_0298:
-textEntryASCII0("TODO")			//あま－い
+textEntryASCII0("Sweet ")		//あま－い
 talentshuffle_0299:
-textEntryASCII0("TODO")			//クラス１の
+textEntryASCII0("Prime ")		//クラス１の
 talentshuffle_0300:
-textEntryASCII0("TODO")			//時をかける
+textEntryASCII0("Slow ")		//時をかける
 talentshuffle_0301:
-textEntryASCII0("TODO")			//太った方の
+textEntryASCII0("Chubby ")		//太った方の
 talentshuffle_0302:
-textEntryASCII0("TODO")			//痩せた方の
+textEntryASCII0("Slim ")		//痩せた方の
 talentshuffle_0303:
-textEntryASCII0("TODO")			//かっこいい
+textEntryASCII0("Smooth ")		//かっこいい
 talentshuffle_0304:
-textEntryASCII0("TODO")			//おしゃれな
+textEntryASCII0("Snazzy ")		//おしゃれな
 talentshuffle_0305:
-textEntryASCII0("TODO")			//かっこ悪い
+textEntryASCII0("Ugly ")		//かっこ悪い
 talentshuffle_0306:
-textEntryASCII0("TODO")			//ちっちゃい
+textEntryASCII0("Tiny ")		//ちっちゃい
 talentshuffle_0307:
-textEntryASCII0("TODO")			//運転手付きの
+textEntryASCII0("Rich ")		//運転手付きの
 talentshuffle_0308:
-textEntryASCII0("TODO")			//ビジュアル系
+textEntryASCII0("Handsome ")		//ビジュアル系
 talentshuffle_0309:
-textEntryASCII0("TODO")			//毛むくじゃらな
+textEntryASCII0("Fuzzy ")		//毛むくじゃらな
 talentshuffle_0310:
-textEntryASCII0("TODO")			//スタイリッシュな
+textEntryASCII0("Stylish ")		//スタイリッシュな
 talentshuffle_0311:
-textEntryASCII0("TODO")			//ゲーム
+textEntryASCII0("Gamer ")		//ゲーム
 talentshuffle_0312:
-textEntryASCII0("TODO")			//雇われ
+textEntryASCII0("Hired ")		//雇われ
 talentshuffle_0313:
-textEntryASCII0("TODO")			//札付きの
+textEntryASCII0("Infamous ")		//札付きの
 talentshuffle_0314:
-textEntryASCII0("TODO")			//威勢のいい
+textEntryASCII0("Cheerful ")		//威勢のいい
 talentshuffle_0315:
-textEntryASCII0("TODO")			//威勢のわるい
+textEntryASCII0("Powerful ")		//威勢のわるい
 talentshuffle_0316:
-textEntryASCII0("TODO")			//クールな
+textEntryASCII0("Cool ")		//クールな
 
 talentshuffle_0317:
-textEntryASCII0("TODO")			//主
+textEntryASCII0("Boss")			//主
 talentshuffle_0318:
-textEntryASCII0("TODO")			//犬
+textEntryASCII0("Loser")		//犬
 talentshuffle_0319:
-textEntryASCII0("TODO")			//ＤＪ
+textEntryASCII0("DJ")			//ＤＪ
 talentshuffle_0320:
 textEntryASCII0("TODO")			//浪人
 talentshuffle_0321:
-textEntryASCII0("TODO")			//駅長
+textEntryASCII0("Master")		//駅長
 talentshuffle_0322:
-textEntryASCII0("TODO")			//商人
+textEntryASCII0("Merchant")		//商人
 talentshuffle_0323:
 textEntryASCII0("TODO")			//無職
 talentshuffle_0324:
-textEntryASCII0("TODO")			//詩人
+textEntryASCII0("Poet")			//詩人
 talentshuffle_0325:
-textEntryASCII0("TODO")			//社長
+textEntryASCII0("President")		//社長
 talentshuffle_0326:
-textEntryASCII0("TODO")			//部長
+textEntryASCII0("Manager")		//部長
 talentshuffle_0327:
-textEntryASCII0("TODO")			//専務
+textEntryASCII0("Director")		//専務
 talentshuffle_0328:
-textEntryASCII0("TODO")			//課長
+textEntryASCII0("Chief")		//課長
 talentshuffle_0329:
-textEntryASCII0("TODO")			//妖怪
+textEntryASCII0("Spirit")		//妖怪
 talentshuffle_0330:
 textEntryASCII0("TODO")			//番長
 talentshuffle_0331:
-textEntryASCII0("TODO")			//班長
+textEntryASCII0("Leader")		//班長
 talentshuffle_0332:
-textEntryASCII0("TODO")			//先生
+textEntryASCII0("Teacher")		//先生
 talentshuffle_0333:
-textEntryASCII0("TODO")			//漁師
+textEntryASCII0("Fisherman")		//漁師
 talentshuffle_0334:
-textEntryASCII0("TODO")			//探偵
+textEntryASCII0("Detective")		//探偵
 talentshuffle_0335:
-textEntryASCII0("TODO")			//大工
+textEntryASCII0("Carpenter")		//大工
 talentshuffle_0336:
-textEntryASCII0("TODO")			//花屋さん
+textEntryASCII0("Florist")		//花屋さん
 talentshuffle_0337:
-textEntryASCII0("TODO")			//俳優
+textEntryASCII0("Performer")		//俳優
 talentshuffle_0338:
-textEntryASCII0("TODO")			//騎士
+textEntryASCII0("Knight")		//騎士
 talentshuffle_0339:
-textEntryASCII0("TODO")			//歌手
+textEntryASCII0("Singer")		//歌手
 talentshuffle_0340:
-textEntryASCII0("TODO")			//通訳
+textEntryASCII0("Interpreter")		//通訳
 talentshuffle_0341:
-textEntryASCII0("TODO")			//作家
+textEntryASCII0("Writer")		//作家
 talentshuffle_0342:
-textEntryASCII0("TODO")			//画家
+textEntryASCII0("Painter")		//画家
 talentshuffle_0343:
-textEntryASCII0("TODO")			//職人
+textEntryASCII0("Artisan")		//職人
 talentshuffle_0344:
-textEntryASCII0("TODO")			//声優
+textEntryASCII0("Voice Actor")		//声優
 talentshuffle_0345:
-textEntryASCII0("TODO")			//勇者
+textEntryASCII0("Hero")			//勇者
 talentshuffle_0346:
-textEntryASCII0("TODO")			//幽霊
+textEntryASCII0("Ghost")		//幽霊
 talentshuffle_0347:
 textEntryASCII0("TODO")			//河童
 talentshuffle_0348:
-textEntryASCII0("TODO")			//神童
+textEntryASCII0("Prodigy")		//神童
 talentshuffle_0349:
-textEntryASCII0("TODO")			//達人
+textEntryASCII0("Master")		//達人
 talentshuffle_0350:
-textEntryASCII0("TODO")			//悪者
+textEntryASCII0("Baddie")		//悪者
 talentshuffle_0351:
-textEntryASCII0("TODO")			//自由人
+textEntryASCII0("Free Person")		//自由人
 talentshuffle_0352:
-textEntryASCII0("TODO")			//小説家
+textEntryASCII0("Novelist")		//小説家
 talentshuffle_0353:
-textEntryASCII0("TODO")			//道化師
+textEntryASCII0("Clown")		//道化師
 talentshuffle_0354:
-textEntryASCII0("TODO")			//運転手
+textEntryASCII0("Driver")		//運転手
 talentshuffle_0355:
 textEntryASCII0("TODO")			//電話番
 talentshuffle_0356:
-textEntryASCII0("TODO")			//用心棒
+textEntryASCII0("Bouncer")		//用心棒
 talentshuffle_0357:
-textEntryASCII0("TODO")			//会計士
+textEntryASCII0("Accountant")		//会計士
 talentshuffle_0358:
-textEntryASCII0("TODO")			//救世主
+textEntryASCII0("Savior")		//救世主
 talentshuffle_0359:
-textEntryASCII0("TODO")			//委員長
+textEntryASCII0("Chairman")		//委員長
 talentshuffle_0360:
 textEntryASCII0("TODO")			//気功師
 talentshuffle_0361:
-textEntryASCII0("TODO")			//漫才師
+textEntryASCII0("Comic")		//漫才師
 talentshuffle_0362:
-textEntryASCII0("TODO")			//漫画家
+textEntryASCII0("Artist")		//漫画家
 talentshuffle_0363:
-textEntryASCII0("TODO")			//警察官
+textEntryASCII0("Policeman")		//警察官
 talentshuffle_0364:
 textEntryASCII0("TODO")			//金融業
 talentshuffle_0365:
-textEntryASCII0("TODO")			//モデル
+textEntryASCII0("Model")		//モデル
 talentshuffle_0366:
-textEntryASCII0("TODO")			//きこり
+textEntryASCII0("Lumberjack")		//きこり
 talentshuffle_0367:
 textEntryASCII0("TODO")			//佃煮屋さん
 talentshuffle_0368:
-textEntryASCII0("TODO")			//美容師
+textEntryASCII0("Hairdresser")		//美容師
 talentshuffle_0369:
 textEntryASCII0("TODO")			//金魚屋さん
 talentshuffle_0370:
-textEntryASCII0("TODO")			//パン屋さん
+textEntryASCII0("Baker")		//パン屋さん
 talentshuffle_0371:
-textEntryASCII0("TODO")			//コック
+textEntryASCII0("Cook")			//コック
 talentshuffle_0372:
-textEntryASCII0("TODO")			//建築家
+textEntryASCII0("Architect")		//建築家
 talentshuffle_0373:
-textEntryASCII0("TODO")			//占い師
+textEntryASCII0("Medium")		//占い師
 talentshuffle_0374:
 textEntryASCII0("TODO")			//田舎者
 talentshuffle_0375:
@@ -776,49 +783,49 @@ textEntryASCII0("TODO")			//高校生
 talentshuffle_0380:
 textEntryASCII0("TODO")			//大学生
 talentshuffle_0381:
-textEntryASCII0("TODO")			//警備員
+textEntryASCII0("Guard")		//警備員
 talentshuffle_0382:
 textEntryASCII0("TODO")			//劇団員
 talentshuffle_0383:
-textEntryASCII0("TODO")			//おたく
+textEntryASCII0("Nerd")			//おたく
 talentshuffle_0384:
-textEntryASCII0("TODO")			//霊能者
+textEntryASCII0("Psychic")		//霊能者
 talentshuffle_0385:
-textEntryASCII0("TODO")			//料理人
+textEntryASCII0("Chef")			//料理人
 talentshuffle_0386:
-textEntryASCII0("TODO")			//戦闘員
+textEntryASCII0("Warrior")		//戦闘員
 talentshuffle_0387:
-textEntryASCII0("TODO")			//宇宙人
+textEntryASCII0("Alien")		//宇宙人
 talentshuffle_0388:
-textEntryASCII0("TODO")			//ゾンビ
+textEntryASCII0("Zombie")		//ゾンビ
 talentshuffle_0389:
 textEntryASCII0("TODO")			//背後霊
 talentshuffle_0390:
-textEntryASCII0("TODO")			//宅配人
+textEntryASCII0("Courier")		//宅配人
 talentshuffle_0391:
-textEntryASCII0("TODO")			//政治家
+textEntryASCII0("Politician")		//政治家
 talentshuffle_0392:
 textEntryASCII0("TODO")			//牛どん屋さん
 talentshuffle_0393:
-textEntryASCII0("TODO")			//格闘家
+textEntryASCII0("Fighter")		//格闘家
 talentshuffle_0394:
-textEntryASCII0("TODO")			//スカウト
+textEntryASCII0("Scout")		//スカウト
 talentshuffle_0395:
 textEntryASCII0("TODO")			//予備校生
 talentshuffle_0396:
-textEntryASCII0("TODO")			//アイドル
+textEntryASCII0("Idol")			//アイドル
 talentshuffle_0397:
-textEntryASCII0("TODO")			//ハスラー
+textEntryASCII0("Hustler")		//ハスラー
 talentshuffle_0398:
-textEntryASCII0("TODO")			//祈とう師
+textEntryASCII0("Shaman")		//祈とう師
 talentshuffle_0399:
-textEntryASCII0("TODO")			//総理大臣
+textEntryASCII0("Minister")		//総理大臣
 talentshuffle_0400:
-textEntryASCII0("TODO")			//ラッパ－
+textEntryASCII0("Rapper")		//ラッパ－
 talentshuffle_0401:
-textEntryASCII0("TODO")			//レスラー
+textEntryASCII0("Wrestler")		//レスラー
 talentshuffle_0402:
-textEntryASCII0("TODO")			//ダンサー
+textEntryASCII0("Dancer")		//ダンサー
 talentshuffle_0403:
 textEntryASCII0("TODO")			//だんご屋さん
 talentshuffle_0404:
@@ -852,7 +859,7 @@ textEntryASCII0("TODO")			//社長秘書
 talentshuffle_0418:
 textEntryASCII0("TODO")			//妖精
 talentshuffle_0419:
-textEntryASCII0("TODO")			//ヒーロー
+textEntryASCII0("Hero")			//ヒーロー
 talentshuffle_0420:
 textEntryASCII0("TODO")			//人造人間
 talentshuffle_0421:
@@ -1008,13 +1015,13 @@ textEntryASCII0("TODO")			//アーミー
 talentshuffle_0496:
 textEntryASCII0("TODO")			//青年実業家
 talentshuffle_0497:
-textEntryASCII0("TODO")			//ＯＬ
+textEntryASCII0("Office Lady")		//ＯＬ
 talentshuffle_0498:
-textEntryASCII0("TODO")			//女王
+textEntryASCII0("Queen")		//女王
 talentshuffle_0499:
-textEntryASCII0("TODO")			//主婦
+textEntryASCII0("Housewife")		//主婦
 talentshuffle_0500:
-textEntryASCII0("TODO")			//ママ
+textEntryASCII0("Mother")		//ママ
 talentshuffle_0501:
 textEntryASCII0("TODO")			//美人
 talentshuffle_0502:
@@ -1042,13 +1049,13 @@ textEntryASCII0("TODO")			//保母さん
 talentshuffle_0513:
 textEntryASCII0("TODO")			//家事手伝い
 talentshuffle_0514:
-textEntryASCII0("TODO")			//バレリーナ
+textEntryASCII0("Ballerina")		//バレリーナ
 talentshuffle_0515:
-textEntryASCII0("TODO")			//女将
+textEntryASCII0("Hostess")		//女将
 talentshuffle_0516:
-textEntryASCII0("TODO")			//ウェイトレス
+textEntryASCII0("Waitress")		//ウェイトレス
 talentshuffle_0517:
-textEntryASCII0("TODO")			//ハウスマヌカン
+textEntryASCII0("Mannequin")		//ハウスマヌカン
 
 //--Catchphrases
 //IDs 0x205-0x24C (0518-0589)
@@ -2197,3 +2204,7 @@ dw (talentshuffle_0961),(talentshuffle_0962),(talentshuffle_0963),(talentshuffle
 dw (talentshuffle_0981),(talentshuffle_0982),(talentshuffle_0983),(talentshuffle_0984),(talentshuffle_0985),(talentshuffle_0986),(talentshuffle_0987),(talentshuffle_0988),(talentshuffle_0989),(talentshuffle_0990),(talentshuffle_0991),(talentshuffle_0992),(talentshuffle_0993),(talentshuffle_0994),(talentshuffle_0995),(talentshuffle_0996),(talentshuffle_0997),(talentshuffle_0998),(talentshuffle_0999),(talentshuffle_1000)
 dw (talentshuffle_1001),(talentshuffle_1002),(talentshuffle_1003),(talentshuffle_1004),(talentshuffle_1005),(talentshuffle_1006),(talentshuffle_1007),(talentshuffle_1008),(talentshuffle_1009),(talentshuffle_1010),(talentshuffle_1011),(talentshuffle_1012),(talentshuffle_1013),(talentshuffle_1014),(talentshuffle_1015),(talentshuffle_1016),(talentshuffle_1017),(talentshuffle_1018),(talentshuffle_1019),(talentshuffle_1020)
 dw (talentshuffle_1021),(talentshuffle_1022),(talentshuffle_1023),(talentshuffle_1024),(talentshuffle_1025),(talentshuffle_1026),(talentshuffle_1027),(talentshuffle_1028),(talentshuffle_1029),(talentshuffle_1030),(talentshuffle_1031),(talentshuffle_1032),(talentshuffle_1033),(talentshuffle_1034),(talentshuffle_1035)
+
+//Hacks
+//One space instead of two for names
+seek(0x92B7FA); dh $01
