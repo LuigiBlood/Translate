@@ -1,12 +1,6 @@
 //Mario Artist Talent Studio
 //Graphic Replacement
 
-//Missing:
-
-//Shuffle Text
-//Default Talents
-//Sample Movies + Greetings
-
 //-----------------------
 //Main UI YAY1 patches---------------------------------
 output "./Temp/147620.7C9B.UI.yay1.bin"
