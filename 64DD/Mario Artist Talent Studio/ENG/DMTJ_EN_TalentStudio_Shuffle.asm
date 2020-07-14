@@ -1902,197 +1902,197 @@ textEntryASCII0("TODO")			//ボール
 //IDs 0x3B5-0x3E5 / 0950-0998 (Middle)
 //IDs 0x3E6-0x3FA / 0999-1019 (Suffix)
 talentshuffle_0925:
-textEntryASCII0("Fav. Food/")		//大好物／
+textEntryASCII0("Fav. Food: ")		//大好物／
 talentshuffle_0926:
-textEntryASCII0("TODO")			//高級
+textEntryASCII0("Royal ")		//高級
 talentshuffle_0927:
-textEntryASCII0("TODO")			//冷し
+textEntryASCII0("Chilly ")		//冷し
 talentshuffle_0928:
-textEntryASCII0("TODO")			//新鮮な
+textEntryASCII0("Fresh ")		//新鮮な
 talentshuffle_0929:
-textEntryASCII0("TODO")			//お子様
+textEntryASCII0("Small ")		//お子様
 talentshuffle_0930:
-textEntryASCII0("TODO")			//ダブル
+textEntryASCII0("Double ")		//ダブル
 talentshuffle_0931:
-textEntryASCII0("TODO")			//バニラ
+textEntryASCII0("Vanilla ")		//バニラ
 talentshuffle_0932:
-textEntryASCII0("TODO")			//トリプル
+textEntryASCII0("Triple ")		//トリプル
 talentshuffle_0933:
-textEntryASCII0("TODO")			//ふつうの
+textEntryASCII0("Plain ")		//ふつうの
 talentshuffle_0934:
-textEntryASCII0("TODO")			//あまーい
+textEntryASCII0("Sweet ")		//あまーい
 talentshuffle_0935:
-textEntryASCII0("TODO")			//からーい
+textEntryASCII0("Spicy ")		//からーい
 talentshuffle_0936:
-textEntryASCII0("TODO")			//しぶーい
+textEntryASCII0("Bitter ")		//しぶーい
 talentshuffle_0937:
-textEntryASCII0("TODO")			//おいしい
+textEntryASCII0("Tasty ")		//おいしい
 talentshuffle_0938:
-textEntryASCII0("TODO")			//よくある
+textEntryASCII0("Boiled ")		//よくある
 talentshuffle_0939:
-textEntryASCII0("TODO")			//すっぱい
+textEntryASCII0("Curry ")		//すっぱい
 talentshuffle_0940:
-textEntryASCII0("TODO")			//フレッシュ
+textEntryASCII0("Steamed ")		//フレッシュ
 talentshuffle_0941:
-textEntryASCII0("TODO")			//ピチピチな
+textEntryASCII0("Shiny ")		//ピチピチな
 talentshuffle_0942:
-textEntryASCII0("TODO")			//プリプリな
+textEntryASCII0("Tender ")		//プリプリな
 talentshuffle_0943:
-textEntryASCII0("TODO")			//スペシャル
+textEntryASCII0("Special ")		//スペシャル
 talentshuffle_0944:
-textEntryASCII0("TODO")			//３分で出来る
+textEntryASCII0("3 minute ")		//３分で出来る
 talentshuffle_0945:
-textEntryASCII0("TODO")			//インスタント
+textEntryASCII0("Instant ")		//インスタント
 talentshuffle_0946:
-textEntryASCII0("TODO")			//何ともいえない味の
+textEntryASCII0("Unspeakable ")		//何ともいえない味の
 talentshuffle_0947:
-textEntryASCII0("TODO")			//まぜ
+textEntryASCII0("Mixed ")		//まぜ
 talentshuffle_0948:
-textEntryASCII0("TODO")			//ホット
+textEntryASCII0("Hot ")			//ホット
 talentshuffle_0949:
-textEntryASCII0("TODO")			//究極の
+textEntryASCII0("Jelly ")		//究極の
 
 talentshuffle_0950:
-textEntryASCII0("TODO")			//牛乳
+textEntryASCII0("Milk")			//牛乳
 talentshuffle_0951:
-textEntryASCII0("TODO")			//紅茶
+textEntryASCII0("Salmon")		//紅茶
 talentshuffle_0952:
-textEntryASCII0("TODO")			//ピザ
+textEntryASCII0("Pizza")		//ピザ
 talentshuffle_0953:
-textEntryASCII0("TODO")			//お茶
+textEntryASCII0("Tea")			//お茶
 talentshuffle_0954:
-textEntryASCII0("TODO")			//弁当
+textEntryASCII0("Hamburger")		//弁当
 talentshuffle_0955:
-textEntryASCII0("TODO")			//酒かす
+textEntryASCII0("Liquor")		//酒かす
 talentshuffle_0956:
-textEntryASCII0("TODO")			//中トロ
+textEntryASCII0("Tuna")			//中トロ
 talentshuffle_0957:
-textEntryASCII0("TODO")			//チーズ
+textEntryASCII0("Cheese")		//チーズ
 talentshuffle_0958:
-textEntryASCII0("TODO")			//バター
+textEntryASCII0("Butter")		//バター
 talentshuffle_0959:
-textEntryASCII0("TODO")			//おでん
+textEntryASCII0("Apple")		//おでん
 talentshuffle_0960:
-textEntryASCII0("TODO")			//焼き肉
+textEntryASCII0("Barbecue")		//焼き肉
 talentshuffle_0961:
-textEntryASCII0("TODO")			//きつね
+textEntryASCII0("Sandwich")		//きつね
 talentshuffle_0962:
-textEntryASCII0("TODO")			//たぬき
+textEntryASCII0("Pasta")		//たぬき
 talentshuffle_0963:
-textEntryASCII0("TODO")			//日本酒
+textEntryASCII0("Bean")			//日本酒
 talentshuffle_0964:
-textEntryASCII0("TODO")			//赤ワイン
+textEntryASCII0("Red Wine")		//赤ワイン
 talentshuffle_0965:
-textEntryASCII0("TODO")			//白ワイン
+textEntryASCII0("White Wine")		//白ワイン
 talentshuffle_0966:
-textEntryASCII0("TODO")			//カクテル
+textEntryASCII0("Cocktail")		//カクテル
 talentshuffle_0967:
-textEntryASCII0("TODO")			//ふぐ料理
+textEntryASCII0("Fish")			//ふぐ料理
 talentshuffle_0968:
-textEntryASCII0("TODO")			//にんにく
+textEntryASCII0("Garlic")		//にんにく
 talentshuffle_0969:
-textEntryASCII0("TODO")			//なっとう
+textEntryASCII0("Carrot")		//なっとう
 talentshuffle_0970:
-textEntryASCII0("TODO")			//タコ焼き
+textEntryASCII0("Dumplings")		//タコ焼き
 talentshuffle_0971:
-textEntryASCII0("TODO")			//かにスキ
+textEntryASCII0("Crab")			//かにスキ
 talentshuffle_0972:
-textEntryASCII0("TODO")			//ステーキ
+textEntryASCII0("Steak")		//ステーキ
 talentshuffle_0973:
-textEntryASCII0("TODO")			//目玉焼き
+textEntryASCII0("Eggs")			//目玉焼き
 talentshuffle_0974:
-textEntryASCII0("TODO")			//おにぎり
+textEntryASCII0("Rice Ball")		//おにぎり
 talentshuffle_0975:
-textEntryASCII0("TODO")			//うな重
+textEntryASCII0("Salmon")		//うな重
 talentshuffle_0976:
-textEntryASCII0("TODO")			//おしるこ
+textEntryASCII0("Soup")			//おしるこ
 talentshuffle_0977:
-textEntryASCII0("TODO")			//あんぱん
+textEntryASCII0("Bread")		//あんぱん
 talentshuffle_0978:
-textEntryASCII0("TODO")			//お茶漬け
+textEntryASCII0("Pork")			//お茶漬け
 talentshuffle_0979:
-textEntryASCII0("TODO")			//とんカツ
+textEntryASCII0("Chicken")		//とんカツ
 talentshuffle_0980:
-textEntryASCII0("TODO")			//マヨネーズ
+textEntryASCII0("Mayonnaise")		//マヨネーズ
 talentshuffle_0981:
-textEntryASCII0("TODO")			//シェフの味
+textEntryASCII0("Chef's Cooking")	//シェフの味
 talentshuffle_0982:
-textEntryASCII0("TODO")			//男の手料理
+textEntryASCII0("Home Cooking")		//男の手料理
 talentshuffle_0983:
-textEntryASCII0("TODO")			//ヨーグルト
+textEntryASCII0("Yogurt")		//ヨーグルト
 talentshuffle_0984:
-textEntryASCII0("TODO")			//ウイスキー
+textEntryASCII0("Whisky")		//ウイスキー
 talentshuffle_0985:
-textEntryASCII0("TODO")			//マロンケーキ
+textEntryASCII0("Chestnut")		//マロンケーキ
 talentshuffle_0986:
-textEntryASCII0("TODO")			//チョコレート
+textEntryASCII0("Chocolate")		//チョコレート
 talentshuffle_0987:
-textEntryASCII0("TODO")			//フランスパン
+textEntryASCII0("Baguette")		//フランスパン
 talentshuffle_0988:
-textEntryASCII0("TODO")			//おふくろの味
+textEntryASCII0("Mom's Cooking")	//おふくろの味
 talentshuffle_0989:
-textEntryASCII0("TODO")			//白玉ぜんざい
+textEntryASCII0("Caramel")		//白玉ぜんざい
 talentshuffle_0990:
-textEntryASCII0("TODO")			//クリームぱん
+textEntryASCII0("Doughnut")		//クリームぱん
 talentshuffle_0991:
-textEntryASCII0("TODO")			//ホットケーキ
+textEntryASCII0("Pancake")		//ホットケーキ
 talentshuffle_0992:
-textEntryASCII0("TODO")			//アイスクリーム
+textEntryASCII0("Ice Cream")		//アイスクリーム
 talentshuffle_0993:
-textEntryASCII0("TODO")			//シュークリーム
+textEntryASCII0("Cream Puff")		//シュークリーム
 talentshuffle_0994:
-textEntryASCII0("TODO")			//ソフトクリーム
+textEntryASCII0("French Fries")		//ソフトクリーム
 talentshuffle_0995:
-textEntryASCII0("TODO")			//ミートスパゲッティ
+textEntryASCII0("Meat & Spaghetti")	//ミートスパゲッティ
 talentshuffle_0996:
-textEntryASCII0("TODO")			//ごはん
+textEntryASCII0("Rice")			//ごはん
 talentshuffle_0997:
-textEntryASCII0("TODO")			//にくまん
+textEntryASCII0("Meat Bun")		//にくまん
 talentshuffle_0998:
-textEntryASCII0("TODO")			//あんまん
+textEntryASCII0("Candy")		//あんまん
 
 talentshuffle_0999:
-textEntryASCII0("TODO")			//定食
+textEntryASCII0(" Special")		//定食
 talentshuffle_1000:
-textEntryASCII0("TODO")			//御膳
+textEntryASCII0(" Cake")		//御膳
 talentshuffle_1001:
-textEntryASCII0("TODO")			//なべ
+textEntryASCII0(" in a pot")		//なべ
 talentshuffle_1002:
-textEntryASCII0("TODO")			//そば
+textEntryASCII0(" Meal")		//そば
 talentshuffle_1003:
-textEntryASCII0("TODO")			//（松）
+textEntryASCII0(" (Rare)")		//（松）
 talentshuffle_1004:
-textEntryASCII0("TODO")			//（竹）
+textEntryASCII0(" (Medium Rare)")	//（竹）
 talentshuffle_1005:
-textEntryASCII0("TODO")			//（梅）
+textEntryASCII0(" with Ketchup")	//（梅）
 talentshuffle_1006:
-textEntryASCII0("TODO")			//ランチ
+textEntryASCII0(" Lunch")		//ランチ
 talentshuffle_1007:
-textEntryASCII0("TODO")			//コース
+textEntryASCII0(" Course")		//コース
 talentshuffle_1008:
-textEntryASCII0("TODO")			//セット
+textEntryASCII0(" Set")			//セット
 talentshuffle_1009:
-textEntryASCII0("TODO")			//うどん
+textEntryASCII0(" Pie")			//うどん
 talentshuffle_1010:
-textEntryASCII0("TODO")			//カレー
+textEntryASCII0(" Soup")		//カレー
 talentshuffle_1011:
-textEntryASCII0("TODO")			//ジュース
+textEntryASCII0(" Juice")		//ジュース
 talentshuffle_1012:
-textEntryASCII0("TODO")			//ラーメン
+textEntryASCII0(" Ramen")		//ラーメン
 talentshuffle_1013:
-textEntryASCII0("TODO")			//コーヒー
+textEntryASCII0(" Coffee")		//コーヒー
 talentshuffle_1014:
-textEntryASCII0("TODO")			//シリーズ
+textEntryASCII0(" Series")		//シリーズ
 talentshuffle_1015:
-textEntryASCII0("TODO")			//焼きソバ
+textEntryASCII0(" (Sour)")		//焼きソバ
 talentshuffle_1016:
-textEntryASCII0("TODO")			//（辛口）
+textEntryASCII0(" (Dry)")		//（辛口）
 talentshuffle_1017:
-textEntryASCII0("TODO")			//（甘口）
+textEntryASCII0(" (Sweet)")		//（甘口）
 talentshuffle_1018:
-textEntryASCII0("TODO")			//（激辛）
+textEntryASCII0(" (Hot)")		//（激辛）
 talentshuffle_1019:
-textEntryASCII0("TODO")			//（中辛）
+textEntryASCII0(" (Spicy)")		//（中辛）
 
 //Special Messages (MM/DD)
 //01/01 - New Year
