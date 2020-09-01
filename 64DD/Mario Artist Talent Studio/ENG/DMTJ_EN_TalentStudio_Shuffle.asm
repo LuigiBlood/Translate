@@ -1060,149 +1060,149 @@ textEntryASCII0("Mannequin")		//ハウスマヌカン
 //--Catchphrases
 //IDs 0x205-0x24C (0518-0589)
 talentshuffle_0518:
-textEntryASCII0("TODO")			//ぴよ
+textEntryASCII0("Tweet!")		//ぴよ
 talentshuffle_0519:
-textEntryASCII0("TODO")			//流石
+textEntryASCII0("Expected...")		//流石
 talentshuffle_0520:
-textEntryASCII0("TODO")			//現金
+textEntryASCII0("I have cash.")		//現金
 talentshuffle_0521:
-textEntryASCII0("TODO")			//一番
+textEntryASCII0("I am number one!")	//一番
 talentshuffle_0522:
-textEntryASCII0("TODO")			//１等
+textEntryASCII0("I am the best!")	//１等
 talentshuffle_0523:
-textEntryASCII0("TODO")			//特賞
+textEntryASCII0("The special prize!")	//特賞
 talentshuffle_0524:
-textEntryASCII0("TODO")			//特級
+textEntryASCII0("Classy")		//特級
 talentshuffle_0525:
-textEntryASCII0("TODO")			//新型
+textEntryASCII0("The new style!")	//新型
 talentshuffle_0526:
-textEntryASCII0("TODO")			//天罰
+textEntryASCII0("The wrath of the sky")	//天罰
 talentshuffle_0527:
-textEntryASCII0("TODO")			//運命
+textEntryASCII0("It's fate.")		//運命
 talentshuffle_0528:
-textEntryASCII0("TODO")			//新鮮
+textEntryASCII0("Fresh!")		//新鮮
 talentshuffle_0529:
-textEntryASCII0("TODO")			//げっぷ
+textEntryASCII0("Burp!")		//げっぷ
 talentshuffle_0530:
-textEntryASCII0("TODO")			//なぜ？
+textEntryASCII0("Why?!")		//なぜ？
 talentshuffle_0531:
-textEntryASCII0("TODO")			//わんっ
+textEntryASCII0("Woof!")		//わんっ
 talentshuffle_0532:
-textEntryASCII0("TODO")			//メェ～
+textEntryASCII0("Baa!")			//メェ～
 talentshuffle_0533:
-textEntryASCII0("TODO")			//ふとん
+textEntryASCII0("To bed!")		//ふとん
 talentshuffle_0534:
-textEntryASCII0("TODO")			//バナナ
+textEntryASCII0("Banana!")		//バナナ
 talentshuffle_0535:
-textEntryASCII0("TODO")			//ごめん
+textEntryASCII0("I'm sorry!")		//ごめん
 talentshuffle_0536:
-textEntryASCII0("TODO")			//今は昔
+textEntryASCII0("Once upon a time...")	//今は昔
 talentshuffle_0537:
-textEntryASCII0("TODO")			//なすび
+textEntryASCII0("Eggplants!")		//なすび
 talentshuffle_0538:
-textEntryASCII0("TODO")			//結果論
+textEntryASCII0("I have a theory.")	//結果論
 talentshuffle_0539:
-textEntryASCII0("TODO")			//ドライ
+textEntryASCII0("Dried out.")		//ドライ
 talentshuffle_0540:
-textEntryASCII0("TODO")			//さぶー
+textEntryASCII0("A substitute.")	//さぶー
 talentshuffle_0541:
-textEntryASCII0("TODO")			//安売り
+textEntryASCII0("A discount!")		//安売り
 talentshuffle_0542:
-textEntryASCII0("TODO")			//電話して
+textEntryASCII0("I'll call someone.")	//電話して
 talentshuffle_0543:
-textEntryASCII0("TODO")			//グレイト
+textEntryASCII0("Great!")		//グレイト
 talentshuffle_0544:
-textEntryASCII0("TODO")			//ぺったん
+textEntryASCII0("That's flattening.")	//ぺったん
 talentshuffle_0545:
-textEntryASCII0("TODO")			//帰りたい
+textEntryASCII0("I wanna go home.")	//帰りたい
 talentshuffle_0546:
-textEntryASCII0("TODO")			//かなしー
+textEntryASCII0("No way!")		//かなしー
 talentshuffle_0547:
-textEntryASCII0("TODO")			//今何時！
+textEntryASCII0("What time is it?!")	//今何時！
 talentshuffle_0548:
-textEntryASCII0("TODO")			//やったね
+textEntryASCII0("Hooray!")		//やったね
 talentshuffle_0549:
-textEntryASCII0("TODO")			//アイヤー
+textEntryASCII0("Aiya!")		//アイヤー
 talentshuffle_0550:
-textEntryASCII0("TODO")			//アチョ－
+textEntryASCII0("Achoo!")		//アチョ－
 talentshuffle_0551:
-textEntryASCII0("TODO")			//ブリブリ
+textEntryASCII0("Argh!")		//ブリブリ
 talentshuffle_0552:
-textEntryASCII0("TODO")			//グキッ！
+textEntryASCII0("Mad!")			//グキッ！
 talentshuffle_0553:
-textEntryASCII0("TODO")			//盆と正月
+textEntryASCII0("Happy go lucky")	//盆と正月
 talentshuffle_0554:
-textEntryASCII0("TODO")			//ええか？
+textEntryASCII0("Ehhh?!")		//ええか？
 talentshuffle_0555:
-textEntryASCII0("TODO")			//ピーカン
+textEntryASCII0("It's sunny today!")	//ピーカン
 talentshuffle_0556:
 textEntryASCII0("TODO")			//ゲジゲジ
 talentshuffle_0557:
-textEntryASCII0("TODO")			//だめねん
+textEntryASCII0("That's a bad idea!")	//だめねん
 talentshuffle_0558:
-textEntryASCII0("TODO")			//Ｎｏ．１
+textEntryASCII0("Number 1")		//Ｎｏ．１
 talentshuffle_0559:
-textEntryASCII0("TODO")			//滋養強壮
+textEntryASCII0("Stay strong!")		//滋養強壮
 talentshuffle_0560:
-textEntryASCII0("TODO")			//モリモリ
+textEntryASCII0("Do it with gusto!")	//モリモリ
 talentshuffle_0561:
-textEntryASCII0("TODO")			//商売繁盛
+textEntryASCII0("Business is great!")	//商売繁盛
 talentshuffle_0562:
-textEntryASCII0("TODO")			//神さま！
+textEntryASCII0("Oh my!")		//神さま！
 talentshuffle_0563:
-textEntryASCII0("TODO")			//おーい！
+textEntryASCII0("Hey!")			//おーい！
 talentshuffle_0564:
-textEntryASCII0("TODO")			//回転斬り！
+textEntryASCII0("Rotating Slash!")	//回転斬り！
 talentshuffle_0565:
-textEntryASCII0("TODO")			//どうして？
+textEntryASCII0("Why not?")		//どうして？
 talentshuffle_0566:
-textEntryASCII0("TODO")			//聞いてるー
+textEntryASCII0("I'm listening!")	//聞いてるー
 talentshuffle_0567:
-textEntryASCII0("TODO")			//好きやねん
+textEntryASCII0("I like that!")		//好きやねん
 talentshuffle_0568:
-textEntryASCII0("TODO")			//最速マシン
+textEntryASCII0("The fastest machine!")	//最速マシン
 talentshuffle_0569:
-textEntryASCII0("TODO")			//一着・二着
+textEntryASCII0("1st & 2nd place!")	//一着・二着
 talentshuffle_0570:
-textEntryASCII0("TODO")			//じゃじゃ馬
+textEntryASCII0("Stubborn")		//じゃじゃ馬
 talentshuffle_0571:
-textEntryASCII0("TODO")			//カレーライス
+textEntryASCII0("Curry & Rice")		//カレーライス
 talentshuffle_0572:
-textEntryASCII0("TODO")			//どうもどうも
+textEntryASCII0("Thank you very much!")	//どうもどうも
 talentshuffle_0573:
-textEntryASCII0("TODO")			//よっ！日本一
+textEntryASCII0("No. 1 in the world!")	//よっ！日本一
 talentshuffle_0574:
-textEntryASCII0("TODO")			//睡眠たっぷり
+textEntryASCII0("Sleeps a lot.")	//睡眠たっぷり
 talentshuffle_0575:
-textEntryASCII0("TODO")			//夢・ドリーム
+textEntryASCII0("Dreams")		//夢・ドリーム
 talentshuffle_0576:
-textEntryASCII0("TODO")			//なんでやねん
+textEntryASCII0("You're kidding me.")	//なんでやねん
 talentshuffle_0577:
-textEntryASCII0("TODO")			//どっか～ん！
+textEntryASCII0("Boom!")		//どっか～ん！
 talentshuffle_0578:
 textEntryASCII0("TODO")			//チュドーン！
 talentshuffle_0579:
 textEntryASCII0("TODO")			//ヤム！ヤム！
 talentshuffle_0580:
-textEntryASCII0("TODO")			//変わりません
+textEntryASCII0("Never changes.")	//変わりません
 talentshuffle_0581:
-textEntryASCII0("TODO")			//稲妻チョップ！
+textEntryASCII0("A lightning flash!")	//稲妻チョップ！
 talentshuffle_0582:
-textEntryASCII0("TODO")			//出血大サービス
+textEntryASCII0("Bad service")		//出血大サービス
 talentshuffle_0583:
-textEntryASCII0("TODO")			//うまい！安い！
+textEntryASCII0("Cheap")		//うまい！安い！
 talentshuffle_0584:
-textEntryASCII0("TODO")			//ごっつぁんです。
+textEntryASCII0("Thankful")		//ごっつぁんです。
 talentshuffle_0585:
-textEntryASCII0("TODO")			//いただきま～す。
+textEntryASCII0("Bon appetit!")		//いただきま～す。
 talentshuffle_0586:
-textEntryASCII0("TODO")			//ピッチャー交代！
+textEntryASCII0("Pitcher Change!")	//ピッチャー交代！
 talentshuffle_0587:
-textEntryASCII0("TODO")			//安いよ！安いよ！
+textEntryASCII0("Cheap!")		//安いよ！安いよ！
 talentshuffle_0588:
-textEntryASCII0("TODO")			//出ます。出します。
+textEntryASCII0("Get out and buy.")	//出ます。出します。
 talentshuffle_0589:
-textEntryASCII0("TODO")			//ガッツ・根性・青春
+textEntryASCII0("Guts! Youth!")		//ガッツ・根性・青春
 
 
 //--Free Space 1 / Birthplace (ID 0x24D / 0590)
