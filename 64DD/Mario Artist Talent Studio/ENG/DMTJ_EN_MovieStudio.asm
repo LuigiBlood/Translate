@@ -616,10 +616,10 @@ seek(0x10A4610); sb t1,2(a2)
 seek(0x10C18B0)
 movie8_1:
 //タレントの|シーンのアクションが|消えますがよろしいですか？
-textEntryASCII0("The action of the talent will be lost, are you sure?")
+textEntryASCII0("The action of the talent|will be lost, are you sure?")
 movie8_2:
 //３Ｄさくひんの|シーンのアクションが|消えますがよろしいですか？
-textEntryASCII0("The action of the 3D model will be lost, are you sure?")
+textEntryASCII0("The action of the 3D model|will be lost, are you sure?")
 movie8_3:
 //写
 textEntryASCII0("Photo")
@@ -861,7 +861,7 @@ textEntryH0("Sneaky!")			//「ズルッ!」
 movie12_27:
 textEntryH0("Faint")			//きぜつする
 movie12_28:
-textEntryH0("Step Away")		//あとずさりをする
+textEntryH0("Step Back")		//あとずさりをする
 movie12_29:
 textEntryH0("Yup!")		        //「うん!」
 movie12_30:
@@ -875,7 +875,7 @@ textEntryH0("Claps")	    	//「パチ!パチ!」
 movie12_34:
 textEntryH0("Wave")	        	//てをふる
 movie12_35:
-textEntryH0("Give up")  		//「おてあげだよ」
+textEntryH0("I don't know")  	//「おてあげだよ」
 movie12_36:
 textEntryH0("Yawn")		        //あくびをする
 movie12_37:
@@ -961,7 +961,7 @@ textEntryH0("Kick")     		//キック
 movie12_76:
 textEntryH0("Turning Kick")		//まわしげり
 movie12_77:
-textEntryH0("Punch Jab")    	//パンチ
+textEntryH0("Punch")    		//パンチ
 movie12_78:
 textEntryH0("Muscle Boast")		//からだじまん
 movie12_79:
@@ -977,7 +977,7 @@ textEntryH0("Breaststroke")		//ひらおよぎ
 movie12_84:
 textEntryH0("Diver Swim")		//ダイバーおよぎ
 movie12_85:
-textEntryH0("Clarinet")     	//クラリネットをふく
+textEntryH0("Play Clarinet")    //クラリネットをふく
 movie12_86:
 textEntryH0("Staff Walk")		//つえをついてあるく
 movie12_87:
@@ -985,15 +985,15 @@ textEntryH0("Electric Guitar")	//エレキギターをひく
 movie12_88:
 textEntryH0("Hold Spear")		//やりをかかげる
 movie12_89:
-textEntryH0("Machine Gun")		//マシンガンをうつ
+textEntryH0("Shoot Machine Gun")	//マシンガンをうつ
 movie12_90:
-textEntryH0("Saxophone")		//サックスをふく
+textEntryH0("Play Saxophone")	//サックスをふく
 movie12_91:
-textEntryH0("Guitar")			//ギターをひく
+textEntryH0("Play Guitar")		//ギターをひく
 movie12_92:
-textEntryH0("Pistol")			//ケンジュウをうつ
+textEntryH0("Shoot Pistol")		//ケンジュウをうつ
 movie12_93:
-textEntryH0("Broom")			//ホウキではく
+textEntryH0("Swipe Broom")		//ホウキではく
 movie12_94:
 textEntryH0("Axe Swing")		//オノをふりまわす
 movie12_95:
@@ -1046,6 +1046,7 @@ movie12_118:
 textEntryH0("Holding Wheel")	//ハンドルそうさ
 movie12_119:
 textEntryH0("Use Camera")		//しゃしんをとる
+
 movie12_120:
 textEntryH0("Action 1")			//アクション1
 movie12_121:
@@ -1085,23 +1086,42 @@ textEntryH0("It moves???")		//あるく???
 
 check(0xF46D94)
 seek(0xF46D94)
-dw (movie12_1), (movie12_2), (movie12_3), (movie12_4), (movie12_5), (movie12_6), (movie12_7), (movie12_8)
-dw (movie12_9), (movie12_10), (movie12_11), (movie12_12), (movie12_13), (movie12_14), (movie12_15), (movie12_16)
-dw (movie12_17), (movie12_18), (movie12_19), (movie12_20), (movie12_21), (movie12_22), (movie12_23), (movie12_24)
-dw (movie12_25), (movie12_26), (movie12_27), (movie12_28), (movie12_29), (movie12_30), (movie12_31), (movie12_32)
-dw (movie12_33), (movie12_34), (movie12_35), (movie12_36), (movie12_37), (movie12_38), (movie12_39), (movie12_40)
-dw (movie12_41), (movie12_42), (movie12_43), (movie12_44), (movie12_45), (movie12_46), (movie12_47), (movie12_48)
-dw (movie12_49), (movie12_50), (movie12_51), (movie12_52), (movie12_53), (movie12_54), (movie12_55), (movie12_56)
-dw (movie12_57), (movie12_58), (movie12_59), (movie12_60), (movie12_61), (movie12_62), (movie12_63), (movie12_64)
-dw (movie12_65), (movie12_66), (movie12_67), (movie12_68), (movie12_69), (movie12_70), (movie12_71), (movie12_72)
-dw (movie12_73), (movie12_74), (movie12_75), (movie12_76), (movie12_77), (movie12_78), (movie12_79), (movie12_80)
-dw (movie12_81), (movie12_82), (movie12_83), (movie12_84), (movie12_85), (movie12_86), (movie12_87), (movie12_88)
-dw (movie12_89), (movie12_90), (movie12_91), (movie12_92), (movie12_93), (movie12_94), (movie12_95), (movie12_96)
-dw (movie12_97), (movie12_98), (movie12_99), (movie12_100), (movie12_101), (movie12_102), (movie12_103), (movie12_104)
-dw (movie12_105), (movie12_106), (movie12_107), (movie12_108), (movie12_109), (movie12_110), (movie12_111), (movie12_112)
-dw (movie12_113), (movie12_114), (movie12_115), (movie12_116), (movie12_117), (movie12_118), (movie12_119), (movie12_120)
-dw (movie12_121), (movie12_122), (movie12_123), (movie12_124), (movie12_125), (movie12_126), (movie12_127), (movie12_128)
+
+//Motion
+dw (movie12_1), (movie12_2), (movie12_3), (movie12_4), (movie12_5), (movie12_109), (movie12_80), (movie12_8), (movie12_9), (movie12_10), (movie12_11), (movie12_12), (movie12_13), (movie12_111), (movie12_14), (movie12_81), (movie12_99), (movie12_100), (movie12_101), (movie12_7), (movie12_6), (movie12_105), (movie12_112), (movie12_108), (movie12_82), (movie12_83), (movie12_84), (movie12_41)
+//Item
+dw (movie12_91), (movie12_87), (movie12_85), (movie12_90), (movie12_98), (movie12_95), (movie12_94), (movie12_88), (movie12_113), (movie12_86), (movie12_97), (movie12_92), (movie12_89), (movie12_114), (movie12_115), (movie12_116), (movie12_93), (movie12_96), (movie12_117), (movie12_118), (movie12_119)
+//Feelings
+dw (movie12_45), (movie12_46), (movie12_47), (movie12_48), (movie12_29), (movie12_33), (movie12_31), (movie12_30), (movie12_54), (movie12_49), (movie12_35), (movie12_50), (movie12_51), (movie12_42), (movie12_52), (movie12_53), (movie12_43), (movie12_44), (movie12_26), (movie12_55), (movie12_56)
+//Weight
+dw (movie12_15), (movie12_16), (movie12_18), (movie12_17), (movie12_19), (movie12_20), (movie12_21), (movie12_22), (movie12_23), (movie12_104), (movie12_32), (movie12_69), (movie12_70), (movie12_34), (movie12_103), (movie12_107), (movie12_36), (movie12_37), (movie12_110), (movie12_72), (movie12_78)
+//Rhythm
+dw (movie12_67), (movie12_68), (movie12_57), (movie12_58), (movie12_59), (movie12_60), (movie12_63), (movie12_62), (movie12_61), (movie12_64), (movie12_65), (movie12_66), (movie12_73), (movie12_71)
+//Battle
+dw (movie12_77), (movie12_74), (movie12_75), (movie12_76), (movie12_106), (movie12_102), (movie12_79), (movie12_28), (movie12_24), (movie12_25), (movie12_39), (movie12_40), (movie12_27), (movie12_38)
+//Action Album
+dw (movie12_120), (movie12_121)
+//3D Object
+dw (movie12_122), (movie12_123), (movie12_124), (movie12_125), (movie12_126), (movie12_127), (movie12_128)
 dw (movie12_129), (movie12_130), (movie12_131), (movie12_132), (movie12_133), (movie12_134), (movie12_135)
+
+//ASM Action ?
+seek(0xEF4F12); dh (movie12_120)
+seek(0xEF4F18); sb t4,7(t5)
+
+//ASM Action ?x
+seek(0xEF4F4A); dh (movie12_121)
+seek(0xEF4F50); sb t8,7(t9)
+//ASM Action x?
+seek(0xEF4F6E); dh (movie12_121)
+seek(0xEF4F70); sb t2,8(t3)
+
+//ASM Action ?x
+seek(0xEF4F92); dh (movie12_121)
+seek(0xEF4F98); sb t5,7(t6)
+//ASM Action x?
+seek(0xEF4FB6); dh (movie12_121)
+seek(0xEF4FB8); sb t9,8(t0)
 
 
 //--Error Messages
