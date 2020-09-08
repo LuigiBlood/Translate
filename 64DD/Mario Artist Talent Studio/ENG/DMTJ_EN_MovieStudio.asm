@@ -1306,53 +1306,166 @@ seek(0x1004410)
 base 0x80280000
 
 seek(0x10298CC)
-//まえのシーンのおわりのポーズ
-//ちょくりつポーズ
-//アクションのかくにん
-//からだぜんたい
-//あたま
-//むね
-//みぎひじ
-//ひだりひじ
-//みぎて
-//ひだりて
-//こし
-//みぎひざ
-//ひだりひざ
-//みぎあしくび
-//ひだりあしくび
-//じょうはんしん
-//かはんしん
-//みぎぜんわん
-//ひだりぜんわん
-//みぎてくび
-//ひだりてくび
-//アクションをつかむ
-//アルバムにのこす
-//アルバムからよびだす
-//かいてん・ズーム(Bボタン)
-//ポーズ1
-//おと1
-//ループする/しない
-//ポーズのON・OFFスイッチ
-//アクションをきめる
-//アクションサウンドをきめる
-//ポーズのコピー
-//ポーズのよびだし
-//ポーズのはんてん
-//やりなおし
-//カメラきりかえ
-//でる(アルバムのセーブ)
-//でる
-//アクションアルバム
-//うごかす/とめる
-//アクションはやく
-//アクションおそく
-//らくちんスイッチ
-//からだぜんたいのいどう
-//からだをひっぱる
-//からだをねじる
-//おとのON・OFFスイッチ
+movie15_1:
+textEntryH0("Get Pose from Previous Scene")		//802A54BC - まえのシーンのおわりのポーズ
+movie15_2:
+textEntryH0("Reset Pose")		//802A54DC - ちょくりつポーズ
+movie15_3:
+textEntryH0("Action Frame")		//802A54F0 - アクションのかくにん
+movie15_4:
+textEntryH0("Full Body")		//802A5508 - からだぜんたい
+movie15_5:
+textEntryH0("Head")				//802A5518 - あたま
+movie15_6:
+textEntryH0("Torso")			//802A5520 - むね
+movie15_7:
+textEntryH0("Right Arm")		//802A5528 - みぎひじ
+movie15_8:
+textEntryH0("Left Arm")			//802A5534 - ひだりひじ
+movie15_9:
+textEntryH0("Right Hand")		//802A5540 - みぎて
+movie15_10:
+textEntryH0("Left Hand")		//802A5548 - ひだりて
+movie15_11:
+textEntryH0("Waist")			//802A5554 - こし
+movie15_12:
+textEntryH0("Right Leg")		//802A555C - みぎひざ
+movie15_13:
+textEntryH0("Left Leg")			//802A5568 - ひだりひざ
+movie15_14:
+textEntryH0("Right Foot")		//802A5574 - みぎあしくび
+movie15_15:
+textEntryH0("Left Foot")		//802A5584 - ひだりあしくび
+movie15_16:
+textEntryH0("Upper Body")		//802A5594 - じょうはんしん
+movie15_17:
+textEntryH0("Lower Body")		//802A55A4 - かはんしん
+movie15_18:
+textEntryH0("Right Forearm")	//802A55B0 - みぎぜんわん
+movie15_19:
+textEntryH0("Left Forearm")		//802A55C0 - ひだりぜんわん
+movie15_20:
+textEntryH0("Right Wrist")		//802A55D0 - みぎてくび
+movie15_21:
+textEntryH0("Left Wrist")		//802A55DC - ひだりてくび
+movie15_22:
+textEntryH0("Grab Action")		//802A55EC - アクションをつかむ
+movie15_23:
+textEntryH0("Use Action from Album")		//802A5600 - アルバムにのこす
+movie15_24:
+textEntryH0("Save Action to Album")			//802A5614 - アルバムからよびだす
+movie15_25:
+textEntryH0("Rotate / Zoom (B Button)")		//802A562C - かいてん・ズーム(Bボタン)
+movie15_26:
+textEntryH0("Pose 1")			//802A564C - ポーズ1
+movie15_27:
+textEntryH0("Sound 1")			//802A5658 - おと1
+movie15_28:
+textEntryH0("Loop Action")		//802A5660 - ループする/しない
+movie15_29:
+textEntryH0("Pose ON/OFF")		//802A5674 - ポーズのON・OFFスイッチ
+movie15_30:
+textEntryH0("Edit Action")		//802A5694 - アクションをきめる
+movie15_31:
+textEntryH0("Edit Sound")		//802A56A8 - アクションサウンドをきめる
+movie15_32:
+textEntryH0("Copy Pose")		//802A56C4 - ポーズのコピー
+movie15_33:
+textEntryH0("Paste Pose")		//802A56D4 - ポーズのよびだし
+movie15_34:
+textEntryH0("Flip Pose")		//802A56E8 - ポーズのはんてん
+movie15_35:
+textEntryH0("Undo")				//802A56FC - やりなおし
+movie15_36:
+textEntryH0("Switch Camera")	//802A5708 - カメラきりかえ
+movie15_37:
+textEntryH0("Exit (Save Album)")	//802A5718 - でる(アルバムのセーブ)
+movie15_38:
+textEntryH0("Exit")				//802A5734 - でる
+movie15_39:
+textEntryH0("Action Album")		//802A573C - アクションアルバム
+movie15_40:
+textEntryH0("Play/Stop")		//802A5750 - うごかす/とめる
+movie15_41:
+textEntryH0("Shorten")			//802A5764 - アクションはやく
+movie15_42:
+textEntryH0("Lengthen")			//802A5778 - アクションおそく
+movie15_43:
+textEntryH0("Shuffle")			//802A578C - らくちんスイッチ
+movie15_44:
+textEntryH0("Move Actor")		//802A57A0 - からだぜんたいのいどう
+movie15_45:
+textEntryH0("Move Body Part")	//802A57B8 - からだをひっぱる
+movie15_46:
+textEntryH0("Twist Body Part")	//802A57CC - からだをねじる
+movie15_47:
+textEntryH0("Sound ON/OFF")		//802A57DC - おとのON・OFFスイッチ
+
+seek(0x1021E3E); dh (movie15_3)
+seek(0x1021F4A); dh (movie15_4)
+seek(0x1021FC2); dh (movie15_4)
+seek(0x10220A6); dh (movie15_4)
+seek(0x1021F2A); dh (movie15_5)
+seek(0x1021F9A); dh (movie15_5)
+seek(0x102207E); dh (movie15_5)
+seek(0x1022092); dh (movie15_6)
+seek(0x10220E2); dh (movie15_7)
+seek(0x1021FFE); dh (movie15_18)
+seek(0x10220CE); dh (movie15_8)
+seek(0x1021FEA); dh (movie15_19)
+seek(0x102210A); dh (movie15_9)
+seek(0x1022026); dh (movie15_20)
+seek(0x10220F6); dh (movie15_10)
+seek(0x1022012); dh (movie15_21)
+seek(0x10220BA); dh (movie15_11)
+seek(0x1022132); dh (movie15_12)
+seek(0x102211E); dh (movie15_13)
+seek(0x102215A); dh (movie15_14)
+seek(0x1022146); dh (movie15_15)
+seek(0x1021FAE); dh (movie15_16)
+seek(0x1021FD6); dh (movie15_17)
+seek(0x10221DE); dh (movie15_22)
+seek(0x10222BA); dh (movie15_22)
+seek(0x102226A); dh (movie15_23)
+seek(0x102220E); dh (movie15_24)
+seek(0x1022346); dh (movie15_25)
+
+seek(0x102238E); dh (movie15_26)
+seek(0x1022394); sb t4,5(t5)
+seek(0x10223EA); dh (movie15_26)
+
+seek(0x102243E); dh (movie15_27)
+seek(0x1022444); sb t8,6(t9)
+seek(0x102249A); dh (movie15_27)
+
+seek(0x1022552); dh (movie15_37)
+seek(0x102253E); dh (movie15_38)
+
+seek(0x1029C14); dw (movie15_38)
+skip(20); dw (movie15_39)
+skip(20); dw (movie15_40)
+skip(20); dw (movie15_28)
+skip(20); dw (movie15_41)
+skip(20); dw (movie15_42)
+skip(44); dw (movie15_43)
+skip(20); dw (movie15_29)
+skip(20); dw (movie15_30)
+skip(20); dw (movie15_31)
+skip(20); dw (movie15_47)
+skip(20); dw (movie15_32)
+skip(20); dw (movie15_33)
+skip(20); dw (movie15_34)
+skip(20); dw (movie15_35)
+skip(20); dw (movie15_36)
+skip(20); dw (movie15_44)
+skip(20); dw (movie15_45)
+skip(20); dw (movie15_46)
+skip(20); dw (movie15_2)
+skip(20); dw (movie15_1)
+skip(164); dw (movie15_35)
+
+textEntryASCII(0x102A100, "This action will be deleted.|Are you sure?")
+//アルバムのアクションを|消します。|よろしいですか？
 
 
 //Movie Studio Mode - Special Menus
@@ -1362,6 +1475,54 @@ base 0x8067FFB0
 
 //--Caption Menu
 seek(0x1190820)
+textEntryH0("Exit")			//でる
+skip(40); textEntryH0("Shuffle")	//らくちんスイッチ
+skip(40); textEntryH0("Write Caption")	//もじにゅうりょく
+skip(40); textEntryH0("")	//だしかたをえらぶ
+skip(40); textEntryH0("")	//もじのいろ
+skip(40); textEntryH0("")	//やりなおし
+
+skip(40); textEntryH0("")	//よこがきした
+skip(40); textEntryH0("")	//よこがき1もじずつ
+skip(40); textEntryH0("")	//よこがきげんかい
+skip(40); textEntryH0("")	//よこがきうえ
+skip(40); textEntryH0("")	//たてがき
+skip(40); textEntryH0("")	//たてがきふきだし
+skip(40); textEntryH0("")	//よこがきふきだし
+
+skip(40); textEntryH0("")	//タイトル
+skip(40); textEntryH0("")	//てんめつ
+skip(40); textEntryH0("")	//もじうち
+skip(40); textEntryH0("")	//めくれる
+skip(40); textEntryH0("")	//かいてん
+skip(40); textEntryH0("")	//ちいさくなる
+skip(40); textEntryH0("")	//おおきくなる
+
+skip(40); textEntryH0("")	//おちる
+skip(40); textEntryH0("")	//したたる
+skip(40); textEntryH0("")	//ぶきみ
+skip(40); textEntryH0("")	//のびちぢみ
+skip(40); textEntryH0("")	//ふるえる
+skip(40); textEntryH0("")	//1もじずつ
+skip(40); textEntryH0("")	//あかいライン
+
+skip(40); textEntryH0("")	//よこがきスクロール
+skip(40); textEntryH0("")	//よこがきうえへスクロール
+skip(40); textEntryH0("")	//たてがきスクロール
+skip(40); textEntryH0("")	//おくへスクロール
+skip(40); textEntryH0("")	//おおきいもじスクロール
+skip(40); textEntryH0("")	//なみがた
+skip(40); textEntryH0("")	//でんこうけいじばん
+
+skip(40); textEntryH0("")	//わくつきウインドウ
+skip(40); textEntryH0("")	//1もじずつウインドウ
+skip(40); textEntryH0("")	//カラオケ
+skip(40); textEntryH0("")	//エルがた
+skip(40); textEntryH0("")	//てきとうにひょうじ
+skip(40); textEntryH0("")	//たくさんひょうじ
+skip(40); textEntryH0("")	//バラバラ
+
+skip(40); textEntryH0("")	//0/0ページ
 
 seek(0x1190F10) //80683DA0
 //Random Text TODO Later
