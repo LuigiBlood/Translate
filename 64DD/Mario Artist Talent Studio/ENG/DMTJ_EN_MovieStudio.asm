@@ -1475,54 +1475,54 @@ base 0x8067FFB0
 
 //--Caption Menu
 seek(0x1190820)
-textEntryH0("Exit")			//でる
-skip(40); textEntryH0("Shuffle")	//らくちんスイッチ
-skip(40); textEntryH0("Write Caption")	//もじにゅうりょく
-skip(40); textEntryH0("")	//だしかたをえらぶ
-skip(40); textEntryH0("")	//もじのいろ
-skip(40); textEntryH0("")	//やりなおし
+textEntryH0("Exit")							//でる
+skip(40); textEntryH0("Shuffle")			//らくちんスイッチ
+skip(40); textEntryH0("Write Caption")		//もじにゅうりょく
+skip(40); textEntryH0("Caption Effect")		//だしかたをえらぶ
+skip(40); textEntryH0("Caption Color")		//もじのいろ
+skip(40); textEntryH0("Undo")				//やりなおし
 
-skip(40); textEntryH0("")	//よこがきした
-skip(40); textEntryH0("")	//よこがき1もじずつ
-skip(40); textEntryH0("")	//よこがきげんかい
-skip(40); textEntryH0("")	//よこがきうえ
-skip(40); textEntryH0("")	//たてがき
-skip(40); textEntryH0("")	//たてがきふきだし
-skip(40); textEntryH0("")	//よこがきふきだし
+skip(40); textEntryH0("Subtitle")			//よこがきした
+skip(40); textEntryH0("Subtitle Typing")	//よこがき1もじずつ
+skip(40); textEntryH0("Subtitle Limit")		//よこがきげんかい
+skip(40); textEntryH0("Subtitle Above")		//よこがきうえ
+skip(40); textEntryH0("Vertical")			//たてがき
+skip(40); textEntryH0("Vertical Bubble")	//たてがきふきだし
+skip(40); textEntryH0("Horizontal Bubble")	//よこがきふきだし
 
-skip(40); textEntryH0("")	//タイトル
-skip(40); textEntryH0("")	//てんめつ
-skip(40); textEntryH0("")	//もじうち
-skip(40); textEntryH0("")	//めくれる
-skip(40); textEntryH0("")	//かいてん
-skip(40); textEntryH0("")	//ちいさくなる
-skip(40); textEntryH0("")	//おおきくなる
+skip(40); textEntryH0("Title")				//タイトル
+skip(40); textEntryH0("Fade In")			//てんめつ
+skip(40); textEntryH0("Typing")				//もじうち
+skip(40); textEntryH0("Turn")				//めくれる
+skip(40); textEntryH0("Rotation")			//かいてん
+skip(40); textEntryH0("Zoom Out")			//ちいさくなる
+skip(40); textEntryH0("Zoom In")			//おおきくなる
 
-skip(40); textEntryH0("")	//おちる
-skip(40); textEntryH0("")	//したたる
-skip(40); textEntryH0("")	//ぶきみ
-skip(40); textEntryH0("")	//のびちぢみ
-skip(40); textEntryH0("")	//ふるえる
-skip(40); textEntryH0("")	//1もじずつ
-skip(40); textEntryH0("")	//あかいライン
+skip(40); textEntryH0("Fall Apart")			//おちる
+skip(40); textEntryH0("Dripping")			//したたる
+skip(40); textEntryH0("Eerie")				//ぶきみ
+skip(40); textEntryH0("Elastic")			//のびちぢみ
+skip(40); textEntryH0("Shaking")			//ふるえる
+skip(40); textEntryH0("One at a time")		//1もじずつ
+skip(40); textEntryH0("Red Line")			//あかいライン
 
-skip(40); textEntryH0("")	//よこがきスクロール
-skip(40); textEntryH0("")	//よこがきうえへスクロール
-skip(40); textEntryH0("")	//たてがきスクロール
-skip(40); textEntryH0("")	//おくへスクロール
-skip(40); textEntryH0("")	//おおきいもじスクロール
-skip(40); textEntryH0("")	//なみがた
-skip(40); textEntryH0("")	//でんこうけいじばん
+skip(40); textEntryH0("Horizontal Scroll")			//よこがきスクロール
+skip(40); textEntryH0("Scroll Up")					//よこがきうえへスクロール
+skip(40); textEntryH0("Vertical Writing Scroll")	//たてがきスクロール
+skip(40); textEntryH0("Crawl")						//おくへスクロール
+skip(40); textEntryH0("Giant Caption Scroll")		//おおきいもじスクロール
+skip(40); textEntryH0("Wave Scroll")				//なみがた
+skip(40); textEntryH0("Bulletin Board")				//でんこうけいじばん
 
-skip(40); textEntryH0("")	//わくつきウインドウ
-skip(40); textEntryH0("")	//1もじずつウインドウ
-skip(40); textEntryH0("")	//カラオケ
-skip(40); textEntryH0("")	//エルがた
-skip(40); textEntryH0("")	//てきとうにひょうじ
-skip(40); textEntryH0("")	//たくさんひょうじ
-skip(40); textEntryH0("")	//バラバラ
+skip(40); textEntryH0("Window")				//わくつきウインドウ
+skip(40); textEntryH0("Typing Window")		//1もじずつウインドウ
+skip(40); textEntryH0("Sing Along")			//カラオケ
+skip(40); textEntryH0("Corner")				//エルがた
+skip(40); textEntryH0("Wacky Display")		//てきとうにひょうじ
+skip(40); textEntryH0("Too Many")			//たくさんひょうじ
+skip(40); textEntryH0("Scattered")			//バラバラ
 
-skip(40); textEntryH0("")	//0/0ページ
+skip(40); textEntryH0("0/0")				//0/0ページ
 
 seek(0x1190F10) //80683DA0
 //Random Text TODO Later
