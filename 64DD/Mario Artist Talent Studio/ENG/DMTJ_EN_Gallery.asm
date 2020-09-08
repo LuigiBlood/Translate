@@ -2,6 +2,20 @@
 //Code Overlay (Disk 0xF53480 / RAM 803868D0)
 
 outputGame()
+seek(0xF53480)
+base 0x803868D0
+
+//--???
+seek(0xFA1DD4)
+textEntryH0("This disk is corrupted.")	//このディスクは データが こわれています。
+seek(0xFA1E00)
+textEntryH0("Please replace the disk.")	//ただしいディスクに いれかえて ください。
+
+seek(0xFA1E44)
+textEntryH0("This disk cannot be used.")	//このディスクは ここでは つかうことが
+seek(0xFA1E6C)
+textEntryH0("")	//できません。
+
 
 //--Gallery
 seek(0xFA2380)
