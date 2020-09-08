@@ -1141,9 +1141,218 @@ seek(0xF0A302); dh (movie13_2)
 
 //--Actor Select
 seek(0xF48668)
+movie14_1:
+textEntryH0("Rotate / Zoom (B Button)")		//かいてん・ズーム(Bボタン)
+movie14_2:
+textEntryH0("Actor 1")						//しゅつえんタレント1
+movie14_3:
+textEntryH0("Erase")						//とりけし
+movie14_4:
+textEntryH0("0/0")							//ページおくり0/0
+movie14_5:
+textEntryH0("Exit")							//でる
+movie14_6:
+textEntryH0("Samples")						//しゅつえんタレントをえらぶ
+movie14_7:
+textEntryH0("Load Talent")					//[タレント]のロード
+movie14_8:
+textEntryH0("Load 3D Model")				//[3Dさくひん]のロード
+movie14_9:
+textEntryH0("Save Talent")					//[タレント]のセーブ
+movie14_10:
+textEntryH0("From the Talent Studio")		//タレントをつくるにのこしたタレント
+movie14_11:
+textEntryH0("Shuffle")						//らくちんスイッチ
+movie14_12:
+textEntryH0("Talent 1")						//タレント1
+movie14_13:
+textEntryH0("Talent 11")					//タレント11
+movie14_14:
+textEntryH0("3D Model 1")					//3Dさくひん1
+
+//change pointers
+seek(0xF487A0); dw (movie14_5)
+skip(20); dw (movie14_7)
+skip(20); dw (movie14_8)
+skip(20); dw (movie14_9)
+skip(20); dw (movie14_6)
+skip(20); dw (movie14_10)
+skip(20); dw (movie14_11)
+skip(20); dw (movie14_2)
+skip(20); dw (movie14_2)
+skip(20); dw (movie14_2)
+seek(0xF488A8); dw (movie14_3)
+skip(20); dw (movie14_4)
+
+
+seek(0xF0E0BA); dh (movie14_2)
+seek(0xF0E0C0); sb t2,6(t3)
+seek(0xF0E0CA); dh (movie14_2)
+
+seek(0xF0DE02); dh (movie14_4)
+seek(0xF0DE08); sb t6,0(t7)
+seek(0xF0DE12); dh (movie14_4)
+seek(0xF0DE18); sb t8,2(t9)
+
+seek(0xF0DF2A); dh (movie14_12)
+seek(0xF0DF30); sb t6,7(t7)
+seek(0xF0DF3A); dh (movie14_12)
+
+seek(0xF0DF56); dh (movie14_12)
+seek(0xF0DF5C); sb t0,7(t1)
+seek(0xF0DF66); dh (movie14_12)
+
+seek(0xF0DF92); dh (movie14_12)
+seek(0xF0DF98); sb t5,7(t6)
+seek(0xF0DFA2); dh (movie14_12)
+
+seek(0xF0DFBA); dh (movie14_13)
+seek(0xF0DFC0); sb t9,8(t0)
+seek(0xF0DFCA); dh (movie14_13)
+
+seek(0xF0DFE6); dh (movie14_14)
+seek(0xF0DFEC); sb t3,9(t4)
+seek(0xF0DFF6); dh (movie14_14)
+
+
+textEntryASCII(0xF489C0, "The actions from Actor 1's scenes|will disappear.|Are you sure?")
+//タレント１が出演している|シーンのアクションが|消えますがよろしいですか？
+textEntryASCII(0xF48A0C, "The actions and effects from|Actor 1's scenes will disappear.|Are you sure?")
+//タレント１が出演している|シーンのアクションや一部の演出が|消えますがよろしいですか？
+textEntryASCII(0xF48A64, "The actions from Actor 1's scenes|will disappear.|Are you sure?")
+//３Ｄさくひんとタレントを|入れ替えると|タレント１が出演している|シーンのアクションが|消えますがよろしいですか？
+textEntryASCII(0xF48AD4, "The actions and effects from|Actor 1's scenes will disappear.|Are you sure?")
+//タレントと３Ｄさくひんを|入れ替えると|タレント１が出演している|シーンのアクションや一部の演出が|消えますがよろしいですか？
+textEntryASCII(0xF48B50, " 1 2 3")
+//１２３
+
+//ASCII text offset to Actor digit
+seek(0xF0CCF0)
+addiu t6,t5,22
+seek(0xF0CD0C)
+addiu t8,t7,34
+seek(0xF0CD28)
+addiu t0,t9,22
+seek(0xF0CD44)
+addiu t1,t2,34
+
+//Sample 3D Models
+textEntryASCII(0xF48210, "Car")			//クルマ
+textEntryASCII(0xF48218, "Airplane")	//ひこうき
+textEntryASCII(0xF48224, "Fighter")		//せんとうき
+textEntryASCII(0xF48230, "UFO")			//ＵＦＯ
+textEntryASCII(0xF48238, "Future Car")	//みらいのクルマ
+textEntryASCII(0xF48248, "Unknown")		//不明
+
 
 //--Camera Work List
 seek(0xF505CC)
+textEntryH(0x28, "Original")			//オリジナル
+textEntryH(0x28, "Face")				//かお
+textEntryH(0x28, "Bust Shot")			//バストアップ
+textEntryH(0x28, "Upper Shot")			//じょうはんしん
+textEntryH(0x28, "Full Shot")			//ぜんしん
+textEntryH(0x28, "Long Shot")			//ロング
+textEntryH(0x28, "Extreme Long Shot")	//かなりロング
+
+textEntryH(0x28, "Side Shot")			//よこ
+textEntryH(0x28, "Back Shot")			//うしろ
+textEntryH(0x28, "High Angle")			//うえ
+textEntryH(0x28, "Low Angle")			//した
+textEntryH(0x28, "From the Left")		//ひだりより
+textEntryH(0x28, "From the Right")		//みぎより
+textEntryH(0x28, "Behind Feet")			//あしもとうしろ
+
+textEntryH(0x28, "High Angle Rotation")			//ななめうえかいてん
+textEntryH(0x28, "Low Angle Rotation")			//ななめしたかいてん
+textEntryH(0x28, "Move from Left to Right")		//ひだりからみぎにいどう
+textEntryH(0x28, "Move from Right to Left")		//みぎからひだりにいどう
+textEntryH(0x28, "Above from Bottom to Top")	//まうえしたからいどう
+textEntryH(0x28, "Above from Left to Right")	//まうえひだりからいどう
+textEntryH(0x28, "From Feet to Head")			//したからうえへいどう
+
+textEntryH(0x28, "Zoom In Face")		//しょうめんズームイン
+textEntryH(0x28, "Zoom Out Face")		//しょうめんズームアウト
+textEntryH(0x28, "Body Rotate")			//ぜんしんかいてん
+textEntryH(0x28, "Body Rotate & Zoom")	//かいてんズームイン
+textEntryH(0x28, "High Angle Zoom Out")	//みおろしかいてんズームアウト
+textEntryH(0x28, "Low Angle Zoom Out")	//みあげるかいてんズームアウト
+textEntryH(0x28, "High to Low Angle")	//みおろしからみあげる
+
+textEntryH(0x28, "Tilted Zoom In")			//ななめかおズームイン
+textEntryH(0x28, "Tilt & Rotate Zoom In")	//ななめかいてんズームイン
+textEntryH(0x28, "Spin & Zoom Out")			//くるくるズームアウト
+textEntryH(0x28, "Shock")					//ガーン
+textEntryH(0x28, "Shake")					//ゆれ
+textEntryH(0x28, "Going In")				//おくからてまえに
+textEntryH(0x28, "Going Out")				//てまえからおくに
+
+
+//--Unknown
+seek(0xF50B60)
+textEntryH(0x28, "Custom")	//じさく
+textEntryH(0x28, "Base")	//きほん
+textEntryH(0x28, "Zoom In")	//ズームイン
+textEntryH(0x28, "Zoom Out")	//ズームアウト
+textEntryH(0x28, "Left to Right")	//ひだりからみぎへ
+textEntryH(0x28, "Right to Left")	//みぎからひだりへ
+textEntryH(0x28, "Quick Scroll")	//はやくスクロール
+textEntryH(0x28, "3D Scroll")	//りったいてきにスクロール
+
+
+//Movie Studio Mode - Action Maker
+//Code Overlay (Disk 0x1004410 / RAM 80280000)
+seek(0x1004410)
+base 0x80280000
+
+seek(0x10298CC)
+//まえのシーンのおわりのポーズ
+//ちょくりつポーズ
+//アクションのかくにん
+//からだぜんたい
+//あたま
+//むね
+//みぎひじ
+//ひだりひじ
+//みぎて
+//ひだりて
+//こし
+//みぎひざ
+//ひだりひざ
+//みぎあしくび
+//ひだりあしくび
+//じょうはんしん
+//かはんしん
+//みぎぜんわん
+//ひだりぜんわん
+//みぎてくび
+//ひだりてくび
+//アクションをつかむ
+//アルバムにのこす
+//アルバムからよびだす
+//かいてん・ズーム(Bボタン)
+//ポーズ1
+//おと1
+//ループする/しない
+//ポーズのON・OFFスイッチ
+//アクションをきめる
+//アクションサウンドをきめる
+//ポーズのコピー
+//ポーズのよびだし
+//ポーズのはんてん
+//やりなおし
+//カメラきりかえ
+//でる(アルバムのセーブ)
+//でる
+//アクションアルバム
+//うごかす/とめる
+//アクションはやく
+//アクションおそく
+//らくちんスイッチ
+//からだぜんたいのいどう
+//からだをひっぱる
+//からだをねじる
+//おとのON・OFFスイッチ
 
 
 //Movie Studio Mode - Special Menus
