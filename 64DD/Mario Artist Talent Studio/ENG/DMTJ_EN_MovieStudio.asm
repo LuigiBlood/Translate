@@ -1215,15 +1215,20 @@ seek(0xF0DFEC); sb t3,9(t4)
 seek(0xF0DFF6); dh (movie14_14)
 
 
-textEntryASCII(0xF489C0, "The actions from Actor 1's scenes|will disappear.|Are you sure?")
+seek(0xF489C0)
+textEntryASCII0("The actions from Actor 1's scenes|will disappear.|Are you sure?")
 //タレント１が出演している|シーンのアクションが|消えますがよろしいですか？
-textEntryASCII(0xF48A0C, "The actions and effects from|Actor 1's scenes will disappear.|Are you sure?")
+seek(0xF48A0C)
+textEntryASCII0("The actions and effects from|Actor 1's scenes will disappear.|Are you sure?")
 //タレント１が出演している|シーンのアクションや一部の演出が|消えますがよろしいですか？
-textEntryASCII(0xF48A64, "The actions from Actor 1's scenes|will disappear.|Are you sure?")
+seek(0xF48A64)
+textEntryASCII0("The actions from Actor 1's scenes|will disappear.|Are you sure?")
 //３Ｄさくひんとタレントを|入れ替えると|タレント１が出演している|シーンのアクションが|消えますがよろしいですか？
-textEntryASCII(0xF48AD4, "The actions and effects from|Actor 1's scenes will disappear.|Are you sure?")
+seek(0xF48AD4)
+textEntryASCII0("The actions and effects from|Actor 1's scenes will disappear.|Are you sure?")
 //タレントと３Ｄさくひんを|入れ替えると|タレント１が出演している|シーンのアクションや一部の演出が|消えますがよろしいですか？
-textEntryASCII(0xF48B50, " 1 2 3")
+seek(0xF48B50)
+textEntryASCII0(" 1 2 3")
 //１２３
 
 //ASCII text offset to Actor digit
@@ -1237,12 +1242,18 @@ seek(0xF0CD44)
 addiu t1,t2,34
 
 //Sample 3D Models
-textEntryASCII(0xF48210, "Car")			//クルマ
-textEntryASCII(0xF48218, "Airplane")	//ひこうき
-textEntryASCII(0xF48224, "Fighter")		//せんとうき
-textEntryASCII(0xF48230, "UFO")			//ＵＦＯ
-textEntryASCII(0xF48238, "Future Car")	//みらいのクルマ
-textEntryASCII(0xF48248, "Unknown")		//不明
+seek(0xF48210)
+textEntryASCII0("Car")			//クルマ
+seek(0xF48218)
+textEntryASCII0("Airplane")		//ひこうき
+seek(0xF48224)
+textEntryASCII0("Fighter")		//せんとうき
+seek(0xF48230)
+textEntryASCII0("UFO")			//ＵＦＯ
+seek(0xF48238)
+textEntryASCII0("Future Car")	//みらいのクルマ
+seek(0xF48248)
+textEntryASCII0("Unknown")		//不明
 
 
 //--Camera Work List
@@ -1464,7 +1475,8 @@ skip(20); dw (movie15_2)
 skip(20); dw (movie15_1)
 skip(164); dw (movie15_35)
 
-textEntryASCII(0x102A100, "This action will be deleted.|Are you sure?")
+seek(0x102A100)
+textEntryASCII0("This action will be deleted.|Are you sure?")
 //アルバムのアクションを|消します。|よろしいですか？
 
 
@@ -1640,18 +1652,18 @@ seek(0x11BBF18)
 
 //--Recording Menu
 seek(0x11C1A08)
-textEntryH(0x20, "Exit (Save Album)")	//でる(アルバムのセーブ)
-textEntryH(0x20, "Record Mode")		//ろくおんモード
-textEntryH(0x20, "Sound Album")		//サウンドアルバム
-textEntryH(0x20, "Undo")		//やりなおし
-textEntryH(0x20, "Microphone")		//マイクにゅうりょく
-textEntryH(0x20, "Line In")		//ラインにゅうりょく
-textEntryH(0x20, "Start Recording")	//ろくおん
-textEntryH(0x20, "Stop Recording")	//ろくおんやめる
-textEntryH(0x20, "Play/Stop")		//さいせい/ていし
-textEntryH(0x20, "*Stop")		//*さいせいやめる
-textEntryH(0x20, "Loop")		//ループする/しない
-textEntryH(0x20, "*Do Not Loop")	//*くりかえさない
-textEntryH(0x20, "Grab Recording")	//おとをつかむ
+textEntryH(0x20, "Exit (Save Album)")			//でる(アルバムのセーブ)
+textEntryH(0x20, "Record Mode")					//ろくおんモード
+textEntryH(0x20, "Sound Album")					//サウンドアルバム
+textEntryH(0x20, "Undo")						//やりなおし
+textEntryH(0x20, "Microphone")					//マイクにゅうりょく
+textEntryH(0x20, "Line In")						//ラインにゅうりょく
+textEntryH(0x20, "Start Recording")				//ろくおん
+textEntryH(0x20, "Stop Recording")				//ろくおんやめる
+textEntryH(0x20, "Play/Stop")					//さいせい/ていし
+textEntryH(0x20, "*Stop")						//*さいせいやめる
+textEntryH(0x20, "Loop")						//ループする/しない
+textEntryH(0x20, "*Do Not Loop")				//*くりかえさない
+textEntryH(0x20, "Grab Recording")				//おとをつかむ
 textEntryH(0x20, "Use Recording from Album")	//アルバムにのこす
-textEntryH(0x20, "Save Recording to Album")	//アルバムからよびだす
+textEntryH(0x20, "Save Recording to Album")		//アルバムからよびだす
