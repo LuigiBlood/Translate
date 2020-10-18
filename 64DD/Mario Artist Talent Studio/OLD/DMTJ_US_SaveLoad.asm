@@ -689,29 +689,25 @@ seek(0x8674D4)
 sb t4,0x1C/2(t5)
 
 //Change pointers
-seek(0x89C6EE)
-dh (saveload5_eject)
-seek(0x89C71E)
-dh (saveload5_eject)
-seek(0x89C74E)
-dh (saveload5_eject)
-seek(0x89C77E)
-dh (saveload5_insert)
-seek(0x89C7DE)
-dh (saveload5_insert)
-seek(0x89C7AE)
-dh (saveload5_insertboot)
-seek(0x89C712)
-dh (saveload5_wrong)
-seek(0x89C6E2)
-dh (saveload5_replace)
-seek(0x89C742)
-dh (saveload5_replaceoriginal)
-seek(0x89C772)
-dh (saveload5_anotherread)
-seek(0x89C7D2)
-dh (saveload5_originalread)
-seek(0x89C7A2)
-dh (saveload5_bootdiskrequired)
+seek(0x89C6E2); dh (saveload5_replace)
+seek(0x89C6EE); dh (saveload5_eject)
+
+seek(0x89C712); dh (saveload5_wrong)
+seek(0x89C71E); dh (saveload5_eject)
+
+seek(0x89C742); dh (saveload5_replaceoriginal)
+seek(0x89C74E); dh (saveload5_eject)
+
+
+
+seek(0x89C772); dh (saveload5_anotherread)
+seek(0x89C77E); dh (saveload5_insert)
+
+seek(0x89C7A2); dh (saveload5_bootdiskrequired)
+seek(0x89C7AE); dh (saveload5_insertboot)
+
+seek(0x89C7D2); dh (saveload5_originalread)
+seek(0x89C7DE); dh (saveload5_insert)
+
 seek(0x89A2D2)
 dh (saveload5_kanji)
