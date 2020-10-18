@@ -7,6 +7,9 @@ ARM9's fork of bass is required, repository available here: https://github.com/A
 - Mario Artist Paint Studio
 - Mario Artist Talent Studio
 - Mario Artist Polygon Studio
+- Mario Artist Paint Studio (1999-02-11 Proto)
 
 SNES/
 - BS-X
+- Marvelous
+- Treasure Conflix
