@@ -1475,54 +1475,54 @@ base 0x8067FFB0
 
 //--Caption Menu
 seek(0x1190820)
-textEntryH0("Exit")							//でる
-skip(40); textEntryH0("Shuffle")			//らくちんスイッチ
-skip(40); textEntryH0("Write Caption")		//もじにゅうりょく
-skip(40); textEntryH0("Caption Effect")		//だしかたをえらぶ
-skip(40); textEntryH0("Caption Color")		//もじのいろ
-skip(40); textEntryH0("Undo")				//やりなおし
+textEntryH(40, "Exit")				//でる
+textEntryH(40, "Shuffle")			//らくちんスイッチ
+textEntryH(40, "Write Caption")		//もじにゅうりょく
+textEntryH(40, "Caption Effect")	//だしかたをえらぶ
+textEntryH(40, "Caption Color")		//もじのいろ
+textEntryH(40, "Undo")				//やりなおし
 
-skip(40); textEntryH0("Subtitle")			//よこがきした
-skip(40); textEntryH0("Subtitle Typing")	//よこがき1もじずつ
-skip(40); textEntryH0("Subtitle Limit")		//よこがきげんかい
-skip(40); textEntryH0("Subtitle Above")		//よこがきうえ
-skip(40); textEntryH0("Vertical")			//たてがき
-skip(40); textEntryH0("Vertical Bubble")	//たてがきふきだし
-skip(40); textEntryH0("Horizontal Bubble")	//よこがきふきだし
+textEntryH(40, "Subtitle")			//よこがきした
+textEntryH(40, "Subtitle Typing")	//よこがき1もじずつ
+textEntryH(40, "Subtitle Limit")	//よこがきげんかい
+textEntryH(40, "Subtitle Above")	//よこがきうえ
+textEntryH(40, "Vertical")			//たてがき
+textEntryH(40, "Vertical Bubble")	//たてがきふきだし
+textEntryH(40, "Horizontal Bubble")	//よこがきふきだし
 
-skip(40); textEntryH0("Title")				//タイトル
-skip(40); textEntryH0("Fade In")			//てんめつ
-skip(40); textEntryH0("Typing")				//もじうち
-skip(40); textEntryH0("Turn")				//めくれる
-skip(40); textEntryH0("Rotation")			//かいてん
-skip(40); textEntryH0("Zoom Out")			//ちいさくなる
-skip(40); textEntryH0("Zoom In")			//おおきくなる
+textEntryH(40, "Title")				//タイトル
+textEntryH(40, "Fade In")			//てんめつ
+textEntryH(40, "Typing")			//もじうち
+textEntryH(40, "Turn")				//めくれる
+textEntryH(40, "Rotation")			//かいてん
+textEntryH(40, "Zoom Out")			//ちいさくなる
+textEntryH(40, "Zoom In")			//おおきくなる
 
-skip(40); textEntryH0("Fall Apart")			//おちる
-skip(40); textEntryH0("Dripping")			//したたる
-skip(40); textEntryH0("Eerie")				//ぶきみ
-skip(40); textEntryH0("Elastic")			//のびちぢみ
-skip(40); textEntryH0("Shaking")			//ふるえる
-skip(40); textEntryH0("One at a time")		//1もじずつ
-skip(40); textEntryH0("Red Line")			//あかいライン
+textEntryH(40, "Fall Apart")		//おちる
+textEntryH(40, "Dripping")			//したたる
+textEntryH(40, "Eerie")				//ぶきみ
+textEntryH(40, "Elastic")			//のびちぢみ
+textEntryH(40, "Shaking")			//ふるえる
+textEntryH(40, "One at a time")		//1もじずつ
+textEntryH(40, "Red Line")			//あかいライン
 
-skip(40); textEntryH0("Horizontal Scroll")			//よこがきスクロール
-skip(40); textEntryH0("Scroll Up")					//よこがきうえへスクロール
-skip(40); textEntryH0("Vertical Writing Scroll")	//たてがきスクロール
-skip(40); textEntryH0("Crawl")						//おくへスクロール
-skip(40); textEntryH0("Giant Caption Scroll")		//おおきいもじスクロール
-skip(40); textEntryH0("Wave Scroll")				//なみがた
-skip(40); textEntryH0("Bulletin Board")				//でんこうけいじばん
+textEntryH(40, "Horizontal Scroll")			//よこがきスクロール
+textEntryH(40, "Scroll Up")					//よこがきうえへスクロール
+textEntryH(40, "Vertical Writing Scroll")	//たてがきスクロール
+textEntryH(40, "Crawl")						//おくへスクロール
+textEntryH(40, "Giant Caption Scroll")		//おおきいもじスクロール
+textEntryH(40, "Wave Scroll")				//なみがた
+textEntryH(40, "Bulletin Board")			//でんこうけいじばん
 
-skip(40); textEntryH0("Window")				//わくつきウインドウ
-skip(40); textEntryH0("Typing Window")		//1もじずつウインドウ
-skip(40); textEntryH0("Sing Along")			//カラオケ
-skip(40); textEntryH0("Corner")				//エルがた
-skip(40); textEntryH0("Wacky Display")		//てきとうにひょうじ
-skip(40); textEntryH0("Too Many")			//たくさんひょうじ
-skip(40); textEntryH0("Scattered")			//バラバラ
+textEntryH(40, "Window")			//わくつきウインドウ
+textEntryH(40, "Typing Window")		//1もじずつウインドウ
+textEntryH(40, "Sing Along")		//カラオケ
+textEntryH(40, "Corner")			//エルがた
+textEntryH(40, "Wacky Display")		//てきとうにひょうじ
+textEntryH(40, "Too Many")			//たくさんひょうじ
+textEntryH(40, "Scattered")			//バラバラ
 
-skip(40); textEntryH0("0/0")				//0/0ページ
+textEntryH(40, "0/0")				//0/0ページ
 
 seek(0x1190F10) //80683DA0
 //Random Text TODO Later
@@ -1530,6 +1530,84 @@ seek(0x1190F10) //80683DA0
 
 //--Camera Work Menu
 seek(0x11A07E0)
+textEntryH(48, "Exit")							//でる
+textEntryH(48, "Actor")							//タレントさつえい
+textEntryH(48, "Background")					//はいけいさつえい
+textEntryH(48, "Undo")							//やりなおし
+textEntryH(48, "Play/Stop")						//カメラをうごかす/とめる
+textEntryH(48, "*Stop")							//*とめる
+textEntryH(48, "Loop")							//ループする/しない
+textEntryH(48, "*Do Not Loop")					//*くりかえさない
+textEntryH(48, "Origin Point")		        	//はじめのカメラ
+textEntryH(48, "Destination Point")	    		//おわりのカメラ
+textEntryH(48, "Copy Origin to Destination")	//はじめのカメラいちをよびだす
+textEntryH(48, "Copy Destination to Origin")	//おわりのカメラいちをよびだす
+textEntryH(48, "Camera Type")					//カメラのしゅるい
+textEntryH(48, "Camera Motion")					//カメラのうごき
+textEntryH(48, "Background Display")			//はいけいのひょうじ
+textEntryH(48, "Background Scroll")				//はいけいスクロール
+textEntryH(48, "Get Destination Camera from Previous Scene")	//まえのシーンのおわりのカメラいちをよびだす
+textEntryH(48, "Swap Origin & Destination")		//はじめとおわりのいれかえ
+
+textEntryH(48, "Long Shot Reset")			//ロングリセット
+textEntryH(48, "Wide Shot Reset")			//ぜんしんリセット
+textEntryH(48, "Medium Shot Reset")			//じょうはんしんリセット
+textEntryH(48, "Close-Up Reset")			//かおリセット
+textEntryH(48, "Rotation Reset")			//かいてんリセット
+
+//Camera Type
+textEntryH(48, "Normal")					//ふつう
+textEntryH(48, "Slight Right Tilt")			//みぎさがり
+textEntryH(48, "Diagonal Right Tilt")		//みぎななめ
+textEntryH(48, "Full Right Tilt")			//みぎたおし
+textEntryH(48, "Down Right Tilt")			//みぎななめプラス
+textEntryH(48, "Upside Down")				//さかさま
+textEntryH(48, "Down Left Tilt")			//ひだりななめプラス
+
+textEntryH(48, "Full Left Tilt")			//ひだりたおし
+textEntryH(48, "Diagonal Left Tilt")		//ひだりななめ
+textEntryH(48, "Slight Left Tilt")			//ひだりさがり
+textEntryH(48, "1 Clockwise Spin")			//みぎ1かいてん
+textEntryH(48, "1 Counter-Clockwise Spin")	//ひだり1かいてん
+textEntryH(48, "3 Clockwise Spins")			//みぎ3かいてん
+textEntryH(48, "3 Counter-Clockwise Spins")	//ひだり3かいてん
+
+textEntryH(48, "Roll Left")					//みぎはんかいてん
+textEntryH(48, "Roll Right")				//ひだりはんかいてん
+textEntryH(48, "Small Shake")				//じょじょにゆれる
+textEntryH(48, "Strong Shake")				//はげしくゆれる
+textEntryH(48, "Up & Down Slide")			//じょうげスライド
+textEntryH(48, "Left & Right Slide")		//さゆうスライド
+textEntryH(48, "In & Out Slide")			//ぜんごスライド
+
+//Camera Motion
+textEntryH(48, "Normal")			//ふつう
+textEntryH(48, "Accelerate")		//かそく
+textEntryH(48, "Decelerate")		//げんそく
+textEntryH(48, "Smooth")			//スムーズ
+textEntryH(48, "Delay")				//はじめにとまる
+textEntryH(48, "End Stop")			//おわりにとまる
+textEntryH(48, "Skip")				//スキップ
+
+//Background Display
+textEntryH(48, "Normal")			//ふつう
+textEntryH(48, "Upside Down")		//さかさま
+textEntryH(48, "Rotate Right")		//みぎに90どまわす
+textEntryH(48, "Rotate Left")		//ひだりに90どまわす
+
+//Background Scroll
+textEntryH(48, "Up")			//うえ
+textEntryH(48, "Down")			//した
+textEntryH(48, "Right")			//みぎ
+textEntryH(48, "Left")			//ひだり
+textEntryH(48, "Scroll Reset")	//スクロールリセット
+
+textEntryH(48, "Zoom Reset X1")	//ズームリセットX1
+textEntryH(48, "Zoom Reset X2")	//ズームリセットX2
+textEntryH(48, "Zoom Reset X3")	//ズームリセットX3
+textEntryH(48, "Zoom Reset X4")	//ズームリセットX4
+
+textEntryH(48, "0/0")			//0/0ページ
 
 
 //--Main Edit Mode
