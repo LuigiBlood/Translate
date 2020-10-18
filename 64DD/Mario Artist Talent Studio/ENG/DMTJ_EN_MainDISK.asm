@@ -10,15 +10,9 @@ origin 0x000000; insert "NUD-DMTJ-JPN.ndd" // Include Japanese Mario Artist - Ta
 
 include "N64_CPUREGS.asm"
 
+constant seek_diff(0x0)
+
 //Unique Macros
-macro seek(n) {
-  origin {n}
-}
-
-macro seekFile(n) {
-  origin {n}
-}
-
 macro outputGame() {
   output "Mario Artist - Talent Studio.ndd"
   origin 0
@@ -35,8 +29,8 @@ print "- Assembling Talent Studio...\n"
 include "DMTJ_EN_TalentStudio.asm"
 print "- Assembling Talent Studio - Shuffle...\n"
 include "DMTJ_EN_TalentStudio_Shuffle.asm"
-//print "- Assembling Movie Studio...\n"
-//include "DMTJ_EN_MovieStudio.asm"
+print "- Assembling Movie Studio...\n"
+include "DMTJ_EN_MovieStudio.asm"
 print "- Assembling Gallery...\n"
 include "DMTJ_EN_Gallery.asm"
 

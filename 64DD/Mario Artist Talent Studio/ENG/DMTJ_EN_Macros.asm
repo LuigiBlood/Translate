@@ -1,5 +1,25 @@
 //Common Macros
 //NEW
+macro seek(n) {
+  origin {n} - seek_diff
+}
+
+macro seekFile(n) {
+  origin {n}
+}
+
+macro check(n) {
+  if origin() - seek_diff > {n} {
+    error "Too much space taken."
+  }
+}
+
+macro checkFile(n) {
+  if origin() > {n} {
+    error "Too much space taken."
+  }
+}
+
 macro textEntryH(size, text) {
   variable skipSeek(origin()+{size})
   textEntryH0({text})
@@ -18,6 +38,12 @@ macro textEntryH2(char, text) {
   db {text}
   db " ", {char}
   db 0x00
+}
+
+macro textEntryASCII(size, text) {
+  variable skipSeek(origin()+{size})
+  textEntryASCII0({text})
+  origin skipSeek
 }
 
 macro textEntryASCII0(text) {
