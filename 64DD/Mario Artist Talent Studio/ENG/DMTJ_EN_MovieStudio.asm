@@ -1652,6 +1652,7 @@ textEntryH(32, "Filter Sounds")			//がめんフィルタのおと
 textEntryH(32, "Caption Sounds")		//テロップのおと
 textEntryH(32, "Movie Review")			//ムービーのかくにん
 
+
 //--Lighting Menu
 seek(0x11A5798)
 textEntryH(24, "Exit")				//でる
@@ -1665,9 +1666,10 @@ textEntryH(24, "Play/Stop")		//さいせい/ていし
 textEntryH(24, "Stop")			//とめる
 textEntryH(24, "Loop")			//ループする/しない
 textEntryH(24, "*Do Not Loop")	//くりかえさない
+//Should Light affect Background
 textEntryH(24, "Yes")			//あり
 textEntryH(24, "No")			//なし
-
+//Types
 textEntryH(24, "Top Right")		//みぎうえから
 textEntryH(24, "Top Left")		//ひだりうえから
 textEntryH(24, "Above")			//うえから
@@ -1699,66 +1701,76 @@ seek(0x1095388); sb t8,0(v0)
 seek(0x10953EC); sb t7,1(v0)
 seek(0x1095414); sb t9,2(v0)
 
+
 //--Effects List TODO
 seek(0x11BB190)
-textEntryH(40, "0/0")			//あめ
-textEntryH(40, "0/0")			//ゆき
-textEntryH(40, "0/0")			//カミナリ
-textEntryH(40, "0/0")			//さくらふぶき
-textEntryH(40, "0/0")			//あわ
-textEntryH(40, "0/0")			//うちゅう
-textEntryH(40, "0/0")			//ほのお
-textEntryH(40, "0/0")			//きり
-textEntryH(40, "0/0")			//しゅうちゅうせん
-textEntryH(40, "0/0")			//くちからほのお
-textEntryH(40, "0/0")			//しろいいき
-textEntryH(40, "0/0")			//ハート
-textEntryH(40, "0/0")			//あたまにほし
-textEntryH(40, "0/0")			//キラキラ
-textEntryH(40, "0/0")			//ごこう
-textEntryH(40, "0/0")			//ひかりのたま
-textEntryH(40, "0/0")			//あしからけむり
-textEntryH(40, "0/0")			//ため
-textEntryH(40, "0/0")			//みなぎるチカラ
-textEntryH(40, "0/0")			//エネルギーほう
-textEntryH(40, "0/0")			//しょうげきは
-textEntryH(40, "0/0")			//ばくはつ
-textEntryH(40, "0/0")			//あちこちばくはつ
-textEntryH(40, "0/0")			//あたまをおおきく
-textEntryH(40, "0/0")			//タレントあらわれる
-textEntryH(40, "0/0")			//タレントはんとうめい
-textEntryH(40, "0/0")			//タレントきえる
+textEntryH(40, "None")				//なし
+textEntryH(40, "Rain")				//あめ
+textEntryH(40, "Snow")				//ゆき
+textEntryH(40, "Thunder")			//カミナリ
+textEntryH(40, "Cherry Blossoms")	//さくらふぶき
+textEntryH(40, "Bubbles")			//あわ
+textEntryH(40, "Space")				//うちゅう
+
+textEntryH(40, "Flames")			//ほのお
+textEntryH(40, "Fog")				//きり
+textEntryH(40, "Concentration")		//しゅうちゅうせん
+textEntryH(40, "Fire Breath")		//くちからほのお
+textEntryH(40, "Breath")			//しろいいき
+textEntryH(40, "Heart")				//ハート
+textEntryH(40, "Dizzy")				//あたまにほし
+
+textEntryH(40, "Glitter")			//キラキラ
+textEntryH(40, "Halo")				//ごこう
+textEntryH(40, "Ball of Light")		//ひかりのたま
+textEntryH(40, "Foot Smoke")		//あしからけむり
+textEntryH(40, "Blinding Magic")	//ため
+textEntryH(40, "Full Power")		//みなぎるチカラ
+textEntryH(40, "Beam of Energy")	//エネルギーほう
+
+textEntryH(40, "Shockwave")			//しょうげきは
+textEntryH(40, "Explosion")			//ばくはつ
+textEntryH(40, "More Explosions")	//あちこちばくはつ
+textEntryH(40, "Big Head")			//あたまをおおきく
+textEntryH(40, "Actor Appears")		//タレントあらわれる
+textEntryH(40, "Transparent")		//タレントはんとうめい
+textEntryH(40, "Actor Disappears")	//タレントきえる
+
 
 //--Filter List
 seek(0x11BB660)
-textEntryH(40, "0/0")			//なし
-textEntryH(40, "0/0")			//うすくぼかす
-textEntryH(40, "0/0")			//こくぼかす
-textEntryH(40, "0/0")			//かさねこうか
-textEntryH(40, "0/0")			//モノクロ
-textEntryH(40, "0/0")			//セピア
-textEntryH(40, "0/0")			//2かいちょう
-textEntryH(40, "0/0")			//モノクロわく
-textEntryH(40, "0/0")			//ソフトフォーカス
-textEntryH(40, "0/0")			//しんきろう
-textEntryH(40, "0/0")			//すいちゅう
-textEntryH(40, "0/0")			//いろをこく
-textEntryH(40, "0/0")			//いろをうすく
-textEntryH(40, "0/0")			//ネガ
-textEntryH(40, "0/0")			//モザイク
-textEntryH(40, "0/0")			//ノイズ
-textEntryH(40, "0/0")			//モニター
-textEntryH(40, "0/0")			//かくだい
-textEntryH(40, "0/0")			//しゅくしょう
-textEntryH(40, "0/0")			//ミニサイズ
-textEntryH(40, "0/0")			//はんてん
-textEntryH(40, "0/0")			//2ぶんかつ
-textEntryH(40, "0/0")			//4ぶんかつ
-textEntryH(40, "0/0")			//むかしのフィルム
-textEntryH(40, "0/0")			//がようし
-textEntryH(40, "0/0")			//ぐにゃぐにゃ
-textEntryH(40, "0/0")			//ざんぞう
-textEntryH(40, "0/0")			//ぶんしん
+textEntryH(40, "None")				//なし
+textEntryH(40, "Weak Blur")			//うすくぼかす
+textEntryH(40, "Strong Blur")		//こくぼかす
+textEntryH(40, "Layering Effect")	//かさねこうか
+textEntryH(40, "Monochrome")		//モノクロ
+textEntryH(40, "Sepia")				//セピア
+textEntryH(40, "Two Colors")		//2かいちょう
+
+textEntryH(40, "Monochrome Frame")	//モノクロわく
+textEntryH(40, "Soft Focus")		//ソフトフォーカス
+textEntryH(40, "Mirage")			//しんきろう
+textEntryH(40, "Underwater")		//すいちゅう
+textEntryH(40, "Contrasted Colors")	//いろをこく
+textEntryH(40, "Pale Colors")		//いろをうすく
+textEntryH(40, "Negative")			//ネガ
+
+textEntryH(40, "Mosaic")			//モザイク
+textEntryH(40, "Noise")				//ノイズ
+textEntryH(40, "Monitor")			//モニター
+textEntryH(40, "Enlarge")			//かくだい
+textEntryH(40, "Reduce")			//しゅくしょう
+textEntryH(40, "Half Size")			//ミニサイズ
+textEntryH(40, "Flip")				//はんてん
+
+textEntryH(40, "Split in 2")			//2ぶんかつ
+textEntryH(40, "Split in 4")			//4ぶんかつ
+textEntryH(40, "Old Film")				//むかしのフィルム
+textEntryH(40, "Drawing Paper")			//がようし
+textEntryH(40, "Distortion")			//ぐにゃぐにゃ
+textEntryH(40, "Fade Effect")			//ざんぞう
+textEntryH(40, "Keep Still")			//ぶんしん
+
 
 //--Fade In/Out List
 seek(0x11BBAF8)
