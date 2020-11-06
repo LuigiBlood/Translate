@@ -1536,6 +1536,12 @@ textEntryH(40, "Scattered")			//バラバラ
 
 textEntryH(40, "0/0")				//0/0ページ
 
+//Page Number Text (Caption)
+seek(0x109057C); sb t3,2(a3)
+seek(0x1090588); sb t2,0(a3)
+seek(0x10905A0); sb t6,0(a3)
+seek(0x10905B0); sb t9,2(a3)
+
 seek(0x1190F10) //80683DA0
 //Random Text TODO Later
 
@@ -1624,31 +1630,392 @@ textEntryH(48, "0/0")			//0/0ページ
 
 //--Main Edit Mode
 seek(0x11A31B8)
-
+textEntryH(32, "Shadow")				//かげのひょうじ
+textEntryH(32, "Expression")			//ひょうじょうとこえ
+textEntryH(32, "Eye Blink")				//まばたき
+textEntryH(32, "Looking at Camera")		//カメラめせん
+textEntryH(32, "Lighting")				//ひかり
+textEntryH(32, "Graffiti")				//らくがき
+textEntryH(32, "Fade In/Out")			//フェイドイン・アウト
+textEntryH(32, "Effects")				//かんきょうエフェクト
+textEntryH(32, "Filters")				//がめんフィルタ
+textEntryH(32, "Captions")				//テロップ
+textEntryH(32, "Music")					//BGM
+textEntryH(32, "Music Effect")			//BGMエフェクト
+textEntryH(32, "Sound 1")				//こうかおん1
+textEntryH(32, "Sound 2")				//こうかおん2
+textEntryH(32, "Sound Effect")			//こうかおんエフェクト
+textEntryH(32, "Action Sounds")			//アクションサウンド
+textEntryH(32, "Expression Sounds")		//そのひょうじょうのこえ
+textEntryH(32, "Effect Sounds")			//かんきょうエフェクトのおと
+textEntryH(32, "Filter Sounds")			//がめんフィルタのおと
+textEntryH(32, "Caption Sounds")		//テロップのおと
+textEntryH(32, "Movie Review")			//ムービーのかくにん
 
 //--Lighting Menu
 seek(0x11A5798)
+textEntryH(24, "Exit")				//でる
+textEntryH(24, "Lighting Type")		//ひかりのしゅるい
+textEntryH(24, "Lighting Color")	//ひかりのいろ
+textEntryH(24, "Light Intensity")	//ひかりのつよさ
+textEntryH(24, "Background Effect")	//はいけいにえいきょう
 
+textEntryH(24, "Undo")			//やりなおし
+textEntryH(24, "Play/Stop")		//さいせい/ていし
+textEntryH(24, "Stop")			//とめる
+textEntryH(24, "Loop")			//ループする/しない
+textEntryH(24, "*Do Not Loop")	//くりかえさない
+textEntryH(24, "Yes")			//あり
+textEntryH(24, "No")			//なし
 
-//--Effects List
+textEntryH(24, "Top Right")		//みぎうえから
+textEntryH(24, "Top Left")		//ひだりうえから
+textEntryH(24, "Above")			//うえから
+textEntryH(24, "Bottom")		//したから
+textEntryH(24, "Right Side")	//みぎから
+textEntryH(24, "Left Side")		//ひだりから
+textEntryH(24, "Front")			//まえから
+textEntryH(24, "Back")			//うしろから
+textEntryH(24, "Clashing")		//はんたいしょく
+textEntryH(24, "Face")			//かお
+textEntryH(24, "Right Hand")	//みぎて
+textEntryH(24, "Left Hand")		//ひだりて
+textEntryH(24, "Rotate Right")	//みぎかいてん
+textEntryH(24, "Rotate Left")	//ひだりかいてん
+
+textEntryH(24, "0/0")			//0/0ページ
+textEntryH(24, "Stronger")		//つよく
+textEntryH(24, "Weaker")		//よわく
+textEntryH(24, "000")			//000
+
+//Page Number Text (Lighting)
+seek(0x1093284); sb t1,2(a1)
+seek(0x1093290); sb t0,0(a1)
+seek(0x10932A8); sb t4,0(a1)
+seek(0x10932B8); sb t7,2(a1)
+
+//Intensity (Lighting)
+seek(0x1095388); sb t8,0(v0)
+seek(0x10953EC); sb t7,1(v0)
+seek(0x1095414); sb t9,2(v0)
+
+//--Effects List TODO
 seek(0x11BB190)
-
+textEntryH(40, "0/0")			//あめ
+textEntryH(40, "0/0")			//ゆき
+textEntryH(40, "0/0")			//カミナリ
+textEntryH(40, "0/0")			//さくらふぶき
+textEntryH(40, "0/0")			//あわ
+textEntryH(40, "0/0")			//うちゅう
+textEntryH(40, "0/0")			//ほのお
+textEntryH(40, "0/0")			//きり
+textEntryH(40, "0/0")			//しゅうちゅうせん
+textEntryH(40, "0/0")			//くちからほのお
+textEntryH(40, "0/0")			//しろいいき
+textEntryH(40, "0/0")			//ハート
+textEntryH(40, "0/0")			//あたまにほし
+textEntryH(40, "0/0")			//キラキラ
+textEntryH(40, "0/0")			//ごこう
+textEntryH(40, "0/0")			//ひかりのたま
+textEntryH(40, "0/0")			//あしからけむり
+textEntryH(40, "0/0")			//ため
+textEntryH(40, "0/0")			//みなぎるチカラ
+textEntryH(40, "0/0")			//エネルギーほう
+textEntryH(40, "0/0")			//しょうげきは
+textEntryH(40, "0/0")			//ばくはつ
+textEntryH(40, "0/0")			//あちこちばくはつ
+textEntryH(40, "0/0")			//あたまをおおきく
+textEntryH(40, "0/0")			//タレントあらわれる
+textEntryH(40, "0/0")			//タレントはんとうめい
+textEntryH(40, "0/0")			//タレントきえる
 
 //--Filter List
 seek(0x11BB660)
-
+textEntryH(40, "0/0")			//なし
+textEntryH(40, "0/0")			//うすくぼかす
+textEntryH(40, "0/0")			//こくぼかす
+textEntryH(40, "0/0")			//かさねこうか
+textEntryH(40, "0/0")			//モノクロ
+textEntryH(40, "0/0")			//セピア
+textEntryH(40, "0/0")			//2かいちょう
+textEntryH(40, "0/0")			//モノクロわく
+textEntryH(40, "0/0")			//ソフトフォーカス
+textEntryH(40, "0/0")			//しんきろう
+textEntryH(40, "0/0")			//すいちゅう
+textEntryH(40, "0/0")			//いろをこく
+textEntryH(40, "0/0")			//いろをうすく
+textEntryH(40, "0/0")			//ネガ
+textEntryH(40, "0/0")			//モザイク
+textEntryH(40, "0/0")			//ノイズ
+textEntryH(40, "0/0")			//モニター
+textEntryH(40, "0/0")			//かくだい
+textEntryH(40, "0/0")			//しゅくしょう
+textEntryH(40, "0/0")			//ミニサイズ
+textEntryH(40, "0/0")			//はんてん
+textEntryH(40, "0/0")			//2ぶんかつ
+textEntryH(40, "0/0")			//4ぶんかつ
+textEntryH(40, "0/0")			//むかしのフィルム
+textEntryH(40, "0/0")			//がようし
+textEntryH(40, "0/0")			//ぐにゃぐにゃ
+textEntryH(40, "0/0")			//ざんぞう
+textEntryH(40, "0/0")			//ぶんしん
 
 //--Fade In/Out List
 seek(0x11BBAF8)
-
+textEntryH(40, "0/0")			//なし
+textEntryH(40, "0/0")			//くろからふつう
+textEntryH(40, "0/0")			//ふつうからくろ
+textEntryH(40, "0/0")			//しろからふつう
+textEntryH(40, "0/0")			//ふつうからしろ
+textEntryH(40, "0/0")			//えんでひらく
+textEntryH(40, "0/0")			//えんでとじる
+textEntryH(40, "0/0")			//しかくでひらく
+textEntryH(40, "0/0")			//しかくでとじる
+textEntryH(40, "0/0")			//よこにひらく
+textEntryH(40, "0/0")			//よこにとじる
+textEntryH(40, "0/0")			//たてにひらく
+textEntryH(40, "0/0")			//たてにとじる
+textEntryH(40, "0/0")			//くろ
 
 //--Expressions List
 seek(0x11BBD4C)
-
+textEntryH(40, "0/0")			//なし
+textEntryH(40, "0/0")			//ふつうのひょうじょう
+textEntryH(40, "0/0")			//わらったひょうじょう
+textEntryH(40, "0/0")			//おこったひょうじょう
+textEntryH(40, "0/0")			//こまったひょうじょう
+textEntryH(40, "0/0")			//フリーのひょうじょう
+textEntryH(40, "0/0")			//ねむったひょうじょう
 
 //--Music List
 seek(0x11BBF18)
+textEntryH(40, "0/0")			//なし
+textEntryH(40, "0/0")			//ロック・ヰ
+textEntryH(40, "0/0")			//ミステリー・ヰ
+textEntryH(40, "0/0")			//しゃみせん・ヰ
+textEntryH(40, "0/0")			//ジャズ・ヰ
+textEntryH(40, "0/0")			//テクノ・ヰ
+textEntryH(40, "0/0")			//あくのテーマ・ヰ
+textEntryH(40, "0/0")			//トタケケぶし・ヰ
+textEntryH(40, "0/0")			//スパイ・ヰ
+textEntryH(40, "0/0")			//バグパイプ・ヰ
+textEntryH(40, "0/0")			//たてぶえ・ヰ
+textEntryH(40, "0/0")			//かなしい・ヰ
+textEntryH(40, "0/0")			//サルサ・ヰ
+textEntryH(40, "0/0")			//おちゃのまげきじょう・ヰ
+textEntryH(40, "0/0")			//ワルツ・ヰ
+textEntryH(40, "0/0")			//ハワイ・ヰ
+textEntryH(40, "0/0")			//ヒップ・ホップ・ヰ
+textEntryH(40, "0/0")			//ホラー・ヰ
+textEntryH(40, "0/0")			//マーチ・ヰ
+textEntryH(40, "0/0")			//オープニング・ヰ
+textEntryH(40, "0/0")			//おもいで・ヰ
+textEntryH(40, "0/0")			//ひとりぼっち・ヰ
+textEntryH(40, "0/0")			//チャイナ・ヰ
+textEntryH(40, "0/0")			//インド・ヰ
+textEntryH(40, "0/0")			//だいとかい・ヰ
+textEntryH(40, "0/0")			//ドタバタ・ヰ
+textEntryH(40, "0/0")			//モーニングコーヒー・ヰ
+textEntryH(40, "0/0")			//さくせんかいぎ・ヰ
+textEntryH(40, "0/0")			//ファンファーレ・ヱ4.2
+textEntryH(40, "0/0")			//それからどうした・ヱ3.0
+textEntryH(40, "0/0")			//キメッ!・ヱ1.8
+textEntryH(40, "0/0")			//マリオ・ヱ1.3
+textEntryH(40, "0/0")			//ショック・ヱ1.8
+textEntryH(40, "0/0")			//エンディング・ヱ5.0
+textEntryH(40, "0/0")			//ズッコケ・ヱ1.4
+textEntryH(40, "0/0")			//かげのひょうじON/OFF
+textEntryH(40, "0/0")			//かげのひょうじON/OFF
+textEntryH(40, "0/0")			//まばたきON/OFF
+textEntryH(40, "0/0")			//まばたきON/OFF
+textEntryH(40, "0/0")			//カメラめせんON/OFF
+textEntryH(40, "0/0")			//カメラめせんON/OFF
+textEntryH(40, "0/0")			//うごきのおとON/OFF
+textEntryH(40, "0/0")			//うごきのおとON/OFF
+textEntryH(40, "0/0")			//*
+textEntryH(40, "0/0")			//*
+textEntryH(40, "0/0")			//わらったひょうじょう♪O/X
+textEntryH(40, "0/0")			//おこったひょうじょう♪O/X
+textEntryH(40, "0/0")			//こまったひょうじょう♪O/X
+textEntryH(40, "0/0")			//フリーのひょうじょう♪O/X
+textEntryH(40, "0/0")			//*
+textEntryH(40, "0/0")			//あめ♪O/X
+textEntryH(40, "0/0")			//ゆき♪O/X
+textEntryH(40, "0/0")			//カミナリ♪O/X
+textEntryH(40, "0/0")			//さくらふぶき♪O/X
+textEntryH(40, "0/0")			//あわ♪O/X
+textEntryH(40, "0/0")			//うちゅう♪O/X
+textEntryH(40, "0/0")			//ほのお♪O/X
+textEntryH(40, "0/0")			//きり♪O/X
+textEntryH(40, "0/0")			//しゅうちゅうせん♪O/X
+textEntryH(40, "0/0")			//くちからほのお♪O/X
+textEntryH(40, "0/0")			//しろいいき♪O/X
+textEntryH(40, "0/0")			//ハート♪O/X
+textEntryH(40, "0/0")			//あたまにほし♪O/X
+textEntryH(40, "0/0")			//キラキラ♪O/X
+textEntryH(40, "0/0")			//ごこう♪O/X
+textEntryH(40, "0/0")			//ひかりのたま♪O/X
+textEntryH(40, "0/0")			//あしからけむり♪O/X
+textEntryH(40, "0/0")			//ため♪O/X
+textEntryH(40, "0/0")			//みなぎるチカラ♪O/X
+textEntryH(40, "0/0")			//エネルギーほう♪O/X
+textEntryH(40, "0/0")			//しょうげきは♪O/X
+textEntryH(40, "0/0")			//ばくはつ♪O/X
+textEntryH(40, "0/0")			//あちこちばくはつ♪O/X
+textEntryH(40, "0/0")			//あたまをおおきく♪O/X
+textEntryH(40, "0/0")			//タレントあらわれる♪O/X
+textEntryH(40, "0/0")			//タレントはんとうめい♪O/X
+textEntryH(40, "0/0")			//タレントきえる♪O/X
+textEntryH(40, "0/0")			//*
+textEntryH(40, "0/0")			//うすくぼかす♪O/X
+textEntryH(40, "0/0")			//こくぼかす♪O/X
+textEntryH(40, "0/0")			//かさねこうか♪O/X
+textEntryH(40, "0/0")			//モノクロ♪O/X
+textEntryH(40, "0/0")			//セピア♪O/X
+textEntryH(40, "0/0")			//2かいちょう♪O/X
+textEntryH(40, "0/0")			//モノクロわく♪O/X
+textEntryH(40, "0/0")			//ソフトフォーカス♪O/X
+textEntryH(40, "0/0")			//しんきろう♪O/X
+textEntryH(40, "0/0")			//すいちゅう♪O/X
+textEntryH(40, "0/0")			//いろをこく♪O/X
+textEntryH(40, "0/0")			//いろをうすく♪O/X
+textEntryH(40, "0/0")			//ネガ♪O/X
+textEntryH(40, "0/0")			//モザイク♪O/X
+textEntryH(40, "0/0")			//ノイズ♪O/X
+textEntryH(40, "0/0")			//モニター♪O/X
+textEntryH(40, "0/0")			//かくだい♪O/X
+textEntryH(40, "0/0")			//しゅくしょう♪O/X
+textEntryH(40, "0/0")			//ミニサイズ♪O/X
+textEntryH(40, "0/0")			//はんてん♪O/X
+textEntryH(40, "0/0")			//2ぶんかつ♪O/X
+textEntryH(40, "0/0")			//4ぶんかつ♪O/X
+textEntryH(40, "0/0")			//むかしのフィルム♪O/X
+textEntryH(40, "0/0")			//ほうかい♪O/X
+textEntryH(40, "0/0")			//ぐにゃぐにゃ♪O/X
+textEntryH(40, "0/0")			//ざんぞう♪O/X
+textEntryH(40, "0/0")			//ぶんしん♪O/X
+textEntryH(40, "0/0")			//よこがきした♪O/X
+textEntryH(40, "0/0")			//よこがき1もじずつ♪O/X
+textEntryH(40, "0/0")			//よこがきげんかい♪O/X
+textEntryH(40, "0/0")			//よこがきうえ♪O/X
+textEntryH(40, "0/0")			//たてがき♪O/X
+textEntryH(40, "0/0")			//たてがきふきだし♪O/X
+textEntryH(40, "0/0")			//よこがきふきだし♪O/X
+textEntryH(40, "0/0")			//タイトル♪O/X
+textEntryH(40, "0/0")			//てんめつ♪O/X
+textEntryH(40, "0/0")			//もじうち♪O/X
+textEntryH(40, "0/0")			//めくれる♪O/X
+textEntryH(40, "0/0")			//かいてん♪O/X
+textEntryH(40, "0/0")			//ちいさくなる♪O/X
+textEntryH(40, "0/0")			//おおきくなる♪O/X
+textEntryH(40, "0/0")			//おちる♪O/X
+textEntryH(40, "0/0")			//したたる♪O/X
+textEntryH(40, "0/0")			//ぶきみ♪O/X
+textEntryH(40, "0/0")			//のびちぢみ♪O/X
+textEntryH(40, "0/0")			//ふるえる♪O/X
+textEntryH(40, "0/0")			//1もじずつ♪O/X
+textEntryH(40, "0/0")			//あかいライン♪O/X
+textEntryH(40, "0/0")			//よこがきスクロール♪O/X
+textEntryH(40, "0/0")			//よこがきうえへスクロール♪O/X
+textEntryH(40, "0/0")			//たてがきスクロール♪O/X
+textEntryH(40, "0/0")			//おくへスクロール♪O/X
+textEntryH(40, "0/0")			//おおきいもじスクロール♪O/X
+textEntryH(40, "0/0")			//なみがた♪O/X
+textEntryH(40, "0/0")			//でんこうけいじばん♪O/X
+textEntryH(40, "0/0")			//わくつきウインドウ♪O/X
+textEntryH(40, "0/0")			//1もじずつウインドウ♪O/X
+textEntryH(40, "0/0")			//カラオケ♪O/X
+textEntryH(40, "0/0")			//エルがた♪O/X
+textEntryH(40, "0/0")			//てきとうにひょうじ♪O/X
+textEntryH(40, "0/0")			//たくさんひょうじ♪O/X
+textEntryH(40, "0/0")			//バラバラ♪O/X
 
+//--Music Effects
+seek(0x11BD51C)
+textEntryH(40, "0/0")			//なし
+textEntryH(40, "0/0")			//フェイドイン
+textEntryH(40, "0/0")			//フェイドアウト
+textEntryH(40, "0/0")			//ボリュームダウン
+textEntryH(40, "0/0")			//はやくする
+textEntryH(40, "0/0")			//おそくする
+
+//--Sound Effects
+seek(0x11BD62C)
+textEntryH(40, "0/0")			//なし
+textEntryH(40, "0/0")			//フェイドイン
+textEntryH(40, "0/0")			//フェイドアウト
+textEntryH(40, "0/0")			//エコー
+
+//--Graffiti
+seek(0x11BD6D0)
+textEntryH(40, "0/0")			//なし
+textEntryH(40, "0/0")			//らくがき1
+textEntryH(40, "0/0")			//らくがき2
+textEntryH(40, "0/0")			//らくがき3
+textEntryH(40, "0/0")			//らくがき4
+textEntryH(40, "0/0")			//らくがき5
+textEntryH(40, "0/0")			//らくがき6
+
+//--Captions
+seek(0x11BD7F0)
+textEntryH(40, "0/0")			//なし
+textEntryH(40, "0/0")			//テロップ1
+textEntryH(40, "0/0")			//テロップ2
+textEntryH(40, "0/0")			//テロップ3
+textEntryH(40, "0/0")			//テロップ4
+textEntryH(40, "0/0")			//テロップ5
+textEntryH(40, "0/0")			//テロップ6
+textEntryH(40, "0/0")			//テロップ7
+textEntryH(40, "0/0")			//テロップ8
+textEntryH(40, "0/0")			//テロップ9
+textEntryH(40, "0/0")			//テロップ10
+textEntryH(40, "0/0")			//テロップ11
+textEntryH(40, "0/0")			//テロップ12
+textEntryH(40, "0/0")			//テロップ13
+textEntryH(40, "0/0")			//テロップ14
+textEntryH(40, "0/0")			//テロップ15
+textEntryH(40, "0/0")			//テロップ16
+textEntryH(40, "0/0")			//テロップ17
+textEntryH(40, "0/0")			//テロップ18
+textEntryH(40, "0/0")			//テロップ19
+textEntryH(40, "0/0")			//テロップ20
+textEntryH(40, "0/0")			//テロップ21
+textEntryH(40, "0/0")			//テロップ22
+textEntryH(40, "0/0")			//テロップ23
+textEntryH(40, "0/0")			//テロップ24
+textEntryH(40, "0/0")			//テロップ25
+textEntryH(40, "0/0")			//テロップ26
+textEntryH(40, "0/0")			//テロップ27
+textEntryH(40, "0/0")			//テロップ28
+textEntryH(40, "0/0")			//テロップ29
+textEntryH(40, "0/0")			//テロップ30
+textEntryH(40, "0/0")			//テロップ31
+textEntryH(40, "0/0")			//テロップ32
+textEntryH(40, "0/0")			//テロップ33
+textEntryH(40, "0/0")			//テロップ34
+textEntryH(40, "0/0")			//テロップ35
+textEntryH(40, "0/0")			//テロップ36
+textEntryH(40, "0/0")			//テロップ37
+textEntryH(40, "0/0")			//テロップ38
+textEntryH(40, "0/0")			//テロップ39
+textEntryH(40, "0/0")			//テロップ40
+textEntryH(40, "0/0")			//テロップ41
+textEntryH(40, "0/0")			//テロップ42
+textEntryH(40, "0/0")			//テロップ43
+textEntryH(40, "0/0")			//テロップ44
+textEntryH(40, "0/0")			//テロップ45
+textEntryH(40, "0/0")			//テロップ46
+textEntryH(40, "0/0")			//テロップ47
+textEntryH(40, "0/0")			//テロップ48
+textEntryH(40, "0/0")			//テロップ49
+textEntryH(40, "0/0")			//テロップ50
+textEntryH(40, "0/0")			//テロップ51
+textEntryH(40, "0/0")			//テロップ52
+textEntryH(40, "0/0")			//テロップ53
+textEntryH(40, "0/0")			//テロップ54
+textEntryH(40, "0/0")			//テロップ55
+
+//--?
 
 //--Recording Menu
 seek(0x11C1A08)
