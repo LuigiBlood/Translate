@@ -1763,41 +1763,44 @@ textEntryH(40, "Reduce")			//しゅくしょう
 textEntryH(40, "Half Size")			//ミニサイズ
 textEntryH(40, "Flip")				//はんてん
 
-textEntryH(40, "Split in 2")			//2ぶんかつ
-textEntryH(40, "Split in 4")			//4ぶんかつ
-textEntryH(40, "Old Film")				//むかしのフィルム
-textEntryH(40, "Drawing Paper")			//がようし
-textEntryH(40, "Distortion")			//ぐにゃぐにゃ
-textEntryH(40, "Fade Effect")			//ざんぞう
-textEntryH(40, "Keep Still")			//ぶんしん
+textEntryH(40, "Split in 2")		//2ぶんかつ
+textEntryH(40, "Split in 4")		//4ぶんかつ
+textEntryH(40, "Old Film")			//むかしのフィルム
+textEntryH(40, "Drawing Paper")		//がようし
+textEntryH(40, "Distortion")		//ぐにゃぐにゃ
+textEntryH(40, "Dissolve")			//ざんぞう
+textEntryH(40, "Keep Still")		//ぶんしん
 
 
 //--Fade In/Out List
 seek(0x11BBAF8)
-textEntryH(40, "0/0")			//なし
-textEntryH(40, "0/0")			//くろからふつう
-textEntryH(40, "0/0")			//ふつうからくろ
-textEntryH(40, "0/0")			//しろからふつう
-textEntryH(40, "0/0")			//ふつうからしろ
-textEntryH(40, "0/0")			//えんでひらく
-textEntryH(40, "0/0")			//えんでとじる
-textEntryH(40, "0/0")			//しかくでひらく
-textEntryH(40, "0/0")			//しかくでとじる
-textEntryH(40, "0/0")			//よこにひらく
-textEntryH(40, "0/0")			//よこにとじる
-textEntryH(40, "0/0")			//たてにひらく
-textEntryH(40, "0/0")			//たてにとじる
-textEntryH(40, "0/0")			//くろ
+textEntryH(40, "None")				//なし
+textEntryH(40, "Fade In")			//くろからふつう
+textEntryH(40, "Fade Out")			//ふつうからくろ
+textEntryH(40, "Wash In")			//しろからふつう
+textEntryH(40, "Wash Out")			//ふつうからしろ
+textEntryH(40, "Iris In")			//えんでひらく
+textEntryH(40, "Iris Out")			//えんでとじる
+
+textEntryH(40, "Rectangle In")		//しかくでひらく
+textEntryH(40, "Rectangle Out")		//しかくでとじる
+textEntryH(40, "Horizontal In")		//よこにひらく
+textEntryH(40, "Horizontal Out")	//よこにとじる
+textEntryH(40, "Vertical In")		//たてにひらく
+textEntryH(40, "Vertical Out")		//たてにとじる
+textEntryH(40, "Black Frame")		//くろ
+
 
 //--Expressions List
 seek(0x11BBD4C)
-textEntryH(40, "0/0")			//なし
-textEntryH(40, "0/0")			//ふつうのひょうじょう
-textEntryH(40, "0/0")			//わらったひょうじょう
-textEntryH(40, "0/0")			//おこったひょうじょう
-textEntryH(40, "0/0")			//こまったひょうじょう
-textEntryH(40, "0/0")			//フリーのひょうじょう
-textEntryH(40, "0/0")			//ねむったひょうじょう
+textEntryH(40, "None")				//なし
+textEntryH(40, "Normal Expression")	//ふつうのひょうじょう
+textEntryH(40, "Laugh Expression")	//わらったひょうじょう
+textEntryH(40, "Angry Expression")	//おこったひょうじょう
+textEntryH(40, "Sad Expression")	//こまったひょうじょう
+textEntryH(40, "Free Expression")	//フリーのひょうじょう
+textEntryH(40, "Sleep Expression")	//ねむったひょうじょう
+
 
 //--Music List
 seek(0x11BBF18)
