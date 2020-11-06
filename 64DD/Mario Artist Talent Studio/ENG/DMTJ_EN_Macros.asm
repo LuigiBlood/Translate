@@ -26,6 +26,18 @@ macro textEntryH(size, text) {
   origin skipSeek
 }
 
+macro textEntryH3(size, text, char) {
+  variable skipSeek(origin()+{size})
+  textEntryH03({text}, {char})
+  origin skipSeek
+}
+
+macro textEntryH4(size, text, char, text2) {
+  variable skipSeek(origin()+{size})
+  textEntryH04({text}, {char}, {text2})
+  origin skipSeek
+}
+
 macro textEntryH0(text) {
   RegularMap()
   db {text}
@@ -37,6 +49,21 @@ macro textEntryH2(char, text) {
   db {char}, " "
   db {text}
   db " ", {char}
+  db 0x00
+}
+
+macro textEntryH03(text, char) {
+  RegularMap()
+  db {text}
+  db {char}
+  db 0x00
+}
+
+macro textEntryH04(text, char, text2) {
+  RegularMap()
+  db {text}
+  db {char}
+  db {text2}
   db 0x00
 }
 
