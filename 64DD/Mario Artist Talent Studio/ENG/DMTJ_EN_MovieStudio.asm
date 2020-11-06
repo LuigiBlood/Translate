@@ -1958,88 +1958,88 @@ textEntryH4(40, "Scattered", $BC, "ON/OFF")					//バラバラ♪O/X
 
 //--Music Effects
 seek(0x11BD51C)
-textEntryH(40, "0/0")			//なし
-textEntryH(40, "0/0")			//フェイドイン
-textEntryH(40, "0/0")			//フェイドアウト
-textEntryH(40, "0/0")			//ボリュームダウン
-textEntryH(40, "0/0")			//はやくする
-textEntryH(40, "0/0")			//おそくする
+textEntryH(40, "None")			//なし
+textEntryH(40, "Fade In")		//フェイドイン
+textEntryH(40, "Fade Out")		//フェイドアウト
+textEntryH(40, "Volume Down")	//ボリュームダウン
+textEntryH(40, "Faster")		//はやくする
+textEntryH(40, "Slower")		//おそくする
 
 //--Sound Effects
 seek(0x11BD62C)
-textEntryH(40, "0/0")			//なし
-textEntryH(40, "0/0")			//フェイドイン
-textEntryH(40, "0/0")			//フェイドアウト
-textEntryH(40, "0/0")			//エコー
+textEntryH(40, "None")			//なし
+textEntryH(40, "Fade In")		//フェイドイン
+textEntryH(40, "Fade Out")		//フェイドアウト
+textEntryH(40, "Echo")			//エコー
 
 //--Graffiti
 seek(0x11BD6D0)
-textEntryH(40, "0/0")			//なし
-textEntryH(40, "0/0")			//らくがき1
-textEntryH(40, "0/0")			//らくがき2
-textEntryH(40, "0/0")			//らくがき3
-textEntryH(40, "0/0")			//らくがき4
-textEntryH(40, "0/0")			//らくがき5
-textEntryH(40, "0/0")			//らくがき6
+textEntryH(40, "None")			//なし
+textEntryH(40, "Graffiti 1")	//らくがき1
+textEntryH(40, "Graffiti 2")	//らくがき2
+textEntryH(40, "Graffiti 3")	//らくがき3
+textEntryH(40, "Graffiti 4")	//らくがき4
+textEntryH(40, "Graffiti 5")	//らくがき5
+textEntryH(40, "Graffiti 6")	//らくがき6
 
 //--Captions
 seek(0x11BD7F0)
-textEntryH(40, "0/0")			//なし
-textEntryH(40, "0/0")			//テロップ1
-textEntryH(40, "0/0")			//テロップ2
-textEntryH(40, "0/0")			//テロップ3
-textEntryH(40, "0/0")			//テロップ4
-textEntryH(40, "0/0")			//テロップ5
-textEntryH(40, "0/0")			//テロップ6
-textEntryH(40, "0/0")			//テロップ7
-textEntryH(40, "0/0")			//テロップ8
-textEntryH(40, "0/0")			//テロップ9
-textEntryH(40, "0/0")			//テロップ10
-textEntryH(40, "0/0")			//テロップ11
-textEntryH(40, "0/0")			//テロップ12
-textEntryH(40, "0/0")			//テロップ13
-textEntryH(40, "0/0")			//テロップ14
-textEntryH(40, "0/0")			//テロップ15
-textEntryH(40, "0/0")			//テロップ16
-textEntryH(40, "0/0")			//テロップ17
-textEntryH(40, "0/0")			//テロップ18
-textEntryH(40, "0/0")			//テロップ19
-textEntryH(40, "0/0")			//テロップ20
-textEntryH(40, "0/0")			//テロップ21
-textEntryH(40, "0/0")			//テロップ22
-textEntryH(40, "0/0")			//テロップ23
-textEntryH(40, "0/0")			//テロップ24
-textEntryH(40, "0/0")			//テロップ25
-textEntryH(40, "0/0")			//テロップ26
-textEntryH(40, "0/0")			//テロップ27
-textEntryH(40, "0/0")			//テロップ28
-textEntryH(40, "0/0")			//テロップ29
-textEntryH(40, "0/0")			//テロップ30
-textEntryH(40, "0/0")			//テロップ31
-textEntryH(40, "0/0")			//テロップ32
-textEntryH(40, "0/0")			//テロップ33
-textEntryH(40, "0/0")			//テロップ34
-textEntryH(40, "0/0")			//テロップ35
-textEntryH(40, "0/0")			//テロップ36
-textEntryH(40, "0/0")			//テロップ37
-textEntryH(40, "0/0")			//テロップ38
-textEntryH(40, "0/0")			//テロップ39
-textEntryH(40, "0/0")			//テロップ40
-textEntryH(40, "0/0")			//テロップ41
-textEntryH(40, "0/0")			//テロップ42
-textEntryH(40, "0/0")			//テロップ43
-textEntryH(40, "0/0")			//テロップ44
-textEntryH(40, "0/0")			//テロップ45
-textEntryH(40, "0/0")			//テロップ46
-textEntryH(40, "0/0")			//テロップ47
-textEntryH(40, "0/0")			//テロップ48
-textEntryH(40, "0/0")			//テロップ49
-textEntryH(40, "0/0")			//テロップ50
-textEntryH(40, "0/0")			//テロップ51
-textEntryH(40, "0/0")			//テロップ52
-textEntryH(40, "0/0")			//テロップ53
-textEntryH(40, "0/0")			//テロップ54
-textEntryH(40, "0/0")			//テロップ55
+textEntryH(40, "None")			//なし
+textEntryH(40, "Caption 1")		//テロップ1
+textEntryH(40, "Caption 2")		//テロップ2
+textEntryH(40, "Caption 3")		//テロップ3
+textEntryH(40, "Caption 4")		//テロップ4
+textEntryH(40, "Caption 5")		//テロップ5
+textEntryH(40, "Caption 6")		//テロップ6
+textEntryH(40, "Caption 7")		//テロップ7
+textEntryH(40, "Caption 8")		//テロップ8
+textEntryH(40, "Caption 9")		//テロップ9
+textEntryH(40, "Caption 10")	//テロップ10
+textEntryH(40, "Caption 11")	//テロップ11
+textEntryH(40, "Caption 12")	//テロップ12
+textEntryH(40, "Caption 13")	//テロップ13
+textEntryH(40, "Caption 14")	//テロップ14
+textEntryH(40, "Caption 15")	//テロップ15
+textEntryH(40, "Caption 16")	//テロップ16
+textEntryH(40, "Caption 17")	//テロップ17
+textEntryH(40, "Caption 18")	//テロップ18
+textEntryH(40, "Caption 19")	//テロップ19
+textEntryH(40, "Caption 20")	//テロップ20
+textEntryH(40, "Caption 21")	//テロップ21
+textEntryH(40, "Caption 22")	//テロップ22
+textEntryH(40, "Caption 23")	//テロップ23
+textEntryH(40, "Caption 24")	//テロップ24
+textEntryH(40, "Caption 25")	//テロップ25
+textEntryH(40, "Caption 26")	//テロップ26
+textEntryH(40, "Caption 27")	//テロップ27
+textEntryH(40, "Caption 28")	//テロップ28
+textEntryH(40, "Caption 29")	//テロップ29
+textEntryH(40, "Caption 30")	//テロップ30
+textEntryH(40, "Caption 31")	//テロップ31
+textEntryH(40, "Caption 32")	//テロップ32
+textEntryH(40, "Caption 33")	//テロップ33
+textEntryH(40, "Caption 34")	//テロップ34
+textEntryH(40, "Caption 35")	//テロップ35
+textEntryH(40, "Caption 36")	//テロップ36
+textEntryH(40, "Caption 37")	//テロップ37
+textEntryH(40, "Caption 38")	//テロップ38
+textEntryH(40, "Caption 39")	//テロップ39
+textEntryH(40, "Caption 40")	//テロップ40
+textEntryH(40, "Caption 41")	//テロップ41
+textEntryH(40, "Caption 42")	//テロップ42
+textEntryH(40, "Caption 43")	//テロップ43
+textEntryH(40, "Caption 44")	//テロップ44
+textEntryH(40, "Caption 45")	//テロップ45
+textEntryH(40, "Caption 46")	//テロップ46
+textEntryH(40, "Caption 47")	//テロップ47
+textEntryH(40, "Caption 48")	//テロップ48
+textEntryH(40, "Caption 49")	//テロップ49
+textEntryH(40, "Caption 50")	//テロップ50
+textEntryH(40, "Caption 51")	//テロップ51
+textEntryH(40, "Caption 52")	//テロップ52
+textEntryH(40, "Caption 53")	//テロップ53
+textEntryH(40, "Caption 54")	//テロップ54
+textEntryH(40, "Caption 55")	//テロップ55
 
 //--?
 
