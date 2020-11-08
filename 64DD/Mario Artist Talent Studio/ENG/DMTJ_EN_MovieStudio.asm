@@ -2041,7 +2041,244 @@ textEntryH(40, "Caption 53")	//テロップ53
 textEntryH(40, "Caption 54")	//テロップ54
 textEntryH(40, "Caption 55")	//テロップ55
 
-//--?
+
+//--Sound List
+seek(0x11BE448)
+//-Motion & Sounds
+textEntryH(40, "None")				//なし
+textEntryH(40, "Footstep")			//あしおと
+textEntryH(40, "Puddle Footstep")	//みずたまりのあしおと
+textEntryH(40, "Giant Footstep")	//きょじんのあしおと
+textEntryH(40, "Monster Footstep")	//かいじゅうのあしおと
+textEntryH(40, "Penguin Footstep")	//ペンギンのあしおと
+textEntryH(40, "Robot Footstep")	//ロボットのあしおと
+
+textEntryH(40, "Collapse")			//たおれる
+textEntryH(40, "Slide")				//すべる
+textEntryH(40, "Brake")				//ブレーキ
+textEntryH(40, "Swing")				//ふる
+textEntryH(40, "Strong Swing")		//おおきくふる
+textEntryH(40, "Punch")				//パンチ
+textEntryH(40, "Slap")				//ひっぱたく
+
+textEntryH(40, "Clap")				//てをうつ
+textEntryH(40, "Polish")			//みがく
+textEntryH(40, "Bone Squeak")		//ほねがきしむ
+textEntryH(40, "Water Drop")		//すいてき
+textEntryH(40, "Swim")				//およぐ
+textEntryH(40, "Gas")				//ブッ!
+textEntryH(40, "Applause")			//はくしゅ
+
+textEntryH(40, "Draw Sword")		//けんをぬく
+textEntryH(40, "Swords Collide")	//カタナがふれあう
+textEntryH(40, "Sword Slash")		//カタナできる
+textEntryH(40, "Explosion")			//ばくはつ
+textEntryH(40, "Pistol")			//ケンジュウ
+textEntryH(40, "Sci-Fi Gun")		//SFガン
+textEntryH(40, "Fan")				//ハリセン
+
+textEntryH(40, "Jump")				//ジャンプ
+textEntryH(40, "Throw")				//なげる
+textEntryH(40, "Fall")				//おちる
+textEntryH(40, "Hit")				//めいちゅう
+textEntryH(40, "Crush")				//つぶれる
+textEntryH(40, "Lay Egg")			//たまごをうむ
+textEntryH(40, "Tub")				//タライ
+
+textEntryH(40, "Car Horn")			//クラクション
+textEntryH(40, "Bicycle Bell")		//じてんしゃのベル
+textEntryH(40, "Shutter")			//シャッター
+textEntryH(40, "Radio Signal")		//でんぱ
+textEntryH(40, "Knock")				//ノック
+textEntryH(40, "Pulse")				//しんぞう
+textEntryH(40, "Typewriter")		//タイプライター
+
+textEntryH(40, "Good Answer!")		//ピンポン
+textEntryH(40, "Buzzer")			//ブザー
+textEntryH(40, "Trumpet Toy")		//おもちゃのラッパ
+textEntryH(40, "Wobbly")			//ボヨヨ～ン
+textEntryH(40, "Random")			//らくちん
+textEntryH(40, "Beep")				//ピコ
+textEntryH(40, "Bubble")			//あわ
+
+textEntryH(40, "Yell")				//きあい
+textEntryH(40, "Pop")				//ポン
+textEntryH(40, "Give up")			//おてあげ
+textEntryH(40, "Point")				//ポイ
+textEntryH(40, "Bump")				//ぶつかる
+textEntryH(40, "Falling Back")		//しりもち
+textEntryH(40, "Question")			//はてな
+//-Animals & Voices
+textEntryH(40, "None")				//なし
+textEntryH(40, "Dog")				//イヌ
+textEntryH(40, "Cat")				//ネコ
+textEntryH(40, "Monkey")			//サル
+textEntryH(40, "Penguin")			//ペンギン
+textEntryH(40, "Elephant")			//ゾウ
+textEntryH(40, "Pig")				//ブタ
+
+textEntryH(40, "Chick")				//ヒヨコ
+textEntryH(40, "Seagull")			//カモメ
+textEntryH(40, "Chicken")			//ニワトリ
+textEntryH(40, "Crow")				//カラス
+textEntryH(40, "Owl")				//フクロウ
+textEntryH(40, "Boo")				//テレサ
+textEntryH(40, "Yoshi")				//ヨッシー
+
+textEntryH(40, "Baby")				//あかちゃん
+textEntryH(40, "Creepy Laugh")		//ヒゲおやじ
+textEntryH(40, "Bowser")			//クッパ
+textEntryH(40, "Laughs")			//わらい
+textEntryH(40, "Yeah!")				//イエーイ
+textEntryH(40, "Scream")			//ひめい
+textEntryH(40, "Appeal")			//うっふ～ん
+//-Instruments
+textEntryH(40, "None")				//なし
+textEntryH(40, "1UP")				//1UP
+textEntryH(40, "Power Up")			//きょだいか
+textEntryH(40, "Enter Pipe")		//ドカンにはいる
+textEntryH(40, "Question Block")	//はてなボックス
+textEntryH(40, "Coin")				//コイン
+textEntryH(40, "Solved")			//ナゾがとける
+
+textEntryH(40, "Bell")				//ベル
+textEntryH(40, "Transform")			//へんしん
+textEntryH(40, "Horror")			//ホラー
+textEntryH(40, "Clappers")			//ひょうしぎ
+textEntryH(40, "Orchestra Hit")		//オーケストラヒット
+textEntryH(40, "Cowbell")			//ウシのベル
+textEntryH(40, "Conga")				//コンガ
+
+textEntryH(40, "Cymbal")			//シンバル
+textEntryH(40, "Bass Drum")			//バスドラム
+textEntryH(40, "Snare Drum")		//スネアドラム
+textEntryH(40, "Timpani")			//ティンパニー
+textEntryH(40, "Maracas")			//マラカス
+textEntryH(40, "Grease Down")		//グリスダウン
+textEntryH(40, "Grease Up")			//グリスアップ
+
+textEntryH(40, "Piano Do")			//ピアノ・ド
+textEntryH(40, "Piano Re")			//ピアノ・レ
+textEntryH(40, "Piano Mi")			//ピアノ・ミ
+textEntryH(40, "Piano Fa")			//ピアノ・ファ
+textEntryH(40, "Piano Sol")			//ピアノ・ソ
+textEntryH(40, "Piano La")			//ピアノ・ラ
+textEntryH(40, "Piano Ti")			//ピアノ・シ
+
+textEntryH(40, "Guitar C")			//ギター・C
+textEntryH(40, "Guitar D")			//ギター・D
+textEntryH(40, "Guitar E")			//ギター・E
+textEntryH(40, "Guitar F")			//ギター・F
+textEntryH(40, "Guitar G")			//ギター・G
+textEntryH(40, "Guitar A")			//ギター・A
+textEntryH(40, "Guitar B")			//ギター・B
+//-Sound Loops
+textEntryH(40, "None")				//なし
+textEntryH(40, "Engine")			//エンジン
+textEntryH(40, "Helicopter")		//ヘリコプター
+textEntryH(40, "Airplane")			//プロペラひこうき
+textEntryH(40, "Friction Motor")	//ゼンマイ
+textEntryH(40, "Siren")				//サイレン
+textEntryH(40, "Telephone")			//でんわ
+
+textEntryH(40, "Conveyor")			//コンベアー
+textEntryH(40, "Clock")				//とけい
+textEntryH(40, "Machine Gun")		//マシンガン
+textEntryH(40, "Drum Roll")			//スネアロール
+textEntryH(40, "Wasp")				//ハチ
+textEntryH(40, "Spray")				//スプレー
+textEntryH(40, "Creak")				//きしみ
+
+textEntryH(40, "Accumulate Power")	//チカラをためる
+textEntryH(40, "Fire Breath")		//くちからほのお
+textEntryH(40, "Flames")			//ほのお
+textEntryH(40, "Concentration")		//しゅうちゅうせん
+textEntryH(40, "Halo")				//ごこう
+textEntryH(40, "Dizzy")				//ほし
+textEntryH(40, "Noise")				//ノイズ
+
+textEntryH(40, "Children Voices")	//こびとのこえ
+textEntryH(40, "Zoom In")			//おおきくなる
+textEntryH(40, "Zoom Out")			//ちいさくなる
+textEntryH(40, "Inflate")			//ふくらむ
+textEntryH(40, "Deflate")			//ちぢむ
+textEntryH(40, "Appearing")			//あらわれる
+textEntryH(40, "Disappearing")		//きえる
+//-Environments
+textEntryH(40, "None")				//なし
+textEntryH(40, "Rain")				//あめ
+textEntryH(40, "Strong Wind")		//つよいかぜ
+textEntryH(40, "Weaker Wind")		//よわいかぜ
+textEntryH(40, "Thunder")			//カミナリ
+textEntryH(40, "Wave")				//なみ
+textEntryH(40, "Underwater")		//すいちゅう
+
+textEntryH(40, "Eerie")				//こわいふんいき
+textEntryH(40, "Mysterious")		//ふしぎなふんいき
+textEntryH(40, "Jungle")			//ジャングル
+textEntryH(40, "Cheering")			//かんせい
+textEntryH(40, "Noisy Crowd")		//ざわめき
+textEntryH(40, "Traffic Jam")		//じゅうたい
+textEntryH(40, "Night")				//よる
+//-Talent Voice
+textEntryH(40, "Talent 1 Laugh")		//タレント1のわらったこえ
+textEntryH(40, "Talent 1 Angry")		//タレント1のおこったこえ
+textEntryH(40, "Talent 1 Sad")			//タレント1のこまったこえ
+textEntryH(40, "Talent 1 Free")			//タレント1のフリーのこえ
+textEntryH(40, "Talent 1 Memorized")	//タレント1のおぼえたこえ
+
+textEntryH(40, "Talent 2 Laugh")		//タレント2のわらったこえ
+textEntryH(40, "Talent 2 Angry")		//タレント2のおこったこえ
+textEntryH(40, "Talent 2 Sad")			//タレント2のこまったこえ
+textEntryH(40, "Talent 2 Free")			//タレント2のフリーのこえ
+textEntryH(40, "Talent 2 Memorized")	//タレント2のおぼえたこえ
+
+textEntryH(40, "Talent 3 Laugh")		//タレント3のわらったこえ
+textEntryH(40, "Talent 3 Angry")		//タレント3のおこったこえ
+textEntryH(40, "Talent 3 Sad")			//タレント3のこまったこえ
+textEntryH(40, "Talent 3 Free")			//タレント3のフリーのこえ
+textEntryH(40, "Talent 3 Memorized")	//タレント3のおぼえたこえ
+//-Recorded
+textEntryH(40, "Recording 1 Pitch +2")	//ろくおん1のたかさ+2
+textEntryH(40, "Recording 1 Pitch +1")	//ろくおん1のたかさ+1
+textEntryH(40, "Recording 1 Normal")	//ろくおん1のひょうじゅん
+textEntryH(40, "Recording 1 Pitch -1")	//ろくおん1のたかさ-1
+textEntryH(40, "Recording 1 Pitch -2")	//ろくおん1のたかさ-2
+textEntryH(40, "Recording 1 Loop")		//ろくおん1のくりかえし
+
+textEntryH(40, "Recording 2 Pitch +2")	//ろくおん2のたかさ+2
+textEntryH(40, "Recording 2 Pitch +1")	//ろくおん2のたかさ+1
+textEntryH(40, "Recording 2 Normal")	//ろくおん2のひょうじゅん
+textEntryH(40, "Recording 2 Pitch -1")	//ろくおん2のたかさ-1
+textEntryH(40, "Recording 2 Pitch -2")	//ろくおん2のたかさ-2
+textEntryH(40, "Recording 2 Loop")		//ろくおん2のくりかえし
+
+textEntryH(40, "Recording 3 Pitch +2")	//ろくおん3のたかさ+2
+textEntryH(40, "Recording 3 Pitch +1")	//ろくおん3のたかさ+1
+textEntryH(40, "Recording 3 Normal")	//ろくおん3のひょうじゅん
+textEntryH(40, "Recording 3 Pitch -1")	//ろくおん3のたかさ-1
+textEntryH(40, "Recording 3 Pitch -2")	//ろくおん3のたかさ-2
+textEntryH(40, "Recording 3 Loop")		//ろくおん3のくりかえし
+
+
+//--Default Lighting Types
+seek(0x11C01B8)
+textEntryH(40, "Original")			//オリジナル
+textEntryH(40, "Noon")				//おひる
+textEntryH(40, "Morning")			//あさ
+textEntryH(40, "Evening")			//ゆうがた
+textEntryH(40, "Night")				//よる
+textEntryH(40, "Red & Blue")		//あかとあお
+textEntryH(40, "Moving Light")		//うごくライト
+
+textEntryH(40, "Dimmed")			//うすぐらい
+textEntryH(40, "Light in the dark")	//くらやみにライト
+textEntryH(40, "Light from below")	//したからライト
+textEntryH(40, "Light the face")	//かおをてらす
+textEntryH(40, "Backlight")			//ぎゃっこう
+textEntryH(40, "Frontlight")		//かげなし
+textEntryH(40, "Silhouette")		//シルエット
+
 
 //--Recording Menu
 seek(0x11C1A08)
