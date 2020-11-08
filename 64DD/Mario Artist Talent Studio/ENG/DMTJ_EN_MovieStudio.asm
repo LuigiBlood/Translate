@@ -1702,7 +1702,7 @@ seek(0x10953EC); sb t7,1(v0)
 seek(0x1095414); sb t9,2(v0)
 
 
-//--Effects List TODO
+//--Effects List
 seek(0x11BB190)
 textEntryH(40, "None")				//なし
 textEntryH(40, "Rain")				//あめ
@@ -2533,6 +2533,6 @@ textEntryASCII0("This Graffiti will be deleted.|Are you sure?")
 
 
 //--Image Processing Text
-seek(0x12A5138); textEntryH("Save")			//けってい
-seek(0x12A514C); textEntryH("Undo")			//やりなおし
-seek(0x12A5160); textEntryH("Go Back")		//もどる
+seek(0x12A5138); textEntryH0("Save")			//けってい
+seek(0x12A514C); textEntryH0("Undo")			//やりなおし
+seek(0x12A5160); textEntryH0("Go Back")		//もどる
