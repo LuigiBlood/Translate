@@ -2297,3 +2297,26 @@ textEntryH(0x20, "*Do Not Loop")				//*くりかえさない
 textEntryH(0x20, "Grab Recording")				//おとをつかむ
 textEntryH(0x20, "Use Recording from Album")	//アルバムにのこす
 textEntryH(0x20, "Save Recording to Album")		//アルバムからよびだす
+
+
+//--Options Menu
+seek(0x11C4888)
+textEntryH(40, "Save & Exit")				//けってい(セーブ)
+
+textEntryH(40, "Enable Shadows")			//かげをだす
+textEntryH(40, "Enable Eye Blinks")			//まばたきをする
+textEntryH(40, "Look at camera")			//カメラめせんにする
+textEntryH(40, "Enable Action Sounds")		//おとをだす
+textEntryH(40, "Enable Expression Sounds")	//ひょうじょうのこえをだす
+textEntryH(40, "Enable Effect Sounds")		//かんきょうエフェクトのおとをだす
+textEntryH(40, "Enable Filter Sounds")		//がめんフィルタのおとをだす
+textEntryH(40, "Enable Caption Sounds")		//テロップのおとをだす
+
+textEntryH(40, "Disable Shadows")			//かげをださない
+textEntryH(40, "Disable Eye Blinks")		//まばたきをしない
+textEntryH(40, "Don't look at camera")		//カメラめせんにしない
+textEntryH(40, "Disable Action Sounds")		//おとをださない
+textEntryH(40, "Disable Expression Sounds")	//ひょうじょうのこえをださない
+textEntryH(40, "Disable Effect Sounds")		//かんきょうエフェクトのおとをださない
+textEntryH(40, "Disable Filter Sounds")		//がめんフィルタのおとをださない
+textEntryH(40, "Disable Caption Sounds")	//テロップのおとをださない
