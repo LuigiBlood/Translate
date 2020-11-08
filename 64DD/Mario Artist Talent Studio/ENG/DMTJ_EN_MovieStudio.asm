@@ -2320,3 +2320,219 @@ textEntryH(40, "Disable Expression Sounds")	//ひょうじょうのこえをだ�
 textEntryH(40, "Disable Effect Sounds")		//かんきょうエフェクトのおとをださない
 textEntryH(40, "Disable Filter Sounds")		//がめんフィルタのおとをださない
 textEntryH(40, "Disable Caption Sounds")	//テロップのおとをださない
+
+
+//--Graffiti Maker
+seek(0x11DD5E4)
+base 0x80293E44
+movie16_1:
+textEntryH0("")					//80293E44 - ページ
+movie16_2:
+textEntryH0("Pen")				//80293E4C - ペン
+movie16_3:
+textEntryH0("Spray")			//80293E54 - スプレー
+
+movie16_4:
+textEntryH0("Thin")				//80293E60 - ほそい
+movie16_5:
+textEntryH0("Medium")			//80293E68 - ふつう
+movie16_6:
+textEntryH0("Thick")			//80293E70 - ふとい
+
+movie16_7:
+textEntryH0("Shapes")			//80293E78 - ずけい
+movie16_8:
+textEntryH0("Eraser")			//80293E80 - けしゴム
+movie16_9:
+textEntryH0("Fill")				//80293E8C - ぬりつぶし
+movie16_10:
+textEntryH0("Text")				//80293E98 - もじスタンプ
+movie16_11:
+textEntryH0("Text Color")		//80293EA8 - スタンプカラー
+movie16_12:
+textEntryH0("Clear")			//80293EB8 - ぜんたいをけす
+movie16_13:
+textEntryH0("Undo")				//80293EC8 - やりなおし
+movie16_14:
+textEntryH0("Free")				//80293ED4 - じゆうせん
+movie16_15:
+textEntryH0("Line")				//80293EE0 - ちょくせん
+movie16_16:
+textEntryH0("Rectangle")		//80293EEC - しかくけい
+movie16_17:
+textEntryH0("Solid Rectangle")	//80293EF8 - ぬりつぶしたしかくけい
+movie16_18:
+textEntryH0("Circle")			//80293F10 - えん
+movie16_19:
+textEntryH0("Solid Circle")		//80293F18 - ぬりつぶしたえん
+movie16_20:
+textEntryH0("1/2")				//80293F2C - 1/2ページ
+movie16_21:
+textEntryH0("Hiragana")			//80293F3C - ひらがな
+movie16_22:
+textEntryH0("Katakana")			//80293F48 - カタカナ
+movie16_23:
+textEntryH0("Kanji")			//80293F54 - かんじ
+movie16_24:
+textEntryH0("Uppercase")		//80293F5C - おおもじ
+movie16_25:
+textEntryH0("Lowercase")		//80293F68 - こもじ
+movie16_26:
+textEntryH0("Numbers/Symbols")	//80293F70 - すうじ・きごう
+movie16_27:
+textEntryH0("Small")			//80293F80 - ちいさい
+movie16_28:
+textEntryH0("Medium")			//80293F8C - ふつう
+movie16_29:
+textEntryH0("Large")			//80293F94 - おおきい
+movie16_30:
+textEntryH0("Exit")				//80293FA0 - でる
+movie16_31:
+textEntryH0("Cut & Copy")		//80293FA8 - きりとり・はりつけ
+movie16_32:
+textEntryH0("Grid Display")		//80293FBC - マスめひょうじのきりかえ
+movie16_33:
+textEntryH0("Unfill")			//80293FD8 - おなじいろをけす
+movie16_34:
+textEntryH0("Color Pattern 1")	//80293FEC - カラーパターン1
+
+check(0x11DD7A0)
+
+seek(0x11D0AC2); dh (movie16_7)
+seek(0x11D0EC6); dh (movie16_8)
+seek(0x11CE7BA); dh (movie16_9)
+seek(0x11CEDBA); dh (movie16_10)
+seek(0x11D150E); dh (movie16_11)
+seek(0x11CCD9A); dh (movie16_12)
+seek(0x11CDEDA); dh (movie16_13)
+seek(0x11D09F6); dh (movie16_30)
+seek(0x11D2036); dh (movie16_31)
+seek(0x11D1A1A); dh (movie16_32)
+seek(0x11CE062); dh (movie16_34)
+seek(0x11CE084); sb t1,movie16_34 + 14(at)
+
+seek(0x11DD7AC)
+dw (movie16_2), (movie16_3)
+dw (movie16_4), (movie16_5), (movie16_6)
+dw (movie16_15), (movie16_16), (movie16_18), (movie16_17), (movie16_19)
+dw (movie16_21), (movie16_22), (movie16_23), (movie16_25), (movie16_24), (movie16_26)
+dw (movie16_27), (movie16_28), (movie16_29)
+dw (movie16_4), (movie16_5), (movie16_6), (movie16_16), (movie16_18), (movie16_33)
+
+//Page Number Text (Graffiti) RAM 802801E8 - 0x11C9988
+seek(0x11C9988 + 0x14)
+sb 0,0(a0)
+seek(0x11C9988 + 0x3C)
+nop
+nop
+nop
+nop
+
+seek(0x11C9828 + 0xC)
+lbu a0,0(v0)
+sb v1,0(v0)
+addiu v0,v0,1
+seek(0x11C9828 + 0x24)
+sb 0,0(v0)
+
+
+seek(0x11DDCF8)
+base 0x80294558
+movie17_1:
+textEntryH0("Exit")					//80294558 - でる
+movie17_2:
+textEntryH0("Undo")					//80294560 - やりなおし
+movie17_3:
+textEntryH0("Draw Graffiti")		//8029456C - らくがき
+movie17_4:
+textEntryH0("Graffiti Effect")		//80294578 - だしかたをえらぶ
+movie17_5:
+textEntryH0("Graffiti Display")		//8029458C - ひょうじいちをえらぶ
+movie17_6:
+textEntryH0("Graffiti Album")		//802945A4 - らくがきアルバム
+//Graffiti Display
+movie17_7:
+textEntryH0("Behind the Actor")		//802945B8 - タレントのうしろ
+movie17_8:
+textEntryH0("Above the Actor")		//802945CC - タレントのまえ
+movie17_9:
+textEntryH0("Above the Caption")	//802945DC - テロップのつぎ
+//Graffiti Effects
+movie17_10:
+textEntryH0("Normal")				//802945EC - ふつう
+movie17_11:
+textEntryH0("Flash")				//802945F4 - てんめつ
+movie17_12:
+textEntryH0("Translucent")			//80294600 - はんとうめい
+movie17_13:
+textEntryH0("Enter from the Right")	//80294610 - みぎからでてとまる
+movie17_14:
+textEntryH0("Scroll Right")			//80294624 - みぎスクロール
+movie17_15:
+textEntryH0("Scroll Up")			//80294634 - うえスクロール
+movie17_16:
+textEntryH0("Loop")					//80294644 - ループ
+
+movie17_17:
+textEntryH0("Diagonal Scroll")		//8029464C - ななめスクロール
+movie17_18:
+textEntryH0("Flying")				//80294660 - とぶ
+movie17_19:
+textEntryH0("Turn Around")			//80294668 - まわる
+movie17_20:
+textEntryH0("Fall")					//80294670 - おちる
+movie17_21:
+textEntryH0("Horizontal Strips")	//80294678 - さゆうがったい
+movie17_22:
+textEntryH0("Vertical Strips")		//80294688 - じょうげがったい
+movie17_23:
+textEntryH0("Crush")				//8029469C - つぶれる
+
+movie17_24:
+textEntryH0("Zoom In")				//802946A8 - おおきくなる
+movie17_25:
+textEntryH0("Zoom Out")				//802946B8 - ちいさくなる
+movie17_26:
+textEntryH0("Back & Forth")			//802946C8 - ぜんご
+movie17_27:
+textEntryH0("Rotation")				//802946DC - かいてん
+movie17_28:
+textEntryH0("2 Rotations")			//802946D0 - 2かいてん
+movie17_29:
+textEntryH0("Rise Up")				//802946E8 - おきあがる
+movie17_30:
+textEntryH0("Crawl")				//802946F4 - おくへスクロール
+
+check(0x11DDEA8)
+
+seek(0x11D9072); dh (movie17_1)
+seek(0x11D957A); dh (movie17_2)
+seek(0x11D913A); dh (movie17_3)
+seek(0x11D924E); dh (movie17_4)
+seek(0x11D935A); dh (movie17_5)
+seek(0x11D9466); dh (movie17_6)
+
+seek(0x11DDEA8)
+dw (movie17_10), (movie17_11), (movie17_12), (movie17_13), (movie17_14), (movie17_15), (movie17_16)
+dw (movie17_17), (movie17_18), (movie17_19), (movie17_20), (movie17_21), (movie17_22), (movie17_23)
+dw (movie17_24), (movie17_25), (movie17_26), (movie17_27), (movie17_28), (movie17_29), (movie17_30)
+
+dw (movie17_7), (movie17_8), (movie17_9)
+
+//--Graffiti Album
+seek(0x11F6138)
+textEntryH(40, "Exit (Save Album)")			//でる(アルバムのセーブ)
+textEntryH(40, "Undo")						//やりなおし
+textEntryH(40, "Grab Graffiti")				//らくがきをつかむ
+textEntryH(40, "Use Graffiti from Album")	//アルバムにのこす
+textEntryH(40, "Save Graffiti to Album")	//アルバムからよびだす
+
+seek(0x11DE000)
+//アルバムのらくがきを|消します。|よろしいですか？
+textEntryASCII0("This Graffiti will be deleted.|Are you sure?")
+
+
+//--Image Processing Text
+seek(0x12A5138); textEntryH("Save")			//けってい
+seek(0x12A514C); textEntryH("Undo")			//やりなおし
+seek(0x12A5160); textEntryH("Go Back")		//もどる
