@@ -4,6 +4,12 @@ arch snes.cpu
 //Doc:
 //409000 - Text Rendering Buffer
 //40A400 - Text Virtual Tileset
+//40AE06 - Item Name (Pause Menu)
+
+//44*8=352 pixels wide per line for Search Mode
+//48*8=384 pixels wide per line outside Search Mode
+//32*8=256 pixels wide per line for Item Name in Pause Menu
+
 
 //VWF Hack - Search Mode
 seekFile($2BFD2C)	//SNES CPU - Text
@@ -92,6 +98,40 @@ setup_vwf_rs:
 	jsl setup_vwf
 	rts
 
+reset_vwf_ri:
+	jsl reset_vwf_direct
+	lda.w #$7f7f
+	rts
+
+//VWF Hack - Item Name in Pause Menu
+seekFile($2FBA48)
+	jsr reset_vwf_ri
+seekFile($0072B3)
+	jsr setup_vwf_ri1
+seekFile($0072E6)
+	jsr setup_vwf_ri2
+seekFile($0073A7)
+	jsl main_vwf1i
+seekFile($0073AD)
+	jsl main_vwf2i
+seekFile($007307)	
+	jsl next_vwf
+seekFile($0072A1)
+	cmp.w #$002E
+	db $90
+	
+	
+seekAddr($00FD00)
+setup_vwf_ri1:
+	and.w #$03FF
+	jsl setup_vwf
+	rts
+
+setup_vwf_ri2:
+	and.w #$07FF
+	jsl setup_vwf
+	rts
+
 seekFile((text_script_end & $3FFFFF))
 //vwf routine here, A = gfx src, X = gfx dst, Y = vertical pixel
 //16-bit A / Index
@@ -107,6 +147,11 @@ define chardelta($FA)
 define charmode($FC)	//0 = Search, 1 = Small
 define chara2($FE)
 define charcurrent($9C)
+
+reset_vwf_direct:
+	stz {charshift}
+	stz {charsize}
+	rtl
 
 reset_vwf:
 	pha
@@ -152,7 +197,7 @@ _reset_vwf_skip:
 +;	bit.w #$10
 	beq +
 	clc
-	adc #$10
+	adc.w #$10
 +;	sta {charcurrent}
 	bra _reset_vwf_zero
 	
@@ -319,6 +364,24 @@ main_vwf2s:
 	sta {chardelta}
 	pla
 	jmp main_vwf
+	
+main_vwf1i:
+	//Assume 16-bit A / Index
+	stz {charmode}
+	pha
+	lda.w #$1E06
+	sta {chardelta}
+	pla
+	jmp main_vwf
+	
+main_vwf2i:
+	//Assume 16-bit A / Index
+	stz {charmode}
+	pha
+	lda.w #$1F06
+	sta {chardelta}
+	pla
+	jmp main_vwf
 
 	//Setup Char to be rendered
 setup_vwf:
@@ -410,6 +473,42 @@ next_vwf:
 	rtl
 
 width_list:
+	db 12, 12, 12, 12, 12, 12, 12, 12
+	db 6,  12, 12, 12, 14, 12, 12, 12
+	db 12, 12, 12, 14, 12, 14, 14, 14
+	db 14, 12, 6,  12, 6,  12, 12, 8
+	db 12, 12, 12, 12, 12, 12, 12, 12
+	db 12, 12, 12, 12, 12, 12, 12, 12
+	db 6,  10, 12, 6,  14, 12, 12, 12
+	db 12, 10, 12, 12, 12, 14, 14, 14
+	
+	db 14, 12, 14, 12, 12, 9,  14, 6
+	db 14, 9,  9,  9,  16, 10, 14, 14
+	db 16, 16, 16, 13, 14, 15, 15, 14
+	db 11, 14, 14, 16, 16, 16, 16, 16
+	db 16, 16, 16, 16, 16, 16, 16, 16
+	db 16, 16, 16, 16, 16, 16, 16, 16
+	db 16, 16, 16, 16, 16, 16, 16, 16
+	db 16, 16, 16, 16, 16, 16, 16, 16
+	
+	db 16, 16, 16, 16, 16, 16, 16, 16
+	db 16, 16, 16, 16, 16, 16, 16, 16
+	db 16, 16, 16, 16, 16, 16, 16, 16
+	db 16, 16, 16, 16, 16, 16, 16, 16
+	db 12, 12, 12, 12, 12, 12, 12, 12
+	db 6,  12, 12, 12, 14, 12, 12, 12
+	db 12, 12, 12, 14, 12, 14, 14, 14
+	db 14, 12, 12, 12, 12, 12, 12, 12
+	
+	db 12, 12, 6,  10, 12, 6,  14, 12
+	db 12, 12, 12, 10, 12, 12, 12, 14
+	db 14, 14, 14, 12, 12, 8,  12, 12
+	db 12, 12, 12, 12, 12, 12, 14, 6
+	db 12, 16, 9,  9,  9,  16, 10, 12
+	db 6,  12, 14, 7,  16, 16, 16, 16
+	
+
+//Old Global
 	db 16, 16, 16, 16, 16, 16, 16, 14
 	db 13, 13, 13, 13, 6,  6,  8,  8
 	db 16, 16, 16, 16, 16, 16, 16, 16
