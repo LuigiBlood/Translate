@@ -34,10 +34,12 @@ seekFile($2FBD58)
 jsl next_vwf
 
 seekFile($2FBFB5)
-jsl main_vwf1
+//jsl main_vwf1
+jsl render_vwf1m
 
 seekFile($2FBFCF)
-jsl main_vwf2
+//jsl main_vwf2
+jsl render_vwf2m
 
 seekFile($2FC03F)
 db $90
@@ -65,10 +67,12 @@ seekFile($2FDF94)
 jsl next_vwf
 
 seekFile($2FE047)
-jsl main_vwf1s
+//jsl main_vwf1s
+jsl render_vwf1s
 
 seekFile($2FE05C)
-jsl main_vwf2s
+//jsl main_vwf2s
+jsl render_vwf2s
 
 seekFile($2FDF28)	//Space Fix
 nop
@@ -111,9 +115,11 @@ seekFile($0072B3)
 seekFile($0072E6)
 	jsr setup_vwf_ri2
 seekFile($0073A7)
-	jsl main_vwf1i
+	//jsl main_vwf1i
+	jsl render_vwf1i
 seekFile($0073AD)
-	jsl main_vwf2i
+	//jsl main_vwf2i
+	jsl render_vwf2i
 seekFile($007307)	
 	jsl next_vwf
 seekFile($0072A1)
@@ -137,17 +143,19 @@ seekFile((text_script_end & $3FFFFF))
 //16-bit A / Index
 
 //D = 3500, DB = 00
-define charshift($EE)
-define charsize($F0)
+define charcurrent($9C)	//(Global) Current Char Tile
+define charshift($EE)	//(Global) Shift
+define charsize($F0)	//(Global) Width of 8x16
+
 define charx($F2)
 define chary($F4)
 define chara($F6)
 define charx2($F8)
-define chardelta($FA)
+define chardelta($FA)	//Address
 define charmode($FC)	//0 = Search, 1 = Small
 define chara2($FE)
-define charcurrent($9C)
 
+//--Reset VWF Vars
 reset_vwf_direct:
 	stz {charshift}
 	stz {charsize}
@@ -200,19 +208,33 @@ _reset_vwf_skip:
 	adc.w #$10
 +;	sta {charcurrent}
 	bra _reset_vwf_zero
-	
-	//Search Mode VWF Rendering
-main_vwf:
-	//Assume 16-bit A / Index
-	sta {chara}
-	stx {charx}
-	stx {charx2}
-	sty {chary}
+
+
+//--Render VWF
+render_vwf_char:
+	//Stack:
+	//$01 (8)  P
+	//$02 (16) A
+	//$04 (16) A
+	//$06 (16) X
+	//$08 (16) X
+	//$0A (16) Y
+	//Args:
+	//$0C (16) Delta Address
+	//$0E (16) Char Mode (0 = Search, 1 = Small)
+	//$10 (16) Char XOR
+
+	//Assume 16-bit A / XY
+	phy
+	phx
+	phx
+	pha
+	pha
 	php
-	
+
 	rep #$30
-	
-	//Wrap for the second tile
+
+	//Wrap for second tile
 	txa
 	and.w #$00F0
 	cmp.w #$00F0
@@ -220,173 +242,165 @@ main_vwf:
 	txa
 	clc
 	adc.w #$0100
-	sta {charx2}
+	sta $08,s
 
-	//Deal with calculation error
+	//Deal with calc error
 +;	txa
 	and.w #$0100
 	beq +
 	clc
-	adc {charx}
-	sta {charx}
-	sta {charx2}
+	adc $06,s
+	sta $06,s
+	sta $08,s
 
 	//Add Delta
-+;	lda {charx}
++;	lda $06,s
 	clc
-	adc {chardelta}
-	eor {charmode}
-	sta {charx}
-	
-	lda {charx2}
+	adc $0C,s
+	eor $0E,s
+	sta $06,s
+
+	lda $08,s
 	clc
-	adc {chardelta}
-	eor {charmode}
-	sta {charx2}
-	
+	adc $0C,s
+	eor $0E,s
+	sta $08,s
+
 	//16-bit Shift Right (0xLLRR, LL = Left Tile, RR = Right Tile)
-	lda {chara}
+	lda $02,s
 	and.w #$00FF
 	xba
-	
 	ldx {charshift}
-	beq +
+	beq _render_vwf_left_replace
 -;	lsr
 	dex
 	bne -
-	jmp _main_vwf_left
+	jmp _render_vwf_left
 
-_main_vwf_left_replace:
-	//Render left tile of char (replace)
-+;	sta {chara2}
+_render_vwf_left_replace:
+	sta $04,s
 	xba
+
 	sep #$20
-	
 	pha
-	ldx {charx}
 	rep #$20
-	txa
-	eor.w #1
+
+	lda $06+1,s
+	tax
+	eor.w #$0001
 	tay
 	sep #$20
 	pla
 	sta $409000,x
-	eor #$FF
+	eor $10,s
 	tyx
 	sta $409000,x
-	jmp _main_vwf_right
+	jmp _render_vwf_right
 
-_main_vwf_left:
-	//Render left tile of char
-+;	sta {chara2}
+_render_vwf_left:
+	sta $04,s
 	xba
+
 	sep #$20
-	
 	pha
-	ldx {charx}
 	rep #$20
-	txa
-	eor.w #1
+
+	lda $06+1,s
+	tax
+	eor.w #$0001
 	tay
 	sep #$20
 	pla
 	ora $409000,x
 	sta $409000,x
-	eor #$FF
+	eor $10,s
 	tyx
 	sta $409000,x
 
-_main_vwf_right:
+_render_vwf_right:
 	//Render right tile of char (if needed)
 	sep #$20
-	lda {chara2}
-	//beq ++
-	
-+;	pha
-	ldx {charx2}
+	lda $04,s
+	//beq _render_vwf_end
+
+	pha
 	rep #$20
-	txa
-	eor.w #1
+	lda $08+1,s
+	tax
+	eor.w #$0001
 	tay
 	sep #$20
 	pla
 	sta $409010,x
-	eor #$FF
+	eor $10,s
 	tyx
 	sta $409010,x
-	
-	+;
+
+_render_vwf_end:
 	plp
-	//Restore Values
-	lda {charx}
+	plx	//A
+	ply	//A2
+	pla	//X1
 	sec
-	sbc {chardelta}
-	eor {charmode}
+	sbc $0C-7,s
+	eor $0E-7,s
+	txy
 	tax
-	
-	lda {chara}
-	ldy {chary}
+	tya
+	ply	//X2
+	ply	//Y
+
+	pla
+	pla
+	pla
+
 	rtl
 
-main_vwf1:
-	//Assume 16-bit A / Index
-	stz {charmode}
-	stz {chardelta}
-	jmp main_vwf
-	
-main_vwf2:
-	//Assume 16-bit A / Index
-	stz {charmode}
-	pha
-	lda.w #$0100
-	sta {chardelta}
-	pla
-	jmp main_vwf
 
-main_vwf1s:
-	//Assume 16-bit A / Index
-	xba
-	pha
-	lda.w #$0001
-	sta {charmode}
-	pla
-	stz {chardelta}
-	jmp main_vwf
-	
-main_vwf2s:
-	//Assume 16-bit A / Index
-	xba
-	pha
-	lda.w #$0001
-	sta {charmode}
-	xba
-	//lda.w #$0100
-	sta {chardelta}
-	pla
-	jmp main_vwf
-	
-main_vwf1i:
-	//Assume 16-bit A / Index
-	stz {charmode}
-	pha
-	lda.w #$1E06
-	sta {chardelta}
-	pla
-	jmp main_vwf
-	
-main_vwf2i:
-	//Assume 16-bit A / Index
-	stz {charmode}
-	pha
-	lda.w #$1F06
-	sta {chardelta}
-	pla
-	jmp main_vwf
+//Search Mode Hook
+render_vwf1m:
+	pea $FFFF	//XOR
+	pea $0000	//Char Mode
+	pea $0000	//Delta Address
+	jmp render_vwf_char
 
-	//Setup Char to be rendered
+render_vwf2m:
+	pea $FFFF	//XOR
+	pea $0000	//Char Mode
+	pea $0100	//Delta Address
+	jmp render_vwf_char
+
+//Small Text Hook
+render_vwf1s:
+	pea $FFFF	//XOR
+	pea $0001	//Char Mode
+	pea $0000	//Delta Address
+	jmp render_vwf_char
+
+render_vwf2s:
+	pea $FFFF	//XOR
+	pea $0001	//Char Mode
+	pea $0100	//Delta Address
+	jmp render_vwf_char
+
+//Item Menu Hook
+render_vwf1i:
+	pea $0000	//XOR
+	pea $0000	//Char Mode
+	pea $1E06	//Delta Address
+	jmp render_vwf_char
+
+render_vwf2i:
+	pea $0000	//XOR
+	pea $0000	//Char Mode
+	pea $1F06	//Delta Address
+	jmp render_vwf_char
+
+
+//--Setup Char to be rendered
 setup_vwf:
 	//16-bit A / Index
-	//A = ID
+	//A = Char ID
 	phx
 	phy
 	pha
@@ -399,7 +413,7 @@ setup_vwf:
 	tay
 	lsr
 	tax
-	lda width_list,x
+	lda width_list,x	//Get Char Width
 	and.w #$00FF
 	tax
 	tya
@@ -407,16 +421,16 @@ setup_vwf:
 	beq setup_vwf_1
 	
 setup_vwf_2:
-	txa
-	sec
-	sbc.w #8
+	txa					//If Char ID is Odd (Right Half)
+	sec					//Then Size = Width - 8
+	sbc.w #8			//If Size < 0 then Size = 0
 	bmi setup_vwf_0
 	bra setup_vwf_end
 
 setup_vwf_1:
-	txa
-	cmp.w #8
-	bcc setup_vwf_end
+	txa					//If Char ID is Even (Left Half)
+	cmp.w #8			//If Width > 8 then Size = 8
+	bcc setup_vwf_end	//Else Size = Width
 	lda.w #8
 	bra setup_vwf_end
 
@@ -441,7 +455,7 @@ setup_vwf_end:
 	
 	rtl
 
-	//Setup Next Char and update shift and size
+//--Setup Next Char and update shift and size
 next_vwf:
 	//16-bit A / Index
 	pha
@@ -472,7 +486,9 @@ next_vwf:
 	
 	rtl
 
+//--List of Pixel Widths per Char
 width_list:
+//English Translation Font
 	db 12, 12, 12, 12, 12, 12, 12, 12
 	db 6,  12, 12, 12, 14, 12, 12, 12
 	db 12, 12, 12, 14, 12, 14, 14, 14
@@ -508,7 +524,7 @@ width_list:
 	db 6,  12, 14, 7,  16, 16, 16, 16
 	
 
-//Old Global
+//Old Global Font
 	db 16, 16, 16, 16, 16, 16, 16, 14
 	db 13, 13, 13, 13, 6,  6,  8,  8
 	db 16, 16, 16, 16, 16, 16, 16, 16
