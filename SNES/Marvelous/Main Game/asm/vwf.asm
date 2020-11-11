@@ -10,73 +10,50 @@ arch snes.cpu
 //48*8=384 pixels wide per line outside Search Mode
 //32*8=256 pixels wide per line for Item Name in Pause Menu
 
+//D = 3500, DB = 00
+define charcurrent($9C)	//(Global) Current Char Tile
+define charshift($EE)	//(Global) Shift
+define charsize($F0)	//(Global) Width of 8x16
+
 
 //VWF Hack - Search Mode
 seekFile($2BFD2C)	//SNES CPU - Text
-jsr reset_vwf_r1
-nop
-nop
-nop
-
+	jsr reset_vwf_r1
+	nop
+	nop
+	nop
 seekFile($2FB64E)	//SA-1 - Items
-jsr reset_vwf_r2
-
+	jsr reset_vwf_r2
 seekFile($2FB6C9)	//SA-1 - Text
-jsr reset_vwf_r2
-
+	jsr reset_vwf_r2
 seekFile($2FBD0C)
-jsr setup_vwf_r
-
+	jsr setup_vwf_r
 seekFile($2FBD3C)
-jsr setup_vwf_r
-
+	jsr setup_vwf_r
 seekFile($2FBD58)
-jsl next_vwf
-
-seekFile($2FBFB5)
-//jsl main_vwf1
-jsl render_vwf1m
-
-seekFile($2FBFCF)
-//jsl main_vwf2
-jsl render_vwf2m
-
+	jsl next_vwf
 seekFile($2FC03F)
-db $90
-//bcc $81B864		//Fix
-
+	db $90
+	//bcc $81B864		//Fix
 seekFile($2FC02A)
-db $B0
-//bcs $81B879		//Fix
-
+	db $B0
+	//bcs $81B879		//Fix
 seekFile($2FBCD5)	//Space Fix
-nop
-nop
+	nop
+	nop
 
 //VWF Hack - Small Text
 seekFile($2FDDD2)
-jsr reset_vwf_r2
-
+	jsr reset_vwf_r2
 seekFile($2FDF48)
-jsr setup_vwf_rs
-
+	jsr setup_vwf_rs
 seekFile($2FDF78)
-jsr setup_vwf_rs
-
+	jsr setup_vwf_rs
 seekFile($2FDF94)
-jsl next_vwf
-
-seekFile($2FE047)
-//jsl main_vwf1s
-jsl render_vwf1s
-
-seekFile($2FE05C)
-//jsl main_vwf2s
-jsl render_vwf2s
-
+	jsl next_vwf
 seekFile($2FDF28)	//Space Fix
-nop
-nop
+	nop
+	nop
 
 seekFile($2BFD70)
 reset_vwf_r1:
@@ -114,19 +91,12 @@ seekFile($0072B3)
 	jsr setup_vwf_ri1
 seekFile($0072E6)
 	jsr setup_vwf_ri2
-seekFile($0073A7)
-	//jsl main_vwf1i
-	jsl render_vwf1i
-seekFile($0073AD)
-	//jsl main_vwf2i
-	jsl render_vwf2i
 seekFile($007307)	
 	jsl next_vwf
 seekFile($0072A1)
 	cmp.w #$002E
 	db $90
-	
-	
+
 seekAddr($00FD00)
 setup_vwf_ri1:
 	and.w #$03FF
@@ -138,22 +108,90 @@ setup_vwf_ri2:
 	jsl setup_vwf
 	rts
 
+
+seekFile($2FBF97)
+//--Search Mode VWF Rendering
+render_vwf_search:
+	ldy.w #$0000
+	lda.w #$0007
+	sta $0F
+	-;
+	//Upper Tile
+	pea $0000
+	lda [$04],y
+	jsl render_vwf_search_manage
+	pla
+
+	//Lower Tile
+	pea $0100
+	lda [$08],y
+	jsl render_vwf_search_manage
+	pla
+
+	inx
+	inx
+	iny
+	iny
+	dec $0F
+	bpl -
+	rts
+bound_check($2FBFDB)
+
+seekFile($2FE02E)
+//--Small Text VWF Rendering
+render_vwf_small:
+	ldy.w #$0000
+	lda.w #$0007
+	sta $0F
+	-;
+	//Upper Tile
+	pea $0000
+	lda [$04],y
+	jsl render_vwf_small_manage
+	pla
+
+	//Lower Tile
+	pea $0100
+	lda [$08],y
+	jsl render_vwf_small_manage
+	pla
+
+	inx
+	inx
+	iny
+	iny
+	dec $0F
+	bpl -
+	rts
+bound_check($2FE068)
+
+seekFile($0073A0)
+//--Inventory VWF Rendering
+render_vwf_inventory:
+	lda.w #$0007
+	sta $0F
+	-;
+	//Upper Tile
+	lda [$04],y
+	jsl render_vwf_inventory1
+
+	//Lower Tile
+	lda [$08],y
+	jsl render_vwf_inventory2
+
+	inx
+	inx
+	iny
+	iny
+	dec $0F
+	bpl -
+	rts
+bound_check($0073BA)
+
+
 seekFile((text_script_end & $3FFFFF))
 //vwf routine here, A = gfx src, X = gfx dst, Y = vertical pixel
 //16-bit A / Index
-
-//D = 3500, DB = 00
-define charcurrent($9C)	//(Global) Current Char Tile
-define charshift($EE)	//(Global) Shift
-define charsize($F0)	//(Global) Width of 8x16
-
-define charx($F2)
-define chary($F4)
-define chara($F6)
-define charx2($F8)
-define chardelta($FA)	//Address
-define charmode($FC)	//0 = Search, 1 = Small
-define chara2($FE)
 
 //--Reset VWF Vars
 reset_vwf_direct:
@@ -210,30 +248,55 @@ _reset_vwf_skip:
 	bra _reset_vwf_zero
 
 
-//--Render VWF
-render_vwf_char:
+//--VWF Rendering
+render_vwf_main:
+	//X = Render Address
 	//Stack:
-	//$01 (8)  P
-	//$02 (16) A
-	//$04 (16) A
-	//$06 (16) X
-	//$08 (16) X
-	//$0A (16) Y
-	//Args:
-	//$0C (16) Delta Address
-	//$0E (16) Char Mode (0 = Search, 1 = Small)
-	//$10 (16) Char XOR
-
-	//Assume 16-bit A / XY
-	phy
+	//$01 - 16b 1st Tile Addr
+	//$03 - 16b 2nd Tile Addr
+	//$05 - 16b Return Address
+	//$07 - 16b First Half
+	//$09 - 16b Second Half
 	phx
 	phx
-	pha
-	pha
-	php
+	jsr render_vwf_addr
 
-	rep #$30
+	lda {charshift}
+	beq +
 
+	plx
+	sep #$20
+
+	lda $07-2,s
+	and $0D
+	sta $07-2,s
+	lda $08-2,s
+	and $0D
+	sta $08-2,s
+
+	lda $409000,x
+	and $0C
+	xba
+	lda $409001,x
+	and $0C
+	xba
+
+	rep #$20
+	ora $07-2,s
+	sta $409000,x
+	bra ++
+
++;	plx
+	lda $07-2,s
+	sta $409000,x
+
++;	plx
+	lda $09-4,s
+	sta $409010,x
+
+	rts
+
+render_vwf_addr:
 	//Wrap for second tile
 	txa
 	and.w #$00F0
@@ -242,159 +305,188 @@ render_vwf_char:
 	txa
 	clc
 	adc.w #$0100
-	sta $08,s
+	sta $03+2,s
 
 	//Deal with calc error
 +;	txa
 	and.w #$0100
 	beq +
 	clc
-	adc $06,s
-	sta $06,s
-	sta $08,s
+	adc $01+2,s
+	sta $01+2,s
+	sta $03+2,s
 
-	//Add Delta
-+;	lda $06,s
++;	lda $01+2,s
 	clc
-	adc $0C,s
-	eor $0E,s
-	sta $06,s
-
-	lda $08,s
+	adc $16,s
+	sta $01+2,s
+	lda $03+2,s
 	clc
-	adc $0C,s
-	eor $0E,s
-	sta $08,s
+	adc $16,s
+	sta $03+2,s
 
-	//16-bit Shift Right (0xLLRR, LL = Left Tile, RR = Right Tile)
-	lda $02,s
+	rts
+
+render_vwf_shift:
+	phx
 	and.w #$00FF
 	xba
 	ldx {charshift}
-	beq _render_vwf_left_replace
+	beq +
 -;	lsr
 	dex
 	bne -
-	jmp _render_vwf_left
++;	plx
+	rts
 
-_render_vwf_left_replace:
+render_vwf_search_manage:
+			//$0E
+			//$0B
+	phy		//$09
+	phx		//$07
+	pha		//$05
+	pha		//$03
+	pha		//$01
+
+	xba
+	pha
+	and $05+2,s
+	sta $0C
+	pla
+	and.w #$00FF
+	eor.w #$00FF
+	ora $05,s
+	eor.w #$FFFF
+	ora $0C
+
+	jsr render_vwf_shift
+
+	sep #$20
+	sta $03,s
+	eor.b #$FF
 	sta $04,s
 	xba
-
-	sep #$20
-	pha
+	sta $01,s
+	eor.b #$FF
+	sta $02,s
 	rep #$20
 
-	lda $06+1,s
-	tax
-	eor.w #$0001
-	tay
-	sep #$20
-	pla
-	sta $409000,x
-	eor $10,s
-	tyx
-	sta $409000,x
-	jmp _render_vwf_right
+	lda.w #$00FF
+	jsr render_vwf_shift
+	sta $0C
 
-_render_vwf_left:
-	sta $04,s
-	xba
-
-	sep #$20
-	pha
-	rep #$20
-
-	lda $06+1,s
-	tax
-	eor.w #$0001
-	tay
-	sep #$20
-	pla
-	ora $409000,x
-	sta $409000,x
-	eor $10,s
-	tyx
-	sta $409000,x
-
-_render_vwf_right:
-	//Render right tile of char (if needed)
-	sep #$20
-	lda $04,s
-	//beq _render_vwf_end
-
-	pha
-	rep #$20
-	lda $08+1,s
-	tax
-	eor.w #$0001
-	tay
-	sep #$20
-	pla
-	sta $409010,x
-	eor $10,s
-	tyx
-	sta $409010,x
-
-_render_vwf_end:
-	plp
-	plx	//A
-	ply	//A2
-	pla	//X1
-	sec
-	sbc $0C-7,s
-	eor $0E-7,s
-	txy
-	tax
-	tya
-	ply	//X2
-	ply	//Y
+	jsr render_vwf_main
 
 	pla
 	pla
 	pla
-
+	plx
+	ply
 	rtl
 
 
-//Search Mode Hook
-render_vwf1m:
-	pea $FFFF	//XOR
-	pea $0000	//Char Mode
-	pea $0000	//Delta Address
-	jmp render_vwf_char
+render_vwf_small_manage:
+			//$0E
+			//$0B
+	phy		//$09
+	phx		//$07
+	pha		//$05
+	pha		//$03
+	pha		//$01
 
-render_vwf2m:
-	pea $FFFF	//XOR
-	pea $0000	//Char Mode
-	pea $0100	//Delta Address
-	jmp render_vwf_char
+	xba
+	pha
+	and $05+2,s
+	sta $0C
+	pla
+	and.w #$00FF
+	eor.w #$00FF
+	ora $05,s
+	sta $0C
 
-//Small Text Hook
-render_vwf1s:
-	pea $FFFF	//XOR
-	pea $0001	//Char Mode
-	pea $0000	//Delta Address
-	jmp render_vwf_char
+	jsr render_vwf_shift
 
-render_vwf2s:
-	pea $FFFF	//XOR
-	pea $0001	//Char Mode
-	pea $0100	//Delta Address
-	jmp render_vwf_char
+	sep #$20
+	sta $03,s
+	xba
+	sta $01,s
+	rep #$20
 
-//Item Menu Hook
-render_vwf1i:
-	pea $0000	//XOR
-	pea $0000	//Char Mode
-	pea $1E06	//Delta Address
-	jmp render_vwf_char
+	lda $0C
+	xba
+	jsr render_vwf_shift
 
-render_vwf2i:
-	pea $0000	//XOR
-	pea $0000	//Char Mode
-	pea $1F06	//Delta Address
-	jmp render_vwf_char
+	sep #$20
+	sta $04,s
+	xba
+	sta $02,s
+	rep #$20
+
+	lda.w #$00FF
+	jsr render_vwf_shift
+	sta $0C
+
+	jsr render_vwf_main
+
+	pla
+	pla
+	pla
+	plx
+	ply
+	rtl
+
+render_vwf_inventory1:
+	pea $1E06
+	jsl render_vwf_inventory_manage
+	pla
+	rtl
+render_vwf_inventory2:
+	pea $1F06
+	jsl render_vwf_inventory_manage
+	pla
+	rtl
+
+render_vwf_inventory_manage:
+			//$0E
+			//$0B
+	phy		//$09
+	phx		//$07
+	pha		//$05
+	pha		//$03
+	pha		//$01
+
+	sta $0C
+
+	jsr render_vwf_shift
+
+	sep #$20
+	sta $03,s
+	xba
+	sta $01,s
+	rep #$20
+
+	lda $0C
+	xba
+	jsr render_vwf_shift
+
+	sep #$20
+	sta $04,s
+	xba
+	sta $02,s
+	rep #$20
+
+	lda.w #$00FF
+	jsr render_vwf_shift
+	sta $0C
+
+	jsr render_vwf_main
+
+	pla
+	pla
+	pla
+	plx
+	ply
+	rtl
 
 
 //--Setup Char to be rendered
