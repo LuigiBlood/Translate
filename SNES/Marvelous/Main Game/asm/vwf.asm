@@ -26,9 +26,9 @@ seekFile($2FB64E)	//SA-1 - Items
 	jsr reset_vwf_r2
 seekFile($2FB6C9)	//SA-1 - Text
 	jsr reset_vwf_r2
-seekFile($2FBD0C)
+seekFile($2FBD0C)	//Left Half of Char
 	jsr setup_vwf_r
-seekFile($2FBD3C)
+seekFile($2FBD3C)	//Right Half of Char
 	jsr setup_vwf_r
 seekFile($2FBD58)
 	jsl next_vwf
@@ -340,8 +340,8 @@ render_vwf_shift:
 	rts
 
 render_vwf_search_manage:
-			//$0E
-			//$0B
+			//$0E - Address (from 409000)
+			//$0B - Return
 	phy		//$09
 	phx		//$07
 	pha		//$05
@@ -386,8 +386,8 @@ render_vwf_search_manage:
 
 
 render_vwf_small_manage:
-			//$0E
-			//$0B
+			//$0E - Address (from 409000)
+			//$0B - Return
 	phy		//$09
 	phx		//$07
 	pha		//$05
@@ -447,8 +447,8 @@ render_vwf_inventory2:
 	rtl
 
 render_vwf_inventory_manage:
-			//$0E
-			//$0B
+			//$0E - Address (from 409000)
+			//$0B - Return
 	phy		//$09
 	phx		//$07
 	pha		//$05
@@ -497,11 +497,6 @@ setup_vwf:
 	phy
 	pha
 	
-	sec
-	//sbc.w #$0140
-	sbc.w #$0
-	bcc +
-	
 	tay
 	lsr
 	tax
@@ -516,7 +511,7 @@ setup_vwf_2:
 	txa					//If Char ID is Odd (Right Half)
 	sec					//Then Size = Width - 8
 	sbc.w #8			//If Size < 0 then Size = 0
-	bmi setup_vwf_0
+	//bmi setup_vwf_0
 	bra setup_vwf_end
 
 setup_vwf_1:
@@ -556,15 +551,26 @@ next_vwf:
 	
 	lda {charsize}
 	bne +
+	//If Char Size == 0 then do not go to next tile
 	dec {charcurrent}
 	clc
 	adc {charshift}
 	bra ++
-	
+
+	//If Char Size != 0 then check if next tile is needed
 +;	clc
 	adc {charshift}
 	cmp.w #$0008
 	bcs +
+	dec {charcurrent}
+
+	//If Size + Shift < 0 then go back a tile
++;
+	bpl +
+-;	clc
+	adc.w #$0008
+	dec {charcurrent}
+	bmi -
 	dec {charcurrent}
 +;	and.w #$0007
 	sta {charshift}
@@ -614,47 +620,5 @@ width_list:
 	db 12, 12, 12, 12, 12, 12, 14, 6
 	db 12, 16, 9,  9,  9,  16, 10, 12
 	db 6,  12, 14, 7,  16, 16, 16, 16
-	
 
-//Old Global Font
-	db 16, 16, 16, 16, 16, 16, 16, 14
-	db 13, 13, 13, 13, 6,  6,  8,  8
-	db 16, 16, 16, 16, 16, 16, 16, 16
-	db 16, 16, 16, 14, 12, 12, 12, 12
-	db 12, 12, 16, 12, 12, 12, 12, 12
-	db 6,  6,  8,  8,  13, 12, 12, 12
-	db 12, 12, 16, 13, 13, 13, 13, 14
-	db 16, 16, 16, 16, 16, 16, 16, 16
-	
-	db 16, 16, 16, 16, 16, 16, 16, 16
-	db 16, 16, 16, 16, 16, 16, 16, 16
-	db 16, 16, 16, 16, 16, 16, 16, 16
-	db 16, 16, 16, 16, 16, 16, 16, 16
-	db 16, 16, 16, 16, 16, 16, 16, 16
-	db 16, 16, 16, 16, 16, 16, 16, 16
-	db 16, 16, 16, 16, 16, 16, 16, 16
-	db 16, 16, 16, 16, 16, 16, 16, 16
-
-	db 16, 16, 16, 16, 16, 16, 16, 16
-	db 16, 16, 16, 16, 16, 16, 16, 16
-	db 16, 16, 16, 16, 16, 16, 16, 16
-	db 16, 16, 16, 16, 16, 16, 16, 16
-	db 16, 14, 14, 14, 13, 14, 15, 14	//ABCDEFGH
-	db 6,  11, 14, 14, 16, 16, 16, 14
-	db 16, 15, 14, 16, 16, 16, 16, 16
-	db 16, 14, 12, 12, 12, 12, 12, 12
-	
-	db 13, 13, 6,  9,  12, 6,  16, 13	//ghijklmn
-	db 12, 12, 12, 10, 12, 11, 13, 14
-	db 16, 14, 14, 12, 13, 7,  14, 14
-	db 14, 13, 14, 14, 14, 14, 12, 6
-	db 13, 16, 6,  6,  6,  16, 8,  7
-	db 6,  16, 16, 8,  16, 16, 16, 16
-	db 7,  16, 16, 16, 16, 16, 16, 16
-	db 16, 16, 16, 16, 16, 16, 16, 16
-	
-	db 16, 16, 16, 16, 16, 16, 16, 16
-	db 16, 16, 16, 16, 16, 16, 16, 16
-	db 16, 16, 16, 16, 16, 16, 16, 16
-	db 16, 16, 16, 16, 16, 16, 16, 16
-	db 16, 16, 16, 16, 16, 16, 16, 16
+	fill 255,16
