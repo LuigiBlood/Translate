@@ -201,6 +201,8 @@ reset_vwf_direct:
 
 reset_vwf:
 	pha
+	cmp #($6B-$62)	//Amount
+	beq _reset_vwf_skip
 	cmp #($6D-$62)	//Icon
 	beq _reset_vwf_skip
 	cmp #($71-$62)	//Item Icon?
@@ -231,19 +233,19 @@ _reset_vwf_zero:
 _reset_vwf_skip:
 	//Space padding for Icons that require *even* tile offset to work properly.
 	lda {charcurrent}
-	bit.w #1
-	bne +
+	bit.w #$0001
+	beq +
 	lda {charshift}
-	beq -
+	beq _reset_vwf_zero
 +;	lda {charcurrent}
 	inc
-	bit.w #1
+	bit.w #$0001
 	beq +
 	inc
-+;	bit.w #$10
++;	bit.w #$0010
 	beq +
 	clc
-	adc.w #$10
+	adc.w #$0010
 +;	sta {charcurrent}
 	bra _reset_vwf_zero
 
@@ -586,6 +588,27 @@ next_vwf:
 
 //--List of Pixel Widths per Char
 width_list:
+//New Global Font
+	db 12, 5,  11, 12, 10, 12, 13, 5
+	db 7,  7,  9,  8,  5,  8,  5,  12
+	db 10, 10, 10, 10, 10, 10, 10, 10
+	db 10, 10, 5,  5,  9,  8,  9,  10
+	db 14, 12, 11, 12, 12, 12, 12, 13
+	db 12, 6,  11, 12, 10, 13, 13, 13
+	db 12, 13, 12, 12, 12, 12, 13, 13
+	db 13, 12, 11, 7,  12, 7,  9,  13
+
+	db 7,  12, 12, 11, 12, 11, 11, 12
+	db 12, 6,  8,  12, 6,  12, 12, 11
+	db 12, 12, 11, 10, 9,  12, 12, 13
+	db 12, 12, 12, 8,  4,  8,  12, 16
+	db 12, 12, 14, 12, 12, 12, 12, 12
+	db 6,  7,  13, 14, 12, 12, 12, 12
+	db 12, 12, 12, 11, 11, 11, 11, 11
+	db 6,  7,  11, 12, 12, 12, 12, 12
+
+	db 12, 11
+
 //English Translation Font
 	db 12, 12, 12, 12, 12, 12, 12, 12
 	db 6,  12, 12, 12, 14, 12, 12, 12
