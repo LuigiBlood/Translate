@@ -200,6 +200,7 @@ reset_vwf_direct:
 	rtl
 
 reset_vwf:
+	//A = Command
 	pha
 	cmp #($6B-$62)	//Amount
 	beq _reset_vwf_skip
@@ -284,6 +285,7 @@ render_vwf_main:
 	xba
 
 	rep #$20
+
 	ora $07-2,s
 	sta $409000,x
 	bra ++
@@ -293,7 +295,23 @@ render_vwf_main:
 	sta $409000,x
 
 +;	plx
+	sep #$20
 	lda $09-4,s
+	and $0C
+	sta $09-4,s
+	lda $0A-4,s
+	and $0C
+	sta $0A-4,s
+
+	lda $409010,x
+	and $0D
+	xba
+	lda $409011,x
+	and $0D
+	xba
+	rep #$20
+
+	ora $09-4,s
 	sta $409010,x
 
 	rts
@@ -330,9 +348,10 @@ render_vwf_addr:
 	rts
 
 render_vwf_shift:
-	phx
 	and.w #$00FF
 	xba
+render_vwf_shift2:
+	phx
 	ldx {charshift}
 	beq +
 -;	lsr
@@ -361,15 +380,24 @@ render_vwf_search_manage:
 	eor.w #$FFFF
 	ora $0C
 
+render_vwf_generic_manage:
+	sta $0C
+
 	jsr render_vwf_shift
 
 	sep #$20
 	sta $03,s
-	eor.b #$FF
-	sta $04,s
 	xba
 	sta $01,s
-	eor.b #$FF
+	rep #$20
+	
+	lda $0C
+	xba
+	jsr render_vwf_shift
+
+	sep #$20
+	sta $04,s
+	xba
 	sta $02,s
 	rep #$20
 
@@ -404,38 +432,8 @@ render_vwf_small_manage:
 	and.w #$00FF
 	eor.w #$00FF
 	ora $05,s
-	sta $0C
 
-	jsr render_vwf_shift
-
-	sep #$20
-	sta $03,s
-	xba
-	sta $01,s
-	rep #$20
-
-	lda $0C
-	xba
-	jsr render_vwf_shift
-
-	sep #$20
-	sta $04,s
-	xba
-	sta $02,s
-	rep #$20
-
-	lda.w #$00FF
-	jsr render_vwf_shift
-	sta $0C
-
-	jsr render_vwf_main
-
-	pla
-	pla
-	pla
-	plx
-	ply
-	rtl
+	jmp render_vwf_generic_manage
 
 render_vwf_inventory1:
 	pea $1E06
@@ -457,38 +455,7 @@ render_vwf_inventory_manage:
 	pha		//$03
 	pha		//$01
 
-	sta $0C
-
-	jsr render_vwf_shift
-
-	sep #$20
-	sta $03,s
-	xba
-	sta $01,s
-	rep #$20
-
-	lda $0C
-	xba
-	jsr render_vwf_shift
-
-	sep #$20
-	sta $04,s
-	xba
-	sta $02,s
-	rep #$20
-
-	lda.w #$00FF
-	jsr render_vwf_shift
-	sta $0C
-
-	jsr render_vwf_main
-
-	pla
-	pla
-	pla
-	plx
-	ply
-	rtl
+	jmp render_vwf_generic_manage
 
 
 //--Setup Char to be rendered
@@ -588,27 +555,6 @@ next_vwf:
 
 //--List of Pixel Widths per Char
 width_list:
-//New Global Font
-	db 12, 5,  11, 12, 10, 12, 13, 5
-	db 7,  7,  9,  8,  5,  8,  5,  12
-	db 10, 10, 10, 10, 10, 10, 10, 10
-	db 10, 10, 5,  5,  9,  8,  9,  10
-	db 14, 12, 11, 12, 12, 12, 12, 13
-	db 12, 6,  11, 12, 10, 13, 13, 13
-	db 12, 13, 12, 12, 12, 12, 13, 13
-	db 13, 12, 11, 7,  12, 7,  9,  13
-
-	db 7,  12, 12, 11, 12, 11, 11, 12
-	db 12, 6,  8,  12, 6,  12, 12, 11
-	db 12, 12, 11, 10, 9,  12, 12, 13
-	db 12, 12, 12, 8,  4,  8,  12, 16
-	db 12, 12, 14, 12, 12, 12, 12, 12
-	db 6,  7,  13, 14, 12, 12, 12, 12
-	db 12, 12, 12, 11, 11, 11, 11, 11
-	db 6,  7,  11, 12, 12, 12, 12, 12
-
-	db 12, 11
-
 //English Translation Font
 	db 12, 12, 12, 12, 12, 12, 12, 12
 	db 6,  12, 12, 12, 14, 12, 12, 12
@@ -645,3 +591,24 @@ width_list:
 	db 6,  12, 14, 7,  16, 16, 16, 16
 
 	fill 255,16
+
+//New Global Font
+	db 12, 5,  11, 12, 10, 12, 13, 5
+	db 7,  7,  9,  8,  5,  8,  5,  12
+	db 10, 10, 10, 10, 10, 10, 10, 10
+	db 10, 10, 5,  5,  9,  8,  9,  10
+	db 14, 12, 11, 12, 12, 12, 12, 13
+	db 12, 6,  11, 12, 10, 13, 13, 13
+	db 12, 13, 12, 12, 12, 12, 13, 13
+	db 13, 12, 11, 7,  12, 7,  9,  13
+
+	db 7,  12, 12, 11, 12, 11, 11, 12
+	db 12, 6,  8,  12, 6,  12, 12, 11
+	db 12, 12, 11, 10, 9,  12, 12, 13
+	db 12, 12, 12, 8,  4,  8,  12, 16
+	db 12, 12, 14, 12, 12, 12, 12, 12
+	db 6,  7,  13, 14, 12, 12, 12, 12
+	db 12, 12, 12, 11, 11, 11, 11, 11
+	db 6,  7,  11, 12, 12, 12, 12, 12
+
+	db 12, 11
