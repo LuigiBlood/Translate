@@ -29,6 +29,9 @@ define charcurrent($9C)	//(Global) Current Char Tile
 define charshift($EE)	//(Global) Shift
 define charsize($F0)	//(Global) Width of 8x16
 
+//Experimental Border Flickering Fix (when selecting an item)
+seekFile($001F5D)
+	lda.b #$00
 
 //VWF Hack - Search Mode
 seekFile($2BFD2C)	//SNES CPU - Text
