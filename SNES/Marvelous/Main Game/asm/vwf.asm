@@ -11,7 +11,10 @@ arch snes.cpu
 //01E0-01E1 - Space
 //0200-06FF - Kanji Font
 //6B - Amount
-//6D - Icon
+//6D XX - Special
+//   1A - Team Name
+//   1C - ???
+//   32 - ???
 //71 - Item Icon
 //73 - Scroll
 //74 - Line 1
@@ -28,8 +31,10 @@ arch snes.cpu
 define charcurrent($9C)	//(Global) Current Char Tile
 define charshift($EE)	//(Global) Shift
 define charsize($F0)	//(Global) Width of 8x16
+define charnext($F2)	//(Global) Next Char
 
 //Experimental Border Flickering Fix (when selecting an item)
+//Actually sets color palette for faces
 seekFile($001F5D)
 	lda.b #$00
 
@@ -72,6 +77,39 @@ seekFile($2FDF28)	//Space Fix
 	nop
 	nop
 
+//VWF Hack - Team Name (Search Mode)
+seekFile($2FC788)
+	jsr setup_vwf_team
+
+seekFile($2FBE25)
+	jsr setup_vwf_team3
+seekFile($2FBE39)
+	jsr next_vwf_team
+	nop
+
+seekFile($2FBE7C)
+	jsr setup_vwf_team3
+seekFile($2FBE90)
+	jsr next_vwf_team
+	nop
+
+//VWF Hack - Team Name (Small Text)
+seekFile($2FE4A5)
+	jsr setup_vwf_team
+
+seekFile($2FE09C)
+	jsr setup_vwf_team3
+seekFile($2FE0B0)
+	jsr next_vwf_team
+	nop
+
+seekFile($2FE0F3)
+	jsr setup_vwf_team3
+seekFile($2FE107)
+	jsr next_vwf_team
+	nop
+
+
 seekFile($2BFD70)
 reset_vwf_r1:
 	phd
@@ -98,8 +136,32 @@ setup_vwf_rs:
 
 reset_vwf_ri:
 	jsl reset_vwf_direct
-	lda.w #$7f7f
+	lda.w #$7F7F
 	rts
+
+setup_vwf_team:
+	pha
+	asl
+	sta {charnext}
+	jsl setup_vwf
+	pla
+	cmp.w #$0200
+	rts
+setup_vwf_team3:
+	pha
+	lda {charnext}
+	inc
+	jsl setup_vwf
+	pla
+	clc
+	adc.w #$0020
+	rts
+next_vwf_team:
+	jsl next_vwf
+	dec $9A
+	lda {charcurrent}
+	rts
+bound_check($300000)
 
 //VWF Hack - Item Name in Pause Menu
 seekFile($2FBA48)
