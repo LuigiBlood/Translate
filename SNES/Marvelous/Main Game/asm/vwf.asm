@@ -634,6 +634,8 @@ next_vwf:
 
 //--List of Pixel Widths per Char
 width_list:
+	insert "../gfx/font_main_global_new.tbl"
+	
 //Compatible Global Font
 	db 12, 12, 12, 12, 12, 12, 12, 13
 	db 7,  11, 12, 10, 14, 13, 11, 12

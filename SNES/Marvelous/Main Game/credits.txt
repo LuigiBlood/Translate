@@ -1,2 +1,4 @@
 tashi & DackR - Original English Translation Base
 LuigiBlood - New Project Leader, Hacking
+pinky - French Translation
+/dev/urandom - Font Design
