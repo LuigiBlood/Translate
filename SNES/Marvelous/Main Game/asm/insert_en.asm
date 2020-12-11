@@ -8,9 +8,11 @@ fill 0x20B9D,$FF
 
 //-Font
 seekFile($2AC000)
-	insert "../gfx/en/font_main_en.bin"
+	//insert "../gfx/en/font_main_en.bin"
+	insert "../text/font_main_global.bin"
 seekFile($270000)
-	insert "../gfx/en/font_kanji_en.bin"
+	//insert "../gfx/en/font_kanji_en.bin"
+	insert "../text/font_kanji_global.bin"
 
 	
 //-Title Screen
@@ -64,7 +66,8 @@ seekFile($2B6000)
 
 //--Misc HUD
 seekFile($268000)
-	insert "../gfx/en/hud_gfx.bin"
+	//insert "../gfx/en/hud_gfx.bin"
+	insert "../gfx/en_new/hud_gfx.bin"
 
 //--Team Name Screen
 seekFile($0E286B)
@@ -207,9 +210,9 @@ seekFile($2CE000)
 //Script
 seekFile($300000)
 text_script:
-	insert "../text/en/script.bin"
+	insert "../text/en_new/script.bin"
 	insert "../text/en/menu.bin"
-	insert "../text/en/items.bin"
+	insert "../text/en_new/items.bin"
 	db $FF
 
 text_script_end:
