@@ -48,12 +48,21 @@ seekFile($2FB64E)	//SA-1 - Items
 	jsr reset_vwf_r2
 seekFile($2FB6C9)	//SA-1 - Text
 	jsr reset_vwf_r2
+//-Regular Chars
 seekFile($2FBD0C)	//Left Half of Char
 	jsr setup_vwf_r
 seekFile($2FBD3C)	//Right Half of Char
 	jsr setup_vwf_r
 seekFile($2FBD58)
 	jsl next_vwf
+//-Kanji Chars
+seekFile($2FBD7B)	//Left Half of Char
+	jsr setup_vwf_rsk
+seekFile($2FBDAF)	//Right Half of Char
+	jsr setup_vwf_rsk
+seekFile($2FBDCF)
+	jsl next_vwf
+
 seekFile($2FC03F)
 	db $90
 	//bcc $81B864		//Fix
@@ -67,12 +76,21 @@ seekFile($2FBCD5)	//Space Fix
 //VWF Hack - Small Text
 seekFile($2FDDD2)
 	jsr reset_vwf_r2
+//-Regular Chars
 seekFile($2FDF48)
 	jsr setup_vwf_rs
 seekFile($2FDF78)
 	jsr setup_vwf_rs
 seekFile($2FDF94)
 	jsl next_vwf
+//-Kanji Chars
+seekFile($2FDFB7)
+	jsr setup_vwf_rsk
+seekFile($2FDFEB)
+	jsr setup_vwf_rsk
+seekFile($2FE017)
+	jsl next_vwf
+
 seekFile($2FDF28)	//Space Fix
 	nop
 	nop
@@ -125,12 +143,12 @@ reset_vwf_r2:
 	jsl reset_vwf
 	rts
 
-setup_vwf_r:
-	jsl setup_vwf
-	rts
-
+setup_vwf_rsk:
+	and.w #$07FF
+	bra setup_vwf_r
 setup_vwf_rs:
 	and.w #$03FF
+setup_vwf_r:
 	jsl setup_vwf
 	rts
 
@@ -634,99 +652,4 @@ next_vwf:
 
 //--List of Pixel Widths per Char
 width_list:
-	insert "../gfx/font_main_global_new.tbl"
-	
-//Compatible Global Font
-	db 12, 12, 12, 12, 12, 12, 12, 13
-	db 7,  11, 12, 10, 14, 13, 11, 12
-	db 11, 12, 12, 10, 12, 13, 13, 13
-	db 12, 11, 12, 8,  5,  8,  11, 11
-	db 11, 11, 11, 11, 11, 11, 11, 11
-	db 12, 12, 10, 12, 10, 10, 11, 11
-	db 5,  8,  10, 6,  13, 10, 10, 12
-	db 12, 10, 10, 9,  10, 11, 14, 12
-
-	db 11, 10, 13, 8,  9,  9,  10, 6
-	db 12, 5,  5,  5,  12, 11, 12, 11
-	db 16, 16, 16, 16, 16, 16, 16, 16
-	db 16, 16, 16, 16, 16, 16, 16, 16
-	db 16, 16, 16, 16, 16, 16, 16, 16
-	db 16, 16, 16, 16, 16, 16, 16, 16
-	db 16, 16, 16, 16, 16, 16, 16, 16
-	db 16, 16, 16, 16, 16, 16, 16, 16
-
-	db 16, 16, 16, 16, 16, 16, 16, 16
-	db 16, 16, 16, 16, 16, 16, 16, 16
-	db 16, 16, 16, 16, 16, 16, 16, 16
-	db 16, 16, 16, 16, 16, 16, 16, 16
-	db 12, 12, 12, 12, 12, 12, 12, 13
-	db 7,  11, 12, 10, 14, 13, 11, 12
-	db 11, 12, 12, 10, 12, 13, 13, 13
-	db 12, 11, 12, 12, 10, 12, 10, 10
-
-	db 11, 11, 5,  8,  10, 6,  13, 10
-	db 10, 12, 12, 10, 10, 9,  10, 11
-	db 14, 12, 11, 10, 11, 11, 11, 11
-	db 11, 11, 11, 11, 11, 11, 10, 6
-	db 8,  12, 5,  5,  5,  12, 11, 8
-	db 5,  8,  11, 6,  16, 16, 16, 16
-
-	fill 255,16
-
-//New Global Font
-	db 12, 6,  11, 12, 9,  12, 13, 5
-	db 8,  8,  9,  7,  5,  8,  5,  12
-	db 11, 11, 11, 11, 11, 11, 11, 11
-	db 11, 11, 6,  6,  9,  8,  9,  10
-	db 14, 12, 12, 12, 12, 12, 12, 12
-	db 13, 7,  11, 12, 10, 14, 13, 11
-	db 12, 11, 12, 12, 10, 12, 13, 13
-	db 13, 12, 11, 7,  12, 7,  9,  13
-
-	db 7,  12, 12, 10, 12, 10, 10, 11
-	db 11, 5,  8,  10, 6,  13, 10, 10
-	db 12, 12, 10, 10, 9,  10, 11, 14
-	db 12, 11, 10, 9,  5,  9,  12, 16
-	db 12, 12, 14, 12, 12, 12, 12, 12
-	db 7,  7,  11, 14, 12, 12, 12, 12
-	db 12, 12, 12, 12, 10, 10, 10, 10
-	db 6,  7,  10, 12, 10, 10, 10, 11
-
-	db 12, 11
-
-//English Translation Font
-	db 12, 12, 12, 12, 12, 12, 12, 12
-	db 6,  12, 12, 12, 14, 12, 12, 12
-	db 12, 12, 12, 14, 12, 14, 14, 14
-	db 14, 12, 6,  12, 6,  12, 12, 8
-	db 12, 12, 12, 12, 12, 12, 12, 12
-	db 12, 12, 12, 12, 12, 12, 12, 12
-	db 6,  10, 12, 6,  14, 12, 12, 12
-	db 12, 10, 12, 12, 12, 14, 14, 14
-	
-	db 14, 12, 14, 12, 12, 9,  14, 6
-	db 14, 9,  9,  9,  16, 10, 14, 14
-	db 16, 16, 16, 13, 14, 15, 15, 14
-	db 11, 14, 14, 16, 16, 16, 16, 16
-	db 16, 16, 16, 16, 16, 16, 16, 16
-	db 16, 16, 16, 16, 16, 16, 16, 16
-	db 16, 16, 16, 16, 16, 16, 16, 16
-	db 16, 16, 16, 16, 16, 16, 16, 16
-	
-	db 16, 16, 16, 16, 16, 16, 16, 16
-	db 16, 16, 16, 16, 16, 16, 16, 16
-	db 16, 16, 16, 16, 16, 16, 16, 16
-	db 16, 16, 16, 16, 16, 16, 16, 16
-	db 12, 12, 12, 12, 12, 12, 12, 12
-	db 6,  12, 12, 12, 14, 12, 12, 12
-	db 12, 12, 12, 14, 12, 14, 14, 14
-	db 14, 12, 12, 12, 12, 12, 12, 12
-	
-	db 12, 12, 6,  10, 12, 6,  14, 12
-	db 12, 12, 12, 10, 12, 12, 12, 14
-	db 14, 14, 14, 12, 12, 8,  12, 12
-	db 12, 12, 12, 12, 12, 12, 14, 6
-	db 12, 16, 9,  9,  9,  16, 10, 12
-	db 6,  12, 14, 7,  16, 16, 16, 16
-
-	fill 255,16
+	insert "../text/font_main_global_width.bin"
