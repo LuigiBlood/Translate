@@ -5,6 +5,8 @@ arch snes.cpu
 //409000 - Text Rendering Buffer
 //40A400 - Text Virtual Tileset
 //40AE06 - Item Name (Pause Menu)
+//3024 - SNES CPU telling SA-1 to do something
+//3026 - SA-1 response to SNES CPU
 
 //Virtual Tileset:
 //0000-01DF - Main Font
@@ -32,11 +34,20 @@ define charcurrent($9C)	//(Global) Current Char Tile
 define charshift($EE)	//(Global) Shift
 define charsize($F0)	//(Global) Width of 8x16
 define charnext($F2)	//(Global) Next Char
+define itemkeep($F4)	//(Global) Keep Item
 
 //Experimental Border Flickering Fix (when selecting an item)
 //Actually sets color palette for faces
-seekFile($001F5D)
-	lda.b #$00
+//seekFile($001F5D)
+//	lda.b #$00
+
+//Avoid Rerendering Item Names all the time in Item Select mode
+seekFile($2FB690)	//9FB690
+	jsr item_name_render_init
+	nop
+seekFile($2FCE9F)	//9fce9f
+	jsr item_name_render_stop
+
 
 //VWF Hack - Search Mode
 seekFile($2BFD2C)	//SNES CPU - Text
@@ -179,6 +190,24 @@ next_vwf_team:
 	dec $9A
 	lda {charcurrent}
 	rts
+
+item_name_render_init:
+	stz {itemkeep}
+	lda $5C
+	cmp.b #$70
+	rts
+
+item_name_render_stop:
+	pha
+	lda $5A
+	cmp {itemkeep}
+	beq +
+	sta {itemkeep}
+	pla
+	jmp $BFDC
++;	pla
+	rts
+
 bound_check($300000)
 
 //VWF Hack - Item Name in Pause Menu
