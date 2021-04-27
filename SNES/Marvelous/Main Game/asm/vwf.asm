@@ -41,6 +41,16 @@ define itemkeep($F4)	//(Global) Keep Item
 //seekFile($001F5D)
 //	lda.b #$00
 
+//009F3C - Inventory Palette
+//Very Hacky Fixes
+seekFile($001F39)
+	jsr itemselect_check
+	db $D0	//bne
+//009FEB - Normal Palette
+seekFile($001FEB)
+	nop
+	nop
+
 //Avoid Rerendering Item Names all the time in Item Select mode
 seekFile($2FB690)	//9FB690
 	jsr item_name_render_init
@@ -232,6 +242,11 @@ setup_vwf_ri1:
 setup_vwf_ri2:
 	and.w #$07FF
 	jsl setup_vwf
+	rts
+
+itemselect_check:
+	lda $3554
+	cmp.b #$13
 	rts
 
 
