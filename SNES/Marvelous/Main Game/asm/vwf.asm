@@ -7,6 +7,7 @@ arch snes.cpu
 //40AE06 - Item Name (Pause Menu)
 //3024 - SNES CPU telling SA-1 to do something
 //3026 - SA-1 response to SNES CPU
+//CODE_8CE969 - Inventory
 
 //Virtual Tileset:
 //0000-01DF - Main Font
@@ -245,8 +246,21 @@ setup_vwf_ri2:
 	rts
 
 itemselect_check:
+	stz $33BA
+	
+	lda $302F
+	cmp.b #$09	//Overworld - Item
+	beq +
+	cmp.b #$07	//Search - Item
+	bne ++
+	
 	lda $3554
 	cmp.b #$13
+	beq +
+	cmp.b #$28
+	bne ++
++;	rts
++;	lda.b #$00
 	rts
 
 
