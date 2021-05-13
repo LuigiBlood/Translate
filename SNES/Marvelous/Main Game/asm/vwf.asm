@@ -48,9 +48,9 @@ seekFile($001F39)
 	jsr itemselect_check
 	db $D0	//bne
 //009FEB - Normal Palette
-seekFile($001FEB)
+seekFile($001FE6)
 	nop
-	nop
+	jsl itemselect_check2
 
 //Avoid Rerendering Item Names all the time in Item Select mode
 seekFile($2FB690)	//9FB690
@@ -246,19 +246,19 @@ setup_vwf_ri2:
 	rts
 
 itemselect_check:
-	stz $33BA
-	
+	lda $33BA
+	bne ++
+
 	lda $302F
 	cmp.b #$09	//Overworld - Item
 	beq +
 	cmp.b #$07	//Search - Item
-	bne ++
+	bne +
 	
 	lda $3554
 	cmp.b #$13
 	beq +
 	cmp.b #$28
-	bne ++
 +;	rts
 +;	lda.b #$00
 	rts
@@ -707,6 +707,23 @@ next_vwf:
 	inc $9A
 	
 	rtl
+
+itemselect_check2:
+	lda $4210
+	lda $47
+	beq +
+
+	lda $302F
+	cmp.b #$09	//Overworld - Item
+	beq +
+	cmp.b #$07	//Search - Item
+	bne +
+	
+	lda $3554
+	cmp.b #$13
+	beq +
+	cmp.b #$28
++;	rtl
 
 //--List of Pixel Widths per Char
 width_list:
