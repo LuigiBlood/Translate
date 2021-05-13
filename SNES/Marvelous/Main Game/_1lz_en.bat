@@ -21,3 +21,4 @@
 ".\tools\lc\recomp.exe" "./gfx/en/lz_officesign_map.bin" "./gfx/en/lz/lz_officesign_map.bin.lz" 0 1 0
 ".\tools\lc\recomp.exe" "./gfx/en/lz_officesign_gfx.bin" "./gfx/en/lz/lz_officesign_gfx.bin.lz" 0 1 0
 ".\tools\lc\recomp.exe" "./gfx/en/lz_nintendo_gfx.bin" "./gfx/en/lz/lz_nintendo_gfx.bin.lz" 0 1 0
+".\tools\lc\recomp.exe" "./gfx/en_new/lz_teamname_map.bin" "./gfx/en_new/lz/lz_teamname_map.bin.lz" 0 1 0

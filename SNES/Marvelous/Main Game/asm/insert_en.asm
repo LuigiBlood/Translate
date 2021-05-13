@@ -9,10 +9,10 @@ fill 0x20B9D,$FF
 //-Font
 seekFile($2AC000)
 	//insert "../gfx/en/font_main_en.bin"
-	insert "../text/font_main_global.bin"
+	insert "../text/font_main_global_en_new.bin"
 seekFile($270000)
 	//insert "../gfx/en/font_kanji_en.bin"
-	insert "../text/font_kanji_global.bin"
+	insert "../text/font_kanji_global_en_new.bin"
 
 	
 //-Title Screen
@@ -72,22 +72,28 @@ seekFile($268000)
 //--Team Name Screen
 seekFile($0E286B)
 map_teamname:
-	insert "../gfx/en/lz/lz_teamname_map.bin.lz"
+	insert "../gfx/en_new/lz/lz_teamname_map.bin.lz"
 	bound_check($0E2E23)
 
 //--Journal Menu Tilemap Stuff (???)
-seekFile($2C09B0)
+seekFile($2C09B0)	//SELECTでゲーム画面た & Move & Select Text Hack
 map_journal1:
-	insert "../gfx/en/journal1_map.bin"
-seekFile($2C1189)
+	insert "../gfx/en_new/journal1_map.bin"
+seekFile($2C1189)	//"Save"
 map_journal2:
-	insert "../gfx/en/journal2_map.bin"
-seekFile($2C18C8)
+	insert "../gfx/en_new/journal2_map.bin"
+seekFile($2C18C8)	//#に記録していいですか？
+					//"Wanna save to entry #?"
 map_journal3:
-	insert "../gfx/en/journal3_map.bin"
-seekFile($2C1AAF)
+	insert "../gfx/en_new/journal3_map.bin"
+seekFile($2C19BB)	//Change place to entry number
+	sta $7F00B2
+seekFile($2C1AAF)	//#に記録しました。
+					//Journal entry # has been saved.
 map_journal4:
-	insert "../gfx/en/journal4_map.bin"
+	insert "../gfx/en_new/journal4_map.bin"
+seekFile($2C1B1E)	//Change place to entry number
+	sta $7F00AC
 
 
 //-Chapter 1
@@ -211,7 +217,8 @@ seekFile($2CE000)
 seekFile($300000)
 text_script:
 	insert "../text/en_new/script.bin"
-	insert "../text/en/menu.bin"
+	include "../text/en_new/menu.asm"
+	//insert "../text/en/menu.bin"
 	insert "../text/en_new/items.bin"
 	db $FF
 
