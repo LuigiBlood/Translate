@@ -8,10 +8,8 @@ fill 0x20B9D,$FF
 
 //-Font
 seekFile($2AC000)
-	//insert "../gfx/en/font_main_en.bin"
 	insert "../text/en_new/font.bin"
 seekFile($270000)
-	//insert "../gfx/en/font_kanji_en.bin"
 	insert "../text/en_new/kanji.bin"
 
 	
@@ -30,13 +28,13 @@ map_title:
 //--Nintendo Copyright
 seekFile($1D948F)
 gfx_title_nintendo:
-	insert "../gfx/en/lz/lz_nintendo_gfx.bin.lz"
+	insert "../gfx/en_new/lz/lz_nintendo_gfx.bin.lz"
 	bound_check($1DA5ED)
 
 //--Subtitle
 seekFile($1DA5ED)
 gfx_title_sub:
-	insert "../gfx/en/lz/lz_subtitle_gfx.bin.lz"
+	insert "../gfx/en_new/lz/lz_subtitle_gfx.bin.lz"
 	bound_check($1DA9B5)
 
 //--Intro
@@ -62,11 +60,10 @@ pal_intro:
 
 //--Search Menu Icons
 seekFile($2B6000)
-	insert "../gfx/en/menu_gfx.bin"
+	insert "../gfx/en_new/menu_gfx.bin"
 
 //--Misc HUD
 seekFile($268000)
-	//insert "../gfx/en/hud_gfx.bin"
 	insert "../gfx/en_new/hud_gfx.bin"
 
 //--Team Name Screen
