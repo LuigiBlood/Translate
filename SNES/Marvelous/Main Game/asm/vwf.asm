@@ -727,4 +727,4 @@ itemselect_check2:
 
 //--List of Pixel Widths per Char
 width_list:
-	insert "../text/font_main_global_width.bin"
+	insert "../text/en_new/width.tbl"

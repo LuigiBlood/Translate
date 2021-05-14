@@ -9,10 +9,10 @@ fill 0x20B9D,$FF
 //-Font
 seekFile($2AC000)
 	//insert "../gfx/en/font_main_en.bin"
-	insert "../text/font_main_global_en_new.bin"
+	insert "../text/en_new/font.bin"
 seekFile($270000)
 	//insert "../gfx/en/font_kanji_en.bin"
-	insert "../text/font_kanji_global_en_new.bin"
+	insert "../text/en_new/kanji.bin"
 
 	
 //-Title Screen
@@ -218,7 +218,6 @@ seekFile($300000)
 text_script:
 	insert "../text/en_new/script.bin"
 	include "../text/en_new/menu.asm"
-	//insert "../text/en/menu.bin"
 	insert "../text/en_new/items.bin"
 	db $FF
 
