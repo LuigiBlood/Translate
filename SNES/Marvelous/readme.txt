@@ -1,0 +1,1 @@
+Go to https://github.com/LuigiBlood/marvelous-translation for updated translation source, this won't be updated from now on
