@@ -28,15 +28,15 @@ common_randomselected:
   putTextByte(0x1BA65C, "Swap Selection")  //802EB9F4
 
 common_menu_backtomainmenu:
-  putTextByte(0x1C2040, "Back to main menu")
+  putTextByte(0x1C2040, "Back to Main Menu")
 common_menu_exit:
   putTextByte(0x1C2058, "Exit")
 common_menu_stagesaveload:
-  putTextByte(0x1C2060, "[Stage Work] Save & Load")
+  putTextByte(0x1C2060, "Save & Load Stage")
 common_menu_blocksaveload:
-  putTextByte(0x1C2088, "[Block Work] Save & Load")
+  putTextByte(0x1C2088, "Save & Load Block")
 common_menu_3dsaveload:
-  putTextByte(0x1C20B0, "[3D Work] Save & Load")
+  putTextByte(0x1C20B0, "Save & Load 3D Model")
 common_menu_shortcut:
   putTextByte(0x1C20D4, "Shortcut")
 common_menu_observe:
@@ -60,7 +60,7 @@ common_menu_bgm:
 photo_return:
   putTextByte(0x95BA9C, "Back")
 photo_save:
-  putTextByte(0x95BAA4, "Save as [2D Work]")
+  putTextByte(0x95BAA4, "Save as Picture")
 
 include "DMGJ_US_BlockDome.asm"
 include "DMGJ_US_ModelRocket.asm"

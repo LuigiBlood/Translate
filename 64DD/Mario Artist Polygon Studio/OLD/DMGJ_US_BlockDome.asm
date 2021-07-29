@@ -11,7 +11,7 @@ block_gluereset:
 block_copy:
   putTextByte(0x7BA344, "Copy")
 block_3dwork:
-  putTextByte(0x7BA34C, "Call [3D Work]")
+  putTextByte(0x7BA34C, "Call 3D Model")
 block_mirrorcopy:
   putTextByte(0x7BA368, "Mirror Copy")
 block_move:

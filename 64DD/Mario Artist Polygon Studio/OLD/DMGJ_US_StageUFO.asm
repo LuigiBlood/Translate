@@ -28,7 +28,7 @@ putTextByte(0x649EC4, "Stage")
 putTextByte(0x649ED0, "Background")
 putTextByte(0x649EDC, "Effect")
 putTextByte(0x649EE8, "Lighting")
-putTextByte(0x649EF8, "Load [2D Work] as Background")
+putTextByte(0x649EF8, "Load Picture as Background")   //Unused
 
 //Backgrounds RAM 80516784 - NDD 0x649F1C
 seek(0x649F1C)
