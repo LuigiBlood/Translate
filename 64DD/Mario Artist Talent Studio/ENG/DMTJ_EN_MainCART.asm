@@ -1,20 +1,21 @@
 //Mario Artist Talent Studio - Japanese to English Translation
 //by LuigiBlood
 
-print "Mario Artist Talent Studio - English translation (Disk) v2.1\n"
+print "Mario Artist Talent Studio - English translation (Cart) v2.1\n"
 
 arch n64.cpu
 endian msb
-output "Mario Artist - Talent Studio.ndd", create
-origin 0x000000; insert "NUD-DMTJ-JPN.ndd" // Include Japanese Mario Artist - Talent Studio N64 DD ROM
+output "Mario Artist - Talent Studio.n64", create
+origin 0x000000; insert "NUD-DMTJ-JPN.n64" // Include Japanese Mario Artist - Talent Studio N64 DD ROM
+origin 0x10; dw 0x54C8AD15, 0xE04E8676
 
 include "N64_CPUREGS.asm"
 
-constant seek_diff(0x0)
+constant seek_diff(0x727D8)
 
 //Unique Macros
 macro outputGame() {
-  output "Mario Artist - Talent Studio.ndd"
+  output "Mario Artist - Talent Studio.n64"
   origin 0
   base 0
 }
