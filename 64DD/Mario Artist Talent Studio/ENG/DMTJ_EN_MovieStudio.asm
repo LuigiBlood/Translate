@@ -16,7 +16,7 @@ movie1_1:
 textEntryASCII0("Are you sure you want|to load a sample movie?")
 movie1_2:
 //このムービーは|セーブされていません。|★|「ムービーをつくる」に|のこしておきますか？
-textEntryASCII0("This movie hasn't been saved.||")
+textEntryASCII0("This movie has not been saved.||")
 skip(-1)
 movie1_3:
 //このムービーを|「ムービーをつくる」に|のこしておきますか？
@@ -30,12 +30,19 @@ movie1_6:
 //ムービーが|消えますが|本当によろしいですか？
 textEntryASCII0("The movie will be lost.|Are you sure?")
 
+seek(0x104F552); dh $000B
+seek(0x104F556); dh $0002
 seek(0x104F562); dh (movie1_1)
-seek(0x104F58A); dh $0003
-seek(0x104F596); dh (movie1_2)
+seek(0x104F586); dh $000E
+seek(0x104F58A); dh $0002
+seek(0x104F596); dh (movie1_3)	//Too many chars, should be movie1_2
+seek(0x104F5CA); dh $000E
+seek(0x104F5CE); dh $0002
 seek(0x104F5DA); dh (movie1_3)
 seek(0x104F61E); dh (movie1_4)
 seek(0x104F666); dh (movie1_5)
+seek(0x104F682); dh $000A
+seek(0x104F686); dh $0002
 seek(0x104F692); dh (movie1_6)
 
 //--Movie Studio Buttons
@@ -484,10 +491,10 @@ textEntryASCII0("This is a fatal error.|Please call Yamashita.")
 movie6_2:
 movie6_5:
 //５０シーン以上|シーンをつくることはできません。
-textEntryASCII0("You cannot create more than 50 scenes.")
+textEntryASCII0("You cannot create|more than 50 scenes.")
 movie6_3:
 //あたらしいシーンをつくるには|のこりの時間が|3.0秒以上必要です。
-textEntryASCII0("You need at least 3.0 seconds left|to create a new scene.")
+textEntryASCII0("You need at least|3.0 seconds left|to create a new scene.")
 //movie6_4:
 //致命的エラーです。|山下を呼んでください。
 //textEntryASCII0("This is a fatal error.|Please call Yamashita.")
@@ -496,13 +503,13 @@ textEntryASCII0("You need at least 3.0 seconds left|to create a new scene.")
 //textEntryASCII0("You cannot create more than 50 scenes.")
 movie6_6:
 //ムービーの時間が|10.0秒オーバーするので|シーンのよびだしができません。
-textEntryASCII0("You cannot paste this scene|as the movie length will exceed|by 10.0 seconds.")
+textEntryASCII0("Pasting this scene|would exceed the limit|by 10.0 seconds.")
 movie6_7:
 //すべてのシーンが|消えますが|本当によろしいですか？
 textEntryASCII0("Are you sure you want|to delete all scenes?")
 movie6_8:
 //らくちんシーンをよびだすには|のこりの時間が|10.0秒以上必要です。
-textEntryASCII0("You need at least 10.0 seconds left|to shuffle a new scene.")
+textEntryASCII0("You need at least|10.0 seconds left|to shuffle a new scene.")
 
 movie6_9:
 //お疲れ様です。|一時セーブします。
@@ -512,18 +519,30 @@ textEntryASCII0("Thanks for your work.|Saved temporarily.")
 //textEntryASCII0("This is a fatal error.|Please call Yamashita.")
 
 seek(0x106AD0A); dh (movie6_1)
+seek(0x106ADD6); dh $000A
+seek(0x106ADDA); dh $0002
 seek(0x106ADE6); dh (movie6_2)
+seek(0x106AE2A); dh $000B
+seek(0x106AE2E); dh $0003
 seek(0x106AE3A); dh (movie6_3)
 seek(0x106AEBE); dh (movie6_4)
+seek(0x106B342); dh $000A
+seek(0x106AD46); dh $0002
 seek(0x106B352); dh (movie6_5)
 
-seek(0x106B482); dh (movie6_6 + 63)
-seek(0x106B48A); dh (movie6_6 + 63)
-seek(0x106B4F6); dh (movie6_6 + 64)
-seek(0x106B52E); dh (movie6_6 + 66)
+seek(0x106B482); dh (movie6_6 + 45)
+seek(0x106B48A); dh (movie6_6 + 45)
+seek(0x106B4F6); dh (movie6_6 + 45+1)
+seek(0x106B52E); dh (movie6_6 + 45+3)
+seek(0x106B53E); dh $000A
+seek(0x106B542); dh $0003
 seek(0x106B54E); dh (movie6_6)
 
+seek(0x106BFAE); dh $000B
+seek(0x106BFB2); dh $0002
 seek(0x106BFBE); dh (movie6_7)
+seek(0x106D2B6); dh $000B
+seek(0x106D2BA); dh $0003
 seek(0x106D2C6); dh (movie6_8)
 
 seek(0x106FC42); dh (movie6_9)
@@ -624,8 +643,11 @@ movie8_3:
 //写
 textEntryASCII0("Photo")
 
+seek(0x1075D9A); dh $000D
+seek(0x1075D9E); dh $0002
 seek(0x1075D8E); dh (movie8_1)
 seek(0x1075D96); dh (movie8_2)
+
 seek(0x10815E2); dh (movie8_3)
 
 
@@ -703,12 +725,14 @@ textEntryASCII(0x20, "...Playback...")			//……サイセイチュウ……
 seek(0x10C2F1C)
 movie10_1:
 //RAM 804047F0 - 電源を切ってから|キャプチャーカセットを|さしてください。
-textEntryASCII0("Please power off the|N64 Control Deck and|insert the Capture Pak.")
+textEntryASCII0("Power off the|N64 Control Deck and|insert the Capture Pak.")
 movie10_2:
 //RAM 8040482C - アルバムのおとを|消します。|よろしいですか？
 textEntryASCII0("This recording will be deleted.|Are you sure?")
 
 seek(0x10B956E); dh (movie10_1)
+seek(0x10BA826); dh $0002
+seek(0x10BA82A); dh $000D
 seek(0x10BA80E); dh (movie10_2)
 
 //Movie Item List
@@ -1216,16 +1240,18 @@ seek(0xF0DFF6); dh (movie14_14)
 
 
 seek(0xF489C0)
-textEntryASCII0("The actions from Actor 1's scenes|will disappear.|Are you sure?")
+textEntryASCII0("The actions from Actor 1's scenes|will be lost. Are you sure?")
 //タレント１が出演している|シーンのアクションが|消えますがよろしいですか？
 seek(0xF48A0C)
-textEntryASCII0("The actions and effects from|Actor 1's scenes will disappear.|Are you sure?")
+textEntryASCII0("The actions from Actor 1's scenes|will be lost. Are you sure?")
+//textEntryASCII0("The actions and effects from|Actor 1's scenes will be lost.|Are you sure?")
 //タレント１が出演している|シーンのアクションや一部の演出が|消えますがよろしいですか？
 seek(0xF48A64)
-textEntryASCII0("The actions from Actor 1's scenes|will disappear.|Are you sure?")
+textEntryASCII0("The actions from Actor 1's scenes|will be lost. Are you sure?")
 //３Ｄさくひんとタレントを|入れ替えると|タレント１が出演している|シーンのアクションが|消えますがよろしいですか？
 seek(0xF48AD4)
-textEntryASCII0("The actions and effects from|Actor 1's scenes will disappear.|Are you sure?")
+textEntryASCII0("The actions from Actor 1's scenes|will be lost. Are you sure?")
+//textEntryASCII0("The actions and effects from|Actor 1's scenes will be lost.|Are you sure?")
 //タレントと３Ｄさくひんを|入れ替えると|タレント１が出演している|シーンのアクションや一部の演出が|消えますがよろしいですか？
 seek(0xF48B50)
 textEntryASCII0(" 1 2 3")
@@ -1235,11 +1261,26 @@ textEntryASCII0(" 1 2 3")
 seek(0xF0CCF0)
 addiu t6,t5,22
 seek(0xF0CD0C)
-addiu t8,t7,34
+//addiu t8,t7,34
+addiu t8,t7,22
 seek(0xF0CD28)
 addiu t0,t9,22
 seek(0xF0CD44)
-addiu t1,t2,34
+//addiu t1,t2,34
+addiu t1,t2,22
+
+//Window Size
+seek(0xF06BDA); dh $0002
+seek(0xF06BE2); dh $0010
+
+seek(0xF06C0A); dh $0002
+seek(0xF06C12); dh $0010
+
+seek(0xF06C3A); dh $0002
+seek(0xF06C42); dh $0010
+
+seek(0xF06C5A); dh $0002
+seek(0xF06C62); dh $0010
 
 //Sample 3D Models
 seek(0xF48210)
@@ -1476,8 +1517,11 @@ skip(20); dw (movie15_1)
 skip(164); dw (movie15_35)
 
 seek(0x102A100)
-textEntryASCII0("This action will be deleted.|Are you sure?")
+textEntryASCII0("This Action will be deleted.|Are you sure?")
 //アルバムのアクションを|消します。|よろしいですか？
+
+seek(0x100B636); dh $000C
+seek(0x100B63A); dh $0002
 
 
 //Movie Studio Mode - Special Menus
@@ -2531,6 +2575,8 @@ seek(0x11DE000)
 //アルバムのらくがきを|消します。|よろしいですか？
 textEntryASCII0("This Graffiti will be deleted.|Are you sure?")
 
+seek(0x11DC512); dh $000C
+seek(0x11DC516); dh $0002
 
 //--Image Processing Text
 seek(0x12A5138); textEntryH0("Save")			//けってい
