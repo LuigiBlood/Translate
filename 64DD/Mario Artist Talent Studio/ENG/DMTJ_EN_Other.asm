@@ -42,7 +42,7 @@ seek(0x12B9FAE); dh (option_save)
 
 
 //--Disk Reinitialization
-//Hold L + Down D-Pad + B from startup
+//Hold L + Down D-Pad + A from startup
 seek(0x12BB080)
 base 0x803109A0
 disk_reinit1:
@@ -50,7 +50,7 @@ disk_reinit1:
 //ディスクのデータ領域を|初期化します。|すべてのさくひんが|消えてしまいますが|よろしいですか？
 textEntryASCII0("This will initialize|the data of the disk.|All saved creations|will be lost.||Are you sure?")
 
-//Hold L + Down D-Pad + A from startup
+//Hold L + Down D-Pad + B from startup
 disk_reinit2:
 //RAM 80310A00
 //ディスクの自動セーブ領域を|初期化します。|自動セーブされた|さくひんやアルバムが|消えてしまいますが|よろしいですか？
