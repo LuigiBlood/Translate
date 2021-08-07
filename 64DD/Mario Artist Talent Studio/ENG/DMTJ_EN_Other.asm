@@ -40,6 +40,264 @@ seek(0x12B9F66); dh (option_sameA)
 seek(0x12B9F8A); dh (option_slowCursor)
 seek(0x12B9FAE); dh (option_save)
 
+//--Credits
+seek(0x12BA780)
+base 0x803100A0
+//Names
+credits_name1:
+textEntryASCII0("T. Sawano")
+credits_name2:
+textEntryASCII0("H. Kimura")
+credits_name3:
+textEntryASCII0("H. Matsuoka")
+credits_name4:
+textEntryASCII0("H. Fujii")
+credits_name5:
+textEntryASCII0("H. Kuwahara")
+credits_name6:
+textEntryASCII0("H. Matsunaga")
+credits_name7:
+textEntryASCII0("Y. Ohnishi")
+credits_name8:
+textEntryASCII0("M. Kamada")
+credits_name9:
+textEntryASCII0("E. Tomita")
+credits_name10:
+textEntryASCII0("D. Ohtsubo")
+credits_name11:
+textEntryASCII0("M. Wada")
+credits_name12:
+textEntryASCII0("N. Ikegawa")
+credits_name13:
+textEntryASCII0("R. Kobayashi")
+credits_name14:
+textEntryASCII0("J. Morii")
+credits_name15:
+textEntryASCII0("T. Toyoda")
+credits_name16:
+textEntryASCII0("M. Oshio")
+credits_name17:
+textEntryASCII0("T. Endo")
+credits_name18:
+textEntryASCII0("Y. Tawaraishi")
+credits_name19:
+textEntryASCII0("Y. Yamashita")
+credits_name20:
+textEntryASCII0("K. Kawamoto")
+credits_name21:
+textEntryASCII0("H. Yada")
+credits_name22:
+textEntryASCII0("Y. Ogawa")
+credits_name23:
+textEntryASCII0("K. Nishimura")
+credits_name24:
+textEntryASCII0("K. Totaka")
+credits_name25:
+textEntryASCII0("K. Nagata")
+credits_name26:
+textEntryASCII0("T. Minegishi")
+credits_name27:
+textEntryASCII0("Y. Ida")
+credits_name28:
+textEntryASCII0("K. Eguchi")
+credits_name29:
+textEntryASCII0("H. Nogami")
+credits_name30:
+textEntryASCII0("S. Takahashi")
+credits_name31:
+textEntryASCII0("T. Watanabe")
+credits_name32:
+textEntryASCII0("H. Kitagawa")
+credits_name33:
+textEntryASCII0("T. Senda")
+credits_name34:
+textEntryASCII0("N. Shimada")
+credits_name35:
+textEntryASCII0("Y. Ueda")
+credits_name36:
+textEntryASCII0("Y. Sasamoto")
+credits_name37:
+textEntryASCII0("H. Shimizu")
+credits_name38:
+textEntryASCII0("C. Reed")
+credits_name39:
+textEntryASCII0("T. Sugawara")
+credits_name40:
+textEntryASCII0("H. Kakui")
+credits_name41:
+textEntryASCII0("H. Yoshimoto")
+credits_name42:
+textEntryASCII0("S. Hasegawa")
+credits_name43:
+textEntryASCII0("D. Iwamoto")
+credits_name44:
+textEntryASCII0("H. Momose")
+credits_name45:
+textEntryASCII0("R. Shimamura")
+credits_name46:
+textEntryASCII0("A. Yamashita")
+credits_name47:
+textEntryASCII0("S. Ohata")
+credits_name48:
+textEntryASCII0("K. Hoshiba")
+credits_name49:
+textEntryASCII0("A. Shibuya")
+credits_name50:
+textEntryASCII0("K. Matsuura")
+credits_name51:
+textEntryASCII0("A. Shibata")
+credits_name52:
+textEntryASCII0("Super Mario Club")
+credits_name53:
+textEntryASCII0("S. Miyamoto")
+credits_name54:
+textEntryASCII0("H. Yamauchi")
+credits_name56:
+db $89
+credits_name55:
+textEntryASCII0("Nintendo")
+
+//Titles
+seek(0x12BAF60)
+credits_title1:
+textEntryASCII0("Mario Artist Talent Studio")
+credits_title2:
+textEntryASCII0(" ")
+credits_title3:
+textEntryASCII0("Producer")
+credits_title4:
+textEntryASCII0("Director")
+credits_title5:
+textEntryASCII0("Direction Adviser")
+credits_title6:
+textEntryASCII0("Designers")
+credits_title7:
+textEntryASCII0("Programmers")
+credits_title8:
+textEntryASCII0("Sound Composers")
+credits_title9:
+textEntryASCII0("Sound Programmer")
+credits_title10:
+textEntryASCII0("Advisers")
+credits_title11:
+textEntryASCII0("MOCAP Directors")
+credits_title12:
+textEntryASCII0("MOCAP Actors")
+credits_title13:
+textEntryASCII0("Talent Voices")
+credits_title14:
+textEntryASCII0("Part Voices")
+credits_title15:
+textEntryASCII0("Technical Support")
+credits_title16:
+textEntryASCII0("Special Thanks")
+credits_title17:
+textEntryASCII0(" ")
+credits_title18:
+textEntryASCII0("Supervisor")
+credits_title19:
+textEntryASCII0("Executive Producer")
+
+//Credits Setup
+seek(0x12BAA3C)
+dw 5, (credits_title1), 0
+dw 0, (credits_title2), 0
+dw 6, 0, 0
+dw 4, (credits_title3), 0
+dw 2, (credits_name1), 0
+dw 6, 0, 0
+dw 4, (credits_title4), 0
+dw 2, (credits_name2), 0
+dw 6, 0, 0
+dw 4, (credits_title5), 0
+dw 2, (credits_name3), 0
+dw 6, 0, 0
+dw 4, (credits_title6), 0
+dw 2, (credits_name2), 0
+dw 2, (credits_name4), 0
+dw 2, (credits_name5), 0
+dw 2, (credits_name6), 0
+dw 2, (credits_name7), 0
+dw 2, (credits_name8), 0
+dw 2, (credits_name9), 0
+dw 2, (credits_name10), 0
+dw 2, (credits_name11), 0
+dw 2, (credits_name12), 0
+dw 2, (credits_name13), 0
+dw 2, (credits_name14), 0
+dw 2, (credits_name15), 0
+dw 2, (credits_name16), 0
+dw 6, 0, 0
+dw 4, (credits_title7), 0
+dw 2, (credits_name17), 0
+dw 2, (credits_name18), 0
+dw 2, (credits_name19), 0
+dw 2, (credits_name20), 0
+dw 2, (credits_name21), 0
+dw 2, (credits_name22), 0
+dw 2, (credits_name23), 0
+dw 6, 0, 0
+dw 4, (credits_title8), 0
+dw 2, (credits_name24), 0
+dw 2, (credits_name25), 0
+dw 2, (credits_name26), 0
+dw 6, 0, 0
+dw 4, (credits_title9), 0
+dw 2, (credits_name27), 0
+dw 6, 0, 0
+dw 4, (credits_title10), 0
+dw 2, (credits_name28), 0
+dw 2, (credits_name29), 0
+dw 6, 0, 0
+dw 4, (credits_title11), 0
+dw 2, (credits_name30), 0
+dw 2, (credits_name31), 0
+dw 6, 0, 0
+dw 4, (credits_title12), 0
+dw 2, (credits_name32), 0
+dw 2, (credits_name33), 0
+dw 2, (credits_name34), 0
+dw 6, 0, 0
+dw 4, (credits_title13), 0
+dw 2, (credits_name35), 0
+dw 2, (credits_name36), 0
+dw 6, 0, 0
+dw 4, (credits_title14), 0
+dw 2, (credits_name37), 0
+dw 2, (credits_name38), 0
+dw 2, (credits_name16), 0
+dw 2, (credits_name39), 0
+dw 6, 0, 0
+dw 4, (credits_title15), 0
+dw 2, (credits_name40), 0
+dw 2, (credits_name41), 0
+dw 2, (credits_name42), 0
+dw 6, 0, 0
+dw 4, (credits_title16), 0
+dw 2, (credits_name43), 0
+dw 2, (credits_name44), 0
+dw 2, (credits_name45), 0
+dw 2, (credits_name46), 0
+dw 2, (credits_name47), 0
+dw 2, (credits_name48), 0
+dw 2, (credits_name49), 0
+dw 2, (credits_name50), 0
+dw 2, (credits_name51), 0
+dw 0, (credits_title17), 0
+dw 2, (credits_name52), 0
+dw 6, 0, 0
+dw 4, (credits_title18), 0
+dw 2, (credits_name53), 0
+dw 6, 0, 0
+dw 4, (credits_title19), 0
+dw 3, (credits_name54), 0
+dw 6, 0, 0
+dw 6, 0, 0
+dw 6, 0, 0
+dw 1, (credits_name56), 0
+dw 7, 0, 0
+
+//TODO: Hiroshi Yamauchi's name has another Kanji added for some reason, should remove it
 
 //--Disk Reinitialization
 //Hold L + Down D-Pad + A from startup
